@@ -69,10 +69,26 @@ Useful flags:
 
 ## Testing
 
-Run all tests:
+Run backend tests:
 
 ```bash
 PYTHONPATH=backend/src .venv/bin/python -m pytest backend/tests
+```
+
+Run frontend tests:
+
+```bash
+cd frontend
+npm install
+npm run test:unit
+npm run test:integration
+npm run test:e2e
+```
+
+Run integrated backend + frontend tests:
+
+```bash
+bash scripts/test_all.sh
 ```
 
 Run by layer:
@@ -91,6 +107,15 @@ A scheduled workflow is included at `.github/workflows/daily-scrape.yml`.
 - Generates fresh data via the scraper.
 - Keeps only `frontend/data/latest.json` for GitHub Pages.
 - Commits and pushes updates automatically when the snapshot changes.
+
+## CI
+
+Continuous integration runs from `.github/workflows/ci.yml` and includes:
+
+- backend pytest suite
+- frontend unit tests
+- frontend integration tests
+- frontend Playwright e2e tests
 
 ## Data Fields
 

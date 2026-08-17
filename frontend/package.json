@@ -1,0 +1,17 @@
+{
+  "name": "nz-coffee-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:e2e": "playwright test",
+    "test": "npm run test:unit && npm run test:integration && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "jsdom": "^26.1.0",
+    "vitest": "^2.1.9"
+  }
+}

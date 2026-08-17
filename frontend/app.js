@@ -1,91 +1,65 @@
-// Minimal client-side state for search and category filtering.
-const state = {
-  items: [],
-  activeCategory: "all",
-  query: "",
-};
+import { categories, filterAndSortItems, nzPrice, sourceName } from "./coffee-utils.js";
 
-const cardsEl = document.getElementById("cards");
-const statsEl = document.getElementById("stats");
-const resultCountEl = document.getElementById("resultCount");
-const updatedEl = document.getElementById("last-updated");
-const errorEl = document.getElementById("errorMessage");
-const searchInput = document.getElementById("searchInput");
-const filterWrap = document.getElementById("categoryFilters");
+export function createApp({
+  documentRef = document,
+  fetchImpl = fetch,
+  dataPath = "./data/latest.json",
+} = {}) {
+  // Minimal client-side state for search and category filtering.
+  const state = {
+    items: [],
+    activeCategory: "all",
+    query: "",
+  };
 
-function sourceName(raw) {
-  if (raw.includes("rocket")) return "Rocket Coffee";
-  if (raw.includes("atomic")) return "Atomic Coffee";
-  return raw;
-}
+  const cardsEl = documentRef.getElementById("cards");
+  const statsEl = documentRef.getElementById("stats");
+  const resultCountEl = documentRef.getElementById("resultCount");
+  const updatedEl = documentRef.getElementById("last-updated");
+  const errorEl = documentRef.getElementById("errorMessage");
+  const searchInput = documentRef.getElementById("searchInput");
+  const filterWrap = documentRef.getElementById("categoryFilters");
 
-function nzPrice(item) {
-  if (item.price_min_nzd === item.price_max_nzd) {
-    return `NZD $${Number(item.price_min_nzd).toFixed(2)}`;
-  }
-  return `NZD $${Number(item.price_min_nzd).toFixed(2)} - $${Number(item.price_max_nzd).toFixed(2)}`;
-}
+  function renderStats(items, generatedAt) {
+    // Build per-source summary cards from the already-filtered item list.
+    const bySource = items.reduce((acc, item) => {
+      acc[item.source] = (acc[item.source] || 0) + 1;
+      return acc;
+    }, {});
 
-function categories(categoryStr) {
-  return categoryStr.split(",").map((part) => part.trim()).filter(Boolean);
-}
+    statsEl.innerHTML = "";
 
-function renderStats(items, generatedAt) {
-  // Build per-source summary cards from the already-filtered item list.
-  const bySource = items.reduce((acc, item) => {
-    acc[item.source] = (acc[item.source] || 0) + 1;
-    return acc;
-  }, {});
+    const total = documentRef.createElement("article");
+    total.className = "stat";
+    total.innerHTML = `<p class="label">Total Available</p><p class="value">${items.length}</p>`;
+    statsEl.appendChild(total);
 
-  statsEl.innerHTML = "";
+    Object.entries(bySource).forEach(([source, count]) => {
+      const card = documentRef.createElement("article");
+      card.className = "stat";
+      card.innerHTML = `<p class="label">${sourceName(source)}</p><p class="value">${count}</p>`;
+      statsEl.appendChild(card);
+    });
 
-  const total = document.createElement("article");
-  total.className = "stat";
-  total.innerHTML = `<p class="label">Total Available</p><p class="value">${items.length}</p>`;
-  statsEl.appendChild(total);
-
-  Object.entries(bySource).forEach(([source, count]) => {
-    const card = document.createElement("article");
-    card.className = "stat";
-    card.innerHTML = `<p class="label">${sourceName(source)}</p><p class="value">${count}</p>`;
-    statsEl.appendChild(card);
-  });
-
-  const generated = new Date(generatedAt);
-  const formatted = generated.toLocaleString();
-  updatedEl.textContent = `Last updated: ${formatted}`;
-}
-
-function renderCards() {
-  // Apply search + category filters before rendering cards.
-  const term = state.query.toLowerCase();
-  const rows = state.items.filter((item) => {
-    const categoryMatch =
-      state.activeCategory === "all" || categories(item.category).includes(state.activeCategory);
-
-    const searchText = [
-      item.title,
-      item.category,
-      item.source,
-    ].join(" ").toLowerCase();
-
-    return categoryMatch && searchText.includes(term);
-  });
-
-  resultCountEl.textContent = `${rows.length} result${rows.length === 1 ? "" : "s"}`;
-  cardsEl.innerHTML = "";
-
-  if (!rows.length) {
-    const p = document.createElement("p");
-    p.textContent = "No coffees matched your filters.";
-    cardsEl.appendChild(p);
-    return;
+    const generated = new Date(generatedAt);
+    updatedEl.textContent = `Last updated: ${generated.toLocaleString()}`;
   }
 
-  rows
-    .sort((a, b) => a.title.localeCompare(b.title))
-    .forEach((item) => {
-      const card = document.createElement("article");
+  function renderCards() {
+    const rows = filterAndSortItems(state.items, state.activeCategory, state.query);
+
+    resultCountEl.textContent = `${rows.length} result${rows.length === 1 ? "" : "s"}`;
+    cardsEl.innerHTML = "";
+
+    if (!rows.length) {
+      const p = documentRef.createElement("p");
+      p.textContent = "No coffees matched your filters.";
+      cardsEl.appendChild(p);
+      return;
+    }
+
+    rows.forEach((item) => {
+      const card = documentRef.createElement("article");
       card.className = "card";
 
       const categoryBadges = categories(item.category)
@@ -104,42 +78,69 @@ function renderCards() {
 
       cardsEl.appendChild(card);
     });
-}
-
-async function loadData() {
-  try {
-    // Frontend is static, so it reads the latest generated snapshot JSON.
-    const response = await fetch("./data/latest.json", { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-    const payload = await response.json();
-
-    state.items = payload.items || [];
-    renderStats(state.items, payload.generated_at);
-    renderCards();
-  } catch (err) {
-    errorEl.hidden = false;
-    errorEl.textContent = `Could not load data/latest.json (${err.message}). Run the scraper and commit latest.json.`;
   }
-}
 
-searchInput.addEventListener("input", (event) => {
-  state.query = event.target.value;
-  renderCards();
-});
+  async function loadData() {
+    try {
+      // Frontend is static, so it reads the latest generated snapshot JSON.
+      const response = await fetchImpl(dataPath, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+      const payload = await response.json();
 
-filterWrap.addEventListener("click", (event) => {
-  const button = event.target.closest("button[data-category]");
-  if (!button) return;
-  state.activeCategory = button.dataset.category;
+      state.items = payload.items || [];
+      renderStats(state.items, payload.generated_at);
+      renderCards();
+    } catch (err) {
+      errorEl.hidden = false;
+      errorEl.textContent = `Could not load ${dataPath} (${err.message}). Run the scraper and commit latest.json.`;
+    }
+  }
 
-  filterWrap.querySelectorAll("button").forEach((node) => {
-    node.classList.toggle("active", node === button);
+  searchInput.addEventListener("input", (event) => {
+    state.query = event.target.value;
+    renderCards();
   });
 
-  renderCards();
-});
+  filterWrap.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-category]");
+    if (!button) return;
+    state.activeCategory = button.dataset.category;
 
-// Initial render bootstrap.
-loadData();
+    filterWrap.querySelectorAll("button").forEach((node) => {
+      node.classList.toggle("active", node === button);
+    });
+
+    renderCards();
+  });
+
+  return {
+    state,
+    loadData,
+    renderCards,
+  };
+}
+
+export async function bootstrapApp() {
+  const app = createApp();
+  await app.loadData();
+  return app;
+}
+
+function hasRequiredDom(doc) {
+  return Boolean(
+    doc.getElementById("cards")
+    && doc.getElementById("stats")
+    && doc.getElementById("resultCount")
+    && doc.getElementById("last-updated")
+    && doc.getElementById("errorMessage")
+    && doc.getElementById("searchInput")
+    && doc.getElementById("categoryFilters")
+  );
+}
+
+// Initial render bootstrap in browser contexts.
+if (typeof window !== "undefined" && typeof document !== "undefined" && hasRequiredDom(document)) {
+  bootstrapApp();
+}
