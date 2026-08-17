@@ -109,6 +109,8 @@ Run integrated backend + frontend tests:
 bash scripts/test_all.sh
 ```
 
+The integrated test script automatically uses `.venv/bin/python` when present and otherwise falls back to the active `python`/`python3` on your `PATH`.
+
 Run by layer:
 
 ```bash
