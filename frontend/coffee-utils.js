@@ -41,6 +41,10 @@ export function isBlend(item) {
   return /\bblend\b/i.test([item.title, item.handle, item.category, item.tags].filter(Boolean).join(" "));
 }
 
+export function isSubscription(item) {
+  return /\bsubscription\b/i.test([item.title, item.handle, item.product_type, item.tags].filter(Boolean).join(" "));
+}
+
 export function filterCategories(item) {
   const values = categories(item.category);
   if (isBlend(item)) values.push("blend");

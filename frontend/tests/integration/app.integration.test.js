@@ -9,10 +9,7 @@ function buildDom() {
     <p id="last-updated"></p>
     <input id="searchInput" />
     <select id="sourceFilter"><option value="all">All stores</option></select>
-    <select id="varietalFilter"><option value="all">All varietals</option></select>
     <select id="originCountryFilter"><option value="all">All origin countries</option></select>
-    <select id="producerFilter"><option value="all">All producers</option></select>
-    <select id="processFilter"><option value="all">All processes</option></select>
     <select id="decafFilter"><option value="all">All coffees</option><option value="true">Decaf</option></select>
     <div id="categoryFilters">
       <select id="categoryFilter"><option value="all">All roast types</option></select>
@@ -63,6 +60,15 @@ describe("app integration", () => {
             price_max_nzd: 30,
             product_url: "https://example.com/a",
           },
+          {
+            source: "rocketcoffee.co.nz",
+            title: "Bravo Subscription",
+            handle: "bravo-subscription",
+            category: "espresso roast",
+            price_min_nzd: 20,
+            price_max_nzd: 20,
+            product_url: "https://example.com/subscription",
+          },
         ],
       }),
     });
@@ -107,15 +113,8 @@ describe("app integration", () => {
 
     searchInput.value = "";
     searchInput.dispatchEvent(new Event("input"));
-    const varietalFilter = document.getElementById("varietalFilter");
-    varietalFilter.value = "castillo";
-    varietalFilter.dispatchEvent(new Event("change"));
-    expect(document.getElementById("resultCount").textContent).toBe("0 results");
-
     sourceFilter.value = "all";
     sourceFilter.dispatchEvent(new Event("change"));
-    varietalFilter.value = "all";
-    varietalFilter.dispatchEvent(new Event("change"));
     const decafFilter = document.getElementById("decafFilter");
     decafFilter.value = "true";
     decafFilter.dispatchEvent(new Event("change"));

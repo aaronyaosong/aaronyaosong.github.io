@@ -5,6 +5,7 @@ import {
   filterCategories,
   filterAndSortItems,
   isDecaf,
+  isSubscription,
   metadataValue,
   nzPrice,
   pricePerGram,
@@ -52,6 +53,13 @@ describe("coffee-utils unit", () => {
       "blend",
     ]);
     expect(filterCategories({ title: "Single Origin", category: "filter roast" })).toEqual(["filter roast"]);
+  });
+
+  it("identifies subscriptions for hiding", () => {
+    expect(isSubscription({ title: "Weekly Coffee Subscription" })).toBe(true);
+    expect(isSubscription({ handle: "coffee-subscription" })).toBe(true);
+    expect(isSubscription({ title: "Weekly Coffee", tags: "subscription" })).toBe(true);
+    expect(isSubscription({ title: "Weekly Coffee" })).toBe(false);
   });
 
   it("filters and sorts items by active category and query", () => {
