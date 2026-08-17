@@ -7,6 +7,25 @@ from typing import Any
 FILTER_ROAST = "filter roast"
 ESPRESSO_ROAST = "espresso roast"
 OTHER_CATEGORY = "other"
+KNOWN_VARIETALS = (
+    "sudan rume",
+    "ruiru 11",
+    "maragogype",
+    "pacamara",
+    "castillo",
+    "caturra",
+    "catuai",
+    "obata",
+    "bourbon",
+    "typica",
+    "gesha",
+    "geisha",
+    "sidra",
+    "java",
+    "sl28",
+    "sl34",
+    "batian",
+)
 
 
 def _normalize_text(raw: str) -> str:
@@ -48,6 +67,12 @@ def infer_roast_category(product: dict[str, Any]) -> str:
     if has_espresso:
         return ESPRESSO_ROAST
     return OTHER_CATEGORY
+
+
+def infer_varietal(product: dict[str, Any]) -> str:
+    text = _collect_product_text(product)
+    found = [varietal for varietal in KNOWN_VARIETALS if re.search(rf"\b{re.escape(varietal)}\b", text)]
+    return ",".join(found) if found else "unknown"
 
 
 def category_values(category: str) -> set[str]:

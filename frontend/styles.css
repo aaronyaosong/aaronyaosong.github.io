@@ -125,6 +125,29 @@ input[type="search"]:focus {
   gap: 8px;
 }
 
+.select-filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.select-filters span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 11px 12px;
+  font: inherit;
+  color: var(--text);
+  background: #fff;
+}
+
 .chip {
   border: 1px solid transparent;
   background: var(--chip);
@@ -238,6 +261,10 @@ h2 {
   }
 
   .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .select-filters {
     grid-template-columns: 1fr;
   }
 }

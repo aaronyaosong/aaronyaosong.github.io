@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T11:06:39+00:00",
+  "generated_at": "2026-08-17T11:57:08+00:00",
   "count": 41,
   "items": [
     {
@@ -7,533 +7,574 @@
       "product_id": 8101055103152,
       "title": "Arturo Arango - Castillo [natural] espresso",
       "category": "espresso roast",
+      "varietal": "castillo",
       "handle": "arturo-arango-natural-espresso",
       "product_url": "https://rocketcoffee.co.nz/products/arturo-arango-natural-espresso",
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 95.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8087594041520,
       "title": "Arturo Arango - Caturra [washed] filter roast",
       "category": "filter roast",
+      "varietal": "caturra",
       "handle": "arturo-arango-caturra-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/arturo-arango-caturra-washed-filter-roast",
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8100015538352,
       "title": "Arturo Arango - Yellow Sudan Rume [natural] filter roast",
       "category": "filter roast",
+      "varietal": "sudan rume",
       "handle": "arturo-arango-yellow-sudan-rume-natural-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/arturo-arango-yellow-sudan-rume-natural-filter-roast",
       "available": true,
       "price_min_nzd": 50.0,
       "price_max_nzd": 50.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 6984263467184,
       "title": "DECAF - Colombia Popay\u00e1n Espresso",
       "category": "espresso roast",
+      "varietal": "unknown",
       "handle": "decaff-capucas-cooperative-honduras-single-origin-espresso-roast",
       "product_url": "https://rocketcoffee.co.nz/products/decaff-capucas-cooperative-honduras-single-origin-espresso-roast",
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 70.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8061000351920,
       "title": "Diofanor Ruiz - Castillo [washed] filter roast",
       "category": "filter roast",
+      "varietal": "castillo",
       "handle": "diofanor-ruiz-castillo-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/diofanor-ruiz-castillo-washed-filter-roast",
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 7947301159088,
       "title": "Don Claudio Project - Caturra - Catuai - Obata [natural] espresso",
       "category": "espresso roast",
+      "varietal": "caturra,catuai,obata",
       "handle": "don-claudio-project-caturra-catuai-obata-natural-espresso",
       "product_url": "https://rocketcoffee.co.nz/products/don-claudio-project-caturra-catuai-obata-natural-espresso",
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 88.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 6982371016880,
       "title": "ESPRESSO BLEND",
       "category": "espresso roast",
+      "varietal": "unknown",
       "handle": "rocket-espresso-blend-new",
       "product_url": "https://rocketcoffee.co.nz/products/rocket-espresso-blend-new",
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 11781494148,
       "title": "ESPRESSO BLEND subscription",
       "category": "espresso roast",
+      "varietal": "unknown",
       "handle": "rocket-espresso-blend-subscription",
       "product_url": "https://rocketcoffee.co.nz/products/rocket-espresso-blend-subscription",
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 7338828759216,
       "title": "ESPRESSO DULCE",
       "category": "espresso roast",
+      "varietal": "unknown",
       "handle": "dulce-espresso-blend",
       "product_url": "https://rocketcoffee.co.nz/products/dulce-espresso-blend",
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 7762789630128,
       "title": "ESPRESSO DULCE subscription",
       "category": "espresso roast",
+      "varietal": "unknown",
       "handle": "espresso-dulce-subscription",
       "product_url": "https://rocketcoffee.co.nz/products/espresso-dulce-subscription",
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8061619536048,
       "title": "Gicherori Peaberry - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
       "category": "filter roast",
+      "varietal": "sl28,sl34",
       "handle": "gicherori-peaberry-sl28-sl34-ruiru-11-batian-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/gicherori-peaberry-sl28-sl34-ruiru-11-batian-washed-filter-roast",
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8101037015216,
       "title": "Githembe - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
       "category": "filter roast",
+      "varietal": "sl28,sl34",
       "handle": "githembe-sl28-sl34-ruiru-11-batian-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/githembe-sl28-sl34-ruiru-11-batian-washed-filter-roast",
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8077053296816,
       "title": "Jairo Arcila - Castillo [natural decaf] filter roast",
       "category": "filter roast",
+      "varietal": "castillo,caturra",
       "handle": "jairo-arcila-castillo-natural-decaf-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/jairo-arcila-castillo-natural-decaf-filter-roast",
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8081024614576,
       "title": "Jorge Osorio - V. Colombia [washed] espresso",
       "category": "espresso roast",
+      "varietal": "unknown",
       "handle": "jorge-osorio-v-colombia-washed-espresso",
       "product_url": "https://rocketcoffee.co.nz/products/jorge-osorio-v-colombia-washed-espresso",
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 92.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8055903944880,
       "title": "July Jumbo - Sidra [washed double fermented] filter roast",
       "category": "filter roast",
+      "varietal": "unknown",
       "handle": "july-jumbo-sidra-washed-double-fermented-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/july-jumbo-sidra-washed-double-fermented-filter-roast",
       "available": true,
       "price_min_nzd": 42.0,
       "price_max_nzd": 42.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8102659195056,
       "title": "Karundu - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
       "category": "filter roast",
+      "varietal": "sl28,sl34",
       "handle": "karundu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/karundu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8087907172528,
       "title": "Kii - SL28 - SL34 [washed] filter roast",
       "category": "filter roast",
+      "varietal": "sl28,sl34",
       "handle": "kii-sl28-sl34-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/kii-sl28-sl34-washed-filter-roast",
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8082951438512,
       "title": "Kiunyu  - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
       "category": "filter roast",
+      "varietal": "sl28,sl34",
       "handle": "kiunyu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/kiunyu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8099758833840,
       "title": "Luz Helena - Caturra [natural] filter roast",
       "category": "filter roast",
+      "varietal": "caturra",
       "handle": "luz-helena-caturra-natural-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/luz-helena-caturra-natural-filter-roast",
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8058992361648,
       "title": "Milton Torres - Caturra [washed] filter roast",
       "category": "filter roast",
+      "varietal": "caturra",
       "handle": "milton-torres-caturra-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/milton-torres-caturra-washed-filter-roast",
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 26.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8009599647920,
       "title": "Mr. Diki & Don Aman - P88 - Lini S795  [carbonic maceration] filter roast",
       "category": "filter roast",
+      "varietal": "java",
       "handle": "mr-diki-don-aman-p88-lini-s795-carbonic-maceration",
       "product_url": "https://rocketcoffee.co.nz/products/mr-diki-don-aman-p88-lini-s795-carbonic-maceration",
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8026764640432,
       "title": "Mr. Diki & Don Aman - P88 - S795 [carbonic maceration] espresso",
       "category": "espresso roast",
+      "varietal": "java",
       "handle": "mr-diki-don-aman-p88-s795-carbonic-maceration-espresso-copy",
       "product_url": "https://rocketcoffee.co.nz/products/mr-diki-don-aman-p88-s795-carbonic-maceration-espresso-copy",
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 7276031213744,
       "title": "ORGANIC ESPRESSO",
       "category": "espresso roast",
+      "varietal": "unknown",
       "handle": "rocket-organic-espresso-blend",
       "product_url": "https://rocketcoffee.co.nz/products/rocket-organic-espresso-blend",
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 7164348170416,
       "title": "ORGANIC ESPRESSO subscription",
       "category": "espresso roast",
+      "varietal": "unknown",
       "handle": "rocket-organic-espresso-blend-subscription",
       "product_url": "https://rocketcoffee.co.nz/products/rocket-organic-espresso-blend-subscription",
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8061671276720,
       "title": "Paola y Carlos Trujillo - Aji [washed] filter roast",
       "category": "filter roast",
+      "varietal": "unknown",
       "handle": "paola-y-carlos-trujillo-aji-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/paola-y-carlos-trujillo-aji-washed-filter-roast",
       "available": true,
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8061670195376,
       "title": "Paola y Carlos Trujillo - Geisha [natural] filter roast",
       "category": "filter roast",
+      "varietal": "gesha",
       "handle": "paola-y-carlos-trujillo-geisha-natural-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/paola-y-carlos-trujillo-geisha-natural-filter-roast",
       "available": true,
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8061670785200,
       "title": "Paola y Carlos Trujillo - Java [washed] filter roast",
       "category": "filter roast",
+      "varietal": "java",
       "handle": "paola-y-carlos-trujillo-java-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/paola-y-carlos-trujillo-java-washed-filter-roast",
       "available": true,
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 7360266666160,
       "title": "ROCKET single origin espresso subscription",
       "category": "filter roast,espresso roast",
+      "varietal": "unknown",
       "handle": "rocket-single-origin-espresso-subscription",
       "product_url": "https://rocketcoffee.co.nz/products/rocket-single-origin-espresso-subscription",
       "available": true,
       "price_min_nzd": 72.0,
       "price_max_nzd": 480.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 161975037,
       "title": "ROCKET single origin filter subscription",
       "category": "filter roast",
+      "varietal": "unknown",
       "handle": "filter-subscription",
       "product_url": "https://rocketcoffee.co.nz/products/filter-subscription",
       "available": true,
       "price_min_nzd": 84.0,
       "price_max_nzd": 576.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8065133117616,
       "title": "Rogelio Segovia - Caturra [washed] filter roast",
       "category": "filter roast",
+      "varietal": "castillo,caturra",
       "handle": "rogelio-torres-castillo-washed-filter-roast-l",
       "product_url": "https://rocketcoffee.co.nz/products/rogelio-torres-castillo-washed-filter-roast-l",
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8055896670384,
       "title": "Roxana Chambi - Red Catuai [washed] filter roast",
       "category": "filter roast",
+      "varietal": "catuai",
       "handle": "roxana-chambi-red-catuai-washed-filter-roast",
       "product_url": "https://rocketcoffee.co.nz/products/roxana-chambi-red-catuai-washed-filter-roast",
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8035609149616,
       "title": "Wilford Lamastus Snr. & Jnr. - Geisha lot 16 [ASD natural] filter roast",
       "category": "filter roast",
+      "varietal": "gesha",
       "handle": "wilford-lamastus-geisha-lot-16-anaerobic-natural-filter-roast-copy",
       "product_url": "https://rocketcoffee.co.nz/products/wilford-lamastus-geisha-lot-16-anaerobic-natural-filter-roast-copy",
       "available": true,
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-08-17T23:02:01+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "atomiccoffee.co.nz",
       "product_id": 8238210973883,
       "title": "Ultimate Coffee Duo",
       "category": "filter roast,espresso roast",
+      "varietal": "unknown",
       "handle": "ultimate-coffee-duo",
       "product_url": "https://atomiccoffee.co.nz/products/ultimate-coffee-duo",
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-08-17T23:02:02+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "atomiccoffee.co.nz",
       "product_id": 317366203,
       "title": "Veloce",
       "category": "filter roast,espresso roast",
+      "varietal": "unknown",
       "handle": "veloce",
       "product_url": "https://atomiccoffee.co.nz/products/veloce",
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
       "updated_at": "2026-08-17T23:02:02+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "atomiccoffee.co.nz",
       "product_id": 309825991,
       "title": "Supremo",
       "category": "filter roast,espresso roast",
+      "varietal": "unknown",
       "handle": "supremo",
       "product_url": "https://atomiccoffee.co.nz/products/supremo",
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
       "updated_at": "2026-08-17T23:02:02+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "atomiccoffee.co.nz",
       "product_id": 309826339,
       "title": "Decaf",
       "category": "filter roast,espresso roast",
+      "varietal": "catuai",
       "handle": "decaf",
       "product_url": "https://atomiccoffee.co.nz/products/decaf",
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
       "updated_at": "2026-08-17T23:02:02+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "atomiccoffee.co.nz",
       "product_id": 6217691496635,
       "title": "Brazil Coopfam",
       "category": "filter roast,espresso roast",
+      "varietal": "catuai",
       "handle": "brazil-coopfam",
       "product_url": "https://atomiccoffee.co.nz/products/brazil-coopfam",
       "available": true,
       "price_min_nzd": 20.5,
       "price_max_nzd": 82.0,
       "updated_at": "2026-08-17T23:02:02+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "atomiccoffee.co.nz",
       "product_id": 8489942548667,
       "title": "Brazil Sitio Da Torre | Espresso Roast",
       "category": "filter roast,espresso roast",
+      "varietal": "yellow bourbon,bourbon",
       "handle": "brazil-sitio-da-torre-espresso-roast",
       "product_url": "https://atomiccoffee.co.nz/products/brazil-sitio-da-torre-espresso-roast",
       "available": true,
       "price_min_nzd": 27.5,
       "price_max_nzd": 27.5,
       "updated_at": "2026-08-17T23:02:02+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "atomiccoffee.co.nz",
       "product_id": 8489943859387,
       "title": "Rwanda Vincent Rukeribuga | Filter Roast",
       "category": "filter roast,espresso roast",
+      "varietal": "bourbon",
       "handle": "rwanda-vincent-rukeribuga-filter-roast",
       "product_url": "https://atomiccoffee.co.nz/products/rwanda-vincent-rukeribuga-filter-roast",
       "available": true,
       "price_min_nzd": 31.0,
       "price_max_nzd": 31.0,
       "updated_at": "2026-08-17T23:02:02+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "atomiccoffee.co.nz",
       "product_id": 8489948217531,
       "title": "Kenya Gachika | Filter Roast",
       "category": "filter roast,espresso roast",
+      "varietal": "sl28",
       "handle": "kenya-gachika-filter-roast",
       "product_url": "https://atomiccoffee.co.nz/products/kenya-gachika-filter-roast",
       "available": true,
       "price_min_nzd": 29.0,
       "price_max_nzd": 29.0,
       "updated_at": "2026-08-17T23:02:02+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     },
     {
       "source": "atomiccoffee.co.nz",
       "product_id": 8489950609595,
       "title": "Indonesia Yolan Tirta | Filter Roast",
       "category": "filter roast,espresso roast",
+      "varietal": "typica",
       "handle": "indonesia-yolan-tirta-filter-roast",
       "product_url": "https://atomiccoffee.co.nz/products/indonesia-yolan-tirta-filter-roast",
       "available": true,
       "price_min_nzd": 28.5,
       "price_max_nzd": 28.5,
       "updated_at": "2026-08-17T23:02:02+12:00",
-      "scraped_at": "2026-08-17T11:06:39+00:00"
+      "scraped_at": "2026-08-17T11:57:08+00:00"
     }
   ]
 }

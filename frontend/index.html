@@ -25,6 +25,21 @@
         <input id="searchInput" type="search" placeholder="Try: decaf, colombia, espresso blend">
       </label>
 
+      <div class="select-filters">
+        <label for="sourceFilter">
+          <span>Store</span>
+          <select id="sourceFilter">
+            <option value="all">All stores</option>
+          </select>
+        </label>
+        <label for="varietalFilter">
+          <span>Coffee varietal</span>
+          <select id="varietalFilter">
+            <option value="all">All varietals</option>
+          </select>
+        </label>
+      </div>
+
       <div class="filters" id="categoryFilters">
         <button class="chip active" data-category="all" type="button">All</button>
         <button class="chip" data-category="filter roast" type="button">Filter Roast</button>

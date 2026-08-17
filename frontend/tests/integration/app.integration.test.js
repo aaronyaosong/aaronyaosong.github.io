@@ -8,6 +8,8 @@ function buildDom() {
     <div id="stats"></div>
     <p id="last-updated"></p>
     <input id="searchInput" />
+    <select id="sourceFilter"><option value="all">All stores</option></select>
+    <select id="varietalFilter"><option value="all">All varietals</option></select>
     <div id="categoryFilters">
       <button class="chip active" data-category="all" type="button">All</button>
       <button class="chip" data-category="filter roast" type="button">Filter Roast</button>
@@ -35,6 +37,7 @@ describe("app integration", () => {
             source: "rocketcoffee.co.nz",
             title: "Bravo Espresso",
             category: "espresso roast",
+            varietal: "castillo",
             price_min_nzd: 20,
             price_max_nzd: 20,
             product_url: "https://example.com/b",
@@ -43,6 +46,7 @@ describe("app integration", () => {
             source: "atomiccoffee.co.nz",
             title: "Alpha Filter",
             category: "filter roast",
+            varietal: "caturra",
             price_min_nzd: 25,
             price_max_nzd: 30,
             product_url: "https://example.com/a",
@@ -63,5 +67,17 @@ describe("app integration", () => {
 
     expect(document.getElementById("resultCount").textContent).toBe("1 result");
     expect(document.querySelector(".card h3").textContent).toBe("Alpha Filter");
+
+    const sourceFilter = document.getElementById("sourceFilter");
+    sourceFilter.value = "atomiccoffee.co.nz";
+    sourceFilter.dispatchEvent(new Event("change"));
+    expect(document.getElementById("resultCount").textContent).toBe("1 result");
+
+    searchInput.value = "";
+    searchInput.dispatchEvent(new Event("input"));
+    const varietalFilter = document.getElementById("varietalFilter");
+    varietalFilter.value = "castillo";
+    varietalFilter.dispatchEvent(new Event("change"));
+    expect(document.getElementById("resultCount").textContent).toBe("0 results");
   });
 });

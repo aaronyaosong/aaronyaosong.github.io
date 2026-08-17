@@ -8,6 +8,7 @@ from nz_coffee_tracker.categorization import (
     OTHER_CATEGORY,
     category_values,
     infer_roast_category,
+    infer_varietal,
 )
 
 
@@ -57,3 +58,14 @@ def test_infer_roast_category_other() -> None:
 @pytest.mark.unit
 def test_category_values_split_and_trim() -> None:
     assert category_values("filter roast, espresso roast") == {"filter roast", "espresso roast"}
+
+
+@pytest.mark.unit
+def test_infer_varietal_detects_multiple_varieties() -> None:
+    product = {"title": "Don Claudio Project - Caturra - Catuai - Obata"}
+    assert infer_varietal(product) == "caturra,catuai,obata"
+
+
+@pytest.mark.unit
+def test_infer_varietal_unknown_when_not_present() -> None:
+    assert infer_varietal({"title": "House Espresso Blend"}) == "unknown"

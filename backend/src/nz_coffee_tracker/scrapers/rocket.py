@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from nz_coffee_tracker.categorization import infer_roast_category
+from nz_coffee_tracker.categorization import infer_roast_category, infer_varietal
 from nz_coffee_tracker.models import CoffeeListing, now_utc_iso
 from nz_coffee_tracker.shopify_client import ShopifyClient
 
@@ -51,6 +51,7 @@ def scrape_rocket() -> list[CoffeeListing]:
                 price_max_nzd=max(prices),
                 updated_at=str(product.get("updated_at", "")),
                 scraped_at=scraped_at,
+                varietal=infer_varietal(product),
             )
         )
 

@@ -9,6 +9,8 @@ export function createApp({
   const state = {
     items: [],
     activeCategory: "all",
+    activeSource: "all",
+    activeVarietal: "all",
     query: "",
   };
 
@@ -19,6 +21,18 @@ export function createApp({
   const errorEl = documentRef.getElementById("errorMessage");
   const searchInput = documentRef.getElementById("searchInput");
   const filterWrap = documentRef.getElementById("categoryFilters");
+  const sourceSelect = documentRef.getElementById("sourceFilter");
+  const varietalSelect = documentRef.getElementById("varietalFilter");
+
+  function populateSelect(select, values, allLabel, formatValue = (value) => value) {
+    select.innerHTML = `<option value="all">${allLabel}</option>`;
+    [...values].sort((a, b) => a.localeCompare(b)).forEach((value) => {
+      const option = documentRef.createElement("option");
+      option.value = value;
+      option.textContent = formatValue(value);
+      select.appendChild(option);
+    });
+  }
 
   function renderStats(items, generatedAt) {
     // Build per-source summary cards from the already-filtered item list.
@@ -46,7 +60,13 @@ export function createApp({
   }
 
   function renderCards() {
-    const rows = filterAndSortItems(state.items, state.activeCategory, state.query);
+    const rows = filterAndSortItems(
+      state.items,
+      state.activeCategory,
+      state.query,
+      state.activeSource,
+      state.activeVarietal,
+    );
 
     resultCountEl.textContent = `${rows.length} result${rows.length === 1 ? "" : "s"}`;
     cardsEl.innerHTML = "";
@@ -90,6 +110,12 @@ export function createApp({
       const payload = await response.json();
 
       state.items = payload.items || [];
+      populateSelect(sourceSelect, new Set(state.items.map((item) => item.source)), "All stores", sourceName);
+      populateSelect(
+        varietalSelect,
+        new Set(state.items.flatMap((item) => categories(item.varietal || ""))),
+        "All varietals",
+      );
       renderStats(state.items, payload.generated_at);
       renderCards();
     } catch (err) {
@@ -100,6 +126,16 @@ export function createApp({
 
   searchInput.addEventListener("input", (event) => {
     state.query = event.target.value;
+    renderCards();
+  });
+
+  sourceSelect.addEventListener("change", (event) => {
+    state.activeSource = event.target.value;
+    renderCards();
+  });
+
+  varietalSelect.addEventListener("change", (event) => {
+    state.activeVarietal = event.target.value;
     renderCards();
   });
 
@@ -137,6 +173,8 @@ function hasRequiredDom(doc) {
     && doc.getElementById("errorMessage")
     && doc.getElementById("searchInput")
     && doc.getElementById("categoryFilters")
+    && doc.getElementById("sourceFilter")
+    && doc.getElementById("varietalFilter")
   );
 }
 

@@ -30,6 +30,7 @@ def test_scrape_rocket_maps_product_payload(monkeypatch: pytest.MonkeyPatch) -> 
     assert row.product_id == 111
     assert row.available is True
     assert row.category == "espresso roast"
+    assert row.varietal == "unknown"
     assert row.price_min_nzd == 22.0
     assert row.price_max_nzd == 60.0
     assert row.product_url.endswith("/rocket-espresso-blend")
@@ -58,6 +59,7 @@ def test_scrape_atomic_handles_missing_prices(monkeypatch: pytest.MonkeyPatch) -
     row = rows[0]
     assert row.source == "atomiccoffee.co.nz"
     assert row.category == "filter roast"
+    assert row.varietal == "unknown"
     assert row.available is True
     assert row.price_min_nzd == 0.0
     assert row.price_max_nzd == 0.0

@@ -20,13 +20,23 @@ describe("coffee-utils unit", () => {
 
   it("filters and sorts items by active category and query", () => {
     const items = [
-      { title: "Zulu Espresso", category: "espresso roast", source: "rocketcoffee.co.nz" },
-      { title: "Alpha Filter", category: "filter roast", source: "atomiccoffee.co.nz" },
-      { title: "Other Item", category: "other", source: "atomiccoffee.co.nz" },
+      { title: "Zulu Espresso", category: "espresso roast", source: "rocketcoffee.co.nz", varietal: "castillo" },
+      { title: "Alpha Filter", category: "filter roast", source: "atomiccoffee.co.nz", varietal: "caturra" },
+      { title: "Other Item", category: "other", source: "atomiccoffee.co.nz", varietal: "castillo" },
     ];
 
     const rows = filterAndSortItems(items, "filter roast", "alpha");
     expect(rows).toHaveLength(1);
     expect(rows[0].title).toBe("Alpha Filter");
+  });
+
+  it("filters items by store and varietal", () => {
+    const items = [
+      { title: "Zulu Espresso", category: "espresso roast", source: "rocketcoffee.co.nz", varietal: "castillo" },
+      { title: "Alpha Filter", category: "filter roast", source: "atomiccoffee.co.nz", varietal: "caturra,catuai" },
+    ];
+
+    const rows = filterAndSortItems(items, "all", "", "atomiccoffee.co.nz", "catuai");
+    expect(rows.map((item) => item.title)).toEqual(["Alpha Filter"]);
   });
 });

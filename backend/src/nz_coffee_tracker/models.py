@@ -18,6 +18,7 @@ class CoffeeListing:
     price_max_nzd: float
     updated_at: str
     scraped_at: str
+    varietal: str = "unknown"
 
     def to_dict(self) -> dict:
         return asdict(self)
