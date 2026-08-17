@@ -1,0 +1,1 @@
+"""NZ coffee availability tracker."""
