@@ -4,8 +4,11 @@ Track what coffee is currently available in New Zealand, starting with:
 
 - Rocket Coffee (`rocketcoffee.co.nz`)
 - Atomic Coffee (`atomiccoffee.co.nz`)
+- Ozone Coffee (`ozonecoffee.co.nz`)
+- Coffee Embassy (`coffeeembassy.co.nz`)
+- Eternal Coffee (`eternalcoffee.co.nz`)
 
-This tracker uses the Shopify product JSON feeds exposed by both stores and exports snapshots to JSON/CSV plus a SQLite history database.
+This tracker uses the Shopify product JSON feeds exposed by the supported roasters and exports snapshots to JSON/CSV plus a SQLite history database.
 
 ## Project Layout
 

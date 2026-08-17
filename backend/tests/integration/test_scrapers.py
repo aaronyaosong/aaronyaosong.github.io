@@ -3,6 +3,7 @@ from __future__ import annotations
 import pytest
 
 from nz_coffee_tracker.scrapers import atomic, rocket
+from nz_coffee_tracker.scrapers import coffee_embassy, eternal, ozone
 from nz_coffee_tracker.database import write_database
 from nz_coffee_tracker.models import CoffeeListing
 from nz_coffee_tracker.shopify_client import ShopifyClient
@@ -131,3 +132,32 @@ def test_scrape_rocket_reuses_detail_for_available_cached_item(
     rows = rocket.scrape_rocket(database_path=database_path)
 
     assert rows[0].size_prices == [{"size_grams": 250.0, "price_nzd": 20.0}]
+
+
+@pytest.mark.integration
+@pytest.mark.parametrize(
+    ("module", "function_name", "expected_source", "expected_collection"),
+    [
+        (ozone, "scrape_ozone", "ozonecoffee.co.nz", "coffee"),
+        (coffee_embassy, "scrape_coffee_embassy", "coffeeembassy.co.nz", "coffee"),
+        (eternal, "scrape_eternal", "eternalcoffee.co.nz", "all"),
+    ],
+)
+def test_additional_scrapers_use_expected_shopify_collection(
+    monkeypatch: pytest.MonkeyPatch,
+    module,
+    function_name: str,
+    expected_source: str,
+    expected_collection: str,
+) -> None:
+    calls = []
+    monkeypatch.setattr(
+        module,
+        "scrape_shopify_collection",
+        lambda source, collection, database_path=None: calls.append((source, collection, database_path)) or [],
+    )
+
+    rows = getattr(module, function_name)()
+
+    assert rows == []
+    assert calls == [(expected_source, expected_collection, None)]
