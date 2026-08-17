@@ -37,7 +37,7 @@ describe("app integration", () => {
         items: [
           {
             source: "rocketcoffee.co.nz",
-            title: "Bravo Espresso",
+            title: "Bravo Blend Espresso",
             category: "espresso roast",
             varietal: "castillo",
             origin_country: "colombia",
@@ -78,9 +78,15 @@ describe("app integration", () => {
     const categoryFilter = document.getElementById("categoryFilter");
     expect([...categoryFilter.options].map((option) => option.value)).toEqual([
       "all",
+      "blend",
       "espresso roast",
       "filter roast",
     ]);
+    categoryFilter.value = "blend";
+    categoryFilter.dispatchEvent(new Event("change"));
+    expect(document.getElementById("resultCount").textContent).toBe("1 result");
+    categoryFilter.value = "all";
+    categoryFilter.dispatchEvent(new Event("change"));
     categoryFilter.value = "espresso roast";
     categoryFilter.dispatchEvent(new Event("change"));
     expect(document.getElementById("resultCount").textContent).toBe("1 result");

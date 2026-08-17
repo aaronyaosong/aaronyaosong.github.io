@@ -37,6 +37,16 @@ export function categories(categoryStr) {
   return String(categoryStr || "").split(",").map((part) => part.trim()).filter(Boolean);
 }
 
+export function isBlend(item) {
+  return /\bblend\b/i.test([item.title, item.handle, item.category, item.tags].filter(Boolean).join(" "));
+}
+
+export function filterCategories(item) {
+  const values = categories(item.category);
+  if (isBlend(item)) values.push("blend");
+  return [...new Set(values)];
+}
+
 export function metadataValue(item, field) {
   if (item[field]) return String(item[field]).trim().toLowerCase();
   if (field === "origin_country") {
@@ -76,7 +86,7 @@ export function filterAndSortItems(
   const term = query.toLowerCase();
   return items
     .filter((item) => {
-      const categoryMatch = activeCategory === "all" || categories(item.category).includes(activeCategory);
+      const categoryMatch = activeCategory === "all" || filterCategories(item).includes(activeCategory);
       const sourceMatch = activeSource === "all" || item.source === activeSource;
       const varietalMatch = activeVarietal === "all" || categories(item.varietal || "").includes(activeVarietal);
       const originMatch = activeOriginCountry === "all" || metadataValue(item, "origin_country") === activeOriginCountry;

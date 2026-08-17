@@ -1,5 +1,6 @@
 import {
   categories,
+  filterCategories,
   filterAndSortItems,
   isDecaf,
   metadataValue,
@@ -149,7 +150,7 @@ export function createApp({
       state.items = payload.items || [];
       populateSelect(
         categorySelect,
-        new Set(state.items.flatMap((item) => categories(item.category))),
+        new Set(state.items.flatMap((item) => filterCategories(item))),
         "All roast types",
         (value) => value.replace(/\b\w/g, (letter) => letter.toUpperCase()),
       );

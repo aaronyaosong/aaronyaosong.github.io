@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   categories,
+  filterCategories,
   filterAndSortItems,
   isDecaf,
   metadataValue,
@@ -43,6 +44,14 @@ describe("coffee-utils unit", () => {
 
   it("splits comma-separated categories", () => {
     expect(categories("filter roast,espresso roast")).toEqual(["filter roast", "espresso roast"]);
+  });
+
+  it("adds blend as a filter category when product text identifies a blend", () => {
+    expect(filterCategories({ title: "House Blend", category: "espresso roast" })).toEqual([
+      "espresso roast",
+      "blend",
+    ]);
+    expect(filterCategories({ title: "Single Origin", category: "filter roast" })).toEqual(["filter roast"]);
   });
 
   it("filters and sorts items by active category and query", () => {
