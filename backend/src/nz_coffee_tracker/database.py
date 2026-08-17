@@ -32,7 +32,13 @@ CREATE TABLE IF NOT EXISTS listings (
     price_max_nzd REAL NOT NULL,
     updated_at TEXT NOT NULL,
     scraped_at TEXT NOT NULL,
-    varietal TEXT NOT NULL
+    varietal TEXT NOT NULL,
+    origin_country TEXT NOT NULL,
+    producer TEXT NOT NULL,
+    process TEXT NOT NULL,
+    decaf INTEGER NOT NULL,
+    description TEXT NOT NULL,
+    flavour_notes TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS size_prices (
@@ -64,6 +70,17 @@ def write_database(
 
     with sqlite3.connect(path) as connection:
         connection.executescript(SCHEMA)
+        existing_columns = {row[1] for row in connection.execute("PRAGMA table_info(listings)")}
+        for column, definition in (
+            ("origin_country", "TEXT NOT NULL DEFAULT 'unknown'"),
+            ("producer", "TEXT NOT NULL DEFAULT 'unknown'"),
+            ("process", "TEXT NOT NULL DEFAULT 'unknown'"),
+            ("decaf", "INTEGER NOT NULL DEFAULT 0"),
+            ("description", "TEXT NOT NULL DEFAULT ''"),
+            ("flavour_notes", "TEXT NOT NULL DEFAULT 'unknown'"),
+        ):
+            if column not in existing_columns:
+                connection.execute(f"ALTER TABLE listings ADD COLUMN {column} {definition}")
         run = connection.execute(
             """
             INSERT INTO scrape_runs (scraped_at, listing_count, include_unavailable, category_filter)
@@ -84,7 +101,8 @@ def write_database(
                 INSERT INTO listings (
                     scrape_run_id, source, product_id, title, category, handle, product_url,
                     available, price_min_nzd, price_max_nzd, updated_at, scraped_at, varietal
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    , origin_country, producer, process, decaf, description, flavour_notes
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     run_id,
@@ -100,6 +118,12 @@ def write_database(
                     item.updated_at,
                     item.scraped_at,
                     item.varietal,
+                    item.origin_country,
+                    item.producer,
+                    item.process,
+                    int(item.decaf),
+                    item.description,
+                    item.flavour_notes,
                 ),
             )
             listing_id = listing.lastrowid
@@ -139,7 +163,7 @@ def has_current_data(
         with sqlite3.connect(path) as connection:
             row = connection.execute(
                 """
-                SELECT listing_count
+                SELECT id, listing_count
                 FROM scrape_runs
                 WHERE date(scraped_at) = ?
                   AND include_unavailable = ?
@@ -152,7 +176,20 @@ def has_current_data(
     except sqlite3.DatabaseError:
         return False
 
-    if not row or row[0] <= 0:
+    if not row or row[1] <= 0:
+        return False
+
+    with sqlite3.connect(path) as connection:
+        incomplete_detail = connection.execute(
+            """
+            SELECT COUNT(*)
+            FROM listings
+            WHERE scrape_run_id = ?
+              AND (description = '' OR flavour_notes = 'unknown')
+            """,
+            (row[0],),
+        ).fetchone()[0]
+    if incomplete_detail:
         return False
 
     latest_json = out_dir / "latest.json"
@@ -173,7 +210,7 @@ def latest_listing(path: Path, source: str, product_id: int) -> dict | None:
             connection.row_factory = sqlite3.Row
             row = connection.execute(
                 """
-                SELECT l.id, l.available
+                SELECT l.id, l.available, l.description, l.flavour_notes
                 FROM listings AS l
                 WHERE l.source = ? AND l.product_id = ?
                 ORDER BY l.id DESC
@@ -189,6 +226,8 @@ def latest_listing(path: Path, source: str, product_id: int) -> dict | None:
             ).fetchall()
             return {
                 "available": bool(row["available"]),
+                "description": row["description"],
+                "flavour_notes": row["flavour_notes"],
                 "size_prices": [dict(size_price) for size_price in size_prices],
             }
     except sqlite3.DatabaseError:

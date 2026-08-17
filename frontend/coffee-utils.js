@@ -92,6 +92,8 @@ export function filterAndSortItems(
         item.origin,
         item.producer,
         item.process,
+        item.description,
+        item.flavour_notes,
       ].join(" ").toLowerCase();
       return categoryMatch
         && sourceMatch

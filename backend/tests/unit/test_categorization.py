@@ -7,6 +7,11 @@ from nz_coffee_tracker.categorization import (
     FILTER_ROAST,
     OTHER_CATEGORY,
     category_values,
+    description_text,
+    infer_flavour_notes,
+    infer_origin_country,
+    infer_process,
+    infer_producer,
     infer_roast_category,
     infer_varietal,
 )
@@ -69,3 +74,16 @@ def test_infer_varietal_detects_multiple_varieties() -> None:
 @pytest.mark.unit
 def test_infer_varietal_unknown_when_not_present() -> None:
     assert infer_varietal({"title": "House Espresso Blend"}) == "unknown"
+
+
+@pytest.mark.unit
+def test_extracts_metadata_and_flavour_notes_from_description() -> None:
+    product = {
+        "title": "Elena Coffee",
+        "body_html": "<p>Origin: Colombia</p><p>Producer: Elena Farm</p><p>Process: washed</p><p>Flavour notes: plum, cocoa and caramel</p>",
+    }
+    assert description_text(product) == "Origin: Colombia Producer: Elena Farm Process: washed Flavour notes: plum, cocoa and caramel"
+    assert infer_origin_country(product) == "Colombia"
+    assert infer_producer(product) == "Elena Farm"
+    assert infer_process(product) == "washed"
+    assert infer_flavour_notes(product) == "plum, cocoa and caramel"

@@ -24,6 +24,7 @@ def test_scrape_rocket_maps_product_payload(monkeypatch: pytest.MonkeyPatch) -> 
         "title": "Rocket Espresso Blend",
         "handle": "rocket-espresso-blend",
         "updated_at": "2026-08-17T00:00:00+12:00",
+        "body_html": "<p>Origin: Colombia</p><p>Producer: Elena Farm</p><p>Flavour notes: plum, cocoa</p>",
         "variants": [
             {"available": False, "price": "22.00", "title": "250g"},
             {"available": True, "price": "60.00", "title": "1kg"},
@@ -47,6 +48,9 @@ def test_scrape_rocket_maps_product_payload(monkeypatch: pytest.MonkeyPatch) -> 
     assert row.price_max_nzd == 60.0
     assert row.size_prices == [{"size_grams": 1000.0, "price_nzd": 60.0}]
     assert row.product_url.endswith("/rocket-espresso-blend")
+    assert row.origin_country == "Colombia"
+    assert row.producer == "Elena Farm"
+    assert row.flavour_notes == "plum, cocoa"
 
 
 @pytest.mark.integration
@@ -115,6 +119,8 @@ def test_scrape_rocket_reuses_detail_for_available_cached_item(
         updated_at="2026-08-17T00:00:00+00:00",
         scraped_at="2026-08-17T00:00:00+00:00",
         size_prices=[{"size_grams": 250.0, "price_nzd": 20.0}],
+        description="Cached description",
+        flavour_notes="chocolate",
     )
     database_path = tmp_path / "history.sqlite3"
     write_database([cached], database_path)

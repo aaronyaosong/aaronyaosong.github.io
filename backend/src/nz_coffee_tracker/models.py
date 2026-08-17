@@ -20,6 +20,12 @@ class CoffeeListing:
     scraped_at: str
     varietal: str = "unknown"
     size_prices: list[dict[str, float]] = field(default_factory=list)
+    origin_country: str = "unknown"
+    producer: str = "unknown"
+    process: str = "unknown"
+    decaf: bool = False
+    description: str = ""
+    flavour_notes: str = "unknown"
 
     def to_dict(self) -> dict:
         return asdict(self)

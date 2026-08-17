@@ -135,6 +135,12 @@ Each row includes:
 - `price_max_nzd`
 - `updated_at`
 - `scraped_at`
+- `origin_country`
+- `producer`
+- `process`
+- `decaf`
+- `description`
+- `flavour_notes`
 
 The SQLite database contains `scrape_runs`, `listings`, and `size_prices` tables. Each tracker run appends a new scrape run and its listing and size-price observations, making historical availability and price analysis possible without parsing snapshot files.
 

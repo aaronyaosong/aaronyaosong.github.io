@@ -232,6 +232,18 @@ h2 {
   color: #3f2f15;
 }
 
+.description,
+.flavour-notes {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.flavour-notes strong {
+  color: var(--text);
+}
+
 .size-prices {
   list-style: none;
   margin: 0 0 10px;

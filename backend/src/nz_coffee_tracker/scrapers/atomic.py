@@ -6,7 +6,16 @@ from typing import Any
 import requests
 from pathlib import Path
 
-from nz_coffee_tracker.categorization import infer_roast_category, infer_varietal
+from nz_coffee_tracker.categorization import (
+    description_text,
+    infer_decaf,
+    infer_flavour_notes,
+    infer_origin_country,
+    infer_process,
+    infer_producer,
+    infer_roast_category,
+    infer_varietal,
+)
 from nz_coffee_tracker.database import latest_listing
 from nz_coffee_tracker.models import CoffeeListing, now_utc_iso
 from nz_coffee_tracker.shopify_client import ShopifyClient
@@ -61,7 +70,14 @@ def scrape_atomic(database_path: Path | None = None) -> list[CoffeeListing]:
         product_id = int(product.get("id", 0))
         collection_available = any(bool(v.get("available")) for v in product.get("variants", []))
         cached = latest_listing(database_path, "atomiccoffee.co.nz", product_id) if database_path else None
-        needs_detail = cached is None or not cached["size_prices"] or not collection_available or not cached["available"]
+        needs_detail = (
+            cached is None
+            or not cached["size_prices"]
+            or not cached.get("description")
+            or cached.get("flavour_notes") in (None, "", "unknown")
+            or not collection_available
+            or not cached["available"]
+        )
         if needs_detail:
             try:
                 product = {**product, **client.fetch_product(handle)}
@@ -92,6 +108,12 @@ def scrape_atomic(database_path: Path | None = None) -> list[CoffeeListing]:
                 scraped_at=scraped_at,
                 varietal=infer_varietal(product),
                 size_prices=size_prices,
+                origin_country=infer_origin_country(product),
+                producer=infer_producer(product),
+                process=infer_process(product),
+                decaf=infer_decaf(product),
+                description=description_text(product),
+                flavour_notes=infer_flavour_notes(product),
             )
         )
 

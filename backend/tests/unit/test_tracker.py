@@ -22,6 +22,8 @@ def _listing(title: str, category: str, available: bool = True) -> CoffeeListing
         price_max_nzd=20.0,
         updated_at="2026-08-17T00:00:00+00:00",
         scraped_at="2026-08-17T00:00:00+00:00",
+        description="Coffee description",
+        flavour_notes="chocolate",
     )
 
 

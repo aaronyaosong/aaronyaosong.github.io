@@ -114,6 +114,12 @@ export function createApp({
             <li><span>${sizeLabel(row.size_grams)}</span><span>NZD $${Number(row.price_nzd).toFixed(2)} (${pricePerGram(row.price_nzd, row.size_grams)})</span></li>
           `).join("")}</ul>`
         : `<p class="price">${nzPrice(item)} <span class="price-note">Size pricing unavailable</span></p>`;
+      const description = item.description
+        ? `<p class="description">${item.description}</p>`
+        : "";
+      const flavourNotes = item.flavour_notes && item.flavour_notes !== "unknown"
+        ? `<p class="flavour-notes"><strong>Flavour notes:</strong> ${item.flavour_notes}</p>`
+        : "";
 
       card.innerHTML = `
         <h3>${item.title}</h3>
@@ -121,6 +127,8 @@ export function createApp({
           <span class="badge source">${sourceName(item.source)}</span>
           ${categoryBadges}
         </div>
+        ${description}
+        ${flavourNotes}
         ${priceDetails}
         <a href="${item.product_url}" target="_blank" rel="noreferrer">View Product</a>
       `;
