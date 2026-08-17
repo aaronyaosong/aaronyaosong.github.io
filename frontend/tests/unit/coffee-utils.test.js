@@ -19,6 +19,9 @@ describe("coffee-utils unit", () => {
   it("maps known sources to display names", () => {
     expect(sourceName("rocketcoffee.co.nz")).toBe("Rocket Coffee");
     expect(sourceName("atomiccoffee.co.nz")).toBe("Atomic Coffee");
+    expect(sourceName("ozonecoffee.co.nz")).toBe("Ozone Coffee");
+    expect(sourceName("coffeeembassy.co.nz")).toBe("Coffee Embassy");
+    expect(sourceName("eternalcoffee.co.nz")).toBe("Eternal Coffee");
   });
 
   it("formats single and ranged NZD prices", () => {
