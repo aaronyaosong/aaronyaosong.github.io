@@ -11,6 +11,7 @@ function buildDom() {
     <select id="sourceFilter"><option value="all">All stores</option></select>
     <select id="decafFilter"><option value="all">All coffees</option><option value="true">Decaf</option></select>
     <select id="blendFilter"><option value="all">All coffees</option><option value="true">Blends only</option><option value="false">No blends</option></select>
+    <select id="sortFilter"><option value="title">A-Z</option><option value="title-desc">Z-A</option><option value="newest">Newest</option><option value="oldest">Oldest</option><option value="price-high">Price: high to low</option><option value="price-low">Price: low to high</option></select>
     <div id="categoryFilters"><span>Roast type</span></div>
     <p id="resultCount"></p>
     <div id="cards"></div>
@@ -78,6 +79,12 @@ describe("app integration", () => {
 
     expect(document.getElementById("resultCount").textContent).toBe("2 results");
     expect(document.querySelectorAll(".card")).toHaveLength(2);
+    const sortFilter = document.getElementById("sortFilter");
+    sortFilter.value = "price-high";
+    sortFilter.dispatchEvent(new Event("change"));
+    expect(document.querySelector(".card h3").textContent).toBe("Alpha Filter");
+    sortFilter.value = "newest";
+    sortFilter.dispatchEvent(new Event("change"));
     expect(document.querySelector(".size-prices").textContent).toContain("250g");
     expect(document.querySelector(".size-prices").textContent).toContain("NZD $0.100/g");
     expect(document.querySelector(".description").hidden).toBe(true);

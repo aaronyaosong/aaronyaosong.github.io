@@ -90,6 +90,7 @@ export function filterAndSortItems(
   activeProcess = "all",
   activeDecaf = "all",
   activeBlend = "all",
+  activeSort = "title",
 ) {
   const term = query.toLowerCase();
   return items
@@ -126,5 +127,15 @@ export function filterAndSortItems(
         && blendMatch
         && searchText.includes(term);
     })
-    .sort((a, b) => a.title.localeCompare(b.title));
+    .sort((a, b) => {
+      if (activeSort === "newest" || activeSort === "oldest") {
+        const difference = new Date(a.updated_at || 0) - new Date(b.updated_at || 0);
+        if (difference) return activeSort === "newest" ? -difference : difference;
+      } else if (activeSort === "price-high" || activeSort === "price-low") {
+        const difference = Number(a.price_min_nzd || 0) - Number(b.price_min_nzd || 0);
+        if (difference) return activeSort === "price-high" ? -difference : difference;
+      }
+      const titleOrder = a.title.localeCompare(b.title);
+      return activeSort === "title-desc" ? -titleOrder : titleOrder;
+    });
 }

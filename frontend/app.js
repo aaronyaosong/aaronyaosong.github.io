@@ -24,6 +24,7 @@ export function createApp({
     activeSource: "all",
     activeBlend: "all",
     activeDecaf: "all",
+    activeSort: "title",
     query: "",
   };
 
@@ -37,6 +38,7 @@ export function createApp({
   const blendSelect = documentRef.getElementById("blendFilter");
   const sourceSelect = documentRef.getElementById("sourceFilter");
   const decafSelect = documentRef.getElementById("decafFilter");
+  const sortSelect = documentRef.getElementById("sortFilter");
 
   function populateSelect(select, values, allLabel, formatValue = (value) => value) {
     select.innerHTML = `<option value="all">${allLabel}</option>`;
@@ -99,6 +101,7 @@ export function createApp({
       "all",
       state.activeDecaf,
       state.activeBlend,
+      state.activeSort,
     );
 
     resultCountEl.textContent = `${rows.length} result${rows.length === 1 ? "" : "s"}`;
@@ -190,6 +193,11 @@ export function createApp({
     renderCards();
   });
 
+  sortSelect.addEventListener("change", (event) => {
+    state.activeSort = event.target.value;
+    renderCards();
+  });
+
   categoryFilters.addEventListener("click", (event) => {
     const button = event.target.closest("button[data-category]");
     if (!button) return;
@@ -235,6 +243,7 @@ function hasRequiredDom(doc) {
     && doc.getElementById("blendFilter")
     && doc.getElementById("sourceFilter")
     && doc.getElementById("decafFilter")
+    && doc.getElementById("sortFilter")
   );
 }
 

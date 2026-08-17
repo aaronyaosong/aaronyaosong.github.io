@@ -77,6 +77,29 @@ describe("coffee-utils unit", () => {
     expect(rows[0].title).toBe("Alpha Filter");
   });
 
+  it("sorts by newest, oldest, and price", () => {
+    const items = [
+      { title: "Older Cheap", updated_at: "2026-08-01", price_min_nzd: 15 },
+      { title: "Newer Expensive", updated_at: "2026-08-17", price_min_nzd: 30 },
+    ];
+
+    expect(filterAndSortItems(items, "all", "", "all", "all", "all", "all", "all", "all", "all", "newest")[0].title)
+      .toBe("Newer Expensive");
+    expect(filterAndSortItems(items, "all", "", "all", "all", "all", "all", "all", "all", "all", "price-low")[0].title)
+      .toBe("Older Cheap");
+    expect(filterAndSortItems(items, "all", "", "all", "all", "all", "all", "all", "all", "all", "price-high")[0].title)
+      .toBe("Newer Expensive");
+  });
+
+  it("sorts alphabetically in both directions", () => {
+    const items = [{ title: "Alpha" }, { title: "Zulu" }];
+
+    expect(filterAndSortItems(items, "all", "", "all", "all", "all", "all", "all", "all", "all", "title").map((item) => item.title))
+      .toEqual(["Alpha", "Zulu"]);
+    expect(filterAndSortItems(items, "all", "", "all", "all", "all", "all", "all", "all", "all", "title-desc").map((item) => item.title))
+      .toEqual(["Zulu", "Alpha"]);
+  });
+
   it("filters items by store and varietal", () => {
     const items = [
       { title: "Zulu Espresso", category: "espresso roast", source: "rocketcoffee.co.nz", varietal: "castillo" },
