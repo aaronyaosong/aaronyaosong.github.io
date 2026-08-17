@@ -33,7 +33,7 @@ export function createApp({
   const updatedEl = documentRef.getElementById("last-updated");
   const errorEl = documentRef.getElementById("errorMessage");
   const searchInput = documentRef.getElementById("searchInput");
-  const categorySelect = documentRef.getElementById("categoryFilter");
+  const categoryFilters = documentRef.getElementById("categoryFilters");
   const blendSelect = documentRef.getElementById("blendFilter");
   const sourceSelect = documentRef.getElementById("sourceFilter");
   const decafSelect = documentRef.getElementById("decafFilter");
@@ -45,6 +45,20 @@ export function createApp({
       option.value = value;
       option.textContent = formatValue(value);
       select.appendChild(option);
+    });
+  }
+
+  function populateCategoryButtons(items) {
+    categoryFilters.innerHTML = "";
+    ["all", ...new Set(items.flatMap((item) => categories(item.category)))].forEach((category) => {
+      const button = documentRef.createElement("button");
+      button.className = `chip${category === "all" ? " active" : ""}`;
+      button.dataset.category = category;
+      button.type = "button";
+      button.textContent = category === "all"
+        ? "All"
+        : category.replace(/\b\w/g, (letter) => letter.toUpperCase());
+      categoryFilters.appendChild(button);
     });
   }
 
@@ -146,12 +160,7 @@ export function createApp({
       const payload = await response.json();
 
       state.items = (payload.items || []).filter((item) => !isSubscription(item));
-      populateSelect(
-        categorySelect,
-        new Set(state.items.flatMap((item) => categories(item.category))),
-        "All roast types",
-        (value) => value.replace(/\b\w/g, (letter) => letter.toUpperCase()),
-      );
+      populateCategoryButtons(state.items);
       populateSelect(sourceSelect, new Set(state.items.map((item) => item.source)), "All stores", sourceName);
       renderStats(state.items, payload.generated_at);
       renderCards();
@@ -181,6 +190,16 @@ export function createApp({
     renderCards();
   });
 
+  categoryFilters.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-category]");
+    if (!button) return;
+    state.activeCategory = button.dataset.category;
+    categoryFilters.querySelectorAll("button").forEach((node) => {
+      node.classList.toggle("active", node === button);
+    });
+    renderCards();
+  });
+
   cardsEl.addEventListener("click", (event) => {
     const toggle = event.target.closest("[data-description-toggle]");
     if (!toggle) return;
@@ -188,11 +207,6 @@ export function createApp({
     const isHidden = description.hidden;
     description.hidden = !isHidden;
     toggle.textContent = isHidden ? "Hide description" : "Show description";
-  });
-
-  categorySelect.addEventListener("change", (event) => {
-    state.activeCategory = event.target.value;
-    renderCards();
   });
 
   return {
@@ -217,7 +231,7 @@ function hasRequiredDom(doc) {
     && doc.getElementById("errorMessage")
     && doc.getElementById("searchInput")
     && doc.getElementById("categoryFilters")
-    && doc.getElementById("categoryFilter")
+    && doc.getElementById("categoryFilters")
     && doc.getElementById("blendFilter")
     && doc.getElementById("sourceFilter")
     && doc.getElementById("decafFilter")

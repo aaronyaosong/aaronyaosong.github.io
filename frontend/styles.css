@@ -125,6 +125,12 @@ input[type="search"]:focus {
   gap: 8px;
 }
 
+.filter-label {
+  flex-basis: 100%;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
 .select-filters {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

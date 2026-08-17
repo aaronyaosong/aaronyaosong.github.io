@@ -11,9 +11,7 @@ function buildDom() {
     <select id="sourceFilter"><option value="all">All stores</option></select>
     <select id="decafFilter"><option value="all">All coffees</option><option value="true">Decaf</option></select>
     <select id="blendFilter"><option value="all">All coffees</option><option value="true">Blends only</option><option value="false">No blends</option></select>
-    <div id="categoryFilters">
-      <select id="categoryFilter"><option value="all">All roast types</option></select>
-    </div>
+    <div id="categoryFilters"><span>Roast type</span></div>
     <p id="resultCount"></p>
     <div id="cards"></div>
     <p id="errorMessage" hidden></p>
@@ -89,8 +87,8 @@ describe("app integration", () => {
     expect(document.querySelector(".description").hidden).toBe(false);
     expect(document.querySelector(".flavour-notes").textContent).toContain("plum and caramel");
 
-    const categoryFilter = document.getElementById("categoryFilter");
-    expect([...categoryFilter.options].map((option) => option.value)).toEqual([
+    const categoryFilters = document.getElementById("categoryFilters");
+    expect([...categoryFilters.querySelectorAll("button")].map((button) => button.dataset.category)).toEqual([
       "all",
       "espresso roast",
       "filter roast",
@@ -101,11 +99,9 @@ describe("app integration", () => {
     expect(document.getElementById("resultCount").textContent).toBe("1 result");
     blendFilter.value = "all";
     blendFilter.dispatchEvent(new Event("change"));
-    categoryFilter.value = "espresso roast";
-    categoryFilter.dispatchEvent(new Event("change"));
+    categoryFilters.querySelector('[data-category="espresso roast"]').click();
     expect(document.getElementById("resultCount").textContent).toBe("1 result");
-    categoryFilter.value = "all";
-    categoryFilter.dispatchEvent(new Event("change"));
+    categoryFilters.querySelector('[data-category="all"]').click();
 
     const searchInput = document.getElementById("searchInput");
     searchInput.value = "alpha";
