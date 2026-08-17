@@ -1,6 +1,8 @@
 # NZ Coffee Release Tracker
 
-Track what coffee is currently available in New Zealand, starting with:
+This site is hosted as a GitHub user site at the moment (thus the repo name).
+
+Tracks what coffee is currently available in New Zealand, starting with:
 
 - Rocket Coffee (`rocketcoffee.co.nz`)
 - Atomic Coffee (`atomiccoffee.co.nz`)
