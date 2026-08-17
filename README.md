@@ -69,6 +69,17 @@ Useful flags:
 - `--no-category-filter` include all product categories
 - `--database path/to/history.sqlite3` choose the SQLite history database path
 
+Create a new Shopify scraper scaffold:
+
+```bash
+PYTHONPATH=backend/src python -m nz_coffee_tracker.cli \
+	--new-scraper example_coffee \
+	--website examplecoffee.co.nz \
+	--collection coffee
+```
+
+This creates a site scraper in `backend/src/nz_coffee_tracker/scrapers/` and an integration-test stub in `backend/tests/integration/`. Review the generated field mapping and register the scraper in `tracker.py` before running it.
+
 When the matching database run and requested latest output files already contain data from today (UTC), the CLI skips scraping. If the database or requested output is missing or empty, it scrapes again.
 
 ## Testing

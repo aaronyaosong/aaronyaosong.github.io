@@ -4,6 +4,7 @@ import argparse
 from pathlib import Path
 
 from nz_coffee_tracker.database import has_current_data
+from nz_coffee_tracker.scaffold import scaffold_scraper
 from nz_coffee_tracker.tracker import collect_listings, persist_snapshots
 
 
@@ -45,12 +46,42 @@ def build_parser() -> argparse.ArgumentParser:
         type=Path,
         help="SQLite history database path (default: <out-dir>/history.sqlite3)",
     )
+    parser.add_argument(
+        "--new-scraper",
+        metavar="NAME",
+        help="Create a new scraper module and integration-test stub",
+    )
+    parser.add_argument(
+        "--website",
+        help="Website hostname for --new-scraper, for example roaster.example",
+    )
+    parser.add_argument(
+        "--collection",
+        help="Shopify collection handle for --new-scraper",
+    )
     return parser
 
 
 def main() -> int:
     parser = build_parser()
     args = parser.parse_args()
+
+    if args.new_scraper:
+        if not args.website or not args.collection:
+            parser.error("--new-scraper requires --website and --collection")
+        try:
+            scraper_path, test_path = scaffold_scraper(
+                args.new_scraper,
+                args.website,
+                args.collection,
+                Path.cwd(),
+            )
+        except (FileExistsError, ValueError) as error:
+            parser.error(str(error))
+        print(f"scraper: {scraper_path}")
+        print(f"test: {test_path}")
+        print("Review the generated scraper, then register it in tracker.py.")
+        return 0
 
     # `None` means "include all categories" in the tracker pipeline.
     allowed_categories = None if args.no_category_filter else _parse_categories(args.categories)
