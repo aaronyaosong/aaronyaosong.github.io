@@ -3,6 +3,8 @@ from __future__ import annotations
 import pytest
 
 from nz_coffee_tracker.scrapers import atomic, rocket
+from nz_coffee_tracker.database import write_database
+from nz_coffee_tracker.models import CoffeeListing
 from nz_coffee_tracker.shopify_client import ShopifyClient
 
 
@@ -86,3 +88,40 @@ def test_scrape_atomic_handles_missing_prices(monkeypatch: pytest.MonkeyPatch) -
     assert row.price_min_nzd == 0.0
     assert row.price_max_nzd == 0.0
     assert row.size_prices == []
+
+
+@pytest.mark.integration
+def test_scrape_rocket_reuses_detail_for_available_cached_item(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path,
+) -> None:
+    product = {
+        "id": 333,
+        "title": "Cached Coffee",
+        "handle": "cached-coffee",
+        "updated_at": "2026-08-17T00:00:00+00:00",
+        "variants": [{"available": True, "price": "22.00", "title": "250g"}],
+    }
+    cached = CoffeeListing(
+        source="rocketcoffee.co.nz",
+        product_id=333,
+        title="Cached Coffee",
+        category="filter roast",
+        handle="cached-coffee",
+        product_url="https://rocketcoffee.co.nz/products/cached-coffee",
+        available=True,
+        price_min_nzd=20.0,
+        price_max_nzd=20.0,
+        updated_at="2026-08-17T00:00:00+00:00",
+        scraped_at="2026-08-17T00:00:00+00:00",
+        size_prices=[{"size_grams": 250.0, "price_nzd": 20.0}],
+    )
+    database_path = tmp_path / "history.sqlite3"
+    write_database([cached], database_path)
+
+    monkeypatch.setattr(rocket.ShopifyClient, "fetch_collection_products", lambda self, handle: [product])
+    monkeypatch.setattr(rocket.ShopifyClient, "fetch_product", lambda self, handle: pytest.fail("detail should not be fetched"))
+
+    rows = rocket.scrape_rocket(database_path=database_path)
+
+    assert rows[0].size_prices == [{"size_grams": 250.0, "price_nzd": 20.0}]

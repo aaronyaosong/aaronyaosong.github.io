@@ -4,8 +4,10 @@ import re
 from typing import Any
 
 import requests
+from pathlib import Path
 
 from nz_coffee_tracker.categorization import infer_roast_category, infer_varietal
+from nz_coffee_tracker.database import latest_listing
 from nz_coffee_tracker.models import CoffeeListing, now_utc_iso
 from nz_coffee_tracker.shopify_client import ShopifyClient
 
@@ -47,7 +49,7 @@ def _size_prices(variants: list[dict[str, Any]]) -> list[dict[str, float]]:
     return rows
 
 
-def scrape_atomic() -> list[CoffeeListing]:
+def scrape_atomic(database_path: Path | None = None) -> list[CoffeeListing]:
     # Atomic exposes beans under the Shopify collection handle "coffee-beans".
     client = ShopifyClient("https://atomiccoffee.co.nz")
     products = client.fetch_collection_products("coffee-beans")
@@ -56,10 +58,15 @@ def scrape_atomic() -> list[CoffeeListing]:
     listings: list[CoffeeListing] = []
     for product in products:
         handle = str(product.get("handle", "")).strip()
-        try:
-            product = {**product, **client.fetch_product(handle)}
-        except requests.RequestException:
-            pass
+        product_id = int(product.get("id", 0))
+        collection_available = any(bool(v.get("available")) for v in product.get("variants", []))
+        cached = latest_listing(database_path, "atomiccoffee.co.nz", product_id) if database_path else None
+        needs_detail = cached is None or not cached["size_prices"] or not collection_available or not cached["available"]
+        if needs_detail:
+            try:
+                product = {**product, **client.fetch_product(handle)}
+            except requests.RequestException:
+                pass
         # Collapse variant-level availability and price into one listing row.
         variants = product.get("variants", [])
         prices = _variant_prices(variants)
@@ -69,6 +76,7 @@ def scrape_atomic() -> list[CoffeeListing]:
         if not prices:
             prices = [0.0]
 
+        size_prices = cached["size_prices"] if cached and not needs_detail else _size_prices(variants)
         listings.append(
             CoffeeListing(
                 source="atomiccoffee.co.nz",
@@ -83,7 +91,7 @@ def scrape_atomic() -> list[CoffeeListing]:
                 updated_at=str(product.get("updated_at", "")),
                 scraped_at=scraped_at,
                 varietal=infer_varietal(product),
-                size_prices=_size_prices(variants),
+                size_prices=size_prices,
             )
         )
 

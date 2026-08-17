@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from nz_coffee_tracker.categorization import category_values
+from nz_coffee_tracker.database import write_database
 from nz_coffee_tracker.models import CoffeeListing
 from nz_coffee_tracker.scrapers.atomic import scrape_atomic
 from nz_coffee_tracker.scrapers.rocket import scrape_rocket
@@ -25,9 +26,16 @@ def _matches_categories(item: CoffeeListing, allowed_categories: set[str] | None
 def collect_listings(
     include_unavailable: bool = False,
     allowed_categories: set[str] | None = DEFAULT_ALLOWED_CATEGORIES,
+    database_path: Path | None = None,
 ) -> list[CoffeeListing]:
     # Aggregate all sources first, then apply shared filtering in one place.
-    listings = [*scrape_rocket(), *scrape_atomic()]
+    if database_path is None:
+        listings = [*scrape_rocket(), *scrape_atomic()]
+    else:
+        listings = [
+            *scrape_rocket(database_path=database_path),
+            *scrape_atomic(database_path=database_path),
+        ]
 
     filtered = [item for item in listings if _matches_categories(item, allowed_categories)]
     if include_unavailable:
@@ -65,7 +73,14 @@ def write_csv(listings: Iterable[CoffeeListing], path: Path) -> None:
         writer.writerows(rows)
 
 
-def persist_snapshots(listings: list[CoffeeListing], out_dir: Path, output_format: str = "both") -> dict[str, Path]:
+def persist_snapshots(
+    listings: list[CoffeeListing],
+    out_dir: Path,
+    output_format: str = "both",
+    database_path: Path | None = None,
+    include_unavailable: bool = False,
+    category_filter: set[str] | None = None,
+) -> dict[str, Path]:
     # Write both "latest" files and timestamped history files in one pass.
     out_dir.mkdir(parents=True, exist_ok=True)
     stamp = _timestamp_slug()
@@ -86,5 +101,13 @@ def persist_snapshots(listings: list[CoffeeListing], out_dir: Path, output_forma
         write_csv(listings, snap_csv)
         written["latest_csv"] = latest_csv
         written["snapshot_csv"] = snap_csv
+
+    if database_path is not None:
+        written["database"] = write_database(
+            listings,
+            database_path,
+            include_unavailable=include_unavailable,
+            category_filter=category_filter,
+        )
 
     return written

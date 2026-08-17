@@ -5,7 +5,7 @@ Track what coffee is currently available in New Zealand, starting with:
 - Rocket Coffee (`rocketcoffee.co.nz`)
 - Atomic Coffee (`atomiccoffee.co.nz`)
 
-This tracker uses the Shopify product JSON feeds exposed by both stores and exports snapshots to JSON/CSV.
+This tracker uses the Shopify product JSON feeds exposed by both stores and exports snapshots to JSON/CSV plus a SQLite history database.
 
 ## Project Layout
 
@@ -52,6 +52,7 @@ PYTHONPATH=backend/src python -m nz_coffee_tracker.cli --out-dir frontend/data
 - `latest.json`
 - `latest.csv`
 - timestamped snapshots (for history)
+- `history.sqlite3` (append-only historical database)
 
 ## Command Options
 
@@ -66,6 +67,9 @@ Useful flags:
 - `--all` include unavailable products (default is available-only)
 - `--categories "filter roast,espresso roast"` include only selected categories
 - `--no-category-filter` include all product categories
+- `--database path/to/history.sqlite3` choose the SQLite history database path
+
+When the matching database run and requested latest output files already contain data from today (UTC), the CLI skips scraping. If the database or requested output is missing or empty, it scrapes again.
 
 ## Testing
 
@@ -131,6 +135,8 @@ Each row includes:
 - `price_max_nzd`
 - `updated_at`
 - `scraped_at`
+
+The SQLite database contains `scrape_runs`, `listings`, and `size_prices` tables. Each tracker run appends a new scrape run and its listing and size-price observations, making historical availability and price analysis possible without parsing snapshot files.
 
 ## Notes
 

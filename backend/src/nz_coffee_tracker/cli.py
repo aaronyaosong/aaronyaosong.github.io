@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+from nz_coffee_tracker.database import has_current_data
 from nz_coffee_tracker.tracker import collect_listings, persist_snapshots
 
 
@@ -39,6 +40,11 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Disable category filtering and include all categories",
     )
+    parser.add_argument(
+        "--database",
+        type=Path,
+        help="SQLite history database path (default: <out-dir>/history.sqlite3)",
+    )
     return parser
 
 
@@ -48,8 +54,31 @@ def main() -> int:
 
     # `None` means "include all categories" in the tracker pipeline.
     allowed_categories = None if args.no_category_filter else _parse_categories(args.categories)
-    listings = collect_listings(include_unavailable=args.all, allowed_categories=allowed_categories)
-    written = persist_snapshots(listings, Path(args.out_dir), output_format=args.format)
+    out_dir = Path(args.out_dir)
+    database_path = args.database or out_dir / "history.sqlite3"
+    if has_current_data(
+        database_path,
+        out_dir,
+        args.format,
+        include_unavailable=args.all,
+        category_filter=allowed_categories,
+    ):
+        print("Data already scraped today; skipping scrape.")
+        return 0
+
+    listings = collect_listings(
+        include_unavailable=args.all,
+        allowed_categories=allowed_categories,
+        database_path=database_path,
+    )
+    written = persist_snapshots(
+        listings,
+        out_dir,
+        output_format=args.format,
+        database_path=database_path,
+        include_unavailable=args.all,
+        category_filter=allowed_categories,
+    )
 
     print(f"Collected {len(listings)} products.")
     if allowed_categories is None:

@@ -30,7 +30,7 @@ def test_cli_writes_filtered_csv_and_json(monkeypatch: pytest.MonkeyPatch, tmp_p
     monkeypatch.setattr(
         tracker,
         "scrape_rocket",
-        lambda: [
+        lambda **kwargs: [
             _listing("Filter Coffee", "filter roast", available=True),
             _listing("Merch Item", "other", available=True),
         ],
@@ -38,7 +38,7 @@ def test_cli_writes_filtered_csv_and_json(monkeypatch: pytest.MonkeyPatch, tmp_p
     monkeypatch.setattr(
         tracker,
         "scrape_atomic",
-        lambda: [
+        lambda **kwargs: [
             _listing("Espresso Coffee", "espresso roast", available=True),
             _listing("Unavailable Espresso", "espresso roast", available=False),
         ],
@@ -52,6 +52,7 @@ def test_cli_writes_filtered_csv_and_json(monkeypatch: pytest.MonkeyPatch, tmp_p
     assert exit_code == 0
     assert (out_dir / "latest.csv").exists()
     assert (out_dir / "latest.json").exists()
+    assert (out_dir / "history.sqlite3").exists()
     assert len(list(out_dir.glob("*.csv"))) >= 2
     assert len(list(out_dir.glob("*.json"))) >= 2
 
@@ -67,3 +68,19 @@ def test_cli_writes_filtered_csv_and_json(monkeypatch: pytest.MonkeyPatch, tmp_p
 
     output = capsys.readouterr().out
     assert "Category filter: espresso roast, filter roast" in output
+
+
+@pytest.mark.e2e
+def test_cli_skips_second_scrape_when_today_data_exists(monkeypatch: pytest.MonkeyPatch, tmp_path, capsys) -> None:
+    listing = _listing("Filter Coffee", "filter roast", available=True)
+    monkeypatch.setattr(tracker, "scrape_rocket", lambda **kwargs: [listing])
+    monkeypatch.setattr(tracker, "scrape_atomic", lambda **kwargs: [])
+    out_dir = tmp_path / "output"
+    monkeypatch.setattr("sys.argv", ["prog", "--out-dir", str(out_dir), "--format", "both"])
+
+    assert cli.main() == 0
+    monkeypatch.setattr(tracker, "scrape_rocket", lambda **kwargs: pytest.fail("scraper should not run"))
+    monkeypatch.setattr(tracker, "scrape_atomic", lambda **kwargs: pytest.fail("scraper should not run"))
+
+    assert cli.main() == 0
+    assert "Data already scraped today; skipping scrape." in capsys.readouterr().out
