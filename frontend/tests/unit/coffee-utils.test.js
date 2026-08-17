@@ -1,6 +1,13 @@
 import { describe, expect, it } from "vitest";
 
-import { categories, filterAndSortItems, nzPrice, sourceName } from "../../coffee-utils.js";
+import {
+  categories,
+  filterAndSortItems,
+  isDecaf,
+  metadataValue,
+  nzPrice,
+  sourceName,
+} from "../../coffee-utils.js";
 
 
 describe("coffee-utils unit", () => {
@@ -38,5 +45,39 @@ describe("coffee-utils unit", () => {
 
     const rows = filterAndSortItems(items, "all", "", "atomiccoffee.co.nz", "catuai");
     expect(rows.map((item) => item.title)).toEqual(["Alpha Filter"]);
+  });
+
+  it("filters items by origin, producer, process, and decaf", () => {
+    const items = [
+      {
+        title: "Washed Colombia",
+        category: "filter roast",
+        source: "rocketcoffee.co.nz",
+        origin_country: "colombia",
+        producer: "Farm A",
+        process: "washed",
+        decaf: false,
+      },
+      {
+        title: "Natural Brazil Decaf",
+        category: "filter roast",
+        source: "atomiccoffee.co.nz",
+        origin_country: "brazil",
+        producer: "Farm B",
+        process: "natural",
+        decaf: true,
+      },
+    ];
+
+    const rows = filterAndSortItems(items, "all", "", "all", "all", "brazil", "farm b", "natural", "true");
+    expect(rows.map((item) => item.title)).toEqual(["Natural Brazil Decaf"]);
+  });
+
+  it("derives process and decaf values when metadata is absent", () => {
+    const item = { title: "Arturo Arango - Colombia [natural] decaff" };
+    expect(metadataValue(item, "origin_country")).toBe("colombia");
+    expect(metadataValue(item, "producer")).toBe("arturo arango");
+    expect(metadataValue(item, "process")).toBe("natural");
+    expect(isDecaf(item)).toBe(true);
   });
 });

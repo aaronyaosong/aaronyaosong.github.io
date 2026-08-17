@@ -10,6 +10,10 @@ function buildDom() {
     <input id="searchInput" />
     <select id="sourceFilter"><option value="all">All stores</option></select>
     <select id="varietalFilter"><option value="all">All varietals</option></select>
+    <select id="originCountryFilter"><option value="all">All origin countries</option></select>
+    <select id="producerFilter"><option value="all">All producers</option></select>
+    <select id="processFilter"><option value="all">All processes</option></select>
+    <select id="decafFilter"><option value="all">All coffees</option><option value="true">Decaf</option></select>
     <div id="categoryFilters">
       <button class="chip active" data-category="all" type="button">All</button>
       <button class="chip" data-category="filter roast" type="button">Filter Roast</button>
@@ -38,6 +42,10 @@ describe("app integration", () => {
             title: "Bravo Espresso",
             category: "espresso roast",
             varietal: "castillo",
+            origin_country: "colombia",
+            producer: "bravo farm",
+            process: "washed",
+            decaf: false,
             price_min_nzd: 20,
             price_max_nzd: 20,
             product_url: "https://example.com/b",
@@ -47,6 +55,10 @@ describe("app integration", () => {
             title: "Alpha Filter",
             category: "filter roast",
             varietal: "caturra",
+            origin_country: "brazil",
+            producer: "alpha farm",
+            process: "natural",
+            decaf: true,
             price_min_nzd: 25,
             price_max_nzd: 30,
             product_url: "https://example.com/a",
@@ -79,5 +91,14 @@ describe("app integration", () => {
     varietalFilter.value = "castillo";
     varietalFilter.dispatchEvent(new Event("change"));
     expect(document.getElementById("resultCount").textContent).toBe("0 results");
+
+    sourceFilter.value = "all";
+    sourceFilter.dispatchEvent(new Event("change"));
+    varietalFilter.value = "all";
+    varietalFilter.dispatchEvent(new Event("change"));
+    const decafFilter = document.getElementById("decafFilter");
+    decafFilter.value = "true";
+    decafFilter.dispatchEvent(new Event("change"));
+    expect(document.getElementById("resultCount").textContent).toBe("1 result");
   });
 });

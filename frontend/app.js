@@ -1,4 +1,11 @@
-import { categories, filterAndSortItems, nzPrice, sourceName } from "./coffee-utils.js";
+import {
+  categories,
+  filterAndSortItems,
+  isDecaf,
+  metadataValue,
+  nzPrice,
+  sourceName,
+} from "./coffee-utils.js";
 
 export function createApp({
   documentRef = document,
@@ -11,6 +18,10 @@ export function createApp({
     activeCategory: "all",
     activeSource: "all",
     activeVarietal: "all",
+    activeOriginCountry: "all",
+    activeProducer: "all",
+    activeProcess: "all",
+    activeDecaf: "all",
     query: "",
   };
 
@@ -23,6 +34,10 @@ export function createApp({
   const filterWrap = documentRef.getElementById("categoryFilters");
   const sourceSelect = documentRef.getElementById("sourceFilter");
   const varietalSelect = documentRef.getElementById("varietalFilter");
+  const originCountrySelect = documentRef.getElementById("originCountryFilter");
+  const producerSelect = documentRef.getElementById("producerFilter");
+  const processSelect = documentRef.getElementById("processFilter");
+  const decafSelect = documentRef.getElementById("decafFilter");
 
   function populateSelect(select, values, allLabel, formatValue = (value) => value) {
     select.innerHTML = `<option value="all">${allLabel}</option>`;
@@ -66,6 +81,10 @@ export function createApp({
       state.query,
       state.activeSource,
       state.activeVarietal,
+      state.activeOriginCountry,
+      state.activeProducer,
+      state.activeProcess,
+      state.activeDecaf,
     );
 
     resultCountEl.textContent = `${rows.length} result${rows.length === 1 ? "" : "s"}`;
@@ -116,6 +135,9 @@ export function createApp({
         new Set(state.items.flatMap((item) => categories(item.varietal || ""))),
         "All varietals",
       );
+      populateSelect(originCountrySelect, new Set(state.items.map((item) => metadataValue(item, "origin_country"))), "All origin countries");
+      populateSelect(producerSelect, new Set(state.items.map((item) => metadataValue(item, "producer"))), "All producers");
+      populateSelect(processSelect, new Set(state.items.map((item) => metadataValue(item, "process"))), "All processes");
       renderStats(state.items, payload.generated_at);
       renderCards();
     } catch (err) {
@@ -136,6 +158,26 @@ export function createApp({
 
   varietalSelect.addEventListener("change", (event) => {
     state.activeVarietal = event.target.value;
+    renderCards();
+  });
+
+  originCountrySelect.addEventListener("change", (event) => {
+    state.activeOriginCountry = event.target.value;
+    renderCards();
+  });
+
+  producerSelect.addEventListener("change", (event) => {
+    state.activeProducer = event.target.value;
+    renderCards();
+  });
+
+  processSelect.addEventListener("change", (event) => {
+    state.activeProcess = event.target.value;
+    renderCards();
+  });
+
+  decafSelect.addEventListener("change", (event) => {
+    state.activeDecaf = event.target.value;
     renderCards();
   });
 
@@ -175,6 +217,10 @@ function hasRequiredDom(doc) {
     && doc.getElementById("categoryFilters")
     && doc.getElementById("sourceFilter")
     && doc.getElementById("varietalFilter")
+    && doc.getElementById("originCountryFilter")
+    && doc.getElementById("producerFilter")
+    && doc.getElementById("processFilter")
+    && doc.getElementById("decafFilter")
   );
 }
 
