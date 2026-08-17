@@ -43,6 +43,22 @@ Useful flags:
 - `--categories "filter roast,espresso roast"` include only selected categories
 - `--no-category-filter` include all product categories
 
+## Testing
+
+Run all tests:
+
+```bash
+PYTHONPATH=src .venv/bin/python -m pytest
+```
+
+Run by layer:
+
+```bash
+PYTHONPATH=src .venv/bin/python -m pytest -m unit
+PYTHONPATH=src .venv/bin/python -m pytest -m integration
+PYTHONPATH=src .venv/bin/python -m pytest -m e2e
+```
+
 ## Data Fields
 
 Each row includes:
