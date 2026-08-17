@@ -15,9 +15,7 @@ function buildDom() {
     <select id="processFilter"><option value="all">All processes</option></select>
     <select id="decafFilter"><option value="all">All coffees</option><option value="true">Decaf</option></select>
     <div id="categoryFilters">
-      <button class="chip active" data-category="all" type="button">All</button>
-      <button class="chip" data-category="filter roast" type="button">Filter Roast</button>
-      <button class="chip" data-category="espresso roast" type="button">Espresso Roast</button>
+      <select id="categoryFilter"><option value="all">All roast types</option></select>
     </div>
     <p id="resultCount"></p>
     <div id="cards"></div>
@@ -72,6 +70,18 @@ describe("app integration", () => {
 
     expect(document.getElementById("resultCount").textContent).toBe("2 results");
     expect(document.querySelectorAll(".card")).toHaveLength(2);
+
+    const categoryFilter = document.getElementById("categoryFilter");
+    expect([...categoryFilter.options].map((option) => option.value)).toEqual([
+      "all",
+      "espresso roast",
+      "filter roast",
+    ]);
+    categoryFilter.value = "espresso roast";
+    categoryFilter.dispatchEvent(new Event("change"));
+    expect(document.getElementById("resultCount").textContent).toBe("1 result");
+    categoryFilter.value = "all";
+    categoryFilter.dispatchEvent(new Event("change"));
 
     const searchInput = document.getElementById("searchInput");
     searchInput.value = "alpha";

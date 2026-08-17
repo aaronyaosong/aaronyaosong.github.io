@@ -31,7 +31,7 @@ export function createApp({
   const updatedEl = documentRef.getElementById("last-updated");
   const errorEl = documentRef.getElementById("errorMessage");
   const searchInput = documentRef.getElementById("searchInput");
-  const filterWrap = documentRef.getElementById("categoryFilters");
+  const categorySelect = documentRef.getElementById("categoryFilter");
   const sourceSelect = documentRef.getElementById("sourceFilter");
   const varietalSelect = documentRef.getElementById("varietalFilter");
   const originCountrySelect = documentRef.getElementById("originCountryFilter");
@@ -129,6 +129,12 @@ export function createApp({
       const payload = await response.json();
 
       state.items = payload.items || [];
+      populateSelect(
+        categorySelect,
+        new Set(state.items.flatMap((item) => categories(item.category))),
+        "All roast types",
+        (value) => value.replace(/\b\w/g, (letter) => letter.toUpperCase()),
+      );
       populateSelect(sourceSelect, new Set(state.items.map((item) => item.source)), "All stores", sourceName);
       populateSelect(
         varietalSelect,
@@ -181,15 +187,8 @@ export function createApp({
     renderCards();
   });
 
-  filterWrap.addEventListener("click", (event) => {
-    const button = event.target.closest("button[data-category]");
-    if (!button) return;
-    state.activeCategory = button.dataset.category;
-
-    filterWrap.querySelectorAll("button").forEach((node) => {
-      node.classList.toggle("active", node === button);
-    });
-
+  categorySelect.addEventListener("change", (event) => {
+    state.activeCategory = event.target.value;
     renderCards();
   });
 
@@ -215,6 +214,7 @@ function hasRequiredDom(doc) {
     && doc.getElementById("errorMessage")
     && doc.getElementById("searchInput")
     && doc.getElementById("categoryFilters")
+    && doc.getElementById("categoryFilter")
     && doc.getElementById("sourceFilter")
     && doc.getElementById("varietalFilter")
     && doc.getElementById("originCountryFilter")
