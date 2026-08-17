@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NZ Coffee Availability</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">NZ Coffee Release Tracker</p>
+      <h1>What coffee is available right now in NZ?</h1>
+      <p class="subtitle">Live snapshot from Rocket Coffee and Atomic Coffee. Updated daily.</p>
+      <div class="stats" id="stats"></div>
+      <p class="meta" id="last-updated">Loading latest data...</p>
+    </section>
+
+    <section class="controls">
+      <label class="search-wrap" for="searchInput">
+        <span>Search coffees</span>
+        <input id="searchInput" type="search" placeholder="Try: decaf, colombia, espresso blend">
+      </label>
+
+      <div class="filters" id="categoryFilters">
+        <button class="chip active" data-category="all" type="button">All</button>
+        <button class="chip" data-category="filter roast" type="button">Filter Roast</button>
+        <button class="chip" data-category="espresso roast" type="button">Espresso Roast</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="list-head">
+        <h2>Available Coffees</h2>
+        <p id="resultCount">0 results</p>
+      </div>
+      <div class="cards" id="cards"></div>
+      <p class="error" id="errorMessage" hidden></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

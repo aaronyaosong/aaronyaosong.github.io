@@ -1,0 +1,47 @@
+name: Daily Coffee Scrape
+
+on:
+  schedule:
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      - name: Run scraper
+        run: |
+          PYTHONPATH=backend/src python -m nz_coffee_tracker.cli --out-dir frontend/data --format json
+
+      - name: Keep latest JSON only
+        run: |
+          find frontend/data -type f -name "*.json" ! -name "latest.json" -delete
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/data/latest.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: daily coffee snapshot"
+          git push
