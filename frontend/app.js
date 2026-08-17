@@ -1,3 +1,4 @@
+// Minimal client-side state for search and category filtering.
 const state = {
   items: [],
   activeCategory: "all",
@@ -30,6 +31,7 @@ function categories(categoryStr) {
 }
 
 function renderStats(items, generatedAt) {
+  // Build per-source summary cards from the already-filtered item list.
   const bySource = items.reduce((acc, item) => {
     acc[item.source] = (acc[item.source] || 0) + 1;
     return acc;
@@ -55,6 +57,7 @@ function renderStats(items, generatedAt) {
 }
 
 function renderCards() {
+  // Apply search + category filters before rendering cards.
   const term = state.query.toLowerCase();
   const rows = state.items.filter((item) => {
     const categoryMatch =
@@ -105,6 +108,7 @@ function renderCards() {
 
 async function loadData() {
   try {
+    // Frontend is static, so it reads the latest generated snapshot JSON.
     const response = await fetch("./data/latest.json", { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
@@ -137,4 +141,5 @@ filterWrap.addEventListener("click", (event) => {
   renderCards();
 });
 
+// Initial render bootstrap.
 loadData();

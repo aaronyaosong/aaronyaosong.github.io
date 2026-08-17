@@ -16,6 +16,7 @@ DEFAULT_ALLOWED_CATEGORIES = {"filter roast", "espresso roast"}
 
 
 def _matches_categories(item: CoffeeListing, allowed_categories: set[str] | None) -> bool:
+    # None means no category filter; otherwise include any overlapping category token.
     if allowed_categories is None:
         return True
     return bool(category_values(item.category) & allowed_categories)
@@ -25,6 +26,7 @@ def collect_listings(
     include_unavailable: bool = False,
     allowed_categories: set[str] | None = DEFAULT_ALLOWED_CATEGORIES,
 ) -> list[CoffeeListing]:
+    # Aggregate all sources first, then apply shared filtering in one place.
     listings = [*scrape_rocket(), *scrape_atomic()]
 
     filtered = [item for item in listings if _matches_categories(item, allowed_categories)]
@@ -34,10 +36,12 @@ def collect_listings(
 
 
 def _timestamp_slug() -> str:
+    # File-safe timestamp used for historical snapshot filenames.
     return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
 
 
 def write_json(listings: Iterable[CoffeeListing], path: Path) -> None:
+    # JSON is the frontend data contract and includes metadata for UI display.
     rows = [item.to_dict() for item in listings]
     payload = {
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
@@ -48,6 +52,7 @@ def write_json(listings: Iterable[CoffeeListing], path: Path) -> None:
 
 
 def write_csv(listings: Iterable[CoffeeListing], path: Path) -> None:
+    # CSV remains useful for manual inspection and spreadsheet analysis.
     rows = [item.to_dict() for item in listings]
     if not rows:
         path.write_text("", encoding="utf-8")
@@ -61,6 +66,7 @@ def write_csv(listings: Iterable[CoffeeListing], path: Path) -> None:
 
 
 def persist_snapshots(listings: list[CoffeeListing], out_dir: Path, output_format: str = "both") -> dict[str, Path]:
+    # Write both "latest" files and timestamped history files in one pass.
     out_dir.mkdir(parents=True, exist_ok=True)
     stamp = _timestamp_slug()
     written: dict[str, Path] = {}

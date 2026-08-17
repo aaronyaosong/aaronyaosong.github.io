@@ -7,6 +7,7 @@ from nz_coffee_tracker.scrapers import atomic, rocket
 
 @pytest.mark.integration
 def test_scrape_rocket_maps_product_payload(monkeypatch: pytest.MonkeyPatch) -> None:
+    # Integration-level mapping check from Shopify payload to CoffeeListing.
     product = {
         "id": 111,
         "title": "Rocket Espresso Blend",
@@ -36,6 +37,7 @@ def test_scrape_rocket_maps_product_payload(monkeypatch: pytest.MonkeyPatch) -> 
 
 @pytest.mark.integration
 def test_scrape_atomic_handles_missing_prices(monkeypatch: pytest.MonkeyPatch) -> None:
+    # Missing prices should gracefully fall back to 0.0 values.
     product = {
         "id": 222,
         "title": "Atomic Filter Special",

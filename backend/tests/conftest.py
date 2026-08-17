@@ -8,4 +8,5 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 
 if str(SRC) not in sys.path:
+    # Allow test imports without requiring package installation.
     sys.path.insert(0, str(SRC))

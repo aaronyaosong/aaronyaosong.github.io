@@ -26,6 +26,7 @@ def _listing(title: str, category: str, available: bool) -> CoffeeListing:
 
 @pytest.mark.e2e
 def test_cli_writes_filtered_csv_and_json(monkeypatch: pytest.MonkeyPatch, tmp_path, capsys) -> None:
+    # E2E check: CLI should apply filters and persist both output formats.
     monkeypatch.setattr(
         tracker,
         "scrape_rocket",

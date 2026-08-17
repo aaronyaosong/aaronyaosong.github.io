@@ -8,6 +8,7 @@ from nz_coffee_tracker.shopify_client import ShopifyClient
 
 
 def _variant_prices(variants: list[dict[str, Any]]) -> list[float]:
+    # Variants may include non-numeric or missing prices; keep only valid floats.
     prices: list[float] = []
     for variant in variants:
         raw = variant.get("price")
@@ -21,12 +22,14 @@ def _variant_prices(variants: list[dict[str, Any]]) -> list[float]:
 
 
 def scrape_rocket() -> list[CoffeeListing]:
+    # Rocket exposes coffee products via Shopify collection handle "coffee".
     client = ShopifyClient("https://rocketcoffee.co.nz")
     products = client.fetch_collection_products("coffee")
 
     scraped_at = now_utc_iso()
     listings: list[CoffeeListing] = []
     for product in products:
+        # Collapse variant-level availability and price into one listing row.
         variants = product.get("variants", [])
         prices = _variant_prices(variants)
         available = any(bool(v.get("available")) for v in variants)

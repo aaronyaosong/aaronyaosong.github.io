@@ -15,6 +15,7 @@ def _normalize_text(raw: str) -> str:
 
 
 def _collect_product_text(product: dict[str, Any]) -> str:
+    # Build one searchable text blob from common Shopify product fields.
     chunks: list[str] = []
     for key in ("title", "handle", "body_html", "product_type", "tags"):
         value = product.get(key)
@@ -35,6 +36,7 @@ def _collect_product_text(product: dict[str, Any]) -> str:
 
 
 def infer_roast_category(product: dict[str, Any]) -> str:
+    # Categories are keyword-based so the same rule works across multiple roasters.
     text = _collect_product_text(product)
     has_filter = bool(re.search(r"\bfilter\b", text))
     has_espresso = bool(re.search(r"\bespresso\b", text))
@@ -49,4 +51,5 @@ def infer_roast_category(product: dict[str, Any]) -> str:
 
 
 def category_values(category: str) -> set[str]:
+    # Split compound category values like "filter roast,espresso roast".
     return {part.strip() for part in category.split(",") if part.strip()}

@@ -24,6 +24,7 @@ def _listing(title: str, category: str, available: bool = True) -> CoffeeListing
 
 @pytest.mark.unit
 def test_collect_listings_default_filters_categories_and_unavailable(monkeypatch: pytest.MonkeyPatch) -> None:
+    # Default behavior should keep only available filter/espresso roasts.
     monkeypatch.setattr(
         tracker,
         "scrape_rocket",
@@ -48,6 +49,7 @@ def test_collect_listings_default_filters_categories_and_unavailable(monkeypatch
 
 @pytest.mark.unit
 def test_collect_listings_include_unavailable(monkeypatch: pytest.MonkeyPatch) -> None:
+    # --all behavior keeps otherwise filtered unavailable rows.
     monkeypatch.setattr(tracker, "scrape_rocket", lambda: [_listing("Filter A", "filter roast", available=False)])
     monkeypatch.setattr(tracker, "scrape_atomic", lambda: [])
 
@@ -59,6 +61,7 @@ def test_collect_listings_include_unavailable(monkeypatch: pytest.MonkeyPatch) -
 
 @pytest.mark.unit
 def test_collect_listings_without_category_filter(monkeypatch: pytest.MonkeyPatch) -> None:
+    # Disabling category filtering should allow non-roast categories through.
     monkeypatch.setattr(tracker, "scrape_rocket", lambda: [_listing("Other A", "other", available=True)])
     monkeypatch.setattr(tracker, "scrape_atomic", lambda: [])
 

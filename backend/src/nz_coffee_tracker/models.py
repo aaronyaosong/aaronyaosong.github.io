@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 
 @dataclass(slots=True)
 class CoffeeListing:
+    # Normalized record shape used across scrapers, storage, and frontend payloads.
     source: str
     product_id: int
     title: str
@@ -23,4 +24,5 @@ class CoffeeListing:
 
 
 def now_utc_iso() -> str:
+    # Use a consistent UTC timestamp format for snapshots and test determinism.
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()

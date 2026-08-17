@@ -7,6 +7,7 @@ from nz_coffee_tracker.tracker import collect_listings, persist_snapshots
 
 
 def _parse_categories(raw: str) -> set[str]:
+    # Accept comma-separated CLI input such as "filter roast,espresso roast".
     return {part.strip().lower() for part in raw.split(",") if part.strip()}
 
 
@@ -45,6 +46,7 @@ def main() -> int:
     parser = build_parser()
     args = parser.parse_args()
 
+    # `None` means "include all categories" in the tracker pipeline.
     allowed_categories = None if args.no_category_filter else _parse_categories(args.categories)
     listings = collect_listings(include_unavailable=args.all, allowed_categories=allowed_categories)
     written = persist_snapshots(listings, Path(args.out_dir), output_format=args.format)
