@@ -138,6 +138,21 @@ input[type="search"]:focus {
   color: var(--muted);
 }
 
+.description-toggle {
+  border: 0;
+  padding: 0;
+  margin: 0 0 10px;
+  background: transparent;
+  color: var(--brand);
+  font: inherit;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.description-toggle:hover {
+  text-decoration: underline;
+}
+
 select {
   width: 100%;
   border: 1px solid var(--border);

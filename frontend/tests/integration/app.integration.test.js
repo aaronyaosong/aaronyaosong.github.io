@@ -45,6 +45,8 @@ describe("app integration", () => {
             price_min_nzd: 20,
             price_max_nzd: 20,
             product_url: "https://example.com/b",
+            description: "Sweet chocolate and stone fruit.",
+            flavour_notes: "plum and caramel",
           },
           {
             source: "atomiccoffee.co.nz",
@@ -80,6 +82,12 @@ describe("app integration", () => {
     expect(document.querySelectorAll(".card")).toHaveLength(2);
     expect(document.querySelector(".size-prices").textContent).toContain("250g");
     expect(document.querySelector(".size-prices").textContent).toContain("NZD $0.100/g");
+    expect(document.querySelector(".description").hidden).toBe(true);
+    const descriptionToggle = document.querySelector("[data-description-toggle]");
+    descriptionToggle.dispatchEvent(new Event("click", { bubbles: true }));
+    expect(document.querySelector(".description").textContent).toContain("Sweet chocolate and stone fruit.");
+    expect(document.querySelector(".description").hidden).toBe(false);
+    expect(document.querySelector(".flavour-notes").textContent).toContain("plum and caramel");
 
     const categoryFilter = document.getElementById("categoryFilter");
     expect([...categoryFilter.options].map((option) => option.value)).toEqual([
