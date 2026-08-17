@@ -22,6 +22,7 @@ export function createApp({
     items: [],
     activeCategory: "all",
     activeSource: "all",
+    activeBlend: "all",
     activeDecaf: "all",
     query: "",
   };
@@ -33,6 +34,7 @@ export function createApp({
   const errorEl = documentRef.getElementById("errorMessage");
   const searchInput = documentRef.getElementById("searchInput");
   const categorySelect = documentRef.getElementById("categoryFilter");
+  const blendSelect = documentRef.getElementById("blendFilter");
   const sourceSelect = documentRef.getElementById("sourceFilter");
   const decafSelect = documentRef.getElementById("decafFilter");
 
@@ -82,6 +84,7 @@ export function createApp({
       "all",
       "all",
       state.activeDecaf,
+      state.activeBlend,
     );
 
     resultCountEl.textContent = `${rows.length} result${rows.length === 1 ? "" : "s"}`;
@@ -143,7 +146,7 @@ export function createApp({
       state.items = (payload.items || []).filter((item) => !isSubscription(item));
       populateSelect(
         categorySelect,
-        new Set(state.items.flatMap((item) => filterCategories(item))),
+        new Set(state.items.flatMap((item) => categories(item.category))),
         "All roast types",
         (value) => value.replace(/\b\w/g, (letter) => letter.toUpperCase()),
       );
@@ -168,6 +171,11 @@ export function createApp({
 
   decafSelect.addEventListener("change", (event) => {
     state.activeDecaf = event.target.value;
+    renderCards();
+  });
+
+  blendSelect.addEventListener("change", (event) => {
+    state.activeBlend = event.target.value;
     renderCards();
   });
 
@@ -199,6 +207,7 @@ function hasRequiredDom(doc) {
     && doc.getElementById("searchInput")
     && doc.getElementById("categoryFilters")
     && doc.getElementById("categoryFilter")
+    && doc.getElementById("blendFilter")
     && doc.getElementById("sourceFilter")
     && doc.getElementById("decafFilter")
   );

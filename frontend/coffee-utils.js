@@ -86,6 +86,7 @@ export function filterAndSortItems(
   activeProducer = "all",
   activeProcess = "all",
   activeDecaf = "all",
+  activeBlend = "all",
 ) {
   const term = query.toLowerCase();
   return items
@@ -97,6 +98,9 @@ export function filterAndSortItems(
       const producerMatch = activeProducer === "all" || metadataValue(item, "producer") === activeProducer;
       const processMatch = activeProcess === "all" || metadataValue(item, "process") === activeProcess;
       const decafMatch = activeDecaf === "all" || String(isDecaf(item)) === activeDecaf;
+      const blendMatch = activeBlend === "all"
+        || (activeBlend === "true" && isBlend(item))
+        || (activeBlend === "false" && !isBlend(item));
       const searchText = [
         item.title,
         item.category,
@@ -116,6 +120,7 @@ export function filterAndSortItems(
         && producerMatch
         && processMatch
         && decafMatch
+        && blendMatch
         && searchText.includes(term);
     })
     .sort((a, b) => a.title.localeCompare(b.title));

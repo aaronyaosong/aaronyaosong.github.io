@@ -110,6 +110,18 @@ describe("coffee-utils unit", () => {
     expect(rows.map((item) => item.title)).toEqual(["Natural Brazil Decaf"]);
   });
 
+  it("filters blends separately from roast categories", () => {
+    const items = [
+      { title: "House Blend", category: "espresso roast" },
+      { title: "Single Origin", category: "espresso roast" },
+    ];
+
+    expect(filterAndSortItems(items, "espresso roast", "", "all", "all", "all", "all", "all", "all", "true"))
+      .toEqual([items[0]]);
+    expect(filterAndSortItems(items, "espresso roast", "", "all", "all", "all", "all", "all", "all", "false"))
+      .toEqual([items[1]]);
+  });
+
   it("derives process and decaf values when metadata is absent", () => {
     const item = { title: "Arturo Arango - Colombia [natural] decaff" };
     expect(metadataValue(item, "origin_country")).toBe("colombia");

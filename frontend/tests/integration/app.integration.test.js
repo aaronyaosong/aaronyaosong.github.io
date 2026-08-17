@@ -10,6 +10,7 @@ function buildDom() {
     <input id="searchInput" />
     <select id="sourceFilter"><option value="all">All stores</option></select>
     <select id="decafFilter"><option value="all">All coffees</option><option value="true">Decaf</option></select>
+    <select id="blendFilter"><option value="all">All coffees</option><option value="true">Blends only</option><option value="false">No blends</option></select>
     <div id="categoryFilters">
       <select id="categoryFilter"><option value="all">All roast types</option></select>
     </div>
@@ -83,15 +84,15 @@ describe("app integration", () => {
     const categoryFilter = document.getElementById("categoryFilter");
     expect([...categoryFilter.options].map((option) => option.value)).toEqual([
       "all",
-      "blend",
       "espresso roast",
       "filter roast",
     ]);
-    categoryFilter.value = "blend";
-    categoryFilter.dispatchEvent(new Event("change"));
+    const blendFilter = document.getElementById("blendFilter");
+    blendFilter.value = "true";
+    blendFilter.dispatchEvent(new Event("change"));
     expect(document.getElementById("resultCount").textContent).toBe("1 result");
-    categoryFilter.value = "all";
-    categoryFilter.dispatchEvent(new Event("change"));
+    blendFilter.value = "all";
+    blendFilter.dispatchEvent(new Event("change"));
     categoryFilter.value = "espresso roast";
     categoryFilter.dispatchEvent(new Event("change"));
     expect(document.getElementById("resultCount").textContent).toBe("1 result");
