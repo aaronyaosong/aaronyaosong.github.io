@@ -22,7 +22,6 @@ export function createApp({
     items: [],
     activeCategory: "all",
     activeSource: "all",
-    activeOriginCountry: "all",
     activeDecaf: "all",
     query: "",
   };
@@ -35,7 +34,6 @@ export function createApp({
   const searchInput = documentRef.getElementById("searchInput");
   const categorySelect = documentRef.getElementById("categoryFilter");
   const sourceSelect = documentRef.getElementById("sourceFilter");
-  const originCountrySelect = documentRef.getElementById("originCountryFilter");
   const decafSelect = documentRef.getElementById("decafFilter");
 
   function populateSelect(select, values, allLabel, formatValue = (value) => value) {
@@ -80,7 +78,7 @@ export function createApp({
       state.query,
       state.activeSource,
       "all",
-      state.activeOriginCountry,
+      "all",
       "all",
       "all",
       state.activeDecaf,
@@ -150,7 +148,6 @@ export function createApp({
         (value) => value.replace(/\b\w/g, (letter) => letter.toUpperCase()),
       );
       populateSelect(sourceSelect, new Set(state.items.map((item) => item.source)), "All stores", sourceName);
-      populateSelect(originCountrySelect, new Set(state.items.map((item) => metadataValue(item, "origin_country"))), "All origin countries");
       renderStats(state.items, payload.generated_at);
       renderCards();
     } catch (err) {
@@ -166,11 +163,6 @@ export function createApp({
 
   sourceSelect.addEventListener("change", (event) => {
     state.activeSource = event.target.value;
-    renderCards();
-  });
-
-  originCountrySelect.addEventListener("change", (event) => {
-    state.activeOriginCountry = event.target.value;
     renderCards();
   });
 
@@ -208,7 +200,6 @@ function hasRequiredDom(doc) {
     && doc.getElementById("categoryFilters")
     && doc.getElementById("categoryFilter")
     && doc.getElementById("sourceFilter")
-    && doc.getElementById("originCountryFilter")
     && doc.getElementById("decafFilter")
   );
 }

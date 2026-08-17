@@ -9,7 +9,6 @@ function buildDom() {
     <p id="last-updated"></p>
     <input id="searchInput" />
     <select id="sourceFilter"><option value="all">All stores</option></select>
-    <select id="originCountryFilter"><option value="all">All origin countries</option></select>
     <select id="decafFilter"><option value="all">All coffees</option><option value="true">Decaf</option></select>
     <div id="categoryFilters">
       <select id="categoryFilter"><option value="all">All roast types</option></select>
