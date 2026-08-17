@@ -4,6 +4,9 @@ import {
   isDecaf,
   metadataValue,
   nzPrice,
+  pricePerGram,
+  sizeLabel,
+  sizePrices,
   sourceName,
 } from "./coffee-utils.js";
 
@@ -105,13 +108,20 @@ export function createApp({
         .map((cat) => `<span class="badge category">${cat}</span>`)
         .join("");
 
+      const prices = sizePrices(item);
+      const priceDetails = prices.length
+        ? `<ul class="size-prices">${prices.map((row) => `
+            <li><span>${sizeLabel(row.size_grams)}</span><span>NZD $${Number(row.price_nzd).toFixed(2)} (${pricePerGram(row.price_nzd, row.size_grams)})</span></li>
+          `).join("")}</ul>`
+        : `<p class="price">${nzPrice(item)} <span class="price-note">Size pricing unavailable</span></p>`;
+
       card.innerHTML = `
         <h3>${item.title}</h3>
         <div class="badges">
           <span class="badge source">${sourceName(item.source)}</span>
           ${categoryBadges}
         </div>
-        <p class="price">${nzPrice(item)}</p>
+        ${priceDetails}
         <a href="${item.product_url}" target="_blank" rel="noreferrer">View Product</a>
       `;
 

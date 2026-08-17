@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 
 
@@ -19,6 +19,7 @@ class CoffeeListing:
     updated_at: str
     scraped_at: str
     varietal: str = "unknown"
+    size_prices: list[dict[str, float]] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)

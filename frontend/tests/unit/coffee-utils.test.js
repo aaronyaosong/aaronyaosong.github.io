@@ -6,7 +6,10 @@ import {
   isDecaf,
   metadataValue,
   nzPrice,
+  pricePerGram,
   sourceName,
+  sizeLabel,
+  sizePrices,
 } from "../../coffee-utils.js";
 
 
@@ -19,6 +22,23 @@ describe("coffee-utils unit", () => {
   it("formats single and ranged NZD prices", () => {
     expect(nzPrice({ price_min_nzd: 22, price_max_nzd: 22 })).toBe("NZD $22.00");
     expect(nzPrice({ price_min_nzd: 20, price_max_nzd: 35 })).toBe("NZD $20.00 - $35.00");
+  });
+
+  it("formats available sizes and price per gram", () => {
+    const item = {
+      size_prices: [
+        { size_grams: 1000, price_nzd: 60 },
+        { size_grams: 250, price_nzd: 20 },
+        { size_grams: 250, price_nzd: 20 },
+      ],
+    };
+
+    expect(sizePrices(item)).toEqual([
+      { size_grams: 250, price_nzd: 20 },
+      { size_grams: 1000, price_nzd: 60 },
+    ]);
+    expect(sizeLabel(1000)).toBe("1kg");
+    expect(pricePerGram(20, 250)).toBe("NZD $0.080/g");
   });
 
   it("splits comma-separated categories", () => {

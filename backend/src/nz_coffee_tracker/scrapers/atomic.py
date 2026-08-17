@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import re
 from typing import Any
+
+import requests
 
 from nz_coffee_tracker.categorization import infer_roast_category, infer_varietal
 from nz_coffee_tracker.models import CoffeeListing, now_utc_iso
@@ -21,6 +24,29 @@ def _variant_prices(variants: list[dict[str, Any]]) -> list[float]:
     return prices
 
 
+def _variant_size_grams(title: str) -> float | None:
+    match = re.search(r"(\d+(?:\.\d+)?)\s*(kg|g|grams?)\b", title.lower())
+    if not match:
+        return None
+    value = float(match.group(1))
+    return value * 1000 if match.group(2) == "kg" else value
+
+
+def _size_prices(variants: list[dict[str, Any]]) -> list[dict[str, float]]:
+    rows: list[dict[str, float]] = []
+    for variant in variants:
+        if not variant.get("available"):
+            continue
+        size_grams = _variant_size_grams(str(variant.get("title", "")))
+        try:
+            price_nzd = float(variant["price"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        if size_grams:
+            rows.append({"size_grams": size_grams, "price_nzd": price_nzd})
+    return rows
+
+
 def scrape_atomic() -> list[CoffeeListing]:
     # Atomic exposes beans under the Shopify collection handle "coffee-beans".
     client = ShopifyClient("https://atomiccoffee.co.nz")
@@ -29,6 +55,11 @@ def scrape_atomic() -> list[CoffeeListing]:
     scraped_at = now_utc_iso()
     listings: list[CoffeeListing] = []
     for product in products:
+        handle = str(product.get("handle", "")).strip()
+        try:
+            product = {**product, **client.fetch_product(handle)}
+        except requests.RequestException:
+            pass
         # Collapse variant-level availability and price into one listing row.
         variants = product.get("variants", [])
         prices = _variant_prices(variants)
@@ -44,7 +75,7 @@ def scrape_atomic() -> list[CoffeeListing]:
                 product_id=int(product.get("id", 0)),
                 title=str(product.get("title", "")).strip(),
                 category=category,
-                handle=str(product.get("handle", "")).strip(),
+                handle=handle,
                 product_url=f"https://atomiccoffee.co.nz/products/{product.get('handle', '')}",
                 available=available,
                 price_min_nzd=min(prices),
@@ -52,6 +83,7 @@ def scrape_atomic() -> list[CoffeeListing]:
                 updated_at=str(product.get("updated_at", "")),
                 scraped_at=scraped_at,
                 varietal=infer_varietal(product),
+                size_prices=_size_prices(variants),
             )
         )
 

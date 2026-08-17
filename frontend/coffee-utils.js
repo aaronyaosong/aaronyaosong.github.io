@@ -11,6 +11,28 @@ export function nzPrice(item) {
   return `NZD $${Number(item.price_min_nzd).toFixed(2)} - $${Number(item.price_max_nzd).toFixed(2)}`;
 }
 
+export function sizePrices(item) {
+  const seen = new Set();
+  return (item.size_prices || [])
+    .filter((row) => Number(row.size_grams) > 0 && Number.isFinite(Number(row.price_nzd)))
+    .filter((row) => {
+      const key = `${Number(row.size_grams)}:${Number(row.price_nzd)}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .sort((a, b) => Number(a.size_grams) - Number(b.size_grams));
+}
+
+export function pricePerGram(price, sizeGrams) {
+  return `NZD $${(Number(price) / Number(sizeGrams)).toFixed(3)}/g`;
+}
+
+export function sizeLabel(sizeGrams) {
+  const grams = Number(sizeGrams);
+  return grams >= 1000 && grams % 1000 === 0 ? `${grams / 1000}kg` : `${grams}g`;
+}
+
 export function categories(categoryStr) {
   return String(categoryStr || "").split(",").map((part) => part.trim()).filter(Boolean);
 }

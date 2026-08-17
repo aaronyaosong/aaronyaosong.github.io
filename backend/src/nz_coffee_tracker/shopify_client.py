@@ -27,3 +27,18 @@ class ShopifyClient:
         response.raise_for_status()
         payload = response.json()
         return payload.get("products", [])
+
+    def fetch_product(self, product_handle: str) -> dict[str, Any]:
+        # Product JSON exposes the complete variant options and availability.
+        url = f"{self.base_url}/products/{product_handle}.js"
+        response = self.session.get(url, timeout=self.timeout)
+        response.raise_for_status()
+        payload = response.json()
+        product = payload.get("product", payload)
+        for variant in product.get("variants", []):
+            raw_price = variant.get("price")
+            try:
+                variant["price"] = float(raw_price) / 100
+            except (TypeError, ValueError):
+                continue
+        return product

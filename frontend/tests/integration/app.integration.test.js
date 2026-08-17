@@ -44,6 +44,7 @@ describe("app integration", () => {
             producer: "bravo farm",
             process: "washed",
             decaf: false,
+            size_prices: [{ size_grams: 250, price_nzd: 20 }],
             price_min_nzd: 20,
             price_max_nzd: 20,
             product_url: "https://example.com/b",
@@ -57,6 +58,7 @@ describe("app integration", () => {
             producer: "alpha farm",
             process: "natural",
             decaf: true,
+            size_prices: [{ size_grams: 250, price_nzd: 25 }, { size_grams: 1000, price_nzd: 30 }],
             price_min_nzd: 25,
             price_max_nzd: 30,
             product_url: "https://example.com/a",
@@ -70,6 +72,8 @@ describe("app integration", () => {
 
     expect(document.getElementById("resultCount").textContent).toBe("2 results");
     expect(document.querySelectorAll(".card")).toHaveLength(2);
+    expect(document.querySelector(".size-prices").textContent).toContain("250g");
+    expect(document.querySelector(".size-prices").textContent).toContain("NZD $0.100/g");
 
     const categoryFilter = document.getElementById("categoryFilter");
     expect([...categoryFilter.options].map((option) => option.value)).toEqual([

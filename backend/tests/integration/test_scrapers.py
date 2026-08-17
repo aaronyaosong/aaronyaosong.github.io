@@ -3,6 +3,15 @@ from __future__ import annotations
 import pytest
 
 from nz_coffee_tracker.scrapers import atomic, rocket
+from nz_coffee_tracker.shopify_client import ShopifyClient
+
+
+class _Response:
+    def raise_for_status(self) -> None:
+        return None
+
+    def json(self) -> dict:
+        return {"variants": [{"price": 2800, "title": "250g"}]}
 
 
 @pytest.mark.integration
@@ -20,6 +29,7 @@ def test_scrape_rocket_maps_product_payload(monkeypatch: pytest.MonkeyPatch) -> 
     }
 
     monkeypatch.setattr(rocket.ShopifyClient, "fetch_collection_products", lambda self, handle: [product])
+    monkeypatch.setattr(rocket.ShopifyClient, "fetch_product", lambda self, handle: product)
     monkeypatch.setattr(rocket, "now_utc_iso", lambda: "2026-08-17T01:02:03+00:00")
 
     rows = rocket.scrape_rocket()
@@ -33,7 +43,18 @@ def test_scrape_rocket_maps_product_payload(monkeypatch: pytest.MonkeyPatch) -> 
     assert row.varietal == "unknown"
     assert row.price_min_nzd == 22.0
     assert row.price_max_nzd == 60.0
+    assert row.size_prices == [{"size_grams": 1000.0, "price_nzd": 60.0}]
     assert row.product_url.endswith("/rocket-espresso-blend")
+
+
+@pytest.mark.integration
+def test_fetch_product_converts_shopify_cents_to_nzd(monkeypatch: pytest.MonkeyPatch) -> None:
+    client = ShopifyClient("https://example.com")
+    monkeypatch.setattr(client.session, "get", lambda *args, **kwargs: _Response())
+
+    product = client.fetch_product("coffee")
+
+    assert product["variants"][0]["price"] == 28.0
 
 
 @pytest.mark.integration
@@ -51,6 +72,7 @@ def test_scrape_atomic_handles_missing_prices(monkeypatch: pytest.MonkeyPatch) -
     }
 
     monkeypatch.setattr(atomic.ShopifyClient, "fetch_collection_products", lambda self, handle: [product])
+    monkeypatch.setattr(atomic.ShopifyClient, "fetch_product", lambda self, handle: product)
     monkeypatch.setattr(atomic, "now_utc_iso", lambda: "2026-08-17T01:02:03+00:00")
 
     rows = atomic.scrape_atomic()
@@ -63,3 +85,4 @@ def test_scrape_atomic_handles_missing_prices(monkeypatch: pytest.MonkeyPatch) -
     assert row.available is True
     assert row.price_min_nzd == 0.0
     assert row.price_max_nzd == 0.0
+    assert row.size_prices == []

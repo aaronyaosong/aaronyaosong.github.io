@@ -232,6 +232,34 @@ h2 {
   color: #3f2f15;
 }
 
+.size-prices {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  color: #3f2f15;
+  font-size: 0.9rem;
+}
+
+.size-prices li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.size-prices li:last-child {
+  border-bottom: 0;
+}
+
+.price-note {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
 .card a {
   display: inline-block;
   text-decoration: none;
