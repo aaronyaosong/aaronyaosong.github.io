@@ -173,7 +173,8 @@ def test_wolf_excludes_gift_cards() -> None:
     assert wolf._is_not_gift_card({"title": "Seasonal Blend", "product_type": "coffee"}) is True
     assert wolf._is_not_gift_card({"title": "Wolf Coffee Roasters E-Gift Card", "handle": "egift-card"}) is False
     assert wolf._is_not_gift_card({"product_type": "Gift Card"}) is False
-
+    assert wolf._is_not_gift_card({"tags": None}) is True
+    assert wolf._is_not_gift_card({"tags": "Gift Card"}) is False
 
 @pytest.mark.integration
 def test_scrape_grey_roasting_co_excludes_subscriptions(monkeypatch: pytest.MonkeyPatch) -> None:
