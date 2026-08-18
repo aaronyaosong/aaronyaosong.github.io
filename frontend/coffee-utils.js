@@ -68,8 +68,11 @@ export function isSubscription(item) {
   return /\bsubscription\b/i.test([item.title, item.handle, item.product_type, item.tags].filter(Boolean).join(" "));
 }
 
-export function isC4BlendsDiscoveryBox(item) {
-  return item.source === "c4coffee.co" && item.handle === "blends-discovery-box";
+export function isBundleOrBoxSet(item) {
+  const text = [item.title, item.handle].filter(Boolean).join(" ");
+  const isAtomicDuo = item.source === "atomiccoffee.co.nz"
+    && item.handle === "ultimate-coffee-duo";
+  return isAtomicDuo || /\b(bundle|discovery[\s-]box|box[\s-]set)\b/i.test(text);
 }
 
 export function isOzoneConcentrate(item) {
