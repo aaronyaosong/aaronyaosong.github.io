@@ -3,7 +3,7 @@ from __future__ import annotations
 import pytest
 
 from nz_coffee_tracker.scrapers import atomic, rocket
-from nz_coffee_tracker.scrapers import c4, coffee_embassy, eternal, ozone, slow, vanguard
+from nz_coffee_tracker.scrapers import c4, coffee_embassy, eternal, grey_roasting_co, ozone, slow, vanguard
 from nz_coffee_tracker.database import write_database
 from nz_coffee_tracker.models import CoffeeListing
 from nz_coffee_tracker.shopify_client import ShopifyClient
@@ -143,6 +143,7 @@ def test_scrape_rocket_reuses_detail_for_available_cached_item(
         (eternal, "scrape_eternal", "eternalcoffee.co.nz", "all"),
         (vanguard, "scrape_vanguard", "vanguardcoffee.co.nz", "coffee-beans"),
         (c4, "scrape_c4", "c4coffee.co", "coffee"),
+        (grey_roasting_co, "scrape_grey_roasting_co", "greyroastingco.com", "all"),
         (slow, "scrape_slow", "slowcoffee.co.nz", "shop-coffee"),
     ],
 )
@@ -164,3 +165,34 @@ def test_additional_scrapers_use_expected_shopify_collection(
 
     assert rows == []
     assert calls == [(expected_source, expected_collection, None)]
+
+
+@pytest.mark.integration
+def test_scrape_grey_roasting_co_excludes_subscriptions(monkeypatch: pytest.MonkeyPatch) -> None:
+    def listing(title: str, handle: str) -> CoffeeListing:
+        return CoffeeListing(
+            source="greyroastingco.com",
+            product_id=1,
+            title=title,
+            category="espresso roast",
+            handle=handle,
+            product_url=f"https://greyroastingco.com/products/{handle}",
+            available=True,
+            price_min_nzd=20.0,
+            price_max_nzd=20.0,
+            updated_at="2026-08-17T00:00:00+00:00",
+            scraped_at="2026-08-17T00:00:00+00:00",
+        )
+
+    monkeypatch.setattr(
+        grey_roasting_co,
+        "scrape_shopify_collection",
+        lambda source, collection, database_path=None: [
+            listing("Daily Blend", "daily-blend"),
+            listing("Daily Blend Subscription", "daily-blend-subscription"),
+        ],
+    )
+
+    rows = grey_roasting_co.scrape_grey_roasting_co()
+
+    assert [row.title for row in rows] == ["Daily Blend"]

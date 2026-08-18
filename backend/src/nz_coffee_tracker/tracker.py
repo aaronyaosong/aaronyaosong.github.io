@@ -13,6 +13,7 @@ from nz_coffee_tracker.scrapers.atomic import scrape_atomic
 from nz_coffee_tracker.scrapers.c4 import scrape_c4
 from nz_coffee_tracker.scrapers.coffee_embassy import scrape_coffee_embassy
 from nz_coffee_tracker.scrapers.eternal import scrape_eternal
+from nz_coffee_tracker.scrapers.grey_roasting_co import scrape_grey_roasting_co
 from nz_coffee_tracker.scrapers.ozone import scrape_ozone
 from nz_coffee_tracker.scrapers.rocket import scrape_rocket
 from nz_coffee_tracker.scrapers.vanguard import scrape_vanguard
@@ -46,6 +47,7 @@ def collect_listings(
             *scrape_eternal(database_path=database_path),
             *scrape_vanguard(database_path=database_path),
             *scrape_c4(database_path=database_path),
+            *scrape_grey_roasting_co(database_path=database_path),
             *scrape_slow(database_path=database_path),
         ]
 
