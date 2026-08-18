@@ -68,6 +68,8 @@ export function isSubscription(item) {
 
 export function isC4BlendsDiscoveryBox(item) {
   return item.source === "c4coffee.co" && item.handle === "blends-discovery-box";
+}
+
 export function isOzoneConcentrate(item) {
   return item.source === "ozonecoffee.co.nz" && item.handle === "cold-brew-concentrate";
 }
