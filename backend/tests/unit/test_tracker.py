@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import sqlite3
+from datetime import datetime, timezone
 
 import pytest
 
@@ -10,6 +11,7 @@ from nz_coffee_tracker.models import CoffeeListing
 
 
 def _listing(title: str, category: str, available: bool = True) -> CoffeeListing:
+    today = datetime.now(timezone.utc).date().isoformat()
     return CoffeeListing(
         source="example.co.nz",
         product_id=1,
@@ -20,8 +22,8 @@ def _listing(title: str, category: str, available: bool = True) -> CoffeeListing
         available=available,
         price_min_nzd=20.0,
         price_max_nzd=20.0,
-        updated_at="2026-08-17T00:00:00+00:00",
-        scraped_at="2026-08-17T00:00:00+00:00",
+        updated_at=f"{today}T00:00:00+00:00",
+        scraped_at=f"{today}T00:00:00+00:00",
         description="Coffee description",
         flavour_notes="chocolate",
     )
