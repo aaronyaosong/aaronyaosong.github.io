@@ -35,19 +35,28 @@ COLLECTION_HANDLE = "{collection}"
 
 
 def _variant_size_grams(title: str) -> float | None:
-    match = re.search(r"(\\d+(?:\\.\\d+)?)\\s*(kg|g|grams?)\\b", title.lower())
+    if not title:
+        return None
+    match = re.search(r"(\\d+(?:\\.\\d+)?)\\s*(kgs?|kilos?|kilograms?|grams?|gms?|gm|gr|g)\\b", title.lower())
     if not match:
         return None
     value = float(match.group(1))
-    return value * 1000 if match.group(2) == "kg" else value
+    unit = match.group(2).lower()
+    return value * 1000 if unit.startswith("k") else value
 
 
-def _size_prices(variants: list[dict[str, Any]]) -> list[dict[str, float]]:
+def _size_prices(variants: list[dict[str, Any]], product_title: str = "") -> list[dict[str, float]]:
     rows = []
     for variant in variants:
         if not variant.get("available"):
             continue
-        size_grams = _variant_size_grams(str(variant.get("title", "")))
+        v_title = str(variant.get("title", ""))
+        size_grams = _variant_size_grams(v_title)
+        if not size_grams:
+            opts = " ".join(str(variant.get(f"option{{i}}", "")) for i in (1, 2, 3) if variant.get(f"option{{i}}"))
+            size_grams = _variant_size_grams(opts)
+        if not size_grams and product_title:
+            size_grams = _variant_size_grams(product_title)
         try:
             price_nzd = float(variant["price"])
         except (KeyError, TypeError, ValueError):
