@@ -14,9 +14,11 @@ def _is_not_gift_card(product: dict[str, Any]) -> bool:
     product_type = str(product.get("product_type") or product.get("type") or "").casefold()
     title = str(product.get("title", "")).casefold()
     handle = str(product.get("handle", "")).casefold()
-    tags = product.get("tags", [])
+    tags = product.get("tags") or []
     if isinstance(tags, str):
         tags = [tag.strip() for tag in tags.split(",")]
+    elif not isinstance(tags, list):
+        tags = [tags]
     return not (
         product_type == "gift card"
         or "gift card" in title
