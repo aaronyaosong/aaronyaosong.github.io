@@ -53,6 +53,10 @@ export function isSubscription(item) {
   return /\bsubscription\b/i.test([item.title, item.handle, item.product_type, item.tags].filter(Boolean).join(" "));
 }
 
+export function isOzoneConcentrate(item) {
+  return item.source === "ozonecoffee.co.nz" && item.handle === "cold-brew-concentrate";
+}
+
 export function filterCategories(item) {
   const values = categories(item.category);
   if (isBlend(item)) values.push("blend");
