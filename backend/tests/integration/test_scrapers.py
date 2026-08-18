@@ -158,7 +158,7 @@ def test_additional_scrapers_use_expected_shopify_collection(
     monkeypatch.setattr(
         module,
         "scrape_shopify_collection",
-        lambda source, collection, database_path=None: calls.append((source, collection, database_path)) or [],
+        lambda source, collection, database_path=None, **kwargs: calls.append((source, collection, database_path)) or [],
     )
 
     rows = getattr(module, function_name)()
@@ -187,7 +187,7 @@ def test_scrape_grey_roasting_co_excludes_subscriptions(monkeypatch: pytest.Monk
     monkeypatch.setattr(
         grey_roasting_co,
         "scrape_shopify_collection",
-        lambda source, collection, database_path=None: [
+        lambda source, collection, database_path=None, **kwargs: [
             listing("Daily Blend", "daily-blend"),
             listing("Daily Blend Subscription", "daily-blend-subscription"),
         ],
@@ -196,3 +196,11 @@ def test_scrape_grey_roasting_co_excludes_subscriptions(monkeypatch: pytest.Monk
     rows = grey_roasting_co.scrape_grey_roasting_co()
 
     assert [row.title for row in rows] == ["Daily Blend"]
+
+
+@pytest.mark.integration
+def test_grey_roasting_co_accepts_only_coffee_products() -> None:
+    assert grey_roasting_co._is_coffee_product({"product_type": "Coffee"}) is True
+    assert grey_roasting_co._is_coffee_product({"tags": ["Coffee", "Single Origin"]}) is True
+    assert grey_roasting_co._is_coffee_product({"product_type": "Merchandise"}) is False
+    assert grey_roasting_co._is_coffee_product({"title": "Coffee Dripper", "tags": []}) is False
