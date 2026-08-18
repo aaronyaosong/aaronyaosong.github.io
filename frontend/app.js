@@ -2,7 +2,7 @@ import {
   categories,
   filterCategories,
   filterAndSortItems,
-  isC4BlendsDiscoveryBox,
+  isBundleOrBoxSet,
   isDecaf,
   isOzoneConcentrate,
   isSubscription,
@@ -168,7 +168,7 @@ export function createApp({
       }
       const payload = await response.json();
 
-      state.items = (payload.items || []).filter((item) => (!isSubscription(item) && !isOzoneConcentrate(item) && !isC4BlendsDiscoveryBox(item)));
+      state.items = (payload.items || []).filter((item) => (!isSubscription(item) && !isOzoneConcentrate(item) && !isBundleOrBoxSet(item)));
       populateCategoryButtons(state.items);
       populateSelect(sourceSelect, new Set(state.items.map((item) => item.source)), "All stores", sourceName);
       renderStats(state.items, payload.generated_at);

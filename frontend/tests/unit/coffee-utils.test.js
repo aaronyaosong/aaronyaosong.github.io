@@ -4,7 +4,7 @@ import {
   categories,
   filterCategories,
   filterAndSortItems,
-  isC4BlendsDiscoveryBox,
+  isBundleOrBoxSet,
   isBlend,
   isDecaf,
   isOzoneConcentrate,
@@ -76,10 +76,19 @@ describe("coffee-utils unit", () => {
     expect(isBlend({ title: "Single Origin", description: "Bright and fruity" })).toBe(false);
   });
 
-  it("identifies only C4's blends discovery box for hiding", () => {
-    expect(isC4BlendsDiscoveryBox({ source: "c4coffee.co", handle: "blends-discovery-box" })).toBe(true);
-    expect(isC4BlendsDiscoveryBox({ source: "c4coffee.co", handle: "krank-blend" })).toBe(false);
-    expect(isC4BlendsDiscoveryBox({ source: "ozonecoffee.co.nz", handle: "blends-discovery-box" })).toBe(false);
+  it("identifies bundles, discovery boxes, box sets, and Atomic duo for hiding", () => {
+    // discovery boxes
+    expect(isBundleOrBoxSet({ source: "c4coffee.co", handle: "blends-discovery-box", title: "Blends Discovery Box" })).toBe(true);
+    expect(isBundleOrBoxSet({ source: "c4coffee.co", handle: "origins-discovery-box", title: "Origins Discovery Box" })).toBe(true);
+    // bundles
+    expect(isBundleOrBoxSet({ source: "eternalcoffee.co.nz", handle: "ethiopia-natural-bundle", title: "Limited: Ethiopia Natural Bundle" })).toBe(true);
+    // box sets
+    expect(isBundleOrBoxSet({ source: "vanguardcoffee.co.nz", handle: "pekerau-hills-box-set", title: "Pekerau Hills Box Set" })).toBe(true);
+    // Atomic Ultimate Coffee Duo (specific override)
+    expect(isBundleOrBoxSet({ source: "atomiccoffee.co.nz", handle: "ultimate-coffee-duo", title: "Ultimate Coffee Duo" })).toBe(true);
+    // regular products should not match
+    expect(isBundleOrBoxSet({ source: "c4coffee.co", handle: "krank-blend", title: "Krank" })).toBe(false);
+    expect(isBundleOrBoxSet({ source: "atomiccoffee.co.nz", handle: "veloce", title: "Veloce" })).toBe(false);
   });
 
   it("identifies subscriptions for hiding", () => {

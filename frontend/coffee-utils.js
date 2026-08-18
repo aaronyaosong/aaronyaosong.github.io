@@ -59,15 +59,20 @@ function searchableText(value, seen = new Set()) {
 export function isBlend(item) {
   const isOzoneRanunga = item.source === "ozonecoffee.co.nz"
     && item.handle === "ta-matou-ranunga-a-whare";
-  return isOzoneRanunga || /\bblend\b/i.test([item.title, item.handle, item.product_type, item.tags, item.vendor, item.description, ...(item.metafields ? Object.values(item.metafields) : [])].filter(Boolean).join(" "));
+  const isWolfMoreFM = item.source === "wolfcoffee.co.nz"
+    && item.handle === "morefm-koha-coffee";
+  return isOzoneRanunga || isWolfMoreFM || /\bblend\b/i.test([item.title, item.handle, item.product_type, item.tags, item.vendor, item.description, ...(item.metafields ? Object.values(item.metafields) : [])].filter(Boolean).join(" "));
 }
 
 export function isSubscription(item) {
   return /\bsubscription\b/i.test([item.title, item.handle, item.product_type, item.tags].filter(Boolean).join(" "));
 }
 
-export function isC4BlendsDiscoveryBox(item) {
-  return item.source === "c4coffee.co" && item.handle === "blends-discovery-box";
+export function isBundleOrBoxSet(item) {
+  const text = [item.title, item.handle].filter(Boolean).join(" ");
+  const isAtomicDuo = item.source === "atomiccoffee.co.nz"
+    && item.handle === "ultimate-coffee-duo";
+  return isAtomicDuo || /\b(bundle|discovery[\s-]box|box[\s-]set)\b/i.test(text);
 }
 
 export function isOzoneConcentrate(item) {
