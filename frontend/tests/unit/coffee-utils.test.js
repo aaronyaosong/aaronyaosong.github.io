@@ -26,6 +26,7 @@ describe("coffee-utils unit", () => {
     expect(sourceName("vanguardcoffee.co.nz")).toBe("Vanguard Coffee");
     expect(sourceName("c4coffee.co")).toBe("C4 Coffee");
     expect(sourceName("greyroastingco.com")).toBe("Grey Roasting Co");
+    expect(sourceName("wolfcoffee.co.nz")).toBe("Wolf Coffee");
   });
 
   it("formats single and ranged NZD prices", () => {
