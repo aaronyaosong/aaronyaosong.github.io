@@ -176,6 +176,14 @@ def test_wolf_excludes_gift_cards() -> None:
     assert wolf._is_not_gift_card({"tags": None}) is True
     assert wolf._is_not_gift_card({"tags": "Gift Card"}) is False
 
+
+@pytest.mark.integration
+def test_vanguard_excludes_non_roasted_products() -> None:
+    assert vanguard._is_roasted_coffee({"title": "Alpha Espresso Blend"}) is True
+    assert vanguard._is_roasted_coffee({"title": "APAX Lab Water Mineral Concentrate Drops"}) is False
+    assert vanguard._is_roasted_coffee({"handle": "alpha-espresso-capsules"}) is False
+    assert vanguard._is_roasted_coffee({"title": "Single Origin Drip Bags"}) is False
+
 @pytest.mark.integration
 def test_scrape_grey_roasting_co_excludes_subscriptions(monkeypatch: pytest.MonkeyPatch) -> None:
     def listing(title: str, handle: str) -> CoffeeListing:
@@ -196,7 +204,7 @@ def test_scrape_grey_roasting_co_excludes_subscriptions(monkeypatch: pytest.Monk
     monkeypatch.setattr(
         grey_roasting_co,
         "scrape_shopify_collection",
-        lambda source, collection, database_path=None: [
+        lambda source, collection, database_path=None, **kwargs: [
             listing("Daily Blend", "daily-blend"),
             listing("Daily Blend Subscription", "daily-blend-subscription"),
         ],
@@ -205,3 +213,11 @@ def test_scrape_grey_roasting_co_excludes_subscriptions(monkeypatch: pytest.Monk
     rows = grey_roasting_co.scrape_grey_roasting_co()
 
     assert [row.title for row in rows] == ["Daily Blend"]
+
+
+@pytest.mark.integration
+def test_grey_roasting_co_accepts_only_coffee_products() -> None:
+    assert grey_roasting_co._is_coffee_product({"product_type": "Coffee"}) is True
+    assert grey_roasting_co._is_coffee_product({"tags": ["Coffee", "Single Origin"]}) is True
+    assert grey_roasting_co._is_coffee_product({"product_type": "Merchandise"}) is False
+    assert grey_roasting_co._is_coffee_product({"title": "Coffee Dripper", "tags": []}) is False
