@@ -158,13 +158,21 @@ def test_additional_scrapers_use_expected_shopify_collection(
     monkeypatch.setattr(
         module,
         "scrape_shopify_collection",
-        lambda source, collection, database_path=None: calls.append((source, collection, database_path)) or [],
+        lambda source, collection, database_path=None, **kwargs: calls.append((source, collection, database_path)) or [],
     )
 
     rows = getattr(module, function_name)()
 
     assert rows == []
     assert calls == [(expected_source, expected_collection, None)]
+
+
+@pytest.mark.integration
+def test_vanguard_excludes_non_roasted_products() -> None:
+    assert vanguard._is_roasted_coffee({"title": "Alpha Espresso Blend"}) is True
+    assert vanguard._is_roasted_coffee({"title": "APAX Lab Water Mineral Concentrate Drops"}) is False
+    assert vanguard._is_roasted_coffee({"handle": "alpha-espresso-capsules"}) is False
+    assert vanguard._is_roasted_coffee({"title": "Single Origin Drip Bags"}) is False
 
 
 @pytest.mark.integration
