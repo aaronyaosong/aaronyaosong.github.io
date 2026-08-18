@@ -1,12 +1,15 @@
 # NZ Coffee Release Tracker
 
-Track what coffee is currently available in New Zealand, starting with:
+This site is hosted as a GitHub user site at the moment (thus the repo name).
+
+Tracks what coffee is currently available in New Zealand, starting with:
 
 - Rocket Coffee (`rocketcoffee.co.nz`)
 - Atomic Coffee (`atomiccoffee.co.nz`)
 - Ozone Coffee (`ozonecoffee.co.nz`)
 - Coffee Embassy (`coffeeembassy.co.nz`)
 - Eternal Coffee (`eternalcoffee.co.nz`)
+- Slow Coffee (`slowcoffee.co.nz`)
 
 This tracker uses the Shopify product JSON feeds exposed by the supported roasters and exports snapshots to JSON/CSV plus a SQLite history database.
 
@@ -108,6 +111,8 @@ Run integrated backend + frontend tests:
 ```bash
 bash scripts/test_all.sh
 ```
+
+The integrated test script automatically uses `.venv/bin/python` when present and otherwise falls back to the active `python`/`python3` on your `PATH`.
 
 Run by layer:
 
