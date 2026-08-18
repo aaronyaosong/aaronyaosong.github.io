@@ -4,6 +4,7 @@ import {
   filterAndSortItems,
   isC4BlendsDiscoveryBox,
   isDecaf,
+  isOzoneConcentrate,
   isSubscription,
   metadataValue,
   nzPrice,
@@ -167,9 +168,7 @@ export function createApp({
       }
       const payload = await response.json();
 
-      state.items = (payload.items || []).filter((item) => (
-        !isSubscription(item) && !isC4BlendsDiscoveryBox(item)
-      ));
+      state.items = (payload.items || []).filter((item) => !isSubscription(item) && !isOzoneConcentrate(item) && !isC4BlendsDiscoveryBox(item));
       populateCategoryButtons(state.items);
       populateSelect(sourceSelect, new Set(state.items.map((item) => item.source)), "All stores", sourceName);
       renderStats(state.items, payload.generated_at);
