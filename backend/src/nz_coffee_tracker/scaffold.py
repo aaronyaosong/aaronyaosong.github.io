@@ -34,6 +34,37 @@ SOURCE = "{website}"
 COLLECTION_HANDLE = "{collection}"
 
 
+GROUND_PATTERN = re.compile(
+    r"\\b(espresso|plunger|filter|aeropress|stovetop|chemex|french\\\\s*press|v60|pour\\\\s*over|drip|coarse|medium|fine|grind|ground)\\b",
+    re.IGNORECASE,
+)
+BEAN_PATTERN = re.compile(r"\\b(whole\\\\s*beans?|wholebean|beans)\\b", re.IGNORECASE)
+
+
+def _filter_whole_bean_variants(variants: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    has_grind_spec = False
+    for v in variants:
+        v_text = " ".join(
+            [str(v.get("title", ""))] + [str(v.get(f"option{{i}}", "")) for i in (1, 2, 3) if v.get(f"option{{i}}")]
+        )
+        if GROUND_PATTERN.search(v_text) or BEAN_PATTERN.search(v_text):
+            has_grind_spec = True
+            break
+
+    if not has_grind_spec:
+        return variants
+
+    wb_variants = []
+    for v in variants:
+        v_text = " ".join(
+            [str(v.get("title", ""))] + [str(v.get(f"option{{i}}", "")) for i in (1, 2, 3) if v.get(f"option{{i}}")]
+        )
+        if BEAN_PATTERN.search(v_text) and not GROUND_PATTERN.search(v_text):
+            wb_variants.append(v)
+
+    return wb_variants if wb_variants else variants
+
+
 def _variant_size_grams(title: str) -> float | None:
     if not title:
         return None
@@ -77,13 +108,13 @@ def scrape_{name}(database_path: Path | None = None) -> list[CoffeeListing]:
         handle = str(product.get("handle", "")).strip()
         product_id = int(product.get("id", 0))
         cached = latest_listing(database_path, SOURCE, product_id) if database_path else None
-        variants = product.get("variants", [])
+        variants = _filter_whole_bean_variants(product.get("variants", []))
         if cached is None or not cached["size_prices"] or not cached.get("description"):
             try:
                 product = {{**product, **client.fetch_product(handle)}}
             except requests.RequestException:
                 pass
-            variants = product.get("variants", [])
+            variants = _filter_whole_bean_variants(product.get("variants", []))
 
         prices = [float(v["price"]) for v in variants if v.get("price") is not None]
         prices = prices or [0.0]

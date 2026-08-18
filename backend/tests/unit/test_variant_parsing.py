@@ -2,7 +2,11 @@ from __future__ import annotations
 
 import pytest
 
-from nz_coffee_tracker.scrapers.shopify_roaster import _size_prices, _variant_size_grams
+from nz_coffee_tracker.scrapers.shopify_roaster import (
+    _filter_whole_bean_variants,
+    _size_prices,
+    _variant_size_grams,
+)
 
 
 def test_variant_size_grams_parses_various_weight_units() -> None:
@@ -40,3 +44,25 @@ def test_size_prices_falls_back_to_product_title_when_variant_is_default() -> No
     ]
     sizes = _size_prices(variants, product_title="Finca Nuguo Geisha 60gm")
     assert sizes == [{"size_grams": 60.0, "price_nzd": 95.0}]
+
+
+def test_filter_whole_bean_variants_filters_out_preground_grinds() -> None:
+    variants = [
+        {"title": "250GM / WHOLE BEANS", "option1": "250GM", "option2": "WHOLE BEANS"},
+        {"title": "250GM / ESPRESSO", "option1": "250GM", "option2": "ESPRESSO"},
+        {"title": "250GM / FILTER", "option1": "250GM", "option2": "FILTER"},
+        {"title": "1KG / WHOLE BEANS", "option1": "1KG", "option2": "WHOLE BEANS"},
+        {"title": "1KG / ESPRESSO", "option1": "1KG", "option2": "ESPRESSO"},
+    ]
+    wb = _filter_whole_bean_variants(variants)
+    assert [v["title"] for v in wb] == ["250GM / WHOLE BEANS", "1KG / WHOLE BEANS"]
+
+
+def test_filter_whole_bean_variants_keeps_unspecified_grind_variants() -> None:
+    variants = [
+        {"title": "250g"},
+        {"title": "1kg"},
+    ]
+    wb = _filter_whole_bean_variants(variants)
+    assert wb == variants
+
