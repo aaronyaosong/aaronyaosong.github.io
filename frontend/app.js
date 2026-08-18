@@ -24,7 +24,7 @@ export function createApp({
     activeSource: "all",
     activeBlend: "all",
     activeDecaf: "all",
-    activeSort: "title",
+    activeSort: "newest",
     query: "",
   };
 
@@ -39,6 +39,7 @@ export function createApp({
   const sourceSelect = documentRef.getElementById("sourceFilter");
   const decafSelect = documentRef.getElementById("decafFilter");
   const sortSelect = documentRef.getElementById("sortFilter");
+  sortSelect.value = state.activeSort;
 
   function populateSelect(select, values, allLabel, formatValue = (value) => value) {
     select.innerHTML = `<option value="all">${allLabel}</option>`;
