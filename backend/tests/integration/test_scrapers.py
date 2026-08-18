@@ -3,7 +3,7 @@ from __future__ import annotations
 import pytest
 
 from nz_coffee_tracker.scrapers import atomic, rocket
-from nz_coffee_tracker.scrapers import coffee_embassy, eternal, ozone
+from nz_coffee_tracker.scrapers import coffee_embassy, eternal, ozone, slow
 from nz_coffee_tracker.database import write_database
 from nz_coffee_tracker.models import CoffeeListing
 from nz_coffee_tracker.shopify_client import ShopifyClient
@@ -141,6 +141,7 @@ def test_scrape_rocket_reuses_detail_for_available_cached_item(
         (ozone, "scrape_ozone", "ozonecoffee.co.nz", "coffee"),
         (coffee_embassy, "scrape_coffee_embassy", "coffeeembassy.co.nz", "coffee"),
         (eternal, "scrape_eternal", "eternalcoffee.co.nz", "all"),
+        (slow, "scrape_slow", "slowcoffee.co.nz", "shop-coffee"),
     ],
 )
 def test_additional_scrapers_use_expected_shopify_collection(
