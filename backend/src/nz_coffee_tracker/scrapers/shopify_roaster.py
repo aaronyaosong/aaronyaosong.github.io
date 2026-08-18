@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
@@ -58,9 +59,12 @@ def scrape_shopify_collection(
     source: str,
     collection_handle: str,
     database_path: Path | None = None,
+    product_filter: Callable[[dict[str, Any]], bool] | None = None,
 ) -> list[CoffeeListing]:
     client = ShopifyClient(f"https://{source}")
     products = client.fetch_collection_products(collection_handle)
+    if product_filter is not None:
+        products = [product for product in products if product_filter(product)]
     scraped_at = now_utc_iso()
     listings = []
 
