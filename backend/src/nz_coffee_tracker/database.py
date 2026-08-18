@@ -66,7 +66,10 @@ def write_database(
 ) -> Path:
     rows = list(listings)
     path.parent.mkdir(parents=True, exist_ok=True)
-    scraped_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+    if rows:
+        scraped_at = rows[0].scraped_at
+    else:
+        scraped_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
     with sqlite3.connect(path) as connection:
         connection.executescript(SCHEMA)

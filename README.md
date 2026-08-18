@@ -11,6 +11,7 @@ Tracks what coffee is currently available in New Zealand, starting with:
 - Eternal Coffee (`eternalcoffee.co.nz`)
 - Vanguard Coffee (`vanguardcoffee.co.nz`)
 - C4 Coffee (`c4coffee.co`)
+- Slow Coffee (`slowcoffee.co.nz`)
 
 This tracker uses the Shopify product JSON feeds exposed by the supported roasters and exports snapshots to JSON/CSV plus a SQLite history database.
 

@@ -4,6 +4,7 @@ export function sourceName(raw) {
   if (raw.includes("ozone")) return "Ozone Coffee";
   if (raw.includes("coffeeembassy")) return "Coffee Embassy";
   if (raw.includes("eternal")) return "Eternal Coffee";
+  if (raw.includes("slowcoffee")) return "Slow Coffee";
   return raw;
 }
 

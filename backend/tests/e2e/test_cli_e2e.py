@@ -1,11 +1,14 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime, timezone
 
 import pytest
 
 from nz_coffee_tracker import cli, tracker
 from nz_coffee_tracker.models import CoffeeListing
+
+_TODAY_ISO = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
 def _listing(title: str, category: str, available: bool) -> CoffeeListing:
@@ -19,8 +22,8 @@ def _listing(title: str, category: str, available: bool) -> CoffeeListing:
         available=available,
         price_min_nzd=19.0,
         price_max_nzd=25.0,
-        updated_at="2026-08-17T00:00:00+00:00",
-        scraped_at="2026-08-17T00:00:00+00:00",
+        updated_at=_TODAY_ISO,
+        scraped_at=_TODAY_ISO,
         description="Coffee description",
         flavour_notes="chocolate",
     )
@@ -50,6 +53,7 @@ def test_cli_writes_filtered_csv_and_json(monkeypatch: pytest.MonkeyPatch, tmp_p
     monkeypatch.setattr(tracker, "scrape_eternal", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_vanguard", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_c4", lambda **kwargs: [])
+    monkeypatch.setattr(tracker, "scrape_slow", lambda **kwargs: [])
 
     out_dir = tmp_path / "output"
     monkeypatch.setattr("sys.argv", ["prog", "--out-dir", str(out_dir), "--format", "both"])
@@ -87,6 +91,7 @@ def test_cli_skips_second_scrape_when_today_data_exists(monkeypatch: pytest.Monk
     monkeypatch.setattr(tracker, "scrape_eternal", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_vanguard", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_c4", lambda **kwargs: [])
+    monkeypatch.setattr(tracker, "scrape_slow", lambda **kwargs: [])
     out_dir = tmp_path / "output"
     monkeypatch.setattr("sys.argv", ["prog", "--out-dir", str(out_dir), "--format", "both"])
 
@@ -98,6 +103,7 @@ def test_cli_skips_second_scrape_when_today_data_exists(monkeypatch: pytest.Monk
     monkeypatch.setattr(tracker, "scrape_eternal", lambda **kwargs: pytest.fail("scraper should not run"))
     monkeypatch.setattr(tracker, "scrape_vanguard", lambda **kwargs: pytest.fail("scraper should not run"))
     monkeypatch.setattr(tracker, "scrape_c4", lambda **kwargs: pytest.fail("scraper should not run"))
+    monkeypatch.setattr(tracker, "scrape_slow", lambda **kwargs: pytest.fail("scraper should not run"))
 
     assert cli.main() == 0
     assert "Data already scraped today; skipping scrape." in capsys.readouterr().out
