@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T03:33:47+00:00",
+  "generated_at": "2026-08-18T09:04:23+00:00",
   "count": 149,
   "items": [
     {
@@ -12,8 +12,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 95.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -42,8 +42,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -68,8 +68,8 @@
       "available": true,
       "price_min_nzd": 50.0,
       "price_max_nzd": 50.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "sudan rume",
       "size_prices": [
         {
@@ -94,8 +94,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -124,8 +124,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -150,8 +150,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 88.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "caturra,catuai,obata",
       "size_prices": [
         {
@@ -180,8 +180,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -210,8 +210,8 @@
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -268,8 +268,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -298,8 +298,8 @@
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -356,8 +356,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "ruiru 11,sl28,sl34,batian",
       "size_prices": [
         {
@@ -382,8 +382,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "ruiru 11,sl28,sl34,batian",
       "size_prices": [
         {
@@ -408,8 +408,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "castillo,caturra",
       "size_prices": [
         {
@@ -434,8 +434,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 92.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -464,8 +464,8 @@
       "available": true,
       "price_min_nzd": 42.0,
       "price_max_nzd": 42.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "sidra",
       "size_prices": [
         {
@@ -490,8 +490,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "ruiru 11,sl28,sl34,batian",
       "size_prices": [
         {
@@ -516,8 +516,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "sl28,sl34",
       "size_prices": [
         {
@@ -542,8 +542,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "ruiru 11,sl28,sl34,batian",
       "size_prices": [
         {
@@ -568,8 +568,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -594,8 +594,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -624,8 +624,8 @@
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -682,8 +682,8 @@
       "available": true,
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -708,8 +708,8 @@
       "available": true,
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -734,8 +734,8 @@
       "available": true,
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "java",
       "size_prices": [
         {
@@ -760,8 +760,8 @@
       "available": true,
       "price_min_nzd": 72.0,
       "price_max_nzd": 480.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -806,8 +806,8 @@
       "available": true,
       "price_min_nzd": 84.0,
       "price_max_nzd": 576.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -996,8 +996,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "castillo,caturra",
       "size_prices": [
         {
@@ -1022,8 +1022,8 @@
       "available": true,
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
-      "updated_at": "2026-08-18T15:33:13+12:00",
-      "scraped_at": "2026-08-18T03:33:13+00:00",
+      "updated_at": "2026-08-18T21:03:34+12:00",
+      "scraped_at": "2026-08-18T09:03:34+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -1048,8 +1048,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
-      "updated_at": "2026-08-18T15:33:18+12:00",
-      "scraped_at": "2026-08-18T03:33:18+00:00",
+      "updated_at": "2026-08-18T21:03:42+12:00",
+      "scraped_at": "2026-08-18T09:03:42+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -1069,8 +1069,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
-      "updated_at": "2026-08-18T15:33:18+12:00",
-      "scraped_at": "2026-08-18T03:33:18+00:00",
+      "updated_at": "2026-08-18T21:03:42+12:00",
+      "scraped_at": "2026-08-18T09:03:42+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1139,8 +1139,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
-      "updated_at": "2026-08-18T15:33:18+12:00",
-      "scraped_at": "2026-08-18T03:33:18+00:00",
+      "updated_at": "2026-08-18T21:03:42+12:00",
+      "scraped_at": "2026-08-18T09:03:42+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1209,8 +1209,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-18T15:33:18+12:00",
-      "scraped_at": "2026-08-18T03:33:18+00:00",
+      "updated_at": "2026-08-18T21:03:42+12:00",
+      "scraped_at": "2026-08-18T09:03:42+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -1267,8 +1267,8 @@
       "available": true,
       "price_min_nzd": 20.5,
       "price_max_nzd": 82.0,
-      "updated_at": "2026-08-18T15:33:18+12:00",
-      "scraped_at": "2026-08-18T03:33:18+00:00",
+      "updated_at": "2026-08-18T21:03:42+12:00",
+      "scraped_at": "2026-08-18T09:03:42+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -1337,8 +1337,8 @@
       "available": true,
       "price_min_nzd": 27.5,
       "price_max_nzd": 27.5,
-      "updated_at": "2026-08-18T15:33:18+12:00",
-      "scraped_at": "2026-08-18T03:33:18+00:00",
+      "updated_at": "2026-08-18T21:03:42+12:00",
+      "scraped_at": "2026-08-18T09:03:42+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -1383,8 +1383,8 @@
       "available": true,
       "price_min_nzd": 31.0,
       "price_max_nzd": 31.0,
-      "updated_at": "2026-08-18T15:33:18+12:00",
-      "scraped_at": "2026-08-18T03:33:18+00:00",
+      "updated_at": "2026-08-18T21:03:42+12:00",
+      "scraped_at": "2026-08-18T09:03:42+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -1429,8 +1429,8 @@
       "available": true,
       "price_min_nzd": 29.0,
       "price_max_nzd": 29.0,
-      "updated_at": "2026-08-18T15:33:18+12:00",
-      "scraped_at": "2026-08-18T03:33:18+00:00",
+      "updated_at": "2026-08-18T21:03:42+12:00",
+      "scraped_at": "2026-08-18T09:03:42+00:00",
       "varietal": "ruiru 11,batian",
       "size_prices": [
         {
@@ -1475,8 +1475,8 @@
       "available": true,
       "price_min_nzd": 28.5,
       "price_max_nzd": 28.5,
-      "updated_at": "2026-08-18T15:33:18+12:00",
-      "scraped_at": "2026-08-18T03:33:18+00:00",
+      "updated_at": "2026-08-18T21:03:42+12:00",
+      "scraped_at": "2026-08-18T09:03:42+00:00",
       "varietal": "typica",
       "size_prices": [
         {
@@ -1521,8 +1521,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1643,8 +1643,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1793,8 +1793,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1915,8 +1915,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 205.5,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2037,8 +2037,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 71.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -2155,8 +2155,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 69.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2273,8 +2273,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2395,8 +2395,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 210.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "castillo,caturra",
       "size_prices": [
         {
@@ -2517,8 +2517,8 @@
       "available": true,
       "price_min_nzd": 56.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2571,8 +2571,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "castillo,caturra,typica",
       "size_prices": [
         {
@@ -2689,8 +2689,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 78.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2807,8 +2807,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -2925,8 +2925,8 @@
       "available": true,
       "price_min_nzd": 122.0,
       "price_max_nzd": 122.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -2946,8 +2946,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "caturra,catuai",
       "size_prices": [
         {
@@ -3064,8 +3064,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3182,8 +3182,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "caturra,bourbon,geisha,java",
       "size_prices": [
         {
@@ -3300,8 +3300,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -3418,8 +3418,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-18T15:33:20+12:00",
-      "scraped_at": "2026-08-18T03:33:20+00:00",
+      "updated_at": "2026-08-18T21:03:44+12:00",
+      "scraped_at": "2026-08-18T09:03:44+00:00",
       "varietal": "catuai,bourbon",
       "size_prices": [
         {
@@ -3536,8 +3536,8 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 79.0,
-      "updated_at": "2026-08-18T15:33:23+12:00",
-      "scraped_at": "2026-08-18T03:33:23+00:00",
+      "updated_at": "2026-08-18T21:03:50+12:00",
+      "scraped_at": "2026-08-18T09:03:50+00:00",
       "varietal": "caturra,catuai,bourbon,gesha,java",
       "size_prices": [
         {
@@ -3594,8 +3594,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
-      "updated_at": "2026-08-18T15:33:23+12:00",
-      "scraped_at": "2026-08-18T03:33:23+00:00",
+      "updated_at": "2026-08-18T21:03:50+12:00",
+      "scraped_at": "2026-08-18T09:03:50+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3648,8 +3648,8 @@
       "available": true,
       "price_min_nzd": 18.5,
       "price_max_nzd": 66.5,
-      "updated_at": "2026-08-18T15:33:23+12:00",
-      "scraped_at": "2026-08-18T03:33:23+00:00",
+      "updated_at": "2026-08-18T21:03:50+12:00",
+      "scraped_at": "2026-08-18T09:03:50+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3702,8 +3702,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
-      "updated_at": "2026-08-18T15:33:23+12:00",
-      "scraped_at": "2026-08-18T03:33:23+00:00",
+      "updated_at": "2026-08-18T21:03:50+12:00",
+      "scraped_at": "2026-08-18T09:03:50+00:00",
       "varietal": "caturra,bourbon,gesha,java",
       "size_prices": [
         {
@@ -3756,8 +3756,8 @@
       "available": true,
       "price_min_nzd": 21.5,
       "price_max_nzd": 82.5,
-      "updated_at": "2026-08-18T15:33:23+12:00",
-      "scraped_at": "2026-08-18T03:33:23+00:00",
+      "updated_at": "2026-08-18T21:03:50+12:00",
+      "scraped_at": "2026-08-18T09:03:50+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -3818,8 +3818,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
-      "updated_at": "2026-08-18T15:33:23+12:00",
-      "scraped_at": "2026-08-18T03:33:23+00:00",
+      "updated_at": "2026-08-18T21:03:50+12:00",
+      "scraped_at": "2026-08-18T09:03:50+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3872,8 +3872,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-18T15:33:23+12:00",
-      "scraped_at": "2026-08-18T03:33:23+00:00",
+      "updated_at": "2026-08-18T21:03:50+12:00",
+      "scraped_at": "2026-08-18T09:03:50+00:00",
       "varietal": "caturra,bourbon,gesha",
       "size_prices": [],
       "origin_country": "unknown",
@@ -3893,8 +3893,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
-      "updated_at": "2026-08-18T15:33:23+12:00",
-      "scraped_at": "2026-08-18T03:33:23+00:00",
+      "updated_at": "2026-08-18T21:03:50+12:00",
+      "scraped_at": "2026-08-18T09:03:50+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3947,8 +3947,8 @@
       "available": true,
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
-      "updated_at": "2026-08-18T15:33:23+12:00",
-      "scraped_at": "2026-08-18T03:33:23+00:00",
+      "updated_at": "2026-08-18T21:03:50+12:00",
+      "scraped_at": "2026-08-18T09:03:50+00:00",
       "varietal": "pacamara,gesha,geisha",
       "size_prices": [
         {
@@ -4001,8 +4001,8 @@
       "available": true,
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
-      "updated_at": "2026-08-18T15:33:23+12:00",
-      "scraped_at": "2026-08-18T03:33:23+00:00",
+      "updated_at": "2026-08-18T21:03:50+12:00",
+      "scraped_at": "2026-08-18T09:03:50+00:00",
       "varietal": "bourbon,gesha",
       "size_prices": [
         {
@@ -4055,8 +4055,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
-      "updated_at": "2026-08-18T15:33:28+12:00",
-      "scraped_at": "2026-08-18T03:33:28+00:00",
+      "updated_at": "2026-08-18T21:03:55+12:00",
+      "scraped_at": "2026-08-18T09:03:55+00:00",
       "varietal": "caturra,bourbon,typica,geisha",
       "size_prices": [
         {
@@ -4081,8 +4081,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
-      "updated_at": "2026-08-18T15:33:28+12:00",
-      "scraped_at": "2026-08-18T03:33:28+00:00",
+      "updated_at": "2026-08-18T21:03:55+12:00",
+      "scraped_at": "2026-08-18T09:03:55+00:00",
       "varietal": "gesha,geisha",
       "size_prices": [
         {
@@ -4107,8 +4107,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-18T15:33:28+12:00",
-      "scraped_at": "2026-08-18T03:33:28+00:00",
+      "updated_at": "2026-08-18T21:03:55+12:00",
+      "scraped_at": "2026-08-18T09:03:55+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4137,8 +4137,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-18T15:33:28+12:00",
-      "scraped_at": "2026-08-18T03:33:28+00:00",
+      "updated_at": "2026-08-18T21:03:55+12:00",
+      "scraped_at": "2026-08-18T09:03:55+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4167,8 +4167,8 @@
       "available": true,
       "price_min_nzd": 66.0,
       "price_max_nzd": 66.0,
-      "updated_at": "2026-08-18T15:33:28+12:00",
-      "scraped_at": "2026-08-18T03:33:28+00:00",
+      "updated_at": "2026-08-18T21:03:55+12:00",
+      "scraped_at": "2026-08-18T09:03:55+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4193,8 +4193,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-18T15:33:28+12:00",
-      "scraped_at": "2026-08-18T03:33:28+00:00",
+      "updated_at": "2026-08-18T21:03:55+12:00",
+      "scraped_at": "2026-08-18T09:03:55+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -4223,8 +4223,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-18T15:33:28+12:00",
-      "scraped_at": "2026-08-18T03:33:28+00:00",
+      "updated_at": "2026-08-18T21:03:55+12:00",
+      "scraped_at": "2026-08-18T09:03:55+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -4253,8 +4253,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
-      "updated_at": "2026-08-18T15:33:28+12:00",
-      "scraped_at": "2026-08-18T03:33:28+00:00",
+      "updated_at": "2026-08-18T21:03:55+12:00",
+      "scraped_at": "2026-08-18T09:03:55+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4279,8 +4279,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
-      "updated_at": "2026-08-18T15:33:28+12:00",
-      "scraped_at": "2026-08-18T03:33:28+00:00",
+      "updated_at": "2026-08-18T21:03:55+12:00",
+      "scraped_at": "2026-08-18T09:03:55+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -4309,8 +4309,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
-      "updated_at": "2026-08-18T15:33:28+12:00",
-      "scraped_at": "2026-08-18T03:33:28+00:00",
+      "updated_at": "2026-08-18T21:03:55+12:00",
+      "scraped_at": "2026-08-18T09:03:55+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -4339,8 +4339,8 @@
       "available": true,
       "price_min_nzd": 37.5,
       "price_max_nzd": 106.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -4421,8 +4421,8 @@
       "available": true,
       "price_min_nzd": 36.0,
       "price_max_nzd": 106.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -4471,8 +4471,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "ruiru 11,sl28,sl34",
       "size_prices": [
         {
@@ -4553,8 +4553,8 @@
       "available": true,
       "price_min_nzd": 260.0,
       "price_max_nzd": 260.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4579,8 +4579,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4605,8 +4605,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4631,8 +4631,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4657,8 +4657,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4683,8 +4683,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -4765,8 +4765,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -4847,8 +4847,8 @@
       "available": true,
       "price_min_nzd": 44.0,
       "price_max_nzd": 276.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -4889,8 +4889,8 @@
       "available": true,
       "price_min_nzd": 22.5,
       "price_max_nzd": 74.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "sl28,sl34",
       "size_prices": [
         {
@@ -4971,8 +4971,8 @@
       "available": true,
       "price_min_nzd": 20.5,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -5051,27 +5051,27 @@
       "handle": "filter-coffee-subscription",
       "product_url": "https://vanguardcoffee.co.nz/products/filter-coffee-subscription",
       "available": true,
-      "price_min_nzd": 27.5,
+      "price_min_nzd": 28.0,
       "price_max_nzd": 50.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
           "size_grams": 250.0,
-          "price_nzd": 27.5
+          "price_nzd": 28.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 27.5
+          "price_nzd": 28.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 27.5
+          "price_nzd": 28.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 27.5
+          "price_nzd": 28.0
         },
         {
           "size_grams": 500.0,
@@ -5105,71 +5105,71 @@
       "handle": "seasonal-espresso-blend",
       "product_url": "https://vanguardcoffee.co.nz/products/seasonal-espresso-blend",
       "available": true,
-      "price_min_nzd": 20.0,
-      "price_max_nzd": 60.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "price_min_nzd": 22.0,
+      "price_max_nzd": 70.0,
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "sl28,sl34",
       "size_prices": [
         {
           "size_grams": 250.0,
-          "price_nzd": 20.0
+          "price_nzd": 22.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 36.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 60.0
+          "price_nzd": 70.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 20.0
+          "price_nzd": 22.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 20.0
+          "price_nzd": 22.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 20.0
+          "price_nzd": 22.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 36.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 36.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 36.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 60.0
+          "price_nzd": 70.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 60.0
+          "price_nzd": 70.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 60.0
+          "price_nzd": 70.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 20.0
+          "price_nzd": 22.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 36.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 60.0
+          "price_nzd": 70.0
         }
       ],
       "origin_country": "unknown",
@@ -5187,78 +5187,78 @@
       "handle": "colombia-popayan-reserve-decaf-espresso",
       "product_url": "https://vanguardcoffee.co.nz/products/colombia-popayan-reserve-decaf-espresso",
       "available": true,
-      "price_min_nzd": 20.0,
-      "price_max_nzd": 60.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "price_min_nzd": 21.0,
+      "price_max_nzd": 68.0,
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "castillo,caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
-          "price_nzd": 20.0
+          "price_nzd": 21.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 36.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 60.0
+          "price_nzd": 68.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 20.0
+          "price_nzd": 21.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 20.0
+          "price_nzd": 21.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 20.0
+          "price_nzd": 21.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 36.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 36.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 36.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 60.0
+          "price_nzd": 68.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 60.0
+          "price_nzd": 68.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 60.0
+          "price_nzd": 68.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 20.0
+          "price_nzd": 21.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 36.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 60.0
+          "price_nzd": 68.0
         }
       ],
-      "origin_country": "Colombia REGION - Popayan, Cauce ALTITUDE - 1600-2050 M",
+      "origin_country": "Colombia REGION - Popayan, Cauca ALTITUDE - 1600-2050 M",
       "producer": "unknown",
       "process": "unknown",
       "decaf": true,
-      "description": "Popay\u00e1n Reserve comes from the highlands of Cauca, where smallholder producers grow coffee across the slopes surrounding the city of Popay\u00e1n. The region\u2019s elevation and cool Andean climate help produce coffees with sweetness, balance and a clean structure. Decaffeinated in Colombia using the sugarcane EA process, this lot keeps that regional character intact, a refined, easy-drinking coffee with caramel sweetness, soft citrus and a smooth chocolate finish. COUNTRY - Colombia REGION - Popayan, Cauce ALTITUDE - 1600-2050 M.A.S.L VARIETAL - Castillo, Colombia, Caturra PROCESSING METHOD - Washed; Sugarcane EA Decaf ROAST STYLE - Filter / Espresso TASTING NOTES - Citrus, Toffee, Chocolate Brownie",
+      "description": "Popay\u00e1n Reserve comes from the highlands of Cauca, where smallholder producers grow coffee across the slopes surrounding the city of Popay\u00e1n. The region\u2019s elevation and cool Andean climate help produce coffees with sweetness, balance and a clean structure. Decaffeinated in Colombia using the sugarcane EA process, this lot keeps that regional character intact, a refined, easy-drinking coffee with caramel sweetness, soft citrus and a smooth chocolate finish. COUNTRY - Colombia REGION - Popayan, Cauca ALTITUDE - 1600-2050 M.A.S.L VARIETAL - Castillo, Colombia, Caturra PROCESSING METHOD - Washed; Sugarcane EA Decaf ROAST STYLE - Filter / Espresso TASTING NOTES - Citrus, Toffee, Chocolate Brownie",
       "flavour_notes": "Citrus, Toffee, Chocolate Brownie"
     },
     {
@@ -5269,71 +5269,71 @@
       "handle": "high-rd-espresso-blend",
       "product_url": "https://vanguardcoffee.co.nz/products/high-rd-espresso-blend",
       "available": true,
-      "price_min_nzd": 18.0,
-      "price_max_nzd": 56.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "price_min_nzd": 19.0,
+      "price_max_nzd": 60.0,
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 19.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 36.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 60.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 19.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 19.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 19.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 36.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 36.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 36.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 60.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 60.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 60.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 19.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 36.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 60.0
         }
       ],
       "origin_country": "unknown",
@@ -5351,71 +5351,71 @@
       "handle": "brazil-araponga-espresso",
       "product_url": "https://vanguardcoffee.co.nz/products/brazil-araponga-espresso",
       "available": true,
-      "price_min_nzd": 18.0,
-      "price_max_nzd": 56.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "price_min_nzd": 19.0,
+      "price_max_nzd": 60.0,
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 19.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 32.0
+          "price_nzd": 36.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 60.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 19.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 19.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 19.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 32.0
+          "price_nzd": 36.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 32.0
+          "price_nzd": 36.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 32.0
+          "price_nzd": 36.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 60.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 60.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 60.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 19.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 32.0
+          "price_nzd": 36.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 60.0
         }
       ],
       "origin_country": "Brazil REGION - Araponga, Matas de Minas ALTITUDE - 950-1400 M",
@@ -5433,95 +5433,95 @@
       "handle": "alpha-espresso-blend",
       "product_url": "https://vanguardcoffee.co.nz/products/alpha-espresso-blend",
       "available": true,
-      "price_min_nzd": 18.0,
-      "price_max_nzd": 56.0,
-      "updated_at": "2026-08-18T15:33:31+12:00",
-      "scraped_at": "2026-08-18T03:33:31+00:00",
+      "price_min_nzd": 20.0,
+      "price_max_nzd": 68.0,
+      "updated_at": "2026-08-18T21:04:00+12:00",
+      "scraped_at": "2026-08-18T09:04:00+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 20.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 20.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 20.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 20.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 20.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 20.0
         },
         {
           "size_grams": 250.0,
-          "price_nzd": 18.0
+          "price_nzd": 20.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 500.0,
-          "price_nzd": 34.0
+          "price_nzd": 38.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 68.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 68.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 68.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 68.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 68.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 68.0
         },
         {
           "size_grams": 1000.0,
-          "price_nzd": 56.0
+          "price_nzd": 68.0
         }
       ],
       "origin_country": "unknown",
@@ -5541,8 +5541,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -5623,8 +5623,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 240.01,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -5709,8 +5709,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -5791,8 +5791,8 @@
       "available": true,
       "price_min_nzd": 17.5,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -5873,8 +5873,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -5955,8 +5955,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 78.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -6037,8 +6037,8 @@
       "available": true,
       "price_min_nzd": 17.5,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -6119,8 +6119,8 @@
       "available": true,
       "price_min_nzd": 17.0,
       "price_max_nzd": 68.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -6201,8 +6201,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "typica",
       "size_prices": [
         {
@@ -6283,8 +6283,8 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 88.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -6365,8 +6365,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "caturra,catuai,bourbon,typica",
       "size_prices": [
         {
@@ -6447,8 +6447,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "caturra,bourbon,typica",
       "size_prices": [
         {
@@ -6529,8 +6529,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -6611,8 +6611,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "caturra,catuai,bourbon,typica",
       "size_prices": [
         {
@@ -6693,8 +6693,8 @@
       "available": true,
       "price_min_nzd": 38.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -6714,8 +6714,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -6796,8 +6796,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -6817,8 +6817,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -6899,8 +6899,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -6981,8 +6981,8 @@
       "available": true,
       "price_min_nzd": 3.4,
       "price_max_nzd": 624.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -7211,8 +7211,8 @@
       "available": true,
       "price_min_nzd": 22.51,
       "price_max_nzd": 90.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -7293,8 +7293,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -7328,6 +7328,10 @@
         {
           "size_grams": 500.0,
           "price_nzd": 42.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 84.0
         }
       ],
       "origin_country": "unknown",
@@ -7347,8 +7351,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 200.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -7425,8 +7429,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 96.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -7479,8 +7483,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 149.99,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -7561,8 +7565,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -7615,8 +7619,8 @@
       "available": true,
       "price_min_nzd": 32.5,
       "price_max_nzd": 130.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -7697,8 +7701,8 @@
       "available": true,
       "price_min_nzd": 32.0,
       "price_max_nzd": 160.0,
-      "updated_at": "2026-08-18T15:33:34+12:00",
-      "scraped_at": "2026-08-18T03:33:35+00:00",
+      "updated_at": "2026-08-18T21:04:05+12:00",
+      "scraped_at": "2026-08-18T09:04:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -7779,10 +7783,50 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "unknown",
       "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 35.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 35.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 35.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 35.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 18.0
+        },
         {
           "size_grams": 1000.0,
           "price_nzd": 65.0
@@ -7881,10 +7925,30 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "unknown",
       "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 30.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 30.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 30.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 30.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 30.0
+        },
         {
           "size_grams": 1000.0,
           "price_nzd": 110.0
@@ -7923,10 +7987,58 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "unknown",
       "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 35.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 35.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 35.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 35.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 35.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 18.0
+        },
         {
           "size_grams": 1000.0,
           "price_nzd": 65.0
@@ -8041,10 +8153,30 @@
       "available": true,
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "caturra,catuai,obata",
       "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.5
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.5
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.5
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.5
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.5
+        },
         {
           "size_grams": 1000.0,
           "price_nzd": 95.4
@@ -8083,10 +8215,30 @@
       "available": true,
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "caturra,catuai,obata",
       "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.5
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.5
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.5
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.5
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.5
+        },
         {
           "size_grams": 1000.0,
           "price_nzd": 95.4
@@ -8125,10 +8277,30 @@
       "available": true,
       "price_min_nzd": 49.0,
       "price_max_nzd": 220.0,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "unknown",
       "size_prices": [
+        {
+          "size_grams": 200.0,
+          "price_nzd": 49.0
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 49.0
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 49.0
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 49.0
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 49.0
+        },
         {
           "size_grams": 1000.0,
           "price_nzd": 220.0
@@ -8150,12 +8322,12 @@
           "price_nzd": 220.0
         }
       ],
-      "origin_country": "unknown",
+      "origin_country": "Bruselas, Huila, Colombia",
       "producer": "Finca Zarza Producers: Jhonatan and Johan Gasca Fermentation: 42hrs Anaerobic & Thermal Shock",
       "process": "Washed * This Coffee comes in 200gms Our V60 Recipe - a great starting point for brewing all of our coffees Ratio: 16g coffee to 250g water Water Temperature: 90C Brew Time: 2:30-3:00m Three Pour Method - First pour, 50g of hot water, allow coffee to bloom for 35 seconds - Second pour, continue the pour until you reach 150g hot water in total - Third pour to 250g of hot water in total (start this pour when the water reaches the coffee bed) - Enjoy About Wush Wush The Wush Wush coffee variety is a unique and highly sought-after coffee that originates from Ethiopia",
       "decaf": false,
-      "description": "Cupping Notes: Peach, Rose, Violet, Black Tea Varietal: Wush Wush Region: Bruselas, Huila, Colombia Farm: Finca Zarza Producers: Jhonatan and Johan Gasca Fermentation: 42hrs Anaerobic & Thermal Shock Process: Washed * This Coffee comes in 200gms Our V60 Recipe - a great starting point for brewing all of our coffees Ratio: 16g coffee to 250g water Water Temperature: 90C Brew Time: 2:30-3:00m Three Pour Method - First pour, 50g of hot water, allow coffee to bloom for 35 seconds - Second pour, continue the pour until you reach 150g hot water in total - Third pour to 250g of hot water in total (start this pour when the water reaches the coffee bed) - Enjoy About Wush Wush The Wush Wush coffee variety is a unique and highly sought-after coffee that originates from Ethiopia. Like many Ethiopian varieties, it is part of the country's genetic coffee diversity. It's known for their floral, tea-like, and often exotic fruit notes. Processing Harvest only fully ripe cherries, to eliminate all unwanted dirt, stems and leaves. Oxidation for 12 hours in plastic bags. The cherries are depulped and undergo an additional oxidation period in tanks for 12 hours. The coffee is then fermented anaerobically for 42 hours in a sealed environment. Finally, a thermal shock is carried out the coffee is washed in hot water at an average temperature of 50 \u00b0C to finishing the fermentation process. Quenching is a specific method of rapidly cooling down coffee beans or cherries. It is a critical step in various coffee processing methods as it contributes to fixate the volatile compounds and aromas produced during oxidation stages. The combination of hot and cold water first opens the pores and layers in the bean and then fixates the volatile compounds. *Prime window for drinking is 2 to 4 weeks post roast. If the coffee is fresh be sure to bloom 40 seconds. *A reminder that no exchanges or returns will be approved in the case of mistaken ordering - Please double check your grind preferences",
-      "flavour_notes": "Peach, Rose, Violet, Black Tea Varietal: Wush Wush Region: Bruselas, Huila, Colombia"
+      "description": "Cupping Notes: Peach, Rose, Violet, Black Tea Varietal: Wush Wush Origin: Bruselas, Huila, Colombia Farm: Finca Zarza Producers: Jhonatan and Johan Gasca Fermentation: 42hrs Anaerobic & Thermal Shock Process: Washed * This Coffee comes in 200gms Our V60 Recipe - a great starting point for brewing all of our coffees Ratio: 16g coffee to 250g water Water Temperature: 90C Brew Time: 2:30-3:00m Three Pour Method - First pour, 50g of hot water, allow coffee to bloom for 35 seconds - Second pour, continue the pour until you reach 150g hot water in total - Third pour to 250g of hot water in total (start this pour when the water reaches the coffee bed) - Enjoy About Wush Wush The Wush Wush coffee variety is a unique and highly sought-after coffee that originates from Ethiopia. Like many Ethiopian varieties, it is part of the country's genetic coffee diversity. It's known for their floral, tea-like, and often exotic fruit notes. Processing Harvest only fully ripe cherries, to eliminate all unwanted dirt, stems and leaves. Oxidation for 12 hours in plastic bags. The cherries are depulped and undergo an additional oxidation period in tanks for 12 hours. The coffee is then fermented anaerobically for 42 hours in a sealed environment. Finally, a thermal shock is carried out the coffee is washed in hot water at an average temperature of 50 \u00b0C to finishing the fermentation process. Quenching is a specific method of rapidly cooling down coffee beans or cherries. It is a critical step in various coffee processing methods as it contributes to fixate the volatile compounds and aromas produced during oxidation stages. The combination of hot and cold water first opens the pores and layers in the bean and then fixates the volatile compounds. *Prime window for drinking is 2 to 4 weeks post roast. If the coffee is fresh be sure to bloom 40 seconds. *A reminder that no exchanges or returns will be approved in the case of mistaken ordering - Please double check your grind preferences",
+      "flavour_notes": "Peach, Rose, Violet, Black Tea Varietal: Wush Wush"
     },
     {
       "source": "greyroastingco.com",
@@ -8167,10 +8339,30 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "typica,java",
       "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
         {
           "size_grams": 1000.0,
           "price_nzd": 100.0
@@ -8209,10 +8401,30 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "typica,java",
       "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
         {
           "size_grams": 1000.0,
           "price_nzd": 100.0
@@ -8251,10 +8463,30 @@
       "available": true,
       "price_min_nzd": 49.0,
       "price_max_nzd": 220.0,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "geisha",
       "size_prices": [
+        {
+          "size_grams": 200.0,
+          "price_nzd": 49.0
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 49.0
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 49.0
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 49.0
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 49.0
+        },
         {
           "size_grams": 1000.0,
           "price_nzd": 220.0
@@ -8293,10 +8525,15 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "unknown",
-      "size_prices": [],
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 30.0
+        }
+      ],
       "origin_country": "unknown",
       "producer": "unknown",
       "process": "Washed Our V60 Recipe - a great starting point for brewing all of our coffees Ratio: 16g coffee to 260g water Water Temperature: 90C Brew Time: 2:30-3:00m Three Pour Method - First pour, 50g of hot water, allow coffee to bloom for 35 seconds - Second pour, continue the pour until you reach 160g hot water in total - Third pour to 260g of hot water in total (start this pour when the water reaches the coffee bed) - Enjoy *Prime window for drinking is 2 to 4 weeks post roast",
@@ -8314,10 +8551,50 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 80.0,
-      "updated_at": "2026-08-18T15:33:40+12:00",
-      "scraped_at": "2026-08-18T03:33:40+00:00",
+      "updated_at": "2026-08-18T20:55:46+12:00",
+      "scraped_at": "2026-08-18T09:04:12+00:00",
       "varietal": "castillo",
       "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 22.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 22.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 22.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 22.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 22.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 42.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 42.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 42.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 42.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 42.0
+        },
         {
           "size_grams": 1000.0,
           "price_nzd": 80.0
@@ -8356,8 +8633,8 @@
       "available": true,
       "price_min_nzd": 31.0,
       "price_max_nzd": 138.99,
-      "updated_at": "2026-08-18T15:33:43+12:00",
-      "scraped_at": "2026-08-18T03:33:43+00:00",
+      "updated_at": "2026-08-18T21:04:17+12:00",
+      "scraped_at": "2026-08-18T09:04:17+00:00",
       "varietal": "sl28",
       "size_prices": [
         {
@@ -8402,8 +8679,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 119.99,
-      "updated_at": "2026-08-18T15:33:43+12:00",
-      "scraped_at": "2026-08-18T03:33:43+00:00",
+      "updated_at": "2026-08-18T21:04:17+12:00",
+      "scraped_at": "2026-08-18T09:04:17+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -8448,8 +8725,8 @@
       "available": true,
       "price_min_nzd": 23.0,
       "price_max_nzd": 101.99,
-      "updated_at": "2026-08-18T15:33:43+12:00",
-      "scraped_at": "2026-08-18T03:33:43+00:00",
+      "updated_at": "2026-08-18T21:04:17+12:00",
+      "scraped_at": "2026-08-18T09:04:17+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -8494,8 +8771,8 @@
       "available": true,
       "price_min_nzd": 23.0,
       "price_max_nzd": 104.99,
-      "updated_at": "2026-08-18T15:33:43+12:00",
-      "scraped_at": "2026-08-18T03:33:43+00:00",
+      "updated_at": "2026-08-18T21:04:17+12:00",
+      "scraped_at": "2026-08-18T09:04:17+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -8540,8 +8817,8 @@
       "available": true,
       "price_min_nzd": 29.99,
       "price_max_nzd": 129.99,
-      "updated_at": "2026-08-18T15:33:43+12:00",
-      "scraped_at": "2026-08-18T03:33:43+00:00",
+      "updated_at": "2026-08-18T21:04:17+12:00",
+      "scraped_at": "2026-08-18T09:04:17+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -8586,8 +8863,8 @@
       "available": true,
       "price_min_nzd": 32.99,
       "price_max_nzd": 112.99,
-      "updated_at": "2026-08-18T15:33:43+12:00",
-      "scraped_at": "2026-08-18T03:33:43+00:00",
+      "updated_at": "2026-08-18T21:04:17+12:00",
+      "scraped_at": "2026-08-18T09:04:17+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -8632,8 +8909,8 @@
       "available": true,
       "price_min_nzd": 19.99,
       "price_max_nzd": 69.99,
-      "updated_at": "2026-08-18T15:33:43+12:00",
-      "scraped_at": "2026-08-18T03:33:43+00:00",
+      "updated_at": "2026-08-18T21:04:17+12:00",
+      "scraped_at": "2026-08-18T09:04:17+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -8678,8 +8955,8 @@
       "available": true,
       "price_min_nzd": 51.0,
       "price_max_nzd": 212.0,
-      "updated_at": "2026-08-18T15:33:43+12:00",
-      "scraped_at": "2026-08-18T03:33:43+00:00",
+      "updated_at": "2026-08-18T21:04:17+12:00",
+      "scraped_at": "2026-08-18T09:04:17+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -8724,8 +9001,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
-      "updated_at": "2026-08-18T15:33:46+12:00",
-      "scraped_at": "2026-08-18T03:33:46+00:00",
+      "updated_at": "2026-08-18T21:04:21+12:00",
+      "scraped_at": "2026-08-18T09:04:21+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -8842,8 +9119,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
-      "updated_at": "2026-08-18T15:33:46+12:00",
-      "scraped_at": "2026-08-18T03:33:46+00:00",
+      "updated_at": "2026-08-18T21:04:21+12:00",
+      "scraped_at": "2026-08-18T09:04:21+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -8960,8 +9237,8 @@
       "available": true,
       "price_min_nzd": 23.0,
       "price_max_nzd": 76.0,
-      "updated_at": "2026-08-18T15:33:46+12:00",
-      "scraped_at": "2026-08-18T03:33:46+00:00",
+      "updated_at": "2026-08-18T21:04:21+12:00",
+      "scraped_at": "2026-08-18T09:04:21+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -9078,8 +9355,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 108.0,
-      "updated_at": "2026-08-18T15:33:46+12:00",
-      "scraped_at": "2026-08-18T03:33:46+00:00",
+      "updated_at": "2026-08-18T21:04:21+12:00",
+      "scraped_at": "2026-08-18T09:04:21+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -9164,8 +9441,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
-      "updated_at": "2026-08-18T15:33:46+12:00",
-      "scraped_at": "2026-08-18T03:33:46+00:00",
+      "updated_at": "2026-08-18T21:04:21+12:00",
+      "scraped_at": "2026-08-18T09:04:21+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -9218,8 +9495,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
-      "updated_at": "2026-08-18T15:33:46+12:00",
-      "scraped_at": "2026-08-18T03:33:46+00:00",
+      "updated_at": "2026-08-18T21:04:21+12:00",
+      "scraped_at": "2026-08-18T09:04:21+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -9239,8 +9516,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-18T15:33:46+12:00",
-      "scraped_at": "2026-08-18T03:33:46+00:00",
+      "updated_at": "2026-08-18T21:04:21+12:00",
+      "scraped_at": "2026-08-18T09:04:21+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -9285,8 +9562,8 @@
       "available": true,
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
-      "updated_at": "2026-08-18T15:33:46+12:00",
-      "scraped_at": "2026-08-18T03:33:46+00:00",
+      "updated_at": "2026-08-18T21:04:21+12:00",
+      "scraped_at": "2026-08-18T09:04:21+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
