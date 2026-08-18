@@ -168,6 +168,14 @@ def test_additional_scrapers_use_expected_shopify_collection(
 
 
 @pytest.mark.integration
+def test_vanguard_excludes_non_roasted_products() -> None:
+    assert vanguard._is_roasted_coffee({"title": "Alpha Espresso Blend"}) is True
+    assert vanguard._is_roasted_coffee({"title": "APAX Lab Water Mineral Concentrate Drops"}) is False
+    assert vanguard._is_roasted_coffee({"handle": "alpha-espresso-capsules"}) is False
+    assert vanguard._is_roasted_coffee({"title": "Single Origin Drip Bags"}) is False
+
+
+@pytest.mark.integration
 def test_scrape_grey_roasting_co_excludes_subscriptions(monkeypatch: pytest.MonkeyPatch) -> None:
     def listing(title: str, handle: str) -> CoffeeListing:
         return CoffeeListing(
