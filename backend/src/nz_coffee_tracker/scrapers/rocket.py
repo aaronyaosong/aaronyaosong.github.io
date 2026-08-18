@@ -21,6 +21,37 @@ from nz_coffee_tracker.models import CoffeeListing, now_utc_iso
 from nz_coffee_tracker.shopify_client import ShopifyClient
 
 
+GROUND_PATTERN = re.compile(
+    r"\b(espresso|plunger|filter|aeropress|stovetop|chemex|french\s*press|v60|pour\s*over|drip|coarse|medium|fine|grind|ground)\b",
+    re.IGNORECASE,
+)
+BEAN_PATTERN = re.compile(r"\b(whole\s*beans?|wholebean|beans)\b", re.IGNORECASE)
+
+
+def _filter_whole_bean_variants(variants: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    has_grind_spec = False
+    for v in variants:
+        v_text = " ".join(
+            [str(v.get("title", ""))] + [str(v.get(f"option{i}", "")) for i in (1, 2, 3) if v.get(f"option{i}")]
+        )
+        if GROUND_PATTERN.search(v_text) or BEAN_PATTERN.search(v_text):
+            has_grind_spec = True
+            break
+
+    if not has_grind_spec:
+        return variants
+
+    wb_variants = []
+    for v in variants:
+        v_text = " ".join(
+            [str(v.get("title", ""))] + [str(v.get(f"option{i}", "")) for i in (1, 2, 3) if v.get(f"option{i}")]
+        )
+        if BEAN_PATTERN.search(v_text) and not GROUND_PATTERN.search(v_text):
+            wb_variants.append(v)
+
+    return wb_variants if wb_variants else variants
+
+
 def _variant_prices(variants: list[dict[str, Any]]) -> list[float]:
     # Variants may include non-numeric or missing prices; keep only valid floats.
     prices: list[float] = []
@@ -93,7 +124,7 @@ def scrape_rocket(database_path: Path | None = None) -> list[CoffeeListing]:
             except requests.RequestException:
                 pass
         # Collapse variant-level availability and price into one listing row.
-        variants = product.get("variants", [])
+        variants = _filter_whole_bean_variants(product.get("variants", []))
         prices = _variant_prices(variants)
         available = any(bool(v.get("available")) for v in variants)
         category = infer_roast_category(product)
