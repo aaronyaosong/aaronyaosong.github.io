@@ -12,6 +12,7 @@ from nz_coffee_tracker.models import CoffeeListing
 from nz_coffee_tracker.scrapers.atomic import scrape_atomic
 from nz_coffee_tracker.scrapers.coffee_embassy import scrape_coffee_embassy
 from nz_coffee_tracker.scrapers.eternal import scrape_eternal
+from nz_coffee_tracker.scrapers.grey_roasting_co import scrape_grey_roasting_co
 from nz_coffee_tracker.scrapers.ozone import scrape_ozone
 from nz_coffee_tracker.scrapers.rocket import scrape_rocket
 
@@ -41,6 +42,7 @@ def collect_listings(
             *scrape_ozone(database_path=database_path),
             *scrape_coffee_embassy(database_path=database_path),
             *scrape_eternal(database_path=database_path),
+            *scrape_grey_roasting_co(database_path=database_path),
         ]
 
     filtered = [item for item in listings if _matches_categories(item, allowed_categories)]
