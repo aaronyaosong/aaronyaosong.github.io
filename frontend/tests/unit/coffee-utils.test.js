@@ -4,6 +4,7 @@ import {
   categories,
   filterCategories,
   filterAndSortItems,
+  isBlend,
   isDecaf,
   isSubscription,
   metadataValue,
@@ -23,6 +24,7 @@ describe("coffee-utils unit", () => {
     expect(sourceName("coffeeembassy.co.nz")).toBe("Coffee Embassy");
     expect(sourceName("eternalcoffee.co.nz")).toBe("Eternal Coffee");
     expect(sourceName("slowcoffee.co.nz")).toBe("Slow Coffee");
+
     expect(sourceName("vanguardcoffee.co.nz")).toBe("Vanguard Coffee");
     expect(sourceName("c4coffee.co")).toBe("C4 Coffee");
     expect(sourceName("greyroastingco.com")).toBe("Grey Roasting Co");
@@ -61,6 +63,15 @@ describe("coffee-utils unit", () => {
       "blend",
     ]);
     expect(filterCategories({ title: "Single Origin", category: "filter roast" })).toEqual(["filter roast"]);
+  });
+
+  it("identifies blends in all available product metadata", () => {
+    expect(isBlend({ description: "A seasonal blend of coffees" })).toBe(true);
+    expect(isBlend({ description: "Our rotating blends change with the season" })).toBe(true);
+    expect(isBlend({ flavour_notes: "Chocolate", tags: ["espresso", "blend"] })).toBe(true);
+    expect(isBlend({ metafields: { recipe: "House Blend" } })).toBe(true);
+    expect(isBlend({ source: "ozonecoffee.co.nz", handle: "ta-matou-ranunga-a-whare" })).toBe(true);
+    expect(isBlend({ title: "Single Origin", description: "Bright and fruity" })).toBe(false);
   });
 
   it("identifies subscriptions for hiding", () => {
