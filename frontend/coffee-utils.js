@@ -7,6 +7,7 @@ export function sourceName(raw) {
   if (raw.includes("slowcoffee")) return "Slow Coffee";
   if (raw.includes("vanguardcoffee")) return "Vanguard Coffee";
   if (raw.includes("c4coffee")) return "C4 Coffee";
+  if (raw.includes("greyroasting")) return "Grey Roasting Co";
   if (raw.includes("wolfcoffee")) return "Wolf Coffee";
   return raw;
 }
