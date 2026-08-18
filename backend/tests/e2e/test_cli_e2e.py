@@ -51,6 +51,8 @@ def test_cli_writes_filtered_csv_and_json(monkeypatch: pytest.MonkeyPatch, tmp_p
     monkeypatch.setattr(tracker, "scrape_ozone", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_coffee_embassy", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_eternal", lambda **kwargs: [])
+    monkeypatch.setattr(tracker, "scrape_vanguard", lambda **kwargs: [])
+    monkeypatch.setattr(tracker, "scrape_c4", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_grey_roasting_co", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_slow", lambda **kwargs: [])
 
@@ -88,6 +90,8 @@ def test_cli_skips_second_scrape_when_today_data_exists(monkeypatch: pytest.Monk
     monkeypatch.setattr(tracker, "scrape_ozone", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_coffee_embassy", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_eternal", lambda **kwargs: [])
+    monkeypatch.setattr(tracker, "scrape_vanguard", lambda **kwargs: [])
+    monkeypatch.setattr(tracker, "scrape_c4", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_grey_roasting_co", lambda **kwargs: [])
     monkeypatch.setattr(tracker, "scrape_slow", lambda **kwargs: [])
     out_dir = tmp_path / "output"
@@ -99,6 +103,8 @@ def test_cli_skips_second_scrape_when_today_data_exists(monkeypatch: pytest.Monk
     monkeypatch.setattr(tracker, "scrape_ozone", lambda **kwargs: pytest.fail("scraper should not run"))
     monkeypatch.setattr(tracker, "scrape_coffee_embassy", lambda **kwargs: pytest.fail("scraper should not run"))
     monkeypatch.setattr(tracker, "scrape_eternal", lambda **kwargs: pytest.fail("scraper should not run"))
+    monkeypatch.setattr(tracker, "scrape_vanguard", lambda **kwargs: pytest.fail("scraper should not run"))
+    monkeypatch.setattr(tracker, "scrape_c4", lambda **kwargs: pytest.fail("scraper should not run"))
     monkeypatch.setattr(tracker, "scrape_grey_roasting_co", lambda **kwargs: pytest.fail("scraper should not run"))
     monkeypatch.setattr(tracker, "scrape_slow", lambda **kwargs: pytest.fail("scraper should not run"))
 
