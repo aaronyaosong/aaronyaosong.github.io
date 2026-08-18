@@ -10,7 +10,7 @@ function buildDom() {
     <input id="searchInput" />
     <select id="sourceFilter"><option value="all">All stores</option></select>
     <select id="decafFilter"><option value="all">All coffees</option><option value="true">Decaf</option></select>
-    <select id="blendFilter"><option value="all">All coffees</option><option value="true">Blends only</option><option value="false">No blends</option></select>
+    <select id="blendFilter"><option value="all">All coffee</option><option value="true">Blends only</option><option value="false">Single origin</option></select>
     <select id="sortFilter"><option value="title">A-Z</option><option value="title-desc">Z-A</option><option value="newest">Newest</option><option value="oldest">Oldest</option><option value="price-high">Price: high to low</option><option value="price-low">Price: low to high</option></select>
     <div id="categoryFilters"><span>Roast type</span></div>
     <p id="resultCount"></p>
@@ -103,6 +103,9 @@ describe("app integration", () => {
     ]);
     const blendFilter = document.getElementById("blendFilter");
     blendFilter.value = "true";
+    blendFilter.dispatchEvent(new Event("change"));
+    expect(document.getElementById("resultCount").textContent).toBe("1 result");
+    blendFilter.value = "false";
     blendFilter.dispatchEvent(new Event("change"));
     expect(document.getElementById("resultCount").textContent).toBe("1 result");
     blendFilter.value = "all";
