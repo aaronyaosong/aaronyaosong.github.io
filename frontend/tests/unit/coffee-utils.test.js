@@ -23,6 +23,8 @@ describe("coffee-utils unit", () => {
     expect(sourceName("coffeeembassy.co.nz")).toBe("Coffee Embassy");
     expect(sourceName("eternalcoffee.co.nz")).toBe("Eternal Coffee");
     expect(sourceName("slowcoffee.co.nz")).toBe("Slow Coffee");
+    expect(sourceName("vanguardcoffee.co.nz")).toBe("Vanguard Coffee");
+    expect(sourceName("c4coffee.co")).toBe("C4 Coffee");
   });
 
   it("formats single and ranged NZD prices", () => {
