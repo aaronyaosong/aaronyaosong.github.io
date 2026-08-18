@@ -5,6 +5,7 @@ import {
   filterCategories,
   filterAndSortItems,
   isDecaf,
+  isOzoneConcentrate,
   isSubscription,
   metadataValue,
   nzPrice,
@@ -68,6 +69,12 @@ describe("coffee-utils unit", () => {
     expect(isSubscription({ handle: "coffee-subscription" })).toBe(true);
     expect(isSubscription({ title: "Weekly Coffee", tags: "subscription" })).toBe(true);
     expect(isSubscription({ title: "Weekly Coffee" })).toBe(false);
+  });
+
+  it("identifies Ozone's cold brew concentrate for hiding", () => {
+    expect(isOzoneConcentrate({ source: "ozonecoffee.co.nz", handle: "cold-brew-concentrate" })).toBe(true);
+    expect(isOzoneConcentrate({ source: "rocketcoffee.co.nz", handle: "cold-brew-concentrate" })).toBe(false);
+    expect(isOzoneConcentrate({ source: "ozonecoffee.co.nz", handle: "single-origin-filter" })).toBe(false);
   });
 
   it("filters and sorts items by active category and query", () => {
