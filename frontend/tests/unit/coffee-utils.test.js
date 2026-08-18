@@ -4,6 +4,7 @@ import {
   categories,
   filterCategories,
   filterAndSortItems,
+  isC4BlendsDiscoveryBox,
   isBlend,
   isDecaf,
   isSubscription,
@@ -67,11 +68,17 @@ describe("coffee-utils unit", () => {
 
   it("identifies blends in all available product metadata", () => {
     expect(isBlend({ description: "A seasonal blend of coffees" })).toBe(true);
-    expect(isBlend({ description: "Our rotating blends change with the season" })).toBe(true);
+    expect(isBlend({ description: "Our rotating blends change with the season" })).toBe(false);
     expect(isBlend({ flavour_notes: "Chocolate", tags: ["espresso", "blend"] })).toBe(true);
     expect(isBlend({ metafields: { recipe: "House Blend" } })).toBe(true);
     expect(isBlend({ source: "ozonecoffee.co.nz", handle: "ta-matou-ranunga-a-whare" })).toBe(true);
     expect(isBlend({ title: "Single Origin", description: "Bright and fruity" })).toBe(false);
+  });
+
+  it("identifies only C4's blends discovery box for hiding", () => {
+    expect(isC4BlendsDiscoveryBox({ source: "c4coffee.co", handle: "blends-discovery-box" })).toBe(true);
+    expect(isC4BlendsDiscoveryBox({ source: "c4coffee.co", handle: "krank-blend" })).toBe(false);
+    expect(isC4BlendsDiscoveryBox({ source: "ozonecoffee.co.nz", handle: "blends-discovery-box" })).toBe(false);
   });
 
   it("identifies subscriptions for hiding", () => {

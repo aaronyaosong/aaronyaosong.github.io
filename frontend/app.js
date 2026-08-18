@@ -2,6 +2,7 @@ import {
   categories,
   filterCategories,
   filterAndSortItems,
+  isC4BlendsDiscoveryBox,
   isDecaf,
   isSubscription,
   metadataValue,
@@ -61,7 +62,6 @@ export function createApp({
       const button = documentRef.createElement("button");
       button.className = `chip${category === "all" ? " active" : ""}`;
       button.dataset.category = category;
-      button.type = "button";
       button.textContent = category === "all"
         ? "All"
         : category.replace(/\b\w/g, (letter) => letter.toUpperCase());
@@ -167,7 +167,9 @@ export function createApp({
       }
       const payload = await response.json();
 
-      state.items = (payload.items || []).filter((item) => !isSubscription(item));
+      state.items = (payload.items || []).filter((item) => (
+        !isSubscription(item) && !isC4BlendsDiscoveryBox(item)
+      ));
       populateCategoryButtons(state.items);
       populateSelect(sourceSelect, new Set(state.items.map((item) => item.source)), "All stores", sourceName);
       renderStats(state.items, payload.generated_at);

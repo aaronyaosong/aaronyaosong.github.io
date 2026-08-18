@@ -59,11 +59,15 @@ function searchableText(value, seen = new Set()) {
 export function isBlend(item) {
   const isOzoneRanunga = item.source === "ozonecoffee.co.nz"
     && item.handle === "ta-matou-ranunga-a-whare";
-  return isOzoneRanunga || /\bblends?\b/i.test(searchableText(item));
+  return isOzoneRanunga || /\bblend\b/i.test(searchableText(item));
 }
 
 export function isSubscription(item) {
   return /\bsubscription\b/i.test([item.title, item.handle, item.product_type, item.tags].filter(Boolean).join(" "));
+}
+
+export function isC4BlendsDiscoveryBox(item) {
+  return item.source === "c4coffee.co" && item.handle === "blends-discovery-box";
 }
 
 export function filterCategories(item) {
