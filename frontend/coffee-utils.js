@@ -45,12 +45,29 @@ export function categories(categoryStr) {
   return String(categoryStr || "").split(",").map((part) => part.trim()).filter(Boolean);
 }
 
+function searchableText(value, seen = new Set()) {
+  if (value === null || value === undefined) return "";
+  if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") {
+    return String(value);
+  }
+  if (typeof value !== "object" || seen.has(value)) return "";
+
+  seen.add(value);
+  return Object.values(value).map((entry) => searchableText(entry, seen)).join(" ");
+}
+
 export function isBlend(item) {
-  return /\bblend\b/i.test([item.title, item.handle, item.category, item.tags].filter(Boolean).join(" "));
+  const isOzoneRanunga = item.source === "ozonecoffee.co.nz"
+    && item.handle === "ta-matou-ranunga-a-whare";
+  return isOzoneRanunga || /\bblend\b/i.test([item.title, item.handle, item.product_type, item.tags, item.vendor, item.description, ...(item.metafields ? Object.values(item.metafields) : [])].filter(Boolean).join(" "));
 }
 
 export function isSubscription(item) {
   return /\bsubscription\b/i.test([item.title, item.handle, item.product_type, item.tags].filter(Boolean).join(" "));
+}
+
+export function isC4BlendsDiscoveryBox(item) {
+  return item.source === "c4coffee.co" && item.handle === "blends-discovery-box";
 }
 
 export function isOzoneConcentrate(item) {
