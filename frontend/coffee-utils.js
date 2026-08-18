@@ -59,7 +59,9 @@ function searchableText(value, seen = new Set()) {
 export function isBlend(item) {
   const isOzoneRanunga = item.source === "ozonecoffee.co.nz"
     && item.handle === "ta-matou-ranunga-a-whare";
-  return isOzoneRanunga || /\bblend\b/i.test([item.title, item.handle, item.product_type, item.tags, item.vendor, item.description, ...(item.metafields ? Object.values(item.metafields) : [])].filter(Boolean).join(" "));
+  const isWolfMoreFM = item.source === "wolfcoffee.co.nz"
+    && item.handle === "morefm-koha-coffee";
+  return isOzoneRanunga || isWolfMoreFM || /\bblend\b/i.test([item.title, item.handle, item.product_type, item.tags, item.vendor, item.description, ...(item.metafields ? Object.values(item.metafields) : [])].filter(Boolean).join(" "));
 }
 
 export function isSubscription(item) {
