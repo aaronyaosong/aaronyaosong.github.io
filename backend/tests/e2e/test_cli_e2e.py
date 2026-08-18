@@ -1,11 +1,14 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime, timezone
 
 import pytest
 
 from nz_coffee_tracker import cli, tracker
 from nz_coffee_tracker.models import CoffeeListing
+
+_TODAY_ISO = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
 def _listing(title: str, category: str, available: bool) -> CoffeeListing:
@@ -19,8 +22,8 @@ def _listing(title: str, category: str, available: bool) -> CoffeeListing:
         available=available,
         price_min_nzd=19.0,
         price_max_nzd=25.0,
-        updated_at="2026-08-17T00:00:00+00:00",
-        scraped_at="2026-08-17T00:00:00+00:00",
+        updated_at=_TODAY_ISO,
+        scraped_at=_TODAY_ISO,
         description="Coffee description",
         flavour_notes="chocolate",
     )
