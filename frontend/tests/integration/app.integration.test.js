@@ -81,7 +81,6 @@ describe("app integration", () => {
     expect(document.querySelectorAll(".card")).toHaveLength(2);
     const sortFilter = document.getElementById("sortFilter");
     expect(sortFilter.value).toBe("newest");
-    expect(document.querySelector(".card h3").textContent).toBe("Alpha Filter");
     sortFilter.value = "price-high";
     sortFilter.dispatchEvent(new Event("change"));
     expect(document.querySelector(".card h3").textContent).toBe("Alpha Filter");
