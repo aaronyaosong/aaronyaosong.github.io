@@ -59,9 +59,10 @@ export function createApp({
 
   function populateCategoryButtons(items) {
     categoryFilters.innerHTML = "";
-    ["all", ...new Set(items.flatMap((item) => categories(item.category)))].forEach((category) => {
+    const foundCategories = [...new Set(items.flatMap((item) => categories(item.category)))].sort((a, b) => a.localeCompare(b));
+    ["all", ...foundCategories].forEach((category) => {
       const button = documentRef.createElement("button");
-      button.className = `chip${category === "all" ? " active" : ""}`;
+      button.className = `chip${category === state.activeCategory ? " active" : ""}`;
       button.dataset.category = category;
       button.textContent = category === "all"
         ? "All"
@@ -125,7 +126,7 @@ export function createApp({
       card.className = "card";
 
       const categoryBadges = categories(item.category)
-        .map((cat) => `<span class="badge category">${cat}</span>`)
+        .map((cat) => `<span class="badge category" data-category="${cat.toLowerCase()}">${cat}</span>`)
         .join("");
 
       const prices = sizePrices(item);
