@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pytest
 
-from nz_coffee_tracker.scrapers import atomic, rocket
+from nz_coffee_tracker.scrapers import atomic, rocket, shopify_roaster
 from nz_coffee_tracker.scrapers import c4, coffee_embassy, eternal, grey_roasting_co, ozone, slow, vanguard, wolf
 from nz_coffee_tracker.database import write_database
 from nz_coffee_tracker.models import CoffeeListing
@@ -78,9 +78,9 @@ def test_scrape_atomic_handles_missing_prices(monkeypatch: pytest.MonkeyPatch) -
         ],
     }
 
-    monkeypatch.setattr(atomic.ShopifyClient, "fetch_collection_products", lambda self, handle: [product])
-    monkeypatch.setattr(atomic.ShopifyClient, "fetch_product", lambda self, handle: product)
-    monkeypatch.setattr(atomic, "now_utc_iso", lambda: "2026-08-17T01:02:03+00:00")
+    monkeypatch.setattr(shopify_roaster.ShopifyClient, "fetch_collection_products", lambda self, handle: [product] if handle == "filter-coffee" else [])
+    monkeypatch.setattr(shopify_roaster.ShopifyClient, "fetch_product", lambda self, handle: product)
+    monkeypatch.setattr(shopify_roaster, "now_utc_iso", lambda: "2026-08-17T01:02:03+00:00")
 
     rows = atomic.scrape_atomic()
 
@@ -139,7 +139,6 @@ def test_scrape_rocket_reuses_detail_for_available_cached_item(
     ("module", "function_name", "expected_source", "expected_collection"),
     [
         (ozone, "scrape_ozone", "ozonecoffee.co.nz", "coffee"),
-        (c4, "scrape_c4", "c4coffee.co", "coffee"),
     ],
 )
 def test_single_collection_scrapers(
@@ -166,6 +165,8 @@ def test_single_collection_scrapers(
 @pytest.mark.parametrize(
     ("module", "function_name", "expected_source", "expected_collections"),
     [
+        (c4, "scrape_c4", "c4coffee.co", ["filter-extraction", "coffee"]),
+        (atomic, "scrape_atomic", "atomiccoffee.co.nz", ["filter-coffee", "coffee-beans"]),
         (coffee_embassy, "scrape_coffee_embassy", "coffeeembassy.co.nz", ["single-origin", "blends"]),
         (eternal, "scrape_eternal", "eternalcoffee.co.nz", ["specialty-coffee-beans-nz", "espresso-offerings-1"]),
         (vanguard, "scrape_vanguard", "vanguardcoffee.co.nz", ["filter", "espresso"]),

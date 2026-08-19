@@ -5,6 +5,7 @@ import pytest
 from nz_coffee_tracker.categorization import (
     ESPRESSO_ROAST,
     FILTER_ROAST,
+    OMNI_ROAST,
     OTHER_CATEGORY,
     category_values,
     description_text,
@@ -19,7 +20,7 @@ from nz_coffee_tracker.categorization import (
 
 @pytest.mark.unit
 def test_infer_roast_category_filter_only() -> None:
-    # Filter keyword in title should map to filter roast category.
+    # Filter keyword in title should map to filter roast category when no tags present.
     product = {
         "title": "Colombia Single Origin Filter Roast",
         "variants": [{"title": "250g"}],
@@ -39,14 +40,14 @@ def test_infer_roast_category_espresso_only() -> None:
 
 
 @pytest.mark.unit
-def test_infer_roast_category_both() -> None:
-    # Dual-use roast descriptions should carry both category values.
+def test_infer_roast_category_both_is_omni() -> None:
+    # Dual-use roast descriptions should carry omni roast.
     product = {
         "title": "Omni Roast",
         "body_html": "Works as filter and espresso.",
         "variants": [{"title": "200g"}],
     }
-    assert infer_roast_category(product) == f"{FILTER_ROAST},{ESPRESSO_ROAST}"
+    assert infer_roast_category(product) == OMNI_ROAST
 
 
 @pytest.mark.unit
@@ -80,15 +81,12 @@ def test_infer_roast_category_ignores_grind_options_and_variants() -> None:
 
 
 @pytest.mark.unit
-def test_infer_roast_category_does_not_check_description() -> None:
-    # Descriptions with mentions of filter or espresso should be ignored; title/tags govern.
-    product = {
-        "title": "House Blend",
-        "tags": ["blend"],
-        "body_html": "<p>This is roasted light for filter brewing or filter roast methods.</p>",
-    }
-    # Because description is ignored, House Blend defaults to espresso roast based on blend tag
-    assert infer_roast_category(product) == ESPRESSO_ROAST
+def test_infer_roast_category_checks_tags_first() -> None:
+    # When explicit tags are present, they take priority
+    assert infer_roast_category({"title": "Something", "tags": ["extraction-omni"]}) == OMNI_ROAST
+    assert infer_roast_category({"title": "Something", "tags": ["extraction-filter"]}) == FILTER_ROAST
+    assert infer_roast_category({"title": "Something", "tags": ["extraction-espresso"]}) == ESPRESSO_ROAST
+    assert infer_roast_category({"title": "House Blend", "tags": ["Filter Roast"]}) == FILTER_ROAST
 
 
 @pytest.mark.unit
@@ -96,21 +94,47 @@ def test_infer_roast_category_supports_roaster_tags() -> None:
     # Ozone tag style
     assert infer_roast_category({"title": "Popayan", "tags": ["brew method:Filter", "SINGLE ORIGIN"]}) == FILTER_ROAST
     assert infer_roast_category({"title": "Our House", "tags": ["brew method:Espresso", "blends"]}) == ESPRESSO_ROAST
-    assert infer_roast_category({"title": "Decaf", "tags": ["brew method:Espresso", "brew method:Filter"]}) == f"{FILTER_ROAST},{ESPRESSO_ROAST}"
+    assert infer_roast_category({"title": "Decaf", "tags": ["brew method:Espresso", "brew method:Filter"]}) == OMNI_ROAST
 
     # C4 tag style
     assert infer_roast_category({"title": "Santa Monica", "tags": ["extraction-filter", "micro-lot"]}) == FILTER_ROAST
     assert infer_roast_category({"title": "Stout Blend", "tags": ["extraction-espresso", "coffee-blend"]}) == ESPRESSO_ROAST
-    assert infer_roast_category({"title": "Huila Regional", "tags": ["extraction-omni", "single-origin"]}) == f"{FILTER_ROAST},{ESPRESSO_ROAST}"
+    assert infer_roast_category({"title": "Huila Regional", "tags": ["extraction-omni", "single-origin"]}) == OMNI_ROAST
 
 
 @pytest.mark.unit
 def test_infer_roast_category_supports_collection_handles() -> None:
-    # Subcollection context should inform roast category
+    # Subcollection context should inform roast category when tags are not explicit
     assert infer_roast_category({"title": "Narino"}, collection_handle="single-origins") == FILTER_ROAST
     assert infer_roast_category({"title": "Seasonal Blend"}, collection_handle="house-blends") == ESPRESSO_ROAST
     assert infer_roast_category({"title": "Tropical Rush"}, collection_handle="specialty-coffee-beans-nz") == FILTER_ROAST
     assert infer_roast_category({"title": "Tropical Rush"}, collection_handle="espresso-offerings-1") == ESPRESSO_ROAST
+    assert infer_roast_category({"title": "Koke Shalaye"}, collection_handle="filter-extraction") == FILTER_ROAST
+
+
+@pytest.mark.unit
+def test_infer_roast_category_recommended_brewing_in_description() -> None:
+    # Atomic Decaf style: recommended use with espresso and filter
+    atomic_decaf = {
+        "title": "Decaf",
+        "body_html": "<p>Characteristics: body silky. Recommended use Espresso, stovetop, plunger, Aeropress, filter</p>",
+    }
+    assert infer_roast_category(atomic_decaf) == OMNI_ROAST
+
+    # C4 suitability style
+    c4_omni = {
+        "title": "Terra Nova",
+        "body_html": "<p>Roast Level Medium Sutiable For Espresso, Plunger & Filter</p>",
+    }
+    assert infer_roast_category(c4_omni) == OMNI_ROAST
+
+    # Slow roasted for espresso style
+    slow_espresso = {
+        "title": "Raspberry Kiss | Ethiopia",
+        "tags": ["espresso", "filter coffee"],
+        "body_html": "<p>roasted for espresso, and brought to us by Cofinet. Part of Espresso Program Vol. 1 — single origins roasted for espresso.</p>",
+    }
+    assert infer_roast_category(slow_espresso, collection_handle="espresso-coffee") == ESPRESSO_ROAST
 
 
 @pytest.mark.unit

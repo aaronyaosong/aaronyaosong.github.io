@@ -7,6 +7,7 @@ from typing import Any
 
 FILTER_ROAST = "filter roast"
 ESPRESSO_ROAST = "espresso roast"
+OMNI_ROAST = "omni roast"
 OTHER_CATEGORY = "other"
 KNOWN_VARIETALS = (
     "sudan rume",
@@ -143,22 +144,68 @@ def infer_roast_category(
     title_lower = title.lower()
     handle_lower = handle.lower()
     p_type_lower = p_type.lower()
+    desc = description_text(product)
+    desc_lower = desc.lower()
 
-    has_filter = False
-    has_espresso = False
+    # 1. PRIORITY 1: Check Shopify Tags
+    has_tag_omni = any(t in ("extraction-omni", "omni roast", "omni", "omni-roast", "extraction:omni") for t in tags_lower)
+    has_tag_filter = any(
+        t in ("extraction-filter", "filter roast", "filter brewing", "quiz-filter", "clarity", "filter", "filter coffee")
+        or "brew method:filter" in t
+        for t in tags_lower
+    )
+    has_tag_espresso = any(
+        t in ("extraction-espresso", "modern-espresso", "single espresso roast", "quiz-espresso", "espresso blend", "espresso-blend", "espresso program", "house", "espresso", "espresso coffee")
+        or "brew method:espresso" in t
+        for t in tags_lower
+    )
 
-    # 1. Check collection context if provided
+    if has_tag_omni:
+        return OMNI_ROAST
+
+    # If both filter and espresso tags are present
+    if has_tag_filter and has_tag_espresso:
+        # Check if description explicitly clarifies it as espresso (e.g. single origin with rogue filter tag)
+        if re.search(r"\broasted\s+for\s+espresso\b|\bpart\s+of\s+espresso\s+program\b", desc_lower) and collection_handle and "espresso" in collection_handle.lower():
+            return ESPRESSO_ROAST
+        return OMNI_ROAST
+
+    if has_tag_filter:
+        return FILTER_ROAST
+
+    if has_tag_espresso:
+        return ESPRESSO_ROAST
+
+    # 2. PRIORITY 2: Title & Handle explicit roast markers
+    if re.search(r"\bomni\s*roast\b|espresso\s*\/\s*filter|filter\s*\/\s*espresso", title_lower) or "omni-roast" in handle_lower:
+        return OMNI_ROAST
+
+    has_title_filter = bool(re.search(r"\bfilter\s*roast\b|\(filter\)|\[[^\]]*filter[^\]]*\]|\bfilter\s*coffee\b", title_lower) or "filter-roast" in handle_lower)
+    has_title_espresso = bool(re.search(r"\bespresso\s*roast\b|\(espresso\)|\[[^\]]*espresso[^\]]*\]|\bespresso\s*blend\b|\bespresso\s*subscription\b", title_lower) or "espresso-roast" in handle_lower or "espresso-blend" in handle_lower)
+
+    if has_title_filter and has_title_espresso:
+        return OMNI_ROAST
+    if has_title_filter:
+        return FILTER_ROAST
+    if has_title_espresso:
+        return ESPRESSO_ROAST
+
+    # 3. PRIORITY 3: Collection Context
+    has_col_filter = False
+    has_col_espresso = False
     if collection_handle:
         col = collection_handle.lower().strip()
         if col in (
             "filter",
             "filter-coffee",
+            "filter-extraction",
             "single-origin-coffees",
             "specialty-coffee-beans-nz",
             "single-origin",
             "single-origins",
+            "clarity",
         ):
-            has_filter = True
+            has_col_filter = True
         elif col in (
             "espresso",
             "espresso-coffee",
@@ -167,73 +214,63 @@ def infer_roast_category(
             "espresso-blends-decaf",
             "house-blends",
             "blends",
+            "espresso-program",
+            "house",
+            "modern",
         ):
-            has_espresso = True
+            has_col_espresso = True
 
-    # 2. Check tags (do NOT inspect variant titles or options which contain grind choices)
-    filter_tag_keywords = {
-        "filter",
-        "filter coffee",
-        "filter roast",
-        "filter brewing",
-        "extraction-filter",
-        "quiz-filter",
-    }
-    if any(t in filter_tag_keywords or "brew method:filter" in t or t.startswith("filter") for t in tags_lower):
-        has_filter = True
+    # 4. PRIORITY 4: Description & Recommended Brewing / Suitability / Roast Profile
+    has_desc_omni = bool(re.search(r"\bomni\s*roast\b|\bomni\b|espresso\s*(?:and|&|\/)\s*filter|filter\s*(?:and|&|\/)\s*espresso|shines\s+as\s+much\s+for\s+filter\b", desc_lower))
+    has_desc_filter = False
+    has_desc_espresso = False
 
-    espresso_tag_keywords = {
-        "espresso",
-        "espresso coffee",
-        "espresso roast",
-        "extraction-espresso",
-        "modern-espresso",
-        "single espresso roast",
-        "quiz-espresso",
-    }
-    if any(t in espresso_tag_keywords or "brew method:espresso" in t for t in tags_lower):
-        has_espresso = True
+    rec_match = re.search(
+        r"(?:recommended\s*(?:use|brew(?:ing)?|methods?)?|suti?ab\w*|best\s*(?:for|brewed)|suggested\s*brewing|most\s*suited\s*for)\s*[:\-]?\s*(.*?)(?=\s+(?:origin|producer|farm|estate|process|flavou?r|tasting|altitude|variety|characteristics)|$|[.;|\n])",
+        desc_lower,
+    )
+    if rec_match:
+        rec_content = rec_match.group(1)
+        rec_has_esp = bool(re.search(r"\bespresso|pressuri[sz]ed\b", rec_content))
+        rec_has_flt = bool(re.search(r"\b(?:filter|pour\s*over|v60|chemex|aeropress|plunger|french\s*press|drip|batch)\b", rec_content))
+        if "if you prefer a darker" in desc_lower or "if you prefer a roastier" in desc_lower:
+            rec_has_flt = False
 
-    if any(t in ("extraction-omni", "omni roast", "omni") for t in tags_lower):
-        has_filter = True
-        has_espresso = True
+        if rec_has_esp and rec_has_flt:
+            has_desc_omni = True
+        elif rec_has_esp:
+            has_desc_espresso = True
+        elif rec_has_flt:
+            has_desc_filter = True
 
-    # 3. Check title and handle
-    if re.search(r"\bfilter\s*roast\b|\(filter\)|\[[^\]]*filter[^\]]*\]|\bfilter\s*coffee\b", title_lower) or "filter-roast" in handle_lower:
-        has_filter = True
-    elif re.search(r"\bfilter\b", title_lower) and not re.search(r"\b(?:paper\s*filters?|filter\s*papers?|filter\s*basket|group\s*filter)\b", title_lower):
-        has_filter = True
+    if re.search(r"\broasted\s+for\s+espresso\b|\bpart\s+of\s+espresso\s+program\b|\bespresso\s+program\b|\broast\s*profile\s*[:\-]\s*medium\s*\/\s*espresso\b", desc_lower):
+        has_desc_espresso = True
 
-    if re.search(r"\bespresso\s*roast\b|\(espresso\)|\[[^\]]*espresso[^\]]*\]|\bespresso\s*blend\b", title_lower) or "espresso-roast" in handle_lower or "espresso-blend" in handle_lower:
-        has_espresso = True
-    elif re.search(r"\bespresso\b", title_lower) and not re.search(r"\b(?:espresso\s*machine|espresso\s*equipment|workshop)\b", title_lower):
-        has_espresso = True
+    if re.search(r"\bfor\s+(?:a\s+)?filter\s+roast\b|\bdelicious\s+filter\b|\broast\s*level\s*[:\-]\s*light\b", desc_lower):
+        has_desc_filter = True
 
-    if re.search(r"\bomni\s*roast\b|espresso\s*\/\s*filter", title_lower) or "omni-roast" in handle_lower:
-        has_filter = True
-        has_espresso = True
-
-    # 4. Roaster-specific or fallback heuristics
-    if not has_filter and not has_espresso:
-        if (
-            "blend" in title_lower
-            or "blend" in tags_str
-            or p_type_lower in ("coffee house", "house")
-        ):
-            has_espresso = True
-        elif (
-            "single origin" in tags_str
-            or "single-origin" in tags_str
-            or p_type_lower in ("single origin", "single origin specialty coffee", "coffee clarity", "coffee vibrant")
-        ):
-            has_filter = True
-
-    if has_filter and has_espresso:
-        return f"{FILTER_ROAST},{ESPRESSO_ROAST}"
-    if has_filter:
+    # Combine collection & description indicators
+    if has_desc_omni or (has_col_filter and has_col_espresso) or ((has_col_filter or has_desc_filter) and (has_col_espresso or has_desc_espresso)):
+        return OMNI_ROAST
+    if has_col_filter or has_desc_filter:
         return FILTER_ROAST
-    if has_espresso:
+    if has_col_espresso or has_desc_espresso:
         return ESPRESSO_ROAST
+
+    # 5. PRIORITY 5: Final Fallback Heuristics (Product Type / Blend)
+    if (
+        "blend" in title_lower
+        or "blend" in tags_str
+        or p_type_lower in ("coffee house", "house", "blend")
+    ):
+        return ESPRESSO_ROAST
+    if (
+        "single origin" in tags_str
+        or "single-origin" in tags_str
+        or p_type_lower in ("single origin", "single origin specialty coffee", "coffee clarity", "coffee vibrant")
+    ):
+        return FILTER_ROAST
+
     return OTHER_CATEGORY
 
 

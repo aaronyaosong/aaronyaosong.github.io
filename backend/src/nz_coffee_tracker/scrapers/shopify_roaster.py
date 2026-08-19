@@ -11,6 +11,7 @@ import requests
 from nz_coffee_tracker.categorization import (
     ESPRESSO_ROAST,
     FILTER_ROAST,
+    OMNI_ROAST,
     category_values,
     description_text,
     infer_decaf,
@@ -182,11 +183,10 @@ def scrape_shopify_collections(
                 cats = set(category_values(existing.category)) | set(category_values(listing.category))
                 if cats - {"other"}:
                     cats = cats - {"other"}
-                combined_cat = (
-                    f"{FILTER_ROAST},{ESPRESSO_ROAST}"
-                    if (FILTER_ROAST in cats and ESPRESSO_ROAST in cats)
-                    else ",".join(sorted(cats))
-                )
+                if OMNI_ROAST in cats or (FILTER_ROAST in cats and ESPRESSO_ROAST in cats):
+                    combined_cat = OMNI_ROAST
+                else:
+                    combined_cat = ",".join(sorted(cats))
                 by_product_id[listing.product_id] = CoffeeListing(
                     source=existing.source,
                     product_id=existing.product_id,
