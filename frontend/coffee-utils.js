@@ -72,7 +72,7 @@ export function isBundleOrBoxSet(item) {
   const text = [item.title, item.handle].filter(Boolean).join(" ");
   const isAtomicDuo = item.source === "atomiccoffee.co.nz"
     && item.handle === "ultimate-coffee-duo";
-  return isAtomicDuo || /\b(bundle|discovery[\s-]box|box[\s-]set)\b/i.test(text);
+  return isAtomicDuo || /\b(bundle|discovery[\s-]box|box[\s-]set|selection[\s-]box)\b/i.test(text);
 }
 
 export function isOzoneConcentrate(item) {
