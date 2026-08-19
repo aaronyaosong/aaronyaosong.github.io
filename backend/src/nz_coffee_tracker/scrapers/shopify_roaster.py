@@ -9,6 +9,9 @@ from typing import Any
 import requests
 
 from nz_coffee_tracker.categorization import (
+    ESPRESSO_ROAST,
+    FILTER_ROAST,
+    category_values,
     description_text,
     infer_decaf,
     infer_flavour_notes,
@@ -136,7 +139,7 @@ def scrape_shopify_collection(
                 source=source,
                 product_id=product_id,
                 title=str(product.get("title", "")).strip(),
-                category=infer_roast_category(product),
+                category=infer_roast_category(product, collection_handle=collection_handle, source=source),
                 handle=handle,
                 product_url=f"https://{source}/products/{handle}",
                 available=any(bool(v.get("available")) for v in variants),
@@ -156,3 +159,53 @@ def scrape_shopify_collection(
         )
 
     return listings
+
+
+def scrape_shopify_collections(
+    source: str,
+    collection_handles: list[str],
+    database_path: Path | None = None,
+    product_filter: Callable[[dict[str, Any]], bool] | None = None,
+) -> list[CoffeeListing]:
+    by_product_id: dict[int, CoffeeListing] = {}
+    for handle in collection_handles:
+        for listing in scrape_shopify_collection(
+            source=source,
+            collection_handle=handle,
+            database_path=database_path,
+            product_filter=product_filter,
+        ):
+            if listing.product_id not in by_product_id:
+                by_product_id[listing.product_id] = listing
+            else:
+                existing = by_product_id[listing.product_id]
+                cats = set(category_values(existing.category)) | set(category_values(listing.category))
+                if cats - {"other"}:
+                    cats = cats - {"other"}
+                combined_cat = (
+                    f"{FILTER_ROAST},{ESPRESSO_ROAST}"
+                    if (FILTER_ROAST in cats and ESPRESSO_ROAST in cats)
+                    else ",".join(sorted(cats))
+                )
+                by_product_id[listing.product_id] = CoffeeListing(
+                    source=existing.source,
+                    product_id=existing.product_id,
+                    title=existing.title,
+                    category=combined_cat,
+                    handle=existing.handle,
+                    product_url=existing.product_url,
+                    available=existing.available or listing.available,
+                    price_min_nzd=min(existing.price_min_nzd, listing.price_min_nzd),
+                    price_max_nzd=max(existing.price_max_nzd, listing.price_max_nzd),
+                    updated_at=existing.updated_at,
+                    scraped_at=existing.scraped_at,
+                    varietal=existing.varietal if existing.varietal != "unknown" else listing.varietal,
+                    size_prices=existing.size_prices or listing.size_prices,
+                    origin_country=existing.origin_country if existing.origin_country != "unknown" else listing.origin_country,
+                    producer=existing.producer if existing.producer != "unknown" else listing.producer,
+                    process=existing.process if existing.process != "unknown" else listing.process,
+                    decaf=existing.decaf or listing.decaf,
+                    description=existing.description or listing.description,
+                    flavour_notes=existing.flavour_notes if existing.flavour_notes != "unknown" else listing.flavour_notes,
+                )
+    return list(by_product_id.values())
