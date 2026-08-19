@@ -1,37 +1,7 @@
 {
-  "generated_at": "2026-08-19T14:14:40+00:00",
+  "generated_at": "2026-08-19T18:43:32+00:00",
   "count": 153,
   "items": [
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8101055103152,
-      "title": "Arturo Arango - Castillo [natural] espresso",
-      "category": "espresso roast",
-      "handle": "arturo-arango-natural-espresso",
-      "product_url": "https://rocketcoffee.co.nz/products/arturo-arango-natural-espresso",
-      "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 95.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "castillo",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 28.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 95.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "Arturo's natural Castillo is sweet & fruity with favours of raspberry, passionfruit & turkish delight. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "unknown"
-    },
     {
       "source": "rocketcoffee.co.nz",
       "product_id": 8087594041520,
@@ -42,8 +12,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -68,8 +38,8 @@
       "available": true,
       "price_min_nzd": 50.0,
       "price_max_nzd": 50.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
       "varietal": "sudan rume",
       "size_prices": [
         {
@@ -86,6 +56,374 @@
     },
     {
       "source": "rocketcoffee.co.nz",
+      "product_id": 8061000351920,
+      "title": "Diofanor Ruiz - Castillo [washed] filter roast",
+      "category": "filter roast",
+      "handle": "diofanor-ruiz-castillo-washed-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/diofanor-ruiz-castillo-washed-filter-roast",
+      "available": true,
+      "price_min_nzd": 27.0,
+      "price_max_nzd": 27.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "castillo",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 27.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "This washed Castillo is sweet with flavours of strawberry, raspberry & panela. Roasted in H-town 17 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8061619536048,
+      "title": "Gicherori Peaberry - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
+      "category": "filter roast",
+      "handle": "gicherori-peaberry-sl28-sl34-ruiru-11-batian-washed-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/gicherori-peaberry-sl28-sl34-ruiru-11-batian-washed-filter-roast",
+      "available": true,
+      "price_min_nzd": 28.0,
+      "price_max_nzd": 28.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "ruiru 11,sl28,sl34,batian",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "This is a tasty peaberry selection. It's juicy with flavours of lemon verbena, redcurrant & apricot, Roasted in H-town 19 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8101037015216,
+      "title": "Githembe - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
+      "category": "filter roast",
+      "handle": "githembe-sl28-sl34-ruiru-11-batian-washed-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/githembe-sl28-sl34-ruiru-11-batian-washed-filter-roast",
+      "available": true,
+      "price_min_nzd": 28.0,
+      "price_max_nzd": 28.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "ruiru 11,sl28,sl34,batian",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "This Kenyan has flavours of ribena, Syrah & ripe apricot. Roasted in H-town 13 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8077053296816,
+      "title": "Jairo Arcila - Castillo [natural decaf] filter roast",
+      "category": "filter roast",
+      "handle": "jairo-arcila-castillo-natural-decaf-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/jairo-arcila-castillo-natural-decaf-filter-roast",
+      "available": true,
+      "price_min_nzd": 28.0,
+      "price_max_nzd": 28.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "castillo,caturra",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": true,
+      "description": "This is a delicious natural decaf from Jairo. It has flavours of peach, passionfruit & cherry cola\u2026\u2026 Roasted in H- town 17 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8055903944880,
+      "title": "July Jumbo - Sidra [washed double fermented] filter roast",
+      "category": "filter roast",
+      "handle": "july-jumbo-sidra-washed-double-fermented-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/july-jumbo-sidra-washed-double-fermented-filter-roast",
+      "available": true,
+      "price_min_nzd": 42.0,
+      "price_max_nzd": 42.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "sidra",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 42.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "July Jumbo\u2019s washed Sidra has flavours of creaming soda, peach & raspberry. Roasted in H-town 17 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8102659195056,
+      "title": "Karundu - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
+      "category": "filter roast",
+      "handle": "karundu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/karundu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
+      "available": true,
+      "price_min_nzd": 28.0,
+      "price_max_nzd": 28.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "ruiru 11,sl28,sl34,batian",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "Karundu is heavy-bodied with flavours of tinned blackberries, peach & cola. Roasted in H-town 19 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8082951438512,
+      "title": "Kiunyu  - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
+      "category": "filter roast",
+      "handle": "kiunyu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/kiunyu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
+      "available": true,
+      "price_min_nzd": 28.0,
+      "price_max_nzd": 28.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "ruiru 11,sl28,sl34,batian",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "Kiunyu has flavours of blackcurrant, hibiscus & red liquorice. Roasted in H-town 17 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8099758833840,
+      "title": "Luz Helena - Caturra [natural] filter roast",
+      "category": "filter roast",
+      "handle": "luz-helena-caturra-natural-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/luz-helena-caturra-natural-filter-roast",
+      "available": true,
+      "price_min_nzd": 28.0,
+      "price_max_nzd": 28.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "caturra",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "Luz' naturally processed Caturra is a great coffee with flavours of purple winegums, ripe red plum & a floral aroma Roasted in H-town 19 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8061671276720,
+      "title": "Paola y Carlos Trujillo - Aji [washed] filter roast",
+      "category": "filter roast",
+      "handle": "paola-y-carlos-trujillo-aji-washed-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/paola-y-carlos-trujillo-aji-washed-filter-roast",
+      "available": true,
+      "price_min_nzd": 38.0,
+      "price_max_nzd": 38.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "unknown",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 38.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "This is the first Aji cultivar we\u2019ve offered & it\u2019s a doozy. It\u2019s very sweet, clean & juicy with flavours of ripe blueberry, apple syrup & gold kiwifruit. Roasted in H-town 14 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8061670195376,
+      "title": "Paola y Carlos Trujillo - Geisha [natural] filter roast",
+      "category": "filter roast",
+      "handle": "paola-y-carlos-trujillo-geisha-natural-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/paola-y-carlos-trujillo-geisha-natural-filter-roast",
+      "available": true,
+      "price_min_nzd": 45.0,
+      "price_max_nzd": 45.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "geisha",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 45.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "This Geisha from Paola & Carlos has a floral rose aroma & flavours of strawberry milkshake & marshmallow. Roasted in H-town 14 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8061670785200,
+      "title": "Paola y Carlos Trujillo - Java [washed] filter roast",
+      "category": "filter roast",
+      "handle": "paola-y-carlos-trujillo-java-washed-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/paola-y-carlos-trujillo-java-washed-filter-roast",
+      "available": true,
+      "price_min_nzd": 36.0,
+      "price_max_nzd": 36.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "java",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 36.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "The last in our trifecta of Trujillo roasts, Paola & Carlos\u2019 washed Java has flavours of apricot, cardamom & cr\u00e8me br\u00fbl\u00e9e. Roasted in H-town 19 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8065133117616,
+      "title": "Rogelio Segovia - Caturra [washed] filter roast",
+      "category": "filter roast",
+      "handle": "rogelio-torres-castillo-washed-filter-roast-l",
+      "product_url": "https://rocketcoffee.co.nz/products/rogelio-torres-castillo-washed-filter-roast-l",
+      "available": true,
+      "price_min_nzd": 24.0,
+      "price_max_nzd": 24.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "castillo,caturra",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 24.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "This Peru is sweet & clean with flavours of apricot, black tea & lime. Roasted in H-town 19 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8035609149616,
+      "title": "Wilford Lamastus Snr. & Jnr. - Geisha lot 16 [ASD natural] filter roast",
+      "category": "filter roast",
+      "handle": "wilford-lamastus-geisha-lot-16-anaerobic-natural-filter-roast-copy",
+      "product_url": "https://rocketcoffee.co.nz/products/wilford-lamastus-geisha-lot-16-anaerobic-natural-filter-roast-copy",
+      "available": true,
+      "price_min_nzd": 45.0,
+      "price_max_nzd": 45.0,
+      "updated_at": "2026-08-20T06:42:53+12:00",
+      "scraped_at": "2026-08-19T18:42:53+00:00",
+      "varietal": "geisha",
+      "size_prices": [
+        {
+          "size_grams": 100.0,
+          "price_nzd": 45.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "This anaerobic slow dry natural Geisha from Wilford & Wilford is syrupy with flavours of strawberry, orange blossom, blackberry & bergamot. Roasted in H-town 17 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8101055103152,
+      "title": "Arturo Arango - Castillo [natural] espresso",
+      "category": "espresso roast",
+      "handle": "arturo-arango-natural-espresso",
+      "product_url": "https://rocketcoffee.co.nz/products/arturo-arango-natural-espresso",
+      "available": true,
+      "price_min_nzd": 28.0,
+      "price_max_nzd": 95.0,
+      "updated_at": "2026-08-20T06:42:55+12:00",
+      "scraped_at": "2026-08-19T18:42:55+00:00",
+      "varietal": "castillo",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 95.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "Arturo's natural Castillo is sweet & fruity with favours of raspberry, passionfruit & turkish delight. Roasted in H-town 17 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
       "product_id": 6984263467184,
       "title": "DECAF - Colombia Popay\u00e1n Espresso",
       "category": "espresso roast",
@@ -94,8 +432,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
+      "updated_at": "2026-08-20T06:42:55+12:00",
+      "scraped_at": "2026-08-19T18:42:55+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -116,32 +454,6 @@
     },
     {
       "source": "rocketcoffee.co.nz",
-      "product_id": 8061000351920,
-      "title": "Diofanor Ruiz - Castillo [washed] filter roast",
-      "category": "filter roast",
-      "handle": "diofanor-ruiz-castillo-washed-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/diofanor-ruiz-castillo-washed-filter-roast",
-      "available": true,
-      "price_min_nzd": 27.0,
-      "price_max_nzd": 27.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "castillo",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 27.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "This washed Castillo is sweet with flavours of strawberry, raspberry & panela. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
       "product_id": 7947301159088,
       "title": "Don Claudio Project - Caturra - Catuai - Obata [natural] espresso",
       "category": "espresso roast",
@@ -150,8 +462,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 88.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
+      "updated_at": "2026-08-20T06:42:55+12:00",
+      "scraped_at": "2026-08-19T18:42:55+00:00",
       "varietal": "caturra,catuai,obata",
       "size_prices": [
         {
@@ -180,8 +492,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
+      "updated_at": "2026-08-20T06:42:55+12:00",
+      "scraped_at": "2026-08-19T18:42:55+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -202,6 +514,126 @@
     },
     {
       "source": "rocketcoffee.co.nz",
+      "product_id": 7338828759216,
+      "title": "ESPRESSO DULCE",
+      "category": "espresso roast",
+      "handle": "dulce-espresso-blend",
+      "product_url": "https://rocketcoffee.co.nz/products/dulce-espresso-blend",
+      "available": true,
+      "price_min_nzd": 18.0,
+      "price_max_nzd": 55.0,
+      "updated_at": "2026-08-20T06:42:55+12:00",
+      "scraped_at": "2026-08-19T18:42:55+00:00",
+      "varietal": "unknown",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 55.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "This is our second-best selling espresso blend, it is our darkest [but not dark, oily & roasty] espresso blend. Currently it\u2019s a 50:50 blend of Francisco Isidro Pereira from Brasil & ASPROTIMAN\u00c1 from Colombia. Perfect as a flat white. Dulce is sweet with flavours of milk chocolate & caramel. As a black coffee, you\u2019ll find dark chocolate, brown sugar & roasted almonds.",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 7657264218288,
+      "title": "Jairo Arcila - Caturra [washed] espresso",
+      "category": "espresso roast",
+      "handle": "jair-arcila-caturra-washed-espresso",
+      "product_url": "https://rocketcoffee.co.nz/products/jair-arcila-caturra-washed-espresso",
+      "available": true,
+      "price_min_nzd": 27.0,
+      "price_max_nzd": 91.0,
+      "updated_at": "2026-08-20T06:42:55+12:00",
+      "scraped_at": "2026-08-19T18:42:55+00:00",
+      "varietal": "caturra",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 27.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 91.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "Jairo\u2019s washed Caturra has flavours of red plum, apple juice & honey. Roasted in H-town 18 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 8026764640432,
+      "title": "Mr. Diki & Don Aman - P88 - S795 [carbonic maceration] espresso",
+      "category": "espresso roast",
+      "handle": "mr-diki-don-aman-p88-s795-carbonic-maceration-espresso-copy",
+      "product_url": "https://rocketcoffee.co.nz/products/mr-diki-don-aman-p88-s795-carbonic-maceration-espresso-copy",
+      "available": true,
+      "price_min_nzd": 30.0,
+      "price_max_nzd": 108.0,
+      "updated_at": "2026-08-20T06:42:55+12:00",
+      "scraped_at": "2026-08-19T18:42:55+00:00",
+      "varietal": "java",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 30.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 108.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "This is very sweet & syrupy with flavours of peach, orange juice & ripe pineapple. Roasted in H-Town 17 AUG 2026",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
+      "product_id": 7276031213744,
+      "title": "ORGANIC ESPRESSO",
+      "category": "espresso roast",
+      "handle": "rocket-organic-espresso-blend",
+      "product_url": "https://rocketcoffee.co.nz/products/rocket-organic-espresso-blend",
+      "available": true,
+      "price_min_nzd": 18.0,
+      "price_max_nzd": 55.0,
+      "updated_at": "2026-08-20T06:42:55+12:00",
+      "scraped_at": "2026-08-19T18:42:55+00:00",
+      "varietal": "unknown",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 18.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 55.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "This blend is 40 % Asociaci\u00f3n San Martin - Peru & 60% Asociacion ASOBRIS - Colombia",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
       "product_id": 11781494148,
       "title": "ESPRESSO BLEND subscription",
       "category": "espresso roast",
@@ -210,8 +642,8 @@
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
+      "updated_at": "2026-08-20T06:42:56+12:00",
+      "scraped_at": "2026-08-19T18:42:57+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -260,36 +692,6 @@
     },
     {
       "source": "rocketcoffee.co.nz",
-      "product_id": 7338828759216,
-      "title": "ESPRESSO DULCE",
-      "category": "espresso roast",
-      "handle": "dulce-espresso-blend",
-      "product_url": "https://rocketcoffee.co.nz/products/dulce-espresso-blend",
-      "available": true,
-      "price_min_nzd": 18.0,
-      "price_max_nzd": 55.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "unknown",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 18.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 55.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "This is our second-best selling espresso blend, it is our darkest [but not dark, oily & roasty] espresso blend. Currently it\u2019s a 50:50 blend of Francisco Isidro Pereira from Brasil & ASPROTIMAN\u00c1 from Colombia. Perfect as a flat white. Dulce is sweet with flavours of milk chocolate & caramel. As a black coffee, you\u2019ll find dark chocolate, brown sugar & roasted almonds.",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
       "product_id": 7762789630128,
       "title": "ESPRESSO DULCE subscription",
       "category": "espresso roast",
@@ -298,8 +700,8 @@
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
+      "updated_at": "2026-08-20T06:42:56+12:00",
+      "scraped_at": "2026-08-19T18:42:57+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -348,278 +750,6 @@
     },
     {
       "source": "rocketcoffee.co.nz",
-      "product_id": 8061619536048,
-      "title": "Gicherori Peaberry - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
-      "category": "filter roast",
-      "handle": "gicherori-peaberry-sl28-sl34-ruiru-11-batian-washed-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/gicherori-peaberry-sl28-sl34-ruiru-11-batian-washed-filter-roast",
-      "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "ruiru 11,sl28,sl34,batian",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 28.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "This is a tasty peaberry selection. It's juicy with flavours of lemon verbena, redcurrant & apricot, Roasted in H-town 19 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8101037015216,
-      "title": "Githembe - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
-      "category": "filter roast",
-      "handle": "githembe-sl28-sl34-ruiru-11-batian-washed-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/githembe-sl28-sl34-ruiru-11-batian-washed-filter-roast",
-      "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "ruiru 11,sl28,sl34,batian",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 28.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "This Kenyan has flavours of ribena, Syrah & ripe apricot. Roasted in H-town 13 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8077053296816,
-      "title": "Jairo Arcila - Castillo [natural decaf] filter roast",
-      "category": "filter roast",
-      "handle": "jairo-arcila-castillo-natural-decaf-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/jairo-arcila-castillo-natural-decaf-filter-roast",
-      "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "castillo,caturra",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 28.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": true,
-      "description": "This is a delicious natural decaf from Jairo. It has flavours of peach, passionfruit & cherry cola\u2026\u2026 Roasted in H- town 17 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 7657264218288,
-      "title": "Jairo Arcila - Caturra [washed] espresso",
-      "category": "espresso roast",
-      "handle": "jair-arcila-caturra-washed-espresso",
-      "product_url": "https://rocketcoffee.co.nz/products/jair-arcila-caturra-washed-espresso",
-      "available": true,
-      "price_min_nzd": 27.0,
-      "price_max_nzd": 91.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "caturra",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 27.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 91.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "Jairo\u2019s washed Caturra has flavours of red plum, apple juice & honey. Roasted in H-town 18 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8055903944880,
-      "title": "July Jumbo - Sidra [washed double fermented] filter roast",
-      "category": "filter roast",
-      "handle": "july-jumbo-sidra-washed-double-fermented-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/july-jumbo-sidra-washed-double-fermented-filter-roast",
-      "available": true,
-      "price_min_nzd": 42.0,
-      "price_max_nzd": 42.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "sidra",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 42.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "July Jumbo\u2019s washed Sidra has flavours of creaming soda, peach & raspberry. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8102659195056,
-      "title": "Karundu - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
-      "category": "filter roast",
-      "handle": "karundu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/karundu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
-      "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "ruiru 11,sl28,sl34,batian",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 28.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "Karundu is heavy-bodied with flavours of tinned blackberries, peach & cola. Roasted in H-town 19 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8082951438512,
-      "title": "Kiunyu  - SL28 - SL34 - Ruiru 11 - Batian [washed] filter roast",
-      "category": "filter roast",
-      "handle": "kiunyu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/kiunyu-sl28-sl34-ruiru-11-batian-washed-filter-roast",
-      "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "ruiru 11,sl28,sl34,batian",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 28.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "Kiunyu has flavours of blackcurrant, hibiscus & red liquorice. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8099758833840,
-      "title": "Luz Helena - Caturra [natural] filter roast",
-      "category": "filter roast",
-      "handle": "luz-helena-caturra-natural-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/luz-helena-caturra-natural-filter-roast",
-      "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "caturra",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 28.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "Luz' naturally processed Caturra is a great coffee with flavours of purple winegums, ripe red plum & a floral aroma Roasted in H-town 19 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8026764640432,
-      "title": "Mr. Diki & Don Aman - P88 - S795 [carbonic maceration] espresso",
-      "category": "espresso roast",
-      "handle": "mr-diki-don-aman-p88-s795-carbonic-maceration-espresso-copy",
-      "product_url": "https://rocketcoffee.co.nz/products/mr-diki-don-aman-p88-s795-carbonic-maceration-espresso-copy",
-      "available": true,
-      "price_min_nzd": 30.0,
-      "price_max_nzd": 108.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "java",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 30.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 108.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "This is very sweet & syrupy with flavours of peach, orange juice & ripe pineapple. Roasted in H-Town 17 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 7276031213744,
-      "title": "ORGANIC ESPRESSO",
-      "category": "espresso roast",
-      "handle": "rocket-organic-espresso-blend",
-      "product_url": "https://rocketcoffee.co.nz/products/rocket-organic-espresso-blend",
-      "available": true,
-      "price_min_nzd": 18.0,
-      "price_max_nzd": 55.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "unknown",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 18.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 55.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "This blend is 40 % Asociaci\u00f3n San Martin - Peru & 60% Asociacion ASOBRIS - Colombia",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
       "product_id": 7164348170416,
       "title": "ORGANIC ESPRESSO subscription",
       "category": "espresso roast",
@@ -628,8 +758,8 @@
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
+      "updated_at": "2026-08-20T06:42:56+12:00",
+      "scraped_at": "2026-08-19T18:42:57+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -678,84 +808,6 @@
     },
     {
       "source": "rocketcoffee.co.nz",
-      "product_id": 8061671276720,
-      "title": "Paola y Carlos Trujillo - Aji [washed] filter roast",
-      "category": "filter roast",
-      "handle": "paola-y-carlos-trujillo-aji-washed-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/paola-y-carlos-trujillo-aji-washed-filter-roast",
-      "available": true,
-      "price_min_nzd": 38.0,
-      "price_max_nzd": 38.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "unknown",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 38.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "This is the first Aji cultivar we\u2019ve offered & it\u2019s a doozy. It\u2019s very sweet, clean & juicy with flavours of ripe blueberry, apple syrup & gold kiwifruit. Roasted in H-town 14 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8061670195376,
-      "title": "Paola y Carlos Trujillo - Geisha [natural] filter roast",
-      "category": "filter roast",
-      "handle": "paola-y-carlos-trujillo-geisha-natural-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/paola-y-carlos-trujillo-geisha-natural-filter-roast",
-      "available": true,
-      "price_min_nzd": 45.0,
-      "price_max_nzd": 45.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "geisha",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 45.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "This Geisha from Paola & Carlos has a floral rose aroma & flavours of strawberry milkshake & marshmallow. Roasted in H-town 14 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8061670785200,
-      "title": "Paola y Carlos Trujillo - Java [washed] filter roast",
-      "category": "filter roast",
-      "handle": "paola-y-carlos-trujillo-java-washed-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/paola-y-carlos-trujillo-java-washed-filter-roast",
-      "available": true,
-      "price_min_nzd": 36.0,
-      "price_max_nzd": 36.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "java",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 36.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "The last in our trifecta of Trujillo roasts, Paola & Carlos\u2019 washed Java has flavours of apricot, cardamom & cr\u00e8me br\u00fbl\u00e9e. Roasted in H-town 19 AUG 2026",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
       "product_id": 7360266666160,
       "title": "ROCKET single origin espresso subscription",
       "category": "espresso roast",
@@ -764,8 +816,8 @@
       "available": true,
       "price_min_nzd": 72.0,
       "price_max_nzd": 480.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
+      "updated_at": "2026-08-20T06:42:56+12:00",
+      "scraped_at": "2026-08-19T18:42:57+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -810,8 +862,8 @@
       "available": true,
       "price_min_nzd": 84.0,
       "price_max_nzd": 576.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
+      "updated_at": "2026-08-20T06:42:56+12:00",
+      "scraped_at": "2026-08-19T18:42:57+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -847,56 +899,112 @@
       "flavour_notes": "unknown"
     },
     {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8065133117616,
-      "title": "Rogelio Segovia - Caturra [washed] filter roast",
+      "source": "atomiccoffee.co.nz",
+      "product_id": 8489950609595,
+      "title": "Indonesia Yolan Tirta | Filter Roast",
       "category": "filter roast",
-      "handle": "rogelio-torres-castillo-washed-filter-roast-l",
-      "product_url": "https://rocketcoffee.co.nz/products/rogelio-torres-castillo-washed-filter-roast-l",
+      "handle": "indonesia-yolan-tirta-filter-roast",
+      "product_url": "https://atomiccoffee.co.nz/products/indonesia-yolan-tirta-filter-roast",
       "available": true,
-      "price_min_nzd": 24.0,
-      "price_max_nzd": 24.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "castillo,caturra",
+      "price_min_nzd": 28.5,
+      "price_max_nzd": 28.5,
+      "updated_at": "2026-08-20T06:43:00+12:00",
+      "scraped_at": "2026-08-19T18:43:00+00:00",
+      "varietal": "typica",
       "size_prices": [
         {
           "size_grams": 250.0,
-          "price_nzd": 24.0
+          "price_nzd": 28.5
         }
       ],
       "origin_country": "unknown",
       "producer": "unknown",
-      "process": "unknown",
+      "process": "Washed",
       "decaf": false,
-      "description": "This Peru is sweet & clean with flavours of apricot, black tea & lime. Roasted in H-town 19 AUG 2026",
-      "flavour_notes": "unknown"
+      "description": "A comforting, clear and quietly complex Typica from Indonesia. Crisp pear notes provide freshness and lift, while toasted nuts and hot chocolate create a familiar sweetness. Smooth-bodied and nicely balanced, this coffee finishes clean and anchored, inviting another sip before the cup is empty. Variety: Typica Processing: Washed Tasting notes: Red Pear, Hazelnut, Hot Chocolate Recomending use: Filter",
+      "flavour_notes": "Red Pear, Hazelnut, Hot Chocolate Recomending use: Filter"
     },
     {
-      "source": "rocketcoffee.co.nz",
-      "product_id": 8035609149616,
-      "title": "Wilford Lamastus Snr. & Jnr. - Geisha lot 16 [ASD natural] filter roast",
+      "source": "atomiccoffee.co.nz",
+      "product_id": 8489948217531,
+      "title": "Kenya Gachika | Filter Roast",
       "category": "filter roast",
-      "handle": "wilford-lamastus-geisha-lot-16-anaerobic-natural-filter-roast-copy",
-      "product_url": "https://rocketcoffee.co.nz/products/wilford-lamastus-geisha-lot-16-anaerobic-natural-filter-roast-copy",
+      "handle": "kenya-gachika-filter-roast",
+      "product_url": "https://atomiccoffee.co.nz/products/kenya-gachika-filter-roast",
       "available": true,
-      "price_min_nzd": 45.0,
-      "price_max_nzd": 45.0,
-      "updated_at": "2026-08-20T02:13:30+12:00",
-      "scraped_at": "2026-08-19T14:13:30+00:00",
-      "varietal": "geisha",
+      "price_min_nzd": 29.0,
+      "price_max_nzd": 29.0,
+      "updated_at": "2026-08-20T06:43:00+12:00",
+      "scraped_at": "2026-08-19T18:43:00+00:00",
+      "varietal": "ruiru 11,batian",
       "size_prices": [
         {
-          "size_grams": 100.0,
-          "price_nzd": 45.0
+          "size_grams": 250.0,
+          "price_nzd": 29.0
         }
       ],
       "origin_country": "unknown",
       "producer": "unknown",
-      "process": "unknown",
+      "process": "Washed",
       "decaf": false,
-      "description": "This anaerobic slow dry natural Geisha from Wilford & Wilford is syrupy with flavours of strawberry, orange blossom, blackberry & bergamot. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "unknown"
+      "description": "A mysterious and magnetic washed Kenyan. This is a coffee of depth and intrigue, where rich prune sweetness leads into flashes of zesty lime. Lingering beneath its shadowy exterior, lays a rich Cabernet Sauvignon, full of ripe plums and subtle tannins. The complexity of this Kenya continues to unfold with every sip. Variety: SL 28, Ruiru 11, Batian Processing: Washed Flavour notes: Prune, Cabernet Sauvignon, Lime Recommended use: Filter 200g",
+      "flavour_notes": "Prune, Cabernet Sauvignon, Lime Recommended use: Filter 200g"
+    },
+    {
+      "source": "atomiccoffee.co.nz",
+      "product_id": 8489943859387,
+      "title": "Rwanda Vincent Rukeribuga | Filter Roast",
+      "category": "filter roast",
+      "handle": "rwanda-vincent-rukeribuga-filter-roast",
+      "product_url": "https://atomiccoffee.co.nz/products/rwanda-vincent-rukeribuga-filter-roast",
+      "available": true,
+      "price_min_nzd": 31.0,
+      "price_max_nzd": 31.0,
+      "updated_at": "2026-08-20T06:43:00+12:00",
+      "scraped_at": "2026-08-19T18:43:00+00:00",
+      "varietal": "bourbon",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 31.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "Anaerobic Natural",
+      "decaf": false,
+      "description": "Bursting with vibrant fruits and remarkable complexity, this coffee is lavishly sweet, full-bodied and deeply expressive. The controlled anaerobic fermentation creates a rich and decadent experience of ripe blueberries, strawberry compote & sweet apples. With a lot going on this coffee delivers a beautifully balanced, long, and elegant finish with sweetness that seems to last forever. Variety: Bourbon Processing: Anaerobic Natural Flavour notes: Ambrosia Apple, Black Forest, Ripe Blueberry Recommended use: Filter",
+      "flavour_notes": "Ambrosia Apple, Black Forest, Ripe Blueberry Recommended use: Filter"
+    },
+    {
+      "source": "atomiccoffee.co.nz",
+      "product_id": 6217691496635,
+      "title": "Brazil Coopfam",
+      "category": "filter roast",
+      "handle": "brazil-coopfam",
+      "product_url": "https://atomiccoffee.co.nz/products/brazil-coopfam",
+      "available": true,
+      "price_min_nzd": 20.5,
+      "price_max_nzd": 82.0,
+      "updated_at": "2026-08-20T06:43:00+12:00",
+      "scraped_at": "2026-08-19T18:43:00+00:00",
+      "varietal": "catuai",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 20.5
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 82.0
+        }
+      ],
+      "origin_country": "Brazil, Minas Gerais, Po\u00e7o Fundo Coop: Cooperativa dos Agricultores Familiares de Po\u00e7o Fundo e Regi\u00e3o (Coopfam) Variety: Mundo Novo, Catuai",
+      "producer": "unknown",
+      "process": "Natural Altitude: 800 \u2013 1300 masl Roast depth: light to medium Characteristics Body: medium to full Acidity : low Sweetness: mild Finish: smooth",
+      "decaf": false,
+      "description": "A classic example of Brazilian coffee, with rich chocolate notes and not so subtle nut flavours \u2013 think peanut slab! It is the perfect choice for those who prefer their coffees on the less fruity or acidic side. Origin: Brazil, Minas Gerais, Po\u00e7o Fundo Coop: Cooperativa dos Agricultores Familiares de Po\u00e7o Fundo e Regi\u00e3o (Coopfam) Variety: Mundo Novo, Catuai Processing: Natural Altitude: 800 \u2013 1300 masl Roast depth: light to medium Characteristics Body: medium to full Acidity : low Sweetness: mild Finish: smooth Flavour notes: Macadamia, Milk Chocolate, Pear Recommended use: Plunger, stovetop, aeropress, filter and espresso",
+      "flavour_notes": "Macadamia, Milk Chocolate, Pear Recommended use: Plunger, stovetop, aeropress, filter and espresso"
     },
     {
       "source": "atomiccoffee.co.nz",
@@ -908,8 +1016,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
-      "updated_at": "2026-08-20T02:13:39+12:00",
-      "scraped_at": "2026-08-19T14:13:39+00:00",
+      "updated_at": "2026-08-20T06:43:01+12:00",
+      "scraped_at": "2026-08-19T18:43:01+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -929,8 +1037,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
-      "updated_at": "2026-08-20T02:13:39+12:00",
-      "scraped_at": "2026-08-19T14:13:39+00:00",
+      "updated_at": "2026-08-20T06:43:01+12:00",
+      "scraped_at": "2026-08-19T18:43:01+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -959,8 +1067,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
-      "updated_at": "2026-08-20T02:13:39+12:00",
-      "scraped_at": "2026-08-19T14:13:39+00:00",
+      "updated_at": "2026-08-20T06:43:01+12:00",
+      "scraped_at": "2026-08-19T18:43:01+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -983,14 +1091,14 @@
       "source": "atomiccoffee.co.nz",
       "product_id": 309826339,
       "title": "Decaf",
-      "category": "filter roast",
+      "category": "omni roast",
       "handle": "decaf",
       "product_url": "https://atomiccoffee.co.nz/products/decaf",
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T02:13:39+12:00",
-      "scraped_at": "2026-08-19T14:13:39+00:00",
+      "updated_at": "2026-08-20T06:43:01+12:00",
+      "scraped_at": "2026-08-19T18:43:01+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -1011,36 +1119,6 @@
     },
     {
       "source": "atomiccoffee.co.nz",
-      "product_id": 6217691496635,
-      "title": "Brazil Coopfam",
-      "category": "filter roast",
-      "handle": "brazil-coopfam",
-      "product_url": "https://atomiccoffee.co.nz/products/brazil-coopfam",
-      "available": true,
-      "price_min_nzd": 20.5,
-      "price_max_nzd": 82.0,
-      "updated_at": "2026-08-20T02:13:39+12:00",
-      "scraped_at": "2026-08-19T14:13:39+00:00",
-      "varietal": "catuai",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 20.5
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 82.0
-        }
-      ],
-      "origin_country": "Brazil, Minas Gerais, Po\u00e7o Fundo Coop: Cooperativa dos Agricultores Familiares de Po\u00e7o Fundo e Regi\u00e3o (Coopfam) Variety: Mundo Novo, Catuai",
-      "producer": "unknown",
-      "process": "Natural Altitude: 800 \u2013 1300 masl Roast depth: light to medium Characteristics Body: medium to full Acidity : low Sweetness: mild Finish: smooth",
-      "decaf": false,
-      "description": "A classic example of Brazilian coffee, with rich chocolate notes and not so subtle nut flavours \u2013 think peanut slab! It is the perfect choice for those who prefer their coffees on the less fruity or acidic side. Origin: Brazil, Minas Gerais, Po\u00e7o Fundo Coop: Cooperativa dos Agricultores Familiares de Po\u00e7o Fundo e Regi\u00e3o (Coopfam) Variety: Mundo Novo, Catuai Processing: Natural Altitude: 800 \u2013 1300 masl Roast depth: light to medium Characteristics Body: medium to full Acidity : low Sweetness: mild Finish: smooth Flavour notes: Macadamia, Milk Chocolate, Pear Recommended use: Plunger, stovetop, aeropress, filter and espresso",
-      "flavour_notes": "Macadamia, Milk Chocolate, Pear Recommended use: Plunger, stovetop, aeropress, filter and espresso"
-    },
-    {
-      "source": "atomiccoffee.co.nz",
       "product_id": 8489942548667,
       "title": "Brazil Sitio Da Torre | Espresso Roast",
       "category": "espresso roast",
@@ -1049,8 +1127,8 @@
       "available": true,
       "price_min_nzd": 27.5,
       "price_max_nzd": 27.5,
-      "updated_at": "2026-08-20T02:13:39+12:00",
-      "scraped_at": "2026-08-19T14:13:39+00:00",
+      "updated_at": "2026-08-20T06:43:01+12:00",
+      "scraped_at": "2026-08-19T18:43:01+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -1066,84 +1144,6 @@
       "flavour_notes": "Pomelo, Floral Honey, Pistachio With milk: Almond , Black Tea Recommended use: Espresso"
     },
     {
-      "source": "atomiccoffee.co.nz",
-      "product_id": 8489943859387,
-      "title": "Rwanda Vincent Rukeribuga | Filter Roast",
-      "category": "filter roast",
-      "handle": "rwanda-vincent-rukeribuga-filter-roast",
-      "product_url": "https://atomiccoffee.co.nz/products/rwanda-vincent-rukeribuga-filter-roast",
-      "available": true,
-      "price_min_nzd": 31.0,
-      "price_max_nzd": 31.0,
-      "updated_at": "2026-08-20T02:13:39+12:00",
-      "scraped_at": "2026-08-19T14:13:39+00:00",
-      "varietal": "bourbon",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 31.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "Anaerobic Natural",
-      "decaf": false,
-      "description": "Bursting with vibrant fruits and remarkable complexity, this coffee is lavishly sweet, full-bodied and deeply expressive. The controlled anaerobic fermentation creates a rich and decadent experience of ripe blueberries, strawberry compote & sweet apples. With a lot going on this coffee delivers a beautifully balanced, long, and elegant finish with sweetness that seems to last forever. Variety: Bourbon Processing: Anaerobic Natural Flavour notes: Ambrosia Apple, Black Forest, Ripe Blueberry Recommended use: Filter",
-      "flavour_notes": "Ambrosia Apple, Black Forest, Ripe Blueberry Recommended use: Filter"
-    },
-    {
-      "source": "atomiccoffee.co.nz",
-      "product_id": 8489948217531,
-      "title": "Kenya Gachika | Filter Roast",
-      "category": "filter roast",
-      "handle": "kenya-gachika-filter-roast",
-      "product_url": "https://atomiccoffee.co.nz/products/kenya-gachika-filter-roast",
-      "available": true,
-      "price_min_nzd": 29.0,
-      "price_max_nzd": 29.0,
-      "updated_at": "2026-08-20T02:13:39+12:00",
-      "scraped_at": "2026-08-19T14:13:39+00:00",
-      "varietal": "ruiru 11,batian",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 29.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "Washed",
-      "decaf": false,
-      "description": "A mysterious and magnetic washed Kenyan. This is a coffee of depth and intrigue, where rich prune sweetness leads into flashes of zesty lime. Lingering beneath its shadowy exterior, lays a rich Cabernet Sauvignon, full of ripe plums and subtle tannins. The complexity of this Kenya continues to unfold with every sip. Variety: SL 28, Ruiru 11, Batian Processing: Washed Flavour notes: Prune, Cabernet Sauvignon, Lime Recommended use: Filter 200g",
-      "flavour_notes": "Prune, Cabernet Sauvignon, Lime Recommended use: Filter 200g"
-    },
-    {
-      "source": "atomiccoffee.co.nz",
-      "product_id": 8489950609595,
-      "title": "Indonesia Yolan Tirta | Filter Roast",
-      "category": "filter roast",
-      "handle": "indonesia-yolan-tirta-filter-roast",
-      "product_url": "https://atomiccoffee.co.nz/products/indonesia-yolan-tirta-filter-roast",
-      "available": true,
-      "price_min_nzd": 28.5,
-      "price_max_nzd": 28.5,
-      "updated_at": "2026-08-20T02:13:39+12:00",
-      "scraped_at": "2026-08-19T14:13:39+00:00",
-      "varietal": "typica",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 28.5
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "Washed",
-      "decaf": false,
-      "description": "A comforting, clear and quietly complex Typica from Indonesia. Crisp pear notes provide freshness and lift, while toasted nuts and hot chocolate create a familiar sweetness. Smooth-bodied and nicely balanced, this coffee finishes clean and anchored, inviting another sip before the cup is empty. Variety: Typica Processing: Washed Tasting notes: Red Pear, Hazelnut, Hot Chocolate Recomending use: Filter",
-      "flavour_notes": "Red Pear, Hazelnut, Hot Chocolate Recomending use: Filter"
-    },
-    {
       "source": "ozonecoffee.co.nz",
       "product_id": 6795911954605,
       "title": "Our House: Blend",
@@ -1153,8 +1153,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1191,8 +1191,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1223,14 +1223,14 @@
       "source": "ozonecoffee.co.nz",
       "product_id": 6795917099181,
       "title": "Hodson: Blend",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "hodson-blend",
       "product_url": "https://ozonecoffee.co.nz/products/hodson-blend",
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1261,14 +1261,14 @@
       "source": "ozonecoffee.co.nz",
       "product_id": 6795925684397,
       "title": "Organic: Blend",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "organic-blend",
       "product_url": "https://ozonecoffee.co.nz/products/organic-blend",
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 205.5,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1305,8 +1305,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 71.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -1339,8 +1339,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 69.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1367,14 +1367,14 @@
       "source": "ozonecoffee.co.nz",
       "product_id": 6795899994285,
       "title": "Seasonal: Blend",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "seasonal-blend",
       "product_url": "https://ozonecoffee.co.nz/products/seasonal-blend",
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1405,14 +1405,14 @@
       "source": "ozonecoffee.co.nz",
       "product_id": 6795910250669,
       "title": "Decaf",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "decaf",
       "product_url": "https://ozonecoffee.co.nz/products/decaf",
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 210.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "castillo,caturra",
       "size_prices": [
         {
@@ -1449,8 +1449,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "castillo,caturra,typica",
       "size_prices": [
         {
@@ -1483,8 +1483,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 78.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1511,14 +1511,14 @@
       "source": "ozonecoffee.co.nz",
       "product_id": 6795943510189,
       "title": "Nova Alianca",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "nova-alianca-natural",
       "product_url": "https://ozonecoffee.co.nz/products/nova-alianca-natural",
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -1551,8 +1551,8 @@
       "available": true,
       "price_min_nzd": 122.0,
       "price_max_nzd": 122.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -1572,8 +1572,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "caturra,catuai",
       "size_prices": [
         {
@@ -1606,8 +1606,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1640,8 +1640,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "caturra,bourbon,geisha,java",
       "size_prices": [
         {
@@ -1668,14 +1668,14 @@
       "source": "ozonecoffee.co.nz",
       "product_id": 9656041472231,
       "title": "Cachoeira da Grama, Yellow Bourbon",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "cachoeira-da-grama-yellow-bourbon",
       "product_url": "https://ozonecoffee.co.nz/products/cachoeira-da-grama-yellow-bourbon",
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -1702,14 +1702,14 @@
       "source": "ozonecoffee.co.nz",
       "product_id": 9656078368999,
       "title": "Inglaterra",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "inglaterra",
       "product_url": "https://ozonecoffee.co.nz/products/inglaterra",
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-20T02:13:41+12:00",
-      "scraped_at": "2026-08-19T14:13:41+00:00",
+      "updated_at": "2026-08-20T06:43:02+12:00",
+      "scraped_at": "2026-08-19T18:43:02+00:00",
       "varietal": "catuai,bourbon",
       "size_prices": [
         {
@@ -1742,8 +1742,8 @@
       "available": true,
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
-      "updated_at": "2026-08-20T02:13:47+12:00",
-      "scraped_at": "2026-08-19T14:13:47+00:00",
+      "updated_at": "2026-08-20T06:43:05+12:00",
+      "scraped_at": "2026-08-19T18:43:05+00:00",
       "varietal": "bourbon,gesha",
       "size_prices": [
         {
@@ -1768,8 +1768,8 @@
       "available": true,
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
-      "updated_at": "2026-08-20T02:13:47+12:00",
-      "scraped_at": "2026-08-19T14:13:47+00:00",
+      "updated_at": "2026-08-20T06:43:05+12:00",
+      "scraped_at": "2026-08-19T18:43:05+00:00",
       "varietal": "pacamara,gesha,geisha",
       "size_prices": [
         {
@@ -1794,8 +1794,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
-      "updated_at": "2026-08-20T02:13:47+12:00",
-      "scraped_at": "2026-08-19T14:13:47+00:00",
+      "updated_at": "2026-08-20T06:43:05+12:00",
+      "scraped_at": "2026-08-19T18:43:05+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1820,8 +1820,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
-      "updated_at": "2026-08-20T02:13:47+12:00",
-      "scraped_at": "2026-08-19T14:13:47+00:00",
+      "updated_at": "2026-08-20T06:43:05+12:00",
+      "scraped_at": "2026-08-19T18:43:05+00:00",
       "varietal": "caturra,bourbon,gesha,java",
       "size_prices": [
         {
@@ -1846,8 +1846,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T02:13:47+12:00",
-      "scraped_at": "2026-08-19T14:13:47+00:00",
+      "updated_at": "2026-08-20T06:43:05+12:00",
+      "scraped_at": "2026-08-19T18:43:05+00:00",
       "varietal": "caturra,bourbon,gesha",
       "size_prices": [],
       "origin_country": "unknown",
@@ -1867,8 +1867,8 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 79.0,
-      "updated_at": "2026-08-20T02:13:57+12:00",
-      "scraped_at": "2026-08-19T14:13:57+00:00",
+      "updated_at": "2026-08-20T06:43:08+12:00",
+      "scraped_at": "2026-08-19T18:43:08+00:00",
       "varietal": "caturra,catuai,bourbon,gesha,java",
       "size_prices": [
         {
@@ -1897,8 +1897,8 @@
       "available": true,
       "price_min_nzd": 18.5,
       "price_max_nzd": 66.5,
-      "updated_at": "2026-08-20T02:13:57+12:00",
-      "scraped_at": "2026-08-19T14:13:57+00:00",
+      "updated_at": "2026-08-20T06:43:08+12:00",
+      "scraped_at": "2026-08-19T18:43:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1927,8 +1927,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
-      "updated_at": "2026-08-20T02:13:57+12:00",
-      "scraped_at": "2026-08-19T14:13:57+00:00",
+      "updated_at": "2026-08-20T06:43:08+12:00",
+      "scraped_at": "2026-08-19T18:43:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1957,8 +1957,8 @@
       "available": true,
       "price_min_nzd": 21.5,
       "price_max_nzd": 82.5,
-      "updated_at": "2026-08-20T02:13:57+12:00",
-      "scraped_at": "2026-08-19T14:13:57+00:00",
+      "updated_at": "2026-08-20T06:43:08+12:00",
+      "scraped_at": "2026-08-19T18:43:08+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -1987,8 +1987,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
-      "updated_at": "2026-08-20T02:13:57+12:00",
-      "scraped_at": "2026-08-19T14:13:57+00:00",
+      "updated_at": "2026-08-20T06:43:08+12:00",
+      "scraped_at": "2026-08-19T18:43:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2017,8 +2017,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
-      "updated_at": "2026-08-20T02:14:02+12:00",
-      "scraped_at": "2026-08-19T14:14:02+00:00",
+      "updated_at": "2026-08-20T06:43:10+12:00",
+      "scraped_at": "2026-08-19T18:43:10+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -2047,8 +2047,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
-      "updated_at": "2026-08-20T02:14:02+12:00",
-      "scraped_at": "2026-08-19T14:14:02+00:00",
+      "updated_at": "2026-08-20T06:43:10+12:00",
+      "scraped_at": "2026-08-19T18:43:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2073,8 +2073,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-20T02:14:02+12:00",
-      "scraped_at": "2026-08-19T14:14:02+00:00",
+      "updated_at": "2026-08-20T06:43:10+12:00",
+      "scraped_at": "2026-08-19T18:43:10+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -2103,8 +2103,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
-      "updated_at": "2026-08-20T02:14:02+12:00",
-      "scraped_at": "2026-08-19T14:14:02+00:00",
+      "updated_at": "2026-08-20T06:43:10+12:00",
+      "scraped_at": "2026-08-19T18:43:10+00:00",
       "varietal": "gesha,geisha",
       "size_prices": [
         {
@@ -2129,8 +2129,8 @@
       "available": true,
       "price_min_nzd": 66.0,
       "price_max_nzd": 66.0,
-      "updated_at": "2026-08-20T02:14:02+12:00",
-      "scraped_at": "2026-08-19T14:14:02+00:00",
+      "updated_at": "2026-08-20T06:43:10+12:00",
+      "scraped_at": "2026-08-19T18:43:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2155,8 +2155,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
-      "updated_at": "2026-08-20T02:14:02+12:00",
-      "scraped_at": "2026-08-19T14:14:02+00:00",
+      "updated_at": "2026-08-20T06:43:10+12:00",
+      "scraped_at": "2026-08-19T18:43:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2181,8 +2181,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-20T02:14:02+12:00",
-      "scraped_at": "2026-08-19T14:14:02+00:00",
+      "updated_at": "2026-08-20T06:43:10+12:00",
+      "scraped_at": "2026-08-19T18:43:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2211,8 +2211,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
-      "updated_at": "2026-08-20T02:14:02+12:00",
-      "scraped_at": "2026-08-19T14:14:02+00:00",
+      "updated_at": "2026-08-20T06:43:10+12:00",
+      "scraped_at": "2026-08-19T18:43:10+00:00",
       "varietal": "caturra,bourbon,typica,geisha",
       "size_prices": [
         {
@@ -2237,8 +2237,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
-      "updated_at": "2026-08-20T02:14:09+12:00",
-      "scraped_at": "2026-08-19T14:14:09+00:00",
+      "updated_at": "2026-08-20T06:43:12+12:00",
+      "scraped_at": "2026-08-19T18:43:12+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -2267,8 +2267,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-20T02:14:09+12:00",
-      "scraped_at": "2026-08-19T14:14:09+00:00",
+      "updated_at": "2026-08-20T06:43:12+12:00",
+      "scraped_at": "2026-08-19T18:43:12+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -2297,8 +2297,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-20T02:14:09+12:00",
-      "scraped_at": "2026-08-19T14:14:09+00:00",
+      "updated_at": "2026-08-20T06:43:12+12:00",
+      "scraped_at": "2026-08-19T18:43:12+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2327,8 +2327,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 50.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2357,8 +2357,8 @@
       "available": true,
       "price_min_nzd": 20.5,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2391,8 +2391,8 @@
       "available": true,
       "price_min_nzd": 22.5,
       "price_max_nzd": 74.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "sl28,sl34",
       "size_prices": [
         {
@@ -2425,8 +2425,8 @@
       "available": true,
       "price_min_nzd": 44.0,
       "price_max_nzd": 276.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -2467,8 +2467,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -2501,8 +2501,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -2535,8 +2535,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2561,8 +2561,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2587,8 +2587,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2613,8 +2613,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2639,8 +2639,8 @@
       "available": true,
       "price_min_nzd": 260.0,
       "price_max_nzd": 260.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2665,8 +2665,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "ruiru 11,sl28,sl34",
       "size_prices": [
         {
@@ -2699,8 +2699,8 @@
       "available": true,
       "price_min_nzd": 36.0,
       "price_max_nzd": 106.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -2733,8 +2733,8 @@
       "available": true,
       "price_min_nzd": 37.5,
       "price_max_nzd": 106.0,
-      "updated_at": "2026-08-20T02:14:11+12:00",
-      "scraped_at": "2026-08-19T14:14:11+00:00",
+      "updated_at": "2026-08-20T06:43:13+12:00",
+      "scraped_at": "2026-08-19T18:43:13+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -2767,8 +2767,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 68.0,
-      "updated_at": "2026-08-20T02:14:19+12:00",
-      "scraped_at": "2026-08-19T14:14:19+00:00",
+      "updated_at": "2026-08-20T06:43:16+12:00",
+      "scraped_at": "2026-08-19T18:43:16+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2795,14 +2795,14 @@
       "source": "vanguardcoffee.co.nz",
       "product_id": 5410452996234,
       "title": "Brazil Araponga- Single Origin Espresso/ Filter",
-      "category": "filter roast,espresso roast",
+      "category": "espresso roast",
       "handle": "brazil-araponga-espresso",
       "product_url": "https://vanguardcoffee.co.nz/products/brazil-araponga-espresso",
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T02:14:19+12:00",
-      "scraped_at": "2026-08-19T14:14:19+00:00",
+      "updated_at": "2026-08-20T06:43:16+12:00",
+      "scraped_at": "2026-08-19T18:43:16+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2835,8 +2835,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T02:14:19+12:00",
-      "scraped_at": "2026-08-19T14:14:19+00:00",
+      "updated_at": "2026-08-20T06:43:16+12:00",
+      "scraped_at": "2026-08-19T18:43:16+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2869,8 +2869,8 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-20T02:14:19+12:00",
-      "scraped_at": "2026-08-19T14:14:19+00:00",
+      "updated_at": "2026-08-20T06:43:16+12:00",
+      "scraped_at": "2026-08-19T18:43:16+00:00",
       "varietal": "sl28,sl34",
       "size_prices": [
         {
@@ -2903,8 +2903,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 68.0,
-      "updated_at": "2026-08-20T02:14:19+12:00",
-      "scraped_at": "2026-08-19T14:14:19+00:00",
+      "updated_at": "2026-08-20T06:43:16+12:00",
+      "scraped_at": "2026-08-19T18:43:16+00:00",
       "varietal": "castillo,caturra",
       "size_prices": [
         {
@@ -2929,6 +2929,168 @@
     },
     {
       "source": "c4coffee.co",
+      "product_id": 8751347531943,
+      "title": "Ethiopia Koke Shalaye",
+      "category": "filter roast",
+      "handle": "ethiopia-koke-shalaye",
+      "product_url": "https://c4coffee.co/products/ethiopia-koke-shalaye",
+      "available": true,
+      "price_min_nzd": 40.0,
+      "price_max_nzd": 200.0,
+      "updated_at": "2026-08-20T06:43:17+12:00",
+      "scraped_at": "2026-08-19T18:43:17+00:00",
+      "varietal": "unknown",
+      "size_prices": [
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 200.0
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 40.0
+        }
+      ],
+      "origin_country": "Ethiopia Region: Koke Kebele, Gedeo Zone",
+      "producer": "unknown",
+      "process": "Natural Anaerobic Altitude: 1,800+ MASL Roast Level: Light in the cup In the cup we taste vibrant tropical fruits, sun-ripened stone fruit, and a lingering floral sweetness",
+      "decaf": false,
+      "description": "Koke Shalaye Variety: Ethiopian Heirloom Country: Ethiopia Region: Koke Kebele, Gedeo Zone Process: Natural Anaerobic Altitude: 1,800+ MASL Roast Level: Light in the cup In the cup we taste vibrant tropical fruits, sun-ripened stone fruit, and a lingering floral sweetness. This coffee has a juicy, full body with a bright, summer-like finish that pairs beautifully with something delicate \u2014 think Mille-feuille. FruityJuicy NaturalComplex about the producer High in the Gedeo zone of southern Ethiopia, over 2,000 small-scale farmers in Koke Kebele hand-select only the ripest cherries from traditional Ethiopian varieties. The Koke Shalaye station was established in 2019 by Abreham Mengiste, and has quickly earned recognition for exceptional quality \u2014 a reflection of the rich volcanic soils, high altitudes, and reliable rainfall that define this remarkable growing region. processing Freshly picked cherries undergo anaerobic fermentation, wrapped on raised drying beds to develop vibrant and complex flavour. After fermentation, the beans are shade-dried in thick layers and closely monitored to ensure perfect moisture levels throughout. This careful, hands-on process preserves the coffee's character and honours the skill of the farmers behind every cup.",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "c4coffee.co",
+      "product_id": 10643188220071,
+      "title": "Kenya: Tatu Natural",
+      "category": "filter roast",
+      "handle": "kenya-tatu-natural",
+      "product_url": "https://c4coffee.co/products/kenya-tatu-natural",
+      "available": true,
+      "price_min_nzd": 24.0,
+      "price_max_nzd": 96.0,
+      "updated_at": "2026-08-20T06:43:17+12:00",
+      "scraped_at": "2026-08-19T18:43:17+00:00",
+      "varietal": "unknown",
+      "size_prices": [
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 96.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 24.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "Kenya, known for their incredible washed coffees that are rich, juicy, and full of flavour. We wanted to bring something different, a naturally processed coffee from those not known for it. This unconventional coffee has extremely deep flavours for a filter roast, and makes us feel like we're eating cake next to a fire in a snowy winter.",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "c4coffee.co",
+      "product_id": 11039941689511,
+      "title": "Blackberry Sorbet",
+      "category": "omni roast",
+      "handle": "blackberry-sorbet",
+      "product_url": "https://c4coffee.co/products/blackberry-sorbet",
+      "available": true,
+      "price_min_nzd": 30.0,
+      "price_max_nzd": 149.99,
+      "updated_at": "2026-08-20T06:43:17+12:00",
+      "scraped_at": "2026-08-19T18:43:17+00:00",
+      "varietal": "castillo",
+      "size_prices": [
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 149.99
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 30.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 75.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "Vibrant flavours of Blackberries, Blueberries, Boysenberry Ice-cream, and Elderflower. This is an unforgettable coffee that makes one of the most unique dessert like coffees you can find anywhere, crafted and curated to be served as White Coffees, this shines as much for filter as it does anything else. A blend of 45% Blackberry and Wine Yeast Castillo from Sant\u00e0 Monica Colombia, 35% Washed mix from the COMSA Co-Operative in Honduras, and 20% of our Colombian Aponte Honey.",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "c4coffee.co",
+      "product_id": 11039941230759,
+      "title": "Colombia: Santa Monica CM Natural Papayo",
+      "category": "filter roast",
+      "handle": "colombia-santa-monica-carbonic-papayo",
+      "product_url": "https://c4coffee.co/products/colombia-santa-monica-carbonic-papayo",
+      "available": true,
+      "price_min_nzd": 32.5,
+      "price_max_nzd": 130.0,
+      "updated_at": "2026-08-20T06:43:17+12:00",
+      "scraped_at": "2026-08-19T18:43:17+00:00",
+      "varietal": "unknown",
+      "size_prices": [
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 130.0
+        },
+        {
+          "size_grams": 250.0,
+          "price_nzd": 32.5
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 65.0
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "A beautiful papayo grown by Jairo Arcila in Santa Monica, highlighting how processing affects flavour of coffee. When hot this coffee screams pineapple lumps, with how sweet and fun it is, but as it cools down the flavours develops into a well balance between an orange Jaffa and a fruity bubblegum.",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "c4coffee.co",
+      "product_id": 11039939756199,
+      "title": "Colombia: El Paraiso Washed Tabi",
+      "category": "filter roast",
+      "handle": "colombia-jorge-osorio-washed-tabi",
+      "product_url": "https://c4coffee.co/products/colombia-jorge-osorio-washed-tabi",
+      "available": true,
+      "price_min_nzd": 32.0,
+      "price_max_nzd": 160.0,
+      "updated_at": "2026-08-20T06:43:17+12:00",
+      "scraped_at": "2026-08-19T18:43:17+00:00",
+      "varietal": "unknown",
+      "size_prices": [
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 160.0
+        },
+        {
+          "size_grams": 200.0,
+          "price_nzd": 32.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 79.99
+        }
+      ],
+      "origin_country": "unknown",
+      "producer": "unknown",
+      "process": "unknown",
+      "decaf": false,
+      "description": "A washed Tabi grown by Jorge Osorio in his farm El Paraiso, Colombia. This washed coffee presents itself as a clean cup with strong hints of raisins at the start of the experience, developing into a deeper sweetness and stickier mouthfeel as it cools down, very reminiscent of maple syrup, with a lingering clean and familiar florality like a warm cup of chamomile tea.",
+      "flavour_notes": "unknown"
+    },
+    {
+      "source": "c4coffee.co",
       "product_id": 130918577,
       "title": "Krank Blend",
       "category": "espresso roast",
@@ -2937,8 +3099,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2971,8 +3133,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 240.01,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3009,8 +3171,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3043,8 +3205,8 @@
       "available": true,
       "price_min_nzd": 17.5,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3077,8 +3239,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3105,14 +3267,14 @@
       "source": "c4coffee.co",
       "product_id": 137891691,
       "title": "Decaf #1 Honduras Swiss Water",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "decaf-1-honduras-swiss-water",
       "product_url": "https://c4coffee.co/products/decaf-1-honduras-swiss-water",
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 78.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3139,14 +3301,14 @@
       "source": "c4coffee.co",
       "product_id": 137946145,
       "title": "Terra Nova Fair Trade Organic",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "terra-nova-fair-trade-organic",
       "product_url": "https://c4coffee.co/products/terra-nova-fair-trade-organic",
       "available": true,
       "price_min_nzd": 17.5,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3179,8 +3341,8 @@
       "available": true,
       "price_min_nzd": 17.0,
       "price_max_nzd": 68.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3213,8 +3375,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "typica",
       "size_prices": [
         {
@@ -3247,8 +3409,8 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 88.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3281,8 +3443,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "caturra,catuai,bourbon,typica",
       "size_prices": [
         {
@@ -3315,8 +3477,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "caturra,bourbon,typica",
       "size_prices": [
         {
@@ -3343,14 +3505,14 @@
       "source": "c4coffee.co",
       "product_id": 8393163112615,
       "title": "Colombia Huila Regional Washed",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "colombia-huila-regional-washed",
       "product_url": "https://c4coffee.co/products/colombia-huila-regional-washed",
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3383,8 +3545,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "caturra,catuai,bourbon,typica",
       "size_prices": [
         {
@@ -3417,8 +3579,8 @@
       "available": true,
       "price_min_nzd": 38.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -3438,8 +3600,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3472,8 +3634,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -3493,8 +3655,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3521,14 +3683,14 @@
       "source": "c4coffee.co",
       "product_id": 8445712171175,
       "title": "Colombia Aponte Village Honey",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "colombia-aponte-village-honey",
       "product_url": "https://c4coffee.co/products/colombia-aponte-village-honey",
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3555,14 +3717,14 @@
       "source": "c4coffee.co",
       "product_id": 8532019871911,
       "title": "Decaf #2 Colombia Popayan Reserve",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "decaf-2-colombia-popayan-reserve",
       "product_url": "https://c4coffee.co/products/decaf-2-colombia-popayan-reserve",
       "available": true,
       "price_min_nzd": 12.39,
       "price_max_nzd": 624.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -3613,14 +3775,14 @@
       "source": "c4coffee.co",
       "product_id": 8497777574055,
       "title": "Kenya Kainamu Factory PB",
-      "category": "filter roast,espresso roast",
+      "category": "omni roast",
       "handle": "kenya-kainamu-factory-pb",
       "product_url": "https://c4coffee.co/products/kenya-kainamu-factory-pb",
       "available": true,
       "price_min_nzd": 22.51,
       "price_max_nzd": 90.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3653,8 +3815,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3679,100 +3841,6 @@
     },
     {
       "source": "c4coffee.co",
-      "product_id": 8751347531943,
-      "title": "Ethiopia Koke Shalaye",
-      "category": "filter roast",
-      "handle": "ethiopia-koke-shalaye",
-      "product_url": "https://c4coffee.co/products/ethiopia-koke-shalaye",
-      "available": true,
-      "price_min_nzd": 40.0,
-      "price_max_nzd": 200.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
-      "varietal": "unknown",
-      "size_prices": [
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 200.0
-        },
-        {
-          "size_grams": 200.0,
-          "price_nzd": 40.0
-        }
-      ],
-      "origin_country": "Ethiopia Region: Koke Kebele, Gedeo Zone",
-      "producer": "unknown",
-      "process": "Natural Anaerobic Altitude: 1,800+ MASL Roast Level: Light in the cup In the cup we taste vibrant tropical fruits, sun-ripened stone fruit, and a lingering floral sweetness",
-      "decaf": false,
-      "description": "Koke Shalaye Variety: Ethiopian Heirloom Country: Ethiopia Region: Koke Kebele, Gedeo Zone Process: Natural Anaerobic Altitude: 1,800+ MASL Roast Level: Light in the cup In the cup we taste vibrant tropical fruits, sun-ripened stone fruit, and a lingering floral sweetness. This coffee has a juicy, full body with a bright, summer-like finish that pairs beautifully with something delicate \u2014 think Mille-feuille. FruityJuicy NaturalComplex about the producer High in the Gedeo zone of southern Ethiopia, over 2,000 small-scale farmers in Koke Kebele hand-select only the ripest cherries from traditional Ethiopian varieties. The Koke Shalaye station was established in 2019 by Abreham Mengiste, and has quickly earned recognition for exceptional quality \u2014 a reflection of the rich volcanic soils, high altitudes, and reliable rainfall that define this remarkable growing region. processing Freshly picked cherries undergo anaerobic fermentation, wrapped on raised drying beds to develop vibrant and complex flavour. After fermentation, the beans are shade-dried in thick layers and closely monitored to ensure perfect moisture levels throughout. This careful, hands-on process preserves the coffee's character and honours the skill of the farmers behind every cup.",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "c4coffee.co",
-      "product_id": 10643188220071,
-      "title": "Kenya: Tatu Natural",
-      "category": "filter roast",
-      "handle": "kenya-tatu-natural",
-      "product_url": "https://c4coffee.co/products/kenya-tatu-natural",
-      "available": true,
-      "price_min_nzd": 24.0,
-      "price_max_nzd": 96.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
-      "varietal": "unknown",
-      "size_prices": [
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 96.0
-        },
-        {
-          "size_grams": 250.0,
-          "price_nzd": 24.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "Kenya, known for their incredible washed coffees that are rich, juicy, and full of flavour. We wanted to bring something different, a naturally processed coffee from those not known for it. This unconventional coffee has extremely deep flavours for a filter roast, and makes us feel like we're eating cake next to a fire in a snowy winter.",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "c4coffee.co",
-      "product_id": 11039941689511,
-      "title": "Blackberry Sorbet",
-      "category": "espresso roast",
-      "handle": "blackberry-sorbet",
-      "product_url": "https://c4coffee.co/products/blackberry-sorbet",
-      "available": true,
-      "price_min_nzd": 30.0,
-      "price_max_nzd": 149.99,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
-      "varietal": "castillo",
-      "size_prices": [
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 149.99
-        },
-        {
-          "size_grams": 200.0,
-          "price_nzd": 30.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 75.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "Vibrant flavours of Blackberries, Blueberries, Boysenberry Ice-cream, and Elderflower. This is an unforgettable coffee that makes one of the most unique dessert like coffees you can find anywhere, crafted and curated to be served as White Coffees, this shines as much for filter as it does anything else. A blend of 45% Blackberry and Wine Yeast Castillo from Sant\u00e0 Monica Colombia, 35% Washed mix from the COMSA Co-Operative in Honduras, and 20% of our Colombian Aponte Honey.",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "c4coffee.co",
       "product_id": 10507583684775,
       "title": "The Browser",
       "category": "espresso roast",
@@ -3781,8 +3849,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
+      "updated_at": "2026-08-20T06:43:18+12:00",
+      "scraped_at": "2026-08-19T18:43:18+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3802,74 +3870,6 @@
       "flavour_notes": "unknown"
     },
     {
-      "source": "c4coffee.co",
-      "product_id": 11039941230759,
-      "title": "Colombia: Santa Monica CM Natural Papayo",
-      "category": "filter roast",
-      "handle": "colombia-santa-monica-carbonic-papayo",
-      "product_url": "https://c4coffee.co/products/colombia-santa-monica-carbonic-papayo",
-      "available": true,
-      "price_min_nzd": 32.5,
-      "price_max_nzd": 130.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
-      "varietal": "unknown",
-      "size_prices": [
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 130.0
-        },
-        {
-          "size_grams": 250.0,
-          "price_nzd": 32.5
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 65.0
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "A beautiful papayo grown by Jairo Arcila in Santa Monica, highlighting how processing affects flavour of coffee. When hot this coffee screams pineapple lumps, with how sweet and fun it is, but as it cools down the flavours develops into a well balance between an orange Jaffa and a fruity bubblegum.",
-      "flavour_notes": "unknown"
-    },
-    {
-      "source": "c4coffee.co",
-      "product_id": 11039939756199,
-      "title": "Colombia: El Paraiso Washed Tabi",
-      "category": "filter roast",
-      "handle": "colombia-jorge-osorio-washed-tabi",
-      "product_url": "https://c4coffee.co/products/colombia-jorge-osorio-washed-tabi",
-      "available": true,
-      "price_min_nzd": 32.0,
-      "price_max_nzd": 160.0,
-      "updated_at": "2026-08-20T02:14:22+12:00",
-      "scraped_at": "2026-08-19T14:14:22+00:00",
-      "varietal": "unknown",
-      "size_prices": [
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 160.0
-        },
-        {
-          "size_grams": 200.0,
-          "price_nzd": 32.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 79.99
-        }
-      ],
-      "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
-      "decaf": false,
-      "description": "A washed Tabi grown by Jorge Osorio in his farm El Paraiso, Colombia. This washed coffee presents itself as a clean cup with strong hints of raisins at the start of the experience, developing into a deeper sweetness and stickier mouthfeel as it cools down, very reminiscent of maple syrup, with a lingering clean and familiar florality like a warm cup of chamomile tea.",
-      "flavour_notes": "unknown"
-    },
-    {
       "source": "greyroastingco.com",
       "product_id": 7618586640455,
       "title": "Finca Nuguo Plano 864N-WS, Washed, Geisha, Panama (Fancy) 60gm",
@@ -3879,8 +3879,8 @@
       "available": true,
       "price_min_nzd": 95.0,
       "price_max_nzd": 95.0,
-      "updated_at": "2026-08-20T02:14:28+12:00",
-      "scraped_at": "2026-08-19T14:14:28+00:00",
+      "updated_at": "2026-08-20T06:43:23+12:00",
+      "scraped_at": "2026-08-19T18:43:23+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -3905,8 +3905,8 @@
       "available": true,
       "price_min_nzd": 49.0,
       "price_max_nzd": 220.0,
-      "updated_at": "2026-08-20T02:14:28+12:00",
-      "scraped_at": "2026-08-19T14:14:28+00:00",
+      "updated_at": "2026-08-20T06:43:23+12:00",
+      "scraped_at": "2026-08-19T18:43:23+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -3935,8 +3935,8 @@
       "available": true,
       "price_min_nzd": 49.0,
       "price_max_nzd": 220.0,
-      "updated_at": "2026-08-20T02:14:28+12:00",
-      "scraped_at": "2026-08-19T14:14:28+00:00",
+      "updated_at": "2026-08-20T06:43:23+12:00",
+      "scraped_at": "2026-08-19T18:43:23+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3965,8 +3965,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
-      "updated_at": "2026-08-20T02:14:28+12:00",
-      "scraped_at": "2026-08-19T14:14:28+00:00",
+      "updated_at": "2026-08-20T06:43:23+12:00",
+      "scraped_at": "2026-08-19T18:43:23+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3991,8 +3991,8 @@
       "available": true,
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
-      "updated_at": "2026-08-20T02:14:28+12:00",
-      "scraped_at": "2026-08-19T14:14:28+00:00",
+      "updated_at": "2026-08-20T06:43:23+12:00",
+      "scraped_at": "2026-08-19T18:43:23+00:00",
       "varietal": "caturra,catuai,obata",
       "size_prices": [
         {
@@ -4021,8 +4021,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-20T02:14:28+12:00",
-      "scraped_at": "2026-08-19T14:14:28+00:00",
+      "updated_at": "2026-08-20T06:43:23+12:00",
+      "scraped_at": "2026-08-19T18:43:23+00:00",
       "varietal": "typica,java",
       "size_prices": [
         {
@@ -4051,8 +4051,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
-      "updated_at": "2026-08-20T02:14:28+12:00",
-      "scraped_at": "2026-08-19T14:14:28+00:00",
+      "updated_at": "2026-08-20T06:43:23+12:00",
+      "scraped_at": "2026-08-19T18:43:23+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4081,8 +4081,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
-      "updated_at": "2026-08-20T02:14:30+12:00",
-      "scraped_at": "2026-08-19T14:14:30+00:00",
+      "updated_at": "2026-08-20T06:43:24+12:00",
+      "scraped_at": "2026-08-19T18:43:24+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4127,8 +4127,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
-      "updated_at": "2026-08-20T02:14:30+12:00",
-      "scraped_at": "2026-08-19T14:14:30+00:00",
+      "updated_at": "2026-08-20T06:43:24+12:00",
+      "scraped_at": "2026-08-19T18:43:24+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4173,8 +4173,8 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 80.0,
-      "updated_at": "2026-08-20T02:14:30+12:00",
-      "scraped_at": "2026-08-19T14:14:30+00:00",
+      "updated_at": "2026-08-20T06:43:24+12:00",
+      "scraped_at": "2026-08-19T18:43:24+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -4207,8 +4207,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-20T02:14:30+12:00",
-      "scraped_at": "2026-08-19T14:14:30+00:00",
+      "updated_at": "2026-08-20T06:43:24+12:00",
+      "scraped_at": "2026-08-19T18:43:24+00:00",
       "varietal": "typica,java",
       "size_prices": [
         {
@@ -4237,8 +4237,8 @@
       "available": true,
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
-      "updated_at": "2026-08-20T02:14:30+12:00",
-      "scraped_at": "2026-08-19T14:14:30+00:00",
+      "updated_at": "2026-08-20T06:43:24+12:00",
+      "scraped_at": "2026-08-19T18:43:24+00:00",
       "varietal": "caturra,catuai,obata",
       "size_prices": [
         {
@@ -4267,8 +4267,8 @@
       "available": true,
       "price_min_nzd": 31.0,
       "price_max_nzd": 138.99,
-      "updated_at": "2026-08-20T02:14:31+12:00",
-      "scraped_at": "2026-08-19T14:14:31+00:00",
+      "updated_at": "2026-08-20T06:43:26+12:00",
+      "scraped_at": "2026-08-19T18:43:26+00:00",
       "varietal": "sl28",
       "size_prices": [
         {
@@ -4297,8 +4297,8 @@
       "available": true,
       "price_min_nzd": 32.99,
       "price_max_nzd": 112.99,
-      "updated_at": "2026-08-20T02:14:31+12:00",
-      "scraped_at": "2026-08-19T14:14:31+00:00",
+      "updated_at": "2026-08-20T06:43:26+12:00",
+      "scraped_at": "2026-08-19T18:43:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4327,8 +4327,8 @@
       "available": true,
       "price_min_nzd": 29.99,
       "price_max_nzd": 129.99,
-      "updated_at": "2026-08-20T02:14:31+12:00",
-      "scraped_at": "2026-08-19T14:14:31+00:00",
+      "updated_at": "2026-08-20T06:43:26+12:00",
+      "scraped_at": "2026-08-19T18:43:26+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -4357,8 +4357,8 @@
       "available": true,
       "price_min_nzd": 38.99,
       "price_max_nzd": 174.99,
-      "updated_at": "2026-08-20T02:14:31+12:00",
-      "scraped_at": "2026-08-19T14:14:31+00:00",
+      "updated_at": "2026-08-20T06:43:26+12:00",
+      "scraped_at": "2026-08-19T18:43:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4387,8 +4387,8 @@
       "available": true,
       "price_min_nzd": 23.0,
       "price_max_nzd": 101.99,
-      "updated_at": "2026-08-20T02:14:34+12:00",
-      "scraped_at": "2026-08-19T14:14:34+00:00",
+      "updated_at": "2026-08-20T06:43:28+12:00",
+      "scraped_at": "2026-08-19T18:43:28+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -4417,8 +4417,8 @@
       "available": true,
       "price_min_nzd": 23.0,
       "price_max_nzd": 104.99,
-      "updated_at": "2026-08-20T02:14:34+12:00",
-      "scraped_at": "2026-08-19T14:14:34+00:00",
+      "updated_at": "2026-08-20T06:43:28+12:00",
+      "scraped_at": "2026-08-19T18:43:28+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -4441,14 +4441,14 @@
       "source": "slowcoffee.co.nz",
       "product_id": 8468653736106,
       "title": "Raspberry Kiss | Ethiopia",
-      "category": "filter roast,espresso roast",
+      "category": "espresso roast",
       "handle": "raspberry-kiss-ethiopia",
       "product_url": "https://slowcoffee.co.nz/products/raspberry-kiss-ethiopia",
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 119.99,
-      "updated_at": "2026-08-20T02:14:34+12:00",
-      "scraped_at": "2026-08-19T14:14:34+00:00",
+      "updated_at": "2026-08-20T06:43:28+12:00",
+      "scraped_at": "2026-08-19T18:43:28+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4477,8 +4477,8 @@
       "available": true,
       "price_min_nzd": 19.99,
       "price_max_nzd": 69.99,
-      "updated_at": "2026-08-20T02:14:34+12:00",
-      "scraped_at": "2026-08-19T14:14:34+00:00",
+      "updated_at": "2026-08-20T06:43:28+12:00",
+      "scraped_at": "2026-08-19T18:43:28+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4507,8 +4507,8 @@
       "available": true,
       "price_min_nzd": 34.99,
       "price_max_nzd": 149.99,
-      "updated_at": "2026-08-20T02:14:34+12:00",
-      "scraped_at": "2026-08-19T14:14:34+00:00",
+      "updated_at": "2026-08-20T06:43:28+12:00",
+      "scraped_at": "2026-08-19T18:43:28+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4537,8 +4537,8 @@
       "available": true,
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
-      "updated_at": "2026-08-20T02:14:37+12:00",
-      "scraped_at": "2026-08-19T14:14:37+00:00",
+      "updated_at": "2026-08-20T06:43:29+12:00",
+      "scraped_at": "2026-08-19T18:43:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4563,8 +4563,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T02:14:37+12:00",
-      "scraped_at": "2026-08-19T14:14:37+00:00",
+      "updated_at": "2026-08-20T06:43:29+12:00",
+      "scraped_at": "2026-08-19T18:43:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4589,8 +4589,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
-      "updated_at": "2026-08-20T02:14:37+12:00",
-      "scraped_at": "2026-08-19T14:14:37+00:00",
+      "updated_at": "2026-08-20T06:43:29+12:00",
+      "scraped_at": "2026-08-19T18:43:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4619,8 +4619,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
-      "updated_at": "2026-08-20T02:14:37+12:00",
-      "scraped_at": "2026-08-19T14:14:37+00:00",
+      "updated_at": "2026-08-20T06:43:29+12:00",
+      "scraped_at": "2026-08-19T18:43:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4649,8 +4649,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 108.0,
-      "updated_at": "2026-08-20T02:14:37+12:00",
-      "scraped_at": "2026-08-19T14:14:37+00:00",
+      "updated_at": "2026-08-20T06:43:29+12:00",
+      "scraped_at": "2026-08-19T18:43:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4679,8 +4679,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
-      "updated_at": "2026-08-20T02:14:39+12:00",
-      "scraped_at": "2026-08-19T14:14:39+00:00",
+      "updated_at": "2026-08-20T06:43:31+12:00",
+      "scraped_at": "2026-08-19T18:43:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4713,8 +4713,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
-      "updated_at": "2026-08-20T02:14:39+12:00",
-      "scraped_at": "2026-08-19T14:14:39+00:00",
+      "updated_at": "2026-08-20T06:43:31+12:00",
+      "scraped_at": "2026-08-19T18:43:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4747,8 +4747,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
-      "updated_at": "2026-08-20T02:14:39+12:00",
-      "scraped_at": "2026-08-19T14:14:39+00:00",
+      "updated_at": "2026-08-20T06:43:31+12:00",
+      "scraped_at": "2026-08-19T18:43:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4773,8 +4773,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
-      "updated_at": "2026-08-20T02:14:39+12:00",
-      "scraped_at": "2026-08-19T14:14:39+00:00",
+      "updated_at": "2026-08-20T06:43:31+12:00",
+      "scraped_at": "2026-08-19T18:43:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4799,8 +4799,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
-      "updated_at": "2026-08-20T02:14:39+12:00",
-      "scraped_at": "2026-08-19T14:14:39+00:00",
+      "updated_at": "2026-08-20T06:43:31+12:00",
+      "scraped_at": "2026-08-19T18:43:31+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
