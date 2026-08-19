@@ -253,16 +253,27 @@ h2 {
   color: #3f2f15;
 }
 
-.description,
-.flavour-notes {
+.description {
   margin: 0 0 10px;
   color: var(--muted);
   font-size: 0.88rem;
   line-height: 1.45;
 }
 
+.flavour-notes {
+  margin: 0 0 10px;
+  color: #5a4b38;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  background: #fbf6ee;
+  border: 1px solid #ebdccb;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
 .flavour-notes strong {
-  color: var(--text);
+  color: #2b2013;
+  margin-right: 4px;
 }
 
 .size-prices {

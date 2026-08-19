@@ -65,8 +65,132 @@ def infer_process(product: dict[str, Any]) -> str:
     return extract_description_field(product, ("process", "processing"))
 
 
+COFFEE_FLAVOUR_LEXICON = (
+    "blackcurrant coulis", "lemonade ice block", "mango cheesecake", "white chocolate", "milk chocolate",
+    "dark chocolate", "bittersweet chocolate", "hot chocolate", "creamy soda", "grape soda",
+    "passionfruit", "turkish delight", "candy apple", "yellow sudan rume", "elderflower",
+    "lemon zest", "plum jam", "poached pear", "rooibos tea", "black tea", "chamomile tea",
+    "stone fruit", "tropical fruit", "tropical fruits", "red fruit", "dark fruit", "dried fruit",
+    "boysenberry ice cream", "boysenberry cupcake", "vanilla syrup", "creamy nougat", "raw honey",
+    "floral honey", "chocolate milk", "chocolate-milk", "vanilla custard", "buttery pastry",
+    "irish whiskey", "dark currants", "vanilla malt", "soft nougat", "pineapple lumps",
+    "orange jaffa", "fruity bubblegum", "myer lemon", "vanilla flower", "rockmelon",
+    "cinnamon spice", "dark cocoa", "cinnamon", "molasses", "macadamia", "pistachio",
+    "pomelo", "blackcurrant", "blueberry", "blueberries", "blackberry", "blackberries",
+    "boysenberry", "raspberry", "raspberries", "strawberry", "strawberries", "cherry",
+    "cherries", "apricot", "peach", "plum", "guava", "mango", "papaya", "cola",
+    "gumball", "blossom", "florals", "floral", "jasmine", "bergamot", "lime", "lemon",
+    "orange", "citrus", "mandarin", "tangelo", "grapefruit", "rhubarb", "currants",
+    "caramel", "toffee", "fudge", "honey", "maple syrup", "nougat", "hazelnut",
+    "almond", "walnut", "cashew", "peanut", "pecan", "cocoa", "chocolate",
+    "clove", "cardamom", "nutmeg", "ginger", "star anise", "raisins", "raisin",
+    "marzipan", "brown sugar", "panela", "butterscotch", "malt",
+)
+
+
+NON_FLAVOUR_WORDS = {
+    "coffee",
+    "the coffee",
+    "this coffee",
+    "our coffee",
+    "specialty coffee",
+    "espresso",
+    "filter",
+    "beans",
+    "roast",
+    "batch",
+}
+
+
+def _clean_flavour_string(raw: str) -> str:
+    cleaned = re.sub(r"^[,\s:—\-]+", "", raw).strip()
+    cleaned = re.sub(r"[,\s:—\-]+$", "", cleaned).strip()
+    cleaned = re.sub(r"^(?:with\s+a\s+|a\s+|an\s+|the\s+|rich\s+|sweet\s+|fresh\s+|notes\s+of\s+|flavou?rs\s+of\s+|hints\s+of\s+|expect\s+)", "", cleaned, flags=re.I)
+    cleaned = re.split(r"\s+(?:to\s+create|bringing|making|with\s+a|roasted\s+in|roasted\s+for|grown|and\s+a\s+silky|and\s+a\s+smooth|and\s+a\s+delicate|and\s+a\s+velvety|and\s+a\s+creamy|recom[a-z]*\s*use)\b", cleaned, flags=re.I)[0]
+    result = re.sub(r"\s+", " ", cleaned).strip().rstrip(",;.")
+    if result.lower() in NON_FLAVOUR_WORDS or len(result) < 3:
+        return ""
+    return result
+
+
 def infer_flavour_notes(product: dict[str, Any]) -> str:
-    return extract_description_field(product, ("flavour notes", "flavor notes", "tasting notes", "notes"))
+    # 1. Explicit field labels
+    labeled = extract_description_field(product, ("flavour notes", "flavor notes", "tasting notes", "notes"))
+    if labeled and labeled != "unknown" and len(labeled) > 2:
+        if not re.search(r"^(?:of\s+this\s+coffee|are\s+as\s+follows|below)", labeled, re.I):
+            cleaned = _clean_flavour_string(labeled)
+            if cleaned:
+                return cleaned
+
+    text = description_text(product)
+    if not text:
+        return "unknown"
+
+    # 2. 'In the cup: ...' / 'In the cup we taste: ...'
+    match_cup = re.search(
+        r"(?:in\s+(?:the\s+)?cup(?:\s*we\s+taste|\s*we\s+get|\s*expect|\s*features)?)\s*[:\-]?\s*([^.;\n]+)",
+        text,
+        re.IGNORECASE,
+    )
+    if match_cup and match_cup.group(1).strip() and len(match_cup.group(1).strip()) > 3:
+        cleaned = _clean_flavour_string(match_cup.group(1))
+        if cleaned:
+            return cleaned
+
+    # 3. 'flavours/favours of ...', 'notes of ...', 'tastes of ...', 'hints of ...'
+    for match_flavours in re.finditer(
+        r"(?:flavou?rs?|favou?rs?|notes?|tastes?|hints?|aroma\s*&\s*flavou?rs?)\s+(?:of|include)\s+([^.;\n]+?)(?=\.\s+|\s+roasted\s+in|\s+grown|\s+process|\s+origin|$)",
+        text,
+        re.IGNORECASE,
+    ):
+        cleaned = _clean_flavour_string(match_flavours.group(1))
+        if cleaned:
+            return cleaned
+
+    # 4. 'layered and indulgent — ...', 'layers of ...'
+    match_layers = re.search(
+        r"(?:layered\s+and\s+indulgent|layers\s+of|rich\s+layers\s+of)\s*[:\-—]\s*([^.;\n]+)",
+        text,
+        re.IGNORECASE,
+    )
+    if match_layers and match_layers.group(1).strip():
+        cleaned = _clean_flavour_string(match_layers.group(1))
+        if cleaned:
+            return cleaned
+
+    # 5. 'expect ...'
+    match_expect = re.search(
+        r"(?:expect)\s+(?:a\s+)?([^.;\n]+?)(?=\.\s+|\s*—|\s+roasted\s+for|\s+brought\s+to\s+us|$)",
+        text,
+        re.IGNORECASE,
+    )
+    if match_expect and match_expect.group(1).strip():
+        cleaned = _clean_flavour_string(match_expect.group(1))
+        if cleaned:
+            return cleaned
+
+    # 6. 'blends/combines X and Y flavours'
+    match_blend = re.search(
+        r"(?:blends?|combines?)\s+([^.;\n]+?)\s+(?:flavou?rs?|notes?)",
+        text,
+        re.IGNORECASE,
+    )
+    if match_blend and match_blend.group(1).strip():
+        cleaned = _clean_flavour_string(match_blend.group(1))
+        if cleaned:
+            return cleaned
+
+    # 7. Coffee Lexicon extraction fallback
+    found = []
+    text_lower = text.lower()
+    for word in COFFEE_FLAVOUR_LEXICON:
+        if re.search(rf"\b{re.escape(word)}\b", text_lower):
+            if not any(word in other for other in found):
+                found.append(word.title())
+    if found:
+        return ", ".join(found[:4])
+
+    return "unknown"
 
 
 def infer_decaf(product: dict[str, Any]) -> bool:

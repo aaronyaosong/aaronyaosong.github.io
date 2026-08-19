@@ -125,8 +125,12 @@ export function createApp({
       card.className = "card";
 
       const categoryBadges = categories(item.category)
-        .map((cat) => `<span class="badge category">${cat}</span>`)
+        .map((cat) => `<span class="badge category" data-category="${cat.toLowerCase()}">${cat}</span>`)
         .join("");
+
+      const flavourNotes = item.flavour_notes && item.flavour_notes !== "unknown"
+        ? `<p class="flavour-notes"><strong>Flavour:</strong> ${item.flavour_notes}</p>`
+        : "";
 
       const prices = sizePrices(item);
       const priceDetails = prices.length
@@ -134,12 +138,7 @@ export function createApp({
             <li><span>${sizeLabel(row.size_grams)}</span><span>NZD $${Number(row.price_nzd).toFixed(2)} (${pricePerGram(row.price_nzd, row.size_grams)})</span></li>
           `).join("")}</ul>`
         : `<p class="price">${nzPrice(item)} <span class="price-note">Size pricing unavailable</span></p>`;
-      const descriptionContent = [
-        item.description ? `<p>${item.description}</p>` : "",
-        item.flavour_notes && item.flavour_notes !== "unknown"
-          ? `<p class="flavour-notes"><strong>Flavour notes:</strong> ${item.flavour_notes}</p>`
-          : "",
-      ].join("");
+      const descriptionContent = item.description ? `<p>${item.description}</p>` : "";
       const description = descriptionContent
         ? `<button class="description-toggle" type="button" data-description-toggle>Show description</button><div class="description" hidden>${descriptionContent}</div>`
         : "";
@@ -150,6 +149,7 @@ export function createApp({
           <span class="badge source">${sourceName(item.source)}</span>
           ${categoryBadges}
         </div>
+        ${flavourNotes}
         ${description}
         ${priceDetails}
         <a href="${item.product_url}" target="_blank" rel="noreferrer">View Product</a>
