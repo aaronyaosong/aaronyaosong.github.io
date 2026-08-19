@@ -32,9 +32,9 @@ def test_scrape_rocket_maps_product_payload(monkeypatch: pytest.MonkeyPatch) -> 
         ],
     }
 
-    monkeypatch.setattr(rocket.ShopifyClient, "fetch_collection_products", lambda self, handle: [product])
-    monkeypatch.setattr(rocket.ShopifyClient, "fetch_product", lambda self, handle: product)
-    monkeypatch.setattr(rocket, "now_utc_iso", lambda: "2026-08-17T01:02:03+00:00")
+    monkeypatch.setattr(shopify_roaster.ShopifyClient, "fetch_collection_products", lambda self, handle: [product] if handle == "espresso-blends" else [])
+    monkeypatch.setattr(shopify_roaster.ShopifyClient, "fetch_product", lambda self, handle: product)
+    monkeypatch.setattr(shopify_roaster, "now_utc_iso", lambda: "2026-08-17T01:02:03+00:00")
 
     rows = rocket.scrape_rocket()
 
@@ -126,8 +126,8 @@ def test_scrape_rocket_reuses_detail_for_available_cached_item(
     database_path = tmp_path / "history.sqlite3"
     write_database([cached], database_path)
 
-    monkeypatch.setattr(rocket.ShopifyClient, "fetch_collection_products", lambda self, handle: [product])
-    monkeypatch.setattr(rocket.ShopifyClient, "fetch_product", lambda self, handle: pytest.fail("detail should not be fetched"))
+    monkeypatch.setattr(shopify_roaster.ShopifyClient, "fetch_collection_products", lambda self, handle: [product] if handle == "single-origin" else [])
+    monkeypatch.setattr(shopify_roaster.ShopifyClient, "fetch_product", lambda self, handle: pytest.fail("detail should not be fetched"))
 
     rows = rocket.scrape_rocket(database_path=database_path)
 
@@ -165,6 +165,7 @@ def test_single_collection_scrapers(
 @pytest.mark.parametrize(
     ("module", "function_name", "expected_source", "expected_collections"),
     [
+        (rocket, "scrape_rocket", "rocketcoffee.co.nz", ["single-origin", "espresso-blends", "coffee"]),
         (c4, "scrape_c4", "c4coffee.co", ["filter-extraction", "coffee"]),
         (atomic, "scrape_atomic", "atomiccoffee.co.nz", ["filter-coffee", "coffee-beans"]),
         (coffee_embassy, "scrape_coffee_embassy", "coffeeembassy.co.nz", ["single-origin", "blends"]),
