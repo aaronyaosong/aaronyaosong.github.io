@@ -84,6 +84,8 @@ describe("coffee-utils unit", () => {
     expect(isBundleOrBoxSet({ source: "eternalcoffee.co.nz", handle: "ethiopia-natural-bundle", title: "Limited: Ethiopia Natural Bundle" })).toBe(true);
     // box sets
     expect(isBundleOrBoxSet({ source: "vanguardcoffee.co.nz", handle: "pekerau-hills-box-set", title: "Pekerau Hills Box Set" })).toBe(true);
+    // selection box
+    expect(isBundleOrBoxSet({ source: "ozonecoffee.co.nz", handle: "seasonal-coffee-selection-box", title: "Seasonal Selection Box" })).toBe(true);
     // Atomic Ultimate Coffee Duo (specific override)
     expect(isBundleOrBoxSet({ source: "atomiccoffee.co.nz", handle: "ultimate-coffee-duo", title: "Ultimate Coffee Duo" })).toBe(true);
     // regular products should not match
