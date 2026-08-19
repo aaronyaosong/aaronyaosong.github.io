@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T14:03:27+00:00",
+  "generated_at": "2026-08-19T14:14:40+00:00",
   "count": 153,
   "items": [
     {
@@ -12,8 +12,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 95.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -42,8 +42,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -68,8 +68,8 @@
       "available": true,
       "price_min_nzd": 50.0,
       "price_max_nzd": 50.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "sudan rume",
       "size_prices": [
         {
@@ -94,8 +94,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -124,8 +124,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -150,8 +150,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 88.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "caturra,catuai,obata",
       "size_prices": [
         {
@@ -180,8 +180,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -210,8 +210,8 @@
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -268,8 +268,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -298,8 +298,8 @@
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -356,8 +356,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "ruiru 11,sl28,sl34,batian",
       "size_prices": [
         {
@@ -382,8 +382,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "ruiru 11,sl28,sl34,batian",
       "size_prices": [
         {
@@ -408,8 +408,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "castillo,caturra",
       "size_prices": [
         {
@@ -434,8 +434,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 91.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -464,8 +464,8 @@
       "available": true,
       "price_min_nzd": 42.0,
       "price_max_nzd": 42.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "sidra",
       "size_prices": [
         {
@@ -490,8 +490,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "ruiru 11,sl28,sl34,batian",
       "size_prices": [
         {
@@ -516,8 +516,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "ruiru 11,sl28,sl34,batian",
       "size_prices": [
         {
@@ -542,8 +542,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -568,8 +568,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 108.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "java",
       "size_prices": [
         {
@@ -598,8 +598,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -628,8 +628,8 @@
       "available": true,
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -686,8 +686,8 @@
       "available": true,
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -712,8 +712,8 @@
       "available": true,
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -738,8 +738,8 @@
       "available": true,
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "java",
       "size_prices": [
         {
@@ -764,8 +764,8 @@
       "available": true,
       "price_min_nzd": 72.0,
       "price_max_nzd": 480.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -810,8 +810,8 @@
       "available": true,
       "price_min_nzd": 84.0,
       "price_max_nzd": 576.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -856,8 +856,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "castillo,caturra",
       "size_prices": [
         {
@@ -882,8 +882,8 @@
       "available": true,
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
-      "updated_at": "2026-08-20T01:54:37+12:00",
-      "scraped_at": "2026-08-19T14:02:53+00:00",
+      "updated_at": "2026-08-20T02:13:30+12:00",
+      "scraped_at": "2026-08-19T14:13:30+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -908,8 +908,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
-      "updated_at": "2026-08-20T01:54:39+12:00",
-      "scraped_at": "2026-08-19T14:02:58+00:00",
+      "updated_at": "2026-08-20T02:13:39+12:00",
+      "scraped_at": "2026-08-19T14:13:39+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -929,8 +929,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
-      "updated_at": "2026-08-20T01:54:39+12:00",
-      "scraped_at": "2026-08-19T14:02:58+00:00",
+      "updated_at": "2026-08-20T02:13:39+12:00",
+      "scraped_at": "2026-08-19T14:13:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -959,8 +959,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
-      "updated_at": "2026-08-20T01:54:39+12:00",
-      "scraped_at": "2026-08-19T14:02:58+00:00",
+      "updated_at": "2026-08-20T02:13:39+12:00",
+      "scraped_at": "2026-08-19T14:13:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -989,8 +989,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T01:54:39+12:00",
-      "scraped_at": "2026-08-19T14:02:58+00:00",
+      "updated_at": "2026-08-20T02:13:39+12:00",
+      "scraped_at": "2026-08-19T14:13:39+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -1019,8 +1019,8 @@
       "available": true,
       "price_min_nzd": 20.5,
       "price_max_nzd": 82.0,
-      "updated_at": "2026-08-20T01:54:39+12:00",
-      "scraped_at": "2026-08-19T14:02:58+00:00",
+      "updated_at": "2026-08-20T02:13:39+12:00",
+      "scraped_at": "2026-08-19T14:13:39+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -1049,8 +1049,8 @@
       "available": true,
       "price_min_nzd": 27.5,
       "price_max_nzd": 27.5,
-      "updated_at": "2026-08-20T01:54:39+12:00",
-      "scraped_at": "2026-08-19T14:02:58+00:00",
+      "updated_at": "2026-08-20T02:13:39+12:00",
+      "scraped_at": "2026-08-19T14:13:39+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -1075,8 +1075,8 @@
       "available": true,
       "price_min_nzd": 31.0,
       "price_max_nzd": 31.0,
-      "updated_at": "2026-08-20T01:54:39+12:00",
-      "scraped_at": "2026-08-19T14:02:58+00:00",
+      "updated_at": "2026-08-20T02:13:39+12:00",
+      "scraped_at": "2026-08-19T14:13:39+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -1101,8 +1101,8 @@
       "available": true,
       "price_min_nzd": 29.0,
       "price_max_nzd": 29.0,
-      "updated_at": "2026-08-20T01:54:39+12:00",
-      "scraped_at": "2026-08-19T14:02:58+00:00",
+      "updated_at": "2026-08-20T02:13:39+12:00",
+      "scraped_at": "2026-08-19T14:13:39+00:00",
       "varietal": "ruiru 11,batian",
       "size_prices": [
         {
@@ -1127,8 +1127,8 @@
       "available": true,
       "price_min_nzd": 28.5,
       "price_max_nzd": 28.5,
-      "updated_at": "2026-08-20T01:54:39+12:00",
-      "scraped_at": "2026-08-19T14:02:58+00:00",
+      "updated_at": "2026-08-20T02:13:39+12:00",
+      "scraped_at": "2026-08-19T14:13:39+00:00",
       "varietal": "typica",
       "size_prices": [
         {
@@ -1153,8 +1153,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1191,8 +1191,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1229,8 +1229,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1267,8 +1267,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 205.5,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1305,8 +1305,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 71.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -1339,8 +1339,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 69.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1373,8 +1373,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1411,8 +1411,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 210.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "castillo,caturra",
       "size_prices": [
         {
@@ -1449,8 +1449,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "castillo,caturra,typica",
       "size_prices": [
         {
@@ -1483,8 +1483,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 78.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1517,8 +1517,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -1551,8 +1551,8 @@
       "available": true,
       "price_min_nzd": 122.0,
       "price_max_nzd": 122.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -1572,8 +1572,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "caturra,catuai",
       "size_prices": [
         {
@@ -1606,8 +1606,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1640,8 +1640,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "caturra,bourbon,geisha,java",
       "size_prices": [
         {
@@ -1674,8 +1674,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -1708,8 +1708,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-20T01:53:21+12:00",
-      "scraped_at": "2026-08-19T14:02:59+00:00",
+      "updated_at": "2026-08-20T02:13:41+12:00",
+      "scraped_at": "2026-08-19T14:13:41+00:00",
       "varietal": "catuai,bourbon",
       "size_prices": [
         {
@@ -1742,8 +1742,8 @@
       "available": true,
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
-      "updated_at": "2026-08-20T01:54:46+12:00",
-      "scraped_at": "2026-08-19T14:03:04+00:00",
+      "updated_at": "2026-08-20T02:13:47+12:00",
+      "scraped_at": "2026-08-19T14:13:47+00:00",
       "varietal": "bourbon,gesha",
       "size_prices": [
         {
@@ -1768,8 +1768,8 @@
       "available": true,
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
-      "updated_at": "2026-08-20T01:54:46+12:00",
-      "scraped_at": "2026-08-19T14:03:04+00:00",
+      "updated_at": "2026-08-20T02:13:47+12:00",
+      "scraped_at": "2026-08-19T14:13:47+00:00",
       "varietal": "pacamara,gesha,geisha",
       "size_prices": [
         {
@@ -1794,8 +1794,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
-      "updated_at": "2026-08-20T01:54:46+12:00",
-      "scraped_at": "2026-08-19T14:03:04+00:00",
+      "updated_at": "2026-08-20T02:13:47+12:00",
+      "scraped_at": "2026-08-19T14:13:47+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1820,8 +1820,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
-      "updated_at": "2026-08-20T01:54:46+12:00",
-      "scraped_at": "2026-08-19T14:03:04+00:00",
+      "updated_at": "2026-08-20T02:13:47+12:00",
+      "scraped_at": "2026-08-19T14:13:47+00:00",
       "varietal": "caturra,bourbon,gesha,java",
       "size_prices": [
         {
@@ -1846,8 +1846,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T01:54:46+12:00",
-      "scraped_at": "2026-08-19T14:03:04+00:00",
+      "updated_at": "2026-08-20T02:13:47+12:00",
+      "scraped_at": "2026-08-19T14:13:47+00:00",
       "varietal": "caturra,bourbon,gesha",
       "size_prices": [],
       "origin_country": "unknown",
@@ -1867,8 +1867,8 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 79.0,
-      "updated_at": "2026-08-20T01:54:45+12:00",
-      "scraped_at": "2026-08-19T14:03:06+00:00",
+      "updated_at": "2026-08-20T02:13:57+12:00",
+      "scraped_at": "2026-08-19T14:13:57+00:00",
       "varietal": "caturra,catuai,bourbon,gesha,java",
       "size_prices": [
         {
@@ -1897,8 +1897,8 @@
       "available": true,
       "price_min_nzd": 18.5,
       "price_max_nzd": 66.5,
-      "updated_at": "2026-08-20T01:54:45+12:00",
-      "scraped_at": "2026-08-19T14:03:06+00:00",
+      "updated_at": "2026-08-20T02:13:57+12:00",
+      "scraped_at": "2026-08-19T14:13:57+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1927,8 +1927,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
-      "updated_at": "2026-08-20T01:54:45+12:00",
-      "scraped_at": "2026-08-19T14:03:06+00:00",
+      "updated_at": "2026-08-20T02:13:57+12:00",
+      "scraped_at": "2026-08-19T14:13:57+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1957,8 +1957,8 @@
       "available": true,
       "price_min_nzd": 21.5,
       "price_max_nzd": 82.5,
-      "updated_at": "2026-08-20T01:54:45+12:00",
-      "scraped_at": "2026-08-19T14:03:06+00:00",
+      "updated_at": "2026-08-20T02:13:57+12:00",
+      "scraped_at": "2026-08-19T14:13:57+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -1987,8 +1987,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
-      "updated_at": "2026-08-20T01:54:45+12:00",
-      "scraped_at": "2026-08-19T14:03:06+00:00",
+      "updated_at": "2026-08-20T02:13:57+12:00",
+      "scraped_at": "2026-08-19T14:13:57+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2017,8 +2017,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:08+00:00",
+      "updated_at": "2026-08-20T02:14:02+12:00",
+      "scraped_at": "2026-08-19T14:14:02+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -2047,8 +2047,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:08+00:00",
+      "updated_at": "2026-08-20T02:14:02+12:00",
+      "scraped_at": "2026-08-19T14:14:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2073,8 +2073,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:08+00:00",
+      "updated_at": "2026-08-20T02:14:02+12:00",
+      "scraped_at": "2026-08-19T14:14:02+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -2103,8 +2103,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:08+00:00",
+      "updated_at": "2026-08-20T02:14:02+12:00",
+      "scraped_at": "2026-08-19T14:14:02+00:00",
       "varietal": "gesha,geisha",
       "size_prices": [
         {
@@ -2129,8 +2129,8 @@
       "available": true,
       "price_min_nzd": 66.0,
       "price_max_nzd": 66.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:08+00:00",
+      "updated_at": "2026-08-20T02:14:02+12:00",
+      "scraped_at": "2026-08-19T14:14:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2155,8 +2155,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:08+00:00",
+      "updated_at": "2026-08-20T02:14:02+12:00",
+      "scraped_at": "2026-08-19T14:14:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2181,8 +2181,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:08+00:00",
+      "updated_at": "2026-08-20T02:14:02+12:00",
+      "scraped_at": "2026-08-19T14:14:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2211,8 +2211,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:08+00:00",
+      "updated_at": "2026-08-20T02:14:02+12:00",
+      "scraped_at": "2026-08-19T14:14:02+00:00",
       "varietal": "caturra,bourbon,typica,geisha",
       "size_prices": [
         {
@@ -2237,8 +2237,8 @@
       "available": true,
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:11+00:00",
+      "updated_at": "2026-08-20T02:14:09+12:00",
+      "scraped_at": "2026-08-19T14:14:09+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -2267,8 +2267,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:11+00:00",
+      "updated_at": "2026-08-20T02:14:09+12:00",
+      "scraped_at": "2026-08-19T14:14:09+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -2297,8 +2297,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
-      "updated_at": "2026-08-20T01:54:47+12:00",
-      "scraped_at": "2026-08-19T14:03:11+00:00",
+      "updated_at": "2026-08-20T02:14:09+12:00",
+      "scraped_at": "2026-08-19T14:14:09+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2327,8 +2327,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 50.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2357,8 +2357,8 @@
       "available": true,
       "price_min_nzd": 20.5,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2391,8 +2391,8 @@
       "available": true,
       "price_min_nzd": 22.5,
       "price_max_nzd": 74.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "sl28,sl34",
       "size_prices": [
         {
@@ -2425,8 +2425,8 @@
       "available": true,
       "price_min_nzd": 44.0,
       "price_max_nzd": 276.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -2467,8 +2467,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "caturra",
       "size_prices": [
         {
@@ -2501,8 +2501,8 @@
       "available": true,
       "price_min_nzd": 26.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -2535,8 +2535,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2561,8 +2561,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2587,8 +2587,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2613,8 +2613,8 @@
       "available": true,
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2639,8 +2639,8 @@
       "available": true,
       "price_min_nzd": 260.0,
       "price_max_nzd": 260.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2665,8 +2665,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "ruiru 11,sl28,sl34",
       "size_prices": [
         {
@@ -2699,8 +2699,8 @@
       "available": true,
       "price_min_nzd": 36.0,
       "price_max_nzd": 106.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -2733,8 +2733,8 @@
       "available": true,
       "price_min_nzd": 37.5,
       "price_max_nzd": 106.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:11+12:00",
+      "scraped_at": "2026-08-19T14:14:11+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -2767,8 +2767,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 68.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:19+12:00",
+      "scraped_at": "2026-08-19T14:14:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2801,8 +2801,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:19+12:00",
+      "scraped_at": "2026-08-19T14:14:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2835,8 +2835,8 @@
       "available": true,
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:19+12:00",
+      "scraped_at": "2026-08-19T14:14:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2869,8 +2869,8 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:19+12:00",
+      "scraped_at": "2026-08-19T14:14:19+00:00",
       "varietal": "sl28,sl34",
       "size_prices": [
         {
@@ -2903,8 +2903,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 68.0,
-      "updated_at": "2026-08-20T01:54:51+12:00",
-      "scraped_at": "2026-08-19T14:03:12+00:00",
+      "updated_at": "2026-08-20T02:14:19+12:00",
+      "scraped_at": "2026-08-19T14:14:19+00:00",
       "varietal": "castillo,caturra",
       "size_prices": [
         {
@@ -2937,8 +2937,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2971,8 +2971,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 240.01,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3009,8 +3009,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3043,8 +3043,8 @@
       "available": true,
       "price_min_nzd": 17.5,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3077,8 +3077,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3111,8 +3111,8 @@
       "available": true,
       "price_min_nzd": 19.5,
       "price_max_nzd": 78.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3145,8 +3145,8 @@
       "available": true,
       "price_min_nzd": 17.5,
       "price_max_nzd": 70.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3179,8 +3179,8 @@
       "available": true,
       "price_min_nzd": 17.0,
       "price_max_nzd": 68.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3213,8 +3213,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "typica",
       "size_prices": [
         {
@@ -3247,8 +3247,8 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 88.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3281,8 +3281,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "caturra,catuai,bourbon,typica",
       "size_prices": [
         {
@@ -3315,8 +3315,8 @@
       "available": true,
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "caturra,bourbon,typica",
       "size_prices": [
         {
@@ -3349,8 +3349,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3383,8 +3383,8 @@
       "available": true,
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "caturra,catuai,bourbon,typica",
       "size_prices": [
         {
@@ -3417,8 +3417,8 @@
       "available": true,
       "price_min_nzd": 38.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -3438,8 +3438,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3472,8 +3472,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 55.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -3493,8 +3493,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3527,8 +3527,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3561,8 +3561,8 @@
       "available": true,
       "price_min_nzd": 12.39,
       "price_max_nzd": 624.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -3619,8 +3619,8 @@
       "available": true,
       "price_min_nzd": 22.51,
       "price_max_nzd": 90.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3653,8 +3653,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3687,8 +3687,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 200.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3717,8 +3717,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 96.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3747,8 +3747,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 149.99,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -3781,8 +3781,8 @@
       "available": true,
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3811,8 +3811,8 @@
       "available": true,
       "price_min_nzd": 32.5,
       "price_max_nzd": 130.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3845,8 +3845,8 @@
       "available": true,
       "price_min_nzd": 32.0,
       "price_max_nzd": 160.0,
-      "updated_at": "2026-08-20T01:53:20+12:00",
-      "scraped_at": "2026-08-19T14:03:13+00:00",
+      "updated_at": "2026-08-20T02:14:22+12:00",
+      "scraped_at": "2026-08-19T14:14:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3879,8 +3879,8 @@
       "available": true,
       "price_min_nzd": 95.0,
       "price_max_nzd": 95.0,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:28+12:00",
+      "scraped_at": "2026-08-19T14:14:28+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -3905,8 +3905,8 @@
       "available": true,
       "price_min_nzd": 49.0,
       "price_max_nzd": 220.0,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:28+12:00",
+      "scraped_at": "2026-08-19T14:14:28+00:00",
       "varietal": "geisha",
       "size_prices": [
         {
@@ -3935,8 +3935,8 @@
       "available": true,
       "price_min_nzd": 49.0,
       "price_max_nzd": 220.0,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:28+12:00",
+      "scraped_at": "2026-08-19T14:14:28+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3965,8 +3965,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:28+12:00",
+      "scraped_at": "2026-08-19T14:14:28+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3991,8 +3991,8 @@
       "available": true,
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:28+12:00",
+      "scraped_at": "2026-08-19T14:14:28+00:00",
       "varietal": "caturra,catuai,obata",
       "size_prices": [
         {
@@ -4021,8 +4021,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:28+12:00",
+      "scraped_at": "2026-08-19T14:14:28+00:00",
       "varietal": "typica,java",
       "size_prices": [
         {
@@ -4051,8 +4051,8 @@
       "available": true,
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:28+12:00",
+      "scraped_at": "2026-08-19T14:14:28+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4081,8 +4081,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:30+12:00",
+      "scraped_at": "2026-08-19T14:14:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4127,8 +4127,8 @@
       "available": true,
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:30+12:00",
+      "scraped_at": "2026-08-19T14:14:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4173,8 +4173,8 @@
       "available": true,
       "price_min_nzd": 22.0,
       "price_max_nzd": 80.0,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:30+12:00",
+      "scraped_at": "2026-08-19T14:14:30+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -4207,8 +4207,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:30+12:00",
+      "scraped_at": "2026-08-19T14:14:30+00:00",
       "varietal": "typica,java",
       "size_prices": [
         {
@@ -4237,8 +4237,8 @@
       "available": true,
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
-      "updated_at": "2026-08-20T01:54:55+12:00",
-      "scraped_at": "2026-08-19T14:03:19+00:00",
+      "updated_at": "2026-08-20T02:14:30+12:00",
+      "scraped_at": "2026-08-19T14:14:30+00:00",
       "varietal": "caturra,catuai,obata",
       "size_prices": [
         {
@@ -4267,8 +4267,8 @@
       "available": true,
       "price_min_nzd": 31.0,
       "price_max_nzd": 138.99,
-      "updated_at": "2026-08-20T02:03:20+12:00",
-      "scraped_at": "2026-08-19T14:03:20+00:00",
+      "updated_at": "2026-08-20T02:14:31+12:00",
+      "scraped_at": "2026-08-19T14:14:31+00:00",
       "varietal": "sl28",
       "size_prices": [
         {
@@ -4297,8 +4297,8 @@
       "available": true,
       "price_min_nzd": 32.99,
       "price_max_nzd": 112.99,
-      "updated_at": "2026-08-20T02:03:20+12:00",
-      "scraped_at": "2026-08-19T14:03:20+00:00",
+      "updated_at": "2026-08-20T02:14:31+12:00",
+      "scraped_at": "2026-08-19T14:14:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4327,8 +4327,8 @@
       "available": true,
       "price_min_nzd": 29.99,
       "price_max_nzd": 129.99,
-      "updated_at": "2026-08-20T02:03:20+12:00",
-      "scraped_at": "2026-08-19T14:03:20+00:00",
+      "updated_at": "2026-08-20T02:14:31+12:00",
+      "scraped_at": "2026-08-19T14:14:31+00:00",
       "varietal": "castillo",
       "size_prices": [
         {
@@ -4357,8 +4357,8 @@
       "available": true,
       "price_min_nzd": 38.99,
       "price_max_nzd": 174.99,
-      "updated_at": "2026-08-20T02:03:20+12:00",
-      "scraped_at": "2026-08-19T14:03:20+00:00",
+      "updated_at": "2026-08-20T02:14:31+12:00",
+      "scraped_at": "2026-08-19T14:14:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4387,8 +4387,8 @@
       "available": true,
       "price_min_nzd": 23.0,
       "price_max_nzd": 101.99,
-      "updated_at": "2026-08-20T02:03:23+12:00",
-      "scraped_at": "2026-08-19T14:03:23+00:00",
+      "updated_at": "2026-08-20T02:14:34+12:00",
+      "scraped_at": "2026-08-19T14:14:34+00:00",
       "varietal": "bourbon",
       "size_prices": [
         {
@@ -4417,8 +4417,8 @@
       "available": true,
       "price_min_nzd": 23.0,
       "price_max_nzd": 104.99,
-      "updated_at": "2026-08-20T02:03:23+12:00",
-      "scraped_at": "2026-08-19T14:03:23+00:00",
+      "updated_at": "2026-08-20T02:14:34+12:00",
+      "scraped_at": "2026-08-19T14:14:34+00:00",
       "varietal": "catuai",
       "size_prices": [
         {
@@ -4447,8 +4447,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 119.99,
-      "updated_at": "2026-08-20T02:03:23+12:00",
-      "scraped_at": "2026-08-19T14:03:23+00:00",
+      "updated_at": "2026-08-20T02:14:34+12:00",
+      "scraped_at": "2026-08-19T14:14:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4477,8 +4477,8 @@
       "available": true,
       "price_min_nzd": 19.99,
       "price_max_nzd": 69.99,
-      "updated_at": "2026-08-20T02:03:23+12:00",
-      "scraped_at": "2026-08-19T14:03:23+00:00",
+      "updated_at": "2026-08-20T02:14:34+12:00",
+      "scraped_at": "2026-08-19T14:14:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4507,8 +4507,8 @@
       "available": true,
       "price_min_nzd": 34.99,
       "price_max_nzd": 149.99,
-      "updated_at": "2026-08-20T02:03:23+12:00",
-      "scraped_at": "2026-08-19T14:03:23+00:00",
+      "updated_at": "2026-08-20T02:14:34+12:00",
+      "scraped_at": "2026-08-19T14:14:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4537,8 +4537,8 @@
       "available": true,
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
-      "updated_at": "2026-08-20T01:54:56+12:00",
-      "scraped_at": "2026-08-19T14:03:25+00:00",
+      "updated_at": "2026-08-20T02:14:37+12:00",
+      "scraped_at": "2026-08-19T14:14:37+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4563,8 +4563,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
-      "updated_at": "2026-08-20T01:54:56+12:00",
-      "scraped_at": "2026-08-19T14:03:25+00:00",
+      "updated_at": "2026-08-20T02:14:37+12:00",
+      "scraped_at": "2026-08-19T14:14:37+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4589,8 +4589,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
-      "updated_at": "2026-08-20T01:54:56+12:00",
-      "scraped_at": "2026-08-19T14:03:25+00:00",
+      "updated_at": "2026-08-20T02:14:37+12:00",
+      "scraped_at": "2026-08-19T14:14:37+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4619,8 +4619,8 @@
       "available": true,
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
-      "updated_at": "2026-08-20T01:54:56+12:00",
-      "scraped_at": "2026-08-19T14:03:25+00:00",
+      "updated_at": "2026-08-20T02:14:37+12:00",
+      "scraped_at": "2026-08-19T14:14:37+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4649,8 +4649,8 @@
       "available": true,
       "price_min_nzd": 24.0,
       "price_max_nzd": 108.0,
-      "updated_at": "2026-08-20T01:54:56+12:00",
-      "scraped_at": "2026-08-19T14:03:25+00:00",
+      "updated_at": "2026-08-20T02:14:37+12:00",
+      "scraped_at": "2026-08-19T14:14:37+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4679,8 +4679,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
-      "updated_at": "2026-08-20T01:54:56+12:00",
-      "scraped_at": "2026-08-19T14:03:26+00:00",
+      "updated_at": "2026-08-20T02:14:39+12:00",
+      "scraped_at": "2026-08-19T14:14:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4713,8 +4713,8 @@
       "available": true,
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
-      "updated_at": "2026-08-20T01:54:56+12:00",
-      "scraped_at": "2026-08-19T14:03:26+00:00",
+      "updated_at": "2026-08-20T02:14:39+12:00",
+      "scraped_at": "2026-08-19T14:14:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4747,8 +4747,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
-      "updated_at": "2026-08-20T01:54:56+12:00",
-      "scraped_at": "2026-08-19T14:03:26+00:00",
+      "updated_at": "2026-08-20T02:14:39+12:00",
+      "scraped_at": "2026-08-19T14:14:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4773,8 +4773,8 @@
       "available": true,
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
-      "updated_at": "2026-08-20T01:54:56+12:00",
-      "scraped_at": "2026-08-19T14:03:26+00:00",
+      "updated_at": "2026-08-20T02:14:39+12:00",
+      "scraped_at": "2026-08-19T14:14:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4799,8 +4799,8 @@
       "available": true,
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
-      "updated_at": "2026-08-20T01:54:56+12:00",
-      "scraped_at": "2026-08-19T14:03:26+00:00",
+      "updated_at": "2026-08-20T02:14:39+12:00",
+      "scraped_at": "2026-08-19T14:14:39+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
