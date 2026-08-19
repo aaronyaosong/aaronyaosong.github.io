@@ -127,7 +127,7 @@ def scrape_rocket(database_path: Path | None = None) -> list[CoffeeListing]:
         variants = _filter_whole_bean_variants(product.get("variants", []))
         prices = _variant_prices(variants)
         available = any(bool(v.get("available")) for v in variants)
-        category = infer_roast_category(product)
+        category = infer_roast_category(product, collection_handle="coffee", source="rocketcoffee.co.nz")
 
         if not prices:
             prices = [0.0]

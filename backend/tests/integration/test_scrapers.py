@@ -139,16 +139,10 @@ def test_scrape_rocket_reuses_detail_for_available_cached_item(
     ("module", "function_name", "expected_source", "expected_collection"),
     [
         (ozone, "scrape_ozone", "ozonecoffee.co.nz", "coffee"),
-        (coffee_embassy, "scrape_coffee_embassy", "coffeeembassy.co.nz", "coffee"),
-        (eternal, "scrape_eternal", "eternalcoffee.co.nz", "all"),
-        (vanguard, "scrape_vanguard", "vanguardcoffee.co.nz", "coffee-beans"),
         (c4, "scrape_c4", "c4coffee.co", "coffee"),
-        (grey_roasting_co, "scrape_grey_roasting_co", "greyroastingco.com", "all"),
-        (slow, "scrape_slow", "slowcoffee.co.nz", "shop-coffee"),
-        (wolf, "scrape_wolf", "wolfcoffee.co.nz", "coffee-beans"),
     ],
 )
-def test_additional_scrapers_use_expected_shopify_collection(
+def test_single_collection_scrapers(
     monkeypatch: pytest.MonkeyPatch,
     module,
     function_name: str,
@@ -169,6 +163,38 @@ def test_additional_scrapers_use_expected_shopify_collection(
 
 
 @pytest.mark.integration
+@pytest.mark.parametrize(
+    ("module", "function_name", "expected_source", "expected_collections"),
+    [
+        (coffee_embassy, "scrape_coffee_embassy", "coffeeembassy.co.nz", ["single-origin", "blends"]),
+        (eternal, "scrape_eternal", "eternalcoffee.co.nz", ["specialty-coffee-beans-nz", "espresso-offerings-1"]),
+        (vanguard, "scrape_vanguard", "vanguardcoffee.co.nz", ["filter", "espresso"]),
+        (grey_roasting_co, "scrape_grey_roasting_co", "greyroastingco.com", ["single-origin-coffees", "espresso-blends-decaf"]),
+        (slow, "scrape_slow", "slowcoffee.co.nz", ["filter-coffee", "espresso-coffee"]),
+        (wolf, "scrape_wolf", "wolfcoffee.co.nz", ["single-origins", "house-blends"]),
+    ],
+)
+def test_multi_collection_scrapers(
+    monkeypatch: pytest.MonkeyPatch,
+    module,
+    function_name: str,
+    expected_source: str,
+    expected_collections: list[str],
+) -> None:
+    calls = []
+    monkeypatch.setattr(
+        module,
+        "scrape_shopify_collections",
+        lambda source, collections, database_path=None, **kwargs: calls.append((source, collections, database_path)) or [],
+    )
+
+    rows = getattr(module, function_name)()
+
+    assert rows == []
+    assert calls == [(expected_source, expected_collections, None)]
+
+
+@pytest.mark.integration
 def test_wolf_excludes_gift_cards() -> None:
     assert wolf._is_not_gift_card({"title": "Seasonal Blend", "product_type": "coffee"}) is True
     assert wolf._is_not_gift_card({"title": "Wolf Coffee Roasters E-Gift Card", "handle": "egift-card"}) is False
@@ -183,6 +209,7 @@ def test_vanguard_excludes_non_roasted_products() -> None:
     assert vanguard._is_roasted_coffee({"title": "APAX Lab Water Mineral Concentrate Drops"}) is False
     assert vanguard._is_roasted_coffee({"handle": "alpha-espresso-capsules"}) is False
     assert vanguard._is_roasted_coffee({"title": "Single Origin Drip Bags"}) is False
+
 
 @pytest.mark.integration
 def test_scrape_grey_roasting_co_excludes_subscriptions(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -203,8 +230,8 @@ def test_scrape_grey_roasting_co_excludes_subscriptions(monkeypatch: pytest.Monk
 
     monkeypatch.setattr(
         grey_roasting_co,
-        "scrape_shopify_collection",
-        lambda source, collection, database_path=None, **kwargs: [
+        "scrape_shopify_collections",
+        lambda source, collections, database_path=None, **kwargs: [
             listing("Daily Blend", "daily-blend"),
             listing("Daily Blend Subscription", "daily-blend-subscription"),
         ],

@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from nz_coffee_tracker.models import CoffeeListing
-from nz_coffee_tracker.scrapers.shopify_roaster import scrape_shopify_collection
+from nz_coffee_tracker.scrapers.shopify_roaster import scrape_shopify_collections
 
 
 SOURCE = "vanguardcoffee.co.nz"
@@ -17,9 +17,9 @@ def _is_roasted_coffee(product: dict[str, Any]) -> bool:
 
 
 def scrape_vanguard(database_path: Path | None = None) -> list[CoffeeListing]:
-    return scrape_shopify_collection(
+    return scrape_shopify_collections(
         SOURCE,
-        "coffee-beans",
+        ["filter", "espresso"],
         database_path,
         product_filter=_is_roasted_coffee,
     )

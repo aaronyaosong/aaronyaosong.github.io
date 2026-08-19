@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any
 
 from nz_coffee_tracker.models import CoffeeListing
-from nz_coffee_tracker.scrapers.shopify_roaster import scrape_shopify_collection
+from nz_coffee_tracker.scrapers.shopify_roaster import scrape_shopify_collections
 
 
 SOURCE = "greyroastingco.com"
@@ -21,7 +21,12 @@ def _is_coffee_product(product: dict[str, Any]) -> bool:
 
 
 def scrape_grey_roasting_co(database_path: Path | None = None) -> list[CoffeeListing]:
-    listings = scrape_shopify_collection(SOURCE, "all", database_path, product_filter=_is_coffee_product)
+    listings = scrape_shopify_collections(
+        SOURCE,
+        ["single-origin-coffees", "espresso-blends-decaf"],
+        database_path,
+        product_filter=_is_coffee_product,
+    )
     return [
         listing
         for listing in listings
