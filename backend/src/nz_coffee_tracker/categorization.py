@@ -31,12 +31,24 @@ KNOWN_VARIETALS = (
     "caturra",
     "catuai",
     "obata",
+    "pink bourbon",
+    "red bourbon",
+    "yellow bourbon",
     "bourbon",
+    "yellow caturra",
     "typica",
     "gesha",
     "geisha",
     "sidra",
     "java",
+    "laurina",
+    "wush wush",
+    "chiroso",
+    "papayo",
+    "parainema",
+    "catimor",
+    "sarchimor",
+    "san bernardo",
     "sl28",
     "sl34",
     "batian",
@@ -61,7 +73,7 @@ def description_text(product: dict[str, Any]) -> str:
 def extract_description_field(product: dict[str, Any], labels: tuple[str, ...]) -> str:
     text = description_text(product)
     label_pattern = "|".join(re.escape(label) for label in labels)
-    next_label = r"origin(?: country)?|country|producer|farm|estate|process(?:ing)?|process method|processing method|flavou?r notes|tasting notes|notes|variety|varietal|altitude|region"
+    next_label = r"origin(?: country)?|country|producer|farm|estate|process(?:ing)?|process method|processing method|fermentation|flavou?r notes|tasting notes|tasting card|notes|variety|varietal|altitude|region|roast|roast profile|roast level|recipe|suitable for|importer|years used"
     match = re.search(
         rf"(?:{label_pattern})\s*[:\-]\s*(.*?)(?=\s+(?:{next_label})\s*[:\-]|$|[.;|\n])",
         text,
@@ -156,7 +168,7 @@ CANONICAL_PROCESSES = (
     (r"\byellow\s+honey\b", "Yellow Honey"),
     (r"\bred\s+honey\b", "Red Honey"),
     (r"\bblack\s+honey\b", "Black Honey"),
-    (r"\bhoney\b", "Honey"),
+    (r"\bhoney\b(?!\s*co[-\s]?ferment)", "Honey"),
     (r"\bwet\s+hulled\b", "Wet Hulled"),
     (r"\bgiling\s+basah\b", "Wet Hulled"),
     (r"\bnatural\s+decaf\b", "Natural Decaf"),
@@ -164,8 +176,8 @@ CANONICAL_PROCESSES = (
     (r"\bswiss\s+water\s+decaf\b", "Swiss Water Decaf"),
     (r"\bmountain\s+water\s+decaf\b", "Mountain Water Decaf"),
     (r"\bfully\s+washed\b", "Washed"),
-    (r"\bwashed\b", "Washed"),
-    (r"\bnatural\b", "Natural"),
+    (r"\bwashed\b(?!\s*co[-\s]?ferment|\s*double\s*ferment)", "Washed"),
+    (r"\bnatural\b(?!\s*co[-\s]?ferment|\s*decaf)", "Natural"),
     (r"\bdecaf\b", "Decaf"),
 )
 
@@ -242,6 +254,11 @@ def infer_process_rule_based(product: dict[str, Any]) -> str:
 
 
 def infer_varietal_rule_based(product: dict[str, Any]) -> str:
+    labeled = extract_description_field(product, ("varietal", "variety"))
+    if labeled and labeled != "unknown" and len(labeled) <= 60:
+        cleaned = format_varietal(labeled)
+        if cleaned != "unknown":
+            return cleaned
     text = _collect_product_text(product)
     found = [varietal for varietal in KNOWN_VARIETALS if re.search(rf"\b{re.escape(varietal)}\b", text)]
     return format_varietal(",".join(found)) if found else "unknown"
@@ -396,11 +413,13 @@ def infer_metadata(
         ):
             clean_cached_origin = clean_origin_country(cached.get("origin_country") or "")
             clean_cached_process = clean_process(cached.get("process") or "")
-            # Re-evaluate process if co-ferment is in description but missing from cache
-            if ("co-ferment" in desc.lower() or "co ferment" in desc.lower() or "coferment" in desc.lower()) and "Co-Ferment" not in clean_cached_process:
+            # Re-evaluate process if co-ferment is in description
+            if "co-ferment" in desc.lower() or "co ferment" in desc.lower() or "coferment" in desc.lower():
                 clean_cached_process = infer_process_rule_based(product)
             clean_cached_notes = format_flavour_notes(cached.get("flavour_notes") or "")
             clean_cached_varietal = format_varietal(cached.get("varietal") or "")
+            if clean_cached_varietal == "unknown":
+                clean_cached_varietal = infer_varietal_rule_based(product)
             return {
                 "flavour_notes": clean_cached_notes,
                 "origin_country": clean_cached_origin,

@@ -207,3 +207,22 @@ def test_extracts_co_ferment_from_blend_process_method() -> None:
     assert "Co-Ferment" in proc
     assert "Natural" in proc
 
+
+@pytest.mark.unit
+def test_extracts_laurina_varietal_from_description_block() -> None:
+    product = {
+        "title": "Lot 002 - Anaerobic Washed",
+        "body_html": "<p>COUNTRY - Aotearoa NZ FARM - Pekerau Hills REGION - Kaitaia ALTITUDE - 160 M.A.S.L VARIETAL - Laurina FERMENTATION - Anaerobic PROCESSING METHOD - Washed</p>",
+    }
+    assert infer_varietal(product) == "Laurina"
+
+
+@pytest.mark.unit
+def test_rose_tea_honey_co_ferment_is_single_process() -> None:
+    product = {
+        "title": "Jairo Arcila - Rose Tea Honey Co-Ferment",
+        "body_html": "<p>PROCESSING METHOD - Rose Tea Honey Co-Ferment VARIETAL - Pink Bourbon</p>",
+    }
+    assert infer_process(product) == "Co-Ferment"
+    assert infer_varietal(product) == "Pink Bourbon"
+
