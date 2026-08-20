@@ -459,6 +459,10 @@ def infer_metadata(
             if clean_cached_process == "unknown" or "co-ferment" in desc.lower() or "co ferment" in desc.lower() or "coferment" in desc.lower():
                 clean_cached_process = infer_process_rule_based(product)
             clean_cached_notes = format_flavour_notes(cached.get("flavour_notes") or "")
+            if "tasting notes:" in desc.lower() or "cupping notes:" in desc.lower() or "flavour notes:" in desc.lower():
+                rule_notes = infer_flavour_notes_rule_based(product)
+                if rule_notes != "unknown":
+                    clean_cached_notes = rule_notes
             clean_cached_varietal = format_varietal(cached.get("varietal") or "")
             if clean_cached_varietal == "unknown":
                 clean_cached_varietal = infer_varietal_rule_based(product)
