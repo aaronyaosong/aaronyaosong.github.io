@@ -60,6 +60,48 @@ def test_extract_flavour_notes_fallback_when_server_down() -> None:
 
 
 @pytest.mark.unit
+def test_parse_metadata_json() -> None:
+    from nz_coffee_tracker.llm import _parse_metadata_json
+
+    raw = """
+    {
+      "flavour_notes": ["raspberry", "irish whiskey", "rhubarb"],
+      "origin_country": "Ethiopia",
+      "producer": "Cofinet",
+      "process": "Natural",
+      "varietal": "Heirloom"
+    }
+    """
+    meta = _parse_metadata_json(raw)
+    assert meta is not None
+    assert "Raspberry" in meta["flavour_notes"]
+    assert meta["origin_country"] == "Ethiopia"
+    assert meta["producer"] == "Cofinet"
+    assert meta["process"] == "Natural"
+    assert meta["varietal"] == "Heirloom"
+
+
+@pytest.mark.unit
+def test_extract_coffee_metadata_llm_mocked() -> None:
+    from nz_coffee_tracker.llm import extract_coffee_metadata_llm
+
+    mock_response = MagicMock()
+    mock_response.status_code = 200
+    mock_response.json.return_value = {
+        "response": '{"flavour_notes": ["peach", "jasmine"], "origin_country": "Panama", "producer": "Lamastus", "process": "Washed", "varietal": "Geisha"}'
+    }
+
+    with patch("requests.post", return_value=mock_response):
+        meta = extract_coffee_metadata_llm("Washed Geisha from Lamastus with notes of peach and jasmine.", title="Geisha")
+        assert meta is not None
+        assert "Peach" in meta["flavour_notes"]
+        assert meta["origin_country"] == "Panama"
+        assert meta["producer"] == "Lamastus"
+        assert meta["process"] == "Washed"
+        assert meta["varietal"] == "Geisha"
+
+
+@pytest.mark.unit
 def test_infer_flavour_notes_sqlite_caching(tmp_path) -> None:
     db_path = tmp_path / "test_history.sqlite3"
     product = {

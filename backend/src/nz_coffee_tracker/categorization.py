@@ -5,8 +5,17 @@ from pathlib import Path
 import re
 from typing import Any
 
-from nz_coffee_tracker.database import get_cached_flavour_notes, set_cached_flavour_notes
-from nz_coffee_tracker.llm import compute_content_hash, extract_flavour_notes_llm
+from nz_coffee_tracker.database import (
+    get_cached_flavour_notes,
+    get_cached_metadata,
+    set_cached_flavour_notes,
+    set_cached_metadata,
+)
+from nz_coffee_tracker.llm import (
+    compute_content_hash,
+    extract_coffee_metadata_llm,
+    extract_flavour_notes_llm,
+)
 
 
 FILTER_ROAST = "filter roast"
@@ -31,6 +40,10 @@ KNOWN_VARIETALS = (
     "sl28",
     "sl34",
     "batian",
+    "heirloom",
+    "tabi",
+    "pacas",
+    "villalobos",
 )
 
 
@@ -48,7 +61,7 @@ def description_text(product: dict[str, Any]) -> str:
 def extract_description_field(product: dict[str, Any], labels: tuple[str, ...]) -> str:
     text = description_text(product)
     label_pattern = "|".join(re.escape(label) for label in labels)
-    next_label = r"origin(?: country)?|country|producer|farm|estate|process(?:ing)?|flavou?r notes|tasting notes|notes"
+    next_label = r"origin(?: country)?|country|producer|farm|estate|process(?:ing)?|flavou?r notes|tasting notes|notes|variety|varietal"
     match = re.search(
         rf"(?:{label_pattern})\s*[:\-]\s*(.*?)(?=\s+(?:{next_label})\s*[:\-]|$|[.;|\n])",
         text,
@@ -57,16 +70,68 @@ def extract_description_field(product: dict[str, Any], labels: tuple[str, ...]) 
     return match.group(1).strip() if match else "unknown"
 
 
-def infer_origin_country(product: dict[str, Any]) -> str:
-    return extract_description_field(product, ("origin", "origin country", "country"))
+def infer_origin_country_rule_based(product: dict[str, Any]) -> str:
+    labeled = extract_description_field(product, ("origin", "origin country", "country"))
+    if labeled and labeled != "unknown":
+        return labeled
+    text = f"{product.get('title', '')} {description_text(product)}".lower()
+    country_map = {
+        "ethiopia": "Ethiopia", "ethiopian": "Ethiopia",
+        "colombia": "Colombia", "colombian": "Colombia",
+        "kenya": "Kenya", "kenyan": "Kenya",
+        "guatemala": "Guatemala", "guatemalan": "Guatemala",
+        "costa rica": "Costa Rica", "costa rican": "Costa Rica",
+        "panama": "Panama", "panamanian": "Panama",
+        "honduras": "Honduras", "honduran": "Honduras",
+        "brazil": "Brazil", "brazilian": "Brazil",
+        "rwanda": "Rwanda", "rwandan": "Rwanda",
+        "peru": "Peru", "peruvian": "Peru",
+        "ecuador": "Ecuador", "ecuadorian": "Ecuador",
+        "el salvador": "El Salvador", "salvadoran": "El Salvador",
+        "burundi": "Burundi", "burundian": "Burundi",
+        "uganda": "Uganda", "ugandan": "Uganda",
+        "indonesia": "Indonesia", "indonesian": "Indonesia", "sumatra": "Indonesia", "sumatran": "Indonesia",
+        "papua new guinea": "Papua New Guinea",
+        "mexico": "Mexico", "mexican": "Mexico",
+        "tanzania": "Tanzania", "tanzanian": "Tanzania",
+        "nicaragua": "Nicaragua", "nicaraguan": "Nicaragua",
+    }
+    for word, country in country_map.items():
+        if re.search(rf"\b{re.escape(word)}\b", text):
+            return country
+    return "unknown"
 
 
-def infer_producer(product: dict[str, Any]) -> str:
-    return extract_description_field(product, ("producer", "farm", "estate"))
+def infer_producer_rule_based(product: dict[str, Any]) -> str:
+    labeled = extract_description_field(product, ("producer", "farm", "estate", "station", "washing station", "grower"))
+    if labeled and labeled != "unknown":
+        return labeled
+    title = str(product.get("title", "")).strip()
+    if " - " in title:
+        prefix = title.split(" - ")[0].strip()
+        if not re.search(r"\b(?:decaf|espresso|filter|omni|blend|roast)\b", prefix, re.IGNORECASE) and len(prefix) > 2:
+            return prefix
+    return "unknown"
 
 
-def infer_process(product: dict[str, Any]) -> str:
-    return extract_description_field(product, ("process", "processing"))
+def infer_process_rule_based(product: dict[str, Any]) -> str:
+    labeled = extract_description_field(product, ("process", "processing", "processing method"))
+    if labeled and labeled != "unknown":
+        return labeled
+    text = f"{product.get('title', '')} {description_text(product)}".lower()
+    match = re.search(r"\[([^\]]*(?:washed|natural|honey|anaerobic|ferment)[^\]]*)\]", str(product.get("title", "")), re.IGNORECASE)
+    if match:
+        return match.group(1).strip().title()
+    for proc in ("anaerobic natural", "anaerobic washed", "double fermented", "carbonic maceration", "natural", "washed", "honey", "wet hulled"):
+        if re.search(rf"\b{re.escape(proc)}\b", text):
+            return proc.title()
+    return "unknown"
+
+
+def infer_varietal_rule_based(product: dict[str, Any]) -> str:
+    text = _collect_product_text(product)
+    found = [varietal for varietal in KNOWN_VARIETALS if re.search(rf"\b{re.escape(varietal)}\b", text)]
+    return ",".join(found) if found else "unknown"
 
 
 COFFEE_FLAVOUR_LEXICON = (
@@ -197,49 +262,111 @@ def infer_flavour_notes_rule_based(product: dict[str, Any]) -> str:
     return "unknown"
 
 
+def infer_metadata(
+    product: dict[str, Any],
+    *,
+    database_path: Path | None = None,
+    use_llm: bool = True,
+) -> dict[str, str]:
+    desc = description_text(product)
+    title = str(product.get("title", "")).strip()
+    content_hash = compute_content_hash(title, desc)
+
+    # 1. Check persistent SQLite cache first
+    if database_path is not None:
+        cached = get_cached_metadata(content_hash, database_path)
+        if (
+            cached
+            and cached.get("flavour_notes")
+            and cached["flavour_notes"] != "unknown"
+            and (cached.get("origin_country", "unknown") != "unknown" or cached.get("process", "unknown") != "unknown" or cached.get("producer", "unknown") != "unknown")
+        ):
+            return {
+                "flavour_notes": cached.get("flavour_notes") or "unknown",
+                "origin_country": cached.get("origin_country") or "unknown",
+                "producer": cached.get("producer") or "unknown",
+                "process": cached.get("process") or "unknown",
+                "varietal": cached.get("varietal") or "unknown",
+            }
+
+    # 2. Extract rule-based values
+    rule_notes = infer_flavour_notes_rule_based(product)
+    rule_origin = infer_origin_country_rule_based(product)
+    rule_producer = infer_producer_rule_based(product)
+    rule_process = infer_process_rule_based(product)
+    rule_varietal = infer_varietal_rule_based(product)
+
+    # 3. Call LLM if enabled, description is substantial, and unstructured metadata needs extraction
+    needs_llm = use_llm and len(desc) > 20 and (
+        rule_notes == "unknown"
+        or (rule_origin == "unknown" and rule_producer == "unknown")
+    )
+
+    llm_meta = extract_coffee_metadata_llm(desc, title=title) if needs_llm else None
+
+    # Validate LLM varietal actually exists in listing text
+    llm_varietal = "unknown"
+    if llm_meta and llm_meta.get("varietal") and llm_meta["varietal"] != "unknown":
+        if llm_meta["varietal"].lower() in f"{title} {desc}".lower():
+            llm_varietal = llm_meta["varietal"].lower()
+
+    final_meta = {
+        "flavour_notes": (rule_notes if rule_notes != "unknown" else (llm_meta.get("flavour_notes") if llm_meta and llm_meta.get("flavour_notes") != "unknown" else "unknown")) or "unknown",
+        "origin_country": (rule_origin if rule_origin != "unknown" else (llm_meta.get("origin_country") if llm_meta else "unknown")) or "unknown",
+        "producer": (rule_producer if rule_producer != "unknown" else (llm_meta.get("producer") if llm_meta else "unknown")) or "unknown",
+        "process": (rule_process if rule_process != "unknown" else (llm_meta.get("process") if llm_meta else "unknown")) or "unknown",
+        "varietal": (rule_varietal if rule_varietal != "unknown" else llm_varietal) or "unknown",
+    }
+
+    if database_path is not None:
+        set_cached_metadata(content_hash, title, final_meta, database_path)
+
+    return final_meta
+
+
 def infer_flavour_notes(
     product: dict[str, Any],
     *,
     database_path: Path | None = None,
     use_llm: bool = True,
 ) -> str:
-    desc = description_text(product)
-    if not desc:
-        return "unknown"
+    return infer_metadata(product, database_path=database_path, use_llm=use_llm)["flavour_notes"]
 
-    title = str(product.get("title", "")).strip()
-    content_hash = compute_content_hash(title, desc)
 
-    # 1. Check persistent SQLite cache first
-    if database_path is not None:
-        cached = get_cached_flavour_notes(content_hash, database_path)
-        if cached:
-            return cached
+def infer_origin_country(
+    product: dict[str, Any],
+    *,
+    database_path: Path | None = None,
+    use_llm: bool = True,
+) -> str:
+    return infer_metadata(product, database_path=database_path, use_llm=use_llm)["origin_country"]
 
-    # 2. Check explicit field label if present
-    labeled = extract_description_field(product, ("flavour notes", "flavor notes", "tasting notes", "notes"))
-    if labeled and labeled != "unknown" and len(labeled) > 2:
-        if not re.search(r"^(?:of\s+this\s+coffee|are\s+as\s+follows|below)", labeled, re.I):
-            cleaned = _clean_flavour_string(labeled)
-            if cleaned:
-                if database_path is not None:
-                    set_cached_flavour_notes(content_hash, title, cleaned, database_path)
-                return cleaned
 
-    # 3. Try LLM extraction for unstructured descriptions
-    if use_llm:
-        notes = extract_flavour_notes_llm(desc, title=title)
-        if notes:
-            formatted = ", ".join(n.title() for n in notes)
-            if database_path is not None:
-                set_cached_flavour_notes(content_hash, title, formatted, database_path)
-            return formatted
+def infer_producer(
+    product: dict[str, Any],
+    *,
+    database_path: Path | None = None,
+    use_llm: bool = True,
+) -> str:
+    return infer_metadata(product, database_path=database_path, use_llm=use_llm)["producer"]
 
-    # 4. Fallback to NLP / rule-based extractor
-    rule_based = infer_flavour_notes_rule_based(product)
-    if database_path is not None and rule_based != "unknown":
-        set_cached_flavour_notes(content_hash, title, rule_based, database_path)
-    return rule_based
+
+def infer_process(
+    product: dict[str, Any],
+    *,
+    database_path: Path | None = None,
+    use_llm: bool = True,
+) -> str:
+    return infer_metadata(product, database_path=database_path, use_llm=use_llm)["process"]
+
+
+def infer_varietal(
+    product: dict[str, Any],
+    *,
+    database_path: Path | None = None,
+    use_llm: bool = True,
+) -> str:
+    return infer_metadata(product, database_path=database_path, use_llm=use_llm)["varietal"]
 
 
 def infer_decaf(product: dict[str, Any]) -> bool:
@@ -445,12 +572,6 @@ def infer_roast_category(
         return FILTER_ROAST
 
     return OTHER_CATEGORY
-
-
-def infer_varietal(product: dict[str, Any]) -> str:
-    text = _collect_product_text(product)
-    found = [varietal for varietal in KNOWN_VARIETALS if re.search(rf"\b{re.escape(varietal)}\b", text)]
-    return ",".join(found) if found else "unknown"
 
 
 def category_values(category: str) -> set[str]:

@@ -18,6 +18,22 @@ Do not include origins, farms, brew equipment, or processing methods.
 Return only a JSON array of the extracted tasting notes found in the text.
 """
 
+METADATA_EXTRACTION_PROMPT = """You are an expert specialty coffee analyst. Extract the metadata from the following coffee listing:
+1. flavour_notes: List of specific taste/flavour descriptors (e.g. fruits, spices, chocolate).
+2. origin_country: Country where the coffee was grown (e.g. "Ethiopia", "Colombia", "Kenya", or "unknown").
+3. producer: Producer, farmer, washing station, estate, or exporter name (or "unknown").
+4. process: Processing method (e.g. "Washed", "Natural", "Honey", "Anaerobic Natural", "Decaf", or "unknown").
+5. varietal: Botanical variety of the coffee tree (e.g. "Geisha", "Caturra", "Heirloom", "SL28", or "unknown").
+
+Output JSON format:
+{
+  "flavour_notes": ["..."],
+  "origin_country": "...",
+  "producer": "...",
+  "process": "...",
+  "varietal": "..."
+}"""
+
 
 NON_FLAVOUR_WORDS = {
     "coffee",
@@ -91,6 +107,56 @@ def _parse_llm_json(text: str) -> list[str]:
     return result
 
 
+def _parse_metadata_json(text: str) -> dict[str, Any] | None:
+    cleaned = re.sub(r"^```(?:json)?\s*", "", text.strip(), flags=re.IGNORECASE)
+    cleaned = re.sub(r"\s*```$", "", cleaned).strip()
+
+    data = None
+    try:
+        data = json.loads(cleaned)
+    except json.JSONDecodeError:
+        # Try extracting JSON object substring
+        match = re.search(r"\{[\s\S]*\}", cleaned)
+        if match:
+            try:
+                data = json.loads(match.group(0))
+            except json.JSONDecodeError:
+                pass
+
+    if not isinstance(data, dict):
+        return None
+
+    raw_notes = data.get("flavour_notes") or data.get("notes") or []
+    if isinstance(raw_notes, str):
+        notes_list = [n.strip() for n in raw_notes.split(",") if n.strip()]
+    elif isinstance(raw_notes, list):
+        notes_list = [str(n).strip() for n in raw_notes if str(n).strip()]
+    else:
+        notes_list = []
+
+    cleaned_notes = []
+    seen = set()
+    for item in notes_list:
+        desc = _clean_descriptor(item)
+        if desc and len(desc) > 2 and desc not in seen:
+            seen.add(desc)
+            cleaned_notes.append(desc)
+
+    def clean_field(val: Any) -> str:
+        s = str(val or "").strip(" {}[]'\",.:;`")
+        if not s or s.lower() in ("unknown", "n/a", "none", "null"):
+            return "unknown"
+        return s
+
+    return {
+        "flavour_notes": ", ".join(n.title() for n in cleaned_notes) if cleaned_notes else "unknown",
+        "origin_country": clean_field(data.get("origin_country") or data.get("origin")),
+        "producer": clean_field(data.get("producer") or data.get("farm")),
+        "process": clean_field(data.get("process")),
+        "varietal": clean_field(data.get("varietal") or data.get("variety")),
+    }
+
+
 def extract_flavour_notes_llm(
     description: str,
     title: str = "",
@@ -99,30 +165,24 @@ def extract_flavour_notes_llm(
     model: str | None = None,
     timeout: float = 15.0,
 ) -> list[str] | None:
-    """
-    Extracts tasting notes using a 100% local LLM (e.g. Ollama or LM Studio).
-    No API keys required, completely offline and private.
-    """
     if not description and not title:
         return None
 
-    # Default to local Ollama instance (or user-defined LOCAL_LLM_URL / OLLAMA_HOST)
     local_url = base_url or os.getenv("LOCAL_LLM_URL") or os.getenv("OLLAMA_HOST") or "http://localhost:11434"
     local_url = local_url.rstrip("/")
     model_name = model or os.getenv("LOCAL_LLM_MODEL") or "llama3.2:1b"
 
     content_to_analyze = f"Title: {title}\nDescription: {description}".strip()
 
-    # 1. Try Native Ollama API (/api/generate with JSON format)
+    # 1. Native Ollama API
     ollama_endpoint = f"{local_url}/api/generate"
     ollama_payload = {
         "model": model_name,
         "prompt": f"{EXTRACTION_PROMPT}\n\nCoffee Listing:\n{content_to_analyze}\n\nJSON array:",
-        "format": "json",
         "stream": False,
         "options": {
             "temperature": 0.1,
-            "num_predict": 100,
+            "num_predict": 80,
         },
     }
 
@@ -137,7 +197,7 @@ def extract_flavour_notes_llm(
     except (requests.RequestException, ValueError):
         pass
 
-    # 2. Try OpenAI-compatible local endpoint (/v1/chat/completions, e.g. LM Studio, LocalAI)
+    # 2. OpenAI-compatible local endpoint
     openai_compat_endpoint = f"{local_url}/v1/chat/completions"
     chat_payload = {
         "model": model_name,
@@ -146,7 +206,7 @@ def extract_flavour_notes_llm(
             {"role": "user", "content": content_to_analyze},
         ],
         "temperature": 0.1,
-        "max_tokens": 100,
+        "max_tokens": 80,
     }
 
     try:
@@ -159,6 +219,77 @@ def extract_flavour_notes_llm(
                 notes = _parse_llm_json(raw_response)
                 if notes:
                     return notes
+    except (requests.RequestException, ValueError):
+        pass
+
+    return None
+
+
+def extract_coffee_metadata_llm(
+    description: str,
+    title: str = "",
+    *,
+    base_url: str | None = None,
+    model: str | None = None,
+    timeout: float = 15.0,
+) -> dict[str, Any] | None:
+    """
+    Extracts process, origin_country, producer, varietal, and flavour_notes in a single LLM call.
+    """
+    if not description and not title:
+        return None
+
+    local_url = base_url or os.getenv("LOCAL_LLM_URL") or os.getenv("OLLAMA_HOST") or "http://localhost:11434"
+    local_url = local_url.rstrip("/")
+    model_name = model or os.getenv("LOCAL_LLM_MODEL") or "llama3.2:1b"
+
+    content_to_analyze = f"Title: {title}\nDescription: {description}".strip()
+
+    # 1. Native Ollama API
+    ollama_endpoint = f"{local_url}/api/generate"
+    ollama_payload = {
+        "model": model_name,
+        "prompt": f"{METADATA_EXTRACTION_PROMPT}\n\nCoffee Title: {title}\nDescription: {description}\n\nOutput JSON:",
+        "stream": False,
+        "options": {
+            "temperature": 0.1,
+            "num_predict": 150,
+        },
+    }
+
+    try:
+        response = requests.post(ollama_endpoint, json=ollama_payload, timeout=timeout)
+        if response.status_code == 200:
+            body = response.json()
+            raw_response = body.get("response", "")
+            meta = _parse_metadata_json(raw_response)
+            if meta:
+                return meta
+    except (requests.RequestException, ValueError):
+        pass
+
+    # 2. OpenAI-compatible local endpoint
+    openai_compat_endpoint = f"{local_url}/v1/chat/completions"
+    chat_payload = {
+        "model": model_name,
+        "messages": [
+            {"role": "system", "content": METADATA_EXTRACTION_PROMPT},
+            {"role": "user", "content": content_to_analyze},
+        ],
+        "temperature": 0.1,
+        "max_tokens": 150,
+    }
+
+    try:
+        response = requests.post(openai_compat_endpoint, json=chat_payload, timeout=timeout)
+        if response.status_code == 200:
+            body = response.json()
+            choices = body.get("choices", [])
+            if choices:
+                raw_response = choices[0].get("message", {}).get("content", "")
+                meta = _parse_metadata_json(raw_response)
+                if meta:
+                    return meta
     except (requests.RequestException, ValueError):
         pass
 

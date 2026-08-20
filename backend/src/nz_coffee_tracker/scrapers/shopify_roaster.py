@@ -16,6 +16,7 @@ from nz_coffee_tracker.categorization import (
     description_text,
     infer_decaf,
     infer_flavour_notes,
+    infer_metadata,
     infer_origin_country,
     infer_process,
     infer_producer,
@@ -135,6 +136,7 @@ def scrape_shopify_collection(
         variants = _filter_whole_bean_variants(product.get("variants", []))
         prices = _variant_prices(variants) or [0.0]
         size_prices = cached["size_prices"] if cached and not needs_detail else _size_prices(variants, str(product.get("title", "")))
+        meta = infer_metadata(product, database_path=database_path)
         listings.append(
             CoffeeListing(
                 source=source,
@@ -148,14 +150,14 @@ def scrape_shopify_collection(
                 price_max_nzd=max(prices),
                 updated_at=str(product.get("updated_at", "")),
                 scraped_at=scraped_at,
-                varietal=infer_varietal(product),
+                varietal=meta["varietal"],
                 size_prices=size_prices,
-                origin_country=infer_origin_country(product),
-                producer=infer_producer(product),
-                process=infer_process(product),
+                origin_country=meta["origin_country"],
+                producer=meta["producer"],
+                process=meta["process"],
                 decaf=infer_decaf(product),
                 description=description_text(product),
-                flavour_notes=infer_flavour_notes(product, database_path=database_path),
+                flavour_notes=meta["flavour_notes"],
             )
         )
 

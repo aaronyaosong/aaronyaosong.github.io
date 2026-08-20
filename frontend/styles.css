@@ -133,7 +133,7 @@ input[type="search"]:focus {
 
 .select-filters {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 12px;
 }
 
@@ -245,6 +245,28 @@ h2 {
 .badge.category {
   background: #d7f4eb;
   color: #065544;
+}
+
+.badge.origin {
+  background: #e6f0fa;
+  color: #1a4971;
+}
+
+.badge.process {
+  background: #f3e8ff;
+  color: #581c87;
+}
+
+.card-meta {
+  margin: 0 0 6px;
+  font-size: 0.86rem;
+  color: #5a4b38;
+  line-height: 1.35;
+}
+
+.card-meta strong {
+  color: #2b2013;
+  margin-right: 4px;
 }
 
 .price {
