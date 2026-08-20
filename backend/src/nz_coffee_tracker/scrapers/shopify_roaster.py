@@ -155,7 +155,7 @@ def scrape_shopify_collection(
                 process=infer_process(product),
                 decaf=infer_decaf(product),
                 description=description_text(product),
-                flavour_notes=infer_flavour_notes(product),
+                flavour_notes=infer_flavour_notes(product, database_path=database_path),
             )
         )
 

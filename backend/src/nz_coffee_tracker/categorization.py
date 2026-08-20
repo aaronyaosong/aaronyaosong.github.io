@@ -1,8 +1,12 @@
 from __future__ import annotations
 
-import re
 from html import unescape
+from pathlib import Path
+import re
 from typing import Any
+
+from nz_coffee_tracker.database import get_cached_flavour_notes, set_cached_flavour_notes
+from nz_coffee_tracker.llm import compute_content_hash, extract_flavour_notes_llm
 
 
 FILTER_ROAST = "filter roast"
@@ -113,7 +117,7 @@ def _clean_flavour_string(raw: str) -> str:
     return result
 
 
-def infer_flavour_notes(product: dict[str, Any]) -> str:
+def infer_flavour_notes_rule_based(product: dict[str, Any]) -> str:
     # 1. Explicit field labels
     labeled = extract_description_field(product, ("flavour notes", "flavor notes", "tasting notes", "notes"))
     if labeled and labeled != "unknown" and len(labeled) > 2:
@@ -191,6 +195,41 @@ def infer_flavour_notes(product: dict[str, Any]) -> str:
         return ", ".join(found[:4])
 
     return "unknown"
+
+
+def infer_flavour_notes(
+    product: dict[str, Any],
+    *,
+    database_path: Path | None = None,
+    use_llm: bool = True,
+) -> str:
+    desc = description_text(product)
+    if not desc:
+        return "unknown"
+
+    title = str(product.get("title", "")).strip()
+    content_hash = compute_content_hash(title, desc)
+
+    # 1. Check persistent SQLite cache first
+    if database_path is not None:
+        cached = get_cached_flavour_notes(content_hash, database_path)
+        if cached:
+            return cached
+
+    # 2. Try LLM extraction if enabled
+    if use_llm:
+        notes = extract_flavour_notes_llm(desc, title=title)
+        if notes:
+            formatted = ", ".join(n.title() for n in notes)
+            if database_path is not None:
+                set_cached_flavour_notes(content_hash, title, formatted, database_path)
+            return formatted
+
+    # 3. Fallback to rule-based extractor
+    rule_based = infer_flavour_notes_rule_based(product)
+    if database_path is not None and rule_based != "unknown":
+        set_cached_flavour_notes(content_hash, title, rule_based, database_path)
+    return rule_based
 
 
 def infer_decaf(product: dict[str, Any]) -> bool:
