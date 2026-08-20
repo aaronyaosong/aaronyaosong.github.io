@@ -144,8 +144,8 @@ export function createApp({
         ? item.process.split(",").map((p) => `<span class="badge process">${p.trim()}</span>`).join("")
         : "";
 
-      const varietalMeta = item.varietal && item.varietal !== "unknown"
-        ? `<p class="card-meta"><strong>Variety:</strong> ${item.varietal}</p>`
+      const varietalBadges = (item.varietal && item.varietal !== "unknown")
+        ? item.varietal.split(",").map((v) => `<span class="badge varietal">${v.trim()}</span>`).join("")
         : "";
 
       const flavourNotes = item.flavour_notes && item.flavour_notes !== "unknown"
@@ -170,8 +170,8 @@ export function createApp({
           ${categoryBadges}
           ${originBadges}
           ${processBadges}
+          ${varietalBadges}
         </div>
-        ${varietalMeta}
         ${flavourNotes}
         ${description}
         ${priceDetails}

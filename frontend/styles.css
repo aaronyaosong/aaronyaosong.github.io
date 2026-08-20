@@ -272,6 +272,11 @@ h2 {
   color: #581c87;
 }
 
+.badge.varietal {
+  background: #fef3c7;
+  color: #78350f;
+}
+
 .card-meta {
   margin: 0 0 6px;
   font-size: 0.86rem;
