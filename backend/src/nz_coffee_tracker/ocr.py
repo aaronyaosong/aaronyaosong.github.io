@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections.abc import Callable
 import io
 import logging
 import re
@@ -19,6 +20,111 @@ except ImportError:
     Image = None  # type: ignore
     pytesseract = None  # type: ignore
     HAS_OCR = False
+
+
+RELEVANT_IMAGE_KEYWORDS = (
+    "info",
+    "card",
+    "label",
+    "bag",
+    "notes",
+    "tasting",
+    "tasting_notes",
+    "detail",
+    "beans",
+    "origin",
+    "coffee",
+)
+
+IGNORED_IMAGE_KEYWORDS = (
+    "banner",
+    "lifestyle",
+    "merch",
+    "mug",
+    "cup",
+    "cafe",
+    "store",
+    "apparel",
+    "tshirt",
+    "filter_paper",
+    "dripper",
+)
+
+
+def score_image_candidate(img: dict[str, Any] | str) -> int:
+    """
+    Assigns a priority score to an image metadata candidate to determine scan order.
+    Higher score indicates greater likelihood of containing packaging/flavour note text.
+    """
+    if isinstance(img, str):
+        src = img.lower()
+        alt = ""
+        width = 0
+        height = 0
+    elif isinstance(img, dict):
+        src = str(img.get("src", "")).lower()
+        alt = str(img.get("alt", "")).lower()
+        width = int(img.get("width", 0) or 0)
+        height = int(img.get("height", 0) or 0)
+    else:
+        return 0
+
+    combined = f"{alt} {src}"
+    score = 0
+
+    for kw in RELEVANT_IMAGE_KEYWORDS:
+        if kw in combined:
+            score += 10
+
+    for kw in IGNORED_IMAGE_KEYWORDS:
+        if kw in combined:
+            score -= 20
+
+    # Square and portrait images are much more likely to be product bag renders or info cards
+    if width and height:
+        ratio = width / height
+        if 0.7 <= ratio <= 1.3:
+            score += 5
+        elif ratio > 2.0:
+            score -= 10  # wide banners
+
+    return score
+
+
+def get_sorted_candidate_image_urls(product: dict[str, Any]) -> list[str]:
+    """
+    Extracts and sorts image URLs for a product dynamically by relevance.
+    """
+    if not isinstance(product, dict):
+        return []
+
+    raw_candidates: list[dict[str, Any] | str] = []
+
+    # 1. Collect all images
+    raw_images = product.get("images", [])
+    if isinstance(raw_images, list):
+        for img in raw_images:
+            if isinstance(img, (dict, str)):
+                raw_candidates.append(img)
+
+    if not raw_candidates:
+        single_img = product.get("image")
+        if isinstance(single_img, (dict, str)):
+            raw_candidates.append(single_img)
+
+    # 2. Score and sort candidates
+    scored = []
+    for idx, cand in enumerate(raw_candidates):
+        url = str(cand.get("src", "")) if isinstance(cand, dict) else str(cand)
+        url = url.strip()
+        if not url:
+            continue
+        score = score_image_candidate(cand)
+        # Preserve original listing position as a secondary tie-breaker
+        scored.append((score, -idx, url))
+
+    scored.sort(reverse=True)
+    return [url for _, _, url in scored]
 
 
 def extract_text_from_image_url(image_url: str, timeout: float = 10.0) -> str:
@@ -56,38 +162,29 @@ def extract_text_from_image_url(image_url: str, timeout: float = 10.0) -> str:
 
 def extract_text_from_product_images(
     product: dict[str, Any],
-    max_images: int = 3,
+    stop_condition: Callable[[str], bool] | None = None,
+    max_images: int = 4,
     timeout: float = 10.0,
 ) -> str:
     """
-    Extracts OCR text from the first N product images in a Shopify product payload.
+    Dynamically extracts OCR text from product images in prioritized order.
+    If stop_condition(current_text) evaluates to True, stops scanning remaining images immediately.
     """
     if not isinstance(product, dict):
         return ""
 
-    image_urls: list[str] = []
-
-    # 1. Check 'images' list (dicts with 'src' or strings)
-    raw_images = product.get("images", [])
-    if isinstance(raw_images, list):
-        for img in raw_images:
-            if isinstance(img, dict) and img.get("src"):
-                image_urls.append(str(img["src"]))
-            elif isinstance(img, str) and img.strip():
-                image_urls.append(img.strip())
-
-    # 2. Check 'image' dict/str fallback
+    image_urls = get_sorted_candidate_image_urls(product)
     if not image_urls:
-        single_img = product.get("image")
-        if isinstance(single_img, dict) and single_img.get("src"):
-            image_urls.append(str(single_img["src"]))
-        elif isinstance(single_img, str) and single_img.strip():
-            image_urls.append(single_img.strip())
+        return ""
 
     extracted_texts: list[str] = []
+
     for url in image_urls[:max_images]:
         text = extract_text_from_image_url(url, timeout=timeout)
         if text:
             extracted_texts.append(text)
+            current_combined = "\n".join(extracted_texts).strip()
+            if stop_condition is not None and stop_condition(current_combined):
+                break
 
     return "\n".join(extracted_texts).strip()

@@ -535,10 +535,14 @@ def infer_metadata(
     rule_process = infer_process_rule_based(product)
     rule_varietal = infer_varietal_rule_based(product)
 
-    # 3. If flavour notes or metadata are missing, attempt OCR on product bag image(s)
+    # 3. If flavour notes or metadata are missing, attempt OCR on product bag image(s) with dynamic early-stopping
     has_images = bool(product.get("images") or product.get("image"))
     if (rule_notes == "unknown" or rule_origin == "unknown") and has_images:
-        ocr_text = extract_text_from_product_images(product)
+        def _has_resolved_flavour(current_ocr: str) -> bool:
+            temp = {**product, "body_html": f"{desc}\n{current_ocr}"}
+            return infer_flavour_notes_rule_based(temp) != "unknown"
+
+        ocr_text = extract_text_from_product_images(product, stop_condition=_has_resolved_flavour)
         if ocr_text:
             combined_product = {**product, "body_html": f"{desc}\n{ocr_text}"}
             if rule_notes == "unknown":
