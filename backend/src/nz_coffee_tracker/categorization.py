@@ -133,6 +133,10 @@ def clean_origin_country(text: str) -> str:
     if not text:
         return "unknown"
     text_lower = text.lower()
+    # Specific New Zealand grown lots
+    if re.search(r"\b(?:pekerau|pekerau hills|whakatane)\b", text_lower):
+        return "New Zealand"
+
     # Filter out NZ roaster headquarters references
     if re.search(r"\b(?:new zealand|aotearoa|auckland|wellington|hamilton|christchurch|dunedin|h-town|italy)\b", text_lower):
         # Remove those specific words before checking country
