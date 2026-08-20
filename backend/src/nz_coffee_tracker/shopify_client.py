@@ -45,8 +45,7 @@ class ShopifyClient:
         # Extract additional page-level metadata (metafield blocks and flavour badge pills)
         try:
             desc = str(product.get("body_html") or product.get("description") or "").strip()
-            is_slow = "slowcoffee" in self.base_url
-            needs_html = not desc or is_slow
+            needs_html = not desc or any(r in self.base_url for r in ("slowcoffee", "wolfcoffee", "atomiccoffee", "ozonecoffee"))
             if needs_html:
                 page_resp = self.session.get(
                     f"{self.base_url}/products/{product_handle}",
@@ -62,13 +61,46 @@ class ShopifyClient:
                         re.DOTALL | re.IGNORECASE,
                     )
                     if blocks:
-                        clean_blocks = [
-                            re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", unescape(b))).strip()
-                            for b in blocks
-                        ]
-                        extra_sections.extend(clean_blocks)
+                        extra_sections.extend(blocks)
 
-                    # 2. Pill/Badge flavor notes (e.g. Slow Coffee)
+                    # 2. Accordions / Collapsible content (e.g. Atomic Coffee)
+                    accordion_blocks = re.findall(
+                        r'<div[^>]*class=\"[^\"]*(?:collapsible-content|accordion__content)[^\"]*\"[^>]*>(.*?)</div>',
+                        page_resp.text,
+                        re.DOTALL | re.IGNORECASE,
+                    )
+                    if accordion_blocks:
+                        extra_sections.extend(accordion_blocks)
+
+                    # 3. Subheadings & Location data (e.g. Ozone Coffee)
+                    ozone_locs = re.findall(
+                        r'<div[^>]*class=[\"\'][^\"\']*locationData[^\"\']*[\"\'][^>]*>(.*?)</div>',
+                        page_resp.text,
+                        re.DOTALL | re.IGNORECASE,
+                    )
+                    for loc in ozone_locs:
+                        clean_loc = re.sub(r"<[^>]+>", "", unescape(loc)).strip()
+                        if clean_loc:
+                            extra_sections.append(f"<p><strong>Origin:</strong> {clean_loc}</p>")
+
+                    ozone_subheadings = re.findall(
+                        r'<h3[^>]*class=[\"\'][^\"\']*(?:tw-text-base|subheading)[^\"\']*[\"\'][^>]*>(.*?)</h3>',
+                        page_resp.text,
+                        re.DOTALL | re.IGNORECASE,
+                    )
+                    for sub in ozone_subheadings:
+                        clean_sub = re.sub(r"<[^>]+>", "", unescape(sub)).strip()
+                        if clean_sub and len(clean_sub) > 3:
+                            # Strip leading product title or repeated words
+                            clean_sub = re.sub(
+                                r"^(?:popay[aá]n\s*decaf|cascadia\s*(?:organic)?\s*decaf|atenas\s*cooperative)\s*",
+                                "",
+                                clean_sub,
+                                flags=re.I,
+                            ).strip()
+                            extra_sections.append(f"<p><strong>Tasting notes:</strong> {clean_sub}</p>")
+
+                    # 4. Pill/Badge flavor notes (e.g. Slow Coffee)
                     pill_matches = re.findall(
                         r'<li[^>]*class=[\"\'][^\"\']*(?:slh-pill|slc__pill)[^\"\']*[\"\'][^>]*>(.*?)</li>',
                         page_resp.text,
@@ -81,11 +113,11 @@ class ShopifyClient:
                             if t not in clean_pills:
                                 clean_pills.append(t)
                     if clean_pills:
-                        extra_sections.append(f"Tasting notes: {', '.join(clean_pills)}")
+                        extra_sections.append(f"<p><strong>Tasting notes:</strong> {', '.join(clean_pills)}</p>")
 
                     if extra_sections:
                         existing_body = str(product.get("body_html") or product.get("description") or "").strip()
-                        product["body_html"] = f"{existing_body} {' '.join(extra_sections)}".strip()
+                        product["body_html"] = f"{'\n\n'.join(extra_sections)}\n\n{existing_body}".strip()
         except Exception:
             pass
 

@@ -158,12 +158,12 @@ def extract_text_from_image_url(image_url: str, timeout: float = 10.0) -> str:
         else:
             bg.paste(img.convert("RGB"))
 
-        # 2x upscale if moderate resolution to enhance small label text
+        # Only upscale small thumbnail / low-res images
         size = getattr(bg, "size", None)
         if isinstance(size, (tuple, list)) and len(size) == 2:
             try:
                 w, h = int(size[0]), int(size[1])
-                if max(w, h) <= 2000:
+                if max(w, h) < 800:
                     resample = getattr(getattr(Image, "Resampling", Image), "LANCZOS", getattr(Image, "LANCZOS", 1))
                     bg = bg.resize((w * 2, h * 2), resample)
             except Exception:
