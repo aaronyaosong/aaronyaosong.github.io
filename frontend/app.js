@@ -2,6 +2,7 @@ import {
   categories,
   filterCategories,
   filterAndSortItems,
+  formatDescription,
   isBundleOrBoxSet,
   isDecaf,
   isOzoneConcentrate,
@@ -158,9 +159,9 @@ export function createApp({
             <li><span>${sizeLabel(row.size_grams)}</span><span>NZD $${Number(row.price_nzd).toFixed(2)} (${pricePerGram(row.price_nzd, row.size_grams)})</span></li>
           `).join("")}</ul>`
         : `<p class="price">${nzPrice(item)} <span class="price-note">Size pricing unavailable</span></p>`;
-      const descriptionContent = item.description ? `<p>${item.description}</p>` : "";
-      const description = descriptionContent
-        ? `<button class="description-toggle" type="button" data-description-toggle>Show description</button><div class="description" hidden>${descriptionContent}</div>`
+      const descriptionHtml = formatDescription(item.description);
+      const description = descriptionHtml
+        ? `<button class="description-toggle" type="button" data-description-toggle>Show description</button><div class="description" hidden>${descriptionHtml}</div>`
         : "";
 
       card.innerHTML = `

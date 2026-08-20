@@ -45,6 +45,35 @@ export function categories(categoryStr) {
   return String(categoryStr || "").split(",").map((part) => part.trim()).filter(Boolean);
 }
 
+export function escapeHtml(str) {
+  return String(str || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+export function formatDescription(desc) {
+  if (!desc) return "";
+  const paragraphs = String(desc)
+    .split(/\n{2,}/)
+    .map((p) => p.trim())
+    .filter(Boolean);
+
+  if (paragraphs.length === 0) return "";
+
+  return paragraphs
+    .map((paragraph) => {
+      const lines = paragraph
+        .split(/\n+/)
+        .map((l) => escapeHtml(l.trim()))
+        .filter(Boolean);
+      return `<p>${lines.join("<br>")}</p>`;
+    })
+    .join("");
+}
+
 function searchableText(value, seen = new Set()) {
   if (value === null || value === undefined) return "";
   if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") {

@@ -71,8 +71,24 @@ def _normalize_text(raw: str) -> str:
 
 def description_text(product: dict[str, Any]) -> str:
     raw = str(product.get("body_html") or product.get("description") or "")
-    text = re.sub(r"<[^>]+>", " ", unescape(raw))
-    return re.sub(r"\s+", " ", text).strip()
+    if not raw:
+        return ""
+    # Convert breaks and block elements to newlines
+    text = re.sub(r"<\s*br\s*/?>", "\n", raw, flags=re.IGNORECASE)
+    text = re.sub(
+        r"</?(?:p|div|h[1-6]|li|ul|ol|tr|table|blockquote|header|section|article)[^>]*>",
+        "\n\n",
+        text,
+        flags=re.IGNORECASE,
+    )
+    # Strip remaining HTML tags
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = unescape(text)
+    # Normalize whitespace per line and collapse excessive newlines
+    lines = [re.sub(r"[ \t]+", " ", line).strip() for line in text.split("\n")]
+    cleaned = "\n".join(lines)
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned).strip()
+    return cleaned
 
 
 def _collect_product_text(product: dict[str, Any]) -> str:

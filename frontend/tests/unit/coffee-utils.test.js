@@ -2,8 +2,10 @@ import { describe, expect, it } from "vitest";
 
 import {
   categories,
+  escapeHtml,
   filterCategories,
   filterAndSortItems,
+  formatDescription,
   isBundleOrBoxSet,
   isBlend,
   isDecaf,
@@ -200,5 +202,15 @@ describe("coffee-utils unit", () => {
     expect(metadataValue(item, "producer")).toBe("arturo arango");
     expect(metadataValue(item, "process")).toBe("natural");
     expect(isDecaf(item)).toBe(true);
+  });
+
+  it("formats multi-paragraph descriptions into clean HTML paragraphs", () => {
+    const text = "TASTING NOTE\n\nFull of fruit sweetness.\n\nFARM INFO\nCountry: Costa Rica\nRegion: Western Valley";
+    const html = formatDescription(text);
+    expect(html).toBe("<p>TASTING NOTE</p><p>Full of fruit sweetness.</p><p>FARM INFO<br>Country: Costa Rica<br>Region: Western Valley</p>");
+  });
+
+  it("escapes special HTML characters in descriptions", () => {
+    expect(escapeHtml("<script>alert('xss') & &lt;</script>")).toBe("&lt;script&gt;alert(&#039;xss&#039;) &amp; &amp;lt;&lt;/script&gt;");
   });
 });

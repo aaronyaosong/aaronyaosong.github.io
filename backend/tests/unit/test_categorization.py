@@ -168,7 +168,7 @@ def test_extracts_metadata_and_flavour_notes_from_description() -> None:
         "title": "Elena Coffee",
         "body_html": "<p>Origin: Colombia</p><p>Producer: Elena Farm</p><p>Process: washed</p><p>Flavour notes: plum, cocoa and caramel</p>",
     }
-    assert description_text(product) == "Origin: Colombia Producer: Elena Farm Process: washed Flavour notes: plum, cocoa and caramel"
+    assert description_text(product) == "Origin: Colombia\n\nProducer: Elena Farm\n\nProcess: washed\n\nFlavour notes: plum, cocoa and caramel"
     assert infer_origin_country(product) == "Colombia"
     assert infer_producer(product) == "Elena Farm"
     assert infer_process(product) == "Washed"

@@ -296,10 +296,22 @@ h2 {
 }
 
 .description {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   color: var(--muted);
   font-size: 0.88rem;
-  line-height: 1.45;
+  line-height: 1.5;
+  background: #fdfbf7;
+  border: 1px solid #ebdccb;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.description p {
+  margin: 0 0 8px;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
 }
 
 .flavour-notes {
