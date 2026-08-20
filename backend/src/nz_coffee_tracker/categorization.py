@@ -61,7 +61,7 @@ def description_text(product: dict[str, Any]) -> str:
 def extract_description_field(product: dict[str, Any], labels: tuple[str, ...]) -> str:
     text = description_text(product)
     label_pattern = "|".join(re.escape(label) for label in labels)
-    next_label = r"origin(?: country)?|country|producer|farm|estate|process(?:ing)?|flavou?r notes|tasting notes|notes|variety|varietal"
+    next_label = r"origin(?: country)?|country|producer|farm|estate|process(?:ing)?|process method|processing method|flavou?r notes|tasting notes|notes|variety|varietal|altitude|region"
     match = re.search(
         rf"(?:{label_pattern})\s*[:\-]\s*(.*?)(?=\s+(?:{next_label})\s*[:\-]|$|[.;|\n])",
         text,
@@ -149,7 +149,7 @@ CANONICAL_PROCESSES = (
     (r"\bcarbonic\b", "Carbonic Maceration"),
     (r"\bwashed\s+double\s+ferment(?:ed)?\b", "Washed Double Fermented"),
     (r"\bdouble\s+ferment(?:ed|ation)?\b", "Double Fermented"),
-    (r"\bco-?ferment(?:ed|ation)?\b", "Co-Ferment"),
+    (r"\bco[-\s]?ferment(?:ed|ation|ing)?\b", "Co-Ferment"),
     (r"\bmosto\s+washed\b", "Mosto Washed"),
     (r"\badvanced\s+washed\b", "Advanced Washed"),
     (r"\bpulped\s+natural\b", "Pulped Natural"),
@@ -230,7 +230,7 @@ def infer_process_rule_based(product: dict[str, Any]) -> str:
             return cleaned
 
     # 2. Check labeled process field
-    labeled = extract_description_field(product, ("process", "processing", "processing method"))
+    labeled = extract_description_field(product, ("process", "processing", "processing method", "process method"))
     if labeled and labeled != "unknown":
         cleaned = clean_process(labeled)
         if cleaned != "unknown":
@@ -396,6 +396,9 @@ def infer_metadata(
         ):
             clean_cached_origin = clean_origin_country(cached.get("origin_country") or "")
             clean_cached_process = clean_process(cached.get("process") or "")
+            # Re-evaluate process if co-ferment is in description but missing from cache
+            if ("co-ferment" in desc.lower() or "co ferment" in desc.lower() or "coferment" in desc.lower()) and "Co-Ferment" not in clean_cached_process:
+                clean_cached_process = infer_process_rule_based(product)
             clean_cached_notes = format_flavour_notes(cached.get("flavour_notes") or "")
             clean_cached_varietal = format_varietal(cached.get("varietal") or "")
             return {

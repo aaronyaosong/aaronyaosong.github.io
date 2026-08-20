@@ -196,3 +196,14 @@ def test_nlp_extracts_flavour_notes_without_explicit_label() -> None:
     assert "Stone Fruit" in infer_flavour_notes(lexicon_prod, use_llm=False)
     assert "Chocolate" in infer_flavour_notes(lexicon_prod, use_llm=False)
 
+
+@pytest.mark.unit
+def test_extracts_co_ferment_from_blend_process_method() -> None:
+    product = {
+        "title": "Tropical Rush - Fruity Blend (Filter)",
+        "body_html": "<p>Flavour: Pineapple, Mixed Berries</p><p>Process Method: Natural + Pineapple Honey Co-Fermentation</p><p>Varietal: Heirloom + Castillo</p>",
+    }
+    proc = infer_process(product)
+    assert "Co-Ferment" in proc
+    assert "Natural" in proc
+
