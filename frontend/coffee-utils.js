@@ -128,10 +128,13 @@ export function filterAndSortItems(
     .filter((item) => {
       const categoryMatch = activeCategory === "all" || filterCategories(item).includes(activeCategory);
       const sourceMatch = activeSource === "all" || item.source === activeSource;
-      const varietalMatch = activeVarietal === "all" || categories(item.varietal || "").includes(activeVarietal);
-      const originMatch = activeOriginCountry === "all" || metadataValue(item, "origin_country") === activeOriginCountry;
+      const varietalMatch = activeVarietal === "all"
+        || (metadataValue(item, "varietal") || "").toLowerCase().split(",").map((v) => v.trim()).includes(activeVarietal.toLowerCase());
+      const originMatch = activeOriginCountry === "all"
+        || (metadataValue(item, "origin_country") || "").toLowerCase().split(",").map((o) => o.trim()).includes(activeOriginCountry.toLowerCase());
       const producerMatch = activeProducer === "all" || metadataValue(item, "producer") === activeProducer;
-      const processMatch = activeProcess === "all" || metadataValue(item, "process") === activeProcess;
+      const processMatch = activeProcess === "all"
+        || (metadataValue(item, "process") || "").toLowerCase().split(",").map((p) => p.trim()).includes(activeProcess.toLowerCase());
       const decafMatch = activeDecaf === "all" || String(isDecaf(item)) === activeDecaf;
       const blendMatch = activeBlend === "all"
         || (activeBlend === "true" && isBlend(item))

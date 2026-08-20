@@ -51,7 +51,7 @@ def test_scrape_rocket_maps_product_payload(monkeypatch: pytest.MonkeyPatch) -> 
     assert row.product_url.endswith("/rocket-espresso-blend")
     assert row.origin_country == "Colombia"
     assert row.producer == "Elena Farm"
-    assert row.flavour_notes == "plum, cocoa"
+    assert row.flavour_notes == "Plum, Cocoa"
 
 
 @pytest.mark.integration

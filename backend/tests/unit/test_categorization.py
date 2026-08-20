@@ -154,7 +154,7 @@ def test_category_values_split_and_trim() -> None:
 @pytest.mark.unit
 def test_infer_varietal_detects_multiple_varieties() -> None:
     product = {"title": "Don Claudio Project - Caturra - Catuai - Obata"}
-    assert infer_varietal(product) == "caturra,catuai,obata"
+    assert infer_varietal(product) == "Caturra, Catuai, Obata"
 
 
 @pytest.mark.unit
@@ -172,7 +172,7 @@ def test_extracts_metadata_and_flavour_notes_from_description() -> None:
     assert infer_origin_country(product) == "Colombia"
     assert infer_producer(product) == "Elena Farm"
     assert infer_process(product) == "Washed"
-    assert infer_flavour_notes(product) == "plum, cocoa and caramel"
+    assert infer_flavour_notes(product) == "Plum, Cocoa, Caramel"
 
 
 @pytest.mark.unit
@@ -181,13 +181,13 @@ def test_nlp_extracts_flavour_notes_without_explicit_label() -> None:
     rocket_prod = {
         "body_html": "<p>Arturo's natural Castillo is sweet & fruity with favours of raspberry, passionfruit & turkish delight. Roasted in H-town 17 AUG 2026</p>"
     }
-    assert infer_flavour_notes(rocket_prod, use_llm=False) == "raspberry, passionfruit & turkish delight"
+    assert infer_flavour_notes(rocket_prod, use_llm=False) == "Raspberry, Passionfruit, Turkish Delight"
 
     # Slow PO 'In the cup:' style
     slow_prod = {
         "body_html": "<p>In the cup: lemonade ice block, gumball, blossom and creamy soda. It tastes like summer.</p>"
     }
-    assert infer_flavour_notes(slow_prod, use_llm=False) == "lemonade ice block, gumball, blossom and creamy soda"
+    assert infer_flavour_notes(slow_prod, use_llm=False) == "Lemonade Ice Block, Gumball, Blossom, Creamy Soda"
 
     # Lexicon fallback style
     lexicon_prod = {

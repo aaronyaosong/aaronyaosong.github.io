@@ -136,16 +136,17 @@ export function createApp({
         .map((cat) => `<span class="badge category" data-category="${cat.toLowerCase()}">${cat}</span>`)
         .join("");
 
-      const originVal = item.origin_country && item.origin_country !== "unknown" ? item.origin_country : "";
-      const processVal = item.process && item.process !== "unknown" ? item.process : "";
-      const producerVal = item.producer && item.producer !== "unknown" ? item.producer : "";
-      const varietalVal = item.varietal && item.varietal !== "unknown" ? item.varietal : "";
+      const originBadges = (item.origin_country && item.origin_country !== "unknown")
+        ? item.origin_country.split(",").map((o) => `<span class="badge origin">${o.trim()}</span>`).join("")
+        : "";
 
-      const originBadge = originVal ? `<span class="badge origin">${originVal}</span>` : "";
-      const processBadge = processVal ? `<span class="badge process">${processVal}</span>` : "";
+      const processBadges = (item.process && item.process !== "unknown")
+        ? item.process.split(",").map((p) => `<span class="badge process">${p.trim()}</span>`).join("")
+        : "";
 
-      const producerMeta = producerVal ? `<p class="card-meta"><strong>Producer:</strong> ${producerVal}</p>` : "";
-      const varietalMeta = varietalVal ? `<p class="card-meta"><strong>Variety:</strong> ${varietalVal}</p>` : "";
+      const varietalMeta = item.varietal && item.varietal !== "unknown"
+        ? `<p class="card-meta"><strong>Variety:</strong> ${item.varietal}</p>`
+        : "";
 
       const flavourNotes = item.flavour_notes && item.flavour_notes !== "unknown"
         ? `<p class="flavour-notes"><strong>Flavour:</strong> ${item.flavour_notes}</p>`
@@ -167,10 +168,9 @@ export function createApp({
         <div class="badges">
           <span class="badge source">${sourceName(item.source)}</span>
           ${categoryBadges}
-          ${originBadge}
-          ${processBadge}
+          ${originBadges}
+          ${processBadges}
         </div>
-        ${producerMeta}
         ${varietalMeta}
         ${flavourNotes}
         ${description}
@@ -196,12 +196,18 @@ export function createApp({
       populateSelect(sourceSelect, new Set(state.items.map((item) => item.source)), "All stores", sourceName);
 
       const origins = new Set(
-        state.items.map((item) => metadataValue(item, "origin_country")).filter((v) => v && v !== "unknown")
+        state.items.flatMap((item) => {
+          const o = metadataValue(item, "origin_country");
+          return o && o !== "unknown" ? o.split(",").map((s) => s.trim()) : [];
+        })
       );
       populateSelect(originSelect, origins, "All origins", (v) => v.replace(/\b\w/g, (c) => c.toUpperCase()));
 
       const processes = new Set(
-        state.items.map((item) => metadataValue(item, "process")).filter((v) => v && v !== "unknown")
+        state.items.flatMap((item) => {
+          const p = metadataValue(item, "process");
+          return p && p !== "unknown" ? p.split(",").map((s) => s.trim()) : [];
+        })
       );
       populateSelect(processSelect, processes, "All processes", (v) => v.replace(/\b\w/g, (c) => c.toUpperCase()));
 

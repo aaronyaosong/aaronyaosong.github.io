@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T02:54:19+00:00",
+  "generated_at": "2026-08-20T03:02:33+00:00",
   "count": 153,
   "items": [
     {
@@ -13,8 +13,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "caturra",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -26,7 +26,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Arturo's washed Caturra is super sweet & easy to drink, with flavours of candy apple, blackberry & marmalade. Roasted in H-town 12 AUG 2026",
-      "flavour_notes": "candy apple, blackberry & marmalade"
+      "flavour_notes": "Candy Apple, Blackberry, Marmalade"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -39,8 +39,8 @@
       "price_min_nzd": 50.0,
       "price_max_nzd": 50.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "sudan rume",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Sudan Rume",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -52,7 +52,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "Arturo\u2019s Yellow Sudan Rume is wonderful, sweet with a floral aroma & flavours of blackberry, tangelo, blueberry, elderflower & lemon zest. Roasted in H-town 11 AUG 2026",
-      "flavour_notes": "blackberry, tangelo, blueberry, elderflower & lemon zest"
+      "flavour_notes": "Blackberry, Tangelo, Blueberry, Elderflower, Lemon Zest"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -65,8 +65,8 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "castillo",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Castillo",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -78,7 +78,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "This washed Castillo is sweet with flavours of strawberry, raspberry & panela. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "strawberry, raspberry & panela"
+      "flavour_notes": "Strawberry, Raspberry, Panela"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -91,8 +91,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "ruiru 11,sl28,sl34,batian",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Ruiru 11, SL28, SL34, Batian",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -104,7 +104,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "This is a tasty peaberry selection. It's juicy with flavours of lemon verbena, redcurrant & apricot, Roasted in H-town 19 AUG 2026",
-      "flavour_notes": "lemon verbena, redcurrant & apricot"
+      "flavour_notes": "Lemon Verbena, Redcurrant, Apricot"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -117,8 +117,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "ruiru 11,sl28,sl34,batian",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Ruiru 11, SL28, SL34, Batian",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -130,7 +130,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "This Kenyan has flavours of ribena, Syrah & ripe apricot. Roasted in H-town 13 AUG 2026",
-      "flavour_notes": "ribena, Syrah & ripe apricot"
+      "flavour_notes": "Ribena, Syrah, Ripe Apricot"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -143,8 +143,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "castillo,caturra",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Castillo, Caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -156,7 +156,7 @@
       "process": "Natural Decaf",
       "decaf": true,
       "description": "This is a delicious natural decaf from Jairo. It has flavours of peach, passionfruit & cherry cola\u2026\u2026 Roasted in H- town 17 AUG 2026",
-      "flavour_notes": "peach, passionfruit & cherry cola\u2026\u2026"
+      "flavour_notes": "Peach, Passionfruit, Cherry Cola"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -169,8 +169,8 @@
       "price_min_nzd": 42.0,
       "price_max_nzd": 42.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "sidra",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Sidra",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -182,7 +182,7 @@
       "process": "Washed Double Fermented",
       "decaf": false,
       "description": "July Jumbo\u2019s washed Sidra has flavours of creaming soda, peach & raspberry. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "creaming soda, peach & raspberry"
+      "flavour_notes": "Creaming Soda, Peach, Raspberry"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -195,8 +195,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "ruiru 11,sl28,sl34,batian",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Ruiru 11, SL28, SL34, Batian",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -208,7 +208,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Karundu is heavy-bodied with flavours of tinned blackberries, peach & cola. Roasted in H-town 19 AUG 2026",
-      "flavour_notes": "tinned blackberries, peach & cola"
+      "flavour_notes": "Tinned Blackberries, Peach, Cola"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -221,8 +221,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "ruiru 11,sl28,sl34,batian",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Ruiru 11, SL28, SL34, Batian",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -234,7 +234,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Kiunyu has flavours of blackcurrant, hibiscus & red liquorice. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "blackcurrant, hibiscus & red liquorice"
+      "flavour_notes": "Blackcurrant, Hibiscus, Red Liquorice"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -247,8 +247,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "caturra",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -260,7 +260,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "Luz' naturally processed Caturra is a great coffee with flavours of purple winegums, ripe red plum & a floral aroma Roasted in H-town 19 AUG 2026",
-      "flavour_notes": "purple winegums, ripe red plum & a floral aroma"
+      "flavour_notes": "Purple Winegums, Ripe Red Plum, A Floral Aroma"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -273,7 +273,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -286,7 +286,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "This is the first Aji cultivar we\u2019ve offered & it\u2019s a doozy. It\u2019s very sweet, clean & juicy with flavours of ripe blueberry, apple syrup & gold kiwifruit. Roasted in H-town 14 AUG 2026",
-      "flavour_notes": "ripe blueberry, apple syrup & gold kiwifruit"
+      "flavour_notes": "Ripe Blueberry, Apple Syrup, Gold Kiwifruit"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -299,8 +299,8 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "geisha",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Geisha",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -312,7 +312,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "This Geisha from Paola & Carlos has a floral rose aroma & flavours of strawberry milkshake & marshmallow. Roasted in H-town 14 AUG 2026",
-      "flavour_notes": "strawberry milkshake & marshmallow"
+      "flavour_notes": "Strawberry Milkshake, Marshmallow"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -325,8 +325,8 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "java",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Java",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -338,7 +338,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "The last in our trifecta of Trujillo roasts, Paola & Carlos\u2019 washed Java has flavours of apricot, cardamom & cr\u00e8me br\u00fbl\u00e9e. Roasted in H-town 19 AUG 2026",
-      "flavour_notes": "apricot, cardamom & cr\u00e8me br\u00fbl\u00e9e"
+      "flavour_notes": "Apricot, Cardamom, Cr\u00e8me Br\u00fbl\u00e9e"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -351,8 +351,8 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "castillo,caturra",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Castillo, Caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -364,7 +364,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "This Peru is sweet & clean with flavours of apricot, black tea & lime. Roasted in H-town 19 AUG 2026",
-      "flavour_notes": "apricot, black tea & lime"
+      "flavour_notes": "Apricot, Black Tea, Lime"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -377,8 +377,8 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "geisha",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Geisha",
       "size_prices": [
         {
           "size_grams": 100.0,
@@ -390,7 +390,7 @@
       "process": "Anaerobic Natural",
       "decaf": false,
       "description": "This anaerobic slow dry natural Geisha from Wilford & Wilford is syrupy with flavours of strawberry, orange blossom, blackberry & bergamot. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "strawberry, orange blossom, blackberry & bergamot"
+      "flavour_notes": "Strawberry, Orange Blossom, Blackberry, Bergamot"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -403,8 +403,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 95.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "castillo",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Castillo",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -420,7 +420,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "Arturo's natural Castillo is sweet & fruity with favours of raspberry, passionfruit & turkish delight. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "raspberry, passionfruit & turkish delight"
+      "flavour_notes": "Raspberry, Passionfruit, Turkish Delight"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -433,7 +433,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 70.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -463,8 +463,8 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 88.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "caturra,catuai,obata",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Caturra, Catuai, Obata",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -480,7 +480,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "This is a heavy-bodied, sweet coffee with flavours of mango, strawberry & red apple. Roasted in H-town 17 AUG 2026",
-      "flavour_notes": "mango, strawberry & red apple"
+      "flavour_notes": "Mango, Strawberry, Red Apple"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -493,8 +493,8 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "idido memeru demese",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Idido Memeru Demese",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -523,7 +523,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -540,7 +540,7 @@
       "process": "unknown",
       "decaf": false,
       "description": "This is our second-best selling espresso blend, it is our darkest [but not dark, oily & roasty] espresso blend. Currently it\u2019s a 50:50 blend of Francisco Isidro Pereira from Brasil & ASPROTIMAN\u00c1 from Colombia. Perfect as a flat white. Dulce is sweet with flavours of milk chocolate & caramel. As a black coffee, you\u2019ll find dark chocolate, brown sugar & roasted almonds.",
-      "flavour_notes": "milk chocolate & caramel"
+      "flavour_notes": "Milk Chocolate, Caramel"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -553,8 +553,8 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 91.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "caturra",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -570,7 +570,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Jairo\u2019s washed Caturra has flavours of red plum, apple juice & honey. Roasted in H-town 18 AUG 2026",
-      "flavour_notes": "red plum, apple juice & honey"
+      "flavour_notes": "Red Plum, Apple Juice, Honey"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -583,8 +583,8 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
-      "varietal": "java",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
+      "varietal": "Java",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -600,7 +600,7 @@
       "process": "Carbonic Maceration",
       "decaf": false,
       "description": "This is very sweet & syrupy with flavours of peach, orange juice & ripe pineapple. Roasted in H-Town 17 AUG 2026",
-      "flavour_notes": "peach, orange juice & ripe pineapple"
+      "flavour_notes": "Peach, Orange Juice, Ripe Pineapple"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -613,7 +613,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2026-08-20T14:26:48+12:00",
-      "scraped_at": "2026-08-20T02:53:57+00:00",
+      "scraped_at": "2026-08-20T03:02:09+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -643,7 +643,7 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2026-08-20T14:32:33+12:00",
-      "scraped_at": "2026-08-20T02:53:58+00:00",
+      "scraped_at": "2026-08-20T03:02:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -701,7 +701,7 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2026-08-20T14:32:33+12:00",
-      "scraped_at": "2026-08-20T02:53:58+00:00",
+      "scraped_at": "2026-08-20T03:02:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -759,7 +759,7 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2026-08-20T14:32:33+12:00",
-      "scraped_at": "2026-08-20T02:53:58+00:00",
+      "scraped_at": "2026-08-20T03:02:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -804,7 +804,7 @@
       "process": "unknown",
       "decaf": false,
       "description": "This subscription is for our Organic espresso blend, it's seasonal, changing throughout the year as fresh crop coffee arrives into the country. This is for 12 deliveries, choose either 250g or 500g sent weekly, fortnightly or monthly... because you're prepaying we'll charge the 1kg rate. For more information on the current Organic espresso blend click here All subscriptions include freight. For any changes to your subscription or help on coffee brewing of all methods i.e. espresso, plunger etc fire an email through to espresso@rocketcoffee.co.nz",
-      "flavour_notes": "Organic, Seasonal, Fresh, Crop"
+      "flavour_notes": "unknown"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -817,7 +817,7 @@
       "price_min_nzd": 72.0,
       "price_max_nzd": 480.0,
       "updated_at": "2026-08-20T14:32:33+12:00",
-      "scraped_at": "2026-08-20T02:53:58+00:00",
+      "scraped_at": "2026-08-20T03:02:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -863,7 +863,7 @@
       "price_min_nzd": 84.0,
       "price_max_nzd": 576.0,
       "updated_at": "2026-08-20T14:32:33+12:00",
-      "scraped_at": "2026-08-20T02:53:58+00:00",
+      "scraped_at": "2026-08-20T03:02:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -909,8 +909,8 @@
       "price_min_nzd": 28.5,
       "price_max_nzd": 28.5,
       "updated_at": "2026-08-20T13:22:24+12:00",
-      "scraped_at": "2026-08-20T02:54:03+00:00",
-      "varietal": "typica",
+      "scraped_at": "2026-08-20T03:02:17+00:00",
+      "varietal": "Typica",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -935,8 +935,8 @@
       "price_min_nzd": 29.0,
       "price_max_nzd": 29.0,
       "updated_at": "2026-08-20T13:22:24+12:00",
-      "scraped_at": "2026-08-20T02:54:03+00:00",
-      "varietal": "ruiru 11,batian",
+      "scraped_at": "2026-08-20T03:02:17+00:00",
+      "varietal": "Ruiru 11, Batian",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -961,8 +961,8 @@
       "price_min_nzd": 31.0,
       "price_max_nzd": 31.0,
       "updated_at": "2026-08-20T13:22:24+12:00",
-      "scraped_at": "2026-08-20T02:54:03+00:00",
-      "varietal": "bourbon",
+      "scraped_at": "2026-08-20T03:02:17+00:00",
+      "varietal": "Bourbon",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -987,8 +987,8 @@
       "price_min_nzd": 20.5,
       "price_max_nzd": 82.0,
       "updated_at": "2026-08-20T13:22:24+12:00",
-      "scraped_at": "2026-08-20T02:54:03+00:00",
-      "varietal": "catuai",
+      "scraped_at": "2026-08-20T03:02:17+00:00",
+      "varietal": "Catuai",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1017,7 +1017,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-08-20T13:15:52+12:00",
-      "scraped_at": "2026-08-20T02:54:03+00:00",
+      "scraped_at": "2026-08-20T03:02:17+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -1025,7 +1025,7 @@
       "process": "unknown",
       "decaf": false,
       "description": "Not sure which espresso blend you would like most? We\u2019ve made it easier for you to decide by bundling our top-selling blends at a cheeky discounted price. Veloce (250g) is our flagship blend, the one you\u2019ll find in most cafes serving Atomic. It\u2019s crafted to make a smooth, complex espresso with notes of dark chocolate, cinnamon and stone fruit. and a balanced flat white. Supremo (250g) is for the \u2018strong\u2019 coffee lovers \u2013 full-bodied, rich in deep chocolate undertones, and elevated by a confectionary sweetness that becomes caramel-like with milk. Our notes for this blend are cacao nibs, marshmallow and clove . Bundle these two classics together and save $6.00!",
-      "flavour_notes": "dark chocolate, cinnamon and stone fruit"
+      "flavour_notes": "Dark Chocolate, Cinnamon, Stone Fruit"
     },
     {
       "source": "atomiccoffee.co.nz",
@@ -1038,7 +1038,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
       "updated_at": "2026-08-20T13:15:52+12:00",
-      "scraped_at": "2026-08-20T02:54:03+00:00",
+      "scraped_at": "2026-08-20T03:02:17+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1055,7 +1055,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Veloce is our flagship blend - a rich, sweet and complex espresso that pours like velvet. Roasted delicately so notes of bittersweet chocolate, cinnamon spice and ripe stone fruit cut through. Delicious with or without milk, it's true espresso - the aficionados\u2019 choice.",
-      "flavour_notes": "bittersweet chocolate, cinnamon spice and ripe stone fruit cut through"
+      "flavour_notes": "Bittersweet Chocolate, Cinnamon Spice, Ripe Stone Fruit Cut Through"
     },
     {
       "source": "atomiccoffee.co.nz",
@@ -1068,7 +1068,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
       "updated_at": "2026-08-20T13:15:52+12:00",
-      "scraped_at": "2026-08-20T02:54:03+00:00",
+      "scraped_at": "2026-08-20T03:02:17+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1085,7 +1085,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Called Supremo for a reason, it is a blend with remarkable full-bodied sweetness, great depth of flavour and complexity, and lingering clove and cinnamon spice notes. As an espresso, Supremo has strong dark cocoa flavours, a creamy, smooth body and a soft sweet finish.",
-      "flavour_notes": "with remarkable full-bodied sweetness, great depth of"
+      "flavour_notes": "With Remarkable Full-Bodied Sweetness, Great Depth Of"
     },
     {
       "source": "atomiccoffee.co.nz",
@@ -1098,8 +1098,8 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
       "updated_at": "2026-08-20T13:15:52+12:00",
-      "scraped_at": "2026-08-20T02:54:03+00:00",
-      "varietal": "catuai",
+      "scraped_at": "2026-08-20T03:02:17+00:00",
+      "varietal": "Catuai",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1115,7 +1115,7 @@
       "process": "Washed",
       "decaf": true,
       "description": "When it comes to flavour there is nothing weak or washed out about our organic decaf. Mountain water decaffeination removes the caffeine naturally and ensures that the body is retained. The result is malt buttery sweetness, a silky smooth body and delightfully clean finish. A decaf that actually tastes like coffee. Origin: Honduras, Marcala Cooperative: COMSA Variety: Lempira, Catuai, Catimor Processing: Fully washed, mountain water decaffeination Altitude : 1,200-1,800 masl Roast Depth : Medium Characteristics Body: silky Acidity: medium Finish: clean Flavour notes: Malt, molasses Recommended use Espresso, stovetop, plunger, Aeropress, filter",
-      "flavour_notes": "Malt, molasses"
+      "flavour_notes": "Malt, Molasses"
     },
     {
       "source": "atomiccoffee.co.nz",
@@ -1128,8 +1128,8 @@
       "price_min_nzd": 27.5,
       "price_max_nzd": 27.5,
       "updated_at": "2026-08-20T13:15:52+12:00",
-      "scraped_at": "2026-08-20T02:54:03+00:00",
-      "varietal": "bourbon",
+      "scraped_at": "2026-08-20T03:02:17+00:00",
+      "varietal": "Bourbon",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1141,7 +1141,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "Brazil, reimagined.This one starts out as you might expect for a Brazil, with a solid foundation of creamy nuts, honey and cocoa, it then transitions into bright florals and citric acidity bringing freshness. Silky with clear notes of toffee and a light, refreshing finish, this is a Brazil that trades heaviness for elegance and vibrancy. Variety: Yellow Bourbon Processing: Natural Flavour notes: Pomelo, Floral Honey, Pistachio With milk: Almond , Black Tea Recommended use: Espresso",
-      "flavour_notes": "Pomelo, Floral Honey, Pistachio With milk: Almond , Black Tea"
+      "flavour_notes": "Pomelo, Floral Honey, Pistachio With Milk: Almond, Black Tea"
     },
     {
       "source": "ozonecoffee.co.nz",
@@ -1154,7 +1154,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1192,7 +1192,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1230,7 +1230,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1268,7 +1268,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 205.5,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1306,8 +1306,8 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 71.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
-      "varietal": "caturra",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
+      "varietal": "Caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1327,7 +1327,7 @@
       "process": "Washed",
       "decaf": true,
       "description": "TASTING NOTES This sweet and gentle cup has an orange and honeycomb sweetness over a milk chocolate edge for a balanced and moreish blend. FARM INFO All the flavour \u2013 half the caffeine. Half Caff delivers a delicious and moreish cup made with a 50/50 blend to provide a half-caffeinated coffee. We use a quality decaffeinated specialty coffee that has been processed using the sugar cane method, preserving the original flavours of the coffee while adding fruity notes and some complexity to the cup. Region El Yalcon / Huila, Colombia San Patricio Estate / Palencia, Guatemala Process/Variety Washed Sugar Cane Decaffeinated / Caturra, Colombia Washed / Mixed varietals BREW GUIDE Espresso Recipe Dose: 18g Yield: 38g Time: 25-30 secs To find the method that suits your kit, check out our Brew Guides .",
-      "flavour_notes": "coffee while adding fruity notes and some complexity to the cup"
+      "flavour_notes": "Coffee While Adding Fruity Notes, Some Complexity To The Cup"
     },
     {
       "source": "ozonecoffee.co.nz",
@@ -1340,7 +1340,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 69.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1374,7 +1374,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1412,8 +1412,8 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 210.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
-      "varietal": "castillo,caturra",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
+      "varietal": "Castillo, Caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1450,8 +1450,8 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
-      "varietal": "castillo,caturra,typica",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
+      "varietal": "Castillo, Caturra, Typica",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1471,7 +1471,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Juicy flavours of tangerine and stone-fruits combine with caramel and a hint of cacao nibs, with sugar cane in the finish. Located in the Cauca department of southwestern Colombia, the Meseta de Popay\u00e1n sits nestled between the Western and Central ranges of the Andes at 1,700 to 2,000 metres above sea level. The surrounding mountain ranges act as a natural buffer \u2013 keeping temperatures steady between 14 and 29\u00b0C year-round, humidity around 75%, and creating a gradual growing season that allows sugars to build slowly and thoroughly. The result is a coffee that's bright and clean, with that signature Cauca sweetness baked in. This coffee comes to us through Cofinet, a Colombian importer who've been running the Popay\u00e1n Reserve project since 2015. They work closely with around 75 smallholder farmers in the region, most growing on plots of less than five hectares. Cherries are milled at Cofinet's Meseta de Popay\u00e1n facility, where processing and quality control are handled centrally. In return, farmers can earn premiums of up to 20% above market price \u2013 tied directly to cup quality, so the incentive to bring in the best cherries runs deep. Cofinet also sends agronomists to work with individual producers directly, and invites farmers to cup their own coffees. The latter might sound like an obvious step, but producers delivering to mills often never taste their own work. These cuppings change that. The varieties here \u2013 Colombia, Castillo, Caturra, Catimor, and Typica \u2013 tell a distinctly Colombian story. Castillo and the Colombia variety are sometimes met with a raised eyebrow in specialty circles; both are rust-resistant hybrids developed by Cenicaf\u00e9, Colombia's national coffee research centre, and have historically been associated with commodity rather than specialty production. Grown at this altitude, and with this level of care behind them, that reputation doesn't hold. Caturra and Typica contribute brightness and clarity; Castillo and the Colombia variety add body and structure. Together, they make a cup that's more interesting than any one of them would be alone. A washed process keeps things clean and transparent, letting the terroir speak clearly. One small thing worth knowing: Cauca experiences drier conditions in the middle of the year and more rainfall at the start and end. Since coffee is harvested throughout the year across the region, there can be minor variations in moisture content in the green coffee between lots. Nothing that affects the cup meaningfully \u2013 but worth a mention if you're a bit of a coffee nerd about these things. Country: Colombia Department: Cauca Town: Popay\u00e1n Varieties: Colombia, Castillo, Caturra, Catimor and Typica Processing Method: Washed Crop Year: 2025 No. of contributing producers: ~75 smallholders Average farm size: Under 5 hectares Altitude: 1,700 - 2,000 metres above sea level Mill: Meseta de Popay\u00e1n",
-      "flavour_notes": "tangerine and stone-fruits combine with caramel and a hint of cacao nibs, with sugar cane in the finish"
+      "flavour_notes": "Tangerine, Stone-Fruits Combine With Caramel, A Hint Of Cacao Nibs, With Sugar Cane In The Finish"
     },
     {
       "source": "ozonecoffee.co.nz",
@@ -1484,7 +1484,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 78.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1505,7 +1505,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "TASTING NOTES Vivid notes of berry jam, black cherry, and apricot, complemented by a complex finish of dark cocoa and vanilla, all wrapped in a rich, full-bodied mouthfeel. FARM INFO The Tokuma Group Blend represents the shared work of a remarkable circle of smallholder farmers in Western Ethiopia\u2019s Agaro region. The Tokuma producers first came together informally to exchange agronomy practices and support each other in marketing coffee. Today, they have grown into a formal collective, united by their commitment to quality, innovation, and transparency. This blend is composed of lots from multiple Tokuma members: Mensur Abahika, Nesru Aba Nura, Mohammed Aba Nura, and Biya Faris. Each farmer carefully manages cultivation and processing on their own land, ensuring excellent traceability. Coffees are dried slowly on raised beds for around three weeks, yielding sweetness, clarity, and expressive fruit character. The emergence of Tokuma reflects a broader shift in Ethiopian coffee. Regulatory changes have allowed more producers to obtain export licenses and sell directly, bypassing the traditional ECX system that once blurred farm-level identity. Tokuma farmers have seized this opportunity, highlighting the unique character of their coffees while securing better compensation for their work. Country: Ethiopia Region: Oromia Zone: Jimma Woreda: Gomma Collective: Tokuma Farmer Group Varietals: JARC 74110 & JARC 74112 Processing: Natural Producers: Mensur Abahika, Mohammad Aba Nura, Nesru Aba Nura & Biya Faris Altitude: 1,950 - 2,150 m.a.s.l.",
-      "flavour_notes": "berry jam, black cherry, and apricot, complemented by a complex finish of dark cocoa and vanilla, all wrapped in a rich, full-bodied mouthfeel"
+      "flavour_notes": "Berry Jam, Black Cherry, And Apricot, Complemented By A Complex Finish Of Dark Cocoa, Vanilla, All Wrapped In A Rich, Full-Bodied Mouthfeel"
     },
     {
       "source": "ozonecoffee.co.nz",
@@ -1518,8 +1518,8 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
-      "varietal": "catuai",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
+      "varietal": "Catuai",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1552,7 +1552,7 @@
       "price_min_nzd": 122.0,
       "price_max_nzd": 122.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Ethiopia",
@@ -1573,8 +1573,8 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
-      "varietal": "caturra,catuai",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
+      "varietal": "Caturra, Catuai",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1607,7 +1607,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1641,8 +1641,8 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
-      "varietal": "caturra,bourbon,geisha,java",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
+      "varietal": "Caturra, Bourbon, Geisha, Java",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1662,7 +1662,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "TASTING NOTE This complex, elegant but juicy cup starts with cherry cordial before a burst of white grape and then a squeeze of tangerine. FARM INFO Named after the annual festival celebrating wishes and abundance, Bolivia Las Alasitas is a coffee built on vision and possibility. \"Las Alasitas\" translates to \"buy me\" in Aymara, and during the festival \u2013 which kicks off each year on 24th January in La Paz \u2013 locals purchase miniature figurines representing their hopes for the coming year. Everything from tiny cars to miniature coffee sacks are blessed by yatiris (traditional healers) and Catholic priests alike, then given to friends and family in the belief that recipients will receive the real thing before the year is out. At the heart of it all sits Ekeko, the Aymara god of abundance \u2013 a chubby, moustachioed figure laden with baskets and bags, who watches over Bolivian households and rewards generosity. It's a fitting name for a farm where the Rodr\u00edguez family continue to plant seeds \u2013 both literally and figuratively \u2013 for the future of Bolivian coffee. This full-bodied washed coffee delivers a beautifully rich texture that carries flavours of marzipan and brown sugar, with a gentle hint of milk chocolate that deepens into dark chocolate on the aftertaste. The Yellow Caturra variety \u2013 a compact, golden-fruited mutation of Bourbon first selected in Brazil \u2013 tends toward tropical fruit sweetness at altitude. Here, though, the family's anaerobic washed processing tempers that brightness into something rounder and more confectionery. Grown at 1,642 metres above sea level in Bolinda \u2013 a steep, green valley whose name is a contraction of \"Bolivia Linda\" (Beautiful Bolivia) \u2013 Las Alasitas benefits from cool nights and mild days that slow the ripening of cherries. This extended maturation allows sugars to concentrate and complexity to build, resulting in a cup that rewards those who appreciate the finer details of speciality coffee. After selective hand-picking, cherries are delivered to Agricafe's Buena Vista mill in Caranavi, where they undergo flotation sorting before depulping. From there, wet parchment is placed in sealed stainless steel fermentation tanks \u2013 the same kind you'd find in a winery \u2013 where onsite oenologist Iv\u00e1n Hugas has prepared what the family call mosto: a carefully calibrated solution of harvested yeasts and bacteria that catalyses a controlled anaerobic fermentation. The tanks are closely monitored throughout, with the coffee removed after around 48 hours once the desired fermentation is complete. The parchment is then pressure-washed clean and dried \u2013 either on raised beds or in the family's signature \"coco\" dryers (gentle-heat box dryers Pedro discovered during his time in peanut production), depending on humidity. Finally, it rests at La Luna, the family's state-of-the-art dry mill in La Paz, before export. First planted in 2014, Las Alasitas was Agricafe's first step into farming \u2013 part of an ambitious project to revive Bolivia's declining coffee industry. Pedro Rodr\u00edguez swapped his accountant's suit for agriculture three decades ago, and the family had been sourcing coffee from small producers in Caranavi and Samaipata ever since. But watching production decline put the sustainability of their business at risk. In response, they bought land to showcase modern practices and establish model farms that other producers could learn from. Las Alasitas is now home to Agricafe's variety nursery, where agronomists cultivate seedlings of prized varietals like Geisha, Java, and San Bernardo to share with local farmers. At the top of the farm sits La Casita \u2013 a small house where the family welcome guests to enjoy the sweeping views over the valley at sunrise and sunset, coffee in hand. Through their Sol de la Ma\u00f1ana programme, the Rodr\u00edguez family empowers local farmers with training and skills to improve quality and yields \u2013 helping ensure the future of Bolivian coffee doesn't rest on their shoulders alone. We're proud to support their work. Country: Bolivia Region: Yungas Province: Caranavi Colony: Bolinda Farm: Las Alasitas Producers: Fincas Los Rodriguez Processing Method: Washed Varietal: Yellow Caturra",
-      "flavour_notes": "marzipan and brown sugar"
+      "flavour_notes": "Marzipan, Brown Sugar"
     },
     {
       "source": "ozonecoffee.co.nz",
@@ -1675,8 +1675,8 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 100.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
-      "varietal": "bourbon",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
+      "varietal": "Bourbon",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1709,8 +1709,8 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 100.0,
       "updated_at": "2026-08-20T13:22:25+12:00",
-      "scraped_at": "2026-08-20T02:54:05+00:00",
-      "varietal": "catuai,bourbon",
+      "scraped_at": "2026-08-20T03:02:19+00:00",
+      "varietal": "Catuai, Bourbon",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1743,8 +1743,8 @@
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
       "updated_at": "2026-08-20T14:32:46+12:00",
-      "scraped_at": "2026-08-20T02:54:07+00:00",
-      "varietal": "bourbon,gesha",
+      "scraped_at": "2026-08-20T03:02:21+00:00",
+      "varietal": "Bourbon, Gesha",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -1756,7 +1756,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "Cesar Buesaquillo Natural Pink Bourbon A note from James, Head of Coffee: It\u2019s an absolute pleasure to bring you another exceptional coffee from Cesar\u2019s farm. A standout on the cupping table, this is easily the finest Pink Bourbon we\u2019ve tasted in the last two years. We love working with Cesar\u2019s coffees and are excited to share more of his lots with you in the future. For this natural Pink Bourbon, the cherries undergo a 45-hour aerobic fermentation following Cofinet\u2019s protocol, enhancing sweetness and complexity while allowing the character of the farm and variety to shine. They are then dried slowly on raised parabolic beds for 10\u201315 days, with regular turning to ensure even drying and exceptional consistency. In the cup, expect elegant floral aromatics, vibrant yet delicate acidity, remarkable clarity, and a refined sweetness that lingers long after each sip. This is a beautifully expressive coffee that showcases exactly why Pink Bourbon continues to feature on our offering. James. Producer \u2013 Cesar Buesaquillo Location \u2013 Buenavista, Quindio Farm \u2013 La Esmeralda Variety \u2013 Pink Bourbon Years Used \u2013 2nd year Altitude \u2013 1750 - 1800 MASL Process \u2013 Natural Cupping Notes \u2013 Jasmine, Raspberry Jam, Shiraz Roast Level \u2013 Light Suitable For \u2013 All Filter Brew Methods Importer \u2013 Cofinet Download a Digital Tasting Card Disclaimer: Cupping notes are a guide based on what we tasted whilst cupping this coffee. Your experience may differ depending on brewing method. About Cesar Buesaquillo was born into a traditional coffee farming family. He owns the farm La Esmeralda which is 6-hectares in size and is located at 1800 m.a.s.l in Buenavista, Quindio. When you visit Don Cesar, you will see a marvellous view across his farm. Cesar has planted some beautiful shade trees on his farm such as Guamo, Yarumo, and Carbonero, and he also grows other crops on his farm like plantain, banana, and avocado. Cesar has been involved in coffee farming all his life. His parents worked as coffee pickers and then farm managers on a variety of coffee farms. He would visit the farms his parents worked on and in doing so he fell in love with coffee. Approximately 20 years ago, his parents were able to purchase La Esmeralda which Don Cesar and his family now own. Cesar, his wife Maria and their son Kevin manage all the operations at La Esmeralda. Maria supports Cesar in every step of their family business. She guides Cesar and they tackle the important decisions together, they are a very strong team. The first years in coffee production weren\u2019t easy because he came from a traditional farming background that was focused on producing commodity-grade coffee. Cesar wanted to pursue Specialty Coffee practices and focus on more unique varieties so he had to change his approach to farming. He started planting Pink Bourbon and then Gesha. Now, he is constantly experimenting with processing methods and believes quality should be the focus of the coffee industry moving forward into the future. When not working on the farm, Don Cesar enjoys time with his family, drinking coffee or sharing a meal while sitting on the patio and basking in the beautiful view over his farm. The variety With its distinctive pink cherries and outstanding cup quality, Pink Bourbon has become one of Colombia's most sought-after coffee varieties. Believed to have originated as a natural mutation in the highlands of Huila around 1980, its exact lineage is still debated, with some researchers suggesting it may share ancestry with Ethiopian landrace varieties. Thriving at elevations between 1,700 and 2,100 m.a.s.l., Pink Bourbon develops the bright acidity, floral aromatics and vibrant fruit character that have made it a favourite among producers and roasters alike. While it requires careful cultivation due to its susceptibility to diseases such as coffee leaf rust, the reward is a remarkably expressive cup with sweet, silky, fruit-forward flavours. The Processing Method At La Esmeralda, Cesar and his team selectively hand-pick only the ripest cherries before carefully sorting and floating them to remove any underripe or defective fruit. The cherries then undergo a 45-hour aerobic fermentation following Cofinet's protocol, enhancing sweetness and complexity while allowing the coffee's origin character to shine. After fermentation, they are dried slowly on raised parabolic beds for 10 to 15 days, with regular turning to ensure even drying and consistent quality. The result is a clean, expressive coffee with vibrant fruit character, layered sweetness and a full, silky body. Filter Recipe This is a good starting point for all of our Filter coffees. Adjust Accordingly to your own preference. Ground Coffee: 20g Brewed Weight: 300g Contact Time: 3-3:30 mins Water Your brewing water can make or break whether a coffee tastes vibrant and expressive or flat and muted. Since local water supplies vary, we\u2019ve partnered with Apax Lab to help optimise your home brewing water. The following recipes are designed as starting points, focusing on clarity and even extraction to let the coffee\u2019s natural acidity and sweetness shine. For the Low-Key Approach Base Water: Christchurch tap water Hardness (GH): 45ppm Alkalinity (KH): 52ppm Apax Drops per 1L: Tonik: 10 drops Jamm: 5 drops Since the alkalinity is already relatively high, Lilac is not needed, as alkalinity naturally buffers acidity. Instead, we focus on Tonik to increase hardness for improved extraction and Jamm to enhance texture, helping round out the cup. Adjusting for Local Water Conditions Christchurch's water supply is sourced from multiple groundwater wells across the city. While the overall water profile is relatively consistent, natural variation exists between supply zones. As a practical rule of thumb, the PPM may vary by approximately 5\u201315 ppm depending on location. For this reason, the recommended APAX recipe should be viewed as a starting point rather than a fixed target. The strength of the APAX system lies in its flexibility; mineral ratios can be adjusted easily to suit local water conditions and taste preferences. If coffees taste flat or lack vibrancy, increasing Tonik may improve extraction, flavour clarity, and acidity. If coffees taste overly sharp or acidic, increasing Jamm may help improve balance and perceived sweetness. Adjustments should be made incrementally and evaluated through taste. For the Coffee Geek Base Water: Fully distilled water ( Apax Drops per 1L: Tonik: 30 drops Jamm: 5 drops Lilac: 10 drops This recipe provides a balanced foundation that can be adjusted further depending on your taste preferences and the coffee being brewed. If you are outside of Christchurch, we recommend using the distilled water recipe. Always add to the water before brewing - not the brewed coffee. If you need assistance or are simply curious about the Apax drops, our Head of Coffee, James, welcomes all enquiries. You can get in touch at james@coffeeembassy.co.nz. Recommended Brewing Age 14+ days after roast date",
-      "flavour_notes": "elegant floral aromatics, vibrant yet delicate acidity, remarkable clarity, and a refined sweetness that lingers long after each sip"
+      "flavour_notes": "Elegant Floral Aromatics, Vibrant Yet Delicate Acidity, Remarkable Clarity, And A Refined Sweetness That Lingers Long After Each Sip"
     },
     {
       "source": "coffeeembassy.co.nz",
@@ -1769,8 +1769,8 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-08-20T14:32:46+12:00",
-      "scraped_at": "2026-08-20T02:54:07+00:00",
-      "varietal": "pacamara,gesha,geisha",
+      "scraped_at": "2026-08-20T03:02:21+00:00",
+      "varietal": "Pacamara, Gesha, Geisha",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -1782,7 +1782,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Brayan Smith Washed Gesha It is our pleasure to present a classic expression of a beautifully washed Gesha. Since introducing Gesha to our offering two years ago, this is only the second washed lot we have been able to secure. Brayan Smith is a third-generation coffee producer from Pitalito, Huila, and founder of SATUS, a collective of 70 local coffee-growing families. At his farm, Las Brisas, Brayan is dedicated to preserving his family's coffee-growing heritage while cultivating exceptional varieties, including Gesha. Originally discovered in Ethiopia, Gesha is renowned for its elegant floral aromatics, vibrant acidity and delicate tea-like body, making it one of the world's most celebrated coffee varieties. For this lot, only perfectly ripe cherries are hand-picked, sorted and floated before undergoing a carefully controlled 30-hour underwater fermentation. The coffee is then washed and slowly dried on raised beds, producing a remarkably clean and expressive cup with exceptional clarity, sweetness and balance. In the cup, expect fragrant florals, bright citrus, and a sparkling sweetness that reminded us of the iconic New Zealand soft drink L&P. A beautifully clean and expressive coffee, and one not to be missed. Enjoy. Producer \u2013 Brayan Smith Location \u2013 Pitalito, Huila Farm \u2013 Las Brisas Variety \u2013 Gesha Altitude \u2013 1800 - 1850 MASL Process \u2013 Washed Cupping Notes \u2013 Citrus, Lemon and Paeroa, Floral Roast Level \u2013 Light Suitable For \u2013 All Filter Brew Methods Exporter \u2013 Cofinet Colombia Importer \u2013 Cofinet New Zealand Digital Tasting Card Disclaimer: Cupping notes are a guide based on what we tasted whilst cupping this coffee. Your experience may differ depending on brewing method. About Brayan Smith is a third-generation coffee grower from Huila, and founder of SATUS, a collective of 70 coffee growing families in the local area. Brayan is a passionate young coffee farmer who decided to preserve his family tradition while focusing on improving coffee practices and cultivating new varieties to enhance their specialty coffee crops. His farm Las Brisas is located at 1500-1800 m.a.s.l in Pitalito, Huila. He grows exotic varieties such as Pacamara and Gesha. Since childhood, he has witnessed his family's dedication to coffee production and the care and excitement they invest in every harvest. The variety Gesha, often spelled \"Geisha,\" is one of the most celebrated and sought-after coffee varieties in the world. Renowned for its exceptional cup profile, this variety has consistently won prestigious coffee competitions and commanded record-breaking prices at auctions. Its journey from the remote forests of Ethiopia to the lush coffee farms of Latin America, particularly Panama and Colombia, is a tale of discovery, perseverance, and innovation. The story of Gesha begins in the 1930s in the Gori Gesha Forest of Ethiopia, where the variety was first discovered. In 1936, seeds were collected then sent to the Lyamungu research station in Tanzania. From there, the seeds made their way to the Centro Agron\u00f3mico Tropical de Investigaci\u00f3n y Ense\u00f1anza (CATIE) in Costa Rica in the 1950s, where they were catalogued as part of a broader effort to study and preserve coffee genetics. Gesha's potential was not immediately recognized. For many years, it was grown as a rust-resistant variety, rather than for its cup quality. Some farmers stopped planting it due to fragile branches. It wasn't until the early 2000s that the variety gained international acclaim. In 2004, the Peterson family of Hacienda La Esmeralda in Panama discovered the unique flavour profile of Gesha when they planted it at high altitudes. Their Gesha coffee won the Best of Panama competition that year, setting a new standard for specialty coffee and fetching unprecedented prices at auction. Colombia, one of the world's leading coffee producers, quickly recognized the potential of Gesha. The country's diverse microclimates, high altitudes, and rich volcanic soils provide ideal conditions for cultivating this delicate variety. In regions like Nari\u00f1o, Huila, Quindio and Cauca, Colombian farmers began experimenting with Gesha, planting it at elevations of 1,600 to 2,000 m.a.s.l.. The results were extraordinary: Colombian Gesha coffee is celebrated for its complex flavour profile, featuring notes of jasmine, bergamot, tropical fruits, and honey, with a delicate, tea-like body and vibrant acidity The Processing Method Brayan Smith, along with his team of pickers, harvests only the ripest cherries. Then, the cherries are placed in the sorting area at Las Brisas farm, where the sorting team hand-sorts and floats them to remove any low-density, underripe, or defective cherries. Once sorted, the cherries undergo a 30-hour underwater fermentation, a critical step that enhances the coffee's flavor profile. This controlled fermentation carried by Brayan Smith follows the Cofinet\u2019s protocol. This controlled fermentation process allows the sugars, organic acids, and other compounds within the cherries to break down gradually, stimulating the development of a delicate yet interesting profile. The 30-hour fermentation period is carefully calibrated to strike the perfect balance between developing flavor complexity and preserving the coffee's inherent qualities. This results in a harmonious balance of sweetness and acidity, giving our washed coffees a bright and lively character. After fermentation, the cherries are pulped, and the mucilage is thoroughly washed away. Once coffees are washed they are spread out on raised beds. The team monitors them closely to ensure even drying and optimal quality. They aim for 9.5% -11% moisture content, which is the perfect point for them. Filter Recipe This is a good starting point for all of our Filter coffees. Adjust Accordingly to your own preference. Ground Coffee: 20g Brewed Weight: 320g Contact Time: 3-3:30 mins Recommended Brewing Age 12+ days after roast date",
-      "flavour_notes": "fragrant florals, bright citrus, and a sparkling sweetness that reminded us of the iconic New Zealand soft drink L&P"
+      "flavour_notes": "Fragrant Florals, Bright Citrus, And A Sparkling Sweetness That Reminded Us Of The Iconic New Zealand Soft Drink L&P"
     },
     {
       "source": "coffeeembassy.co.nz",
@@ -1795,8 +1795,8 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
       "updated_at": "2026-08-20T14:32:46+12:00",
-      "scraped_at": "2026-08-20T02:54:07+00:00",
-      "varietal": "heirloom",
+      "scraped_at": "2026-08-20T03:02:21+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1808,7 +1808,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Ethiopia Konga Washed Sourced from the Konga Kebele in the Yirgacheffe District of Ethiopia\u2019s renowned Gedeo Zone, this exceptional coffee is grown in ideal high-altitude conditions. Around 800 smallholder farmers cultivate heirloom varieties, each managing roughly two hectares of land. Together, these farms make up a collective growing area of approximately 1,600 hectares. In the cup, this coffee is vibrant and expressive, showing notes of fresh orange, delicate red fruits, and soft florals. It\u2019s a classic expression of Yirgacheffe\u2019s bright, aromatic profile, shaped by the region\u2019s unique terroir and the care of its dedicated producers. Producer \u2013 Smallholder farmers from the Konga Kebele (neighbourhood) Location \u2013 Gedeo, Yirgacheffe Farm \u2013 800 smallholder farms Variety \u2013 Ethiopian Heirloom varieties Altitude \u2013 1800 - 2000 MASL Process \u2013 Washed Cupping Notes \u2013 Orange, Red Fruits, Floral Roast Level \u2013 Light Suitable For \u2013 All Filter Brew Methods Importer \u2013 Cofinet Download a Digital Tasting Card Disclaimer: Cupping notes are a guide based on what we tasted whilst cupping this coffee. Your experience may differ depending on brewing method. About Sourced from the renowned Gedeo Zone, specifically the Yirgacheffe District's Konga Kebele in Southern Ethiopia, this exceptional coffee thrives in an ideal growing Environment. This coffee is produced by 800 small-scale farmers who primarily cultivate heirloom varieties. These dedicated coffee farmers deliver their cherries directly to the processing station. Each producer owns a 2-hectare farm, contributing to a substantial total cultivated area of 1,600 hectares. These farms are nestled at altitudes ranging from 1,800 to 2,000 m.a.s.l where the fertile, well-draining, red-brown soil provides optimal conditions for coffee cultivation. The region experiences an average annual rainfall of 1,800-2,000mm and consistent temperatures between 20-25\u00b0C, ensuring uniform fruit development. The variety Heirloom is a catch-all phrase given to coffee varieties native to Ethiopia, many of which grow in the wild. There are thought to be over 10,000 different unnamed varieties. Many heirloom varieties begin life as a wild plant, and some are later brought to various specialty coffee farms across the country, where they are cultivated, harvested, and processed. JARC (Jimma Agricultural Research Centre) has also cultivated some heirloom varieties at their laboratory. The Processing Method The classic washed process is typical for coffees grown in the Yirgacheffe region. After harvest, the cherry is removed and the beans are fermented in water for around 72 hours before being washed and dried. This controlled process removes all fruit from the seed, resulting in a cleaner and more precise cup profile. Washed Yirgacheffes are known for their clarity, bright acidity, and layered florals. The distinct character of the origin shines through, and this style remains a benchmark for high-quality Ethiopian coffees. Filter Recipe This is a good starting point for all of our Filter coffees. Adjust Accordingly to your own preference. Ground Coffee: 20g Brewed Weight: 320g Contact Time: 3-3:30 mins Recommended Brewing Age 12+ days after roast date",
-      "flavour_notes": "this coffee is vibrant and expressive, showing notes of fresh orange, delicate red fruits, and soft florals"
+      "flavour_notes": "This Coffee Is Vibrant, Expressive, Showing Notes Of Fresh Orange, Delicate Red Fruits, And Soft Florals"
     },
     {
       "source": "coffeeembassy.co.nz",
@@ -1821,8 +1821,8 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
       "updated_at": "2026-08-20T14:32:46+12:00",
-      "scraped_at": "2026-08-20T02:54:07+00:00",
-      "varietal": "caturra,bourbon,gesha,java",
+      "scraped_at": "2026-08-20T03:02:21+00:00",
+      "varietal": "Caturra, Bourbon, Gesha, Java",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1834,7 +1834,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "Producer \u2013 Jairo Arcila Location \u2013 Armenia, Quindio Farm \u2013 Santa Monica Variety \u2013 Caturra Years Used \u2013 3 Altitude \u2013 1450-1500 MASL Process \u2013 Washed Suitable For \u2013 All filter brewing methods Roast Level \u2013 Light Importer \u2013 Cofinet Cupping Notes \u2013 Mandarin, Caramelised Apple, Apricot Disclaimer: Cupping notes are a guide based on what we tasted whilst cupping this coffee. Your experience may differ depending on brewing method. Download a Digital Tasting Card We\u2019re thrilled to welcome back this beautiful Caturra from Jairo Arcila \u2014 a shining example of a clean, sweet, and classically delicious washed Colombian coffee. Now in our third year working with this lot, we genuinely believe this season\u2019s harvest is the best yet. In the cup, expect crisp mandarin and apricot-like acidity, a gentle white chocolate and caramelised apple body, with a clean, refreshing finish. Don Jairo hails from Quind\u00edo, where Santa Monica \u2014 his own farm \u2014 sits among some of Colombia\u2019s most celebrated coffee-growing landscapes. A highly respected third-generation farmer, he is also the father of Cofinet founders Carlos and Felipe Arcila, and husband to Luz Helena Salazar, one of the region\u2019s most skilled producers. About Jairo began his career at Colombia\u2019s second-largest coffee exporter, where he worked as Mill Manager for over 40 years until retiring in 2019. In 1987, he purchased his first coffee farm, Finca La Esmeralda , where he planted his first lot of Caturra. Balancing full-time work with farming, he reinvested his earnings to eventually acquire five additional farms: Villarazo, Mazatl\u00e1n, Santa Monica, Maracay , and Buenos Aires . During harvest season, Jairo creates employment opportunities for local workers, contributing meaningfully to the local economy. With the expert guidance of his sons, Jairo has significantly enhanced his coffee production practices\u2014improving picking, sorting, and processing techniques, while also embracing the cultivation of exotic coffee varieties such as Pink Bourbon, Java, Papayo, and Gesha. This collaboration has enabled him to produce exceptional coffees with distinct flavour profiles. In addition to coffee, Jairo cultivates a range of crops including mandarins, oranges, plantains , and bananas . He values a hearty breakfast to start the day\u2014and above all, he cherishes spending time with his family. This coffee is harvested with strict criteria regarding ripeness of the cherries. They are floated and hand sorted to remove any defect cherries - this is an effective way to find any defects as they float while the good cherries sink. Once sorted, the cherries are then fermented underwater for 30 hours, pulped, then gently washed and dried in temperature controlled conditions until the ideal moisture content is reached. The Variety This microlot is 100% Caturra; this variety is originally from Minas Gerais in Brazil, and is a natural mutation of Red Bourbon. The plants are grown in volcanic ash soil at 1450-1500 MASL in temperatures between 18-28c. Filter Recipe This is a good starting point for all of our Filter coffees. Adjust Accordingly to your own preference. Ground Coffee: 20g Brewed Weight: 320g Contact Time: 3-3:30 mins Recommended Brewing Age 12+ days after roast date",
-      "flavour_notes": "crisp mandarin and apricot-like acidity, a gentle white chocolate and caramelised apple body"
+      "flavour_notes": "Crisp Mandarin, Apricot-Like Acidity, A Gentle White Chocolate, Caramelised Apple Body"
     },
     {
       "source": "coffeeembassy.co.nz",
@@ -1847,8 +1847,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-20T14:32:46+12:00",
-      "scraped_at": "2026-08-20T02:54:07+00:00",
-      "varietal": "caturra,bourbon,gesha",
+      "scraped_at": "2026-08-20T03:02:21+00:00",
+      "varietal": "Caturra, Bourbon, Gesha",
       "size_prices": [],
       "origin_country": "Ethiopia",
       "producer": "unknown",
@@ -1868,8 +1868,8 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 79.0,
       "updated_at": "2026-08-20T14:32:47+12:00",
-      "scraped_at": "2026-08-20T02:54:08+00:00",
-      "varietal": "caturra,catuai,bourbon,gesha,java",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Caturra, Catuai, Bourbon, Gesha, Java",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1882,10 +1882,10 @@
       ],
       "origin_country": "Colombia",
       "producer": "Jairo Arcila Location: Armenia, Quindio",
-      "process": "Washed",
+      "process": "Washed, Natural",
       "decaf": false,
       "description": "What is Embassy? Embassy is a modern blend made up of two exceptional, fully traceable coffees. It\u2019s a blend that\u2019s true to our values, and sourced with intention. This blend brings together: A washed Caturra from Jairo Arcila\u2019s Santa Monica farm in Colombia, brought to us through Cofinet A natural Catucai from the Serra Dos Ciganos community in Brazil, sourced through FAF Coffees. The result is a modern espresso that is complex, fresh, and balanced, designed to shine both black and with milk. As a black coffee we taste sweet notes of apple and dates, and as a flat white we experience a creamy body with a flavour profile reminiscent of apple crumble and vanilla custard. For more information on this new iteration of our Embassy blend, and the next step in our journey towards a more values-focused sourcing approach, read our recent journal entry . Coffee Information Colombia Jairo Arcila Producer: Jairo Arcila Location: Armenia, Quindio Farm: Santa Monica Variety: Caturra Years used: 4th year Altitude: 1450 - 1500 MASL Process: Washed Suitable For: Espresso/Punger/Stovetop Roast Level: Medium Exporter: Cofinet Importer: Cofinet The Variety Caturra is a natural mutation of the Bourbon variety, discovered in Brazil in the 1930s. It is prized for its dwarf growth habit, which makes it more compact than Bourbon plants, allowing higher planting density and easier harvesting\u2014particularly beneficial for small-scale and mechanized farms. Caturra tends to produce medium yields and is moderately resistant to certain diseases, although it can be more susceptible to leaf rust than some newer hybrids. In the cup, Caturra is known for its clean, bright profile, often highlighting sweet, citrusy, and fruity notes with a light to medium body. Its flavor clarity makes it a popular choice in specialty coffee, and it\u2019s widely cultivated in Colombia, Brazil, and Central America. Farmers often select Caturra for its combination of manageable size, decent yield, and quality cup characteristics. Processing Method: Washed This coffee is harvested with strict criteria regarding ripeness of the cherries. They are floated and hand sorted to remove any defect cherries - this is an effective way to find any defects as they float while the good cherries sink. Once sorted, the cherries are then fermented underwater for 30 hours, pulped, then gently washed and dried in temperature controlled conditions until the ideal moisture content is reached. The Washed Method (A general overview) Washed (Wet) Coffee Process Harvesting: Only ripe coffee cherries are picked\u2014either by hand or with selective mechanical methods. Ripeness is key because under- or over-ripe cherries can negatively affect flavor. Pulping: The outer skin and most of the fruit flesh are removed from the cherries using a pulping machine, leaving the coffee beans coated with a layer of sticky mucilage. Fermentation: The beans, still covered in mucilage, are placed in fermentation tanks with water. Natural enzymes break down the mucilage over 12\u201348 hours, depending on temperature and altitude. Washing: After fermentation, the beans are thoroughly washed with clean water to remove all remaining mucilage. This is why it\u2019s called the \u201cwashed process.\u201d Drying: The beans are dried to around 10\u201312% moisture either on patios, raised beds, or mechanical dryers. This step is crucial to prevent mold or fermentation defects. Hulling: The dry beans, now called parchment coffee, have their final parchment layer removed before roasting. _____ FAF Bob-o-Link Catucai Producer: FAF Coffee & Serra Dos Ciganos Community City: Caconde Region: Mogiana State: Sao Paulo Community: Serra Dos Ciganos Variety: Catucai Years used: 1st year Altitude: 1200 - 1350 masl Process: Natural - 36 Hour Anaerobic Fermentation Suitable For: Espresso/Punger/Stovetop Roast Level: Medium Exporter: FAF Coffee Importer: Sucafina The Variety Catuca\u00ed is a Brazilian-developed Arabica hybrid, created by crossing Catuai and Icatu . Genetically, it is a second-generation breeding product designed to meet modern farming demands: Catuai = Mundo Novo \u00d7 Caturra Catuca\u00ed = Catuai \u00d7 Icatu This breeding strategy gives Catuca\u00ed a blend of high productivity, disease resistance, and approachable cup quality . It is widely adopted in Brazil and other coffee-growing regions like Central America, Panama, and select areas of Colombia. Plant Characteristics: High productivity with consistent yields Good vigor and strong structure Compact growth, suitable for high-density planting Enhanced disease resistance, especially against leaf rust, compared to Catuai and Caturra Performs well in windy or wet climates Farming Advantages: Reliable production and harvest consistency Tolerant to rust and other common diseases Adaptable to mechanized or intensive farming systems Catuca\u00ed is appreciated not just for its agronomy but also for its versatile, approachable flavor: Acidity: Moderate, bright but gentle Body: Smooth and balanced Flavor Notes: Honeyed sweetness, soft chocolate, and delicate fruit tones - often yellow fruits or light tropical notes Finish: Clean and easy-drinking Its profile makes it suitable for both single-origin offerings and blends , offering reliability and consistency for roasters and producers alike. Processing Method: Natural Great pride is taken in producing clean and distinctive coffees. The belief is that specialty coffee should be both clean and sweet, and that diversity of flavour brings richness to the sensory experience. Processing methods are continually studied and refined in pursuit of truly elegant coffees. When coffee cherries are picked from the tree and dried until the seed (the coffee bean) reaches a humidity of approximately 11%\u2014the ideal level for safe storage. After harvesting, the cherries are carefully sorted before determining the most suitable processing method. The aim is to craft coffees using signature processing styles that highlight distinctive and expressive flavours in the final cup. Naturals: One of the oldest coffee processing methods, the natural process involves drying the coffee fruit intact\u2014skin, mucilage, pulp, parchment, and seed. After harvesting, the cherries are brought to the patio where they are spread out to dry. When conditions allow, the cherries undergo natural fermentation due to the presence of sugars, moisture, and wild strains of yeast and bacteria. This process is believed to enhance the fruit-forward character of the coffee and, in some cases, increase the perception of sweetness as well as body and mouthfeel. At the various FAF partner farms, cherries are carefully sorted on the day of harvest before being transferred to raised beds and patios for drying. Great pride is taken in producing \u201cclean naturals,\u201d coffees that deliver a sensory experience of fruitiness, sweetness, and well-balanced acidity. By balanced, it means that no single acidic note\u2014such as a sharp acetic taste\u2014dominates. Because natural coffees undergo wild fermentation, they can be some of the most interesting and dynamic coffees. About Jairo Arcila Jairo Arcila is a third-generation coffee grower from Quind\u00edo, Colombia. He is married to Luz Helena Salazar, and together they have two sons, Carlos and Felipe Arcila\u2014the co-founders of Cofinet. Jairo began his career at Colombia\u2019s second-largest coffee exporter, where he worked as Mill Manager for over 40 years until retiring in 2019. In 1987, he purchased his first coffee farm, Finca La Esmeralda, where he planted his first lot of Caturra. Balancing full-time work with farming, he reinvested his earnings to eventually acquire five additional farms: Villarazo, Mazatl\u00e1n, Santa Monica, Maracay, and Buenos Aires. During harvest season, Jairo creates employment opportunities for local workers, contributing meaningfully to the local economy. With the expert guidance of his sons, Jairo has significantly enhanced his coffee production practices\u2014improving picking, sorting, and processing techniques, while also embracing the cultivation of exotic coffee varieties such as Pink Bourbon, Java, Papayo, and Gesha. This collaboration has enabled him to produce exceptional coffees with distinct flavour profiles. In addition to coffee, Jairo cultivates a range of crops including mandarins, oranges, plantains, and bananas. He values a hearty breakfast to start the day\u2014and above all, he cherishes spending time with his family. About FAF, Bob-o-link, and Serra dos Ciganos FAF Coffees is the family-run hub that connects and supports a network of farms across Brazil. Bob-o-link Coffee is the collaborative project that brings those farms together under a shared focus on sustainability and quality, and the Serra dos Ciganos Community is one of the key farming regions working within that system to produce coffee. Read on for more information about each one. Bob-o-link Bob\u2011o\u2011link Coffee takes its name from the Bobolink, a migratory bird that travels annually from the Midwestern United States to southeastern South America. The founders of Bob-o-link chose this name to evoke a sense of global connection and environmental awareness. In 1991, the family behind Bob\u2011o\u2011link moved from S\u00e3o Paulo, Brazil, to Chicago, USA. While in the United States, they became inspired by conservation efforts surrounding the bird, and adopted it as a symbol for sustainability and stewardship. Around this time, they inherited the family farm in Brazil, Fazenda Fortaleza, and began a deliberate shift toward environmentally friendly and sustainable coffee farming. The farm was renamed Fazenda Ambiental Fortaleza, or \u201cEnvironmental Fortress Farm,\u201d to reflect this mission. At Fazenda Ambiental Fortaleza, the family eliminated toxic materials, protected water sources, and created green corridors for wildlife. Fruit trees such as bananas, mangoes, and avocados were planted among coffee trees to restore natural habitats. Recognising that environmental protection required a broader effort, the family invited neighboring smallholder farmers to join a network of family farms committed to sustainable agriculture and shared quality standards. Today, Bob\u2011o\u2011link Coffee represents a collective project of high-altitude Arabica coffee farms in Brazil\u2019s Mogiana region, spanning the states of S\u00e3o Paulo and Minas Gerais. The coffee is grown between 900 m and 1 400 m elevation, hand-picked, and dried near the farmers\u2019 homes, combining traditional craftsmanship with ecological stewardship. The story of Bob\u2011o\u2011link Coffee reflects a broader mission: protecting nature, fostering harmony between people and the environment, and promoting sustainable agriculture practices, all symbolized by the migratory journey of the Bobolink bird. FAFCoffees At Fazenda Ambiental Fortaleza, great pride is taken in producing high-quality coffee while maintaining a strong commitment to sustainability, both socially and environmentally. As a centre for coffee knowledge, laboratories operate both on the farm at FAF and in the city of S\u00e3o Paulo. The goal is to share and promote the culture of specialty coffee and sustainable farming practices throughout Brazil. Fazenda Ambiental Fortaleza (FAF) is a small, family-run green bean coffee supplier and the centre of a network of farms that work together. Their aim is to produce some of the highest-quality and most unique coffees from Brazil. The FAF farm is organically certified, and several partner farms within the network are also organic. While not all farms are fully organic, FAF encourages all partners to adopt sustainable practices and reduce the use of agrochemicals wherever possible. Beyond quality, FAF is committed to environmental and social responsibility, producing coffees that are sustainable and considerate of both the ecosystem and the wellbeing of the people involved. Their approach involves the entire supply chain,from producer to end consumer, fostering collaboration, lasting relationships, and a shared purpose. Coffee is at the centre of everything they do, and their goal is to involve the entire supply chain, from producer to consumer, working together to continually improve the quality and accessibility of these coffees while building lasting relationships and a shared sense of purpose. Serra Dos Ciganos Community The Serra dos Ciganos Community and wet mill sits atop the mountains bordering the states of S\u00e3o Paulo and Minas Gerais. It is located in the municipality of Caconde and with plenty of natural springs, the valley forms an important watershed, contributing to the Rio Pardo River. The name \u201cSerra dos Ciganos\u201d, which means \u201cGipsy Mountains\u201d, arose in the 19th century, when the valley was used as a camp for travelers, who were passing through. In 2008, this community of fourth generation coffee farmers started working with FAFCoffees on a new coffee production model for the region. Instead of selling their dried coffees to local buyers they chose to work with FAFCoffees to raise quality and think of coffee as a beverage, not as a commodity. Along with better control of the post-harvest processes and the application of new techniques, such as raised beds and careful turning, the full potential of their coffee could be revealed. Recipe This is a good starting point for all of our espresso coffees. Adjust Accordingly to your own preference Ground Coffee: 20g Espresso Weight out: 25g Contact Time: 25-30 Seconds Recommended brewing age 10+ days after roast date Subscriptions For more info on subscriptions, head to the Subscriptions page . Price Adjustments to Embassy Blend Embassy blend has recently evolved into a more intentional, values-led blend, made up of exceptional, fully traceable coffees. As a result, incremental price adjustments will be put in place in May and June. Find out more about the changes and what they mean for your cup here . For something closer in price and profile to what Embassy previously was, we recommend trying our Ranger Regional blend.",
-      "flavour_notes": "Honeyed sweetness, soft chocolate, and delicate fruit tones - often yellow fruits or light tropical notes Finish: Clean and easy-drinking Its profile makes it suitable for both single-origin offerings and blends , offering reliability and consistency for roasters and producers alike"
+      "flavour_notes": "Honeyed Sweetness, Soft Chocolate, And Delicate Fruit Tones - Often Yellow Fruits Or Light Tropical Notes Finish: Clean, Easy-Drinking Its Profile Makes It Suitable For Both Single-Origin Offerings, Blends, Offering Reliability, Consistency For Roasters, Producers Alike"
     },
     {
       "source": "coffeeembassy.co.nz",
@@ -1898,8 +1898,8 @@
       "price_min_nzd": 18.5,
       "price_max_nzd": 66.5,
       "updated_at": "2026-08-20T14:32:47+12:00",
-      "scraped_at": "2026-08-20T02:54:08+00:00",
-      "varietal": "heirloom",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1928,8 +1928,8 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
       "updated_at": "2026-08-20T14:32:47+12:00",
-      "scraped_at": "2026-08-20T02:54:08+00:00",
-      "varietal": "heirloom",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1945,7 +1945,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "We are excited to bring you our latest edition of Beyond Seasonal Blend. Beyond is currently made up of two Ethiopian coffees, Konga (washed) and Hatiso (natural). Flavour Profile - Dark Fruits, Floral, Brown Sugar Score - 86.25 What is Beyond? Beyond is a Seasonal Espresso Blend made up of coffees that could represent the future of Espresso blends. When we think of the word \u201cBeyond\u201d we think about the possibility of something that is greater than the current . It represents the countless flavours that origins have to offe r. To fall in line with the harvest seasons of coffee, we change up the components that make up Beyond regularly. With the availability of an interesting array of coffee origins and processing methods, you can always expect a bright, fruit-forward, highly interesting cup of coffee from this blend. Read on for more information on the origins and further reading on some of the coffee terms we use. If you would like to know more about the coffees we are always happy to chat! Coffee terms/language What is a Spot Seasonal Blend? A Spot Seasonal Blend is to offer an exciting and complex coffee that is linked up with the coffee harvest season. This allows us to bring you a coffee that is always fresh and flavour driven. Cup/Quality Score Scoring coffee is used to define the quality of the coffee. Scores are given to the individual origins. To be considered \u201cSpecialty\u201d a coffee must score a minimum of 80/100. Most Specialty coffees score between 80 \u2013 87. Only a few outstanding coffees will score higher than this. Roast Degree/Type/colour/style Back in the days of old, coffee roasts were (and still are by some) only described as being light, medium and dark. These descriptions are still relevant to a point but coffee is no longer as straight forward. These days ones interpretation of colour can vary from roaster to roaster. We try to triangulate roast degree (Temperature) Colour and Development of the roast not just the colour (as different origins can colour differently) Styles: Spot Seasonal Blend, Seasonal Blend, Modern Blend, Regional Blend, Single Origin. The Origins Now we can get stuck into the coffees themselves! The Origins Ethiopia Konga Process: Washed Sourced from the Konga Kebele in the Yirgacheffe District of Ethiopia\u2019s renowned Gedeo Zone, this exceptional coffee is grown in ideal high-altitude conditions. Around 800 smallholder farmers cultivate heirloom varieties, each managing roughly two hectares of land. Together, these farms make up a collective growing area of approximately 1,600 hectares. In the cup, this coffee is vibrant and expressive, showing notes of fresh orange, delicate red fruits, and soft florals. It\u2019s a classic expression of Yirgacheffe\u2019s bright, aromatic profile, shaped by the region\u2019s unique terroir and the care of its dedicated producers. Ethiopia Hatiso Process: Natural Karamo Village, located in Bula Woreda in Ethiopia\u2019s Sidama region, sits at an exceptionally high altitude and benefits from a unique microclimate that slows the ripening of coffee cherries. This extended maturation allows the beans to develop the rich, complex flavours that Sidama coffees are celebrated for. Around 350 smallholder farmers cultivate an average of 2.5 hectares each, delivering their ripe cherries to local collection points where they are carefully sorted and fairly paid for their harvest. After sorting, the cherries are dried on raised beds and regularly hand-turned throughout the day to ensure even drying and prevent spoilage. The result is an expressive coffee, with bright strawberry notes up front, a silky milk chocolate body, and delicate florals on the nose. Each cup reflects the care, dedication, and traditional practices of the Karamo community, offering a true expression of Sidama\u2019s specialty coffee heritage. Recipe This is a good starting point for all of our espresso coffees. Adjust Accordingly to your own preference Ground Coffee: 20g Espresso Weight out: 25g Contact Time: 25-30 Seconds Recommended Brewing Age 10+ days after roast date Subscriptions For more info on subscriptions, head to the Subscriptions page . Price Adjustments to Beyond From May 4th, we will begin incremental price adjustments to Beyond Blend, bringing the blend price in line with the single origin coffees it is made up of. For more information, please head here .",
-      "flavour_notes": "this coffee is vibrant and expressive, showing notes of fresh orange, delicate red fruits, and soft florals"
+      "flavour_notes": "This Coffee Is Vibrant, Expressive, Showing Notes Of Fresh Orange, Delicate Red Fruits, And Soft Florals"
     },
     {
       "source": "coffeeembassy.co.nz",
@@ -1958,8 +1958,8 @@
       "price_min_nzd": 21.5,
       "price_max_nzd": 82.5,
       "updated_at": "2026-08-20T14:32:47+12:00",
-      "scraped_at": "2026-08-20T02:54:08+00:00",
-      "varietal": "castillo",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Castillo",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1988,7 +1988,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
       "updated_at": "2026-08-20T14:32:47+12:00",
-      "scraped_at": "2026-08-20T02:54:08+00:00",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2018,8 +2018,8 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
       "updated_at": "2026-08-20T13:22:32+12:00",
-      "scraped_at": "2026-08-20T02:54:09+00:00",
-      "varietal": "castillo,heirloom",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Castillo, Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -2048,7 +2048,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-08-20T13:22:32+12:00",
-      "scraped_at": "2026-08-20T02:54:09+00:00",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2061,7 +2061,7 @@
       "process": "Anaerobic Natural",
       "decaf": false,
       "description": "Boysenberry Yogurt, Pink Pomelo, Golden Kiwifruit Producer: Uncle Adumu, Peach Town R egion: Amfo, Hambela Process Method: 72hr Dark Room Anaerobic Natural Varietal: 74158 Altitude: 2072 masl Roaster\u2019s Comment: Dark Room processing is one of the most exciting innovations I\u2019ve seen in coffee processing in recent years. I honestly didn\u2019t expect this method to have such a dramatic impact on flavour. Because it\u2019s such a new processing method, I was naturally curious. When I received the sample, I couldn\u2019t believe what I was tasting. The funky character was unlike any fermentation process I\u2019ve experienced before. It was incredibly expressive, yet so clean, sweet, and full of flavour. This is just the first Dark Room processed coffee we\u2019re launching, and I\u2019m confident it won\u2019t be the last. I can\u2019t wait to discover and share more exceptional coffees processed this way in the future. About the Coffee This was the town's first specially processed coffee under his leadership. Soon after, armed forces entered the village and took the men away, including Uncle Adumu*. The work was left unfinished, and the future became uncertain. What remains is this coffee. In the cup, it carries courage, care, and intention. It's a quiet legacy carried forward. This was the first experimental processing in Peace Town**, Hambela, led by Uncle Adumu*. Fresh cherries were sealed in food-grade plastic bags in dark room for 72 hours, then sun-dried on raised beds for 20 days with constant turning. *\"Uncle Adumu\" is a nickname commonly used by green bean buyers and roasters for a local Hambella smallholder producer / community figure, rather than an officially named estate. **Peace Town refers to a local community initiative or informal settlement in the Guji Gedeo region linked to peace-building or resettlement efforts.",
-      "flavour_notes": "it carries courage, care, and intention"
+      "flavour_notes": "It Carries Courage, Care, And Intention"
     },
     {
       "source": "eternalcoffee.co.nz",
@@ -2074,8 +2074,8 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
       "updated_at": "2026-08-20T13:22:32+12:00",
-      "scraped_at": "2026-08-20T02:54:09+00:00",
-      "varietal": "bourbon,heirloom",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Bourbon, Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -2104,8 +2104,8 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
       "updated_at": "2026-08-20T13:22:32+12:00",
-      "scraped_at": "2026-08-20T02:54:09+00:00",
-      "varietal": "gesha,geisha",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Gesha, Geisha",
       "size_prices": [
         {
           "size_grams": 100.0,
@@ -2130,8 +2130,8 @@
       "price_min_nzd": 66.0,
       "price_max_nzd": 66.0,
       "updated_at": "2026-08-20T13:22:32+12:00",
-      "scraped_at": "2026-08-20T02:54:09+00:00",
-      "varietal": "heirloom",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 100.0,
@@ -2156,8 +2156,8 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
       "updated_at": "2026-08-20T13:22:32+12:00",
-      "scraped_at": "2026-08-20T02:54:09+00:00",
-      "varietal": "heirloom",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 100.0,
@@ -2182,8 +2182,8 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
       "updated_at": "2026-08-20T13:22:32+12:00",
-      "scraped_at": "2026-08-20T02:54:09+00:00",
-      "varietal": "heirloom",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -2212,8 +2212,8 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
       "updated_at": "2026-08-20T13:22:32+12:00",
-      "scraped_at": "2026-08-20T02:54:09+00:00",
-      "varietal": "caturra,bourbon,typica,geisha,tabi",
+      "scraped_at": "2026-08-20T03:02:22+00:00",
+      "varietal": "Caturra, Bourbon, Typica, Geisha, Tabi",
       "size_prices": [
         {
           "size_grams": 100.0,
@@ -2238,8 +2238,8 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
       "updated_at": "2026-08-20T13:22:34+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "castillo,heirloom",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "Castillo, Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -2268,8 +2268,8 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
       "updated_at": "2026-08-20T13:22:34+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "bourbon,heirloom",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "Bourbon, Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -2298,8 +2298,8 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
       "updated_at": "2026-08-20T13:22:34+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "heirloom",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -2328,7 +2328,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 50.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2358,7 +2358,7 @@
       "price_min_nzd": 20.5,
       "price_max_nzd": 60.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2379,7 +2379,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "S\u00edtio Colinas\u2019 natural processed Yellow Arara brings together so much of what we love about modern Brazilian coffee: sweetness, softness, and a beautifully rounded cup, but with just enough fruit and brightness to keep things lively. At a medium-light roast, it holds onto the comforting chocolate-and-nut character Brazil is known for, while allowing the natural processing and Yellow Arara variety to show a little more character. COUNTRY - Brazil REGION - Carmo de Minas, Minas Gerais ALTITUDE - 1000 M.A.S.L VARIETAL - Yellow Arara PROCESSING METHOD - Natural ROAST STYLE - Filter/ Modern Espresso TASTING NOTES - Yellow fruits, Macadamia, Milk Chocolate, Caramel",
-      "flavour_notes": "Yellow fruits, Macadamia, Milk Chocolate, Caramel"
+      "flavour_notes": "Yellow Fruits, Macadamia, Milk Chocolate, Caramel"
     },
     {
       "source": "vanguardcoffee.co.nz",
@@ -2392,8 +2392,8 @@
       "price_min_nzd": 22.5,
       "price_max_nzd": 74.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "sl28,sl34",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "SL28, SL34",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -2426,8 +2426,8 @@
       "price_min_nzd": 44.0,
       "price_max_nzd": 276.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "geisha",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "Geisha",
       "size_prices": [
         {
           "size_grams": 125.0,
@@ -2468,8 +2468,8 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "caturra",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "Caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -2502,8 +2502,8 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "castillo",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "Castillo",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -2536,7 +2536,7 @@
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2562,7 +2562,7 @@
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2575,7 +2575,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "- LIMITED RELEASE - Hidden among the rolling hills of New Zealand's Far North sits one of the world's most remarkable coffee farms. At 35\u00b0 south of the Equator, Pekerau Hills is the southernmost commercial coffee farm on Earth and the first successful coffee plantation established in New Zealand. What began as an experiment in subtropical horticulture has become one of the most unique coffee projects in specialty coffee today. For Vanguard, Pekerau Hills represents everything we value - innovation, curiosity, patience and a willingness to challenge what is thought possible COUNTRY - Aotearoa NZ FARM - Pekerau Hills REGION - Kaitaia, Northland ALTITUDE - 160 M.A.S.L VARIETAL - Laurina FERMENTATION - Anaerobic PROCESSING METHOD - Washed ROAST PROFILE - Filter TASTING NOTES - Floral, Lime, Panela, Black tea",
-      "flavour_notes": "Floral, Lime, Panela, Black tea"
+      "flavour_notes": "Floral, Lime, Panela, Black Tea"
     },
     {
       "source": "vanguardcoffee.co.nz",
@@ -2588,7 +2588,7 @@
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2601,7 +2601,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "- LIMITED RELEASE - Hidden among the rolling hills of New Zealand's Far North sits one of the world's most remarkable coffee farms. At 35\u00b0 south of the Equator, Pekerau Hills is the southernmost commercial coffee farm on Earth and the first successful coffee plantation established in New Zealand. What began as an experiment in subtropical horticulture has become one of the most unique coffee projects in specialty coffee today. For Vanguard, Pekerau Hills represents everything we value - innovation, curiosity, patience and a willingness to challenge what is thought possible COUNTRY - Aotearoa NZ FARM - Pekerau Hills REGION - Kaitaia, Northland ALTITUDE - 160 M.A.S.L VARIETAL - Laurina FERMENTATION - Anaerobic PROCESSING METHOD - Natural ROAST PROFILE - Filter TASTING NOTES - Stone fruit, Berries, Cocoa, Black Tea",
-      "flavour_notes": "Stone fruit, Berries, Cocoa, Black Tea"
+      "flavour_notes": "Stone Fruit, Berries, Cocoa, Black Tea"
     },
     {
       "source": "vanguardcoffee.co.nz",
@@ -2614,7 +2614,7 @@
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2640,8 +2640,8 @@
       "price_min_nzd": 260.0,
       "price_max_nzd": 260.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "laurina",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "Laurina",
       "size_prices": [
         {
           "size_grams": 125.0,
@@ -2666,8 +2666,8 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "ruiru 11,sl28,sl34",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "Ruiru 11, SL28, SL34",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -2687,7 +2687,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "From the fertile volcanic slopes of Mount Kenya, Kiamugumo AA is a vibrant expression of Kirinyaga\u2019s celebrated coffee-growing landscape. Produced by smallholder farmers belonging to the New Ngariama Farmers\u2019 Cooperative, carefully selected cherries are fully washed to preserve the coffee\u2019s remarkable clarity and structure. Expect dark-berry fruit, crisp red apple acidity, plums and deep cane-sugar sweetness finishing clean and black tea-like in the cup. COUNTRY - Kenya REGION - Ngariama, Kirinyaga County ALTITUDE - 1800 M.A.S.L VARIETAL - SL28, SL34, Ruiru 11 PROCESSING METHOD - Washed ROAST STYLE - Filter TASTING NOTES - Red Plum, Berries, Cane Sugar, Tea-like",
-      "flavour_notes": "Red Plum, Berries, Cane Sugar, Tea-like"
+      "flavour_notes": "Red Plum, Berries, Cane Sugar, Tea-Like"
     },
     {
       "source": "vanguardcoffee.co.nz",
@@ -2700,8 +2700,8 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 106.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "bourbon",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "Bourbon",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -2734,8 +2734,8 @@
       "price_min_nzd": 37.5,
       "price_max_nzd": 106.0,
       "updated_at": "2026-08-20T14:08:00+12:00",
-      "scraped_at": "2026-08-20T02:54:10+00:00",
-      "varietal": "bourbon",
+      "scraped_at": "2026-08-20T03:02:24+00:00",
+      "varietal": "Bourbon",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -2752,10 +2752,10 @@
       ],
       "origin_country": "Colombia",
       "producer": "Santa Monica REGION - Armenia, Quindio ALTITUDE - 1500 M",
-      "process": "Co-Ferment",
+      "process": "Co-Ferment, Honey",
       "decaf": false,
       "description": "This latest release from Jairo Arcila is a Rose Tea Honey co-ferment, built around an intensely floral cup profile. The addition of fresh Rose petals during fermentation pushes the aromatics firmly to the forefront, with pronounced rose-like florals, layered sweetness and a clean honey-processed structure underneath. It\u2019s bold, distinctive and unmistakably modern- a coffee that shows just how far careful fermentation can take flavour without losing clarity. COUNTRY - Colombia FARM - Santa Monica REGION - Armenia, Quindio ALTITUDE - 1500 M.A.S.L VARIETAL - Pink Bourbon PROCESSING METHOD - Rose Tea Honey Co-Ferment ROAST PROFILE - Filter TASTING NOTES - Mandarin, Fry's Turkish Delight",
-      "flavour_notes": "Mandarin, Fry's Turkish Delight"
+      "flavour_notes": "Mandarin, Fry'S Turkish Delight"
     },
     {
       "source": "vanguardcoffee.co.nz",
@@ -2768,7 +2768,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 68.0,
       "updated_at": "2026-08-20T13:22:35+12:00",
-      "scraped_at": "2026-08-20T02:54:11+00:00",
+      "scraped_at": "2026-08-20T03:02:25+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2802,7 +2802,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-08-20T13:22:35+12:00",
-      "scraped_at": "2026-08-20T02:54:11+00:00",
+      "scraped_at": "2026-08-20T03:02:25+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2836,7 +2836,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-08-20T13:22:35+12:00",
-      "scraped_at": "2026-08-20T02:54:11+00:00",
+      "scraped_at": "2026-08-20T03:02:25+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2854,7 +2854,7 @@
       ],
       "origin_country": "Colombia",
       "producer": "High Road",
-      "process": "Washed",
+      "process": "Washed, Natural",
       "decaf": false,
       "description": "High Road is our darker, more traditional styled blend built for those who like their coffee with a bit more weight behind it. It\u2019s rich and punchy, with notes of dark chocolate and caramelised sugar, and just enough roast to round out the body without additional bitterness. Through milk, it holds its structure beautifully- full, balanced, and satisfying from the first sip to the last. It\u2019s a blend we lean on when we want something dependable, comforting, and just that little bit bolder. BLEND COMPOSITION - 50% Popayan Reserve, 50% Mantiqueira de Minas ORIGINS - Colombia and Brazil VARIETALS - Mixed PROCESSING METHOD - Washed and Natural TASTING NOTES - Scorched Almond, Chocolate, Toffee",
       "flavour_notes": "Scorched Almond, Chocolate, Toffee"
@@ -2870,8 +2870,8 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 70.0,
       "updated_at": "2026-08-20T13:22:35+12:00",
-      "scraped_at": "2026-08-20T02:54:11+00:00",
-      "varietal": "sl28,sl34",
+      "scraped_at": "2026-08-20T03:02:25+00:00",
+      "varietal": "SL28, SL34",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -2888,7 +2888,7 @@
       ],
       "origin_country": "Colombia",
       "producer": "unknown",
-      "process": "Washed",
+      "process": "Washed, Natural",
       "decaf": false,
       "description": "Our Seasonal Espresso Blend changes throughout the year as we select coffees that are tasting especially sweet, expressive, and balanced. Roasted specifically for espresso, this blend works beautifully as a long black or flat white. It can also be brewed through filter or French press for a sweet, rounded cup with more chocolate depth. This is the blend for those who want something more distinctive than a classic espresso, while still being approachable, balanced, and easy to dial in PRODUCERS - Colinas Farm, Ruera CWS, El Indio ORIGINS- Brazil, Kenya, Colombia VARIETALS - Yellow Arara, SL28, SL34, Mixed PROCESSING METHOD - Washed and Natural ROAST PROFILE - Light Espresso TASTING NOTES - Floral, Blackberry, Blackcurrant, Chocolate Mousse",
       "flavour_notes": "Floral, Blackberry, Blackcurrant, Chocolate Mousse"
@@ -2904,8 +2904,8 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 68.0,
       "updated_at": "2026-08-20T13:22:35+12:00",
-      "scraped_at": "2026-08-20T02:54:11+00:00",
-      "varietal": "castillo,caturra",
+      "scraped_at": "2026-08-20T03:02:25+00:00",
+      "varietal": "Castillo, Caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -2938,8 +2938,8 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 200.0,
       "updated_at": "2026-08-20T14:48:01+12:00",
-      "scraped_at": "2026-08-20T02:54:11+00:00",
-      "varietal": "heirloom",
+      "scraped_at": "2026-08-20T03:02:25+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -2955,7 +2955,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "Koke Shalaye Variety: Ethiopian Heirloom Country: Ethiopia Region: Koke Kebele, Gedeo Zone Process: Natural Anaerobic Altitude: 1,800+ MASL Roast Level: Light in the cup In the cup we taste vibrant tropical fruits, sun-ripened stone fruit, and a lingering floral sweetness. This coffee has a juicy, full body with a bright, summer-like finish that pairs beautifully with something delicate \u2014 think Mille-feuille. FruityJuicy NaturalComplex about the producer High in the Gedeo zone of southern Ethiopia, over 2,000 small-scale farmers in Koke Kebele hand-select only the ripest cherries from traditional Ethiopian varieties. The Koke Shalaye station was established in 2019 by Abreham Mengiste, and has quickly earned recognition for exceptional quality \u2014 a reflection of the rich volcanic soils, high altitudes, and reliable rainfall that define this remarkable growing region. processing Freshly picked cherries undergo anaerobic fermentation, wrapped on raised drying beds to develop vibrant and complex flavour. After fermentation, the beans are shade-dried in thick layers and closely monitored to ensure perfect moisture levels throughout. This careful, hands-on process preserves the coffee's character and honours the skill of the farmers behind every cup.",
-      "flavour_notes": "In the cup we taste vibrant tropical fruits, sun-ripened stone fruit, and a lingering floral sweetness"
+      "flavour_notes": "In The Cup We Taste Vibrant Tropical Fruits, Sun-Ripened Stone Fruit, And A Lingering Floral Sweetness"
     },
     {
       "source": "c4coffee.co",
@@ -2968,8 +2968,8 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 96.0,
       "updated_at": "2026-08-20T14:48:01+12:00",
-      "scraped_at": "2026-08-20T02:54:11+00:00",
-      "varietal": "tatu",
+      "scraped_at": "2026-08-20T03:02:25+00:00",
+      "varietal": "Tatu",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -2998,8 +2998,8 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 149.99,
       "updated_at": "2026-08-20T14:48:01+12:00",
-      "scraped_at": "2026-08-20T02:54:11+00:00",
-      "varietal": "castillo",
+      "scraped_at": "2026-08-20T03:02:25+00:00",
+      "varietal": "Castillo",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -3019,7 +3019,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Vibrant flavours of Blackberries, Blueberries, Boysenberry Ice-cream, and Elderflower. This is an unforgettable coffee that makes one of the most unique dessert like coffees you can find anywhere, crafted and curated to be served as White Coffees, this shines as much for filter as it does anything else. A blend of 45% Blackberry and Wine Yeast Castillo from Sant\u00e0 Monica Colombia, 35% Washed mix from the COMSA Co-Operative in Honduras, and 20% of our Colombian Aponte Honey.",
-      "flavour_notes": "Blackberries, Blueberries, Boysenberry Ice-cream, and Elderflower"
+      "flavour_notes": "Blackberries, Blueberries, Boysenberry Ice-Cream, And Elderflower"
     },
     {
       "source": "c4coffee.co",
@@ -3032,7 +3032,7 @@
       "price_min_nzd": 32.5,
       "price_max_nzd": 130.0,
       "updated_at": "2026-08-20T14:48:01+12:00",
-      "scraped_at": "2026-08-20T02:54:11+00:00",
+      "scraped_at": "2026-08-20T03:02:25+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3066,8 +3066,8 @@
       "price_min_nzd": 32.0,
       "price_max_nzd": 160.0,
       "updated_at": "2026-08-20T14:48:01+12:00",
-      "scraped_at": "2026-08-20T02:54:11+00:00",
-      "varietal": "tabi",
+      "scraped_at": "2026-08-20T03:02:25+00:00",
+      "varietal": "Tabi",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -3100,7 +3100,7 @@
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3134,7 +3134,7 @@
       "price_min_nzd": 15.0,
       "price_max_nzd": 240.01,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3172,7 +3172,7 @@
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3206,7 +3206,7 @@
       "price_min_nzd": 17.5,
       "price_max_nzd": 70.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3227,7 +3227,7 @@
       "process": "unknown",
       "decaf": false,
       "description": "A four origin medium roast blend of Guatemala, Columbia, Ethiopia and Peru. Each origin is individually roasted and then blended to just the right ratio, providing a well rounded rich blend full of flavour. A blend high in sweetness, with a hint of mocha, a medium acidity and a smooth body. Go get your head set! -Certifications include: 100% Fair Trade, 100% Organic, and some Rainforest Alliance, and UTZ -Roast Profile: Medium/Espresso Ideal for all pressurized methods ie Espresso or Stovetop, or for filter methods such as Plunger. Also suitable for all filter methods; Chemex, V60, Aeropress, Clever, Swiss Gold, Moccamaster, Cold Drip/Brew, if you prefer a darker more full bodied taste.",
-      "flavour_notes": "mocha, a medium acidity"
+      "flavour_notes": "Mocha, A Medium Acidity"
     },
     {
       "source": "c4coffee.co",
@@ -3240,7 +3240,7 @@
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3274,7 +3274,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 78.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3295,7 +3295,7 @@
       "process": "unknown",
       "decaf": true,
       "description": "Grown in Western Honduras this coffee blends milk chocolate and apricot flavours to create a delicious, caffeine-free brew. The Cooperativa Cafetalera Capucas Limitada (COCAFCAL) was founded in 1999 by the great-grandson-in-law of the original Capucas farm owner. In the 1960s, this region transitioned from growing tobacco to coffee, creating a rich soil that is perfect for coffee cultivation. Altitude: 1450-1600 MASL Harvest: November - March Region: Capucas, San Pedro de Cop\u00e1n, Cop\u00e1n, Honduras Certifications: Fairtrade, Organic, Rainforest Alliance",
-      "flavour_notes": "milk chocolate and apricot"
+      "flavour_notes": "Milk Chocolate, Apricot"
     },
     {
       "source": "c4coffee.co",
@@ -3308,7 +3308,7 @@
       "price_min_nzd": 17.5,
       "price_max_nzd": 70.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3329,7 +3329,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "Terra Nova showcases some of our finest coffees with notes of red currant, ripe fruit, and chocolate. This is our most multidimensional year-round blend, crafted with a Washed Peru, Honduras Natural, and two seasonal selections. This organic, Fair Trade-certified blend offers a full-bodied richness of red fruit and refined acidity, with a delicate floral finish that creates something distinctly complex. Process Washed & Natural Sundried Roast Level Medium Sutiable For Espresso, Plunger & Filter",
-      "flavour_notes": "red currant, ripe fruit, and chocolate"
+      "flavour_notes": "Red Currant, Ripe Fruit, And Chocolate"
     },
     {
       "source": "c4coffee.co",
@@ -3342,7 +3342,7 @@
       "price_min_nzd": 17.0,
       "price_max_nzd": 68.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3376,8 +3376,8 @@
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
-      "varietal": "typica",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
+      "varietal": "Typica",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -3397,7 +3397,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "The Ulya Mill is located in the heart of Waghi Valley and is owned and operated by Monpi Coffee Exports. The original Ulya Plantation is located immediately next to the mill and is still privately owned. Occupying over 200ha , it's still going strong and supplies a high quality product to the mill. The mill saw a major upgrade under Monpi Management in 2014. With an expansion of milling capacity, a brand new wet-milling line, and a state of the art waste water processing plant, the mill is able to offer the best possible processing environment from harvest till final green bean exports. Many smallholder farmers in the region also bring their fresh coffee cherries to be processed and milled at Ulya mill. The relatively high altitude and cooler climate of this area is ideal for the cultivation of high-quality coffee. PNG is an extremely diverse country, with over 800 different languages spoken. Most tribes from the highlands had minimal contact with the western world until the 1930s, as exploration in PNG had been minimal. PNG is now a paradox between Western influence and indigenous traditions. Ulya coffee is Rich and full bodied, with notes of dried fruit, dark chocolate, and sweet spices, with a lingering finish. -Region: Waghi Valley, Western Highlands -Varietals: Typica and Arusha -Elevation: 1400 to 1800m -Process: Washed -Roast Profile: Medium/Espresso *Ideal for all pressurized methods ie Espresso or Stovetop, or for filter methods such as Plunger. Also suitable for all filter methods; Chemex, V60, Aeropress, Clever, Swiss Gold, Moccamaster, Cold Drip/Brew, if you prefer a darker more full bodied taste.",
-      "flavour_notes": "dried fruit, dark chocolate, and sweet spices"
+      "flavour_notes": "Dried Fruit, Dark Chocolate, And Sweet Spices"
     },
     {
       "source": "c4coffee.co",
@@ -3410,7 +3410,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 88.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3444,8 +3444,8 @@
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
-      "varietal": "caturra,catuai,bourbon,typica",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
+      "varietal": "Caturra, Catuai, Bourbon, Typica",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -3465,7 +3465,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Guaya'b Asociacion Civil is a coffee cooperative located in the Sierra de los Cuchumatanes region near Huehuetenango, in north-western Guatemala. Formally established in 1998, Guaya'b began selling to the Fair Trade market in 2000. The sales made by Guaya'b have brought stability to the cooperative and have enabled its members to have better livelihoods and quality of life. The association represents 477 coffee and honey producers, 299 of these producers are listed as coffee growers and 178 as honey producers, although in practice some members have both honey and coffee. Most of the members are Popti' Maya, and the group's name means \"mutual benefit\" in their language. Among the services Guaya'b offers to its members are a low interest loan service (farmers typically are left without sufficient cash in the months prior to harvest to pay for essentials, and may not be able to find casual work in this period either), and services for local women such as nutritional advice and work and business training (making honey-processing equipment and running a honey store in Jacaltenango). Technical assistance aimed at improving the quality of honey and coffee production is central to Guaya'b's work. The co-operative provides an at-cost supply of certified coffee seedlings to its members. A revolving credit fund supports members' efforts to renovate their coffee farms. Construction of its own wet processing mill on the outskirts of Jacaltenango has created an opportunity for many coffee-producing members of Guaya'b to process their coffee from cherry stage to dried coffee parchment much more cheaply (at about 25% of the previous cost), and more quickly, than they previously could. It is also expected that by using the wet mill farmers can produce a more consistent, higher quality coffee than they can in their own backyards. With the Fair Trade pricing, Guaya'b farmers have increased their own earnings and reinvested a portion of their profits into the community. As a result, the region\u2019s economy is more stable and the rate of migration has decreased. The photo's shown on the left are from a Guaya'b visit that C4 made while visiting co ops in guatemala recently. Guaya'b is clean and smooth, with notes of toffee, roasted almond and lime. -Co Operative: Guaya'b Asociacion Civil -Producers: 299 members of the Popti' Maya community -Region: Sierra de los Cuchumatanes, Huehuetenango, -Elevation: 1600-1800m -Varietals: Typica, Bourbon, Caturra, Catuai -Harvest Period: December to March -Process: Washed, patio dried -Certifications: Fair Trade, Organic Tes",
-      "flavour_notes": "toffee, roasted almond and lime"
+      "flavour_notes": "Toffee, Roasted Almond, Lime"
     },
     {
       "source": "c4coffee.co",
@@ -3478,8 +3478,8 @@
       "price_min_nzd": 15.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
-      "varietal": "caturra,bourbon,typica",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
+      "varietal": "Caturra, Bourbon, Typica",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -3499,7 +3499,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Bright, spicy aroma, medium body, with notes of almond, toffee and a touch of citrus, with a slight smokey finish. Cenfrocafe is located in highland valleys between the Andes and the Amazon Rainforest in Northern Peru, and enjoys a reputation in the specialty industry as one of Peru\u2019s best and most consistent sources of Fair Trade/organic coffee in addition to being one of the largest cooperatives in the country based on total volume. Cenfrocafe was founded in 1999 with 220 small-scale coffee farmers in eleven community-based associations. Nearly fifteen years after their founding, Cenfrocafe, now based out of Jaen, serves more than 2,000 farmer members in local associations spanning across twelve districts within the lush Cajamarca region. From technical assistance and quality control workshops for their farmers, to economic and leadership training for the young people in their rural communities, Cenfrocafe works not only to support the commercial endeavours of its members \u2013 but also to facilitate the development of their communities as a whole. The Cenfrocafe financial team provides short-term credit that helps farmers cover the front-end costs of the harvest and materials in the coffee production. Most suited for pressurised methods ie Espresso or Stovetop, or for filter methods such as Plunger. Also suitable for all filter methods; Chemex, V60, Aeropress, Clever, Swiss Gold, Moccamaster, Cold Drip/Brew, if you prefer a darker more full bodied taste. \u201a\u00f3\u00a3 Location: 12 districts within the provinces of Jaen and San Ignacio, in Cajamarca, and in Bagua province Producers: 2000+ local farm owners Varietals: Typica, Caturra, Bourbon, Pache, Catimor Elevation: 1300-2000m Process: Washed, Patio Dried Certifications: FLO, Bio Latina organic Grade: Grade 1",
-      "flavour_notes": "almond, toffee and a touch of citrus"
+      "flavour_notes": "Almond, Toffee, A Touch Of Citrus"
     },
     {
       "source": "c4coffee.co",
@@ -3512,7 +3512,7 @@
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3546,8 +3546,8 @@
       "price_min_nzd": 16.0,
       "price_max_nzd": 64.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
-      "varietal": "caturra,catuai,bourbon,typica",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
+      "varietal": "Caturra, Catuai, Bourbon, Typica",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -3580,7 +3580,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 55.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Colombia",
@@ -3601,7 +3601,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3622,7 +3622,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "Our Honduras Natural is an incredibly rich flavourful coffee, with notes of sweet red fruit acidity and deep mulled wine, it\u201a\u00c4\u00f4s suitable for any cup that needs some kick. Utilising a medium to light roast profile it\u201a\u00c4\u00f4s bursting full of rich fruit flavours with a bit of a fun Natural wine like funk. Grown 1200 - 1600 m.a.s.l, processed and dried naturally under the sun. \u00ac\u2020 Harvest & Sourcing: Honduras has largely been known for its conventional manner for coffee production, with heavy reliances on chemical input to support mass scale production, with the vast majority of produced coffee being low cost and going into the commodity or commercial market. COMSA founded in 2001 by 69 farmers were seeking ways to improve the quality of their coffee, and increase its value to better support those growing it. COMSA set out to encourage quality and organic, chemical free agriculture, and over time they have built their volumes and their quality and now the 1200 members produce specialty grade organic coffee and own their own warehouses and processing plant. The group is very focussed on social development as well as the agricultural; they have a primary school and run organic education courses for farmers from other parts of the country and region. In recent years, looking for new, quality focussed markets the cooperative has developed a programme for the production of natural processed coffees \u201a\u00c4\u00ec in 2019 when Trade Aid visited, they produced 14 full containers of natural coffee in response to demand. \u00ac\u2020",
-      "flavour_notes": "red fruit acidity and deep mulled wine, it\u201a\u00c4\u00f4s suitable for any cup that needs some kick"
+      "flavour_notes": "Red Fruit Acidity, Deep Mulled Wine, It\u201a\u00c4\u00f4s Suitable For Any Cup That Needs Some Kick"
     },
     {
       "source": "c4coffee.co",
@@ -3635,7 +3635,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 55.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Ethiopia",
@@ -3656,7 +3656,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3677,7 +3677,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Our newest seasonal blend, that's so vibrant and delicious, it might be here to stay! Producing one of the most vibrant, but still clean cups ever, with incredible notes of Blackberry, Blueberry, Myer Lemon and Vanilla Flower. Two beautiful Ethiopian coffees that compliment and lift each other to new heights, utilising the juiciest naturally processed coffee from Arososala, and the cleanest and most delicate washed coffee from Gogogu. These two joined in one cup give an incredible and vibrant coffee you will keep on coming back for.",
-      "flavour_notes": "Blackberry, Blueberry, Myer Lemon and Vanilla Flower"
+      "flavour_notes": "Blackberry, Blueberry, Myer Lemon, Vanilla Flower"
     },
     {
       "source": "c4coffee.co",
@@ -3690,7 +3690,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3708,10 +3708,10 @@
       ],
       "origin_country": "Colombia",
       "producer": "unknown",
-      "process": "Honey",
+      "process": "Honey, Washed",
       "decaf": false,
       "description": "Introducing the latest new hopper at C4; the \"Honey\" hopper! This hopper features coffees that have undergone the \"Honey\" Process. With the first coffee to go into the hopper being from the rural areas of Aponte, Narino. This coffee is Juicy and super sweet with notes of rockmelon, caramel, fudge and orange. A perfect brew for a more modern espresso or delicious filter! THE PROCESS: The honey processing method can be thought of as an \"in-between\" method of processing, compared to washed and naturally processed coffees. Using this method, the coffee is picked and sorted as red cherries before being pulped (removing the skin of the coffee cherry), but the small layer of fruit underneath the skin is left behind. The seeds - with their sticky fruit intact - are set out to dry, either on raised beds or patios. It is this added contact time between the fruit and the seed that, when done well, results in a complex, delicate and sweet cup.",
-      "flavour_notes": "rockmelon, caramel, fudge and orange"
+      "flavour_notes": "Rockmelon, Caramel, Fudge, Orange"
     },
     {
       "source": "c4coffee.co",
@@ -3724,8 +3724,8 @@
       "price_min_nzd": 12.39,
       "price_max_nzd": 624.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
-      "varietal": "castillo",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
+      "varietal": "Castillo",
       "size_prices": [
         {
           "size_grams": 150.0,
@@ -3769,7 +3769,7 @@
       "process": "Washed",
       "decaf": true,
       "description": "Popayan Reserve Decaf is produced by 67 select farms in the Popayan region of Colombia. These farms provide employment for over 400 people. It is grown and milled in Popayan, then transported to Manizales in Caldas to the Descafecol Decaffeination plant to be decaffeinated. This coffees decaffeinated by the sugar cane method. The green coffee is steamed to allow for caffeine extraction, then the coffee is placed in a solution of water and Ethyl Acetate, a natural solvent derived through the fermentation of sugarcane. This a gentle and natural way to decaffeinate green coffee as this method avoids excess temperatures seen in other processes. It selectively removes 97% of caffeine from the coffee, leaving a decaf coffee that roasts and tastes much closer to a normal Colombia coffee. Ethyl acetate occurs in ripening fruit. A ripe banana contains about 20 times more Ethyl Acetate than decaffeinated coffee using this process. It is also worthwhile mentioning that due to the volatility of Ethyl Acetate, any residual compound evaporates at just 70 degrees. As coffee is roasted to above 200 degrees all remaining traces of Ethyl Acetate are completely gone. Another great benefit is with the decaffeination plant being in Colombia the coffee no longer has to go to Mexico, Vancouver or even Germany to be decaffeinated, it simply has to take a quick journey to the Colombian city of Manizales for processing before being shipped straight to New Zealand. This means a much lower carbon footprint, and fresher better tasting coffee. This decaf is clean and bright with notes of citrus and dried fruits, with a lingering finish. -Growing Region: Cauca -Decaffeinated: Descafecol, Manizales city -Producers: 67 smallholder farms -Elevation: 1500 - 2070m -Varietals: Castillo, Variedad Colombia -Milling Process: Washed -Roast Profile: Medium / Espresso *Ideal for all pressurized methods ie Espresso or Stovetop, or for filter methods such as Plunger. *Also suitable for all filter methods; Chemex, V60, Aeropress, Clever, Swiss Gold, Moccamaster, Cold Drip/Brew, if you prefer a roastier more full bodied taste.",
-      "flavour_notes": "citrus and dried fruits"
+      "flavour_notes": "Citrus, Dried Fruits"
     },
     {
       "source": "c4coffee.co",
@@ -3782,7 +3782,7 @@
       "price_min_nzd": 22.51,
       "price_max_nzd": 90.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3816,7 +3816,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3850,7 +3850,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
       "updated_at": "2026-08-20T14:48:02+12:00",
-      "scraped_at": "2026-08-20T02:54:12+00:00",
+      "scraped_at": "2026-08-20T03:02:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3880,8 +3880,8 @@
       "price_min_nzd": 95.0,
       "price_max_nzd": 95.0,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
-      "varietal": "geisha",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
+      "varietal": "Geisha",
       "size_prices": [
         {
           "size_grams": 60.0,
@@ -3906,8 +3906,8 @@
       "price_min_nzd": 49.0,
       "price_max_nzd": 220.0,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
-      "varietal": "geisha,heirloom",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
+      "varietal": "Geisha, Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -3923,7 +3923,7 @@
       "process": "Washed",
       "decaf": false,
       "description": "Farm: Finca El Jardin Producer: Jorge Elias Rojas V\u00e1squez Origin: Planadas, Tolima, Colombia Cupping Notes: BlackBerry, White Grape, Kiwi, Orange Varietal: Chiroso Process: Washed Altura: 2.050 masl Lot planted: 2020 Farmsize: 12 ha Lot-size: 1 ha Fermentation: 24h in mucilage Drying: 17 days in marquesina (dry-house) Our V60 Recipe - a great starting point for brewing all of our coffees Ratio: 16g coffee to 250g water Water Temperature: 90C Brew Time: 2:30-3:00m Three Pour Method - First pour, 50g of hot water, allow coffee to bloom for 35 seconds - Second pour, continue the pour until you reach 150g hot water in total - Third pour to 250g of hot water in total (start this pour when the water reaches the coffee bed) - Enjoy The variety is Chiroso, a wild type discovered in Urrao, Antioquia. The name \"Chiroso\" means \u201cbig\u201d or \u201cbumpy,\u201d inspired by its resemblance to achiras, a traditional, imperfectly shaped Colombian cookie. DNA analysis revealed why Chiroso has a flavor profile that blends characteristics of both Ethiopian and Colombian coffees. Like the famed Geisha, Chiroso is an heirloom variety with Ethiopian roots. *This coffee comes in 200gm bags *Prime window for drinking is 2 to 4 weeks post roast. If the coffee is fresh be sure to bloom 40 seconds. *A reminder that no exchanges or returns will be approved in the case of mistaken ordering - Please double check your grind preferences",
-      "flavour_notes": "BlackBerry, White Grape, Kiwi, Orange"
+      "flavour_notes": "Blackberry, White Grape, Kiwi, Orange"
     },
     {
       "source": "greyroastingco.com",
@@ -3936,7 +3936,7 @@
       "price_min_nzd": 49.0,
       "price_max_nzd": 220.0,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3966,7 +3966,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3992,8 +3992,8 @@
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
-      "varietal": "caturra,catuai,obata",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
+      "varietal": "Caturra, Catuai, Obata",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -4022,8 +4022,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
-      "varietal": "typica,java",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
+      "varietal": "Typica, Java",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -4052,7 +4052,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4082,8 +4082,8 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
-      "varietal": "mixed",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
+      "varietal": "Mixed",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -4128,8 +4128,8 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
-      "varietal": "mixed",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
+      "varietal": "Mixed",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -4174,8 +4174,8 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 80.0,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
-      "varietal": "castillo",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
+      "varietal": "Castillo",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -4208,8 +4208,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
-      "varietal": "typica,java",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
+      "varietal": "Typica, Java",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -4238,8 +4238,8 @@
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
       "updated_at": "2026-08-20T13:22:42+12:00",
-      "scraped_at": "2026-08-20T02:54:13+00:00",
-      "varietal": "caturra,catuai,obata",
+      "scraped_at": "2026-08-20T03:02:27+00:00",
+      "varietal": "Caturra, Catuai, Obata",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -4268,8 +4268,8 @@
       "price_min_nzd": 31.0,
       "price_max_nzd": 138.99,
       "updated_at": "2026-08-20T14:21:49+12:00",
-      "scraped_at": "2026-08-20T02:54:14+00:00",
-      "varietal": "sl28",
+      "scraped_at": "2026-08-20T03:02:28+00:00",
+      "varietal": "SL28",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4298,7 +4298,7 @@
       "price_min_nzd": 32.99,
       "price_max_nzd": 112.99,
       "updated_at": "2026-08-20T14:21:49+12:00",
-      "scraped_at": "2026-08-20T02:54:14+00:00",
+      "scraped_at": "2026-08-20T03:02:28+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4328,8 +4328,8 @@
       "price_min_nzd": 29.99,
       "price_max_nzd": 129.99,
       "updated_at": "2026-08-20T14:21:49+12:00",
-      "scraped_at": "2026-08-20T02:54:14+00:00",
-      "varietal": "castillo",
+      "scraped_at": "2026-08-20T03:02:28+00:00",
+      "varietal": "Castillo",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4358,7 +4358,7 @@
       "price_min_nzd": 38.99,
       "price_max_nzd": 174.99,
       "updated_at": "2026-08-20T14:21:49+12:00",
-      "scraped_at": "2026-08-20T02:54:14+00:00",
+      "scraped_at": "2026-08-20T03:02:28+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4388,8 +4388,8 @@
       "price_min_nzd": 23.0,
       "price_max_nzd": 101.99,
       "updated_at": "2026-08-20T13:34:40+12:00",
-      "scraped_at": "2026-08-20T02:54:16+00:00",
-      "varietal": "bourbon",
+      "scraped_at": "2026-08-20T03:02:30+00:00",
+      "varietal": "Bourbon",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4418,8 +4418,8 @@
       "price_min_nzd": 23.0,
       "price_max_nzd": 104.99,
       "updated_at": "2026-08-20T13:34:40+12:00",
-      "scraped_at": "2026-08-20T02:54:16+00:00",
-      "varietal": "catuai",
+      "scraped_at": "2026-08-20T03:02:30+00:00",
+      "varietal": "Catuai",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4448,8 +4448,8 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 119.99,
       "updated_at": "2026-08-20T13:34:40+12:00",
-      "scraped_at": "2026-08-20T02:54:16+00:00",
-      "varietal": "heirloom",
+      "scraped_at": "2026-08-20T03:02:30+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4465,7 +4465,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "Sealed with a kiss. Raspberry Kiss is a natural-process Grade 1 heirloom grown by smallholders around Konga, high in Ethiopia's Gedeo highlands. Expect a nip of Irish whiskey, juicy raspberry, a twist of rhubarb and a deep hit of dark currants \u2014 slow-dried on raised beds, roasted for espresso, and brought to us by Cofinet.",
-      "flavour_notes": "nip of Irish whiskey, juicy raspberry, a twist of rhubarb and a deep hit of dark currants"
+      "flavour_notes": "Nip Of Irish Whiskey, Juicy Raspberry, A Twist Of Rhubarb, A Deep Hit Of Dark Currants"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4478,7 +4478,7 @@
       "price_min_nzd": 19.99,
       "price_max_nzd": 69.99,
       "updated_at": "2026-08-20T13:34:40+12:00",
-      "scraped_at": "2026-08-20T02:54:16+00:00",
+      "scraped_at": "2026-08-20T03:02:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4508,7 +4508,7 @@
       "price_min_nzd": 34.99,
       "price_max_nzd": 149.99,
       "updated_at": "2026-08-20T13:34:40+12:00",
-      "scraped_at": "2026-08-20T02:54:16+00:00",
+      "scraped_at": "2026-08-20T03:02:30+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4538,7 +4538,7 @@
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
       "updated_at": "2026-08-20T13:22:47+12:00",
-      "scraped_at": "2026-08-20T02:54:17+00:00",
+      "scraped_at": "2026-08-20T03:02:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4564,7 +4564,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-08-20T13:22:47+12:00",
-      "scraped_at": "2026-08-20T02:54:17+00:00",
+      "scraped_at": "2026-08-20T03:02:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4590,7 +4590,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
       "updated_at": "2026-08-20T13:22:47+12:00",
-      "scraped_at": "2026-08-20T02:54:17+00:00",
+      "scraped_at": "2026-08-20T03:02:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4620,7 +4620,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
       "updated_at": "2026-08-20T13:22:47+12:00",
-      "scraped_at": "2026-08-20T02:54:17+00:00",
+      "scraped_at": "2026-08-20T03:02:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4637,7 +4637,7 @@
       "process": "Decaf",
       "decaf": false,
       "description": "Hand-picked by our Head Roaster and delivered to your door each month. Choose how many bags you want and then let us do the hard work of choosing the coffee. Roasted right here in Arrowtown, Aotearoa. Free delivery on all subscriptions. Every now and then, we may want to share something extra special. This may result in you receiving a bag of 100-125g, of course, it'll still be of equal or higher value.",
-      "flavour_notes": "Flavor Notes: List Of Specific Taste/Flavour Descriptors (E.G. Fruits, Spices, Chocolate), Flavour Notes: List Of Specific Taste/Flavour Descriptors (E.G. Fruits, Spices, Chocolate)"
+      "flavour_notes": "Flavor Notes: List Of Specific Taste, Flavour Descriptors (E.G. Fruits, Spices, Chocolate), Flavour Notes: List Of Specific Taste, Flavour Descriptors (E.G. Fruits, Spices, Chocolate)"
     },
     {
       "source": "wolfcoffee.co.nz",
@@ -4650,7 +4650,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-08-20T13:22:47+12:00",
-      "scraped_at": "2026-08-20T02:54:17+00:00",
+      "scraped_at": "2026-08-20T03:02:31+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4680,7 +4680,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
       "updated_at": "2026-08-20T13:22:49+12:00",
-      "scraped_at": "2026-08-20T02:54:18+00:00",
+      "scraped_at": "2026-08-20T03:02:32+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4714,7 +4714,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
       "updated_at": "2026-08-20T13:22:49+12:00",
-      "scraped_at": "2026-08-20T02:54:18+00:00",
+      "scraped_at": "2026-08-20T03:02:32+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4748,7 +4748,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
       "updated_at": "2026-08-20T13:22:49+12:00",
-      "scraped_at": "2026-08-20T02:54:18+00:00",
+      "scraped_at": "2026-08-20T03:02:32+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4774,7 +4774,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
       "updated_at": "2026-08-20T13:22:49+12:00",
-      "scraped_at": "2026-08-20T02:54:18+00:00",
+      "scraped_at": "2026-08-20T03:02:32+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4800,7 +4800,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
       "updated_at": "2026-08-20T13:22:49+12:00",
-      "scraped_at": "2026-08-20T02:54:18+00:00",
+      "scraped_at": "2026-08-20T03:02:32+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",

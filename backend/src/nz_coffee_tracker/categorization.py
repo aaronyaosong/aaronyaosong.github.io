@@ -174,10 +174,50 @@ def clean_process(text: str) -> str:
     if not text:
         return "unknown"
     text_lower = text.lower()
+    found: list[str] = []
     for pattern, canonical in CANONICAL_PROCESSES:
         if re.search(pattern, text_lower):
-            return canonical
-    return "unknown"
+            if canonical not in found:
+                is_subsumed = any(canonical in existing for existing in found if existing != canonical) or \
+                              (canonical == "Decaf" and any("Decaf" in p for p in found)) or \
+                              (canonical == "Honey" and any("Honey" in p for p in found)) or \
+                              (canonical == "Natural" and any("Natural" in p for p in found)) or \
+                              (canonical == "Washed" and any("Washed" in p for p in found))
+                if not is_subsumed:
+                    found.append(canonical)
+    return ", ".join(found) if found else "unknown"
+
+
+def format_varietal(raw: str) -> str:
+    if not raw or raw == "unknown":
+        return "unknown"
+    parts = [p.strip() for p in raw.split(",") if p.strip()]
+    titled = []
+    for p in parts:
+        if re.match(r"^sl\s*\d+$", p, re.I):
+            titled.append(re.sub(r"sl\s*", "SL", p, flags=re.I))
+        elif re.match(r"^ruiru\s*\d+$", p, re.I):
+            titled.append(re.sub(r"ruiru\s*", "Ruiru ", p, flags=re.I))
+        elif re.match(r"^jarc\s*\d+$", p, re.I):
+            titled.append(re.sub(r"jarc\s*", "JARC ", p, flags=re.I))
+        else:
+            titled.append(p.title())
+    return ", ".join(titled) if titled else "unknown"
+
+
+def format_flavour_notes(raw: str) -> str:
+    if not raw or raw == "unknown":
+        return "unknown"
+    # Strip trailing punctuation, ellipses, quotes
+    cleaned = re.sub(r"[…\.\,\:\;\s\—\-\"]+$", "", raw).strip()
+    cleaned = re.sub(r"^[,\s:—\-\"]+", "", cleaned).strip()
+    parts = re.split(r",\s*|\s+&\s+|\s+and\s+|\s*/\s*", cleaned)
+    titled = []
+    for p in parts:
+        item = p.strip().rstrip(".…")
+        if item and len(item) > 1 and item.lower() not in NON_FLAVOUR_WORDS:
+            titled.append(item.title())
+    return ", ".join(titled) if titled else "unknown"
 
 
 def infer_process_rule_based(product: dict[str, Any]) -> str:
@@ -204,7 +244,7 @@ def infer_process_rule_based(product: dict[str, Any]) -> str:
 def infer_varietal_rule_based(product: dict[str, Any]) -> str:
     text = _collect_product_text(product)
     found = [varietal for varietal in KNOWN_VARIETALS if re.search(rf"\b{re.escape(varietal)}\b", text)]
-    return ",".join(found) if found else "unknown"
+    return format_varietal(",".join(found)) if found else "unknown"
 
 
 COFFEE_FLAVOUR_LEXICON = (
@@ -356,12 +396,14 @@ def infer_metadata(
         ):
             clean_cached_origin = clean_origin_country(cached.get("origin_country") or "")
             clean_cached_process = clean_process(cached.get("process") or "")
+            clean_cached_notes = format_flavour_notes(cached.get("flavour_notes") or "")
+            clean_cached_varietal = format_varietal(cached.get("varietal") or "")
             return {
-                "flavour_notes": cached.get("flavour_notes") or "unknown",
+                "flavour_notes": clean_cached_notes,
                 "origin_country": clean_cached_origin,
                 "producer": cached.get("producer") or "unknown",
                 "process": clean_cached_process,
-                "varietal": cached.get("varietal") or "unknown",
+                "varietal": clean_cached_varietal,
             }
 
     # 2. Extract rule-based values
@@ -389,12 +431,16 @@ def infer_metadata(
     llm_origin = clean_origin_country(llm_meta.get("origin_country") or "") if llm_meta else "unknown"
     llm_process = clean_process(llm_meta.get("process") or "") if llm_meta else "unknown"
 
+    raw_notes = (rule_notes if rule_notes != "unknown" else (llm_meta.get("flavour_notes") if llm_meta and llm_meta.get("flavour_notes") != "unknown" else "unknown")) or "unknown"
+    formatted_notes = format_flavour_notes(raw_notes)
+    formatted_varietal = format_varietal(varietal_val)
+
     final_meta = {
-        "flavour_notes": (rule_notes if rule_notes != "unknown" else (llm_meta.get("flavour_notes") if llm_meta and llm_meta.get("flavour_notes") != "unknown" else "unknown")) or "unknown",
+        "flavour_notes": formatted_notes,
         "origin_country": (rule_origin if rule_origin != "unknown" else llm_origin) or "unknown",
         "producer": (rule_producer if rule_producer != "unknown" else (llm_meta.get("producer") if llm_meta else "unknown")) or "unknown",
         "process": (rule_process if rule_process != "unknown" else llm_process) or "unknown",
-        "varietal": varietal_val or "unknown",
+        "varietal": formatted_varietal,
     }
 
     if database_path is not None:
