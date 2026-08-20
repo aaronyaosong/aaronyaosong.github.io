@@ -33,8 +33,8 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--categories",
-        default="filter roast,espresso roast",
-        help="Comma-separated roast categories to include (default: filter roast,espresso roast)",
+        default="filter roast,espresso roast,omni roast",
+        help="Comma-separated roast categories to include (default: filter roast,espresso roast,omni roast)",
     )
     parser.add_argument(
         "--no-category-filter",

@@ -74,7 +74,7 @@ Useful flags:
 - `--out-dir frontend/data` (recommended for the website)
 - `--format json|csv|both` (default: `both`)
 - `--all` include unavailable products (default is available-only)
-- `--categories "filter roast,espresso roast"` include only selected categories
+- `--categories "filter roast,espresso roast,omni roast"` include only selected categories
 - `--no-category-filter` include all product categories
 - `--database path/to/history.sqlite3` choose the SQLite history database path
 
