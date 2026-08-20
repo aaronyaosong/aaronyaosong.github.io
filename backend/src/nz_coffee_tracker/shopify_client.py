@@ -45,7 +45,7 @@ class ShopifyClient:
         # Extract additional page-level metadata (metafield blocks and flavour badge pills)
         try:
             desc = str(product.get("body_html") or product.get("description") or "").strip()
-            needs_html = not desc or any(r in self.base_url for r in ("slowcoffee", "wolfcoffee", "atomiccoffee", "ozonecoffee"))
+            needs_html = not desc or any(r in self.base_url for r in ("slowcoffee", "wolfcoffee", "atomiccoffee", "ozonecoffee", "coffeeembassy", "greyroastingco", "vanguardcoffee", "eternalcoffee"))
             if needs_html:
                 page_resp = self.session.get(
                     f"{self.base_url}/products/{product_handle}",
@@ -115,9 +115,23 @@ class ShopifyClient:
                     if clean_pills:
                         extra_sections.append(f"<p><strong>Tasting notes:</strong> {', '.join(clean_pills)}</p>")
 
+                    # 5. Structured spec rows (e.g. Slow Coffee slh-spec__row)
+                    spec_matches = re.findall(
+                        r'<div[^>]*class=[\"\'][^\"\']*(?:spec__row)[^\"\']*[\"\'][^>]*>(.*?)</div>',
+                        page_resp.text,
+                        re.DOTALL | re.IGNORECASE,
+                    )
+                    for spec in spec_matches:
+                        clean_spec = re.sub(r"<[^>]+>", " ", unescape(spec))
+                        clean_spec = re.sub(r"\s+", " ", clean_spec).strip()
+                        if clean_spec:
+                            extra_sections.append(f"<p>{clean_spec}</p>")
+
+                    existing_body = str(product.get("description") or product.get("body_html") or "").strip()
                     if extra_sections:
-                        existing_body = str(product.get("body_html") or product.get("description") or "").strip()
                         product["body_html"] = f"{'\n\n'.join(extra_sections)}\n\n{existing_body}".strip()
+                    elif existing_body and not product.get("body_html"):
+                        product["body_html"] = existing_body
         except Exception:
             pass
 

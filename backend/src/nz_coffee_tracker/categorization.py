@@ -86,6 +86,7 @@ def description_text(product: dict[str, Any]) -> str:
     # Strip remaining HTML tags
     text = re.sub(r"<[^>]+>", " ", text)
     text = unescape(text)
+    text = text.replace("\xa0", " ")
     # Normalize whitespace per line and collapse excessive newlines
     lines = [re.sub(r"[ \t]+", " ", line).strip() for line in text.split("\n")]
     cleaned = "\n".join(lines)
@@ -109,28 +110,30 @@ def _collect_product_text(product: dict[str, Any]) -> str:
 def extract_description_field(product: dict[str, Any], labels: tuple[str, ...]) -> str:
     text = description_text(product)
     label_pattern = "|".join(re.escape(label) for label in labels)
-    next_label = r"origin(?: country)?|country|location|producer|farm|estate|process(?:ing)?|process method|processing method|fermentation|flavou?r notes|tasting notes|cupping notes|tasting card|notes|variety|varieties|varietal|varietals|variedad|the coffee|brewing recipe|brew guide|filter recipe|espresso recipe|suggested method|dose|recipe|altitude|elevation|region|province|roast|roast profile|roast level|suitable for|importer|exporter|years used|recommended use|roaster\'s comment|about the coffee|characteristics|body|acidity|finish|r\s*egion"
+    next_label = r"origin(?: country)?|country|location|producer|producers|farm|estate|process(?:ing)?|process method|processing method|fermentation|flavou?r notes|tasting notes|cupping notes|cup notes|cup profile|tasting card|notes|variety|varieties|varietal|varietals|variedad|the coffee|brewing recipe|brew guide|filter recipe|espresso recipe|suggested method|dose|recipe|altitude|elevation|region|province|colony|roast|roast profile|roast level|roast style|suitable for|importer|exporter|years used|recommended use|recomending use|roaster\'s comment|about the coffee|characteristics|body|acidity|finish|r\s*egion"
 
-    # 1. Line start / header boundary with colon/dash/em-dash/dot delimiter (supports values on same line or immediately following line)
+    # 1. Line start / header boundary with colon/dash/em-dash/dot delimiter (supports line and multiline & continuation)
     match = re.search(
-        rf"(?:^|\n)\s*(?:{label_pattern})\b\s*[:\-–—.]\s*(?:\n\s*)?([A-Z0-9].*?)(?=\s+(?:{next_label})\s*[:\-–—.]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card|recommended use|roaster\'s comment|about the coffee)\b|$|[;|\n])",
+        rf"(?:^|\n)\s*(?<!full of\s)(?<!rich\s)(?<!packed with\s)(?:{label_pattern})\b\s*[:\-–—.]\s*(?:\n\s*)?([A-Z0-9][^\n]*(?:\n\s*(?:&|and|,)\s*[^\n]+)?)(?=\s+(?:{next_label})\s*[:\-–—.]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card|recommended use|recomending use|roaster\'s comment|about the coffee|score|disclaimer)\b|$|[;|\n])",
         text,
         re.IGNORECASE,
     )
     if match and match.group(1).strip():
         val = match.group(1).strip()
-        if not re.search(r"\b(?:of|for|that|which|with|an?|the|and|is|are)\b", val.split()[0], re.I):
+        first_word = val.split()[0] if val.split() else ""
+        if not re.search(r"^(?:of|for|that|which|with|an?|the|and|is|are|nursery|seedlings)$", first_word, re.I):
             return val
 
-    # 2. Line start / structured label with optional separator or whitespace (e.g. C4 cards, Atomic characteristics)
+    # 2. Line start / structured label with optional separator or whitespace (e.g. C4 cards, Atomic characteristics, Slow spec rows)
     match_line = re.search(
-        rf"(?:^|\n)\s*(?:{label_pattern})\b\s*[:\-–—.]?\s*(?:\n\s*)?([A-Z0-9][^\n]{{2,120}}?)(?=\s+(?:{next_label})\s*[:\-–—.]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card|recommended use|body|acidity|finish|roaster\'s comment|about the coffee)\b|$|[;|\n])",
+        rf"(?:^|\n)\s*(?<!full of\s)(?<!rich\s)(?<!packed with\s)(?:{label_pattern})\b\s*[:\-–—.]?\s*(?:\n\s*)?([A-Z0-9][^\n]{{2,120}}?)(?=\s+(?:{next_label})\s*[:\-–—.]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card|recommended use|recomending use|body|acidity|finish|roaster\'s comment|about the coffee)\b|$|[;|\n])",
         text,
         re.IGNORECASE,
     )
     if match_line and match_line.group(1).strip():
         val = match_line.group(1).strip()
-        if not re.search(r"\b(?:of|for|that|which|with|an?|the|and|is|are)\b", val.split()[0], re.I):
+        first_word = val.split()[0] if val.split() else ""
+        if not re.search(r"^(?:of|for|that|which|with|an?|the|and|is|are|nursery|seedlings)$", first_word, re.I):
             return val
 
     return "unknown"
@@ -143,25 +146,29 @@ COUNTRY_MAP = {
     "guatemala": "Guatemala", "guatemalan": "Guatemala",
     "costa rica": "Costa Rica", "costa rican": "Costa Rica",
     "panama": "Panama", "panamanian": "Panama",
-    "honduras": "Honduras", "honduran": "Honduras",
     "brazil": "Brazil", "brazilian": "Brazil",
-    "rwanda": "Rwanda", "rwandan": "Rwanda",
+    "indonesia": "Indonesia", "indonesian": "Indonesia",
+    "sumatra": "Indonesia", "sumatran": "Indonesia",
+    "honduras": "Honduras", "honduran": "Honduras",
     "peru": "Peru", "peruvian": "Peru",
-    "ecuador": "Ecuador", "ecuadorian": "Ecuador",
-    "el salvador": "El Salvador", "salvadoran": "El Salvador",
+    "rwanda": "Rwanda", "rwandan": "Rwanda",
     "burundi": "Burundi", "burundian": "Burundi",
-    "uganda": "Uganda", "ugandan": "Uganda",
-    "bolivia": "Bolivia", "bolivian": "Bolivia",
+    "el salvador": "El Salvador", "salvadoran": "El Salvador",
     "nicaragua": "Nicaragua", "nicaraguan": "Nicaragua",
     "mexico": "Mexico", "mexican": "Mexico",
-    "papua new guinea": "Papua New Guinea",
-    "indonesia": "Indonesia", "indonesian": "Indonesia", "sumatra": "Indonesia", "sumatran": "Indonesia",
-    "tanzania": "Tanzania", "tanzanian": "Tanzania",
-    "vietnam": "Vietnam", "vietnamese": "Vietnam",
+    "papua new guinea": "Papua New Guinea", "png": "Papua New Guinea",
     "yemen": "Yemen", "yemeni": "Yemen",
-    "congo": "DR Congo", "dr congo": "DR Congo", "drc": "DR Congo",
-    "timor": "East Timor", "east timor": "East Timor",
+    "ecuador": "Ecuador", "ecuadorian": "Ecuador",
+    "bolivia": "Bolivia", "bolivian": "Bolivia",
+    "uganda": "Uganda", "ugandan": "Uganda",
+    "tanzania": "Tanzania", "tanzanian": "Tanzania",
+    "congo": "DR Congo", "drc": "DR Congo", "dr congo": "DR Congo",
+    "china": "China", "chinese": "China",
     "india": "India", "indian": "India",
+    "vietnam": "Vietnam", "vietnamese": "Vietnam",
+    "thailand": "Thailand", "thai": "Thailand",
+    "myanmar": "Myanmar",
+    "timor-leste": "East Timor", "east timor": "East Timor",
 }
 
 
@@ -238,13 +245,13 @@ CANONICAL_PROCESSES = (
     (r"\bhoney\b(?!\s*co[-\s]?ferment)", "Honey"),
     (r"\bwet\s+hulled\b", "Wet Hulled"),
     (r"\bgiling\s+basah\b", "Wet Hulled"),
-    (r"\bnatural\s+decaf\b", "Natural Decaf"),
-    (r"\bsugarcane\s+decaf\b", "Sugarcane Decaf"),
-    (r"\bswiss\s+water\s+decaf\b", "Swiss Water Decaf"),
-    (r"\bmountain\s+water\s+decaf\b", "Mountain Water Decaf"),
     (r"\bfully\s+washed\b", "Washed"),
     (r"\bwashed\b(?!\s*co[-\s]?ferment|\s*double\s*ferment)", "Washed"),
-    (r"\bnatural\b(?!\s*co[-\s]?ferment|\s*decaf)", "Natural"),
+    (r"\bnatural\s+decaf\b", "Natural Decaf"),
+    (r"\b(?:sugar\s*cane|sugarcane)(?:\s*ea)?\s*(?:decaf\w*|process\w*|method)?\b", "Sugar Cane Decaf"),
+    (r"\bswiss\s*water\s*(?:decaf\w*|process\w*|method)?\b", "Swiss Water Decaf"),
+    (r"\bmountain\s*water\s*(?:decaf\w*|process\w*|method)?\b", "Mountain Water Decaf"),
+    (r"\bnatural\b(?!\s*co[-\s]?ferment|\s*decaf|\s*sugar\s*cane)", "Natural"),
     (r"\baerobic\b", "Natural"),
     (r"\bdecaf\b", "Decaf"),
 )
@@ -258,6 +265,8 @@ def clean_process(text: str) -> str:
     for pattern, canonical in CANONICAL_PROCESSES:
         if re.search(pattern, text_lower):
             if canonical not in found:
+                if any(k in canonical for k in ("Sugar Cane Decaf", "Swiss Water Decaf", "Mountain Water Decaf", "Natural Decaf")) and "Decaf" in found:
+                    found.remove("Decaf")
                 is_subsumed = any(canonical in existing for existing in found if existing != canonical) or \
                               (canonical == "Decaf" and any("Decaf" in p for p in found)) or \
                               (canonical == "Honey" and any("Honey" in p for p in found)) or \
@@ -271,7 +280,8 @@ def clean_process(text: str) -> str:
 def format_varietal(raw: str) -> str:
     if not raw or raw == "unknown" or re.search(r"\b(?:country|farm|process|processing|recipe|brewing|method|roaster|region|altitude|producer)\b", raw, re.I):
         return "unknown"
-    parts = [p.strip() for p in raw.split(",") if p.strip()]
+    cleaned = re.sub(r"^mixed\s*\((.*?)\)$", r"\1", raw.strip(), flags=re.I)
+    parts = [p.strip() for p in cleaned.split(",") if p.strip()]
     titled = []
     for p in parts:
         if re.match(r"^sl\s*\d+$", p, re.I):
@@ -288,6 +298,16 @@ def format_varietal(raw: str) -> str:
 def format_flavour_notes(raw: str) -> str:
     if not raw or raw == "unknown" or "full of flavo" in raw.lower():
         return "unknown"
+    if "Black:" in raw and "Milk:" in raw:
+        parts = [p.strip() for p in raw.split("|") if p.strip()]
+        formatted_parts = []
+        for part in parts:
+            if ":" in part:
+                label, val = part.split(":", 1)
+                formatted_parts.append(f"{label.strip().title()}: {format_flavour_notes(val.strip())}")
+            else:
+                formatted_parts.append(format_flavour_notes(part))
+        return " | ".join(formatted_parts)
     # Strip trailing punctuation, ellipses, quotes
     cleaned = re.sub(r"[…\.\,\:\;\s\—\-\"]+$", "", raw).strip()
     cleaned = re.sub(r"^[,\s:—\-\"]+", "", cleaned).strip()
@@ -401,6 +421,12 @@ NON_FLAVOUR_WORDS = {
     "beans",
     "roast",
     "batch",
+    "pulping",
+    "milling",
+    "harvesting",
+    "sorting",
+    "drying",
+    "fermenting",
     "full of flavour",
     "full of flavor",
     "rich, juicy, and full of flavour",
@@ -420,8 +446,21 @@ def _clean_flavour_string(raw: str) -> str:
 
 
 def infer_flavour_notes_rule_based(product: dict[str, Any]) -> str:
-    # 1. Explicit field labels (including 'flavour', 'flavor', 'tasting notes', 'flavour notes', 'flavour profile')
-    labeled = extract_description_field(product, ("flavour notes", "flavor notes", "tasting notes", "flavour profile", "flavor profile", "notes", "flavour", "flavor"))
+    # 1. Split Espresso Profile (e.g. Eternal Coffee: '- Black: Peach Milk Candy, Mixed Berries\n- Milk: Citrus, Peach, Mixed Berries')
+    text = description_text(product)
+    match_split = re.search(
+        r"(?:^|\n)\s*(?:[-*•]\s*)?black\s*[:\-–—]\s*([^\n]+?)\s*(?:^|\n)\s*(?:[-*•]\s*)?milk\s*[:\-–—]\s*([^\n]+?)(?=\s+(?:origin|producer|farm|region|process|variet|altitude|elevation)|$|\n\n)",
+        text,
+        re.IGNORECASE | re.MULTILINE,
+    )
+    if match_split:
+        black_cleaned = _clean_flavour_string(match_split.group(1).strip())
+        milk_cleaned = _clean_flavour_string(match_split.group(2).strip())
+        if black_cleaned and milk_cleaned:
+            return f"Black: {format_flavour_notes(black_cleaned)} | Milk: {format_flavour_notes(milk_cleaned)}"
+
+    # 2. Explicit field labels (including 'cupping notes', 'flavour notes', 'flavor notes', 'tasting notes', 'flavour profile', 'flavor profile', 'flavour', 'flavor', 'notes')
+    labeled = extract_description_field(product, ("flavour notes", "flavor notes", "tasting notes", "cupping notes", "cup notes", "cup profile", "flavour profile", "flavor profile", "notes", "flavour", "flavor"))
     if labeled and labeled != "unknown" and len(labeled) > 2:
         if not re.search(r"^(?:of\s+this\s+coffee|are\s+as\s+follows|below)", labeled, re.I):
             if re.search(r"\b(?:expect|aromas?\s+of|with\s+(?:jammy|sweet|caramel|lingering|a\s+soft)|sweetness\s+then|notes\s+shine|wrapped\s+in|syrupy\s+body)\b", labeled, re.I):
@@ -432,11 +471,10 @@ def infer_flavour_notes_rule_based(product: dict[str, Any]) -> str:
             if cleaned:
                 return cleaned
 
-    text = description_text(product)
     if not text:
         return "unknown"
 
-    # 2. Leading tasting notes line before metadata headers (e.g. Eternal Coffee: 'Boysenberry Yogurt, Pink Pomelo, Golden Kiwifruit\n\nProducer:...')
+    # 3. Leading tasting notes line before metadata headers (e.g. Eternal Coffee: 'Boysenberry Yogurt, Pink Pomelo, Golden Kiwifruit\n\nProducer:...')
     next_meta = r"producer|origin(?: country)?|farm|estate|process(?:ing)?|process method|varietal|variety|region|altitude|elevation"
     match_leading = re.search(
         rf"^\s*([A-Z][^.:\n]{{3,80}})\s*(?:\n+)\s*(?:{next_meta})\s*[:\-–—.]",
@@ -448,11 +486,11 @@ def infer_flavour_notes_rule_based(product: dict[str, Any]) -> str:
         if cleaned and not re.search(r"\b(?:roast(?:ed)?|blend|specialty|limited|welcome|introducing|experience)\b", cleaned, re.I):
             return cleaned
 
-    # 3. Pipe-separated notes line (e.g. Embassy Blend bag label: 'APPLE CRUMBLE | VANILLA CUSTARD | DATES')
+    # 4. Pipe-separated notes line (e.g. Embassy Blend bag label: 'APPLE CRUMBLE | VANILLA CUSTARD | DATES')
     match_pipe = re.search(r"^([^\n|:]+\s*\|\s*[^\n|:]+(?:\s*\|\s*[^\n|:]+)*)$", text, re.M)
     if match_pipe:
         cleaned = _clean_flavour_string(match_pipe.group(1))
-        if cleaned and not re.search(r"\b(?:roast(?:ed)?|specialty|coffee)\b", cleaned, re.I):
+        if cleaned and not re.search(r"\b(?:roast(?:ed)?|specialty|coffee|brazil|colombia|natural|washed|espresso|filter)\b", cleaned, re.I):
             return cleaned
 
     # 4. 'In the cup: ...' / 'In the cup we taste: ...'
@@ -567,40 +605,7 @@ def infer_metadata(
     if not images and product.get("image"):
         images = [product["image"]]
 
-    # 1. Check persistent SQLite cache first
-    if database_path is not None:
-        cached = get_cached_metadata(content_hash, database_path)
-        allow_cache = not images
-        if (
-            allow_cache
-            and cached
-            and cached.get("flavour_notes")
-            and format_flavour_notes(cached["flavour_notes"]) != "unknown"
-            and cached["flavour_notes"] not in ("unknown", "Cherry", "Cherries")
-            and (cached.get("origin_country", "unknown") != "unknown" or cached.get("process", "unknown") != "unknown" or cached.get("producer", "unknown") != "unknown")
-        ):
-            clean_cached_origin = clean_origin_country(cached.get("origin_country") or "")
-            if clean_cached_origin == "unknown":
-                clean_cached_origin = infer_origin_country_rule_based(product)
-            clean_cached_process = clean_process(cached.get("process") or "")
-            if clean_cached_process == "unknown" or "co-ferment" in desc.lower() or "co ferment" in desc.lower() or "coferment" in desc.lower():
-                clean_cached_process = infer_process_rule_based(product)
-            clean_cached_notes = format_flavour_notes(cached.get("flavour_notes") or "")
-            rule_notes = infer_flavour_notes_rule_based(product)
-            if rule_notes != "unknown":
-                clean_cached_notes = format_flavour_notes(rule_notes)
-            clean_cached_varietal = format_varietal(cached.get("varietal") or "")
-            if clean_cached_varietal == "unknown":
-                clean_cached_varietal = infer_varietal_rule_based(product)
-            return {
-                "flavour_notes": clean_cached_notes,
-                "origin_country": clean_cached_origin,
-                "producer": cached.get("producer") or "unknown",
-                "process": clean_cached_process,
-                "varietal": clean_cached_varietal,
-            }
-
-    # 2. Extract rule-based values
+    # 1. Extract rule-based values
     rule_notes = infer_flavour_notes_rule_based(product)
     rule_origin = infer_origin_country_rule_based(product)
     rule_producer = infer_producer_rule_based(product)
@@ -619,11 +624,16 @@ def infer_metadata(
             combined_product = {**product, "body_html": f"{desc}\n{ocr_text}"}
             ocr_only_product = {"body_html": ocr_text, "title": title}
             ocr_notes = infer_flavour_notes_rule_based(ocr_only_product)
-            has_explicit_label = extract_description_field(product, ("flavour notes", "flavor notes", "tasting notes", "flavour profile", "flavor profile")) != "unknown"
+            has_explicit_label = extract_description_field(product, ("flavour notes", "flavor notes", "tasting notes", "cupping notes", "cup notes", "cup profile", "flavour profile", "flavor profile", "flavour", "flavor")) != "unknown"
             has_info_card = any("info_card" in (img if isinstance(img, str) else str(img.get("src", ""))).lower() or "card" in (img if isinstance(img, str) else str(img.get("src", ""))).lower() for img in images)
-            is_pipe_notes = bool(re.search(r"^([^\n|:]+\s*\|\s*[^\n|:]+(?:\s*\|\s*[^\n|:]+)*)$", ocr_text, re.M))
+            is_pipe_notes = False
+            for line in ocr_text.splitlines():
+                if "|" in line and not re.search(r"\b(?:brazil|colombia|ethiopia|kenya|costa\s*rica|indonesia|guatemala|honduras|panama|peru|rwanda|burundi|mexico|washed|natural|honey|espresso|filter|roast|savara|typica|bourbon|caturra|castillo|geisha|gesha|smallholder|factory|society|estate|acidity|body|aftertaste|mouthfeel|finish)\b", line, re.I):
+                    if re.search(r"[A-Za-z]{3,}\s*\|\s*[A-Za-z]{3,}", line):
+                        is_pipe_notes = True
+                        break
             is_card_notes = bool(re.search(r"tasting notes\s*[.:\-]\s*[A-Z]", ocr_text, re.I))
-            if ocr_notes != "unknown" and (not has_explicit_label or has_info_card or is_pipe_notes or is_card_notes):
+            if ocr_notes != "unknown" and (rule_notes == "unknown" or is_pipe_notes or has_info_card or (not has_explicit_label and is_card_notes)):
                 rule_notes = ocr_notes
             elif rule_notes == "unknown":
                 rule_notes = infer_flavour_notes_rule_based(combined_product)

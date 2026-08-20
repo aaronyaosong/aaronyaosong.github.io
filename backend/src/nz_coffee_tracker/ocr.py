@@ -169,11 +169,17 @@ def extract_text_from_image_url(image_url: str, timeout: float = 10.0) -> str:
             except Exception:
                 pass
 
-        raw_text = pytesseract.image_to_string(bg)
-        if not raw_text or len(raw_text.strip()) < 10:
-            alt_text = pytesseract.image_to_string(bg, config="--psm 4")
-            if len(alt_text.strip()) > len(raw_text.strip()):
-                raw_text = alt_text
+        is_card = "card" in image_url.lower() or "info" in image_url.lower()
+        if is_card:
+            raw_text = pytesseract.image_to_string(bg, config="--psm 4")
+            if not raw_text or len(raw_text.strip()) < 10:
+                raw_text = pytesseract.image_to_string(bg)
+        else:
+            raw_text = pytesseract.image_to_string(bg)
+            if not raw_text or len(raw_text.strip()) < 10 or re.search(r"tasting notes[.:\s]*\n\s*origin[.:\s]*", raw_text, re.I):
+                alt_text = pytesseract.image_to_string(bg, config="--psm 4")
+                if len(alt_text.strip()) > len(raw_text.strip()) or re.search(r"tasting notes\s*[.:\-]\s*[A-Za-z]", alt_text, re.I):
+                    raw_text = alt_text
 
         # Clean extra whitespace
         cleaned = re.sub(r"[ \t]+", " ", raw_text)
