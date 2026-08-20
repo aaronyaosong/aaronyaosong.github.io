@@ -16,6 +16,8 @@ from nz_coffee_tracker.llm import (
     extract_coffee_metadata_llm,
     extract_flavour_notes_llm,
 )
+from nz_coffee_tracker.ocr import extract_text_from_product_images
+
 
 
 FILTER_ROAST = "filter roast"
@@ -444,6 +446,38 @@ def infer_flavour_notes_rule_based(product: dict[str, Any]) -> str:
     found = []
     text_lower = text.lower()
     for word in COFFEE_FLAVOUR_LEXICON:
+        # Check false positive context (e.g. coffee cherries being picked/pulped, or honey process)
+        if word in ("cherry", "cherries"):
+            matches = list(re.finditer(rf"\b{re.escape(word)}\b", text_lower))
+            is_valid = False
+            for m in matches:
+                start = max(0, m.start() - 25)
+                end = min(len(text_lower), m.end() + 30)
+                window = text_lower[start:end]
+                if re.search(
+                    r"(?:ripe|coffee|red|fresh|whole|harvest(?:ed)?|pick(?:ed)?|sort(?:ed)?|pulp(?:ed)?|wash(?:ed)?|ferment(?:ed)?|dri(?:ed)?|float(?:ing)?)\s+(?:coffee\s+)?cherries?"
+                    r"|cherries?\s+(?:are|were|picked|harvested|sorted|pulped|washed|fermented|dried|hand|processed)",
+                    window,
+                ):
+                    continue
+                is_valid = True
+                break
+            if not is_valid:
+                continue
+        elif word == "honey" and re.search(r"\bhoney\s+(?:process|processed|anaerobic|natural|washed)\b", text_lower):
+            matches = list(re.finditer(r"\bhoney\b", text_lower))
+            is_valid = False
+            for m in matches:
+                start = max(0, m.start() - 15)
+                end = min(len(text_lower), m.end() + 20)
+                window = text_lower[start:end]
+                if re.search(r"\bhoney\s+(?:process|processed|anaerobic)\b", window) or re.search(r"\b(?:yellow|red|black|white)\s+honey\b", window):
+                    continue
+                is_valid = True
+                break
+            if not is_valid:
+                continue
+
         if re.search(rf"\b{re.escape(word)}\b", text_lower):
             if not any(word in other for other in found):
                 found.append(word.title())
@@ -501,7 +535,23 @@ def infer_metadata(
     rule_process = infer_process_rule_based(product)
     rule_varietal = infer_varietal_rule_based(product)
 
-    # 3. Call LLM if enabled, description is substantial, and unstructured metadata needs extraction
+    # 3. If flavour notes or metadata are missing, attempt OCR on product bag image(s)
+    has_images = bool(product.get("images") or product.get("image"))
+    if (rule_notes == "unknown" or rule_origin == "unknown") and has_images:
+        ocr_text = extract_text_from_product_images(product)
+        if ocr_text:
+            combined_product = {**product, "body_html": f"{desc}\n{ocr_text}"}
+            if rule_notes == "unknown":
+                rule_notes = infer_flavour_notes_rule_based(combined_product)
+            if rule_origin == "unknown":
+                rule_origin = infer_origin_country_rule_based(combined_product)
+            if rule_process == "unknown":
+                rule_process = infer_process_rule_based(combined_product)
+            if rule_varietal == "unknown":
+                rule_varietal = infer_varietal_rule_based(combined_product)
+            desc = f"{desc}\nBag Label OCR: {ocr_text}".strip()
+
+    # 4. Call LLM if enabled, description is substantial, and unstructured metadata needs extraction
     needs_llm = use_llm and len(desc) > 20 and (
         rule_notes == "unknown"
         or (rule_origin == "unknown" and rule_producer == "unknown")
