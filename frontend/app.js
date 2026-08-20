@@ -217,7 +217,7 @@ export function createApp({
           return v && v !== "unknown" ? v.split(",").map((s) => s.trim()) : [];
         })
       );
-      populateSelect(varietalSelect, varietals, "All varieties", (v) => v.replace(/\b\w/g, (c) => c.toUpperCase()));
+      populateSelect(varietalSelect, varietals, "All varietals", (v) => v.replace(/\b\w/g, (c) => c.toUpperCase()));
 
       renderStats(state.items, payload.generated_at);
       renderCards();
