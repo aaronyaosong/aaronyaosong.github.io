@@ -26,6 +26,7 @@ export function createApp({
     activeSource: "all",
     activeOrigin: "all",
     activeProcess: "all",
+    activeVarietal: "all",
     activeBlend: "all",
     activeDecaf: "all",
     activeSort: "newest",
@@ -43,6 +44,7 @@ export function createApp({
   const sourceSelect = documentRef.getElementById("sourceFilter");
   const originSelect = documentRef.getElementById("originFilter");
   const processSelect = documentRef.getElementById("processFilter");
+  const varietalSelect = documentRef.getElementById("varietalFilter");
   const decafSelect = documentRef.getElementById("decafFilter");
   const sortSelect = documentRef.getElementById("sortFilter");
   if (!sortSelect.value || sortSelect.value === "title") {
@@ -106,7 +108,7 @@ export function createApp({
       state.activeCategory,
       state.query,
       state.activeSource,
-      "all",
+      state.activeVarietal,
       state.activeOrigin,
       "all",
       state.activeProcess,
@@ -202,6 +204,14 @@ export function createApp({
       );
       populateSelect(processSelect, processes, "All processes", (v) => v.replace(/\b\w/g, (c) => c.toUpperCase()));
 
+      const varietals = new Set(
+        state.items.flatMap((item) => {
+          const v = metadataValue(item, "varietal");
+          return v && v !== "unknown" ? v.split(",").map((s) => s.trim()) : [];
+        })
+      );
+      populateSelect(varietalSelect, varietals, "All varieties", (v) => v.replace(/\b\w/g, (c) => c.toUpperCase()));
+
       renderStats(state.items, payload.generated_at);
       renderCards();
     } catch (err) {
@@ -230,6 +240,13 @@ export function createApp({
   if (processSelect) {
     processSelect.addEventListener("change", (event) => {
       state.activeProcess = event.target.value;
+      renderCards();
+    });
+  }
+
+  if (varietalSelect) {
+    varietalSelect.addEventListener("change", (event) => {
+      state.activeVarietal = event.target.value;
       renderCards();
     });
   }

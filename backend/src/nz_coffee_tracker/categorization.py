@@ -300,22 +300,23 @@ def infer_metadata(
     needs_llm = use_llm and len(desc) > 20 and (
         rule_notes == "unknown"
         or (rule_origin == "unknown" and rule_producer == "unknown")
+        or (rule_varietal == "unknown" and "blend" not in title.lower())
     )
 
     llm_meta = extract_coffee_metadata_llm(desc, title=title) if needs_llm else None
 
     # Validate LLM varietal actually exists in listing text
-    llm_varietal = "unknown"
-    if llm_meta and llm_meta.get("varietal") and llm_meta["varietal"] != "unknown":
+    varietal_val = rule_varietal
+    if varietal_val == "unknown" and llm_meta and llm_meta.get("varietal") and llm_meta["varietal"] != "unknown":
         if llm_meta["varietal"].lower() in f"{title} {desc}".lower():
-            llm_varietal = llm_meta["varietal"].lower()
+            varietal_val = llm_meta["varietal"]
 
     final_meta = {
         "flavour_notes": (rule_notes if rule_notes != "unknown" else (llm_meta.get("flavour_notes") if llm_meta and llm_meta.get("flavour_notes") != "unknown" else "unknown")) or "unknown",
         "origin_country": (rule_origin if rule_origin != "unknown" else (llm_meta.get("origin_country") if llm_meta else "unknown")) or "unknown",
         "producer": (rule_producer if rule_producer != "unknown" else (llm_meta.get("producer") if llm_meta else "unknown")) or "unknown",
         "process": (rule_process if rule_process != "unknown" else (llm_meta.get("process") if llm_meta else "unknown")) or "unknown",
-        "varietal": (rule_varietal if rule_varietal != "unknown" else llm_varietal) or "unknown",
+        "varietal": varietal_val or "unknown",
     }
 
     if database_path is not None:
