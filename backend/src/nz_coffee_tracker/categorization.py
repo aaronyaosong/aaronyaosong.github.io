@@ -70,12 +70,25 @@ def description_text(product: dict[str, Any]) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def _collect_product_text(product: dict[str, Any]) -> str:
+    title = str(product.get("title", ""))
+    desc = description_text(product)
+    tags = product.get("tags") or []
+    if isinstance(tags, str):
+        tags_text = tags
+    elif isinstance(tags, (list, tuple)):
+        tags_text = " ".join(str(t) for t in tags)
+    else:
+        tags_text = ""
+    return f"{title} {desc} {tags_text}".lower()
+
+
 def extract_description_field(product: dict[str, Any], labels: tuple[str, ...]) -> str:
     text = description_text(product)
     label_pattern = "|".join(re.escape(label) for label in labels)
-    next_label = r"origin(?: country)?|country|producer|farm|estate|process(?:ing)?|process method|processing method|fermentation|flavou?r notes|tasting notes|tasting card|notes|variety|varietal|altitude|region|roast|roast profile|roast level|recipe|suitable for|importer|years used"
+    next_label = r"origin(?: country)?|country|producer|farm|estate|process(?:ing)?|process method|processing method|fermentation|flavou?r notes|tasting notes|tasting card|notes|variety|varietal|varietals|variedad|the coffee|brewing recipe|recipe|altitude|region|roast|roast profile|roast level|recipe|suitable for|importer|years used"
     match = re.search(
-        rf"(?:{label_pattern})\s*[:\-]\s*(.*?)(?=\s+(?:{next_label})\s*[:\-]|$|[.;|\n])",
+        rf"(?:{label_pattern})\s*[:\-]\s*(.*?)(?=\s+(?:{next_label})\s*[:\-]|\s+(?:variedad|the coffee|brewing recipe)\b|$|[.;|\n])",
         text,
         re.IGNORECASE,
     )
@@ -133,7 +146,7 @@ def infer_origin_country_rule_based(product: dict[str, Any]) -> str:
         cleaned = clean_origin_country(labeled)
         if cleaned != "unknown":
             return cleaned
-    full_text = f"{product.get('title', '')} {description_text(product)}"
+    full_text = _collect_product_text(product)
     return clean_origin_country(full_text)
 
 
@@ -178,6 +191,7 @@ CANONICAL_PROCESSES = (
     (r"\bfully\s+washed\b", "Washed"),
     (r"\bwashed\b(?!\s*co[-\s]?ferment|\s*double\s*ferment)", "Washed"),
     (r"\bnatural\b(?!\s*co[-\s]?ferment|\s*decaf)", "Natural"),
+    (r"\baerobic\b", "Natural"),
     (r"\bdecaf\b", "Decaf"),
 )
 
@@ -235,7 +249,7 @@ def format_flavour_notes(raw: str) -> str:
 def infer_process_rule_based(product: dict[str, Any]) -> str:
     # 1. Check title bracket tag e.g. [washed], [natural], [washed double fermented]
     title = str(product.get("title", ""))
-    match = re.search(r"\[([^\]]*(?:washed|natural|honey|anaerobic|ferment|carbonic|decaf)[^\]]*)\]", title, re.IGNORECASE)
+    match = re.search(r"\[([^\]]*(?:washed|natural|honey|anaerobic|aerobic|ferment|carbonic|decaf)[^\]]*)\]", title, re.IGNORECASE)
     if match:
         cleaned = clean_process(match.group(1))
         if cleaned != "unknown":
@@ -248,13 +262,26 @@ def infer_process_rule_based(product: dict[str, Any]) -> str:
         if cleaned != "unknown":
             return cleaned
 
-    # 3. Check description text for process mentions
-    desc = description_text(product)
-    return clean_process(desc)
+    # 3. Check tags
+    tags = product.get("tags") or []
+    if isinstance(tags, str):
+        tags_text = tags
+    elif isinstance(tags, (list, tuple)):
+        tags_text = " ".join(str(t) for t in tags)
+    else:
+        tags_text = ""
+    if tags_text:
+        cleaned = clean_process(tags_text)
+        if cleaned != "unknown":
+            return cleaned
+
+    # 4. Check full text (title + description)
+    full_text = f"{title} {description_text(product)}"
+    return clean_process(full_text)
 
 
 def infer_varietal_rule_based(product: dict[str, Any]) -> str:
-    labeled = extract_description_field(product, ("varietal", "variety"))
+    labeled = extract_description_field(product, ("varietal", "variety", "varietals"))
     if labeled and labeled != "unknown" and len(labeled) <= 60:
         cleaned = format_varietal(labeled)
         if cleaned != "unknown":
@@ -412,9 +439,10 @@ def infer_metadata(
             and (cached.get("origin_country", "unknown") != "unknown" or cached.get("process", "unknown") != "unknown" or cached.get("producer", "unknown") != "unknown")
         ):
             clean_cached_origin = clean_origin_country(cached.get("origin_country") or "")
+            if clean_cached_origin == "unknown":
+                clean_cached_origin = infer_origin_country_rule_based(product)
             clean_cached_process = clean_process(cached.get("process") or "")
-            # Re-evaluate process if co-ferment is in description
-            if "co-ferment" in desc.lower() or "co ferment" in desc.lower() or "coferment" in desc.lower():
+            if clean_cached_process == "unknown" or "co-ferment" in desc.lower() or "co ferment" in desc.lower() or "coferment" in desc.lower():
                 clean_cached_process = infer_process_rule_based(product)
             clean_cached_notes = format_flavour_notes(cached.get("flavour_notes") or "")
             clean_cached_varietal = format_varietal(cached.get("varietal") or "")

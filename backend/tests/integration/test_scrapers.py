@@ -10,6 +10,9 @@ from nz_coffee_tracker.shopify_client import ShopifyClient
 
 
 class _Response:
+    ok = True
+    text = ""
+
     def raise_for_status(self) -> None:
         return None
 

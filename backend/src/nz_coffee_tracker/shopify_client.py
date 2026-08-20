@@ -1,5 +1,5 @@
-from __future__ import annotations
-
+import re
+from html import unescape
 from typing import Any
 
 import requests
@@ -41,4 +41,29 @@ class ShopifyClient:
                 variant["price"] = float(raw_price) / 100
             except (TypeError, ValueError):
                 continue
+
+        # If description is empty or missing, fetch page HTML to extract rich text metafields
+        desc = str(product.get("body_html") or product.get("description") or "").strip()
+        if not desc:
+            try:
+                page_resp = self.session.get(
+                    f"{self.base_url}/products/{product_handle}",
+                    headers={"Accept": "text/html,application/xhtml+xml"},
+                    timeout=self.timeout,
+                )
+                if getattr(page_resp, "ok", False) and getattr(page_resp, "text", None):
+                    blocks = re.findall(
+                        r'<div[^>]*class=\"[^\"]*metafield[^\"]*\"[^>]*>(.*?)</div>',
+                        page_resp.text,
+                        re.DOTALL | re.IGNORECASE,
+                    )
+                    if blocks:
+                        clean_blocks = [
+                            re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", unescape(b))).strip()
+                            for b in blocks
+                        ]
+                        product["body_html"] = " ".join(clean_blocks)
+            except Exception:
+                pass
+
         return product
