@@ -124,7 +124,7 @@ def scrape_shopify_collection(
             or source in ("slowcoffee.co.nz", "wolfcoffee.co.nz")
             or not cached["size_prices"]
             or not cached.get("description")
-            or cached.get("flavour_notes") in (None, "", "unknown")
+            or cached.get("flavour_notes") in (None, "", "unknown", "Cherries")
             or not collection_available
             or not cached["available"]
         )

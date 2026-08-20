@@ -56,7 +56,7 @@ def extract_text_from_image_url(image_url: str, timeout: float = 10.0) -> str:
 
 def extract_text_from_product_images(
     product: dict[str, Any],
-    max_images: int = 1,
+    max_images: int = 3,
     timeout: float = 10.0,
 ) -> str:
     """

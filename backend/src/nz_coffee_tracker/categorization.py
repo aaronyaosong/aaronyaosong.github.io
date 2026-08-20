@@ -346,7 +346,7 @@ COFFEE_FLAVOUR_LEXICON = (
     "caramel", "toffee", "fudge", "honey", "maple syrup", "nougat", "hazelnut",
     "almond", "walnut", "cashew", "peanut", "pecan", "cocoa", "chocolate",
     "clove", "cardamom", "nutmeg", "ginger", "star anise", "raisins", "raisin",
-    "marzipan", "brown sugar", "panela", "butterscotch", "malt",
+    "marzipan", "brown sugar", "panela", "butterscotch", "malt", "dark rum", "rum", "maple", "toasted spices",
 )
 
 
@@ -503,7 +503,7 @@ def infer_metadata(
         if (
             cached
             and cached.get("flavour_notes")
-            and cached["flavour_notes"] != "unknown"
+            and cached["flavour_notes"] not in ("unknown", "Cherries")
             and (cached.get("origin_country", "unknown") != "unknown" or cached.get("process", "unknown") != "unknown" or cached.get("producer", "unknown") != "unknown")
         ):
             clean_cached_origin = clean_origin_country(cached.get("origin_country") or "")

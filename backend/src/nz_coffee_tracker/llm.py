@@ -187,7 +187,7 @@ def extract_flavour_notes_llm(
     }
 
     try:
-        response = requests.post(ollama_endpoint, json=ollama_payload, timeout=timeout)
+        response = requests.post(ollama_endpoint, json=ollama_payload, timeout=(1.0, timeout))
         if response.status_code == 200:
             body = response.json()
             raw_response = body.get("response", "")
@@ -210,7 +210,7 @@ def extract_flavour_notes_llm(
     }
 
     try:
-        response = requests.post(openai_compat_endpoint, json=chat_payload, timeout=timeout)
+        response = requests.post(openai_compat_endpoint, json=chat_payload, timeout=(1.0, timeout))
         if response.status_code == 200:
             body = response.json()
             choices = body.get("choices", [])
@@ -258,7 +258,7 @@ def extract_coffee_metadata_llm(
     }
 
     try:
-        response = requests.post(ollama_endpoint, json=ollama_payload, timeout=timeout)
+        response = requests.post(ollama_endpoint, json=ollama_payload, timeout=(1.0, timeout))
         if response.status_code == 200:
             body = response.json()
             raw_response = body.get("response", "")
@@ -281,7 +281,7 @@ def extract_coffee_metadata_llm(
     }
 
     try:
-        response = requests.post(openai_compat_endpoint, json=chat_payload, timeout=timeout)
+        response = requests.post(openai_compat_endpoint, json=chat_payload, timeout=(1.0, timeout))
         if response.status_code == 200:
             body = response.json()
             choices = body.get("choices", [])
