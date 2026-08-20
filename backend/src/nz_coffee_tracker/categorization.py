@@ -56,6 +56,11 @@ KNOWN_VARIETALS = (
     "tabi",
     "pacas",
     "villalobos",
+    "villa sarchi",
+    "villasarchi",
+    "aji",
+    "p88",
+    "s795",
 )
 
 
@@ -86,9 +91,9 @@ def _collect_product_text(product: dict[str, Any]) -> str:
 def extract_description_field(product: dict[str, Any], labels: tuple[str, ...]) -> str:
     text = description_text(product)
     label_pattern = "|".join(re.escape(label) for label in labels)
-    next_label = r"origin(?: country)?|country|producer|farm|estate|process(?:ing)?|process method|processing method|fermentation|flavou?r notes|tasting notes|tasting card|notes|variety|varietal|varietals|variedad|the coffee|brewing recipe|recipe|altitude|region|roast|roast profile|roast level|recipe|suitable for|importer|years used"
+    next_label = r"origin(?: country)?|country|location|producer|farm|estate|process(?:ing)?|process method|processing method|fermentation|flavou?r notes|tasting notes|cupping notes|tasting card|notes|variety|varietal|varietals|variedad|the coffee|brewing recipe|brew guide|filter recipe|espresso recipe|suggested method|dose|recipe|altitude|elevation|region|province|roast|roast profile|roast level|suitable for|importer|exporter|years used"
     match = re.search(
-        rf"(?:{label_pattern})\s*[:\-]\s*(.*?)(?=\s+(?:{next_label})\s*[:\-]|\s+(?:variedad|the coffee|brewing recipe)\b|$|[.;|\n])",
+        rf"(?:{label_pattern})\s*[:\-–]\s*(.*?)(?=\s+(?:{next_label})\s*[:\-–]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card)\b|$|[.;|\n])",
         text,
         re.IGNORECASE,
     )
@@ -141,11 +146,20 @@ def clean_origin_country(text: str) -> str:
 
 
 def infer_origin_country_rule_based(product: dict[str, Any]) -> str:
-    labeled = extract_description_field(product, ("origin", "origin country", "country"))
+    # 1. Check title first for clear origin
+    title = str(product.get("title", ""))
+    title_country = clean_origin_country(title)
+    if title_country != "unknown":
+        return title_country
+
+    # 2. Check labeled origin field
+    labeled = extract_description_field(product, ("origin", "origin country", "country", "location"))
     if labeled and labeled != "unknown":
         cleaned = clean_origin_country(labeled)
         if cleaned != "unknown":
             return cleaned
+
+    # 3. Check entire text
     full_text = _collect_product_text(product)
     return clean_origin_country(full_text)
 
