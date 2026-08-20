@@ -147,6 +147,12 @@ def infer_roast_category(
     desc = description_text(product)
     desc_lower = desc.lower()
 
+    # Manual overrides: Slow Coffee Raspberry Kiss is espresso roast only
+    if ("raspberry kiss" in title_lower or "raspberry-kiss" in handle_lower) and (
+        source == "slowcoffee.co.nz" or not source or "slow" in handle_lower
+    ):
+        return ESPRESSO_ROAST
+
     # 1. PRIORITY 1: Check Shopify Tags
     has_tag_omni = any(t in ("extraction-omni", "omni roast", "omni", "omni-roast", "extraction:omni") for t in tags_lower)
     has_tag_filter = any(

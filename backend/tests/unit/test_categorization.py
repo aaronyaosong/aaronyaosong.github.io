@@ -128,13 +128,15 @@ def test_infer_roast_category_recommended_brewing_in_description() -> None:
     }
     assert infer_roast_category(c4_omni) == OMNI_ROAST
 
-    # Slow roasted for espresso style
+    # Slow roasted for espresso style: Raspberry Kiss is explicitly labeled as espresso roast only
     slow_espresso = {
         "title": "Raspberry Kiss | Ethiopia",
         "tags": ["espresso", "filter coffee"],
         "body_html": "<p>roasted for espresso, and brought to us by Cofinet. Part of Espresso Program Vol. 1 — single origins roasted for espresso.</p>",
     }
     assert infer_roast_category(slow_espresso, collection_handle="espresso-coffee") == ESPRESSO_ROAST
+    assert infer_roast_category(slow_espresso, source="slowcoffee.co.nz") == ESPRESSO_ROAST
+    assert infer_roast_category({"title": "Raspberry Kiss | Ethiopia", "tags": ["filter coffee", "espresso"]}) == ESPRESSO_ROAST
 
 
 @pytest.mark.unit
