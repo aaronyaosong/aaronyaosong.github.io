@@ -6,7 +6,12 @@ from collections.abc import Iterable
 from datetime import datetime, timezone
 from pathlib import Path
 
-from nz_coffee_tracker.categorization import ESPRESSO_ROAST, FILTER_ROAST, OMNI_ROAST, category_values
+from nz_coffee_tracker.categorization import (
+    ESPRESSO_ROAST,
+    FILTER_ROAST,
+    OMNI_ROAST,
+    category_values,
+)
 from nz_coffee_tracker.database import write_database
 from nz_coffee_tracker.models import CoffeeListing
 from nz_coffee_tracker.scrapers.atomic import scrape_atomic

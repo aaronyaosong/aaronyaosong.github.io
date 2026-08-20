@@ -31,12 +31,13 @@ def _listing(title: str, category: str, available: bool = True) -> CoffeeListing
 
 @pytest.mark.unit
 def test_collect_listings_default_filters_categories_and_unavailable(monkeypatch: pytest.MonkeyPatch) -> None:
-    # Default behavior should keep only available filter/espresso roasts.
+    # Default behavior should keep only available filter/espresso/omni roasts.
     monkeypatch.setattr(
         tracker,
         "scrape_rocket",
         lambda: [
             _listing("Filter A", "filter roast", available=True),
+            _listing("Omni A", "omni roast", available=True),
             _listing("Other A", "other", available=True),
         ],
     )
@@ -51,7 +52,7 @@ def test_collect_listings_default_filters_categories_and_unavailable(monkeypatch
 
     rows = tracker.collect_listings()
 
-    assert [item.title for item in rows] == ["Filter A", "Espresso A"]
+    assert [item.title for item in rows] == ["Filter A", "Omni A", "Espresso A"]
 
 
 @pytest.mark.unit
