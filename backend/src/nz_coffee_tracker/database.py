@@ -48,6 +48,24 @@ CREATE TABLE IF NOT EXISTS size_prices (
     price_nzd REAL NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS flavour_cache (
+    content_hash TEXT PRIMARY KEY,
+    title TEXT NOT NULL,
+    notes TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS metadata_cache (
+    content_hash TEXT PRIMARY KEY,
+    title TEXT NOT NULL,
+    flavour_notes TEXT NOT NULL,
+    origin_country TEXT NOT NULL,
+    producer TEXT NOT NULL,
+    process TEXT NOT NULL,
+    varietal TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS idx_listings_product
     ON listings(source, product_id, scraped_at);
 CREATE INDEX IF NOT EXISTS idx_listings_category
@@ -55,6 +73,107 @@ CREATE INDEX IF NOT EXISTS idx_listings_category
 CREATE INDEX IF NOT EXISTS idx_size_prices_listing
     ON size_prices(listing_id);
 """
+
+
+def get_cached_metadata(content_hash: str, path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    try:
+        with sqlite3.connect(path) as connection:
+            connection.row_factory = sqlite3.Row
+            row = connection.execute(
+                """
+                SELECT flavour_notes, origin_country, producer, process, varietal
+                FROM metadata_cache
+                WHERE content_hash = ?
+                """,
+                (content_hash,),
+            ).fetchone()
+            if row:
+                return dict(row)
+            # Fallback to flavour_cache for backward compatibility
+            fc_row = connection.execute(
+                "SELECT notes FROM flavour_cache WHERE content_hash = ?",
+                (content_hash,),
+            ).fetchone()
+            if fc_row:
+                return {"flavour_notes": fc_row[0]}
+            return None
+    except sqlite3.DatabaseError:
+        return None
+
+
+def set_cached_metadata(
+    content_hash: str,
+    title: str,
+    metadata: dict[str, Any],
+    path: Path,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        with sqlite3.connect(path) as connection:
+            connection.execute(
+                """
+                CREATE TABLE IF NOT EXISTS metadata_cache (
+                    content_hash TEXT PRIMARY KEY,
+                    title TEXT NOT NULL,
+                    flavour_notes TEXT NOT NULL,
+                    origin_country TEXT NOT NULL,
+                    producer TEXT NOT NULL,
+                    process TEXT NOT NULL,
+                    varietal TEXT NOT NULL,
+                    updated_at TEXT NOT NULL
+                )
+                """
+            )
+            connection.execute(
+                """
+                INSERT OR REPLACE INTO metadata_cache (
+                    content_hash, title, flavour_notes, origin_country, producer, process, varietal, updated_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    content_hash,
+                    title,
+                    str(metadata.get("flavour_notes") or "unknown"),
+                    str(metadata.get("origin_country") or "unknown"),
+                    str(metadata.get("producer") or "unknown"),
+                    str(metadata.get("process") or "unknown"),
+                    str(metadata.get("varietal") or "unknown"),
+                    datetime.now(timezone.utc).isoformat(),
+                ),
+            )
+            # Also keep flavour_cache in sync
+            connection.execute(
+                """
+                CREATE TABLE IF NOT EXISTS flavour_cache (
+                    content_hash TEXT PRIMARY KEY,
+                    title TEXT NOT NULL,
+                    notes TEXT NOT NULL,
+                    updated_at TEXT NOT NULL
+                )
+                """
+            )
+            connection.execute(
+                """
+                INSERT OR REPLACE INTO flavour_cache (content_hash, title, notes, updated_at)
+                VALUES (?, ?, ?, ?)
+                """,
+                (content_hash, title, str(metadata.get("flavour_notes") or "unknown"), datetime.now(timezone.utc).isoformat()),
+            )
+    except sqlite3.DatabaseError:
+        pass
+
+
+def get_cached_flavour_notes(content_hash: str, path: Path) -> str | None:
+    meta = get_cached_metadata(content_hash, path)
+    if meta and meta.get("flavour_notes") and meta["flavour_notes"] != "unknown":
+        return meta["flavour_notes"]
+    return None
+
+
+def set_cached_flavour_notes(content_hash: str, title: str, notes: str, path: Path) -> None:
+    set_cached_metadata(content_hash, title, {"flavour_notes": notes}, path)
 
 
 def write_database(

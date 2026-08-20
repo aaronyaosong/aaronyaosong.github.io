@@ -26,6 +26,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r backend/requirements.txt
 
+      - name: Start Local Ollama Server
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve &
+          sleep 3
+          ollama pull llama3.2:1b
+
       - name: Run scraper
         run: |
           PYTHONPATH=backend/src python -m nz_coffee_tracker.cli --out-dir frontend/data --format json

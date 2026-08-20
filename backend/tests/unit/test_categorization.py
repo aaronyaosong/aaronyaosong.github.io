@@ -154,7 +154,7 @@ def test_category_values_split_and_trim() -> None:
 @pytest.mark.unit
 def test_infer_varietal_detects_multiple_varieties() -> None:
     product = {"title": "Don Claudio Project - Caturra - Catuai - Obata"}
-    assert infer_varietal(product) == "caturra,catuai,obata"
+    assert infer_varietal(product) == "Caturra, Catuai, Obata"
 
 
 @pytest.mark.unit
@@ -168,8 +168,61 @@ def test_extracts_metadata_and_flavour_notes_from_description() -> None:
         "title": "Elena Coffee",
         "body_html": "<p>Origin: Colombia</p><p>Producer: Elena Farm</p><p>Process: washed</p><p>Flavour notes: plum, cocoa and caramel</p>",
     }
-    assert description_text(product) == "Origin: Colombia Producer: Elena Farm Process: washed Flavour notes: plum, cocoa and caramel"
+    assert description_text(product) == "Origin: Colombia\n\nProducer: Elena Farm\n\nProcess: washed\n\nFlavour notes: plum, cocoa and caramel"
     assert infer_origin_country(product) == "Colombia"
     assert infer_producer(product) == "Elena Farm"
-    assert infer_process(product) == "washed"
-    assert infer_flavour_notes(product) == "plum, cocoa and caramel"
+    assert infer_process(product) == "Washed"
+    assert infer_flavour_notes(product) == "Plum, Cocoa, Caramel"
+
+
+@pytest.mark.unit
+def test_nlp_extracts_flavour_notes_without_explicit_label() -> None:
+    # Rocket natural language style: 'with flavours of raspberry, passionfruit & turkish delight'
+    rocket_prod = {
+        "body_html": "<p>Arturo's natural Castillo is sweet & fruity with favours of raspberry, passionfruit & turkish delight. Roasted in H-town 17 AUG 2026</p>"
+    }
+    assert infer_flavour_notes(rocket_prod, use_llm=False) == "Raspberry, Passionfruit, Turkish Delight"
+
+    # Slow PO 'In the cup:' style
+    slow_prod = {
+        "body_html": "<p>In the cup: lemonade ice block, gumball, blossom and creamy soda. It tastes like summer.</p>"
+    }
+    assert infer_flavour_notes(slow_prod, use_llm=False) == "Lemonade Ice Block, Gumball, Blossom, Creamy Soda"
+
+    # Lexicon fallback style
+    lexicon_prod = {
+        "body_html": "<p>A bright washed coffee featuring stone fruit sweetness, rich chocolate and sweet apricot.</p>"
+    }
+    assert "Stone Fruit" in infer_flavour_notes(lexicon_prod, use_llm=False)
+    assert "Chocolate" in infer_flavour_notes(lexicon_prod, use_llm=False)
+
+
+@pytest.mark.unit
+def test_extracts_co_ferment_from_blend_process_method() -> None:
+    product = {
+        "title": "Tropical Rush - Fruity Blend (Filter)",
+        "body_html": "<p>Flavour: Pineapple, Mixed Berries</p><p>Process Method: Natural + Pineapple Honey Co-Fermentation</p><p>Varietal: Heirloom + Castillo</p>",
+    }
+    proc = infer_process(product)
+    assert "Co-Ferment" in proc
+    assert "Natural" in proc
+
+
+@pytest.mark.unit
+def test_extracts_laurina_varietal_from_description_block() -> None:
+    product = {
+        "title": "Lot 002 - Anaerobic Washed",
+        "body_html": "<p>COUNTRY - Aotearoa NZ FARM - Pekerau Hills REGION - Kaitaia ALTITUDE - 160 M.A.S.L VARIETAL - Laurina FERMENTATION - Anaerobic PROCESSING METHOD - Washed</p>",
+    }
+    assert infer_varietal(product) == "Laurina"
+
+
+@pytest.mark.unit
+def test_rose_tea_honey_co_ferment_is_single_process() -> None:
+    product = {
+        "title": "Jairo Arcila - Rose Tea Honey Co-Ferment",
+        "body_html": "<p>PROCESSING METHOD - Rose Tea Honey Co-Ferment VARIETAL - Pink Bourbon</p>",
+    }
+    assert infer_process(product) == "Co-Ferment"
+    assert infer_varietal(product) == "Pink Bourbon"
+

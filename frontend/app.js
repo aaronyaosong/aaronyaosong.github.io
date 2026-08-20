@@ -2,6 +2,7 @@ import {
   categories,
   filterCategories,
   filterAndSortItems,
+  formatDescription,
   isBundleOrBoxSet,
   isDecaf,
   isOzoneConcentrate,
@@ -24,6 +25,9 @@ export function createApp({
     items: [],
     activeCategory: "all",
     activeSource: "all",
+    activeOrigin: "all",
+    activeProcess: "all",
+    activeVarietal: "all",
     activeBlend: "all",
     activeDecaf: "all",
     activeSort: "newest",
@@ -39,6 +43,9 @@ export function createApp({
   const categoryFilters = documentRef.getElementById("categoryFilters");
   const blendSelect = documentRef.getElementById("blendFilter");
   const sourceSelect = documentRef.getElementById("sourceFilter");
+  const originSelect = documentRef.getElementById("originFilter");
+  const processSelect = documentRef.getElementById("processFilter");
+  const varietalSelect = documentRef.getElementById("varietalFilter");
   const decafSelect = documentRef.getElementById("decafFilter");
   const sortSelect = documentRef.getElementById("sortFilter");
   if (!sortSelect.value || sortSelect.value === "title") {
@@ -48,6 +55,7 @@ export function createApp({
   }
 
   function populateSelect(select, values, allLabel, formatValue = (value) => value) {
+    if (!select) return;
     select.innerHTML = `<option value="all">${allLabel}</option>`;
     [...values].sort((a, b) => a.localeCompare(b)).forEach((value) => {
       const option = documentRef.createElement("option");
@@ -102,10 +110,10 @@ export function createApp({
       state.activeCategory,
       state.query,
       state.activeSource,
+      state.activeVarietal,
+      state.activeOrigin,
       "all",
-      "all",
-      "all",
-      "all",
+      state.activeProcess,
       state.activeDecaf,
       state.activeBlend,
       state.activeSort,
@@ -129,20 +137,31 @@ export function createApp({
         .map((cat) => `<span class="badge category" data-category="${cat.toLowerCase()}">${cat}</span>`)
         .join("");
 
+      const originBadges = (item.origin_country && item.origin_country !== "unknown")
+        ? item.origin_country.split(",").map((o) => `<span class="badge origin">${o.trim()}</span>`).join("")
+        : "";
+
+      const processBadges = (item.process && item.process !== "unknown")
+        ? item.process.split(",").map((p) => `<span class="badge process">${p.trim()}</span>`).join("")
+        : "";
+
+      const varietalBadges = (item.varietal && item.varietal !== "unknown")
+        ? item.varietal.split(",").map((v) => `<span class="badge varietal">${v.trim()}</span>`).join("")
+        : "";
+
+      const flavourNotes = item.flavour_notes && item.flavour_notes !== "unknown"
+        ? `<p class="flavour-notes"><strong>Flavour:</strong> ${item.flavour_notes}</p>`
+        : "";
+
       const prices = sizePrices(item);
       const priceDetails = prices.length
         ? `<ul class="size-prices">${prices.map((row) => `
             <li><span>${sizeLabel(row.size_grams)}</span><span>NZD $${Number(row.price_nzd).toFixed(2)} (${pricePerGram(row.price_nzd, row.size_grams)})</span></li>
           `).join("")}</ul>`
         : `<p class="price">${nzPrice(item)} <span class="price-note">Size pricing unavailable</span></p>`;
-      const descriptionContent = [
-        item.description ? `<p>${item.description}</p>` : "",
-        item.flavour_notes && item.flavour_notes !== "unknown"
-          ? `<p class="flavour-notes"><strong>Flavour notes:</strong> ${item.flavour_notes}</p>`
-          : "",
-      ].join("");
-      const description = descriptionContent
-        ? `<button class="description-toggle" type="button" data-description-toggle>Show description</button><div class="description" hidden>${descriptionContent}</div>`
+      const descriptionHtml = formatDescription(item.description);
+      const description = descriptionHtml
+        ? `<button class="description-toggle" type="button" data-description-toggle>Show description</button><div class="description" hidden>${descriptionHtml}</div>`
         : "";
 
       card.innerHTML = `
@@ -150,7 +169,11 @@ export function createApp({
         <div class="badges">
           <span class="badge source">${sourceName(item.source)}</span>
           ${categoryBadges}
+          ${originBadges}
+          ${processBadges}
+          ${varietalBadges}
         </div>
+        ${flavourNotes}
         ${description}
         ${priceDetails}
         <a href="${item.product_url}" target="_blank" rel="noreferrer">View Product</a>
@@ -172,6 +195,31 @@ export function createApp({
       state.items = (payload.items || []).filter((item) => (!isSubscription(item) && !isOzoneConcentrate(item) && !isBundleOrBoxSet(item)));
       populateCategoryButtons(state.items);
       populateSelect(sourceSelect, new Set(state.items.map((item) => item.source)), "All stores", sourceName);
+
+      const origins = new Set(
+        state.items.flatMap((item) => {
+          const o = metadataValue(item, "origin_country");
+          return o && o !== "unknown" ? o.split(",").map((s) => s.trim()) : [];
+        })
+      );
+      populateSelect(originSelect, origins, "All origins", (v) => v.replace(/\b\w/g, (c) => c.toUpperCase()));
+
+      const processes = new Set(
+        state.items.flatMap((item) => {
+          const p = metadataValue(item, "process");
+          return p && p !== "unknown" ? p.split(",").map((s) => s.trim()) : [];
+        })
+      );
+      populateSelect(processSelect, processes, "All processes", (v) => v.replace(/\b\w/g, (c) => c.toUpperCase()));
+
+      const varietals = new Set(
+        state.items.flatMap((item) => {
+          const v = metadataValue(item, "varietal");
+          return v && v !== "unknown" ? v.split(",").map((s) => s.trim()) : [];
+        })
+      );
+      populateSelect(varietalSelect, varietals, "All varietals", (v) => v.replace(/\b\w/g, (c) => c.toUpperCase()));
+
       renderStats(state.items, payload.generated_at);
       renderCards();
     } catch (err) {
@@ -189,6 +237,27 @@ export function createApp({
     state.activeSource = event.target.value;
     renderCards();
   });
+
+  if (originSelect) {
+    originSelect.addEventListener("change", (event) => {
+      state.activeOrigin = event.target.value;
+      renderCards();
+    });
+  }
+
+  if (processSelect) {
+    processSelect.addEventListener("change", (event) => {
+      state.activeProcess = event.target.value;
+      renderCards();
+    });
+  }
+
+  if (varietalSelect) {
+    varietalSelect.addEventListener("change", (event) => {
+      state.activeVarietal = event.target.value;
+      renderCards();
+    });
+  }
 
   decafSelect.addEventListener("change", (event) => {
     state.activeDecaf = event.target.value;
