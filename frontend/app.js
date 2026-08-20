@@ -150,7 +150,7 @@ export function createApp({
         : "";
 
       const flavourNotes = item.flavour_notes && item.flavour_notes !== "unknown"
-        ? `<p class="flavour-notes"><strong>Flavour:</strong> ${item.flavour_notes}</p>`
+        ? `<p class="flavour-notes">${item.flavour_notes}</p>`
         : "";
 
       const prices = sizePrices(item);

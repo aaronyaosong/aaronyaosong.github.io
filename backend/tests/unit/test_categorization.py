@@ -226,3 +226,316 @@ def test_rose_tea_honey_co_ferment_is_single_process() -> None:
     assert infer_process(product) == "Co-Ferment"
     assert infer_varietal(product) == "Pink Bourbon"
 
+
+@pytest.mark.unit
+def test_infer_flavour_notes_c4_brazil_carnaval() -> None:
+    brazil_product = {
+        "title": "Brazil Carnaval",
+        "body_html": "COFFEE\nCARNAVAL\nREGIONAL BRAZIL BLEND\nNotes of\nDark Chocolate, Burnt Caramel &\nSmoked Cedar\nWHOLE BEANS",
+    }
+    assert infer_flavour_notes(brazil_product, use_llm=False) == "Dark Chocolate, Burnt Caramel, Smoked Cedar"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_c4_kenya_kainamu() -> None:
+    # Kainamui description mentions cherry picking in an agricultural context, with tasting notes on the info card
+    kenya_product = {
+        "title": "Kenya Kainamu Factory PB",
+        "body_html": (
+            "<p>Every cherry is handpicked and delivered to the factory's wet mill, where the magic begins.</p>"
+            "<p>KAINAMU : PB\nKENYA\nFeatured Origin\nSweet / Nutty\n\n"
+            "Tasting Notes. Shortbread, Burnt Orange & Caramel\nOrigin. Mt Kenya, Kenya\nProcess. Washed\nRoast Profile Medium / Espresso</p>"
+        ),
+    }
+    assert infer_flavour_notes(kenya_product, use_llm=False) == "Shortbread, Burnt Orange, Caramel"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_c4_kenya_tatu() -> None:
+    tatu_product = {
+        "title": "Kenya: Tatu Natural",
+        "body_html": "KIAMBU COUNTY\nTATU ESTATE\nSL 28,SL 34 - NATURAL\nNotes of\nChocolate, Dried Berries, with a\nWine like finish\nWHOLE BEANS",
+    }
+    assert infer_flavour_notes(tatu_product, use_llm=False) == "Chocolate, Dried Berries, With A Wine Like Finish"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_wolf_local_blend() -> None:
+    wolf_product = {
+        "title": "Local Blend",
+        "body_html": (
+            "<p><strong>Origin:</strong> Colombia, Brazil<br />\n"
+            "<strong>Varietal:</strong> Mixed<br />\n"
+            "<strong>Process:</strong> Washed<br />\n"
+            "<strong>Altitude:</strong> 1800-2500 MASL<br />\n"
+            "<strong>Tasting Notes:</strong> Dark Choc, Raisin, Pecan, Roast Almond</p>\n\n"
+            "<p><strong>Colombia Popayan Reserve</strong></p><p>Popayan Reserve is located in the region of Cauca at 1700 MASL.</p>"
+        ),
+    }
+    assert infer_flavour_notes(wolf_product, use_llm=False) == "Dark Choc, Raisin, Pecan, Roast Almond"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_eternal_peace_town() -> None:
+    peace_product = {
+        "title": "🆕 Ethiopia Peace Town 74158 72hr Dark Room Natural (Filter)",
+        "body_html": (
+            "<p>Boysenberry Yogurt, Pink Pomelo, Golden Kiwifruit</p>\n"
+            "<ul>\n"
+            "<li>Producer: Uncle Adumu, Peach Town</li>\n"
+            "<li>Process Method: 72hr Dark Room Anaerobic Natural</li>\n"
+            "<li>Varietal: 74158</li>\n"
+            "</ul>"
+        ),
+    }
+    assert infer_flavour_notes(peace_product, use_llm=False) == "Boysenberry Yogurt, Pink Pomelo, Golden Kiwifruit"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_eternal_peachylicious() -> None:
+    peachy_product = {
+        "title": "Peachylicious - Fruity Blend (Filter)",
+        "body_html": (
+            "<p><span>Flavour: <meta charset=\"utf-8\"></span>"
+            "<span class=\"a_GcMg\">Peach Jam, </span>"
+            "<span class=\"a_GcMg\">Mixed Berries, </span>"
+            "<span class=\"a_GcMg\">Oolong Tea</span>"
+        ),
+    }
+    assert infer_flavour_notes(peachy_product, use_llm=False) == "Peach Jam, Mixed Berries, Oolong Tea"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_ozone_cascadia_decaf() -> None:
+    cascadia_product = {
+        "title": "CASCADIA ORGANIC DECAF",
+        "body_html": (
+            "<p><strong>Tasting Notes</strong></p>\n"
+            "<p>Expect aromas of dried fig and quince, with jammy apple, sultana and caramel sweetness then a soft milk chocolate finish.<br></p>\n"
+            "<p><strong>Farm Info</strong></p>"
+        ),
+    }
+    assert infer_flavour_notes(cascadia_product, use_llm=False) == "Milk Chocolate, Jammy Apple, Dried Fig, Caramel, Sultana, Quince"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_atomic_supremo() -> None:
+    supremo_product = {
+        "title": "Supremo",
+        "body_html": (
+            "<div class=\"collapsible-content\">\n"
+            "<p><strong>Origins<br/></strong>Peru, Rodríguez de Mendoza<br/>Guatemala, Huehuetenango<br/>"
+            "<strong>Body</strong> Smooth &amp; creamy<br/>"
+            "<strong>Acidity </strong>Medium<br/>"
+            "<strong>Finish </strong>Sweet<br/>"
+            "<strong>Flavour notes </strong>Cacao nibs, marshmallow, clove<br/>"
+            "<strong>Recommended use </strong>Espresso, stovetop, plunger</p>\n"
+            "</div>"
+        ),
+    }
+    assert infer_flavour_notes(supremo_product, use_llm=False) == "Cacao Nibs, Marshmallow, Clove"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_ozone_cachoeira_subheading() -> None:
+    ozone_product = {
+        "title": "Cachoeira da Grama, Yellow Bourbon",
+        "body_html": (
+            "<p><strong>Origin:</strong> Brazil</p>\n\n"
+            "<p><strong>Tasting notes:</strong> Roasted hazelnut, toffee, dark chocolate</p>"
+        ),
+    }
+    assert infer_flavour_notes(ozone_product, use_llm=False) == "Roasted Hazelnut, Toffee, Dark Chocolate"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_embassy_beyond() -> None:
+    beyond_product = {
+        "title": "Beyond Blend",
+        "body_html": (
+            "<p>Beyond is a Seasonal Espresso Blend.<br><br>"
+            "Flavour Profile - Dark Fruits, Floral, Brown Sugar<br><br>"
+            "Score - 86.25</p>"
+        ),
+    }
+    assert infer_flavour_notes(beyond_product, use_llm=False) == "Dark Fruits, Floral, Brown Sugar"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_embassy_blend_pipe() -> None:
+    embassy_product = {
+        "title": "Embassy Blend",
+        "body_html": "EMBASSY\nBLEND\nAPPLE CRUMBLE | VANILLA CUSTARD | DATES",
+    }
+    assert infer_flavour_notes(embassy_product, use_llm=False) == "Apple Crumble, Vanilla Custard, Dates"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_c4_headset_card() -> None:
+    headset_product = {
+        "title": "Headset Fair Trade Organic",
+        "body_html": (
+            "HEADSET\nYear Round Blend\nCocoa / Sweet\n"
+            "Tasting Notes.\nMilk Chocolate, Nougat & Vanilla Bean.\n"
+            "Origin.\nMexico, Colombia, Ethiopia, Peru\nProcess.\nWashed"
+        ),
+    }
+    assert infer_flavour_notes(headset_product, use_llm=False) == "Milk Chocolate, Nougat, Vanilla Bean"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_ozone_half_caff_subheading() -> None:
+    half_caff_product = {
+        "title": "Half Caff: Blend",
+        "body_html": (
+            "<p><strong>Origin:</strong> Colombia, Guatemala</p>\n\n"
+            "<p><strong>Tasting notes:</strong> Orange, honeycomb, milk chocolate</p>\n\n"
+            "<p>All the flavour – half the caffeine.</p>"
+        ),
+    }
+    assert infer_flavour_notes(half_caff_product, use_llm=False) == "Orange, Honeycomb, Milk Chocolate"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_ozone_inglaterra_subheading() -> None:
+    inglaterra_product = {
+        "title": "Inglaterra",
+        "body_html": (
+            "<p><strong>Origin:</strong> Brazil</p>\n\n"
+            "<p><strong>Tasting notes:</strong> Sugared almond, milk chocolate, raisin</p>\n\n"
+            "<p>This unique terroir contributes to the coffee's distinct flavour profile: clean, sweet, and full of character.</p>"
+        ),
+    }
+    assert infer_flavour_notes(inglaterra_product, use_llm=False) == "Sugared Almond, Milk Chocolate, Raisin"
+
+
+@pytest.mark.unit
+def test_infer_varietal_ozone_las_alasitas() -> None:
+    las_alasitas_product = {
+        "title": "Las Alasitas",
+        "body_html": (
+            "<p>Las Alasitas is now home to Agricafe's variety nursery, where agronomists cultivate seedlings of prized varietals like Geisha, Java, and San Bernardo to share with local farmers.</p>\n\n"
+            "<p>The Yellow Caturra variety – a compact, golden-fruited mutation of Bourbon first selected in Brazil – tends toward tropical fruit sweetness at altitude.</p>\n\n"
+            "<h3>Traceability</h3>\n"
+            "<ul>\n"
+            "<li>Country: Bolivia</li>\n"
+            "<li>Region: Yungas</li>\n"
+            "<li>Province: Caranavi</li>\n"
+            "<li>Colony: Bolinda</li>\n"
+            "<li>Farm: Las Alasitas</li>\n"
+            "<li>Producers: Fincas Los Rodriguez</li>\n"
+            "<li>Processing Method: Washed</li>\n"
+            "<li>Varietal: Yellow Caturra</li>\n"
+            "</ul>"
+        ),
+    }
+    assert infer_varietal(las_alasitas_product, use_llm=False) == "Yellow Caturra"
+
+
+@pytest.mark.unit
+def test_infer_slow_coffee_badges_and_specs() -> None:
+    custard = {
+        "title": "Custard Slice | Brazil",
+        "body_html": "<p><strong>Tasting notes:</strong> Buttery, Marzipan, Vanilla Custard, Cocoa</p><p>Variety Arara & Catuaí 62</p>",
+    }
+    assert infer_flavour_notes(custard, use_llm=False) == "Buttery, Marzipan, Vanilla Custard, Cocoa"
+
+    studio = {
+        "title": "Studio Blend",
+        "body_html": "<p><strong>Tasting notes:</strong> Milk Chocolate, Hazelnut, Toffee, Brown Sugar</p><p>Variety Mixed (Acaiá, Castillo)</p>",
+    }
+    assert infer_flavour_notes(studio, use_llm=False) == "Milk Chocolate, Hazelnut, Toffee, Brown Sugar"
+    assert infer_varietal(studio, use_llm=False) == "Acaiá, Castillo"
+
+    pear = {
+        "title": "Pear Pressure | Kenya",
+        "body_html": "<p><strong>Tasting notes:</strong> Cola, Poached Pear, Plum Jam, Rooibos Tea</p><p>Variety SL28, SL34, Ruiru 11, Batian</p>",
+    }
+    assert infer_flavour_notes(pear, use_llm=False) == "Cola, Poached Pear, Plum Jam, Rooibos Tea"
+    assert infer_varietal(pear, use_llm=False) == "SL28, SL34, Ruiru 11, Batian"
+
+
+@pytest.mark.unit
+def test_infer_embassy_jairo_arcila_cupping_notes() -> None:
+    embassy_jairo = {
+        "title": "Jairo Arcila",
+        "body_html": (
+            "<p>Cupping Notes –<br>"
+            "Mandarin, Caramelised Apple, Apricot<br>"
+            "Disclaimer: Cupping notes are a guide based on what we tasted whilst cupping this coffee.</p>"
+        ),
+    }
+    assert infer_flavour_notes(embassy_jairo, use_llm=False) == "Mandarin, Caramelised Apple, Apricot"
+
+
+@pytest.mark.unit
+def test_infer_grey_roasting_cupping_notes() -> None:
+    cata_lab = {
+        "title": "Cata Lab LOT 2, Colombia - Washed, Mixed Varietal",
+        "body_html": "Cupping Notes: Floral, Bergamot, Citrus, Black Tea\nVarietal: Mixed\nProcess: Advanced Washed",
+    }
+    assert infer_flavour_notes(cata_lab, use_llm=False) == "Floral, Bergamot, Citrus, Black Tea"
+
+    don_claudio = {
+        "title": "Don Claudio, Costa Rica - Washed",
+        "body_html": "Cupping\xa0Notes: Tangerine, Plum, Black Tea\nVarietal: Caturra, Catuai, Obata\nProcess: Washed",
+    }
+    assert infer_flavour_notes(don_claudio, use_llm=False) == "Tangerine, Plum, Black Tea"
+
+
+@pytest.mark.unit
+def test_infer_vanguard_details() -> None:
+    popayan_decaf = {
+        "title": "Colombia Popayan Reserve Decaf",
+        "body_html": "PROCESSING METHOD - Washed; Sugarcane EA Decaf\nTASTING NOTES - Citrus, Toffee, Chocolate Brownie",
+    }
+    assert infer_process(popayan_decaf) == "Washed, Sugar Cane Decaf"
+    assert infer_flavour_notes(popayan_decaf, use_llm=False) == "Citrus, Toffee, Chocolate Brownie"
+
+    sitio_colinas = {
+        "title": "Brazil Sitio Colinas Yellow Arara Natural",
+        "body_html": "TASTING NOTES - Yellow fruits, Macadamia, Milk Chocolate, Caramel",
+    }
+    assert infer_flavour_notes(sitio_colinas, use_llm=False) == "Yellow Fruits, Macadamia, Milk Chocolate, Caramel"
+
+
+@pytest.mark.unit
+def test_infer_eternal_split_profile_and_toh() -> None:
+    peachylicious = {
+        "title": "Peachylicious - Fruity Blend (Espresso)",
+        "body_html": "Flavour:\n\n- Black:\xa0 Peach Milk Candy, Mixed Berries\n\n- Milk: Citrus, Peach, Mixed Berries\n\nOrigin: Ethiopia + Colombia",
+    }
+    assert infer_flavour_notes(peachylicious, use_llm=False) == "Black: Peach Milk Candy, Mixed Berries | Milk: Citrus, Peach, Mixed Berries"
+
+    toh = {
+        "title": "Ethiopia TOH#1 Natural Lulo Coffee",
+        "body_html": "Flavour: Mango, Orah Mandarin, Jujube Date\n\nProducer: Lulo Coffee, Robel Kidane\n\nProcess Method: Natural",
+    }
+    assert infer_flavour_notes(toh, use_llm=False) == "Mango, Orah Mandarin, Jujube Date"
+
+    peace_town = {
+        "title": "🆕 Ethiopia Peace Town 74158 72hr Dark Room Natural (Filter)",
+        "body_html": "Boysenberry Yogurt, Pink Pomelo, Golden Kiwifruit\n\nProducer: Uncle Adumu, Peach Town\n\nR egion: Amfo, Hambela",
+    }
+    assert infer_flavour_notes(peace_town, use_llm=False) == "Boysenberry Yogurt, Pink Pomelo, Golden Kiwifruit"
+
+
+@pytest.mark.unit
+def test_infer_atomic_and_rocket_rich_notes() -> None:
+    atomic_yolan = {
+        "title": "Indonesia Yolan Tirta | Filter Roast",
+        "body_html": "Tasting notes: Red Pear, Hazelnut, Hot Chocolate\nRecomending use: Filter",
+    }
+    assert infer_flavour_notes(atomic_yolan, use_llm=False) == "Red Pear, Hazelnut, Hot Chocolate"
+
+    rocket_diofanor = {
+        "title": "Diofanor Ruiz - Castillo [washed] filter roast",
+        "body_html": "This washed Castillo is sweet with flavours of strawberry, raspberry & panela.\n\nRoasted in H-town 17 AUG 2026",
+    }
+    assert infer_flavour_notes(rocket_diofanor, use_llm=False) == "Strawberry, Raspberry, Panela"
+
+
+
+
+
+

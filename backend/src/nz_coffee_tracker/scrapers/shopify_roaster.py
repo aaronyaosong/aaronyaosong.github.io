@@ -121,10 +121,10 @@ def scrape_shopify_collection(
         cached = latest_listing(database_path, source, product_id) if database_path else None
         needs_detail = (
             cached is None
-            or source in ("slowcoffee.co.nz", "wolfcoffee.co.nz")
+            or source in ("slowcoffee.co.nz", "wolfcoffee.co.nz", "atomiccoffee.co.nz", "ozonecoffee.co.nz", "coffeeembassy.co.nz", "c4coffee.co", "greyroastingco.com", "vanguardcoffee.co.nz", "eternalcoffee.co.nz")
             or not cached["size_prices"]
             or not cached.get("description")
-            or cached.get("flavour_notes") in (None, "", "unknown")
+            or cached.get("flavour_notes") in (None, "", "unknown", "Cherries")
             or not collection_available
             or not cached["available"]
         )
