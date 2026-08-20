@@ -110,12 +110,26 @@ def extract_description_field(product: dict[str, Any], labels: tuple[str, ...]) 
     text = description_text(product)
     label_pattern = "|".join(re.escape(label) for label in labels)
     next_label = r"origin(?: country)?|country|location|producer|farm|estate|process(?:ing)?|process method|processing method|fermentation|flavou?r notes|tasting notes|cupping notes|tasting card|notes|variety|varietal|varietals|variedad|the coffee|brewing recipe|brew guide|filter recipe|espresso recipe|suggested method|dose|recipe|altitude|elevation|region|province|roast|roast profile|roast level|suitable for|importer|exporter|years used"
+
+    # 1. Standard colon/dash/em-dash delimiters
     match = re.search(
-        rf"(?:{label_pattern})\s*[:\-–]\s*(.*?)(?=\s+(?:{next_label})\s*[:\-–]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card)\b|$|[.;|\n])",
+        rf"(?:{label_pattern})\s*[:\-–—]\s*(.*?)(?=\s+(?:{next_label})\s*[:\-–—.]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card)\b|$|[;|\n])",
         text,
         re.IGNORECASE,
     )
-    return match.group(1).strip() if match else "unknown"
+    if match and match.group(1).strip():
+        return match.group(1).strip()
+
+    # 2. Dot delimiter when at line start / structured info card label (e.g. C4 cards: 'Tasting Notes. Shortbread...')
+    match_dot = re.search(
+        rf"(?:^|\n)\s*(?:{label_pattern})\s*\.\s+([A-Z0-9].*?)(?=\s+(?:{next_label})\s*[:\-–—.]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card)\b|$|[;|\n])",
+        text,
+        re.IGNORECASE,
+    )
+    if match_dot and match_dot.group(1).strip():
+        return match_dot.group(1).strip()
+
+    return "unknown"
 
 
 COUNTRY_MAP = {
@@ -401,11 +415,12 @@ def infer_flavour_notes_rule_based(product: dict[str, Any]) -> str:
 
     # 3. 'flavours/favours of ...', 'notes of ...', 'tastes of ...', 'hints of ...'
     for match_flavours in re.finditer(
-        r"(?:flavou?rs?|favou?rs?|notes?|tastes?|hints?|aroma\s*&\s*flavou?rs?)\s+(?:of|include)\s+([^.;\n]+?)(?=\.\s+|\s+roasted\s+in|\s+grown|\s+process|\s+origin|$)",
+        r"(?:flavou?rs?|favou?rs?|notes?|tastes?|hints?|aroma\s*&\s*flavou?rs?)\s+(?:of|include)\s*[:\-–—.]?\s*([\s\S]+?)(?=\n\s*(?:origin|process|roast\s*profile|espresso\s*recipe|dose|yield|time|altitude|variety|varietal|producer|brew|whole\s*beans|ground|specialit?y\s*(?:light|medium|dark)?\s*roast)\b|\n\n|\.\s+[A-Z]|$)",
         text,
         re.IGNORECASE,
     ):
-        cleaned = _clean_flavour_string(match_flavours.group(1))
+        raw_val = " ".join(match_flavours.group(1).split())
+        cleaned = _clean_flavour_string(raw_val)
         if cleaned:
             return cleaned
 
@@ -451,12 +466,12 @@ def infer_flavour_notes_rule_based(product: dict[str, Any]) -> str:
             matches = list(re.finditer(rf"\b{re.escape(word)}\b", text_lower))
             is_valid = False
             for m in matches:
-                start = max(0, m.start() - 25)
-                end = min(len(text_lower), m.end() + 30)
+                start = max(0, m.start() - 30)
+                end = min(len(text_lower), m.end() + 45)
                 window = text_lower[start:end]
                 if re.search(
-                    r"(?:ripe|coffee|red|fresh|whole|harvest(?:ed)?|pick(?:ed)?|sort(?:ed)?|pulp(?:ed)?|wash(?:ed)?|ferment(?:ed)?|dri(?:ed)?|float(?:ing)?)\s+(?:coffee\s+)?cherries?"
-                    r"|cherries?\s+(?:are|were|picked|harvested|sorted|pulped|washed|fermented|dried|hand|processed)",
+                    r"(?:every|the|all|ripe|coffee|red|fresh|whole|harvest(?:ed)?|pick(?:ed)?|sort(?:ed)?|pulp(?:ed)?|wash(?:ed)?|ferment(?:ed)?|dri(?:ed)?|float(?:ing)?)\s+(?:coffee\s+)?cher(?:ry|ries)"
+                    r"|cher(?:ry|ries)\s+(?:is|are|were|was)?\s*(?:handpicked|hand-picked|picked|harvested|sorted|pulped|washed|fermented|dried|hand|processed|delivered|floated|undergo)",
                     window,
                 ):
                     continue

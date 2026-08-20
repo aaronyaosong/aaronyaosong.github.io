@@ -149,7 +149,31 @@ def extract_text_from_image_url(image_url: str, timeout: float = 10.0) -> str:
         resp.raise_for_status()
 
         img = Image.open(io.BytesIO(resp.content))
-        raw_text = pytesseract.image_to_string(img)
+
+        # Composite RGBA / transparent image onto white background
+        bg = Image.new("RGB", img.size, (255, 255, 255))
+        if img.mode in ("RGBA", "LA") or (img.mode == "P" and "transparency" in getattr(img, "info", {})):
+            rgba = img.convert("RGBA")
+            bg.paste(rgba, mask=rgba.split()[3])
+        else:
+            bg.paste(img.convert("RGB"))
+
+        # 2x upscale if moderate resolution to enhance small label text
+        size = getattr(bg, "size", None)
+        if isinstance(size, (tuple, list)) and len(size) == 2:
+            try:
+                w, h = int(size[0]), int(size[1])
+                if max(w, h) <= 2000:
+                    resample = getattr(getattr(Image, "Resampling", Image), "LANCZOS", getattr(Image, "LANCZOS", 1))
+                    bg = bg.resize((w * 2, h * 2), resample)
+            except Exception:
+                pass
+
+        raw_text = pytesseract.image_to_string(bg)
+        if not raw_text or len(raw_text.strip()) < 10:
+            alt_text = pytesseract.image_to_string(bg, config="--psm 4")
+            if len(alt_text.strip()) > len(raw_text.strip()):
+                raw_text = alt_text
 
         # Clean extra whitespace
         cleaned = re.sub(r"[ \t]+", " ", raw_text)

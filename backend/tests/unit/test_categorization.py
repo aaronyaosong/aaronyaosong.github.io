@@ -226,3 +226,27 @@ def test_rose_tea_honey_co_ferment_is_single_process() -> None:
     assert infer_process(product) == "Co-Ferment"
     assert infer_varietal(product) == "Pink Bourbon"
 
+
+@pytest.mark.unit
+def test_infer_flavour_notes_c4_brazil_carnaval() -> None:
+    brazil_product = {
+        "title": "Brazil Carnaval",
+        "body_html": "COFFEE\nCARNAVAL\nREGIONAL BRAZIL BLEND\nNotes of\nDark Chocolate, Burnt Caramel &\nSmoked Cedar\nWHOLE BEANS",
+    }
+    assert infer_flavour_notes(brazil_product, use_llm=False) == "Dark Chocolate, Burnt Caramel, Smoked Cedar"
+
+
+@pytest.mark.unit
+def test_infer_flavour_notes_c4_kenya_kainamu() -> None:
+    # Kainamui description mentions cherry picking in an agricultural context, with tasting notes on the info card
+    kenya_product = {
+        "title": "Kenya Kainamu Factory PB",
+        "body_html": (
+            "<p>Every cherry is handpicked and delivered to the factory's wet mill, where the magic begins.</p>"
+            "<p>KAINAMU : PB\nKENYA\nFeatured Origin\nSweet / Nutty\n\n"
+            "Tasting Notes. Shortbread, Burnt Orange & Caramel\nOrigin. Mt Kenya, Kenya\nProcess. Washed\nRoast Profile Medium / Espresso</p>"
+        ),
+    }
+    assert infer_flavour_notes(kenya_product, use_llm=False) == "Shortbread, Burnt Orange, Caramel"
+
+
