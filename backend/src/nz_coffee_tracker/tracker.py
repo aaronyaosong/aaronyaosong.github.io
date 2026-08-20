@@ -6,7 +6,12 @@ from collections.abc import Iterable
 from datetime import datetime, timezone
 from pathlib import Path
 
-from nz_coffee_tracker.categorization import category_values
+from nz_coffee_tracker.categorization import (
+    ESPRESSO_ROAST,
+    FILTER_ROAST,
+    OMNI_ROAST,
+    category_values,
+)
 from nz_coffee_tracker.database import write_database
 from nz_coffee_tracker.models import CoffeeListing
 from nz_coffee_tracker.scrapers.atomic import scrape_atomic
@@ -21,7 +26,7 @@ from nz_coffee_tracker.scrapers.slow import scrape_slow
 from nz_coffee_tracker.scrapers.wolf import scrape_wolf
 
 
-DEFAULT_ALLOWED_CATEGORIES = {"filter roast", "espresso roast"}
+DEFAULT_ALLOWED_CATEGORIES = {FILTER_ROAST, ESPRESSO_ROAST, OMNI_ROAST}
 
 
 def _matches_categories(item: CoffeeListing, allowed_categories: set[str] | None) -> bool:

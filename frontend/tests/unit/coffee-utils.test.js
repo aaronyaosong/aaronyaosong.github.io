@@ -110,12 +110,17 @@ describe("coffee-utils unit", () => {
     const items = [
       { title: "Zulu Espresso", category: "espresso roast", source: "rocketcoffee.co.nz", varietal: "castillo" },
       { title: "Alpha Filter", category: "filter roast", source: "atomiccoffee.co.nz", varietal: "caturra" },
+      { title: "Omega Omni", category: "omni roast", source: "c4coffee.co", varietal: "bourbon" },
       { title: "Other Item", category: "other", source: "atomiccoffee.co.nz", varietal: "castillo" },
     ];
 
-    const rows = filterAndSortItems(items, "filter roast", "alpha");
-    expect(rows).toHaveLength(1);
-    expect(rows[0].title).toBe("Alpha Filter");
+    const filterRows = filterAndSortItems(items, "filter roast", "alpha");
+    expect(filterRows).toHaveLength(1);
+    expect(filterRows[0].title).toBe("Alpha Filter");
+
+    const omniRows = filterAndSortItems(items, "omni roast", "omega");
+    expect(omniRows).toHaveLength(1);
+    expect(omniRows[0].title).toBe("Omega Omni");
   });
 
   it("sorts by newest, oldest, and price", () => {

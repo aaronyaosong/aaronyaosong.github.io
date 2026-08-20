@@ -247,6 +247,21 @@ h2 {
   color: #065544;
 }
 
+.badge.category[data-category="omni roast"] {
+  background: #ede9fe;
+  color: #4c1d95;
+}
+
+.badge.category[data-category="espresso roast"] {
+  background: #fde8db;
+  color: #8c3207;
+}
+
+.badge.category[data-category="filter roast"] {
+  background: #d7f4eb;
+  color: #065544;
+}
+
 .badge.origin {
   background: #e6f0fa;
   color: #1a4971;
