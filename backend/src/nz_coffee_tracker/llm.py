@@ -13,39 +13,82 @@ def compute_content_hash(title: str, description: str) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
-EXTRACTION_PROMPT = """You are an expert coffee sensory analyst. Extract the taste, aroma, and flavour descriptors from this coffee listing.
-Instructions:
-1. Return ONLY specific tasting/flavour notes (e.g. "jasmine", "raspberry jam", "milk chocolate", "mandarin", "toffee", "irish whiskey").
-2. Do NOT include origin names, farm/producer names, variety names (e.g. 'caturra', 'geisha'), brew equipment, or generic fluff words (e.g. 'delicious', 'clean', 'specialty coffee').
-3. Keep descriptors short, clean, and lowercased (1 to 4 words per descriptor).
-4. Output MUST be a valid JSON array of strings, for example: ["raspberry", "rhubarb", "dark chocolate"]. If no flavour notes exist, return [].
+EXTRACTION_PROMPT = """Read the coffee description below and list ONLY the specific taste and aroma notes (such as fruits, chocolate, florals, spices, sweets).
+Do not include origins, farms, brew equipment, or processing methods.
+Return only a JSON array of the extracted tasting notes found in the text.
 """
+
+
+NON_FLAVOUR_WORDS = {
+    "coffee",
+    "espresso",
+    "filter",
+    "roast",
+    "beans",
+    "natural",
+    "washed",
+    "blend",
+    "origin",
+    "ethiopia",
+    "colombia",
+    "brazil",
+    "kenya",
+    "flavor",
+    "flavour",
+    "aroma",
+    "tasting",
+    "notes",
+    "taste",
+}
+
+
+def _clean_descriptor(raw: str) -> str:
+    cleaned = raw.strip().lower()
+    cleaned = re.sub(r"^(?:a\s+|an\s+|the\s+|twist\s+of\s+|deep\s+hit\s+of\s+|notes?\s+of\s+|hints?\s+of\s+|flavou?rs?\s+of\s+)", "", cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip(" {}[]'\",.:;`")
+    if cleaned in NON_FLAVOUR_WORDS:
+        return ""
+    return cleaned
 
 
 def _parse_llm_json(text: str) -> list[str]:
     cleaned = re.sub(r"^```(?:json)?\s*", "", text.strip(), flags=re.IGNORECASE)
-    cleaned = re.sub(r"\s*```$", "", cleaned)
+    cleaned = re.sub(r"\s*```$", "", cleaned).strip()
+    raw_list: list[str] = []
+
+    # 1. Standard JSON parsing
     try:
         data = json.loads(cleaned)
         if isinstance(data, list):
-            return [str(item).strip().lower() for item in data if str(item).strip()]
-        if isinstance(data, dict):
-            for val in data.values():
+            raw_list = [str(item) for item in data]
+        elif isinstance(data, dict):
+            for key, val in data.items():
                 if isinstance(val, list):
-                    return [str(item).strip().lower() for item in val if str(item).strip()]
+                    raw_list.extend([str(item) for item in val])
+                elif isinstance(val, str) and len(val) > 2:
+                    raw_list.append(key if len(key) > 2 else val)
     except json.JSONDecodeError:
         pass
 
-    # Regex fallback if JSON is embedded inside raw text
-    match = re.search(r"\[\s*\"[^\"]+\"(?:\s*,\s*\"[^\"]+\")*\s*\]", cleaned)
-    if match:
-        try:
-            items = json.loads(match.group(0))
-            return [str(item).strip().lower() for item in items if str(item).strip()]
-        except json.JSONDecodeError:
-            pass
+    # 2. Bracket or curly brace list fallback: ["a", "b"] or {"a", "b"}
+    if not raw_list:
+        quoted_items = re.findall(r'["\']([^"\']{2,40})["\']', cleaned)
+        if quoted_items:
+            raw_list = quoted_items
 
-    return []
+    # 3. Comma-separated fallback
+    if not raw_list and "," in cleaned:
+        raw_list = [part.strip() for part in cleaned.split(",") if part.strip()]
+
+    seen = set()
+    result = []
+    for item in raw_list:
+        desc = _clean_descriptor(item)
+        if desc and len(desc) > 2 and desc not in seen:
+            seen.add(desc)
+            result.append(desc)
+
+    return result
 
 
 def extract_flavour_notes_llm(

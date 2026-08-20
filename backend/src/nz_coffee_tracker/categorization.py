@@ -216,7 +216,17 @@ def infer_flavour_notes(
         if cached:
             return cached
 
-    # 2. Try LLM extraction if enabled
+    # 2. Check explicit field label if present
+    labeled = extract_description_field(product, ("flavour notes", "flavor notes", "tasting notes", "notes"))
+    if labeled and labeled != "unknown" and len(labeled) > 2:
+        if not re.search(r"^(?:of\s+this\s+coffee|are\s+as\s+follows|below)", labeled, re.I):
+            cleaned = _clean_flavour_string(labeled)
+            if cleaned:
+                if database_path is not None:
+                    set_cached_flavour_notes(content_hash, title, cleaned, database_path)
+                return cleaned
+
+    # 3. Try LLM extraction for unstructured descriptions
     if use_llm:
         notes = extract_flavour_notes_llm(desc, title=title)
         if notes:
@@ -225,7 +235,7 @@ def infer_flavour_notes(
                 set_cached_flavour_notes(content_hash, title, formatted, database_path)
             return formatted
 
-    # 3. Fallback to rule-based extractor
+    # 4. Fallback to NLP / rule-based extractor
     rule_based = infer_flavour_notes_rule_based(product)
     if database_path is not None and rule_based != "unknown":
         set_cached_flavour_notes(content_hash, title, rule_based, database_path)

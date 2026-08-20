@@ -179,18 +179,18 @@ def test_nlp_extracts_flavour_notes_without_explicit_label() -> None:
     rocket_prod = {
         "body_html": "<p>Arturo's natural Castillo is sweet & fruity with favours of raspberry, passionfruit & turkish delight. Roasted in H-town 17 AUG 2026</p>"
     }
-    assert infer_flavour_notes(rocket_prod) == "raspberry, passionfruit & turkish delight"
+    assert infer_flavour_notes(rocket_prod, use_llm=False) == "raspberry, passionfruit & turkish delight"
 
     # Slow PO 'In the cup:' style
     slow_prod = {
         "body_html": "<p>In the cup: lemonade ice block, gumball, blossom and creamy soda. It tastes like summer.</p>"
     }
-    assert infer_flavour_notes(slow_prod) == "lemonade ice block, gumball, blossom and creamy soda"
+    assert infer_flavour_notes(slow_prod, use_llm=False) == "lemonade ice block, gumball, blossom and creamy soda"
 
     # Lexicon fallback style
     lexicon_prod = {
         "body_html": "<p>A bright washed coffee featuring stone fruit sweetness, rich chocolate and sweet apricot.</p>"
     }
-    assert "Stone Fruit" in infer_flavour_notes(lexicon_prod)
-    assert "Chocolate" in infer_flavour_notes(lexicon_prod)
+    assert "Stone Fruit" in infer_flavour_notes(lexicon_prod, use_llm=False)
+    assert "Chocolate" in infer_flavour_notes(lexicon_prod, use_llm=False)
 
