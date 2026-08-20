@@ -171,7 +171,7 @@ def test_extracts_metadata_and_flavour_notes_from_description() -> None:
     assert description_text(product) == "Origin: Colombia Producer: Elena Farm Process: washed Flavour notes: plum, cocoa and caramel"
     assert infer_origin_country(product) == "Colombia"
     assert infer_producer(product) == "Elena Farm"
-    assert infer_process(product) == "washed"
+    assert infer_process(product) == "Washed"
     assert infer_flavour_notes(product) == "plum, cocoa and caramel"
 
 

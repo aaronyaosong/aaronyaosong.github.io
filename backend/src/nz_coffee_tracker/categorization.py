@@ -70,62 +70,135 @@ def extract_description_field(product: dict[str, Any], labels: tuple[str, ...]) 
     return match.group(1).strip() if match else "unknown"
 
 
+COUNTRY_MAP = {
+    "colombia": "Colombia", "colombian": "Colombia",
+    "ethiopia": "Ethiopia", "ethiopian": "Ethiopia",
+    "kenya": "Kenya", "kenyan": "Kenya",
+    "guatemala": "Guatemala", "guatemalan": "Guatemala",
+    "costa rica": "Costa Rica", "costa rican": "Costa Rica",
+    "panama": "Panama", "panamanian": "Panama",
+    "honduras": "Honduras", "honduran": "Honduras",
+    "brazil": "Brazil", "brazilian": "Brazil",
+    "rwanda": "Rwanda", "rwandan": "Rwanda",
+    "peru": "Peru", "peruvian": "Peru",
+    "ecuador": "Ecuador", "ecuadorian": "Ecuador",
+    "el salvador": "El Salvador", "salvadoran": "El Salvador",
+    "burundi": "Burundi", "burundian": "Burundi",
+    "uganda": "Uganda", "ugandan": "Uganda",
+    "bolivia": "Bolivia", "bolivian": "Bolivia",
+    "nicaragua": "Nicaragua", "nicaraguan": "Nicaragua",
+    "mexico": "Mexico", "mexican": "Mexico",
+    "papua new guinea": "Papua New Guinea",
+    "indonesia": "Indonesia", "indonesian": "Indonesia", "sumatra": "Indonesia", "sumatran": "Indonesia",
+    "tanzania": "Tanzania", "tanzanian": "Tanzania",
+    "vietnam": "Vietnam", "vietnamese": "Vietnam",
+    "yemen": "Yemen", "yemeni": "Yemen",
+    "congo": "DR Congo", "dr congo": "DR Congo", "drc": "DR Congo",
+    "timor": "East Timor", "east timor": "East Timor",
+    "india": "India", "indian": "India",
+}
+
+
+def clean_origin_country(text: str) -> str:
+    if not text:
+        return "unknown"
+    text_lower = text.lower()
+    # Filter out NZ roaster headquarters references
+    if re.search(r"\b(?:new zealand|aotearoa|auckland|wellington|hamilton|christchurch|dunedin|h-town|italy)\b", text_lower):
+        # Remove those specific words before checking country
+        text_lower = re.sub(r"\b(?:new zealand|aotearoa(?: nz)?|auckland|wellington|hamilton|christchurch|dunedin|h-town|italy)\b", " ", text_lower)
+    found: list[str] = []
+    for word, country in COUNTRY_MAP.items():
+        if re.search(rf"\b{re.escape(word)}\b", text_lower):
+            if country not in found:
+                found.append(country)
+    return ", ".join(found) if found else "unknown"
+
+
 def infer_origin_country_rule_based(product: dict[str, Any]) -> str:
     labeled = extract_description_field(product, ("origin", "origin country", "country"))
     if labeled and labeled != "unknown":
-        return labeled
-    text = f"{product.get('title', '')} {description_text(product)}".lower()
-    country_map = {
-        "ethiopia": "Ethiopia", "ethiopian": "Ethiopia",
-        "colombia": "Colombia", "colombian": "Colombia",
-        "kenya": "Kenya", "kenyan": "Kenya",
-        "guatemala": "Guatemala", "guatemalan": "Guatemala",
-        "costa rica": "Costa Rica", "costa rican": "Costa Rica",
-        "panama": "Panama", "panamanian": "Panama",
-        "honduras": "Honduras", "honduran": "Honduras",
-        "brazil": "Brazil", "brazilian": "Brazil",
-        "rwanda": "Rwanda", "rwandan": "Rwanda",
-        "peru": "Peru", "peruvian": "Peru",
-        "ecuador": "Ecuador", "ecuadorian": "Ecuador",
-        "el salvador": "El Salvador", "salvadoran": "El Salvador",
-        "burundi": "Burundi", "burundian": "Burundi",
-        "uganda": "Uganda", "ugandan": "Uganda",
-        "indonesia": "Indonesia", "indonesian": "Indonesia", "sumatra": "Indonesia", "sumatran": "Indonesia",
-        "papua new guinea": "Papua New Guinea",
-        "mexico": "Mexico", "mexican": "Mexico",
-        "tanzania": "Tanzania", "tanzanian": "Tanzania",
-        "nicaragua": "Nicaragua", "nicaraguan": "Nicaragua",
-    }
-    for word, country in country_map.items():
-        if re.search(rf"\b{re.escape(word)}\b", text):
-            return country
-    return "unknown"
+        cleaned = clean_origin_country(labeled)
+        if cleaned != "unknown":
+            return cleaned
+    full_text = f"{product.get('title', '')} {description_text(product)}"
+    return clean_origin_country(full_text)
 
 
 def infer_producer_rule_based(product: dict[str, Any]) -> str:
     labeled = extract_description_field(product, ("producer", "farm", "estate", "station", "washing station", "grower"))
     if labeled and labeled != "unknown":
-        return labeled
+        # Keep short producer names, strip recipe/altitude noise if present
+        cleaned = re.sub(r"\s+(?:altitude|region|harvest|roast|brew|recipe|dose|variety|varietal)\b.*$", "", labeled, flags=re.IGNORECASE).strip()
+        if cleaned and len(cleaned) <= 60:
+            return cleaned
     title = str(product.get("title", "")).strip()
     if " - " in title:
         prefix = title.split(" - ")[0].strip()
-        if not re.search(r"\b(?:decaf|espresso|filter|omni|blend|roast)\b", prefix, re.IGNORECASE) and len(prefix) > 2:
+        if not re.search(r"\b(?:decaf|espresso|filter|omni|blend|roast)\b", prefix, re.IGNORECASE) and 2 < len(prefix) <= 50:
             return prefix
     return "unknown"
 
 
+CANONICAL_PROCESSES = (
+    (r"\banaerobic\s+natural\b", "Anaerobic Natural"),
+    (r"\banaerobic\s+washed\b", "Anaerobic Washed"),
+    (r"\banaerobic\s+slow\s+dry\b", "Anaerobic Natural"),
+    (r"\basd\s+natural\b", "Anaerobic Natural"),
+    (r"\bcarbonic\s+maceration\b", "Carbonic Maceration"),
+    (r"\bcarbonic\b", "Carbonic Maceration"),
+    (r"\bwashed\s+double\s+ferment(?:ed)?\b", "Washed Double Fermented"),
+    (r"\bdouble\s+ferment(?:ed|ation)?\b", "Double Fermented"),
+    (r"\bco-?ferment(?:ed|ation)?\b", "Co-Ferment"),
+    (r"\bmosto\s+washed\b", "Mosto Washed"),
+    (r"\badvanced\s+washed\b", "Advanced Washed"),
+    (r"\bpulped\s+natural\b", "Pulped Natural"),
+    (r"\byellow\s+honey\b", "Yellow Honey"),
+    (r"\bred\s+honey\b", "Red Honey"),
+    (r"\bblack\s+honey\b", "Black Honey"),
+    (r"\bhoney\b", "Honey"),
+    (r"\bwet\s+hulled\b", "Wet Hulled"),
+    (r"\bgiling\s+basah\b", "Wet Hulled"),
+    (r"\bnatural\s+decaf\b", "Natural Decaf"),
+    (r"\bsugarcane\s+decaf\b", "Sugarcane Decaf"),
+    (r"\bswiss\s+water\s+decaf\b", "Swiss Water Decaf"),
+    (r"\bmountain\s+water\s+decaf\b", "Mountain Water Decaf"),
+    (r"\bfully\s+washed\b", "Washed"),
+    (r"\bwashed\b", "Washed"),
+    (r"\bnatural\b", "Natural"),
+    (r"\bdecaf\b", "Decaf"),
+)
+
+
+def clean_process(text: str) -> str:
+    if not text:
+        return "unknown"
+    text_lower = text.lower()
+    for pattern, canonical in CANONICAL_PROCESSES:
+        if re.search(pattern, text_lower):
+            return canonical
+    return "unknown"
+
+
 def infer_process_rule_based(product: dict[str, Any]) -> str:
+    # 1. Check title bracket tag e.g. [washed], [natural], [washed double fermented]
+    title = str(product.get("title", ""))
+    match = re.search(r"\[([^\]]*(?:washed|natural|honey|anaerobic|ferment|carbonic|decaf)[^\]]*)\]", title, re.IGNORECASE)
+    if match:
+        cleaned = clean_process(match.group(1))
+        if cleaned != "unknown":
+            return cleaned
+
+    # 2. Check labeled process field
     labeled = extract_description_field(product, ("process", "processing", "processing method"))
     if labeled and labeled != "unknown":
-        return labeled
-    text = f"{product.get('title', '')} {description_text(product)}".lower()
-    match = re.search(r"\[([^\]]*(?:washed|natural|honey|anaerobic|ferment)[^\]]*)\]", str(product.get("title", "")), re.IGNORECASE)
-    if match:
-        return match.group(1).strip().title()
-    for proc in ("anaerobic natural", "anaerobic washed", "double fermented", "carbonic maceration", "natural", "washed", "honey", "wet hulled"):
-        if re.search(rf"\b{re.escape(proc)}\b", text):
-            return proc.title()
-    return "unknown"
+        cleaned = clean_process(labeled)
+        if cleaned != "unknown":
+            return cleaned
+
+    # 3. Check description text for process mentions
+    desc = description_text(product)
+    return clean_process(desc)
 
 
 def infer_varietal_rule_based(product: dict[str, Any]) -> str:
@@ -281,11 +354,13 @@ def infer_metadata(
             and cached["flavour_notes"] != "unknown"
             and (cached.get("origin_country", "unknown") != "unknown" or cached.get("process", "unknown") != "unknown" or cached.get("producer", "unknown") != "unknown")
         ):
+            clean_cached_origin = clean_origin_country(cached.get("origin_country") or "")
+            clean_cached_process = clean_process(cached.get("process") or "")
             return {
                 "flavour_notes": cached.get("flavour_notes") or "unknown",
-                "origin_country": cached.get("origin_country") or "unknown",
+                "origin_country": clean_cached_origin,
                 "producer": cached.get("producer") or "unknown",
-                "process": cached.get("process") or "unknown",
+                "process": clean_cached_process,
                 "varietal": cached.get("varietal") or "unknown",
             }
 
@@ -311,11 +386,14 @@ def infer_metadata(
         if llm_meta["varietal"].lower() in f"{title} {desc}".lower():
             varietal_val = llm_meta["varietal"]
 
+    llm_origin = clean_origin_country(llm_meta.get("origin_country") or "") if llm_meta else "unknown"
+    llm_process = clean_process(llm_meta.get("process") or "") if llm_meta else "unknown"
+
     final_meta = {
         "flavour_notes": (rule_notes if rule_notes != "unknown" else (llm_meta.get("flavour_notes") if llm_meta and llm_meta.get("flavour_notes") != "unknown" else "unknown")) or "unknown",
-        "origin_country": (rule_origin if rule_origin != "unknown" else (llm_meta.get("origin_country") if llm_meta else "unknown")) or "unknown",
+        "origin_country": (rule_origin if rule_origin != "unknown" else llm_origin) or "unknown",
         "producer": (rule_producer if rule_producer != "unknown" else (llm_meta.get("producer") if llm_meta else "unknown")) or "unknown",
-        "process": (rule_process if rule_process != "unknown" else (llm_meta.get("process") if llm_meta else "unknown")) or "unknown",
+        "process": (rule_process if rule_process != "unknown" else llm_process) or "unknown",
         "varietal": varietal_val or "unknown",
     }
 
