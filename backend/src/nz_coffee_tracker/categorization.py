@@ -109,25 +109,29 @@ def _collect_product_text(product: dict[str, Any]) -> str:
 def extract_description_field(product: dict[str, Any], labels: tuple[str, ...]) -> str:
     text = description_text(product)
     label_pattern = "|".join(re.escape(label) for label in labels)
-    next_label = r"origin(?: country)?|country|location|producer|farm|estate|process(?:ing)?|process method|processing method|fermentation|flavou?r notes|tasting notes|cupping notes|tasting card|notes|variety|varietal|varietals|variedad|the coffee|brewing recipe|brew guide|filter recipe|espresso recipe|suggested method|dose|recipe|altitude|elevation|region|province|roast|roast profile|roast level|suitable for|importer|exporter|years used|recommended use|roaster\'s comment|about the coffee|characteristics|body|acidity|finish|r\s*egion"
+    next_label = r"origin(?: country)?|country|location|producer|farm|estate|process(?:ing)?|process method|processing method|fermentation|flavou?r notes|tasting notes|cupping notes|tasting card|notes|variety|varieties|varietal|varietals|variedad|the coffee|brewing recipe|brew guide|filter recipe|espresso recipe|suggested method|dose|recipe|altitude|elevation|region|province|roast|roast profile|roast level|suitable for|importer|exporter|years used|recommended use|roaster\'s comment|about the coffee|characteristics|body|acidity|finish|r\s*egion"
 
-    # 1. Standard colon/dash/em-dash delimiters (supports values on same line or immediately following line)
+    # 1. Line start / header boundary with colon/dash/em-dash/dot delimiter (supports values on same line or immediately following line)
     match = re.search(
-        rf"(?:{label_pattern})\s*[:\-–—]\s*(?:\n\s*)?([A-Z0-9].*?)(?=\s+(?:{next_label})\s*[:\-–—.]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card|recommended use|roaster\'s comment|about the coffee)\b|$|[;|\n])",
+        rf"(?:^|\n)\s*(?:{label_pattern})\b\s*[:\-–—.]\s*(?:\n\s*)?([A-Z0-9].*?)(?=\s+(?:{next_label})\s*[:\-–—.]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card|recommended use|roaster\'s comment|about the coffee)\b|$|[;|\n])",
         text,
         re.IGNORECASE,
     )
     if match and match.group(1).strip():
-        return match.group(1).strip()
+        val = match.group(1).strip()
+        if not re.search(r"\b(?:of|for|that|which|with|an?|the|and|is|are)\b", val.split()[0], re.I):
+            return val
 
-    # 2. Line start / structured label with optional separator or dot (e.g. C4 cards, Atomic characteristics)
+    # 2. Line start / structured label with optional separator or whitespace (e.g. C4 cards, Atomic characteristics)
     match_line = re.search(
-        rf"(?:^|\n)\s*(?:{label_pattern})\s*[:\-–—.]?\s+([A-Z0-9].*?)(?=\s+(?:{next_label})\s*[:\-–—.]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card|recommended use|body|acidity|finish|roaster\'s comment|about the coffee)\b|$|[;|\n])",
+        rf"(?:^|\n)\s*(?:{label_pattern})\b\s*[:\-–—.]?\s*(?:\n\s*)?([A-Z0-9][^\n]{{2,120}}?)(?=\s+(?:{next_label})\s*[:\-–—.]|\s+(?:variedad|the coffee|brewing recipe|brew guide|digital tasting card|recommended use|body|acidity|finish|roaster\'s comment|about the coffee)\b|$|[;|\n])",
         text,
         re.IGNORECASE,
     )
     if match_line and match_line.group(1).strip():
-        return match_line.group(1).strip()
+        val = match_line.group(1).strip()
+        if not re.search(r"\b(?:of|for|that|which|with|an?|the|and|is|are)\b", val.split()[0], re.I):
+            return val
 
     return "unknown"
 
@@ -265,7 +269,7 @@ def clean_process(text: str) -> str:
 
 
 def format_varietal(raw: str) -> str:
-    if not raw or raw == "unknown":
+    if not raw or raw == "unknown" or re.search(r"\b(?:country|farm|process|processing|recipe|brewing|method|roaster|region|altitude|producer)\b", raw, re.I):
         return "unknown"
     parts = [p.strip() for p in raw.split(",") if p.strip()]
     titled = []
@@ -331,14 +335,15 @@ def infer_process_rule_based(product: dict[str, Any]) -> str:
 
 
 def infer_varietal_rule_based(product: dict[str, Any]) -> str:
-    labeled = extract_description_field(product, ("varietal", "variety", "varietals"))
-    if labeled and labeled != "unknown" and len(labeled) <= 60:
+    labeled = extract_description_field(product, ("varietal", "variety", "varieties grown", "varieties", "varietals", "variedad"))
+    if labeled and labeled != "unknown" and len(labeled) <= 90:
         cleaned = format_varietal(labeled)
         if cleaned != "unknown":
             return cleaned
     text = _collect_product_text(product)
     found = [varietal for varietal in KNOWN_VARIETALS if re.search(rf"\b{re.escape(varietal)}\b", text)]
-    return format_varietal(",".join(found)) if found else "unknown"
+    filtered = [v for v in found if not any(v.lower() != other.lower() and v.lower() in other.lower() for other in found)]
+    return format_varietal(",".join(filtered)) if filtered else "unknown"
 
 
 COFFEE_FLAVOUR_LEXICON = (

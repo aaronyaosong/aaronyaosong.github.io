@@ -409,5 +409,29 @@ def test_infer_flavour_notes_ozone_inglaterra_subheading() -> None:
     assert infer_flavour_notes(inglaterra_product, use_llm=False) == "Sugared Almond, Milk Chocolate, Raisin"
 
 
+@pytest.mark.unit
+def test_infer_varietal_ozone_las_alasitas() -> None:
+    las_alasitas_product = {
+        "title": "Las Alasitas",
+        "body_html": (
+            "<p>Las Alasitas is now home to Agricafe's variety nursery, where agronomists cultivate seedlings of prized varietals like Geisha, Java, and San Bernardo to share with local farmers.</p>\n\n"
+            "<p>The Yellow Caturra variety – a compact, golden-fruited mutation of Bourbon first selected in Brazil – tends toward tropical fruit sweetness at altitude.</p>\n\n"
+            "<h3>Traceability</h3>\n"
+            "<ul>\n"
+            "<li>Country: Bolivia</li>\n"
+            "<li>Region: Yungas</li>\n"
+            "<li>Province: Caranavi</li>\n"
+            "<li>Colony: Bolinda</li>\n"
+            "<li>Farm: Las Alasitas</li>\n"
+            "<li>Producers: Fincas Los Rodriguez</li>\n"
+            "<li>Processing Method: Washed</li>\n"
+            "<li>Varietal: Yellow Caturra</li>\n"
+            "</ul>"
+        ),
+    }
+    assert infer_varietal(las_alasitas_product, use_llm=False) == "Yellow Caturra"
+
+
+
 
 
