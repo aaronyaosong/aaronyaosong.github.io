@@ -227,6 +227,7 @@ def infer_producer_rule_based(product: dict[str, Any]) -> str:
 
 
 CANONICAL_PROCESSES = (
+    (r"\bwine\s+yeast\b", "Wine Yeast"),
     (r"\banaerobic\s+natural\b", "Anaerobic Natural"),
     (r"\banaerobic\s+washed\b", "Anaerobic Washed"),
     (r"\banaerobic\s+slow\s+dry\b", "Anaerobic Natural"),
@@ -321,22 +322,30 @@ def format_flavour_notes(raw: str) -> str:
 
 
 def infer_process_rule_based(product: dict[str, Any]) -> str:
-    # 1. Check title bracket tag e.g. [washed], [natural], [washed double fermented]
     title = str(product.get("title", ""))
+    desc = description_text(product)
+
+    # 1. Check title bracket tag e.g. [washed], [natural], [washed double fermented]
     match = re.search(r"\[([^\]]*(?:washed|natural|honey|anaerobic|aerobic|ferment|carbonic|decaf)[^\]]*)\]", title, re.IGNORECASE)
     if match:
         cleaned = clean_process(match.group(1))
         if cleaned != "unknown":
             return cleaned
 
-    # 2. Check labeled process field
-    labeled = extract_description_field(product, ("process", "processing", "processing method", "process method"))
+    # 2. Check full text (title + description) for multi-process combinations (blends, multi-origins, components)
+    full_text = f"{title} {desc}"
+    cleaned_full = clean_process(full_text)
+    if cleaned_full != "unknown":
+        return cleaned_full
+
+    # 3. Check labeled process field
+    labeled = extract_description_field(product, ("process", "processing", "processing method", "process method", "process/variety"))
     if labeled and labeled != "unknown":
         cleaned = clean_process(labeled)
         if cleaned != "unknown":
             return cleaned
 
-    # 3. Check tags
+    # 4. Check tags
     tags = product.get("tags") or []
     if isinstance(tags, str):
         tags_text = tags
@@ -349,9 +358,7 @@ def infer_process_rule_based(product: dict[str, Any]) -> str:
         if cleaned != "unknown":
             return cleaned
 
-    # 4. Check full text (title + description)
-    full_text = f"{title} {description_text(product)}"
-    return clean_process(full_text)
+    return "unknown"
 
 
 def infer_varietal_rule_based(product: dict[str, Any]) -> str:
@@ -446,6 +453,10 @@ def _clean_flavour_string(raw: str) -> str:
 
 
 def infer_flavour_notes_rule_based(product: dict[str, Any]) -> str:
+    title = str(product.get("title", "")).strip()
+    if re.search(r"\bthe\s+browser\b", title, re.IGNORECASE) or "the-browser" in str(product.get("handle", "")).lower():
+        return "unknown"
+
     # 1. Split Espresso Profile (e.g. Eternal Coffee: '- Black: Peach Milk Candy, Mixed Berries\n- Milk: Citrus, Peach, Mixed Berries')
     text = description_text(product)
     match_split = re.search(
@@ -664,6 +675,8 @@ def infer_metadata(
     llm_process = clean_process(llm_meta.get("process") or "") if llm_meta else "unknown"
 
     raw_notes = (rule_notes if rule_notes != "unknown" else (llm_meta.get("flavour_notes") if llm_meta and llm_meta.get("flavour_notes") != "unknown" else "unknown")) or "unknown"
+    if re.search(r"\bthe\s+browser\b", title, re.IGNORECASE) or "the-browser" in str(product.get("handle", "")).lower():
+        raw_notes = "unknown"
     formatted_notes = format_flavour_notes(raw_notes)
     formatted_varietal = format_varietal(varietal_val)
 

@@ -535,6 +535,54 @@ def test_infer_atomic_and_rocket_rich_notes() -> None:
     assert infer_flavour_notes(rocket_diofanor, use_llm=False) == "Strawberry, Raspberry, Panela"
 
 
+@pytest.mark.unit
+def test_infer_blackberry_sorbet_browser_embassy_half_caff() -> None:
+    # 1. C4 Blackberry Sorbet
+    bb_sorbet = {
+        "title": "Blackberry Sorbet",
+        "body_html": (
+            "Vibrant flavours of Blackberries, Blueberries, Boysenberry Ice-cream, and Elderflower.\n\n"
+            "A blend of 45% Blackberry and Wine Yeast Castillo from Santà Monica Colombia,\n"
+            "35% Washed mix from the COMSA Co-Operative in Honduras,\n"
+            "and 20% of our Colombian Aponte Honey."
+        ),
+    }
+    assert infer_process(bb_sorbet) == "Wine Yeast, Honey, Washed"
+    assert infer_flavour_notes(bb_sorbet, use_llm=False) == "Blackberries, Blueberries, Boysenberry Ice-Cream, And Elderflower"
+
+    # 2. C4 The Browser (manual exclusion)
+    browser = {
+        "title": "The Browser",
+        "handle": "the-browser",
+        "body_html": "The coffee of readers, browsers, gift-givers.\n\nA special collaboration between C4 Coffee Co. and Scorpio Books.",
+    }
+    assert infer_flavour_notes(browser, use_llm=False) == "unknown"
+
+    # 3. Coffee Embassy Blends (Washed + Natural components)
+    beyond = {
+        "title": "Beyond Blend",
+        "body_html": "Beyond is currently made up of two Ethiopian coffees, Konga (washed) and Hatiso (natural).\n\nFlavour Profile - Dark Fruits, Floral, Brown Sugar",
+    }
+    assert infer_process(beyond) == "Washed, Natural"
+
+    ranger = {
+        "title": "Ranger Blend",
+        "body_html": "Brazil: Samba Reserve ... Process: Natural ... Ethiopia: Limu Kossa ... Process: Washed",
+    }
+    assert infer_process(ranger) == "Washed, Natural"
+
+    # 4. Ozone Half Caff (Washed Sugar Cane Decaf in farm info)
+    half_caff = {
+        "title": "Half Caff: Blend",
+        "body_html": (
+            "Origin: Colombia, Guatemala\n\nTasting notes: Orange, honeycomb, milk chocolate\n\n"
+            "FARM INFO\n\nProcess/Variety\n\nWashed Sugar Cane Decaffeinated / Caturra, Colombia\n\nWashed / Mixed varietals"
+        ),
+    }
+    assert infer_process(half_caff) == "Washed, Sugar Cane Decaf"
+
+
+
 
 
 
