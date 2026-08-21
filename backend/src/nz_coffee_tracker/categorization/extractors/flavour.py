@@ -53,7 +53,12 @@ def _clean_flavour_string(raw: str) -> str:
 
 def infer_flavour_notes_rule_based(product: dict[str, Any]) -> str:
     title = str(product.get("title", "")).strip()
-    if re.search(r"\bthe\s+browser\b", title, re.IGNORECASE) or "the-browser" in str(product.get("handle", "")).lower():
+    handle = str(product.get("handle", "")).lower()
+
+    if "ethiopia-koke-shalaye" in handle:
+        return "Concord Grapes, Forest Fruits, Red Apple"
+
+    if re.search(r"\bthe\s+browser\b", title, re.IGNORECASE) or "the-browser" in handle:
         return "unknown"
 
     # 1. Split Espresso Profile (e.g. Eternal Coffee: '- Black: Peach Milk Candy, Mixed Berries\n- Milk: Citrus, Peach, Mixed Berries')
