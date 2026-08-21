@@ -246,8 +246,9 @@ CANONICAL_PROCESSES = (
     (r"\bhoney\b(?!\s*co[-\s]?ferment)", "Honey"),
     (r"\bwet\s+hulled\b", "Wet Hulled"),
     (r"\bgiling\s+basah\b", "Wet Hulled"),
+    (r"\bwashed\s+patio\s+dried\b", "Washed Patio Dried"),
     (r"\bfully\s+washed\b", "Washed"),
-    (r"\bwashed\b(?!\s*co[-\s]?ferment|\s*double\s*ferment)", "Washed"),
+    (r"\bwashed\b(?!\s*co[-\s]?ferment|\s*double\s*ferment|\s*patio\s*dried)", "Washed"),
     (r"\bnatural\s+decaf\b", "Natural Decaf"),
     (r"\b(?:sugar\s*cane|sugarcane)(?:\s*ea)?\s*(?:decaf\w*|process\w*|method)?\b", "Sugar Cane Decaf"),
     (r"\bswiss\s*water\s*(?:decaf\w*|process\w*|method)?\b", "Swiss Water Decaf"),
@@ -263,8 +264,27 @@ def clean_process(text: str) -> str:
         return "unknown"
     text_lower = text.lower()
     found: list[str] = []
+    
+    # 1. Dynamic Co-Ferment Check
+    co_ferment_matches = re.finditer(r"\b([a-z]+(?:\s+[a-z]+){0,2}\s+(?:honey|washed|natural|aerobic|anaerobic)?\s*co[-\s]?ferment(?:ed|ation|ing)?)\b", text_lower)
+    for m in co_ferment_matches:
+        val = m.group(1).title()
+        val = re.sub(r"Co[-\s]?Ferment(?:ed|ation|ing)?", "Co-Ferment", val)
+        val = val.replace(" Co Ferment", " Co-Ferment")
+        if val not in found:
+            found.append(val)
+            
+    # Check standalone co-ferment if no dynamic matched
+    if not found and re.search(r"\bco[-\s]?ferment(?:ed|ation|ing)?\b", text_lower):
+        found.append("Co-Ferment")
+
     for pattern, canonical in CANONICAL_PROCESSES:
         if re.search(pattern, text_lower):
+            # Do not add base processes if they are part of a dynamic co-ferment we already found
+            if canonical in ("Honey", "Washed", "Natural", "Anaerobic Natural", "Anaerobic Washed"):
+                if any(canonical.lower() in f.lower() and "co-ferment" in f.lower() for f in found):
+                    continue
+
             if canonical not in found:
                 if any(k in canonical for k in ("Sugar Cane Decaf", "Swiss Water Decaf", "Mountain Water Decaf", "Natural Decaf")) and "Decaf" in found:
                     found.remove("Decaf")
@@ -317,7 +337,9 @@ def format_flavour_notes(raw: str) -> str:
     for p in parts:
         item = p.strip().rstrip(".…")
         if item and len(item) > 1 and item.lower() not in NON_FLAVOUR_WORDS:
-            titled.append(item.title())
+            titled_val = item.title()
+            titled_val = re.sub(r"'S\b", "'s", titled_val)
+            titled.append(titled_val)
     return ", ".join(titled) if titled else "unknown"
 
 
@@ -332,18 +354,17 @@ def infer_process_rule_based(product: dict[str, Any]) -> str:
         if cleaned != "unknown":
             return cleaned
 
-    # 2. Check full text (title + description) for multi-process combinations (blends, multi-origins, components)
-    full_text = f"{title} {desc}"
-    cleaned_full = clean_process(full_text)
-    if cleaned_full != "unknown":
-        return cleaned_full
-
-    # 3. Check labeled process field
+    # 2. Check labeled process field
     labeled = extract_description_field(product, ("process", "processing", "processing method", "process method", "process/variety"))
     if labeled and labeled != "unknown":
         cleaned = clean_process(labeled)
         if cleaned != "unknown":
             return cleaned
+
+    # 3. Check title directly
+    cleaned_title = clean_process(title)
+    if cleaned_title != "unknown":
+        return cleaned_title
 
     # 4. Check tags
     tags = product.get("tags") or []
