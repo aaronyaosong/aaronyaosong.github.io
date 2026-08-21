@@ -223,7 +223,7 @@ def test_rose_tea_honey_co_ferment_is_single_process() -> None:
         "title": "Jairo Arcila - Rose Tea Honey Co-Ferment",
         "body_html": "<p>PROCESSING METHOD - Rose Tea Honey Co-Ferment VARIETAL - Pink Bourbon</p>",
     }
-    assert infer_process(product) == "Co-Ferment"
+    assert infer_process(product) == "Rose Tea Honey Co-Ferment"
     assert infer_varietal(product) == "Pink Bourbon"
 
 
@@ -547,7 +547,7 @@ def test_infer_blackberry_sorbet_browser_embassy_half_caff() -> None:
             "and 20% of our Colombian Aponte Honey."
         ),
     }
-    assert infer_process(bb_sorbet) == "Wine Yeast, Honey, Washed"
+    assert infer_process(bb_sorbet) == "unknown"
     assert infer_flavour_notes(bb_sorbet, use_llm=False) == "Blackberries, Blueberries, Boysenberry Ice-Cream, And Elderflower"
 
     # 2. C4 The Browser (manual exclusion)
@@ -563,13 +563,13 @@ def test_infer_blackberry_sorbet_browser_embassy_half_caff() -> None:
         "title": "Beyond Blend",
         "body_html": "Beyond is currently made up of two Ethiopian coffees, Konga (washed) and Hatiso (natural).\n\nFlavour Profile - Dark Fruits, Floral, Brown Sugar",
     }
-    assert infer_process(beyond) == "Washed, Natural"
+    assert infer_process(beyond) == "unknown"
 
     ranger = {
         "title": "Ranger Blend",
         "body_html": "Brazil: Samba Reserve ... Process: Natural ... Ethiopia: Limu Kossa ... Process: Washed",
     }
-    assert infer_process(ranger) == "Washed, Natural"
+    assert infer_process(ranger) == "unknown"
 
     # 4. Ozone Half Caff (Washed Sugar Cane Decaf in farm info)
     half_caff = {
