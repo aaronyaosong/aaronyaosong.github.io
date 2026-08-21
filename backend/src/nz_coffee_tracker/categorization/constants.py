@@ -79,8 +79,8 @@ COUNTRY_MAP = {
 
 CANONICAL_PROCESSES = (
     (r"\bwine\s+yeast\b", "Wine Yeast"),
-    (r"\banaerobic\s+natural\b", "Anaerobic Natural"),
-    (r"\banaerobic\s+washed\b", "Anaerobic Washed"),
+    (r"\b(?:anaerobic\s+natural|natural\s+anaerobic)\b", "Anaerobic Natural"),
+    (r"\b(?:anaerobic\s+washed|washed\s+anaerobic)\b", "Anaerobic Washed"),
     (r"\banaerobic\s+slow\s+dry\b", "Anaerobic Natural"),
     (r"\basd\s+natural\b", "Anaerobic Natural"),
     (r"\bcarbonic\s+maceration\b", "Carbonic Maceration"),
