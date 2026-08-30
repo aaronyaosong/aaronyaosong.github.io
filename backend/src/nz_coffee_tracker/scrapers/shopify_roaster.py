@@ -149,7 +149,7 @@ def scrape_shopify_collection(
                 available=any(bool(v.get("available")) for v in variants),
                 price_min_nzd=min(prices),
                 price_max_nzd=max(prices),
-                updated_at=str(product.get("updated_at", "")),
+                updated_at=str(product.get("published_at") or product.get("created_at") or product.get("updated_at", "")),
                 scraped_at=scraped_at,
                 varietal=meta["varietal"],
                 size_prices=size_prices,
