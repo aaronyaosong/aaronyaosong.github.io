@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-14T21:55:25+00:00",
-  "count": 148,
+  "generated_at": "2026-10-15T21:36:05+00:00",
+  "count": 146,
   "items": [
     {
       "source": "rocketcoffee.co.nz",
@@ -13,7 +13,7 @@
       "price_min_nzd": 50.0,
       "price_max_nzd": 50.0,
       "updated_at": "2026-08-11T14:26:41+12:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Sudan Rume",
       "size_prices": [
         {
@@ -39,7 +39,7 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-09-15T11:46:06+12:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -65,7 +65,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
       "updated_at": "2026-09-09T08:43:01+12:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -91,7 +91,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
       "updated_at": "2026-10-08T11:00:56+13:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -117,7 +117,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-10-06T15:50:29+13:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Ruiru 11, SL28, Batian",
       "size_prices": [
         {
@@ -134,6 +134,32 @@
     },
     {
       "source": "rocketcoffee.co.nz",
+      "product_id": 8114456002736,
+      "title": "Gihere Ngozi - Red Bourbon [natural] filter roast",
+      "category": "filter roast",
+      "handle": "gihere-ngozi-red-bourbon-honey-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/gihere-ngozi-red-bourbon-honey-filter-roast",
+      "available": true,
+      "price_min_nzd": 26.0,
+      "price_max_nzd": 26.0,
+      "updated_at": "2026-10-16T10:01:51+13:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
+      "varietal": "Red Bourbon",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.0
+        }
+      ],
+      "origin_country": "Burundi",
+      "producer": "Gihere Ngozi",
+      "process": "Natural",
+      "decaf": false,
+      "description": "This is a clean & sweet Burundi with flavours of strawberry, red grape & orange.\n\nRoasted in H-town 16 OCT 2026",
+      "flavour_notes": "Strawberry, Red Grape, Orange"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
       "product_id": 7945593290928,
       "title": "Gishamwana Kaguriro - Red Bourbon Organic [washed] filter roast",
       "category": "filter roast",
@@ -143,7 +169,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 26.0,
       "updated_at": "2026-10-13T09:50:21+13:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Red Bourbon",
       "size_prices": [
         {
@@ -169,7 +195,7 @@
       "price_min_nzd": 32.0,
       "price_max_nzd": 32.0,
       "updated_at": "2026-09-03T10:33:00+12:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Tabi",
       "size_prices": [
         {
@@ -186,6 +212,32 @@
     },
     {
       "source": "rocketcoffee.co.nz",
+      "product_id": 4307914244,
+      "title": "Kagumoini - SL28 - Ruiru 11 - Batian [washed] filter roast",
+      "category": "filter roast",
+      "handle": "kagumo-ini-filter-roast",
+      "product_url": "https://rocketcoffee.co.nz/products/kagumo-ini-filter-roast",
+      "available": true,
+      "price_min_nzd": 28.0,
+      "price_max_nzd": 28.0,
+      "updated_at": "2026-10-15T11:33:49+13:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
+      "varietal": "Ruiru 11, SL28, Batian",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        }
+      ],
+      "origin_country": "Kenya",
+      "producer": "Kagumoini",
+      "process": "Washed",
+      "decaf": false,
+      "description": "This is a floral, juicy Kenyan with flavours of raspberry, cranberry & blood orange.\n\nRoasted in H-town 14 OCT 2026",
+      "flavour_notes": "Raspberry, Cranberry, Blood Orange"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
       "product_id": 8061599088816,
       "title": "Masha Kayanza - Red Bourbon [honey] filter roast",
       "category": "filter roast",
@@ -195,7 +247,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 26.0,
       "updated_at": "2026-09-08T09:46:20+12:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Red Bourbon",
       "size_prices": [
         {
@@ -212,32 +264,6 @@
     },
     {
       "source": "rocketcoffee.co.nz",
-      "product_id": 8115111821488,
-      "title": "Mr. Gobena Bendo - Ethiopia Landrace [washed] filter roast",
-      "category": "filter roast",
-      "handle": "mr-gobena-bendo-ethiopia-landrace-washed",
-      "product_url": "https://rocketcoffee.co.nz/products/mr-gobena-bendo-ethiopia-landrace-washed",
-      "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 28.0,
-      "updated_at": "2026-09-07T15:21:25+12:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
-      "varietal": "Landrace",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 28.0
-        }
-      ],
-      "origin_country": "Ethiopia",
-      "producer": "Mr. Gobena Bendo",
-      "process": "Washed",
-      "decaf": false,
-      "description": "This single-farmer lot from Gobena has flavours of mandarin, nectarine & berry tea.\n\nRoasted in H-town 13 OCT 2026",
-      "flavour_notes": "Mandarin, Nectarine, Berry Tea"
-    },
-    {
-      "source": "rocketcoffee.co.nz",
       "product_id": 7917428834480,
       "title": "Mr. Mengeche Derso - Ethiopian Landrace  [Natural] Filter Roast",
       "category": "filter roast",
@@ -247,7 +273,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-09-24T15:06:08+12:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Ethiopian Landrace",
       "size_prices": [
         {
@@ -273,7 +299,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-10-14T13:46:07+13:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Ethiopia Landrace",
       "size_prices": [
         {
@@ -299,7 +325,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
       "updated_at": "2026-07-20T16:11:17+12:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Aji",
       "size_prices": [
         {
@@ -325,7 +351,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 26.0,
       "updated_at": "2026-10-05T10:28:26+13:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -351,7 +377,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-09-08T10:00:19+12:00",
-      "scraped_at": "2026-10-14T21:30:25+00:00",
+      "scraped_at": "2026-10-15T21:11:47+00:00",
       "varietal": "Red Bourbon",
       "size_prices": [
         {
@@ -377,7 +403,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 70.0,
       "updated_at": "2023-05-04T12:04:49+12:00",
-      "scraped_at": "2026-10-14T21:31:38+00:00",
+      "scraped_at": "2026-10-15T21:13:10+00:00",
       "varietal": "Castillo, Caturra, Bourbon, Typica",
       "size_prices": [
         {
@@ -407,7 +433,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2021-11-30T12:57:03+13:00",
-      "scraped_at": "2026-10-14T21:31:38+00:00",
+      "scraped_at": "2026-10-15T21:13:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -437,7 +463,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2023-07-17T15:26:49+12:00",
-      "scraped_at": "2026-10-14T21:31:38+00:00",
+      "scraped_at": "2026-10-15T21:13:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -467,7 +493,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 85.0,
       "updated_at": "2026-10-06T12:56:01+13:00",
-      "scraped_at": "2026-10-14T21:31:38+00:00",
+      "scraped_at": "2026-10-15T21:13:10+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -497,7 +523,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 95.0,
       "updated_at": "2026-09-14T13:45:05+12:00",
-      "scraped_at": "2026-10-14T21:31:38+00:00",
+      "scraped_at": "2026-10-15T21:13:10+00:00",
       "varietal": "Landrace",
       "size_prices": [
         {
@@ -527,7 +553,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 95.0,
       "updated_at": "2026-10-09T12:35:17+13:00",
-      "scraped_at": "2026-10-14T21:31:38+00:00",
+      "scraped_at": "2026-10-15T21:13:10+00:00",
       "varietal": "Landrace",
       "size_prices": [
         {
@@ -557,7 +583,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2023-01-26T08:43:50+13:00",
-      "scraped_at": "2026-10-14T21:31:38+00:00",
+      "scraped_at": "2026-10-15T21:13:10+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -587,7 +613,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 129.0,
       "updated_at": "2026-10-13T06:02:17+13:00",
-      "scraped_at": "2026-10-14T21:31:38+00:00",
+      "scraped_at": "2026-10-15T21:13:10+00:00",
       "varietal": "Catua\u00ed",
       "size_prices": [
         {
@@ -617,7 +643,7 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2020-04-18T13:28:09+12:00",
-      "scraped_at": "2026-10-14T21:32:59+00:00",
+      "scraped_at": "2026-10-15T21:14:27+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -662,7 +688,7 @@
       "process": "unknown",
       "decaf": false,
       "description": "This subscription is for our Rocket Espresso Blend, it's seasonal, changing throughout the year as fresh crop coffee arrives into the country.\n\nThis is for 12 deliveries, choose either 250g, 500g or 1kg, sent weekly, fortnightly or monthly.\n\nFor more information on the current Espresso Blend click here\n\nAll subscriptions include freight.\n\nFor any changes to your subscription or help on coffee brewing of all methods i.e. espresso, plunger etc fire an email through to espresso@rocketcoffee.co.nz",
-      "flavour_notes": "Flavor Notes, Fruits, Spices, Chocolate, Herbal, Nose Notes, Body Notes, Finish Notes"
+      "flavour_notes": "Flavor Notes, Fruits, Spices, Chocolate, Nuts, Caramel, Citrus, Herbal, Woody, Earth, Moldy"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -675,8 +701,8 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2024-12-09T15:47:56+13:00",
-      "scraped_at": "2026-10-14T21:32:59+00:00",
-      "varietal": "Quy = Capoeirinha",
+      "scraped_at": "2026-10-15T21:14:27+00:00",
+      "varietal": "Capoeirinha",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -716,11 +742,11 @@
         }
       ],
       "origin_country": "Colombia",
-      "producer": "Quy = CAPOEIRINHA",
+      "producer": "GETTING ROASTED IN H-TOWN SINCE \u201895",
       "process": "Washed",
       "decaf": false,
       "description": "This subscription is for our Rocket Espresso DULCE, it's seasonal, changing throughout the year as fresh crop coffee arrives into the country.\n\nThis is for 12 deliveries, choose either 250g, 500g or 1kg, sent weekly, fortnightly or monthly.\n\nFor more information on the current Espresso Dulce click here\n\nAll subscriptions include freight.\n\nFor any changes to your subscription or help on coffee brewing of all methods i.e. espresso, plunger etc fire an email through to espresso@rocketcoffee.co.nz",
-      "flavour_notes": "Flavour Notes, Fruits, Spices, Chocolate, Herbal, Nutty, Caramel, Sweet, Malty, Bitter, Acidic"
+      "flavour_notes": "Rocket Espresso Dulce, Seasonal, Fresh Crop Coffee, Geisha, Caturra, Heirloom, Sl28"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -733,7 +759,7 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2022-08-17T11:00:07+12:00",
-      "scraped_at": "2026-10-14T21:32:59+00:00",
+      "scraped_at": "2026-10-15T21:14:27+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -778,7 +804,7 @@
       "process": "unknown",
       "decaf": false,
       "description": "This subscription is for our Organic espresso blend, it's seasonal, changing throughout the year as fresh crop coffee arrives into the country.\n\nThis is for 12 deliveries, choose either 250g or 500g sent weekly, fortnightly or monthly... because you're prepaying we'll charge the 1kg rate.\n\nFor more information on the current Organic espresso blend click here\n\nAll subscriptions include freight.\n\nFor any changes to your subscription or help on coffee brewing of all methods i.e. espresso, plunger etc fire an email through to espresso@rocketcoffee.co.nz",
-      "flavour_notes": "unknown"
+      "flavour_notes": "Organic, Seasonal, Fresh, Crop"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -791,7 +817,7 @@
       "price_min_nzd": 72.0,
       "price_max_nzd": 480.0,
       "updated_at": "2023-08-10T13:16:19+12:00",
-      "scraped_at": "2026-10-14T21:32:59+00:00",
+      "scraped_at": "2026-10-15T21:14:27+00:00",
       "varietal": "Ruiru 11, SL28, SL34, Batian",
       "size_prices": [
         {
@@ -837,7 +863,7 @@
       "price_min_nzd": 84.0,
       "price_max_nzd": 576.0,
       "updated_at": "2020-03-27T10:38:15+13:00",
-      "scraped_at": "2026-10-14T21:32:59+00:00",
+      "scraped_at": "2026-10-15T21:14:27+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -870,7 +896,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "The next subscription, No. 340 will be dispatched 20 OCT 2026.",
-      "flavour_notes": "Citrus, Berries, And Tropical Fruit"
+      "flavour_notes": "Citrus, Berries, And Tropical Fruit, Chocolate And Caramel"
     },
     {
       "source": "atomiccoffee.co.nz",
@@ -883,7 +909,7 @@
       "price_min_nzd": 25.9,
       "price_max_nzd": 25.9,
       "updated_at": "2026-10-05T07:47:05+13:00",
-      "scraped_at": "2026-10-14T21:36:51+00:00",
+      "scraped_at": "2026-10-15T21:18:16+00:00",
       "varietal": "Batian, SL28, SL34, Ruiru 11",
       "size_prices": [
         {
@@ -909,7 +935,7 @@
       "price_min_nzd": 34.01,
       "price_max_nzd": 34.01,
       "updated_at": "2026-10-05T07:47:39+13:00",
-      "scraped_at": "2026-10-14T21:36:51+00:00",
+      "scraped_at": "2026-10-15T21:18:16+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -935,7 +961,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
       "updated_at": "2026-10-05T07:47:28+13:00",
-      "scraped_at": "2026-10-14T21:36:51+00:00",
+      "scraped_at": "2026-10-15T21:18:16+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -961,7 +987,7 @@
       "price_min_nzd": 20.5,
       "price_max_nzd": 82.0,
       "updated_at": "2024-03-01T09:35:47+13:00",
-      "scraped_at": "2026-10-14T21:36:51+00:00",
+      "scraped_at": "2026-10-15T21:18:16+00:00",
       "varietal": "Mundo Novo, Catuai",
       "size_prices": [
         {
@@ -991,12 +1017,12 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2025-11-12T11:49:06+13:00",
-      "scraped_at": "2026-10-14T21:37:03+00:00",
+      "scraped_at": "2026-10-15T21:18:33+00:00",
       "varietal": "unknown",
       "size_prices": [],
-      "origin_country": "Colombia",
+      "origin_country": "unknown",
       "producer": "unknown",
-      "process": "Natural",
+      "process": "unknown",
       "decaf": false,
       "description": "Not sure which espresso blend you would like most? We\u2019ve made it easier for you to decide by bundling our top-selling blends at a cheeky discounted price.\n\nVeloce (250g) is our flagship blend, the one you\u2019ll find in most cafes serving Atomic. It\u2019s crafted to make a smooth, complex espresso with notes of dark chocolate, cinnamon and stone fruit. and a balanced flat white.\n\nSupremo (250g) is for the \u2018strong\u2019 coffee lovers \u2013 full-bodied, rich in deep chocolate undertones, and elevated by a confectionary sweetness that becomes caramel-like with milk. Our notes for this blend are cacao nibs, marshmallow and clove .\n\nBundle these two classics together and save $6.00!",
       "flavour_notes": "Dark Chocolate, Cinnamon, Stone Fruit"
@@ -1012,7 +1038,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
       "updated_at": "2014-07-05T11:55:00+12:00",
-      "scraped_at": "2026-10-14T21:37:03+00:00",
+      "scraped_at": "2026-10-15T21:18:33+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1026,7 +1052,7 @@
       ],
       "origin_country": "Colombia, Ethiopia, Brazil, Peru",
       "producer": "unknown",
-      "process": "Natural",
+      "process": "Washed",
       "decaf": false,
       "description": "Origins\nEthiopia, Sidamo\nColombia, Cauca\nBrazil, Minas Gerais\nPeru, Rodriguez de Mendoza\n\nBody Full & velvety\nAcidity Medium\nFinish Sweet & lingering\nFlavour notes Chocolate, stone fruit, cinnamon\nRecommended use Espresso, stovetop, plunger, Aeropress, filter\n\nRatio: 1:1.5\nGrind size: fine\n\nDOSE: 20.5G\nYIELD: 27-30G\nTIME: 25-31 SEC\n\nOrigins\nEthiopia, Sidamo\nColombia, Cauca\nBrazil, Minas Gerais\nPeru, Rodriguez de Mendoza\n\nBody Full & velvety\nAcidity Medium\nFinish Sweet & lingering\nFlavour notes Chocolate, stone fruit, cinnamon\nRecommended use Espresso, stovetop, plunger, Aeropress, filter\n\nRatio: 1:1.5\nGrind size: fine\n\nDOSE: 20.5G\nYIELD: 27-30G\nTIME: 25-31 SEC\n\nVeloce is our flagship blend - a rich, sweet and complex espresso that pours like velvet. Roasted delicately so notes of bittersweet chocolate, cinnamon spice and ripe stone fruit cut through. Delicious with or without milk, it's true espresso - the aficionados\u2019 choice.",
       "flavour_notes": "Chocolate, Stone Fruit, Cinnamon"
@@ -1042,7 +1068,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
       "updated_at": "2014-06-18T14:27:00+12:00",
-      "scraped_at": "2026-10-14T21:37:03+00:00",
+      "scraped_at": "2026-10-15T21:18:33+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1056,7 +1082,7 @@
       ],
       "origin_country": "Guatemala, Brazil, Peru, Tanzania",
       "producer": "unknown",
-      "process": "unknown",
+      "process": "Natural",
       "decaf": false,
       "description": "Origins\nPeru, Rodr\u00edguez de Mendoza\nGuatemala, Huehuetenango\nBrazil, Minas Gerais\nTanzania, Kagera\n\nBody Smooth & creamy\nAcidity Low\nFinish Soft & sweet\nFlavour notes Cacao nibs, marshmallow, clove\nRecommended use Espresso, stovetop, plunger\n\nRecommended ratio: 1:1.5\nGrind size: fine\n\nDOSE: 19.5G\nYIELD: 26-29G\nTIME: 27-30 SEC\n\nOrigins\nPeru, Rodr\u00edguez de Mendoza\nGuatemala, Huehuetenango\nBrazil, Minas Gerais\nTanzania, Kagera\n\nBody Smooth & creamy\nAcidity Low\nFinish Soft & sweet\nFlavour notes Cacao nibs, marshmallow, clove\nRecommended use Espresso, stovetop, plunger\n\nRecommended ratio: 1:1.5\nGrind size: fine\n\nDOSE: 19.5G\nYIELD: 26-29G\nTIME: 27-30 SEC\n\nCalled Supremo for a reason, it is a blend with remarkable full-bodied sweetness, great depth of flavour and complexity, and lingering clove and cinnamon spice notes. As an espresso, Supremo has strong dark cocoa flavours, a creamy, smooth body and a soft sweet finish.",
       "flavour_notes": "Cacao Nibs, Marshmallow, Clove"
@@ -1072,7 +1098,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
       "updated_at": "2014-06-18T14:30:00+12:00",
-      "scraped_at": "2026-10-14T21:37:03+00:00",
+      "scraped_at": "2026-10-15T21:18:33+00:00",
       "varietal": "Lempira, Catuai, Catimor",
       "size_prices": [
         {
@@ -1102,7 +1128,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
       "updated_at": "2026-10-05T07:47:50+13:00",
-      "scraped_at": "2026-10-14T21:37:03+00:00",
+      "scraped_at": "2026-10-15T21:18:33+00:00",
       "varietal": "Bourbon",
       "size_prices": [
         {
@@ -1128,7 +1154,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2021-06-30T02:52:03+12:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1166,7 +1192,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2021-06-30T03:01:43+12:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1204,7 +1230,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2021-06-30T02:55:07+12:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1242,7 +1268,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 205.5,
       "updated_at": "2021-06-30T03:00:36+12:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1280,7 +1306,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 71.0,
       "updated_at": "2024-03-06T01:55:25+13:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1314,7 +1340,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 69.0,
       "updated_at": "2025-09-17T21:11:19+12:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1348,7 +1374,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2026-03-03T23:33:07+13:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1377,6 +1403,210 @@
     },
     {
       "source": "ozonecoffee.co.nz",
+      "product_id": 10328317001959,
+      "title": "Irene Herrera - La Mandarina",
+      "category": "filter roast",
+      "handle": "irene-herrera-la-mandarina",
+      "product_url": "https://ozonecoffee.co.nz/products/irene-herrera-la-mandarina",
+      "available": true,
+      "price_min_nzd": 26.0,
+      "price_max_nzd": 104.0,
+      "updated_at": "2026-10-02T10:59:01+13:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
+      "varietal": "Marshell",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 52.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 104.0
+        }
+      ],
+      "origin_country": "Peru",
+      "producer": "Irene Herrera",
+      "process": "Washed",
+      "decaf": false,
+      "description": "Origin: Peru\n\nOrigin: Tangerine, strawberry fondants, brown sugar\n\nTasting notes: Tangerine, strawberry fondants, brown sugar\n\nTASTING NOTES\n\nThis elegant cup opens with a burst of tangerine followed by strawberry fondants and a spoonful of brown sugar. As it finishes, there's a little lime juice and a delicate floral note too.\n\nFARM INFO\n\nWhile looking through samples from Cajamarca in Peru, this Washed Marshell coffee really stood out on the cupping table for its elegance and clarity. We were cupping with the Origin Coffee Lab team (our local exporters) and looking for something really tasty to fill a gap in our Peruvian coffee offering this year. When they shared the name of the producer with Roland - Irene Herrera - it was a light bulb moment.\n\nA Happy Coincidence\n\nThe La Coipa district is nestled in the north east corner of the Cajamarca region of Peru. La Coipa is a fantastic coffee-producing area - the locale of Nima Juarez (El Roble and La Quebrada) whose coffee we have enjoyed in previous years, and Kelvin Guerrero (La Esmerelda) whose coffee we released earlier this year.\n\nIn 2022 Roland went to Peru for the first time, after we had purchased some coffees from there the year previous. It was his first trip with Origin Coffee Lab - who we\u2019re now lucky enough to know well - and they headed to the La Coipa village. Through the course of the morning they walked past several coffee farms, finishing up at their destination for lunch at the house of head of Gallitos de Rocas comite, Milciades Minga\u2026 and his wife Irene Herrera!\n\nHospitality and Horticulture\n\nThe couple's house is a little larger than some other nearby houses, maybe because Milciades is also a carpenter. The top floor is used for drying coffee, with living space and kitchen below. Guinea Pigs are kept inside in a pen - a staple food animal in Peru, known as Cuy (pronounced Coo-ee). Alongside a big lunch by Irene, they enjoyed an excellent fruit punch made in a barrel by mixing fruit juice and the local cane sugar spirit Yonke.\n\nThe farm La Mandarina is just behind the house and includes a small nursery of baby plants. As with many Cajamarca farms, it's a steep climb to the top and Roland was hard pressed to keep up with Irene! The small estate spans from 1,750 to 2,000 metres above sea level. Irene cultivates Caturra, Marshell, and Bourbon varieties - the lot we have here has been separated from the Marshell trees only. The flowering period occurs from October to December, and the harvest takes place between May and September, with peak months from June to August 2024.\n\nOnce selectively picked, as is typical in Peru, the coffee has been Washed processed. The cherries are depulped, fermentated in a tank for 24-36 hours, washed, and dried in solar dryers for 10-15 days.\n\nMysterious Marshell\n\nMarshell's origins are still being debated. The most widely held view is that it's a natural mutation of Bourbon, first spotted in 1997 by a farmer called Griman\u00e9s Morales Lizana on her farm in San Ignacio, Cajamarca. She propagated from it after a disease outbreak wiped out everything around it, and named it drawing on the names of her family members, including her father-in-law Marcelino. An alternative theory, backed by some genetic testing, suggests Marshell may be related to Costa Rica 95, a Catimor-group cultivar developed by ICAFE from Caturra and Timor Hybrid 832/1. No definitive published research has settled the question either way.\n\nWhat both theories agree on is the disease resistance. Many Peruvian farmers were encouraged to plant Catimor varietals through the mid-2010s by cooperatives, exporters, and government programmes to help combat leaf rust and other diseases. Catimors divide opinion in the coffee community: partial Robusta genetics can lead to flat, vegetal cup profiles when not handled with care. This lot is a reminder that they don't have to.\n\nFor more on the coffee varietals behind Marshell, read our varietal guides on Catimor , Bourbon , and Marshell itself.\n\nThe World Leader in Organic Coffee\n\nDespite being the 9th largest producing country globally, exporting approximately 3,772,000 bags of coffee annually, Peru is presently the world\u2019s largest exporter for Organic coffee. Roughly 90,000 hectares of coffee-growing farmland in Peru is certified Organic, as is La Mandarina. The main driver of this trend is that the vast majority of production in the country is carried out by smallholder producers who lack the resources to invest in chemical products for use on their farms. This does however present a huge risk from the ever-increasing threat of coffee leaf rust, exacerbated by climate change, which has had a major impact in Peru where pesticide and fungicide use is rare.\n\nCountry: Peru\n\nRegion: La Coipa\n\nProducer: Irene Herrera\n\nFarm: La Mandarina\n\nAltitude: 1,750-2,000 m.a.s.l.\n\nVariety: Marshell\n\nProcessing method: Washed",
+      "flavour_notes": "Tangerine, Strawberry Fondants, Brown Sugar"
+    },
+    {
+      "source": "ozonecoffee.co.nz",
+      "product_id": 9149404709095,
+      "title": "Don Mayo, La Ladera",
+      "category": "filter roast",
+      "handle": "costa-rica-don-mayo",
+      "product_url": "https://ozonecoffee.co.nz/products/costa-rica-don-mayo",
+      "available": true,
+      "price_min_nzd": 26.0,
+      "price_max_nzd": 104.0,
+      "updated_at": "2026-10-02T10:58:59+13:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
+      "varietal": "Caturra",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 26.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 52.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 104.0
+        }
+      ],
+      "origin_country": "Costa Rica",
+      "producer": "Pablo Bonilla",
+      "process": "Honey",
+      "decaf": false,
+      "description": "At Ozone Coffee, our journey with the Bonilla family and their Don Mayo micromill began in 2012. Over the years, Don Mayo has earned a stellar reputation worldwide for producing exceptional Costa Rica coffee. We're proud to continue this partnership, which has evolved alongside the family\u2019s dedication to excellence.\n\nOrigin: Costa Rica\n\nOrigin: Orange blossom, red apple, mandarin\n\nTasting notes: Orange blossom, red apple, mandarin\n\nTASTING NOTES\n\nA clean, honey-processed cup with notes of orange blossom , red apple and mandarin , with a soft honey sweetness, balanced by a silky body and bright citrus lift.\n\nFARM INFO\n\nLa Ladera, located in the Tarraz\u00fa region of Costa Rica, is owned by Pablo Bonilla. The farm spans 20 hectares and is situated at an altitude of 1,850 meters, which allows different coffee varieties to thrive at various elevations. Catuai grows well at higher elevations, while Caturra is suited to medium and lower areas.\n\nThe farm emphasizes environmental sustainability by planting native species alongside coffee crops to maintain ecological balance. Additionally, wastewater is treated to prevent pollution, and a small hydroelectric plant is used during peak harvest.\n\nLa Ladera employs a team of 120-130 pickers during the harvest season, primarily from Panama. The farm has been hiring the same core group of pickers for the last two decades, providing them with transportation and accommodation.\n\nAfter harvest, the coffee is processed at the Don Mayo micro mill, also owned by Pablo Bonilla. Located in the Tarraz\u00fa region of Costa Rica, the Don Mayo micro mill is one of the oldest and most respected micro mills in the country. Established in 2003 by Hector Bonilla and his sons, the mill has been innovative in creating an economically and environmentally sustainable farm-to-mill operation under the Bonilla Family Estate.\n\nThe mill processes coffee from its own farms, such as La Loma, and also buys whole cherries from local farmers to sell as individual micro-lots. Don Mayo is equipped with state-of-the-art machinery and is committed to producing high-quality coffee. This commitment is demonstrated through the mill\u2019s success in Costa Rica\u2019s Cup of Excellence competition, having auctioned more than 35 lots through the competition and placing first in both 2009 and 2020.\n\nEnvironmental conservation is a key focus at Don Mayo. The mill minimises water usage due to government restrictions and uses coffee pulp and parchment as fuel for cooking and mechanical dryers, as well as fertiliser. This approach ensures that nothing goes to waste and supports sustainable coffee production.\n\nCountry: Costa Rica\n\nRegion: Tarrazu\n\nProducer: Pablo Bonilla\n\nFarm: La Ladera\n\nMill: Don Mayo\n\nVariety: Caturra\n\nProcess: Honey\n\nAltitude: 1,850 \u2013 1,900masl",
+      "flavour_notes": "Orange Blossom, Red Apple, Mandarin"
+    },
+    {
+      "source": "ozonecoffee.co.nz",
+      "product_id": 9557374730471,
+      "title": "Popay\u00e1n",
+      "category": "filter roast",
+      "handle": "popayan",
+      "product_url": "https://ozonecoffee.co.nz/products/popayan",
+      "available": true,
+      "price_min_nzd": 20.0,
+      "price_max_nzd": 80.0,
+      "updated_at": "2026-05-30T01:00:02+12:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
+      "varietal": "Colombia, Castillo, Caturra, Catimor And Typica",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 20.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 40.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 80.0
+        }
+      ],
+      "origin_country": "Colombia",
+      "producer": "unknown",
+      "process": "Washed",
+      "decaf": false,
+      "description": "Origin: Colombia\n\nOrigin: Tangerine, caramel, cacao nibs, stone fruits, cane sugar\n\nTasting notes: Tangerine, caramel, cacao nibs, stone fruits, cane sugar\n\nJuicy flavours of tangerine and stone-fruits combine with caramel and a hint of cacao nibs, with sugar cane in the finish.\n\nLocated in the Cauca department of southwestern Colombia, the Meseta de Popay\u00e1n sits nestled between the Western and Central ranges of the Andes at 1,700 to 2,000 metres above sea level. The surrounding mountain ranges act as a natural buffer \u2013 keeping temperatures steady between 14 and 29\u00b0C year-round, humidity around 75%, and creating a gradual growing season that allows sugars to build slowly and thoroughly. The result is a coffee that's bright and clean, with that signature Cauca sweetness baked in.\n\nThis coffee comes to us through Cofinet, a Colombian importer who've been running the Popay\u00e1n Reserve project since 2015. They work closely with around 75 smallholder farmers in the region, most growing on plots of less than five hectares. Cherries are milled at Cofinet's Meseta de Popay\u00e1n facility, where processing and quality control are handled centrally. In return, farmers can earn premiums of up to 20% above market price \u2013 tied directly to cup quality, so the incentive to bring in the best cherries runs deep. Cofinet also sends agronomists to work with individual producers directly, and invites farmers to cup their own coffees. The latter might sound like an obvious step, but producers delivering to mills often never taste their own work. These cuppings change that.\n\nThe varieties here \u2013 Colombia, Castillo, Caturra, Catimor, and Typica \u2013 tell a distinctly Colombian story. Castillo and the Colombia variety are sometimes met with a raised eyebrow in specialty circles; both are rust-resistant hybrids developed by Cenicaf\u00e9, Colombia's national coffee research centre, and have historically been associated with commodity rather than specialty production. Grown at this altitude, and with this level of care behind them, that reputation doesn't hold. Caturra and Typica contribute brightness and clarity; Castillo and the Colombia variety add body and structure. Together, they make a cup that's more interesting than any one of them would be alone. A washed process keeps things clean and transparent, letting the terroir speak clearly.\n\nOne small thing worth knowing: Cauca experiences drier conditions in the middle of the year and more rainfall at the start and end. Since coffee is harvested throughout the year across the region, there can be minor variations in moisture content in the green coffee between lots. Nothing that affects the cup meaningfully \u2013 but worth a mention if you're a bit of a coffee nerd about these things.\n\nCountry: Colombia\n\nDepartment: Cauca\n\nTown: Popay\u00e1n\n\nVarieties: Colombia, Castillo, Caturra, Catimor and Typica\n\nProcessing Method: Washed\n\nCrop Year: 2025\n\nNo. of contributing producers: ~75 smallholders\n\nAverage farm size: Under 5 hectares\n\nAltitude: 1,700 - 2,000 metres above sea level\n\nMill: Meseta de Popay\u00e1n",
+      "flavour_notes": "Tangerine, Caramel, Cacao Nibs, Stone Fruits, Cane Sugar"
+    },
+    {
+      "source": "ozonecoffee.co.nz",
+      "product_id": 9364337426663,
+      "title": "Tokuma Natural",
+      "category": "filter roast",
+      "handle": "tokuma-natural",
+      "product_url": "https://ozonecoffee.co.nz/products/tokuma-natural",
+      "available": true,
+      "price_min_nzd": 22.0,
+      "price_max_nzd": 84.0,
+      "updated_at": "2025-11-17T21:56:21+13:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
+      "varietal": "Jarc 74110 & Jarc 74112",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 22.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 43.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 84.0
+        }
+      ],
+      "origin_country": "Ethiopia",
+      "producer": "INFO",
+      "process": "Natural",
+      "decaf": false,
+      "description": "Origin: Ethiopia\n\nOrigin: Berry jam, cherry, apricot, dark chocolate, vanilla\n\nTasting notes: Berry jam, cherry, apricot, dark chocolate, vanilla\n\nTASTING NOTES\n\nVivid notes of berry jam, black cherry, and apricot, complemented by a complex finish of dark cocoa and vanilla, all wrapped in a rich, full-bodied mouthfeel.\n\nFARM INFO\n\nThe Tokuma Group Blend represents the shared work of a remarkable circle of smallholder farmers in Western Ethiopia\u2019s Agaro region. The Tokuma producers first came together informally to exchange agronomy practices and support each other in marketing coffee. Today, they have grown into a formal collective, united by their commitment to quality, innovation, and transparency.\n\nThis blend is composed of lots from multiple Tokuma members: Mensur Abahika, Nesru Aba Nura, Mohammed Aba Nura, and Biya Faris. Each farmer carefully manages cultivation and processing on their own land, ensuring excellent traceability. Coffees are dried slowly on raised beds for around three weeks, yielding sweetness, clarity, and expressive fruit character.\n\nThe emergence of Tokuma reflects a broader shift in Ethiopian coffee. Regulatory changes have allowed more producers to obtain export licenses and sell directly, bypassing the traditional ECX system that once blurred farm-level identity. Tokuma farmers have seized this opportunity, highlighting the unique character of their coffees while securing better compensation for their work.\n\nCountry: Ethiopia\n\nRegion: Oromia\n\nZone: Jimma\n\nWoreda: Gomma\n\nCollective: Tokuma Farmer Group\n\nVarietals: JARC 74110 & JARC 74112\n\nProcessing: Natural\n\nProducers: Mensur Abahika, Mohammad Aba Nura, Nesru Aba Nura & Biya Faris\n\nAltitude: 1,950 - 2,150 m.a.s.l.",
+      "flavour_notes": "Berry Jam, Cherry, Apricot, Dark Chocolate, Vanilla"
+    },
+    {
+      "source": "ozonecoffee.co.nz",
+      "product_id": 6795943510189,
+      "title": "Nova Alianca",
+      "category": "omni roast",
+      "handle": "nova-alianca-natural",
+      "product_url": "https://ozonecoffee.co.nz/products/nova-alianca-natural",
+      "available": true,
+      "price_min_nzd": 20.0,
+      "price_max_nzd": 80.0,
+      "updated_at": "2025-02-26T10:31:38+13:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
+      "varietal": "Mundo Novo, Yellow Catuai, Yellow Catucai",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 20.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 40.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 80.0
+        }
+      ],
+      "origin_country": "Brazil",
+      "producer": "Flavio & Juliana Paulino de Costa",
+      "process": "Natural",
+      "decaf": false,
+      "description": "Fazenda Nova Alian\u00e7a is a 150-hectare farm in Minas Gerais, Brazil, owned and operated by fifth-generation producer Juliana Paulino da Costa Mello and her husband Flavio, an agronomist. The farm has been in Juliana's family for generations and sits within a close-knit network of family-divided plots. Juliana and Flavio bring a blend of heritage and precision to their work - producing organic fertilisers on-site, planting native trees to support biodiversity, and using data-driven monitoring to guide crop management across their range of Arabica varietals.\n\nOrigin: Brazil\n\nOrigin: Chocolate praline, caramel, toasted hazelnut\n\nTasting notes: Chocolate praline, caramel, toasted hazelnut\n\nTASTING NOTES\n\nProcessed in the Natural method, the attention to detail is evident in the clean, rounded, chocolate, caramel and nut forward flavour profile, which we\u2019re delighted to say continues to improve year on year.\n\nFARM INFO\n\nJuliana Paulino de Costa is the 5th generation of her family to be involved in coffee production and is married to Flavio, a superb agronomist who we were fortunate to meet through his work with other farms we purchased from. We were very excited to be able get coffee from their farm, Fazenda Nova Alian\u00e7a, located in the well renowned coffee growing region of Minas Gerais, Brazil.\n\nRegion: Monte Santo de Minas, Minas Gerais\n\nProducer : Flavio & Juliana Paulino de Costa\n\nVariety: Mundo Novo, Yellow Catuai, Yellow Catucai\n\nProcess: Natural\n\nAltitude: 1,000 \u2013 1,100 masl\n\nHarvest: June - July 2024\n\nBREW GUIDE\n\nESPRESSO RECIPE\n\nDose: 20.5g\nYield: 45g\nTime: 25 secs\n\nFILTER RECIPE\n\nMethod: V60\nDose: 16g\nWater: 250ml\nTime: 2:15 mins\n\nTo find the method that suits your kit, check out our Brew Guides .",
+      "flavour_notes": "Chocolate Praline, Caramel, Toasted Hazelnut"
+    },
+    {
+      "source": "ozonecoffee.co.nz",
+      "product_id": 9363325452519,
+      "title": "Limoncillo Washed",
+      "category": "espresso roast",
+      "handle": "limoncillo-washed",
+      "product_url": "https://ozonecoffee.co.nz/products/limoncillo-washed",
+      "available": true,
+      "price_min_nzd": 25.0,
+      "price_max_nzd": 100.0,
+      "updated_at": "2026-10-02T10:59:00+13:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
+      "varietal": "Ethiosar",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 25.0
+        },
+        {
+          "size_grams": 500.0,
+          "price_nzd": 50.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 100.0
+        }
+      ],
+      "origin_country": "Nicaragua",
+      "producer": "INFO",
+      "process": "Honey",
+      "decaf": false,
+      "description": "Known for their experimental processing, varietal work and exceptional Nicaraguan coffee, the Mierisch family employ over 3000 staff during the harvest. They pay their employees 30% more than the minimum wage, provide free food, housing, day care and healthcare facilities for families and offer free education to help staff diversify their skills. More than 60 families live on Finca Limoncillo, which is a testament to how much the Mierisch family care about the people who support them.\n\nOrigin: Nicaragua\n\nOrigin: Fudge, pecan, yellow plum\n\nTasting notes: Fudge, pecan, yellow plum\n\nTASTING NOTES\n\nA delicate yellow plum acidity keeps this super fudgy coffee lively and unctuous with a handful of creamy pecans on the finish.\n\nFARM INFO\n\nWe've been roasting Ethiosar from Limoncillo for a few years now, and it comes from\u202fthe hard work of the Mierisch family and their cousin Ricardo. He owns a farm near to Limoncillo, but at a much lower altitude of 800 metres above sea level. Ricardo noticed that his yield and his plants were suffering and that they seemed to be becoming more susceptible to disease. He put this down to growing issues in Nicaragua, a change in climate, increased rains and his low altitude. But from experiments he was running on the farm, he noticed that this newly-spliced varietal he had put together was thriving. It was fruiting much more than the other plants\u202fand was not suffering.\n\nThe varietal,\u202f Ethiosar , is a stable hybrid plant. It's a cross of an Ethiopian variety (Sudan Rume) with a Sarchimor (a cross of a Villa Sarchi with a Timor variety). The offspring of this plant is then crossed once again with a Villa Sarchi, which is an improved Caturra / Bourbon from Costa Rica.\n\nCountry: Nicaragua\n\nMunicipality: Yasica Norte\n\nRegion: Matagalpa\n\nFarm name: Limoncillo\n\nProducers: The Mierisch Family\n\nFarm size: 171 hectares\n\nCoffee growing area: 109 hectares\n\nElevation: 1,200 m.a.s.l.\n\nVarietal: Ethiosar\n\nProcessing system: Honey",
+      "flavour_notes": "Fudge, Pecan, Yellow Plum"
+    },
+    {
+      "source": "ozonecoffee.co.nz",
       "product_id": 6795910250669,
       "title": "Decaf",
       "category": "omni roast",
@@ -1386,7 +1616,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 210.0,
       "updated_at": "2021-10-26T11:38:17+13:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
       "varietal": "Caturra, Castillo And Colombia",
       "size_prices": [
         {
@@ -1424,7 +1654,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 112.0,
       "updated_at": "2026-08-20T20:58:23+12:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1449,210 +1679,6 @@
     },
     {
       "source": "ozonecoffee.co.nz",
-      "product_id": 9557374730471,
-      "title": "Popay\u00e1n",
-      "category": "filter roast",
-      "handle": "popayan",
-      "product_url": "https://ozonecoffee.co.nz/products/popayan",
-      "available": true,
-      "price_min_nzd": 20.0,
-      "price_max_nzd": 80.0,
-      "updated_at": "2026-05-30T01:00:02+12:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
-      "varietal": "Colombia, Castillo, Caturra, Catimor And Typica",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 20.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 40.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 80.0
-        }
-      ],
-      "origin_country": "Colombia",
-      "producer": "unknown",
-      "process": "Washed",
-      "decaf": false,
-      "description": "Origin: Colombia\n\nOrigin: Tangerine, caramel, cacao nibs, stone fruits, cane sugar\n\nTasting notes: Tangerine, caramel, cacao nibs, stone fruits, cane sugar\n\nJuicy flavours of tangerine and stone-fruits combine with caramel and a hint of cacao nibs, with sugar cane in the finish.\n\nLocated in the Cauca department of southwestern Colombia, the Meseta de Popay\u00e1n sits nestled between the Western and Central ranges of the Andes at 1,700 to 2,000 metres above sea level. The surrounding mountain ranges act as a natural buffer \u2013 keeping temperatures steady between 14 and 29\u00b0C year-round, humidity around 75%, and creating a gradual growing season that allows sugars to build slowly and thoroughly. The result is a coffee that's bright and clean, with that signature Cauca sweetness baked in.\n\nThis coffee comes to us through Cofinet, a Colombian importer who've been running the Popay\u00e1n Reserve project since 2015. They work closely with around 75 smallholder farmers in the region, most growing on plots of less than five hectares. Cherries are milled at Cofinet's Meseta de Popay\u00e1n facility, where processing and quality control are handled centrally. In return, farmers can earn premiums of up to 20% above market price \u2013 tied directly to cup quality, so the incentive to bring in the best cherries runs deep. Cofinet also sends agronomists to work with individual producers directly, and invites farmers to cup their own coffees. The latter might sound like an obvious step, but producers delivering to mills often never taste their own work. These cuppings change that.\n\nThe varieties here \u2013 Colombia, Castillo, Caturra, Catimor, and Typica \u2013 tell a distinctly Colombian story. Castillo and the Colombia variety are sometimes met with a raised eyebrow in specialty circles; both are rust-resistant hybrids developed by Cenicaf\u00e9, Colombia's national coffee research centre, and have historically been associated with commodity rather than specialty production. Grown at this altitude, and with this level of care behind them, that reputation doesn't hold. Caturra and Typica contribute brightness and clarity; Castillo and the Colombia variety add body and structure. Together, they make a cup that's more interesting than any one of them would be alone. A washed process keeps things clean and transparent, letting the terroir speak clearly.\n\nOne small thing worth knowing: Cauca experiences drier conditions in the middle of the year and more rainfall at the start and end. Since coffee is harvested throughout the year across the region, there can be minor variations in moisture content in the green coffee between lots. Nothing that affects the cup meaningfully \u2013 but worth a mention if you're a bit of a coffee nerd about these things.\n\nCountry: Colombia\n\nDepartment: Cauca\n\nTown: Popay\u00e1n\n\nVarieties: Colombia, Castillo, Caturra, Catimor and Typica\n\nProcessing Method: Washed\n\nCrop Year: 2025\n\nNo. of contributing producers: ~75 smallholders\n\nAverage farm size: Under 5 hectares\n\nAltitude: 1,700 - 2,000 metres above sea level\n\nMill: Meseta de Popay\u00e1n",
-      "flavour_notes": "Tangerine, Caramel, Cacao Nibs, Stone Fruits, Cane Sugar"
-    },
-    {
-      "source": "ozonecoffee.co.nz",
-      "product_id": 9364337426663,
-      "title": "Tokuma Natural",
-      "category": "filter roast",
-      "handle": "tokuma-natural",
-      "product_url": "https://ozonecoffee.co.nz/products/tokuma-natural",
-      "available": true,
-      "price_min_nzd": 22.0,
-      "price_max_nzd": 84.0,
-      "updated_at": "2025-11-17T21:56:21+13:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
-      "varietal": "Jarc 74110 & Jarc 74112",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 22.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 43.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 84.0
-        }
-      ],
-      "origin_country": "Ethiopia",
-      "producer": "INFO",
-      "process": "Natural",
-      "decaf": false,
-      "description": "Origin: Ethiopia\n\nOrigin: Berry jam, cherry, apricot, dark chocolate, vanilla\n\nTasting notes: Berry jam, cherry, apricot, dark chocolate, vanilla\n\nTASTING NOTES\n\nVivid notes of berry jam, black cherry, and apricot, complemented by a complex finish of dark cocoa and vanilla, all wrapped in a rich, full-bodied mouthfeel.\n\nFARM INFO\n\nThe Tokuma Group Blend represents the shared work of a remarkable circle of smallholder farmers in Western Ethiopia\u2019s Agaro region. The Tokuma producers first came together informally to exchange agronomy practices and support each other in marketing coffee. Today, they have grown into a formal collective, united by their commitment to quality, innovation, and transparency.\n\nThis blend is composed of lots from multiple Tokuma members: Mensur Abahika, Nesru Aba Nura, Mohammed Aba Nura, and Biya Faris. Each farmer carefully manages cultivation and processing on their own land, ensuring excellent traceability. Coffees are dried slowly on raised beds for around three weeks, yielding sweetness, clarity, and expressive fruit character.\n\nThe emergence of Tokuma reflects a broader shift in Ethiopian coffee. Regulatory changes have allowed more producers to obtain export licenses and sell directly, bypassing the traditional ECX system that once blurred farm-level identity. Tokuma farmers have seized this opportunity, highlighting the unique character of their coffees while securing better compensation for their work.\n\nCountry: Ethiopia\n\nRegion: Oromia\n\nZone: Jimma\n\nWoreda: Gomma\n\nCollective: Tokuma Farmer Group\n\nVarietals: JARC 74110 & JARC 74112\n\nProcessing: Natural\n\nProducers: Mensur Abahika, Mohammad Aba Nura, Nesru Aba Nura & Biya Faris\n\nAltitude: 1,950 - 2,150 m.a.s.l.",
-      "flavour_notes": "Berry Jam, Cherry, Apricot, Dark Chocolate, Vanilla"
-    },
-    {
-      "source": "ozonecoffee.co.nz",
-      "product_id": 6795943510189,
-      "title": "Nova Alianca",
-      "category": "omni roast",
-      "handle": "nova-alianca-natural",
-      "product_url": "https://ozonecoffee.co.nz/products/nova-alianca-natural",
-      "available": true,
-      "price_min_nzd": 20.0,
-      "price_max_nzd": 80.0,
-      "updated_at": "2025-02-26T10:31:38+13:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
-      "varietal": "Mundo Novo, Yellow Catuai, Yellow Catucai",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 20.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 40.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 80.0
-        }
-      ],
-      "origin_country": "Brazil",
-      "producer": "Flavio & Juliana Paulino de Costa",
-      "process": "Natural",
-      "decaf": false,
-      "description": "Fazenda Nova Alian\u00e7a is a 150-hectare farm in Minas Gerais, Brazil, owned and operated by fifth-generation producer Juliana Paulino da Costa Mello and her husband Flavio, an agronomist. The farm has been in Juliana's family for generations and sits within a close-knit network of family-divided plots. Juliana and Flavio bring a blend of heritage and precision to their work - producing organic fertilisers on-site, planting native trees to support biodiversity, and using data-driven monitoring to guide crop management across their range of Arabica varietals.\n\nOrigin: Brazil\n\nOrigin: Chocolate praline, caramel, toasted hazelnut\n\nTasting notes: Chocolate praline, caramel, toasted hazelnut\n\nTASTING NOTES\n\nProcessed in the Natural method, the attention to detail is evident in the clean, rounded, chocolate, caramel and nut forward flavour profile, which we\u2019re delighted to say continues to improve year on year.\n\nFARM INFO\n\nJuliana Paulino de Costa is the 5th generation of her family to be involved in coffee production and is married to Flavio, a superb agronomist who we were fortunate to meet through his work with other farms we purchased from. We were very excited to be able get coffee from their farm, Fazenda Nova Alian\u00e7a, located in the well renowned coffee growing region of Minas Gerais, Brazil.\n\nRegion: Monte Santo de Minas, Minas Gerais\n\nProducer : Flavio & Juliana Paulino de Costa\n\nVariety: Mundo Novo, Yellow Catuai, Yellow Catucai\n\nProcess: Natural\n\nAltitude: 1,000 \u2013 1,100 masl\n\nHarvest: June - July 2024\n\nBREW GUIDE\n\nESPRESSO RECIPE\n\nDose: 20.5g\nYield: 45g\nTime: 25 secs\n\nFILTER RECIPE\n\nMethod: V60\nDose: 16g\nWater: 250ml\nTime: 2:15 mins\n\nTo find the method that suits your kit, check out our Brew Guides .",
-      "flavour_notes": "Chocolate Praline, Caramel, Toasted Hazelnut"
-    },
-    {
-      "source": "ozonecoffee.co.nz",
-      "product_id": 9149404709095,
-      "title": "Don Mayo, La Ladera",
-      "category": "filter roast",
-      "handle": "costa-rica-don-mayo",
-      "product_url": "https://ozonecoffee.co.nz/products/costa-rica-don-mayo",
-      "available": true,
-      "price_min_nzd": 26.0,
-      "price_max_nzd": 104.0,
-      "updated_at": "2026-10-02T10:58:59+13:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
-      "varietal": "Caturra",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 26.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 52.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 104.0
-        }
-      ],
-      "origin_country": "Costa Rica",
-      "producer": "Pablo Bonilla",
-      "process": "Honey",
-      "decaf": false,
-      "description": "At Ozone Coffee, our journey with the Bonilla family and their Don Mayo micromill began in 2012. Over the years, Don Mayo has earned a stellar reputation worldwide for producing exceptional Costa Rica coffee. We're proud to continue this partnership, which has evolved alongside the family\u2019s dedication to excellence.\n\nOrigin: Costa Rica\n\nOrigin: Orange blossom, red apple, mandarin\n\nTasting notes: Orange blossom, red apple, mandarin\n\nTASTING NOTES\n\nA clean, honey-processed cup with notes of orange blossom , red apple and mandarin , with a soft honey sweetness, balanced by a silky body and bright citrus lift.\n\nFARM INFO\n\nLa Ladera, located in the Tarraz\u00fa region of Costa Rica, is owned by Pablo Bonilla. The farm spans 20 hectares and is situated at an altitude of 1,850 meters, which allows different coffee varieties to thrive at various elevations. Catuai grows well at higher elevations, while Caturra is suited to medium and lower areas.\n\nThe farm emphasizes environmental sustainability by planting native species alongside coffee crops to maintain ecological balance. Additionally, wastewater is treated to prevent pollution, and a small hydroelectric plant is used during peak harvest.\n\nLa Ladera employs a team of 120-130 pickers during the harvest season, primarily from Panama. The farm has been hiring the same core group of pickers for the last two decades, providing them with transportation and accommodation.\n\nAfter harvest, the coffee is processed at the Don Mayo micro mill, also owned by Pablo Bonilla. Located in the Tarraz\u00fa region of Costa Rica, the Don Mayo micro mill is one of the oldest and most respected micro mills in the country. Established in 2003 by Hector Bonilla and his sons, the mill has been innovative in creating an economically and environmentally sustainable farm-to-mill operation under the Bonilla Family Estate.\n\nThe mill processes coffee from its own farms, such as La Loma, and also buys whole cherries from local farmers to sell as individual micro-lots. Don Mayo is equipped with state-of-the-art machinery and is committed to producing high-quality coffee. This commitment is demonstrated through the mill\u2019s success in Costa Rica\u2019s Cup of Excellence competition, having auctioned more than 35 lots through the competition and placing first in both 2009 and 2020.\n\nEnvironmental conservation is a key focus at Don Mayo. The mill minimises water usage due to government restrictions and uses coffee pulp and parchment as fuel for cooking and mechanical dryers, as well as fertiliser. This approach ensures that nothing goes to waste and supports sustainable coffee production.\n\nCountry: Costa Rica\n\nRegion: Tarrazu\n\nProducer: Pablo Bonilla\n\nFarm: La Ladera\n\nMill: Don Mayo\n\nVariety: Caturra\n\nProcess: Honey\n\nAltitude: 1,850 \u2013 1,900masl",
-      "flavour_notes": "Orange Blossom, Red Apple, Mandarin"
-    },
-    {
-      "source": "ozonecoffee.co.nz",
-      "product_id": 9363325452519,
-      "title": "Limoncillo Washed",
-      "category": "espresso roast",
-      "handle": "limoncillo-washed",
-      "product_url": "https://ozonecoffee.co.nz/products/limoncillo-washed",
-      "available": true,
-      "price_min_nzd": 25.0,
-      "price_max_nzd": 100.0,
-      "updated_at": "2026-10-02T10:59:00+13:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
-      "varietal": "Ethiosar",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 25.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 50.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 100.0
-        }
-      ],
-      "origin_country": "Nicaragua",
-      "producer": "INFO",
-      "process": "Honey",
-      "decaf": false,
-      "description": "Known for their experimental processing, varietal work and exceptional Nicaraguan coffee, the Mierisch family employ over 3000 staff during the harvest. They pay their employees 30% more than the minimum wage, provide free food, housing, day care and healthcare facilities for families and offer free education to help staff diversify their skills. More than 60 families live on Finca Limoncillo, which is a testament to how much the Mierisch family care about the people who support them.\n\nOrigin: Nicaragua\n\nOrigin: Fudge, pecan, yellow plum\n\nTasting notes: Fudge, pecan, yellow plum\n\nTASTING NOTES\n\nA delicate yellow plum acidity keeps this super fudgy coffee lively and unctuous with a handful of creamy pecans on the finish.\n\nFARM INFO\n\nWe've been roasting Ethiosar from Limoncillo for a few years now, and it comes from\u202fthe hard work of the Mierisch family and their cousin Ricardo. He owns a farm near to Limoncillo, but at a much lower altitude of 800 metres above sea level. Ricardo noticed that his yield and his plants were suffering and that they seemed to be becoming more susceptible to disease. He put this down to growing issues in Nicaragua, a change in climate, increased rains and his low altitude. But from experiments he was running on the farm, he noticed that this newly-spliced varietal he had put together was thriving. It was fruiting much more than the other plants\u202fand was not suffering.\n\nThe varietal,\u202f Ethiosar , is a stable hybrid plant. It's a cross of an Ethiopian variety (Sudan Rume) with a Sarchimor (a cross of a Villa Sarchi with a Timor variety). The offspring of this plant is then crossed once again with a Villa Sarchi, which is an improved Caturra / Bourbon from Costa Rica.\n\nCountry: Nicaragua\n\nMunicipality: Yasica Norte\n\nRegion: Matagalpa\n\nFarm name: Limoncillo\n\nProducers: The Mierisch Family\n\nFarm size: 171 hectares\n\nCoffee growing area: 109 hectares\n\nElevation: 1,200 m.a.s.l.\n\nVarietal: Ethiosar\n\nProcessing system: Honey",
-      "flavour_notes": "Fudge, Pecan, Yellow Plum"
-    },
-    {
-      "source": "ozonecoffee.co.nz",
-      "product_id": 10328317001959,
-      "title": "Irene Herrera - La Mandarina",
-      "category": "filter roast",
-      "handle": "irene-herrera-la-mandarina",
-      "product_url": "https://ozonecoffee.co.nz/products/irene-herrera-la-mandarina",
-      "available": true,
-      "price_min_nzd": 26.0,
-      "price_max_nzd": 104.0,
-      "updated_at": "2026-10-02T10:59:01+13:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
-      "varietal": "Marshell",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 26.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 52.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 104.0
-        }
-      ],
-      "origin_country": "Peru",
-      "producer": "Irene Herrera",
-      "process": "Washed",
-      "decaf": false,
-      "description": "Origin: Peru\n\nOrigin: Cola, caramel, pomegranate\n\nTasting notes: Cola, caramel, pomegranate\n\nTASTING NOTES\n\nThis elegant cup opens with a burst of tangerine followed by strawberry fondants and a spoonful of brown sugar. As it finishes, there's a little lime juice and a delicate floral note too.\n\nFARM INFO\n\nWhile looking through samples from Cajamarca in Peru, this Washed Marshell coffee really stood out on the cupping table for its elegance and clarity. We were cupping with the Origin Coffee Lab team (our local exporters) and looking for something really tasty to fill a gap in our Peruvian coffee offering this year. When they shared the name of the producer with Roland - Irene Herrera - it was a light bulb moment.\n\nA Happy Coincidence\n\nThe La Coipa district is nestled in the north east corner of the Cajamarca region of Peru. La Coipa is a fantastic coffee-producing area - the locale of Nima Juarez (El Roble and La Quebrada) whose coffee we have enjoyed in previous years, and Kelvin Guerrero (La Esmerelda) whose coffee we released earlier this year.\n\nIn 2022 Roland went to Peru for the first time, after we had purchased some coffees from there the year previous. It was his first trip with Origin Coffee Lab - who we\u2019re now lucky enough to know well - and they headed to the La Coipa village. Through the course of the morning they walked past several coffee farms, finishing up at their destination for lunch at the house of head of Gallitos de Rocas comite, Milciades Minga\u2026 and his wife Irene Herrera!\n\nHospitality and Horticulture\n\nThe couple's house is a little larger than some other nearby houses, maybe because Milciades is also a carpenter. The top floor is used for drying coffee, with living space and kitchen below. Guinea Pigs are kept inside in a pen - a staple food animal in Peru, known as Cuy (pronounced Coo-ee). Alongside a big lunch by Irene, they enjoyed an excellent fruit punch made in a barrel by mixing fruit juice and the local cane sugar spirit Yonke.\n\nThe farm La Mandarina is just behind the house and includes a small nursery of baby plants. As with many Cajamarca farms, it's a steep climb to the top and Roland was hard pressed to keep up with Irene! The small estate spans from 1,750 to 2,000 metres above sea level. Irene cultivates Caturra, Marshell, and Bourbon varieties - the lot we have here has been separated from the Marshell trees only. The flowering period occurs from October to December, and the harvest takes place between May and September, with peak months from June to August 2024.\n\nOnce selectively picked, as is typical in Peru, the coffee has been Washed processed. The cherries are depulped, fermentated in a tank for 24-36 hours, washed, and dried in solar dryers for 10-15 days.\n\nMysterious Marshell\n\nMarshell's origins are still being debated. The most widely held view is that it's a natural mutation of Bourbon, first spotted in 1997 by a farmer called Griman\u00e9s Morales Lizana on her farm in San Ignacio, Cajamarca. She propagated from it after a disease outbreak wiped out everything around it, and named it drawing on the names of her family members, including her father-in-law Marcelino. An alternative theory, backed by some genetic testing, suggests Marshell may be related to Costa Rica 95, a Catimor-group cultivar developed by ICAFE from Caturra and Timor Hybrid 832/1. No definitive published research has settled the question either way.\n\nWhat both theories agree on is the disease resistance. Many Peruvian farmers were encouraged to plant Catimor varietals through the mid-2010s by cooperatives, exporters, and government programmes to help combat leaf rust and other diseases. Catimors divide opinion in the coffee community: partial Robusta genetics can lead to flat, vegetal cup profiles when not handled with care. This lot is a reminder that they don't have to.\n\nFor more on the coffee varietals behind Marshell, read our varietal guides on Catimor , Bourbon , and Marshell itself.\n\nThe World Leader in Organic Coffee\n\nDespite being the 9th largest producing country globally, exporting approximately 3,772,000 bags of coffee annually, Peru is presently the world\u2019s largest exporter for Organic coffee. Roughly 90,000 hectares of coffee-growing farmland in Peru is certified Organic, as is La Mandarina. The main driver of this trend is that the vast majority of production in the country is carried out by smallholder producers who lack the resources to invest in chemical products for use on their farms. This does however present a huge risk from the ever-increasing threat of coffee leaf rust, exacerbated by climate change, which has had a major impact in Peru where pesticide and fungicide use is rare.\n\nCountry: Peru\n\nRegion: La Coipa\n\nProducer: Irene Herrera\n\nFarm: La Mandarina\n\nAltitude: 1,750-2,000 m.a.s.l.\n\nVariety: Marshell\n\nProcessing method: Washed",
-      "flavour_notes": "Cola, Caramel, Pomegranate"
-    },
-    {
-      "source": "ozonecoffee.co.nz",
       "product_id": 6897724031149,
       "title": "SINGLE ORIGIN COLD BREW CONCENTRATE",
       "category": "filter roast",
@@ -1662,7 +1688,7 @@
       "price_min_nzd": 122.0,
       "price_max_nzd": 122.0,
       "updated_at": "2026-10-13T08:13:37+13:00",
-      "scraped_at": "2026-10-14T21:38:20+00:00",
+      "scraped_at": "2026-10-15T21:19:43+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Costa Rica",
@@ -1683,7 +1709,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
       "updated_at": "2026-09-09T11:23:36+12:00",
-      "scraped_at": "2026-10-14T21:41:00+00:00",
+      "scraped_at": "2026-10-15T21:22:03+00:00",
       "varietal": "Ethiopian Heirloom Varieties",
       "size_prices": [
         {
@@ -1709,7 +1735,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-08-31T13:14:44+12:00",
-      "scraped_at": "2026-10-14T21:41:00+00:00",
+      "scraped_at": "2026-10-15T21:22:03+00:00",
       "varietal": "Batian, Ruiru 11, SL28, SL34",
       "size_prices": [
         {
@@ -1735,7 +1761,7 @@
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
       "updated_at": "2026-08-03T07:38:31+12:00",
-      "scraped_at": "2026-10-14T21:41:00+00:00",
+      "scraped_at": "2026-10-15T21:22:03+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -1761,7 +1787,7 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-07-20T08:12:00+12:00",
-      "scraped_at": "2026-10-14T21:41:00+00:00",
+      "scraped_at": "2026-10-15T21:22:03+00:00",
       "varietal": "Gesha",
       "size_prices": [
         {
@@ -1787,7 +1813,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
       "updated_at": "2026-04-21T13:11:09+12:00",
-      "scraped_at": "2026-10-14T21:41:00+00:00",
+      "scraped_at": "2026-10-15T21:22:03+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1813,7 +1839,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-04-30T08:00:18+12:00",
-      "scraped_at": "2026-10-14T21:41:00+00:00",
+      "scraped_at": "2026-10-15T21:22:03+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
@@ -1834,7 +1860,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 79.0,
       "updated_at": "2026-05-04T07:19:50+12:00",
-      "scraped_at": "2026-10-14T21:41:40+00:00",
+      "scraped_at": "2026-10-15T21:22:21+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1864,7 +1890,7 @@
       "price_min_nzd": 18.5,
       "price_max_nzd": 66.5,
       "updated_at": "2022-07-15T13:56:46+12:00",
-      "scraped_at": "2026-10-14T21:41:40+00:00",
+      "scraped_at": "2026-10-15T21:22:21+00:00",
       "varietal": "Heirloom",
       "size_prices": [
         {
@@ -1894,7 +1920,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
       "updated_at": "2023-05-24T08:53:39+12:00",
-      "scraped_at": "2026-10-14T21:41:40+00:00",
+      "scraped_at": "2026-10-15T21:22:21+00:00",
       "varietal": "Heirloom",
       "size_prices": [
         {
@@ -1924,7 +1950,7 @@
       "price_min_nzd": 21.5,
       "price_max_nzd": 82.5,
       "updated_at": "2022-07-15T13:56:00+12:00",
-      "scraped_at": "2026-10-14T21:41:40+00:00",
+      "scraped_at": "2026-10-15T21:22:21+00:00",
       "varietal": "Castillo, Varidad Colombia",
       "size_prices": [
         {
@@ -1954,7 +1980,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
       "updated_at": "2025-02-21T15:28:46+13:00",
-      "scraped_at": "2026-10-14T21:41:40+00:00",
+      "scraped_at": "2026-10-15T21:22:21+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1966,12 +1992,12 @@
           "price_nzd": 86.0
         }
       ],
-      "origin_country": "Ethiopia",
-      "producer": "unknown",
-      "process": "Washed",
+      "origin_country": "unknown",
+      "producer": "Blends Rotating Subscription",
+      "process": "unknown",
       "decaf": false,
       "description": "Trust the roaster with our blends subscription! You'll receive a rotation of our blends, suitable for espresso, plunger and stovetop brewing.\n\nShipping is included for all urban deliveries.\n\nThere is a surcharge on rural deliveries to cover some of the extra cost to ship to these addresses, if you live at a rural address please select your subscription accordingly so we can accurately calculate your shipping costs.\n\nRecipe\n\nThis is a good starting point for all of our espresso coffees. Adjust accordingly to your own preference\n\nGround Coffee: 20g Espresso\n\nWeight out: 25g\n\nContact Time: 25-30 Seconds\n\nRecommended Brewing Age\n\n10 \u2013 28 Days after roast date\n\nSubscriptions\n\nRead more about how subscriptions work here",
-      "flavour_notes": "Fruity Notes, Spicy Notes, Chocolate Notes"
+      "flavour_notes": "unknown"
     },
     {
       "source": "eternalcoffee.co.nz",
@@ -1984,7 +2010,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
       "updated_at": "2026-09-29T12:22:49+13:00",
-      "scraped_at": "2026-10-14T21:41:54+00:00",
+      "scraped_at": "2026-10-15T21:22:35+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -2010,7 +2036,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-09-29T12:22:40+13:00",
-      "scraped_at": "2026-10-14T21:41:54+00:00",
+      "scraped_at": "2026-10-15T21:22:35+00:00",
       "varietal": "Gesha",
       "size_prices": [
         {
@@ -2036,20 +2062,12 @@
       "price_min_nzd": 53.0,
       "price_max_nzd": 83.0,
       "updated_at": "2026-09-30T13:11:48+13:00",
-      "scraped_at": "2026-10-14T21:41:54+00:00",
+      "scraped_at": "2026-10-15T21:22:35+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
           "size_grams": 100.0,
           "price_nzd": 55.0
-        },
-        {
-          "size_grams": 200.0,
-          "price_nzd": 53.0
-        },
-        {
-          "size_grams": 200.0,
-          "price_nzd": 58.0
         }
       ],
       "origin_country": "Colombia",
@@ -2058,36 +2076,6 @@
       "decaf": false,
       "description": "Get All 3 Coffees\n\nBuy all three coffees together for $78 instead of $83 when purchased separately. Save $5 automatically at checkout.\n\nMix & Match 2 Coffees\n\nSave $3 when you choose any two, discount applied automatically at checkout.\n\n\u2022 Pink Bourbon + Gesha: $55 $52\n\u2022 Gesha + Caturra: $58 $55\n\u2022 Pink Bourbon + Caturra: $53 $50\n\nPlease note this bundle discount cannot be combined with any other product or order discounts.\n\nWant just one? Shop each release individually below.\n\n\ud83d\udc49 Shop Luz Helena Salazar Pink Bourbon Washed\n\n\ud83d\udc49 Shop Luz Helena Salazar Gesha Washed\n\n\ud83d\udc49 Shop Luz Luz Helena Salazar Caturra Natural\n\nRoaster's Comment:\n\nThis bundle of coffees from Luz Helena Salazar made things especially interesting for us. We started with the Pink Bourbon, followed by the Caturra Natural and the Gesha Washed. While each coffee is very different, they all shared one quality we really loved: consistency.\n\nThe amount of care and patience Luz puts into growing and processing her coffees is exceptional, especially within a traditionally male dominated industry. We\u2019ve tasted many coffees from her partner, Jairo Arcila, and her son, Felipe Arcila, but trying Luz\u2019s coffees for the first time really shifted our perception.\n\nYou\u2019ll often find some similar characteristics across coffees from the Arcila farms, but it felt like Luz had her own idea of where she wanted to take things. What excited us most was that the differences she introduced are exactly what we look for: more traditional processing, cleaner cup quality and a more elegant expression.\n\nThat\u2019s why we wanted to showcase Luz\u2019s work throughout September. Each of her coffees received the same level of care and attention during roasting, with the goal of bringing out the clarity and character we found so special in the cup.\n\nWe hope you enjoy this journey with us.\n\nColombia Luz Helena Salazar Pink Bourbon Washed\n\nFlavour: Lavender, Malt Sugar, Bergamot\n\nProducer: Luz Helena Salazar\n\nFarm: La Leona\n\nR egion: Armenia, Quindio\n\nProcess Method: Washed\n\nVarietal: Pink Bourbon\n\nAltitude: 1400-1450 masl\n\nColombia Luz Helena Salazar Gesha Washed\n\nFlavour: Orange Blossom, White Nectarine, Red Pear, Panela\n\nProducer: Luz Helena Salazar\n\nFarm: La Leona\n\nR egion: Armenia, Quindio\n\nProcess Method: Washed\n\nVarietal: Gesha\n\nAltitude: 1450-1500 masl\n\nColombia Luz Helena Salazar Caturra Natural\n\nFlavour: Berry Chocolate, Doris Plum, Cherries\n\nFarm: Luz Helena Salazar\n\nRegion: Armenia, Quindio\n\nProcess Method: Natural\n\nVarietal: Caturra\n\nAltitude: 1400 masl",
       "flavour_notes": "Lavender, Malt Sugar, Bergamot"
-    },
-    {
-      "source": "eternalcoffee.co.nz",
-      "product_id": 10375363887389,
-      "title": "Colombia Luz Helena Salazar Caturra Natural (Filter)",
-      "category": "filter roast",
-      "handle": "colombia-luz-helena-salazar-caturra-natural-filter",
-      "product_url": "https://eternalcoffee.co.nz/products/colombia-luz-helena-salazar-caturra-natural-filter",
-      "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 58.0,
-      "updated_at": "2026-09-08T16:52:06+12:00",
-      "scraped_at": "2026-10-14T21:41:54+00:00",
-      "varietal": "Caturra",
-      "size_prices": [
-        {
-          "size_grams": 200.0,
-          "price_nzd": 28.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 58.0
-        }
-      ],
-      "origin_country": "Colombia",
-      "producer": "Luz Helena Salazar",
-      "process": "Natural",
-      "decaf": false,
-      "description": "Flavour: Berry Chocolate, Doris Plum, Cherries\n\nFarm: Luz Helena Salazar\n\nRegion: Armenia, Quindio\n\nProcess Method: Natural\n\nVarietal: Caturra\n\nAltitude: 1400 masl\n\nThis coffee is also part of our Luz Helena Salazar producer bundle deal, offering a $2-$5 saving when experienced together. Shop the bundle .\n\nRoaster's Comment:\n\nThis is our first time trying coffees from Luz Helena Salazar. After tasting all three, we really fell in love with the delicate, expressive flavours she brings out. This Caturra Natural is the boldest of the three, with a little more intensity and attitude.\n\nWe\u2019re excited for this one to set the tone for our upcoming Luz Helena coffees.\n\nAbout Luz Helena:\n\nIf you know Colombian specialty coffee, you've probably heard the name Jairo Arcila before. But this September, we're putting the spotlight on someone else: Luz Helena Salazar. She is the Producer. Farmer. Mother. Wife. And, apparently, the woman responsible for bringing some seriously good coffee into the Arcila family.\n\nLuz has been producing coffee for around 20 years, from her 8-hectare farm Maracay in Armenia, Quind\u00edo. She began her coffee journey through her husband Jairo, learning the realities of farming from the ground up, including in the early days plenty of battles with insects.\n\nToday, she produces coffees with a character all her own.\n\nAbout the Coffee:\n\nThe Variety That Once Dominated Colombia\n\nCaturra is one of Colombia's most historically important coffee varieties. A natural dwarf mutation of Red Bourbon first discovered in Brazil, it once accounted for almost half of Colombia's coffee production before rust-resistant varieties like Castillo took its place.\n\n45 Hours to Unlock the Fruit\n\nFor this lot, Caturra gets a more modern treatment. Only fully ripe cherries are selected at La Pradera, then hand-sorted, floated and fermented aerobically for 45 hours. After 8-12 days of controlled drying on raised beds, the result is intensely fruity, deeply sweet and complex, with a full, structured body.",
-      "flavour_notes": "Berry Chocolate, Doris Plum, Cherries"
     },
     {
       "source": "eternalcoffee.co.nz",
@@ -2100,7 +2088,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
       "updated_at": "2026-08-18T11:14:25+12:00",
-      "scraped_at": "2026-10-14T21:41:54+00:00",
+      "scraped_at": "2026-10-15T21:22:35+00:00",
       "varietal": "Heirloom + Castillo",
       "size_prices": [
         {
@@ -2130,7 +2118,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
       "updated_at": "2026-07-22T18:55:38+12:00",
-      "scraped_at": "2026-10-14T21:41:54+00:00",
+      "scraped_at": "2026-10-15T21:22:35+00:00",
       "varietal": "Heirloom + Pink Bourbon",
       "size_prices": [
         {
@@ -2160,7 +2148,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
       "updated_at": "2026-06-23T20:52:19+12:00",
-      "scraped_at": "2026-10-14T21:41:54+00:00",
+      "scraped_at": "2026-10-15T21:22:35+00:00",
       "varietal": "Gesha",
       "size_prices": [
         {
@@ -2177,36 +2165,6 @@
     },
     {
       "source": "eternalcoffee.co.nz",
-      "product_id": 10375375520029,
-      "title": "Colombia Luz Helena Salazar Caturra Natural (Espresso)",
-      "category": "espresso roast",
-      "handle": "colombia-luz-helena-salazar-caturra-natural-espresso",
-      "product_url": "https://eternalcoffee.co.nz/products/colombia-luz-helena-salazar-caturra-natural-espresso",
-      "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 58.0,
-      "updated_at": "2026-09-08T16:52:00+12:00",
-      "scraped_at": "2026-10-14T21:42:24+00:00",
-      "varietal": "Caturra",
-      "size_prices": [
-        {
-          "size_grams": 200.0,
-          "price_nzd": 28.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 58.0
-        }
-      ],
-      "origin_country": "Colombia",
-      "producer": "Luz Helena Salazar",
-      "process": "Natural",
-      "decaf": false,
-      "description": "Flavour:\n\n- Black: Grapefruit, Mandarin, Plum, Cacao Nibs\n\n- Milk: Winey, Caramel, Dark Chocolate, Nutty\n\nFarm: Luz Helena Salazar\n\nRegion: Armenia, Quindio\n\nProcess Method: Natural\n\nVarietal: Caturra\n\nAltitude: 1400 masl\n\nRoaster's Comment:\n\nThis is our first time trying coffees from Luz Helena Salazar. After tasting all three, we really fell in love with the delicate, expressive flavours she brings out. This Caturra Natural is the boldest of the three, with a little more intensity and attitude.\n\nWe\u2019re excited for this one to set the tone for our upcoming Luz Helena coffees.\n\nAbout Luz Helena:\n\nIf you know Colombian specialty coffee, you've probably heard the name Jairo Arcila before. But this September, we're putting the spotlight on someone else: Luz Helena Salazar. She is the Producer. Farmer. Mother. Wife. And, apparently, the woman responsible for bringing some seriously good coffee into the Arcila family.\n\nLuz has been producing coffee for around 20 years, from her 8-hectare farm Maracay in Armenia, Quind\u00edo. She began her coffee journey through her husband Jairo, learning the realities of farming from the ground up, including in the early days plenty of battles with insects.\n\nToday, she produces coffees with a character all her own.\n\nAbout the Coffee:\n\nThe Variety That Once Dominated Colombia\n\nCaturra is one of Colombia's most historically important coffee varieties. A natural dwarf mutation of Red Bourbon first discovered in Brazil, it once accounted for almost half of Colombia's coffee production before rust-resistant varieties like Castillo took its place.\n\n45 Hours to Unlock the Fruit\n\nFor this lot, Caturra gets a more modern treatment. Only fully ripe cherries are selected at La Pradera, then hand-sorted, floated and fermented aerobically for 45 hours. After 8-12 days of controlled drying on raised beds, the result is intensely fruity, deeply sweet and complex, with a full, structured body.",
-      "flavour_notes": "Black: Grapefruit, Mandarin, Plum, Cacao Nibs | Milk: Winey, Caramel, Dark Chocolate, Nutty"
-    },
-    {
-      "source": "eternalcoffee.co.nz",
       "product_id": 10351439905053,
       "title": "Tropical Rush - Fruity Blend (Espresso)",
       "category": "espresso roast",
@@ -2216,7 +2174,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
       "updated_at": "2026-08-18T11:14:10+12:00",
-      "scraped_at": "2026-10-14T21:42:24+00:00",
+      "scraped_at": "2026-10-15T21:23:04+00:00",
       "varietal": "Heirloom + Castillo",
       "size_prices": [
         {
@@ -2246,7 +2204,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
       "updated_at": "2026-07-22T19:18:50+12:00",
-      "scraped_at": "2026-10-14T21:42:24+00:00",
+      "scraped_at": "2026-10-15T21:23:04+00:00",
       "varietal": "Heirloom + Pink Bourbon",
       "size_prices": [
         {
@@ -2276,7 +2234,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 97.0,
       "updated_at": "2026-10-12T14:28:47+13:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Ruiru 11, SL28, SL34, Batian",
       "size_prices": [
         {
@@ -2310,7 +2268,7 @@
       "price_min_nzd": 20.5,
       "price_max_nzd": 60.0,
       "updated_at": "2026-10-12T13:55:30+13:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Mantiqueira De Minas",
       "size_prices": [
         {
@@ -2344,8 +2302,8 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-10-12T12:48:32+13:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
-      "varietal": "unknown",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
+      "varietal": "Muje Mesina",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -2378,7 +2336,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 120.0,
       "updated_at": "2026-10-12T08:05:04+13:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Filter",
       "size_prices": [
         {
@@ -2412,7 +2370,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 120.0,
       "updated_at": "2026-10-06T08:01:09+13:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Bourbon, Chiroso",
       "size_prices": [
         {
@@ -2446,7 +2404,7 @@
       "price_min_nzd": 34.0,
       "price_max_nzd": 160.0,
       "updated_at": "2026-09-11T15:08:12+12:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -2476,7 +2434,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 80.0,
       "updated_at": "2026-08-24T14:35:53+12:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -2510,7 +2468,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 106.0,
       "updated_at": "2026-07-30T20:21:46+12:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -2544,7 +2502,7 @@
       "price_min_nzd": 275.0,
       "price_max_nzd": 275.0,
       "updated_at": "2026-09-13T19:57:54+12:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Laurina",
       "size_prices": [
         {
@@ -2554,7 +2512,7 @@
       ],
       "origin_country": "New Zealand",
       "producer": "Pekerau Hills",
-      "process": "Anaerobic Washed",
+      "process": "Washed",
       "decaf": false,
       "description": "- LIMITED RELEASE -\n\nExperience New Zealand's Most Extraordinary Coffee\n\nThis limited collection brings together all four expressions of Pekerau Hills' remarkable Laurina harvest. Grown on New Zealand's first commercial coffee farm, each coffee begins with the same rare variety and unique terroir before taking a different path through fermentation and processing. Together, they offer a rare opportunity to explore how subtle changes in processing can transform the character of one exceptional coffee- from elegant and tea-like to vibrant, complex and deeply expressive.\n\nCOUNTRY - Aotearoa NZ\nFARM - Pekerau Hills\nREGION - Kaitaia, Northland\nALTITUDE - 160 M.A.S.L\nVARIETAL - Laurina\nLOT #001 - Mosto Washed\nLOT #002 - Anaerobic Washed\nLOT #003 - Anaerobic Natural\nLOT #004 - Anaerobic Iced Natural\n\nEach box contains 4x125g cans, 1 of each signature process from Pekerau Hills",
       "flavour_notes": "Fruits, Spices, Chocolate"
@@ -2570,7 +2528,7 @@
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-07-13T09:11:40+12:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Laurina",
       "size_prices": [
         {
@@ -2596,7 +2554,7 @@
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-07-13T09:13:12+12:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Laurina",
       "size_prices": [
         {
@@ -2622,7 +2580,7 @@
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-07-13T09:14:14+12:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Laurina",
       "size_prices": [
         {
@@ -2648,7 +2606,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-07-02T08:19:30+12:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Yellow Caturra",
       "size_prices": [
         {
@@ -2682,7 +2640,7 @@
       "price_min_nzd": 44.0,
       "price_max_nzd": 276.0,
       "updated_at": "2026-06-09T10:00:51+12:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -2724,7 +2682,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 50.0,
       "updated_at": "2022-09-21T12:12:51+12:00",
-      "scraped_at": "2026-10-14T21:42:36+00:00",
+      "scraped_at": "2026-10-15T21:23:14+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2741,7 +2699,7 @@
       "process": "unknown",
       "decaf": false,
       "description": "Our Filter Subscription is built for those who want access to some of the best and most interesting coffees we roast, week after week.\nEach release features a different small-lot filter coffee sourced from standout producers and growing regions around the world, selected for quality, seasonality, and a distinctive cup profile.\nRoasted specifically for filter brewing, these coffees are designed to express clarity, sweetness, complexity, and origin character, while giving you the chance to explore a wide range of varieties, terroirs, and processing styles. It is the simplest way to keep your coffee routine fresh and experience a constant rotation of exceptional microlots at home, whether you are buying for yourself or gifting someone who loves great coffee\n\nFree Shipping NZ wide\n\nAll subscriptions are roasted fresh and couriered on a Tuesday.",
-      "flavour_notes": "Flavor Profile"
+      "flavour_notes": "Some Interesting, Standout Producers, Growing Regions, Quality, Seasonality, Distinctive Cup Profile"
     },
     {
       "source": "vanguardcoffee.co.nz",
@@ -2754,7 +2712,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 68.0,
       "updated_at": "2020-03-04T11:42:47+13:00",
-      "scraped_at": "2026-10-14T21:47:18+00:00",
+      "scraped_at": "2026-10-15T21:28:20+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -2788,7 +2746,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-04-02T09:31:14+13:00",
-      "scraped_at": "2026-10-14T21:47:18+00:00",
+      "scraped_at": "2026-10-15T21:28:20+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -2822,7 +2780,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
       "updated_at": "2021-10-06T12:42:49+13:00",
-      "scraped_at": "2026-10-14T21:47:18+00:00",
+      "scraped_at": "2026-10-15T21:28:20+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -2856,7 +2814,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 70.0,
       "updated_at": "2026-02-05T10:46:10+13:00",
-      "scraped_at": "2026-10-14T21:47:18+00:00",
+      "scraped_at": "2026-10-15T21:28:20+00:00",
       "varietal": "Yellow Arara, SL28, SL34, Mixed",
       "size_prices": [
         {
@@ -2890,7 +2848,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 68.0,
       "updated_at": "2025-10-03T13:33:49+13:00",
-      "scraped_at": "2026-10-14T21:47:18+00:00",
+      "scraped_at": "2026-10-15T21:28:20+00:00",
       "varietal": "Castillo, Colombia, Caturra",
       "size_prices": [
         {
@@ -2924,7 +2882,7 @@
       "price_min_nzd": 26.09,
       "price_max_nzd": 130.43,
       "updated_at": "2026-06-16T15:42:16+12:00",
-      "scraped_at": "2026-10-14T21:47:29+00:00",
+      "scraped_at": "2026-10-15T21:28:33+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -2958,7 +2916,7 @@
       "price_min_nzd": 20.87,
       "price_max_nzd": 83.48,
       "updated_at": "2026-06-08T09:47:51+12:00",
-      "scraped_at": "2026-10-14T21:47:29+00:00",
+      "scraped_at": "2026-10-15T21:28:33+00:00",
       "varietal": "SL28, Sl 34 - Natural",
       "size_prices": [
         {
@@ -2988,7 +2946,7 @@
       "price_min_nzd": 24.35,
       "price_max_nzd": 121.74,
       "updated_at": "2026-09-16T11:18:35+12:00",
-      "scraped_at": "2026-10-14T21:47:29+00:00",
+      "scraped_at": "2026-10-15T21:28:33+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -3022,7 +2980,7 @@
       "price_min_nzd": 26.09,
       "price_max_nzd": 104.35,
       "updated_at": "2026-09-16T11:18:37+12:00",
-      "scraped_at": "2026-10-14T21:47:29+00:00",
+      "scraped_at": "2026-10-15T21:28:33+00:00",
       "varietal": "Bourbon",
       "size_prices": [
         {
@@ -3056,7 +3014,7 @@
       "price_min_nzd": 26.09,
       "price_max_nzd": 104.35,
       "updated_at": "2026-09-20T19:32:59+12:00",
-      "scraped_at": "2026-10-14T21:47:29+00:00",
+      "scraped_at": "2026-10-15T21:28:33+00:00",
       "varietal": "Ruiru 11, SL28, SL34",
       "size_prices": [
         {
@@ -3090,7 +3048,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2012-02-21T17:16:00+13:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3124,7 +3082,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 236.52,
       "updated_at": "2023-02-26T18:07:21+13:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3162,7 +3120,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2021-04-30T16:05:25+12:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3196,7 +3154,7 @@
       "price_min_nzd": 15.65,
       "price_max_nzd": 62.61,
       "updated_at": "2016-07-13T10:19:18+12:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3230,7 +3188,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2021-06-29T11:59:56+12:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3247,11 +3205,11 @@
         }
       ],
       "origin_country": "Brazil",
-      "producer": "C4",
+      "producer": "C4\u2019s House",
       "process": "Washed",
       "decaf": false,
       "description": "Carnaval is a Brazilian coffee in C4\u2019s House range, recommended for espresso brewing.",
-      "flavour_notes": "Fruity, Floral, And Slightly Sweet Notes With Hints Of Citrus And Berries"
+      "flavour_notes": "Fruit, Chocolate, Spices"
     },
     {
       "source": "c4coffee.co",
@@ -3264,7 +3222,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2016-07-13T10:19:19+12:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3298,7 +3256,7 @@
       "price_min_nzd": 17.39,
       "price_max_nzd": 69.56,
       "updated_at": "2021-11-16T09:53:37+13:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3332,7 +3290,7 @@
       "price_min_nzd": 15.22,
       "price_max_nzd": 60.87,
       "updated_at": "2020-07-15T11:15:19+12:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "Typica",
       "size_prices": [
         {
@@ -3366,7 +3324,7 @@
       "price_min_nzd": 17.39,
       "price_max_nzd": 69.56,
       "updated_at": "2023-11-23T17:00:50+13:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3400,7 +3358,7 @@
       "price_min_nzd": 15.22,
       "price_max_nzd": 60.87,
       "updated_at": "2023-03-30T15:46:06+13:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3434,7 +3392,7 @@
       "price_min_nzd": 15.65,
       "price_max_nzd": 62.61,
       "updated_at": "2023-02-26T20:36:00+13:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3468,12 +3426,12 @@
       "price_min_nzd": 33.04,
       "price_max_nzd": 47.83,
       "updated_at": "2023-07-25T17:32:17+12:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Kenya",
       "producer": "Right as Rain",
-      "process": "Natural",
+      "process": "Washed",
       "decaf": false,
       "description": "Explore a selection of C4 blends in individual 150g bags. The discovery box lets you compare the coffees side by side before choosing a larger bag.\n\nThe 4-pack contains Krank, Stout, V6 and Right as Rain. The 6-pack includes those four blends, plus Headset and the current seasonal blend. Each coffee is packed separately, with the same selected grind across the box.",
       "flavour_notes": "Y\\) I"
@@ -3489,7 +3447,7 @@
       "price_min_nzd": 16.96,
       "price_max_nzd": 67.83,
       "updated_at": "2023-04-11T09:51:18+12:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "Marcala",
       "size_prices": [
         {
@@ -3523,7 +3481,7 @@
       "price_min_nzd": 19.13,
       "price_max_nzd": 76.52,
       "updated_at": "2025-03-31T19:57:26+13:00",
-      "scraped_at": "2026-10-14T21:47:49+00:00",
+      "scraped_at": "2026-10-15T21:28:54+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3557,7 +3515,7 @@
       "price_min_nzd": 65.0,
       "price_max_nzd": 292.5,
       "updated_at": "2026-09-25T14:13:50+12:00",
-      "scraped_at": "2026-10-14T21:51:39+00:00",
+      "scraped_at": "2026-10-15T21:31:58+00:00",
       "varietal": "Sidamo Heirloom",
       "size_prices": [
         {
@@ -3587,7 +3545,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 130.0,
       "updated_at": "2026-09-14T17:37:29+12:00",
-      "scraped_at": "2026-10-14T21:51:39+00:00",
+      "scraped_at": "2026-10-15T21:31:58+00:00",
       "varietal": "San Isidro",
       "size_prices": [
         {
@@ -3617,7 +3575,7 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 202.5,
       "updated_at": "2026-10-06T12:45:09+13:00",
-      "scraped_at": "2026-10-14T21:51:39+00:00",
+      "scraped_at": "2026-10-15T21:31:58+00:00",
       "varietal": "74110, 74112, 74165",
       "size_prices": [
         {
@@ -3647,7 +3605,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-10-15T08:45:07+13:00",
-      "scraped_at": "2026-10-14T21:51:39+00:00",
+      "scraped_at": "2026-10-15T21:31:58+00:00",
       "varietal": "Heirloom",
       "size_prices": [
         {
@@ -3677,7 +3635,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-08-31T15:37:41+12:00",
-      "scraped_at": "2026-10-14T21:51:39+00:00",
+      "scraped_at": "2026-10-15T21:31:58+00:00",
       "varietal": "Heirloom",
       "size_prices": [
         {
@@ -3707,7 +3665,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
       "updated_at": "2026-10-15T08:45:55+13:00",
-      "scraped_at": "2026-10-14T21:51:39+00:00",
+      "scraped_at": "2026-10-15T21:31:58+00:00",
       "varietal": "Sl-28, Sl-34, Batian, Ruiru 11",
       "size_prices": [
         {
@@ -3737,7 +3695,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
       "updated_at": "2026-07-27T17:19:40+12:00",
-      "scraped_at": "2026-10-14T21:51:39+00:00",
+      "scraped_at": "2026-10-15T21:31:58+00:00",
       "varietal": "Catimor, Typica",
       "size_prices": [
         {
@@ -3767,7 +3725,7 @@
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
       "updated_at": "2026-06-23T15:46:50+12:00",
-      "scraped_at": "2026-10-14T21:51:39+00:00",
+      "scraped_at": "2026-10-15T21:31:58+00:00",
       "varietal": "Caturra, Catuai, Obata",
       "size_prices": [
         {
@@ -3797,7 +3755,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
       "updated_at": "2023-12-06T17:10:11+13:00",
-      "scraped_at": "2026-10-14T21:51:48+00:00",
+      "scraped_at": "2026-10-15T21:32:08+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -3843,7 +3801,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
       "updated_at": "2023-11-02T15:24:59+13:00",
-      "scraped_at": "2026-10-14T21:51:48+00:00",
+      "scraped_at": "2026-10-15T21:32:08+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -3889,7 +3847,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 80.0,
       "updated_at": "2019-12-30T14:39:26+13:00",
-      "scraped_at": "2026-10-14T21:51:48+00:00",
+      "scraped_at": "2026-10-15T21:32:08+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -3923,7 +3881,7 @@
       "price_min_nzd": 52.99,
       "price_max_nzd": 195.99,
       "updated_at": "2026-09-22T10:48:30+12:00",
-      "scraped_at": "2026-10-14T21:51:51+00:00",
+      "scraped_at": "2026-10-15T21:32:11+00:00",
       "varietal": "74110, 74112, 74165",
       "size_prices": [
         {
@@ -3953,7 +3911,7 @@
       "price_min_nzd": 34.99,
       "price_max_nzd": 132.99,
       "updated_at": "2026-09-08T10:35:15+12:00",
-      "scraped_at": "2026-10-14T21:51:51+00:00",
+      "scraped_at": "2026-10-15T21:32:11+00:00",
       "varietal": "SL28, SL34, Ruiru 11, Batian",
       "size_prices": [
         {
@@ -3983,7 +3941,7 @@
       "price_min_nzd": 43.99,
       "price_max_nzd": 169.99,
       "updated_at": "2026-09-22T10:48:42+12:00",
-      "scraped_at": "2026-10-14T21:51:51+00:00",
+      "scraped_at": "2026-10-15T21:32:11+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4013,7 +3971,7 @@
       "price_min_nzd": 29.99,
       "price_max_nzd": 132.99,
       "updated_at": "2026-09-08T10:35:19+12:00",
-      "scraped_at": "2026-10-14T21:51:51+00:00",
+      "scraped_at": "2026-10-15T21:32:11+00:00",
       "varietal": "SL28, SL34, Ruiru 11, Batian",
       "size_prices": [
         {
@@ -4043,7 +4001,7 @@
       "price_min_nzd": 52.99,
       "price_max_nzd": 195.99,
       "updated_at": "2026-09-22T10:48:21+12:00",
-      "scraped_at": "2026-10-14T21:51:51+00:00",
+      "scraped_at": "2026-10-15T21:32:11+00:00",
       "varietal": "74110, 74112",
       "size_prices": [
         {
@@ -4073,7 +4031,7 @@
       "price_min_nzd": 39.99,
       "price_max_nzd": 171.99,
       "updated_at": "2026-10-06T10:25:22+13:00",
-      "scraped_at": "2026-10-14T21:51:51+00:00",
+      "scraped_at": "2026-10-15T21:32:11+00:00",
       "varietal": "Castillo, Caturra",
       "size_prices": [
         {
@@ -4103,7 +4061,7 @@
       "price_min_nzd": 81.99,
       "price_max_nzd": 356.99,
       "updated_at": "2026-10-06T10:25:26+13:00",
-      "scraped_at": "2026-10-14T21:51:51+00:00",
+      "scraped_at": "2026-10-15T21:32:11+00:00",
       "varietal": "Yellow Sudan Rume",
       "size_prices": [
         {
@@ -4133,7 +4091,7 @@
       "price_min_nzd": 72.99,
       "price_max_nzd": 618.99,
       "updated_at": "2026-10-06T10:25:28+13:00",
-      "scraped_at": "2026-10-14T21:51:51+00:00",
+      "scraped_at": "2026-10-15T21:32:11+00:00",
       "varietal": "Red Gesha",
       "size_prices": [
         {
@@ -4163,7 +4121,7 @@
       "price_min_nzd": 23.0,
       "price_max_nzd": 101.99,
       "updated_at": "2026-07-01T10:09:25+12:00",
-      "scraped_at": "2026-10-14T21:52:11+00:00",
+      "scraped_at": "2026-10-15T21:32:35+00:00",
       "varietal": "Red Bourbon",
       "size_prices": [
         {
@@ -4193,7 +4151,7 @@
       "price_min_nzd": 32.99,
       "price_max_nzd": 122.99,
       "updated_at": "2026-09-08T10:35:21+12:00",
-      "scraped_at": "2026-10-14T21:52:11+00:00",
+      "scraped_at": "2026-10-15T21:32:35+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4223,7 +4181,7 @@
       "price_min_nzd": 19.99,
       "price_max_nzd": 69.99,
       "updated_at": "2025-02-11T17:59:21+13:00",
-      "scraped_at": "2026-10-14T21:52:11+00:00",
+      "scraped_at": "2026-10-15T21:32:35+00:00",
       "varietal": "Acai\u00e1, Castillo",
       "size_prices": [
         {
@@ -4253,7 +4211,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 119.99,
       "updated_at": "2026-07-01T10:09:32+12:00",
-      "scraped_at": "2026-10-14T21:52:11+00:00",
+      "scraped_at": "2026-10-15T21:32:35+00:00",
       "varietal": "Ethiopian Heirloom",
       "size_prices": [
         {
@@ -4283,7 +4241,7 @@
       "price_min_nzd": 25.99,
       "price_max_nzd": 99.99,
       "updated_at": "2026-10-06T10:25:29+13:00",
-      "scraped_at": "2026-10-14T21:52:11+00:00",
+      "scraped_at": "2026-10-15T21:32:35+00:00",
       "varietal": "74110, 74112, 74165",
       "size_prices": [
         {
@@ -4313,7 +4271,7 @@
       "price_min_nzd": 25.99,
       "price_max_nzd": 99.99,
       "updated_at": "2026-10-06T10:25:31+13:00",
-      "scraped_at": "2026-10-14T21:52:11+00:00",
+      "scraped_at": "2026-10-15T21:32:35+00:00",
       "varietal": "Ethiopian Heirloom",
       "size_prices": [
         {
@@ -4343,7 +4301,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 20.0,
       "updated_at": "2026-10-13T17:01:01+13:00",
-      "scraped_at": "2026-10-14T21:52:42+00:00",
+      "scraped_at": "2026-10-15T21:33:07+00:00",
       "varietal": "Typica, Catimor",
       "size_prices": [
         {
@@ -4369,7 +4327,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-10-12T21:00:29+13:00",
-      "scraped_at": "2026-10-14T21:52:42+00:00",
+      "scraped_at": "2026-10-15T21:33:07+00:00",
       "varietal": "Typica, Catimor",
       "size_prices": [
         {
@@ -4386,32 +4344,6 @@
     },
     {
       "source": "wolfcoffee.co.nz",
-      "product_id": 10764136480933,
-      "title": "Tipsy Typica",
-      "category": "filter roast",
-      "handle": "tipsy-typica",
-      "product_url": "https://wolfcoffee.co.nz/products/tipsy-typica",
-      "available": true,
-      "price_min_nzd": 32.0,
-      "price_max_nzd": 32.0,
-      "updated_at": "2026-10-12T21:00:27+13:00",
-      "scraped_at": "2026-10-14T21:52:42+00:00",
-      "varietal": "Typica, Catimor",
-      "size_prices": [
-        {
-          "size_grams": 200.0,
-          "price_nzd": 32.0
-        }
-      ],
-      "origin_country": "China",
-      "producer": "unknown",
-      "process": "Washed",
-      "decaf": false,
-      "description": "Origin: China\n\nRegion: Menglian\n\nProcess: Washed\n\nAltitude: 1500 MASL\n\nTasting Notes: Nectarine, Grapefruit, Floral\n\nTypsy Beast is an independent team of producers farming on the Myanmar boarder, in Menglian Dai, Lahu and Va Autonomous County. Typsy Beast are growing Catimor and Typica at 1300-1600m and run three processes - washed, light natural and natural.\n\nBrewing Recipe - V60 Recipe\n\nAs with all recipes, this is a guide. Adjust to your taste. Experiment. Enjoy.\n\nRatio: 1:16 - 15g coffee to 240g water\n\nWater Temperature: 89 degrees\n\nGrind: Medium Coarse\n\nBrew Time: 2:20-2:40\n\n0:00 - Pour 45g\n\n0:45 - Pour 75g\n\n1:15 - Pour 60g\n\n1:45 - Pour 60g\n\n2:30~ Drawdown\n\nSharing your brews on IG? Tag us @wolfcoffeeroasters",
-      "flavour_notes": "Nectarine, Grapefruit, Floral"
-    },
-    {
-      "source": "wolfcoffee.co.nz",
       "product_id": 10764135563429,
       "title": "Tipsy GO40",
       "category": "filter roast",
@@ -4421,7 +4353,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-10-12T21:00:26+13:00",
-      "scraped_at": "2026-10-14T21:52:42+00:00",
+      "scraped_at": "2026-10-15T21:33:07+00:00",
       "varietal": "Typica, Catimor",
       "size_prices": [
         {
@@ -4447,7 +4379,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
       "updated_at": "2026-05-27T19:15:37+12:00",
-      "scraped_at": "2026-10-14T21:52:42+00:00",
+      "scraped_at": "2026-10-15T21:33:07+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4461,7 +4393,7 @@
       ],
       "origin_country": "unknown",
       "producer": "3 Month Roaster's Choice Subscription",
-      "process": "unknown",
+      "process": "Washed",
       "decaf": false,
       "description": "Next shipping date: 08/10\n\nSubscription Details:\n\nOrders will be shipped on the second Thursday of each month after being freshly roasted. Make sure you are signed up before the 7th to get included in that month's order. When ordering, you\u2019ll be charged today for the first order, then going forward on the 7th for the 2 months after.\n\nHand-picked by our Head Roaster and delivered to your door over the next three months. A well-deserved treat for yourself, or the perfect gift for that special person in your life. Choose how many bags you want and then let us know where to send the coffee!\n\nRoasted right here in Arrowtown, Aotearoa.\nFree delivery on all subscriptions.\n\nEvery now and then, we may want to share something extra special. This may result in you receiving a bag of 100-125g, of course, it'll still be of equal or higher value.",
       "flavour_notes": "unknown"
@@ -4477,7 +4409,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
       "updated_at": "2026-05-27T19:15:59+12:00",
-      "scraped_at": "2026-10-14T21:52:42+00:00",
+      "scraped_at": "2026-10-15T21:33:07+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4491,7 +4423,7 @@
       ],
       "origin_country": "unknown",
       "producer": "Recurring Roaster",
-      "process": "Washed",
+      "process": "Natural",
       "decaf": false,
       "description": "Next shipping date: 08/10\n\nSubscription Details:\n\nOrders will be shipped on the second Thursday of each month after being freshly roasted. Make sure you are signed up before the 7th to get included in that month's order. When ordering, you\u2019ll be charged today for the first order, then going forward on the 7th.\n\nHand-picked by our Head Roaster and delivered to your door each month. Choose how many bags you want and then let us do the hard work of choosing the coffee.\n\nRoasted right here in Arrowtown, Aotearoa.\nFree delivery on all subscriptions.\n\nEvery now and then, we may want to share something extra special. This may result in you receiving a bag of 100-125g, of course, it'll still be of equal or higher value.",
       "flavour_notes": "Mandarin, Fig"
@@ -4507,7 +4439,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 108.0,
       "updated_at": "2025-10-30T10:07:28+13:00",
-      "scraped_at": "2026-10-14T21:52:42+00:00",
+      "scraped_at": "2026-10-15T21:33:07+00:00",
       "varietal": "Caturra, Castillo",
       "size_prices": [
         {
@@ -4537,7 +4469,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
       "updated_at": "2019-10-29T09:26:57+13:00",
-      "scraped_at": "2026-10-14T21:54:37+00:00",
+      "scraped_at": "2026-10-15T21:35:12+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -4571,7 +4503,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
       "updated_at": "2024-03-26T14:19:38+13:00",
-      "scraped_at": "2026-10-14T21:54:37+00:00",
+      "scraped_at": "2026-10-15T21:35:12+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -4605,7 +4537,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
       "updated_at": "2026-03-09T06:53:57+13:00",
-      "scraped_at": "2026-10-14T21:54:37+00:00",
+      "scraped_at": "2026-10-15T21:35:12+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4631,7 +4563,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
       "updated_at": "2026-03-12T13:38:59+13:00",
-      "scraped_at": "2026-10-14T21:54:37+00:00",
+      "scraped_at": "2026-10-15T21:35:12+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Colombia, Ethiopia, Brazil",
