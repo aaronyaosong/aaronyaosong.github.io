@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-15T23:01:35+00:00",
-  "count": 147,
+  "generated_at": "2026-11-17T02:06:19+00:00",
+  "count": 145,
   "items": [
     {
       "source": "rocketcoffee.co.nz",
@@ -13,7 +13,7 @@
       "price_min_nzd": 50.0,
       "price_max_nzd": 50.0,
       "updated_at": "2026-08-11T14:26:41+12:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "Sudan Rume",
       "size_prices": [
         {
@@ -39,7 +39,7 @@
       "price_min_nzd": 32.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-11-06T09:38:57+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -69,7 +69,7 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-09-15T11:46:06+12:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -95,7 +95,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
       "updated_at": "2026-10-08T11:00:56+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -121,7 +121,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-10-06T15:50:29+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "Ruiru 11, SL28, Batian",
       "size_prices": [
         {
@@ -147,7 +147,7 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-11-09T11:13:59+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -173,7 +173,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 26.0,
       "updated_at": "2026-10-16T10:01:51+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "Red Bourbon",
       "size_prices": [
         {
@@ -190,29 +190,29 @@
     },
     {
       "source": "rocketcoffee.co.nz",
-      "product_id": 4307914244,
-      "title": "Kagumoini - SL28 - Ruiru 11 - Batian [washed] filter roast",
+      "product_id": 7807253119152,
+      "title": "Jairo Arcila - Caturra [washed] filter roast",
       "category": "filter roast",
-      "handle": "kagumo-ini-filter-roast",
-      "product_url": "https://rocketcoffee.co.nz/products/kagumo-ini-filter-roast",
+      "handle": "jairo-arcila-castillo-washed-filter-roast-1",
+      "product_url": "https://rocketcoffee.co.nz/products/jairo-arcila-castillo-washed-filter-roast-1",
       "available": true,
-      "price_min_nzd": 28.0,
-      "price_max_nzd": 28.0,
-      "updated_at": "2026-10-15T11:33:49+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
-      "varietal": "Ruiru 11, SL28, Batian",
+      "price_min_nzd": 26.0,
+      "price_max_nzd": 26.0,
+      "updated_at": "2026-11-16T13:13:00+13:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
+      "varietal": "Caturra",
       "size_prices": [
         {
           "size_grams": 250.0,
-          "price_nzd": 28.0
+          "price_nzd": 26.0
         }
       ],
-      "origin_country": "Kenya",
-      "producer": "Kagumoini",
+      "origin_country": "Colombia",
+      "producer": "Jairo Arcila",
       "process": "Washed",
       "decaf": false,
-      "description": "A juicy Kenyan with flavours of rhubarb, pinot noir & cranberry juice.\n\nRoasted in H-town 10 NOV 2026",
-      "flavour_notes": "Rhubarb, Pinot Noir, Cranberry Juice"
+      "description": "Jairo\u2019s washed Caturra has flavours of red plum, apple juice & honey.\n\nRoasted in H-town 16 NOV 2026",
+      "flavour_notes": "Red Plum, Apple Juice, Honey"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -225,7 +225,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-11-13T15:46:53+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "Ruiru 11, SL28, SL34, Batian",
       "size_prices": [
         {
@@ -251,7 +251,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 26.0,
       "updated_at": "2026-10-19T11:23:33+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "Red Bourbon",
       "size_prices": [
         {
@@ -277,7 +277,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-10-14T13:46:07+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "Landrace",
       "size_prices": [
         {
@@ -303,7 +303,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
       "updated_at": "2026-11-11T15:10:12+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -329,7 +329,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
       "updated_at": "2026-11-16T11:04:45+13:00",
-      "scraped_at": "2026-11-15T22:42:05+00:00",
+      "scraped_at": "2026-11-17T01:49:27+00:00",
       "varietal": "Catua\u00ed",
       "size_prices": [
         {
@@ -355,7 +355,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 70.0,
       "updated_at": "2023-05-04T12:04:49+12:00",
-      "scraped_at": "2026-11-15T22:43:19+00:00",
+      "scraped_at": "2026-11-17T01:50:36+00:00",
       "varietal": "Castillo, Caturra, Bourbon, Typica",
       "size_prices": [
         {
@@ -385,7 +385,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2021-11-30T12:57:03+13:00",
-      "scraped_at": "2026-11-15T22:43:19+00:00",
+      "scraped_at": "2026-11-17T01:50:36+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -415,7 +415,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2023-07-17T15:26:49+12:00",
-      "scraped_at": "2026-11-15T22:43:19+00:00",
+      "scraped_at": "2026-11-17T01:50:36+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -436,6 +436,36 @@
     },
     {
       "source": "rocketcoffee.co.nz",
+      "product_id": 7962774274224,
+      "title": "Luz Helena Salazar - Caturra [natural] espresso",
+      "category": "espresso roast",
+      "handle": "luz-helena-caturra-washed-espresso",
+      "product_url": "https://rocketcoffee.co.nz/products/luz-helena-caturra-washed-espresso",
+      "available": true,
+      "price_min_nzd": 28.0,
+      "price_max_nzd": 95.0,
+      "updated_at": "2026-11-16T12:35:18+13:00",
+      "scraped_at": "2026-11-17T01:50:36+00:00",
+      "varietal": "Caturra",
+      "size_prices": [
+        {
+          "size_grams": 250.0,
+          "price_nzd": 28.0
+        },
+        {
+          "size_grams": 1000.0,
+          "price_nzd": 95.0
+        }
+      ],
+      "origin_country": "Colombia",
+      "producer": "Luz Helena Salazar",
+      "process": "Natural",
+      "decaf": false,
+      "description": "Luz' naturally processed Caturra is a great coffee with flavours of purple winegums, ripe red plum & a floral aroma.\n\nRoasted in H-town 16 NOV 2026",
+      "flavour_notes": "Purple Winegums, Ripe Red Plum, A Floral Aroma"
+    },
+    {
+      "source": "rocketcoffee.co.nz",
       "product_id": 8166164267184,
       "title": "Muje Mesina - 74110  - 74112 - 74165  [washed] espresso",
       "category": "espresso roast",
@@ -445,7 +475,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 88.0,
       "updated_at": "2026-11-12T12:38:11+13:00",
-      "scraped_at": "2026-11-15T22:43:19+00:00",
+      "scraped_at": "2026-11-17T01:50:36+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -475,7 +505,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2023-01-26T08:43:50+13:00",
-      "scraped_at": "2026-11-15T22:43:19+00:00",
+      "scraped_at": "2026-11-17T01:50:36+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -505,7 +535,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 88.0,
       "updated_at": "2026-10-27T10:55:44+13:00",
-      "scraped_at": "2026-11-15T22:43:19+00:00",
+      "scraped_at": "2026-11-17T01:50:36+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -535,7 +565,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 129.0,
       "updated_at": "2026-10-13T06:02:17+13:00",
-      "scraped_at": "2026-11-15T22:43:19+00:00",
+      "scraped_at": "2026-11-17T01:50:36+00:00",
       "varietal": "Catua\u00ed",
       "size_prices": [
         {
@@ -565,7 +595,7 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2020-04-18T13:28:09+12:00",
-      "scraped_at": "2026-11-15T22:44:09+00:00",
+      "scraped_at": "2026-11-17T01:51:25+00:00",
       "varietal": "Rocket Espresso Blend",
       "size_prices": [
         {
@@ -623,8 +653,8 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2024-12-09T15:47:56+13:00",
-      "scraped_at": "2026-11-15T22:44:09+00:00",
-      "varietal": "Capoeirinha",
+      "scraped_at": "2026-11-17T01:51:25+00:00",
+      "varietal": "Quy = Capoeirinha",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -664,11 +694,11 @@
         }
       ],
       "origin_country": "Colombia",
-      "producer": "S 50% Quy = CAPOEIRINHA",
-      "process": "unknown",
+      "producer": "Quy = CAPOEIRINHA",
+      "process": "Washed",
       "decaf": false,
       "description": "This subscription is for our Rocket Espresso DULCE, it's seasonal, changing throughout the year as fresh crop coffee arrives into the country.\n\nThis is for 12 deliveries, choose either 250g, 500g or 1kg, sent weekly, fortnightly or monthly.\n\nFor more information on the current Espresso Dulce click here\n\nAll subscriptions include freight.\n\nFor any changes to your subscription or help on coffee brewing of all methods i.e. espresso, plunger etc fire an email through to espresso@rocketcoffee.co.nz",
-      "flavour_notes": "Flavor Profile"
+      "flavour_notes": "Flavour Notes, Fruits, Spices, Chocolate, Herbal, Nutty, Caramel, Sweet, Malty, Bitter, Acidic"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -681,7 +711,7 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2022-08-17T11:00:07+12:00",
-      "scraped_at": "2026-11-15T22:44:09+00:00",
+      "scraped_at": "2026-11-17T01:51:25+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -726,7 +756,7 @@
       "process": "unknown",
       "decaf": false,
       "description": "This subscription is for our Organic espresso blend, it's seasonal, changing throughout the year as fresh crop coffee arrives into the country.\n\nThis is for 12 deliveries, choose either 250g or 500g sent weekly, fortnightly or monthly... because you're prepaying we'll charge the 1kg rate.\n\nFor more information on the current Organic espresso blend click here\n\nAll subscriptions include freight.\n\nFor any changes to your subscription or help on coffee brewing of all methods i.e. espresso, plunger etc fire an email through to espresso@rocketcoffee.co.nz",
-      "flavour_notes": "Flavor_Notes: List Of Specific Taste, Flavour Descriptors (E.G. Fruits, Spices, Chocolate), Flavour_Notes: List Of Specific Taste, Flavour Descriptors (E.G. Fruits, Spices, Chocolate)"
+      "flavour_notes": "Flavor Notes"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -739,7 +769,7 @@
       "price_min_nzd": 72.0,
       "price_max_nzd": 480.0,
       "updated_at": "2023-08-10T13:16:19+12:00",
-      "scraped_at": "2026-11-15T22:44:09+00:00",
+      "scraped_at": "2026-11-17T01:51:25+00:00",
       "varietal": "Ruiru 11, SL28, SL34, Batian",
       "size_prices": [
         {
@@ -785,7 +815,7 @@
       "price_min_nzd": 84.0,
       "price_max_nzd": 576.0,
       "updated_at": "2020-03-27T10:38:15+13:00",
-      "scraped_at": "2026-11-15T22:44:09+00:00",
+      "scraped_at": "2026-11-17T01:51:25+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -815,7 +845,7 @@
       ],
       "origin_country": "unknown",
       "producer": "unknown",
-      "process": "Natural",
+      "process": "Washed",
       "decaf": false,
       "description": "The next subscription, No. 342 will be dispatched 17 NOV 2026.",
       "flavour_notes": "Fruity, Chocolate, Spicy"
@@ -831,7 +861,7 @@
       "price_min_nzd": 25.9,
       "price_max_nzd": 25.9,
       "updated_at": "2026-10-05T07:47:05+13:00",
-      "scraped_at": "2026-11-15T22:47:23+00:00",
+      "scraped_at": "2026-11-17T01:54:04+00:00",
       "varietal": "Batian, SL28, SL34, Ruiru 11",
       "size_prices": [
         {
@@ -848,32 +878,6 @@
     },
     {
       "source": "atomiccoffee.co.nz",
-      "product_id": 10315149574331,
-      "title": "Colombia Lino Rodriguiez | Filter Roast",
-      "category": "filter roast",
-      "handle": "colombia-lino-rodriguiez-filter-roast",
-      "product_url": "https://atomiccoffee.co.nz/products/colombia-lino-rodriguiez-filter-roast",
-      "available": true,
-      "price_min_nzd": 34.01,
-      "price_max_nzd": 34.01,
-      "updated_at": "2026-10-05T07:47:39+13:00",
-      "scraped_at": "2026-11-15T22:47:23+00:00",
-      "varietal": "Pink Bourbon",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 34.01
-        }
-      ],
-      "origin_country": "Colombia",
-      "producer": "unknown",
-      "process": "Washed",
-      "decaf": false,
-      "description": "This Colombia is a bit of a sho w-o ff, and we're here for it. Passionfruit steals the spotlight from the first sip, backed by waves of peach juice, tropical fruit an d del icate florals. Beneath it all sits a c ustard y swe etness and fresh almond aromatics that give the cup depth and elegance. Syrupy, intensely sweet and endlessly layered, this is a coffee that keeps revealing something new with every sip.\n\nVariety: Pink Bourbon\nProcessing: Washed\nTasting notes: Passionfruit, Peach Juice , Custard\nRecomending use: Filter",
-      "flavour_notes": "Passionfruit, Peach Juice, Custard"
-    },
-    {
-      "source": "atomiccoffee.co.nz",
       "product_id": 10315140628667,
       "title": "Peru Francisco Delgado Rivera | Filter Roast",
       "category": "filter roast",
@@ -883,7 +887,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
       "updated_at": "2026-10-05T07:47:28+13:00",
-      "scraped_at": "2026-11-15T22:47:23+00:00",
+      "scraped_at": "2026-11-17T01:54:04+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -909,7 +913,7 @@
       "price_min_nzd": 20.5,
       "price_max_nzd": 82.0,
       "updated_at": "2024-03-01T09:35:47+13:00",
-      "scraped_at": "2026-11-15T22:47:23+00:00",
+      "scraped_at": "2026-11-17T01:54:04+00:00",
       "varietal": "Mundo Novo, Catuai",
       "size_prices": [
         {
@@ -939,12 +943,12 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2025-11-12T11:49:06+13:00",
-      "scraped_at": "2026-11-15T22:47:34+00:00",
+      "scraped_at": "2026-11-17T01:54:15+00:00",
       "varietal": "unknown",
       "size_prices": [],
-      "origin_country": "unknown",
+      "origin_country": "Colombia",
       "producer": "unknown",
-      "process": "unknown",
+      "process": "Washed",
       "decaf": false,
       "description": "Not sure which espresso blend you would like most? We\u2019ve made it easier for you to decide by bundling our top-selling blends at a cheeky discounted price.\n\nVeloce (250g) is our flagship blend, the one you\u2019ll find in most cafes serving Atomic. It\u2019s crafted to make a smooth, complex espresso with notes of dark chocolate, cinnamon and stone fruit. and a balanced flat white.\n\nSupremo (250g) is for the \u2018strong\u2019 coffee lovers \u2013 full-bodied, rich in deep chocolate undertones, and elevated by a confectionary sweetness that becomes caramel-like with milk. Our notes for this blend are cacao nibs, marshmallow and clove .\n\nBundle these two classics together and save $6.00!",
       "flavour_notes": "Dark Chocolate, Cinnamon, Stone Fruit"
@@ -960,7 +964,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
       "updated_at": "2014-07-05T11:55:00+12:00",
-      "scraped_at": "2026-11-15T22:47:34+00:00",
+      "scraped_at": "2026-11-17T01:54:15+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -990,7 +994,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
       "updated_at": "2014-06-18T14:27:00+12:00",
-      "scraped_at": "2026-11-15T22:47:34+00:00",
+      "scraped_at": "2026-11-17T01:54:15+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1020,7 +1024,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
       "updated_at": "2014-06-18T14:30:00+12:00",
-      "scraped_at": "2026-11-15T22:47:34+00:00",
+      "scraped_at": "2026-11-17T01:54:15+00:00",
       "varietal": "Lempira, Catuai, Catimor",
       "size_prices": [
         {
@@ -1050,7 +1054,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
       "updated_at": "2026-10-05T07:47:50+13:00",
-      "scraped_at": "2026-11-15T22:47:34+00:00",
+      "scraped_at": "2026-11-17T01:54:15+00:00",
       "varietal": "Bourbon",
       "size_prices": [
         {
@@ -1076,7 +1080,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2021-06-30T02:52:03+12:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1114,7 +1118,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2021-06-30T03:01:43+12:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1152,7 +1156,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2021-06-30T02:55:07+12:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1190,7 +1194,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 205.5,
       "updated_at": "2021-06-30T03:00:36+12:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1228,7 +1232,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 71.0,
       "updated_at": "2024-03-06T01:55:25+13:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1262,7 +1266,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 69.0,
       "updated_at": "2025-09-17T21:11:19+12:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1296,7 +1300,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2026-03-03T23:33:07+13:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1334,7 +1338,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 264.0,
       "updated_at": "2026-11-09T05:39:11+13:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1372,7 +1376,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 288.0,
       "updated_at": "2026-11-09T05:39:08+13:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "Catuai",
       "size_prices": [
         {
@@ -1410,7 +1414,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
       "updated_at": "2026-10-02T10:58:59+13:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1444,7 +1448,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
       "updated_at": "2026-05-30T01:00:02+12:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "Colombia, Castillo, Caturra, Catimor And Typica",
       "size_prices": [
         {
@@ -1478,7 +1482,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 84.0,
       "updated_at": "2025-11-17T21:56:21+13:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "Jarc 74110 & Jarc 74112",
       "size_prices": [
         {
@@ -1512,7 +1516,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
       "updated_at": "2025-02-26T10:31:38+13:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "Mundo Novo, Yellow Catuai, Yellow Catucai",
       "size_prices": [
         {
@@ -1546,7 +1550,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 210.0,
       "updated_at": "2021-10-26T11:38:17+13:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "Caturra, Castillo And Colombia",
       "size_prices": [
         {
@@ -1584,7 +1588,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 112.0,
       "updated_at": "2026-08-20T20:58:23+12:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1618,7 +1622,7 @@
       "price_min_nzd": 122.0,
       "price_max_nzd": 122.0,
       "updated_at": "2026-10-13T08:13:37+13:00",
-      "scraped_at": "2026-11-15T22:48:36+00:00",
+      "scraped_at": "2026-11-17T01:55:02+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Costa Rica",
@@ -1639,7 +1643,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
       "updated_at": "2026-11-05T07:35:40+13:00",
-      "scraped_at": "2026-11-15T22:50:18+00:00",
+      "scraped_at": "2026-11-17T01:56:45+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1665,7 +1669,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-11-12T07:28:10+13:00",
-      "scraped_at": "2026-11-15T22:50:18+00:00",
+      "scraped_at": "2026-11-17T01:56:45+00:00",
       "varietal": "Batian, Ruiru 11, SL28, SL34",
       "size_prices": [
         {
@@ -1691,7 +1695,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
       "updated_at": "2026-09-09T11:23:36+12:00",
-      "scraped_at": "2026-11-15T22:50:18+00:00",
+      "scraped_at": "2026-11-17T01:56:45+00:00",
       "varietal": "Ethiopian Heirloom Varieties",
       "size_prices": [
         {
@@ -1717,7 +1721,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-08-31T13:14:44+12:00",
-      "scraped_at": "2026-11-15T22:50:18+00:00",
+      "scraped_at": "2026-11-17T01:56:45+00:00",
       "varietal": "Batian, Ruiru 11, SL28, SL34",
       "size_prices": [
         {
@@ -1743,7 +1747,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
       "updated_at": "2026-04-21T13:11:09+12:00",
-      "scraped_at": "2026-11-15T22:50:18+00:00",
+      "scraped_at": "2026-11-17T01:56:45+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1769,11 +1773,11 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-04-30T08:00:18+12:00",
-      "scraped_at": "2026-11-15T22:50:18+00:00",
+      "scraped_at": "2026-11-17T01:56:45+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
-      "producer": "unknown",
+      "producer": "best",
       "process": "unknown",
       "decaf": false,
       "description": "We're excited to source and share with you a carefully curated selection of delicious, quality coffees from a range of the best coffee growing regions around the world. Throughout the year we\u2019ll be bringing you an interesting range of origins, varieties and processing methods from regional, microlot and single estate producers.\n\nSign up to a monthly subscription and you'll receive a different single origin coffee each month, charged on the 1st of the month and dispatched the following business day.\n\nFor weekly or fortnightly deliveries, you will receive a rotation of our current lineup of single origin coffees, sent within 2 business days of each payment.\n\nOur standard size bag is 250g. Occasionally, we will have an extra special coffee we'd like to share with you, which will be sent in a slightly smaller amount such as 200g.\n\nPlease note: Our single origin coffee range consists of light roast coffees, best suited to filter brewing. If you'd like a subscription for brewing espresso, check out our blends subscriptions .\n\nThe finer details\n\nShipping to urban addresses is included in the price of this subscription. If you are local and would prefer to pick up your coffee from our Cellar Door/Roastery, we\u2019ll shout you a batch brew on pick up!\n\nShipping to rural addresses incur a surcharge of $5 per delivery to cover the extra freight charges. Please select the correct option to ensure shipping charges are accurately calculated.\n\nRecurring subscriptions are charged on the 1st of the month, then we dispatch on the following business day. If your initial order is placed within 5 days of the 1st, we\u2019ll hold off your first delivery until the scheduled dispatch date. For all other initial payments, we will send out the first bag when you order, then all following deliveries will be dispatched on the first Tuesday of the month. This may mean your first couple of deliveries arrive less than a month apart.\n\nLog in to your account to access your subscription details. Recurring subscriptions can be changed, paused or cancelled here. If you need any assistance or have a question, email us at orders@coffeeembassy.co.nz.",
@@ -1790,7 +1794,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 79.0,
       "updated_at": "2026-05-04T07:19:50+12:00",
-      "scraped_at": "2026-11-15T22:50:56+00:00",
+      "scraped_at": "2026-11-17T01:57:11+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1820,8 +1824,8 @@
       "price_min_nzd": 18.5,
       "price_max_nzd": 66.5,
       "updated_at": "2022-07-15T13:56:46+12:00",
-      "scraped_at": "2026-11-15T22:50:56+00:00",
-      "varietal": "Heirloom",
+      "scraped_at": "2026-11-17T01:57:11+00:00",
+      "varietal": "Bourbon, Typica",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -1832,11 +1836,11 @@
           "price_nzd": 66.5
         }
       ],
-      "origin_country": "Colombia, Ethiopia, Brazil",
+      "origin_country": "Colombia, Brazil, Papua New Guinea",
       "producer": "unknown",
       "process": "Natural",
       "decaf": false,
-      "description": "What is Ranger?\n\nWe have made some exciting changes to our blends, and Ranger is now a seasonal Regional blend, now made up of higher quality Reserve programs and Regional Coffees. Ranger supports both ends of the coffee supply chain; empowering small-lot producers while remaining accessible. Its seasonal nature means we can select from a broader range of coffees aligned with the harvest calendar. The components of Ranger are now:\n\nBrazil Samba\n\nEthiopia Limu Kossa\n\nFlavour Profile: Cocoa, Citrus, Caramel\n\nA note from James, Head of Coffee\n\nWe are excited to share with you some information about Ranger Blend. Our mission at Coffee Embassy is to be as transparent as possible. We enjoy sharing information about the coffee you are drinking and help educate about coffee. Check out some extra info on the tabs below, or if you would like to know more about the coffees we are always happy to chat!\n\nCoffee terms/language\n\nBefore we get stuck into the details of the origins we would like to go over a few of the coffee terms/language we use every day.\n\nWhat is a Regional Blend? - Regional coffees are collected from hundreds of farmers within a shared area, who grow similar varieties and process their coffees together. Some Regional coffees are part of Reserve Programs, helping smallholder farmers reach wider markets, with Cofinet supporting them through education and financial aid.\n\nCup/Quality Score - Scoring coffee is used to define the quality of the coffee. Scores are given to the individual origins. To be considered \u201cSpecialty\u201d a coffee must score a minimum of 80/100. Most Specialty coffees score between 80 \u2013 87. Only a few outstanding coffees will score higher than this.\n\nRoast Degree/Type/colour/style - Back in the days of old, coffee roasts were (and still are by some) only described as being light, medium and dark. These descriptions are still relevant to a point but coffee is no longer as straight forward. These days ones interpretation of colour can vary from roaster to roaster. We try to triangulate roast degree (Temperature) Colour and Development of the roast not just the colour (as different origins can colour differently)\n\nStyles: Spot Seasonal Blend, Seasonal Blend, Modern Blend, Regional Blend, Single Origin.\n\nThe Origins\n\nBrazil: Samba Reserve\n\nScore: 83\nFlavour Profile: Caramel, Milk Chocolate, Spice\n\nProcess: Natural\n\nSamba Reserve is an exceptional blend of Natural processed coffees grown within 1000-300 m.a.s.l of altitude. Produced by selected coffee growers, there is farm-level traceability from Carmo de Minas region which is in the South of Minas Gerais.\n\nThis coffee was carefully picked in order to select only the ripest cherries. The cherries then underwent a rigorous sorting process using the \"lavador\" machine, a density sorter commonly used in Brazil to separate the low-density beans. To complete the preparation, the coffee was sun-dried on patios for three days before being finished in mechanical dryers for 72 hours or more, until the optimal moisture level was reached.\n\n_____\n\nEthiopia: Limu Kossa\n\nScore: 84+\n\nFlavour Profile: Bright, Sweet berry fruits, Full bodied\n\nProcess: Washed\n\nThis washing station, founded in Limu Kossa is managed by full-time farmers that focus on cultivating exquisite Ethiopian heirloom varieties across 3250 hectares of land. These farms cultivate their heirloom varieties to be as close to their wild-grown counterparts as they can, made possible by exceptional agroforestry practices. The plants grow in the shade of 43 different species of trees, allowing for slow cherry development and beans that are more dense and flavourful.\n\nRecipe\n\nThis is a good starting point for all of our espresso coffees. Adjust Accordingly to your own preference\n\nGround Coffee: 20g Espresso\n\nWeight out: 25g\n\nContact Time: 25-30 Seconds\n\nRecommended brewing age\n\n5+ days after roast date\n\nSubscriptions\n\nFor more info on subscriptions, head to the Subscriptions page .",
+      "description": "What is Ranger?\n\nWe have made some exciting changes to our blends, and Ranger is now a seasonal Regional blend, now made up of higher quality Reserve programs and Regional Coffees. Ranger supports both ends of the coffee supply chain; empowering small-lot producers while remaining accessible. Its seasonal nature means we can select from a broader range of coffees aligned with the harvest calendar. The components of Ranger are now:\n\nBrazil Samba\n\nPapua New Guinea Kongo Simbu\n\nFlavour Profile: Cocoa, Citrus, Caramel\n\nA note from James, Head of Coffee\n\nWe are excited to share with you some information about Ranger Blend. Our mission at Coffee Embassy is to be as transparent as possible. We enjoy sharing information about the coffee you are drinking and help educate about coffee. Check out some extra info on the tabs below, or if you would like to know more about the coffees we are always happy to chat!\n\nCoffee terms/language\n\nBefore we get stuck into the details of the origins we would like to go over a few of the coffee terms/language we use every day.\n\nWhat is a Regional Blend? - Regional coffees are collected from hundreds of farmers within a shared area, who grow similar varieties and process their coffees together. Some Regional coffees are part of Reserve Programs, helping smallholder farmers reach wider markets, with Cofinet supporting them through education and financial aid.\n\nCup/Quality Score - Scoring coffee is used to define the quality of the coffee. Scores are given to the individual origins. To be considered \u201cSpecialty\u201d a coffee must score a minimum of 80/100. Most Specialty coffees score between 80 \u2013 87. Only a few outstanding coffees will score higher than this.\n\nRoast Degree/Type/colour/style - Back in the days of old, coffee roasts were (and still are by some) only described as being light, medium and dark. These descriptions are still relevant to a point but coffee is no longer as straight forward. These days ones interpretation of colour can vary from roaster to roaster. We try to triangulate roast degree (Temperature) Colour and Development of the roast not just the colour (as different origins can colour differently)\n\nStyles: Spot Seasonal Blend, Seasonal Blend, Modern Blend, Regional Blend, Single Origin.\n\nThe Origins\n\nBrazil: Samba Reserve\n\nScore: 83\nFlavour Profile: Caramel, Milk Chocolate, Spice\n\nProcess: Natural\n\nSamba Reserve is an exceptional blend of Natural processed coffees grown within 1000-300 m.a.s.l of altitude. Produced by selected coffee growers, there is farm-level traceability from Carmo de Minas region which is in the South of Minas Gerais.\n\nThis coffee was carefully picked in order to select only the ripest cherries. The cherries then underwent a rigorous sorting process using the \"lavador\" machine, a density sorter commonly used in Brazil to separate the low-density beans. To complete the preparation, the coffee was sun-dried on patios for three days before being finished in mechanical dryers for 72 hours or more, until the optimal moisture level was reached.\n\n_____\n\nPNG Kongo Simbu\n\nScore: 83.5\n\nFlavour Profile: Caramel, stonefruits, creamy\n\nProcess: Washed\n\nSimbu is PNG\u2019s third-largest coffee-producing region, supporting roughly 300,000 people. Kongo Coffee\u2019s founder, Jerry Kapka, has played a pivotal role in the ongoing improvement of Simbu\u2019s coffee quality, supporting growers through fair pricing and access to education on plant maintenance.\n\nHis support extends to the wider community through the Jerry Kapka Foundation, which channels a portion of Kongo Coffee\u2019s profits into community development projects. These initiatives include funding schools to improve access to education, supporting hospitals that provide medical procedures and medicines for women and children, and establishing youth groups.\n\nKongo Coffee works across the wider Simbu region, enabling farmers to contribute coffee grown throughout the year and providing a vital source of income for coffee-producing families. Simbu\u2019s coffee is prized for its distinctive profile, offering crisp acidity, refined fruit notes and a sweet finish. This particular coffee is made up of Typica and Bourbon varieties.\n\nRecipe\n\nThis is a good starting point for all of our espresso coffees. Adjust Accordingly to your own preference\n\nGround Coffee: 20g Espresso\n\nWeight out: 25g\n\nContact Time: 25-30 Seconds\n\nRecommended brewing age\n\n5+ days after roast date\n\nSubscriptions\n\nFor more info on subscriptions, head to the Subscriptions page .",
       "flavour_notes": "Cocoa, Citrus, Caramel"
     },
     {
@@ -1850,7 +1854,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
       "updated_at": "2023-05-24T08:53:39+12:00",
-      "scraped_at": "2026-11-15T22:50:56+00:00",
+      "scraped_at": "2026-11-17T01:57:11+00:00",
       "varietal": "Typica, Sidra, Tabi",
       "size_prices": [
         {
@@ -1880,7 +1884,7 @@
       "price_min_nzd": 21.5,
       "price_max_nzd": 82.5,
       "updated_at": "2022-07-15T13:56:00+12:00",
-      "scraped_at": "2026-11-15T22:50:56+00:00",
+      "scraped_at": "2026-11-17T01:57:11+00:00",
       "varietal": "Castillo, Varidad Colombia",
       "size_prices": [
         {
@@ -1910,7 +1914,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
       "updated_at": "2025-02-21T15:28:46+13:00",
-      "scraped_at": "2026-11-15T22:50:56+00:00",
+      "scraped_at": "2026-11-17T01:57:11+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1923,11 +1927,11 @@
         }
       ],
       "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
+      "producer": "Blends Rotating Subscription",
+      "process": "Decaf",
       "decaf": false,
       "description": "Trust the roaster with our blends subscription! You'll receive a rotation of our blends, suitable for espresso, plunger and stovetop brewing.\n\nShipping is included for all urban deliveries.\n\nThere is a surcharge on rural deliveries to cover some of the extra cost to ship to these addresses, if you live at a rural address please select your subscription accordingly so we can accurately calculate your shipping costs.\n\nRecipe\n\nThis is a good starting point for all of our espresso coffees. Adjust accordingly to your own preference\n\nGround Coffee: 20g Espresso\n\nWeight out: 25g\n\nContact Time: 25-30 Seconds\n\nRecommended Brewing Age\n\n10 \u2013 28 Days after roast date\n\nSubscriptions\n\nRead more about how subscriptions work here",
-      "flavour_notes": "Fruity, Spicy, Chocolate"
+      "flavour_notes": "Fruity Notes, Spicy Notes, Chocolate Notes"
     },
     {
       "source": "eternalcoffee.co.nz",
@@ -1940,7 +1944,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 65.0,
       "updated_at": "2026-10-20T20:13:24+13:00",
-      "scraped_at": "2026-11-15T22:51:07+00:00",
+      "scraped_at": "2026-11-17T01:57:21+00:00",
       "varietal": "SL28, SL34, Ruiru 11, Batian",
       "size_prices": [
         {
@@ -1970,7 +1974,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 98.0,
       "updated_at": "2026-10-20T20:12:58+13:00",
-      "scraped_at": "2026-11-15T22:51:07+00:00",
+      "scraped_at": "2026-11-17T01:57:21+00:00",
       "varietal": "74110, 74112, 74165",
       "size_prices": [
         {
@@ -2004,7 +2008,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
       "updated_at": "2026-09-29T12:22:49+13:00",
-      "scraped_at": "2026-11-15T22:51:07+00:00",
+      "scraped_at": "2026-11-17T01:57:21+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -2030,7 +2034,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-09-29T12:22:40+13:00",
-      "scraped_at": "2026-11-15T22:51:07+00:00",
+      "scraped_at": "2026-11-17T01:57:21+00:00",
       "varietal": "Gesha",
       "size_prices": [
         {
@@ -2056,7 +2060,7 @@
       "price_min_nzd": 53.0,
       "price_max_nzd": 83.0,
       "updated_at": "2026-09-30T13:11:48+13:00",
-      "scraped_at": "2026-11-15T22:51:07+00:00",
+      "scraped_at": "2026-11-17T01:57:21+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -2082,7 +2086,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
       "updated_at": "2026-08-18T11:14:25+12:00",
-      "scraped_at": "2026-11-15T22:51:07+00:00",
+      "scraped_at": "2026-11-17T01:57:21+00:00",
       "varietal": "Heirloom + Castillo",
       "size_prices": [
         {
@@ -2112,7 +2116,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
       "updated_at": "2026-07-22T18:55:38+12:00",
-      "scraped_at": "2026-11-15T22:51:07+00:00",
+      "scraped_at": "2026-11-17T01:57:21+00:00",
       "varietal": "Heirloom + Pink Bourbon",
       "size_prices": [
         {
@@ -2142,7 +2146,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
       "updated_at": "2026-06-23T20:52:19+12:00",
-      "scraped_at": "2026-11-15T22:51:07+00:00",
+      "scraped_at": "2026-11-17T01:57:21+00:00",
       "varietal": "Gesha",
       "size_prices": [
         {
@@ -2168,7 +2172,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 98.0,
       "updated_at": "2026-10-20T20:13:13+13:00",
-      "scraped_at": "2026-11-15T22:51:28+00:00",
+      "scraped_at": "2026-11-17T01:57:47+00:00",
       "varietal": "74110, 74112, 74165",
       "size_prices": [
         {
@@ -2202,7 +2206,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
       "updated_at": "2026-08-18T11:14:10+12:00",
-      "scraped_at": "2026-11-15T22:51:28+00:00",
+      "scraped_at": "2026-11-17T01:57:47+00:00",
       "varietal": "Heirloom + Castillo",
       "size_prices": [
         {
@@ -2232,7 +2236,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
       "updated_at": "2026-07-22T19:18:50+12:00",
-      "scraped_at": "2026-11-15T22:51:28+00:00",
+      "scraped_at": "2026-11-17T01:57:47+00:00",
       "varietal": "Heirloom + Pink Bourbon",
       "size_prices": [
         {
@@ -2262,7 +2266,7 @@
       "price_min_nzd": 25.5,
       "price_max_nzd": 70.0,
       "updated_at": "2026-11-06T12:36:32+13:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -2296,7 +2300,7 @@
       "price_min_nzd": 62.0,
       "price_max_nzd": 62.0,
       "updated_at": "2026-11-05T13:56:02+13:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Orange Wush Wush",
       "size_prices": [
         {
@@ -2322,7 +2326,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 97.0,
       "updated_at": "2026-10-12T14:28:47+13:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "SL28, SL34, Batian, Ruiru 11",
       "size_prices": [
         {
@@ -2356,7 +2360,7 @@
       "price_min_nzd": 20.5,
       "price_max_nzd": 60.0,
       "updated_at": "2026-10-12T13:55:30+13:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Yellow Arara",
       "size_prices": [
         {
@@ -2390,7 +2394,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-10-12T12:48:32+13:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Ethiopian Landrace",
       "size_prices": [
         {
@@ -2424,7 +2428,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 120.0,
       "updated_at": "2026-10-12T08:05:04+13:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Ethiopian Landrace",
       "size_prices": [
         {
@@ -2458,7 +2462,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 120.0,
       "updated_at": "2026-10-06T08:01:09+13:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Bourbon, Chiroso",
       "size_prices": [
         {
@@ -2492,7 +2496,7 @@
       "price_min_nzd": 34.0,
       "price_max_nzd": 160.0,
       "updated_at": "2026-09-11T15:08:12+12:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -2521,40 +2525,6 @@
     },
     {
       "source": "vanguardcoffee.co.nz",
-      "product_id": 9247570100362,
-      "title": "Colombia Jairo Arcila Natural Caturra",
-      "category": "filter roast",
-      "handle": "colombia-jairo-arcila-natural-caturra",
-      "product_url": "https://vanguardcoffee.co.nz/products/colombia-jairo-arcila-natural-caturra",
-      "available": true,
-      "price_min_nzd": 26.0,
-      "price_max_nzd": 80.0,
-      "updated_at": "2026-08-24T14:35:53+12:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
-      "varietal": "Caturra",
-      "size_prices": [
-        {
-          "size_grams": 250.0,
-          "price_nzd": 26.0
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 47.0
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 80.0
-        }
-      ],
-      "origin_country": "Colombia",
-      "producer": "Santa Monica",
-      "process": "Natural",
-      "decaf": false,
-      "description": "Meeting Jairo in Colombia and spending time on his farms gave us a much clearer understanding of the work behind these coffees. Seeing the way he approaches picking, fermentation and drying in person made it obvious how deliberate each stage is, and how much attention goes into maintaining consistency from lot to lot.\nThis natural Caturra is a good reflection of that approach- carefully processed, fruit-driven and clean, with the fermentation used to build character rather than dominate the coffee.\n\nCOUNTRY - Colombia\nFARM - Santa Monica\nREGION - Armenia, Quindio\nALTITUDE - 1500 M.A.S.L\nVARIETAL - Caturra\nPROCESSING METHOD - Natural\nROAST PROFILE - Filter\nTASTING NOTES - Blackberry, lime, molasses",
-      "flavour_notes": "Blackberry, Lime, Molasses"
-    },
-    {
-      "source": "vanguardcoffee.co.nz",
       "product_id": 9167572664458,
       "title": "Lot 003 - Anaerobic Natural",
       "category": "filter roast",
@@ -2564,7 +2534,7 @@
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-07-13T09:13:12+12:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Laurina",
       "size_prices": [
         {
@@ -2590,7 +2560,7 @@
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-07-13T09:14:14+12:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Laurina",
       "size_prices": [
         {
@@ -2616,7 +2586,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-07-02T08:19:30+12:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Yellow Caturra",
       "size_prices": [
         {
@@ -2650,7 +2620,7 @@
       "price_min_nzd": 44.0,
       "price_max_nzd": 276.0,
       "updated_at": "2026-06-09T10:00:51+12:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -2692,7 +2662,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 50.0,
       "updated_at": "2022-09-21T12:12:51+12:00",
-      "scraped_at": "2026-11-15T22:51:37+00:00",
+      "scraped_at": "2026-11-17T01:57:58+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2722,7 +2692,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 68.0,
       "updated_at": "2020-03-04T11:42:47+13:00",
-      "scraped_at": "2026-11-15T22:55:32+00:00",
+      "scraped_at": "2026-11-17T02:01:12+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -2756,7 +2726,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-04-02T09:31:14+13:00",
-      "scraped_at": "2026-11-15T22:55:32+00:00",
+      "scraped_at": "2026-11-17T02:01:12+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -2790,7 +2760,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
       "updated_at": "2021-10-06T12:42:49+13:00",
-      "scraped_at": "2026-11-15T22:55:32+00:00",
+      "scraped_at": "2026-11-17T02:01:12+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -2824,7 +2794,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 70.0,
       "updated_at": "2026-02-05T10:46:10+13:00",
-      "scraped_at": "2026-11-15T22:55:32+00:00",
+      "scraped_at": "2026-11-17T02:01:12+00:00",
       "varietal": "Yellow Arara, SL28, SL34, Mixed",
       "size_prices": [
         {
@@ -2858,7 +2828,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 68.0,
       "updated_at": "2025-10-03T13:33:49+13:00",
-      "scraped_at": "2026-11-15T22:55:32+00:00",
+      "scraped_at": "2026-11-17T02:01:12+00:00",
       "varietal": "Castillo, Colombia, Caturra",
       "size_prices": [
         {
@@ -2890,22 +2860,14 @@
       "product_url": "https://c4coffee.co/products/blackberry-sorbet",
       "available": true,
       "price_min_nzd": 26.09,
-      "price_max_nzd": 130.43,
+      "price_max_nzd": 26.09,
       "updated_at": "2026-06-16T15:42:16+12:00",
-      "scraped_at": "2026-11-15T22:55:41+00:00",
+      "scraped_at": "2026-11-17T02:01:22+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
           "size_grams": 200.0,
           "price_nzd": 26.09
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 65.22
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 130.43
         }
       ],
       "origin_country": "Colombia, Honduras",
@@ -2924,22 +2886,14 @@
       "product_url": "https://c4coffee.co/products/el-oasis-washed-pink-bourbon",
       "available": true,
       "price_min_nzd": 24.35,
-      "price_max_nzd": 121.74,
+      "price_max_nzd": 24.35,
       "updated_at": "2026-09-16T11:18:35+12:00",
-      "scraped_at": "2026-11-15T22:55:41+00:00",
+      "scraped_at": "2026-11-17T02:01:22+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
           "size_grams": 200.0,
           "price_nzd": 24.35
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 60.87
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 121.74
         }
       ],
       "origin_country": "Colombia",
@@ -2957,23 +2911,15 @@
       "handle": "el-oasis-lactic-natural",
       "product_url": "https://c4coffee.co/products/el-oasis-lactic-natural",
       "available": true,
-      "price_min_nzd": 26.09,
-      "price_max_nzd": 104.35,
+      "price_min_nzd": 20.87,
+      "price_max_nzd": 20.87,
       "updated_at": "2026-09-16T11:18:37+12:00",
-      "scraped_at": "2026-11-15T22:55:41+00:00",
+      "scraped_at": "2026-11-17T02:01:22+00:00",
       "varietal": "Bourbon",
       "size_prices": [
         {
-          "size_grams": 250.0,
-          "price_nzd": 26.09
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 52.17
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 104.35
+          "size_grams": 200.0,
+          "price_nzd": 20.87
         }
       ],
       "origin_country": "Colombia",
@@ -2992,22 +2938,14 @@
       "product_url": "https://c4coffee.co/products/chocoloco",
       "available": true,
       "price_min_nzd": 26.09,
-      "price_max_nzd": 130.43,
+      "price_max_nzd": 26.09,
       "updated_at": "2026-10-28T10:45:36+13:00",
-      "scraped_at": "2026-11-15T22:55:41+00:00",
+      "scraped_at": "2026-11-17T02:01:22+00:00",
       "varietal": "Caturra, Bourbon",
       "size_prices": [
         {
           "size_grams": 200.0,
           "price_nzd": 26.09
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 65.22
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 130.43
         }
       ],
       "origin_country": "Colombia",
@@ -3025,23 +2963,15 @@
       "handle": "kenya-karimikui-ab-washed",
       "product_url": "https://c4coffee.co/products/kenya-karimikui-ab-washed",
       "available": true,
-      "price_min_nzd": 26.09,
-      "price_max_nzd": 104.35,
+      "price_min_nzd": 20.87,
+      "price_max_nzd": 20.87,
       "updated_at": "2026-09-20T19:32:59+12:00",
-      "scraped_at": "2026-11-15T22:55:41+00:00",
+      "scraped_at": "2026-11-17T02:01:22+00:00",
       "varietal": "Ruiru 11, SL28, SL34",
       "size_prices": [
         {
-          "size_grams": 250.0,
-          "price_nzd": 26.09
-        },
-        {
-          "size_grams": 500.0,
-          "price_nzd": 52.17
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 104.35
+          "size_grams": 200.0,
+          "price_nzd": 20.87
         }
       ],
       "origin_country": "Kenya",
@@ -3062,7 +2992,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2012-02-21T17:16:00+13:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3096,7 +3026,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2026-11-03T16:01:58+13:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3130,7 +3060,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2021-04-30T16:05:25+12:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3164,7 +3094,7 @@
       "price_min_nzd": 15.65,
       "price_max_nzd": 62.61,
       "updated_at": "2016-07-13T10:19:18+12:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3198,7 +3128,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2021-06-29T11:59:56+12:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3215,11 +3145,11 @@
         }
       ],
       "origin_country": "Brazil",
-      "producer": "C4",
+      "producer": "C4\u2019s House",
       "process": "Washed",
       "decaf": false,
       "description": "Carnaval is a Brazilian coffee in C4\u2019s House range, recommended for espresso brewing.",
-      "flavour_notes": "Fruity, Floral, And Chocolate Notes With Hints Of Caramel And Nuts"
+      "flavour_notes": "Fruity, Floral, And Sweet Notes With Hints Of Citrus And Berries"
     },
     {
       "source": "c4coffee.co",
@@ -3232,7 +3162,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2016-07-13T10:19:19+12:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3266,7 +3196,7 @@
       "price_min_nzd": 17.39,
       "price_max_nzd": 69.56,
       "updated_at": "2021-11-16T09:53:37+13:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3283,7 +3213,7 @@
         }
       ],
       "origin_country": "Honduras",
-      "producer": "Cocafal Cooperative",
+      "producer": "CocaFACL",
       "process": "Decaf",
       "decaf": true,
       "description": "Milk chocolate and apricot are the central notes in this Swiss Water decaf from western Honduras.\n\nThe coffee comes from the COCAFCAL cooperative in Capucas, Cop\u00e1n, where it is grown at 1,450\u20131,600m. The cooperative was founded in 1999 and brings together growers from the surrounding coffee-producing region.",
@@ -3300,7 +3230,7 @@
       "price_min_nzd": 15.22,
       "price_max_nzd": 60.87,
       "updated_at": "2020-07-15T11:15:19+12:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "Typica",
       "size_prices": [
         {
@@ -3334,7 +3264,7 @@
       "price_min_nzd": 17.39,
       "price_max_nzd": 69.56,
       "updated_at": "2023-11-23T17:00:50+13:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3368,7 +3298,7 @@
       "price_min_nzd": 15.22,
       "price_max_nzd": 60.87,
       "updated_at": "2023-03-30T15:46:06+13:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3402,7 +3332,7 @@
       "price_min_nzd": 15.65,
       "price_max_nzd": 62.61,
       "updated_at": "2023-02-26T20:36:00+13:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3427,27 +3357,6 @@
     },
     {
       "source": "c4coffee.co",
-      "product_id": 7521906262183,
-      "title": "Blends Discovery Box",
-      "category": "espresso roast",
-      "handle": "blends-discovery-box",
-      "product_url": "https://c4coffee.co/products/blends-discovery-box",
-      "available": true,
-      "price_min_nzd": 33.04,
-      "price_max_nzd": 47.83,
-      "updated_at": "2023-07-25T17:32:17+12:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
-      "varietal": "unknown",
-      "size_prices": [],
-      "origin_country": "Colombia",
-      "producer": "CacorreE.co",
-      "process": "Washed",
-      "decaf": false,
-      "description": "Explore a selection of C4 blends in individual 150g bags. The discovery box lets you compare the coffees side by side before choosing a larger bag.\n\nThe 4-pack contains Krank, Stout, V6 and Right as Rain. The 6-pack includes those four blends, plus Headset and the current seasonal blend. Each coffee is packed separately, with the same selected grind across the box.",
-      "flavour_notes": "2\u2014 Og"
-    },
-    {
-      "source": "c4coffee.co",
       "product_id": 7646300176551,
       "title": "Marcala Natural",
       "category": "filter roast",
@@ -3457,7 +3366,7 @@
       "price_min_nzd": 16.96,
       "price_max_nzd": 67.83,
       "updated_at": "2023-04-11T09:51:18+12:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "Marcala",
       "size_prices": [
         {
@@ -3491,7 +3400,7 @@
       "price_min_nzd": 19.13,
       "price_max_nzd": 76.52,
       "updated_at": "2025-03-31T19:57:26+13:00",
-      "scraped_at": "2026-11-15T22:55:52+00:00",
+      "scraped_at": "2026-11-17T02:01:35+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3525,7 +3434,7 @@
       "price_min_nzd": 65.0,
       "price_max_nzd": 292.5,
       "updated_at": "2026-11-09T08:10:23+13:00",
-      "scraped_at": "2026-11-15T22:58:41+00:00",
+      "scraped_at": "2026-11-17T02:03:38+00:00",
       "varietal": "Sidamo Heirloom",
       "size_prices": [
         {
@@ -3551,7 +3460,7 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 202.5,
       "updated_at": "2026-11-06T16:35:45+13:00",
-      "scraped_at": "2026-11-15T22:58:41+00:00",
+      "scraped_at": "2026-11-17T02:03:38+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -3581,7 +3490,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 130.0,
       "updated_at": "2026-09-14T17:37:29+12:00",
-      "scraped_at": "2026-11-15T22:58:41+00:00",
+      "scraped_at": "2026-11-17T02:03:38+00:00",
       "varietal": "San Isidro",
       "size_prices": [
         {
@@ -3611,7 +3520,7 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 202.5,
       "updated_at": "2026-10-06T12:45:09+13:00",
-      "scraped_at": "2026-11-15T22:58:41+00:00",
+      "scraped_at": "2026-11-17T02:03:38+00:00",
       "varietal": "74110, 74112, 74165",
       "size_prices": [
         {
@@ -3641,7 +3550,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-08-31T15:37:41+12:00",
-      "scraped_at": "2026-11-15T22:58:41+00:00",
+      "scraped_at": "2026-11-17T02:03:38+00:00",
       "varietal": "Heirloom",
       "size_prices": [
         {
@@ -3671,7 +3580,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-10-15T08:45:07+13:00",
-      "scraped_at": "2026-11-15T22:58:41+00:00",
+      "scraped_at": "2026-11-17T02:03:38+00:00",
       "varietal": "Heirloom",
       "size_prices": [
         {
@@ -3701,7 +3610,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
       "updated_at": "2026-11-10T14:25:06+13:00",
-      "scraped_at": "2026-11-15T22:58:41+00:00",
+      "scraped_at": "2026-11-17T02:03:38+00:00",
       "varietal": "Sl-28, Sl-34, Batian, Ruiru",
       "size_prices": [
         {
@@ -3731,7 +3640,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
       "updated_at": "2026-07-27T17:19:40+12:00",
-      "scraped_at": "2026-11-15T22:58:41+00:00",
+      "scraped_at": "2026-11-17T02:03:38+00:00",
       "varietal": "Catimor, Typica",
       "size_prices": [
         {
@@ -3761,7 +3670,7 @@
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
       "updated_at": "2026-10-26T11:43:32+13:00",
-      "scraped_at": "2026-11-15T22:58:41+00:00",
+      "scraped_at": "2026-11-17T02:03:38+00:00",
       "varietal": "Caturra, Catuai, Obata",
       "size_prices": [
         {
@@ -3791,7 +3700,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
       "updated_at": "2023-12-06T17:10:11+13:00",
-      "scraped_at": "2026-11-15T22:58:49+00:00",
+      "scraped_at": "2026-11-17T02:03:48+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -3837,7 +3746,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
       "updated_at": "2023-11-02T15:24:59+13:00",
-      "scraped_at": "2026-11-15T22:58:49+00:00",
+      "scraped_at": "2026-11-17T02:03:48+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -3883,7 +3792,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 80.0,
       "updated_at": "2019-12-30T14:39:26+13:00",
-      "scraped_at": "2026-11-15T22:58:49+00:00",
+      "scraped_at": "2026-11-17T02:03:48+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -3917,7 +3826,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
       "updated_at": "2026-10-27T13:55:23+13:00",
-      "scraped_at": "2026-11-15T22:58:49+00:00",
+      "scraped_at": "2026-11-17T02:03:48+00:00",
       "varietal": "Catimor, Typica",
       "size_prices": [
         {
@@ -3947,7 +3856,7 @@
       "price_min_nzd": 40.99,
       "price_max_nzd": 156.99,
       "updated_at": "2026-10-27T11:00:29+13:00",
-      "scraped_at": "2026-11-15T22:58:51+00:00",
+      "scraped_at": "2026-11-17T02:03:52+00:00",
       "varietal": "Typica",
       "size_prices": [
         {
@@ -3960,11 +3869,11 @@
         }
       ],
       "origin_country": "Peru",
-      "producer": "Alex Barrantes",
+      "producer": "unknown",
       "process": "Washed",
       "decaf": false,
-      "description": "Tasting notes: Apple Strudel, Toffee, Lime\n\nProducer Alex Barrantes\n\nFarm Querofinca\n\nRegion Cajamarca\n\nVariety Typica\n\nAltitude 1,923 MASL\n\nProcess Washed\n\nRoast Medium-Light\n\nSome things are better left until after dark. This coffee isn't one of them. Unless, of course, you're planning on staying up all night.\n\nStraight from the misty mountains of Cajamarca, Peru, comes a wicked little number courtesy of producer Alex Barrantes. Grown at 1,923 metres above sea level on his family farm, Querofinca, this washed Typica has all the makings of a dangerously good time. No bubbling cauldrons, suspicious spells or questionable ingredients required. Just exceptional coffee and a little Halloween mischief.\n\nThe first sip is like sneaking a warm slice of apple strudel straight from the oven when nobody's looking. Buttery toffee follows, bringing all the sticky, caramelised goodness of a Halloween sweet haul, before a bright little twist of lime appears out of nowhere. A trick? A treat? We'll let you decide.\n\nBehind the mischief is a producer who takes his craft seriously. Inspired by his father's dedication to farming and the natural world, Alex has built Querofinca around quality, sustainability and a respect for tradition. The result is a beautifully clean, sweet and expressive coffee that's far more treat than trick.\n\nNo tricks. All treats. And absolutely no sharing with the ghosts.\n\nAvailable for a limited time. Once it's gone, it's dead and buried.",
-      "flavour_notes": "Apple Strudel, Toffee, Lime"
+      "description": "Some things are better left until after dark. This coffee isn't one of them. Unless, of course, you're planning on staying up all night.\n\nStraight from the misty mountains of Cajamarca, Peru, comes a wicked little number courtesy of producer Alex Barrantes. Grown at 1,923 metres above sea level on his family farm, Querofinca, this washed Typica has all the makings of a dangerously good time. No bubbling cauldrons, suspicious spells or questionable ingredients required. Just exceptional coffee and a little Halloween mischief.\n\nThe first sip is like sneaking a warm slice of apple strudel straight from the oven when nobody's looking. Buttery toffee follows, bringing all the sticky, caramelised goodness of a Halloween sweet haul, before a bright little twist of lime appears out of nowhere. A trick? A treat? We'll let you decide.\n\nBehind the mischief is a producer who takes his craft seriously. Inspired by his father's dedication to farming and the natural world, Alex has built Querofinca around quality, sustainability and a respect for tradition. The result is a beautifully clean, sweet and expressive coffee that's far more treat than trick.\n\nNo tricks. All treats. And absolutely no sharing with the ghosts.\n\nAvailable for a limited time. Once it's gone, it's dead and buried.",
+      "flavour_notes": "Toffee, Apple, Lime"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -3977,24 +3886,20 @@
       "price_min_nzd": 52.99,
       "price_max_nzd": 195.99,
       "updated_at": "2026-09-22T10:48:30+12:00",
-      "scraped_at": "2026-11-15T22:58:51+00:00",
-      "varietal": "74110, 74112, 74165",
+      "scraped_at": "2026-11-17T02:03:52+00:00",
+      "varietal": "Yirgacheffe",
       "size_prices": [
         {
           "size_grams": 200.0,
           "price_nzd": 52.99
-        },
-        {
-          "size_grams": 1000.0,
-          "price_nzd": 195.99
         }
       ],
       "origin_country": "Ethiopia",
       "producer": "Gargari Gutity",
       "process": "unknown",
       "decaf": false,
-      "description": "Tasting notes: Blue Raspberry Bonbons, Red Currants, Candy, Floral\n\nProducer Gargari Gutity\n\nFarm Gedeb, Banko Gutity\n\nRegion Yirgacheffe\n\nVariety 74110, 74112, 74165\n\nAltitude 1,983 MASL\n\nProcess Supernatural (Grade 1)\n\nRoast Light\n\nBlue Bonbon tastes like the sweet you remember \u2014 blue raspberry bonbons up front, bright red currants behind, and layers of candy sweetness that build through the cup. Delicate florals keep it elegant.\n\nThis Grade 1 lot from the Gargari Gutity station in Gedeb is processed with the Supernatural method \u2014 whole cherries dried slowly in thicker layers with restricted sunlight and airflow, intensifying their natural sugars while preserving clarity.\n\nWe've roasted it for filter \u2014 clean, expressive and playful to the last sip.",
-      "flavour_notes": "Blue Raspberry Bonbons, Red Currants, Candy, Floral"
+      "description": "Blue Bonbon tastes like the sweet you remember - blue raspberry bonbons up front, bright red currants behind, and layers of candy sweetness that build through the cup. Delicate florals keep it elegant.\n\nThis Grade 1 lot from the Gargari Gutity station in Gedeb is processed with the Supernatural method - whole cherries dried slowly in thicker layers with restricted sunlight and airflow, intensifying their natural sugars while preserving clarity.\n\nWe've roasted it for filter - clean, expressive and playful to the last sip.",
+      "flavour_notes": "Raspberry, Currants, Florals"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4007,8 +3912,8 @@
       "price_min_nzd": 52.99,
       "price_max_nzd": 195.99,
       "updated_at": "2026-09-22T10:48:21+12:00",
-      "scraped_at": "2026-11-15T22:58:51+00:00",
-      "varietal": "74110, 74112",
+      "scraped_at": "2026-11-17T02:03:52+00:00",
+      "varietal": "unknown",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4023,8 +3928,8 @@
       "producer": "Urabeast",
       "process": "Natural",
       "decaf": false,
-      "description": "Tasting notes: Strawberry, Vanilla Cream, Light Lemon\n\nProducer Urabeast\n\nFarm South Part, Urabeast\n\nRegion Guji, Oromia\n\nVariety 74110, 74112\n\nAltitude 2,037 MASL\n\nProcess Kombucha Natural (Grade 1)\n\nRoast Light\n\nSome flavours you don't have to explain. Strawberries and Cream opens exactly the way it sounds \u2014 ripe strawberry first, then a smooth vanilla cream that settles over the whole cup. A light touch of lemon keeps it fresh.\n\nThis Grade 1 lot from the Urabeast station in Guji is dried as whole cherry through a carefully controlled, kombucha-inspired fermentation. Naturally occurring yeasts and bacteria build layers of fruit and sweetness while the cherries dry slowly.\n\nWe've roasted it for filter \u2014 soft, creamy and quietly nostalgic.",
-      "flavour_notes": "Strawberry, Vanilla Cream, Light Lemon"
+      "description": "Some flavours you don't have to explain. Strawberries and Cream opens exactly the way it sounds - ripe strawberry first, then a smooth vanilla cream that settles over the whole cup. A light touch of lemon keeps it fresh.\n\nThis Grade 1 lot from the Urabeast station in Guji is dried as whole cherry through a carefully controlled, kombucha-inspired fermentation. Naturally occurring yeasts and bacteria build layers of fruit and sweetness while the cherries dry slowly.\n\nWe've roasted it for filter - soft, creamy and quietly nostalgic.",
+      "flavour_notes": "Strawberries, Strawberry, Vanilla, Lemon"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4037,8 +3942,8 @@
       "price_min_nzd": 81.99,
       "price_max_nzd": 356.99,
       "updated_at": "2026-10-06T10:25:26+13:00",
-      "scraped_at": "2026-11-15T22:58:51+00:00",
-      "varietal": "Yellow Sudan Rume",
+      "scraped_at": "2026-11-17T02:03:52+00:00",
+      "varietal": "Sudan Rume",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4050,11 +3955,11 @@
         }
       ],
       "origin_country": "Colombia",
-      "producer": "Jairo Arcila",
+      "producer": "unknown",
       "process": "Natural",
       "decaf": false,
-      "description": "Tasting notes: Passionfruit, Guava, Spiced Rum, Lavender\n\nProducer Jairo Arcila\n\nFarm Santa Monica\n\nRegion Quind\u00edo\n\nVariety Yellow Sudan Rume\n\nAltitude 1,400\u20131,450 MASL\n\nProcess Natural\n\nRoast Light\n\nTropical Thunder doesn't ease in. Ripe passionfruit and pink guava arrive in one electric burst, a warming spiced-rum sweetness builds through the middle, and delicate lavender lifts the finish.\n\nThis is a rare one \u2014 Yellow Sudan Rume, an unusual yellow-cherry mutation of the prized variety, grown by Jairo Arcila at Santa Monica in Quind\u00edo. The cherries pass through 45 hours of aerobic fermentation before a slow dry on raised beds.\n\nWe've roasted it for filter \u2014 bold, composed and impossible to ignore.",
-      "flavour_notes": "Passionfruit, Guava, Spiced Rum, Lavender"
+      "description": "Tropical Thunder doesn't ease in. Ripe passionfruit and pink guava arrive in one electric burst, a warming spiced-rum sweetness builds through the middle, and delicate lavender lifts the finish.\n\nThis is a rare one - Yellow Sudan Rume, an unusual yellow-cherry mutation of the prized variety, grown by Jairo Arcila at Santa Monica in Quind\u00edo. The cherries pass through 45 hours of aerobic fermentation before a slow dry on raised beds.\n\nWe've roasted it for filter - bold, composed and impossible to ignore.",
+      "flavour_notes": "Yellow Sudan Rume, Passionfruit, Cherry, Guava"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4067,8 +3972,8 @@
       "price_min_nzd": 72.99,
       "price_max_nzd": 618.99,
       "updated_at": "2026-10-06T10:25:28+13:00",
-      "scraped_at": "2026-11-15T22:58:51+00:00",
-      "varietal": "Red Gesha",
+      "scraped_at": "2026-11-17T02:03:52+00:00",
+      "varietal": "Gesha",
       "size_prices": [
         {
           "size_grams": 100.0,
@@ -4080,11 +3985,11 @@
         }
       ],
       "origin_country": "Colombia",
-      "producer": "Felipe Arcila",
+      "producer": "unknown",
       "process": "Natural",
       "decaf": false,
-      "description": "Tasting notes: Peach, Poached Pear, Bergamot, Soft Florals\n\nProducer Felipe Arcila\n\nFarm Jardines del Encanto\n\nRegion Quind\u00edo\n\nVariety Red Gesha\n\nAltitude 1,900 MASL\n\nProcess Natural (Grade 1)\n\nRoast Light\n\nPeach Petal is a rare one \u2014 a natural Red Gesha from Felipe Arcila's Jardines del Encanto. Soft ripe peach opens the cup, poached pear follows, and bergamot brings a lifted citrus elegance. Gentle florals linger on the finish.\n\nRed Gesha is recognised for elegant florals, refined acidity and complex fruit. After harvest, whole cherries pass through a short aerobic fermentation and a controlled anaerobic rest below 22\u00b0C, before drying slowly on raised beds.\n\nWe've roasted it for filter, and offer it in 100g pouches alongside the standard sizes. Silky, expressive, remarkably clear.",
-      "flavour_notes": "Peach, Poached Pear, Bergamot, Soft Florals"
+      "description": "Peach Petal is a rare one - a natural Red Gesha from Felipe Arcila's Jardines del Encanto. Soft ripe peach opens the cup, poached pear follows, and bergamot brings a lifted citrus elegance. Gentle florals linger on the finish.\n\nRed Gesha is recognised for elegant florals, refined acidity and complex fruit. After harvest, whole cherries pass through a short aerobic fermentation and a controlled anaerobic rest below 22\u00b0C, before drying slowly on raised beds.\n\nWe've roasted it for filter, and offer it in 100g pouches alongside the standard sizes. Silky, expressive, remarkably clear.",
+      "flavour_notes": "Poached Pear, Bergamot, Florals, Citrus"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4097,7 +4002,7 @@
       "price_min_nzd": 42.99,
       "price_max_nzd": 161.99,
       "updated_at": "2026-10-20T10:39:15+13:00",
-      "scraped_at": "2026-11-15T22:58:51+00:00",
+      "scraped_at": "2026-11-17T02:03:52+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4110,11 +4015,11 @@
         }
       ],
       "origin_country": "Colombia",
-      "producer": "El Indio Smallholders",
+      "producer": "unknown",
       "process": "Natural",
       "decaf": false,
-      "description": "Tasting notes: Passionfruit, Jaffa, Raspberry, Cacao Nibs\n\nProducer El Indio Smallholders\n\nFarm Smallholder farms, El Indio\n\nRegion Planadas, Tolima\n\nVariety Caturra\n\nAltitude 1,500\u20132,150 MASL\n\nProcess Natural\n\nRoast Light\n\nRemember Grape Escape? Yep, it was this coffee. This time though it's back with lots of passion.\n\nTangy passionfruit up front, then juicy red berries, the orange-chocolate sweetness of a Jaffa and a cacao nib finish.\n\nIt comes from smallholder farmers around El Indio in Planadas, Tolima. They nailed the natural process despite a wet harvest. The cherries dried slowly on raised beds and got checked four times a day.\n\nWe roasted this flavour BOMB for filter but we are currently drinking it whichever way thew wind blows. us. It's exceptional in all ways.\n\nIf you pull it as espresso, try going super coarse, 19g in and 40g out in 9-12 seconds (turbo shot). It will not look like a normal espresso shot but it will taste delicious.",
-      "flavour_notes": "Passionfruit, Jaffa, Raspberry, Cacao Nibs"
+      "description": "Remember Grape Escape? Yep, it was this coffee. This time though it's back with lots of passion.\n\nTangy passionfruit up front, then juicy red berries, the orange-chocolate sweetness of a Jaffa and a cacao nib finish.\n\nIt comes from smallholder farmers around El Indio in Planadas, Tolima. They nailed the natural process despite a wet harvest. The cherries dried slowly on raised beds and got checked four times a day.\n\nWe roasted this flavour BOMB for filter but we are currently drinking it whichever way thew wind blows. us. It's exceptional in all ways.\n\nIf you pull it as espresso, try going super coarse, 19g in and 40g out in 9-12 seconds (turbo shot). It will not look like a normal espresso shot but it will taste delicious.",
+      "flavour_notes": "Passionfruit, Chocolate, Orange, Cacao"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4127,8 +4032,8 @@
       "price_min_nzd": 81.99,
       "price_max_nzd": 356.99,
       "updated_at": "2026-11-10T11:21:18+13:00",
-      "scraped_at": "2026-11-15T22:58:51+00:00",
-      "varietal": "Yellow Sudan Rume",
+      "scraped_at": "2026-11-17T02:03:52+00:00",
+      "varietal": "Sudan Rume",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4140,11 +4045,11 @@
         }
       ],
       "origin_country": "Colombia",
-      "producer": "Arturo Arango",
+      "producer": "unknown",
       "process": "Natural",
       "decaf": false,
-      "description": "Tasting notes: Mango Smoothie, Vanilla Cream, Starfruit, Lemon\n\nProducer Arturo Arango\n\nFarm El Para\u00edso\n\nRegion Quind\u00edo\n\nVariety Yellow Sudan Rume\n\nAltitude 1,300\u20131,450 MASL\n\nProcess Natural\n\nRoast Medium-Light\n\nSome coffees are born to stand out. Others are born to dance. This one apparently decided to do both, and we're not about to stop it.\n\nIntroducing Mango Arango, our latest tropical troublemaker from Arturo Arango at El Para\u00edso in Colombia. And yes, Mango Arango from Arango, makes me want to Tango Tango. We couldn't have planned that better if we'd tried. Sound familiar? You might remember a certain Pango Pango from our past. No relation (that we're aware of), but clearly we've got a thing for tropical fruit and questionable rhyming skills.\n\nBehind the catchy name is a seriously impressive coffee. Grown in the volcanic soils of Quind\u00edo, this rare Yellow Sudan Rume is notoriously fussy, producing small yields and demanding plenty of attention. A bit of a diva, really. But when it delivers, it absolutely delivers.\n\nArturo and his team handpick the ripest cherries before 45 hours of aerobic fermentation and around 10 days drying on raised beds. A lot of effort for something most of us will drink before 9am, but who's complaining?\n\nThe result? A tropical dance party in your mouth. Think juicy Mango Smoothie taking centre stage, silky Vanilla Cream smoothing out the moves, exotic Starfruit bringing the flair, and a zesty kick of Lemon keeping everyone on their toes.\n\nSweet, creamy, vibrant and ridiculously drinkable. Like a tropical holiday without the overpriced flights, questionable dance moves or emails to answer.\n\nMango Arango. From Arango, lets Tango. No dance lessons required.",
-      "flavour_notes": "Mango Smoothie, Vanilla Cream, Starfruit, Lemon"
+      "description": "Some coffees are born to stand out. Others are born to dance. This one apparently decided to do both, and we're not about to stop it.\n\nIntroducing Mango Arango, our latest tropical troublemaker from Arturo Arango at El Para\u00edso in Colombia. And yes, Mango Arango from Arango, makes me want to Tango Tango. We couldn't have planned that better if we'd tried. Sound familiar? You might remember a certain Pango Pango from our past. No relation (that we're aware of), but clearly we've got a thing for tropical fruit and questionable rhyming skills.\n\nBehind the catchy name is a seriously impressive coffee. Grown in the volcanic soils of Quind\u00edo, this rare Yellow Sudan Rume is notoriously fussy, producing small yields and demanding plenty of attention. A bit of a diva, really. But when it delivers, it absolutely delivers.\n\nArturo and his team handpick the ripest cherries before 45 hours of aerobic fermentation and around 10 days drying on raised beds. A lot of effort for something most of us will drink before 9am, but who's complaining?\n\nThe result? A tropical dance party in your mouth. Think juicy Mango Smoothie taking centre stage, silky Vanilla Cream smoothing out the moves, exotic Starfruit bringing the flair, and a zesty kick of Lemon keeping everyone on their toes.\n\nSweet, creamy, vibrant and ridiculously drinkable. Like a tropical holiday without the overpriced flights, questionable dance moves or emails to answer.\n\nMango Arango. From Arango, lets Tango. No dance lessons required.",
+      "flavour_notes": "Yellow Sudan Rume, Tropical Fruit, Cherries, Vanilla"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4157,7 +4062,7 @@
       "price_min_nzd": 23.0,
       "price_max_nzd": 101.99,
       "updated_at": "2026-07-01T10:09:25+12:00",
-      "scraped_at": "2026-11-15T22:59:14+00:00",
+      "scraped_at": "2026-11-17T02:04:23+00:00",
       "varietal": "Red Bourbon",
       "size_prices": [
         {
@@ -4170,11 +4075,11 @@
         }
       ],
       "origin_country": "Brazil",
-      "producer": "Campos Altos Smallholders",
+      "producer": "unknown",
       "process": "Natural",
       "decaf": false,
-      "description": "Tasting notes: Vanilla Syrup, Nougat, Raw Honey, Chocolate Milk\n\nProducer Campos Altos Smallholders\n\nFarm Campos Altos Smallholders\n\nRegion Campos Altos\n\nVariety Red Bourbon\n\nAltitude 1,000\u20131,050 masl\n\nProcess Natural\n\nRoast Medium\n\nComfort in a cup. A natural Red Bourbon from the Campos Altos smallholders, high in Brazil's Cerrado Mineiro \u2014 smooth, sweet and endlessly drinkable. Hand-picked and slow-dried in the fruit, it pours rich layers of vanilla syrup and creamy nougat, golden raw honey and a silky chocolate-milk finish. Part of Espresso Program Vol. 1 \u2014 single origins roasted for espresso.",
-      "flavour_notes": "Vanilla Syrup, Nougat, Raw Honey, Chocolate Milk"
+      "description": "Comfort in a cup. A natural Red Bourbon from the Campos Altos smallholders, high in Brazil's Cerrado Mineiro - smooth, sweet and endlessly drinkable. Hand-picked and slow-dried in the fruit, it pours rich layers of vanilla syrup and creamy nougat, golden raw honey and a silky chocolate-milk finish. Part of Espresso Program Vol. 1 - single origins roasted for espresso.",
+      "flavour_notes": "Chocolate-Milk, Vanilla Syrup, Creamy Nougat, Raw Honey"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4187,7 +4092,7 @@
       "price_min_nzd": 32.99,
       "price_max_nzd": 122.99,
       "updated_at": "2026-09-08T10:35:21+12:00",
-      "scraped_at": "2026-11-15T22:59:14+00:00",
+      "scraped_at": "2026-11-17T02:04:23+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4200,11 +4105,11 @@
         }
       ],
       "origin_country": "Colombia",
-      "producer": "Selected regional producers",
-      "process": "Sugar Cane Decaf",
+      "producer": "unknown",
+      "process": "Decaf",
       "decaf": true,
-      "description": "Tasting notes: Dark Chocolate, Brown Sugar, Honeycomb, Malt Biscuit\n\nProducer Selected regional producers\n\nFarm Samaria\n\nRegion Bel\u00e9n de Umbr\u00eda, Risaralda\n\nVariety Caturra\n\nAltitude 1,500\u20131,800 masl\n\nProcess Sugar Cane Decaf (EA)\n\nRoast Medium\n\nGolden Hour is our sugarcane decaf from Bel\u00e9n de Umbr\u00eda in Colombia's renowned Risaralda coffee-growing region, where the Samaria farm \u2014 in the same family for four generations \u2014 anchors a lot of carefully selected Caturra from regional producers at 1,500\u20131,800 metres.\n\nAfter harvest, the cherries undergo a traditional washed process with a 12-hour fermentation before being carefully patio-dried. The coffee is then transported to Descafecol in Tolima and naturally decaffeinated using the renowned sugarcane (EA) process \u2014 gently removing caffeine while preserving the coffee's sweetness, structure and clarity.\n\nGolden Hour delivers everything we look for in a comforting espresso: notes of dark chocolate, brown sugar and honeycomb, supported by a smooth body, gentle sweetness and a clean, malt-biscuit finish. An espresso that doesn't ask you to compromise \u2014 whether it's your first cup of the morning or your last of the evening.",
-      "flavour_notes": "Dark Chocolate, Brown Sugar, Honeycomb, Malt Biscuit"
+      "description": "Golden Hour is our sugarcane decaf from Bel\u00e9n de Umbr\u00eda in Colombia's renowned Risaralda coffee-growing region, where the Samaria farm - in the same family for four generations - anchors a lot of carefully selected Caturra from regional producers at 1,500-1,800 metres.\n\nAfter harvest, the cherries undergo a traditional washed process with a 12-hour fermentation before being carefully patio-dried. The coffee is then transported to Descafecol in Tolima and naturally decaffeinated using the renowned sugarcane (EA) process - gently removing caffeine while preserving the coffee's sweetness, structure and clarity.\n\nGolden Hour delivers everything we look for in a comforting espresso: notes of dark chocolate, brown sugar and honeycomb, supported by a smooth body, gentle sweetness and a clean, malt-biscuit finish. An espresso that doesn't ask you to compromise - whether it's your first cup of the morning or your last of the evening.",
+      "flavour_notes": "Dark Chocolate, Brown Sugar, Honeycomb, Supported By A Smooth Body, Gentle Sweetness, A Clean, Malt-Biscuit Finish"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4217,8 +4122,8 @@
       "price_min_nzd": 19.99,
       "price_max_nzd": 69.99,
       "updated_at": "2025-02-11T17:59:21+13:00",
-      "scraped_at": "2026-11-15T22:59:14+00:00",
-      "varietal": "Acai\u00e1, Castillo",
+      "scraped_at": "2026-11-17T02:04:23+00:00",
+      "varietal": "unknown",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4230,11 +4135,11 @@
         }
       ],
       "origin_country": "Colombia, Brazil",
-      "producer": "Multi-origin blend",
-      "process": "Washed, Natural",
+      "producer": "unknown",
+      "process": "unknown",
       "decaf": false,
-      "description": "Tasting notes: Milk Chocolate, Hazelnut, Toffee, Brown Sugar\n\nProducer Multi-origin blend\n\nFarm Cerrado + Tolima smallholders\n\nRegion South America\n\nVariety Mixed (Acai\u00e1, Castillo)\n\nAltitude 1,100\u20131,800 masl\n\nProcess Natural + Washed\n\nRoast Medium\n\nOur Studio Blend is a blend of two coffees from Brazil and Colombia. It's been with us right from the start. It's like having a block of sweet chocolate with some hazelnut when drunk with milk. As black coffee is beautifully sweet and rich.\n\nIt delivers for all espresso methods and can be found slinging over cafe counters through our wholesale accounts. It's the coffee you didn't know you needed but will never put down.",
-      "flavour_notes": "Milk Chocolate, Hazelnut, Toffee, Brown Sugar"
+      "description": "Our Studio Blend is a blend of two coffees from Brazil and Colombia. It's been with us right from the start. It's like having a block of sweet chocolate with some hazelnut when drunk with milk. As black coffee is beautifully sweet and rich.\n\nIt delivers for all espresso methods and can be found slinging over cafe counters through our wholesale accounts. It's the coffee you didn't know you needed but will never put down.",
+      "flavour_notes": "Chocolate, Hazelnut"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4247,8 +4152,8 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 119.99,
       "updated_at": "2026-07-01T10:09:32+12:00",
-      "scraped_at": "2026-11-15T22:59:14+00:00",
-      "varietal": "Ethiopian Heirloom",
+      "scraped_at": "2026-11-17T02:04:23+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4260,11 +4165,11 @@
         }
       ],
       "origin_country": "Ethiopia",
-      "producer": "Konga Smallholders",
+      "producer": "unknown",
       "process": "Natural",
       "decaf": false,
-      "description": "Tasting notes: Raspberry, Rhubarb, Currants, Irish Cream\n\nProducer Konga Smallholders\n\nFarm Smallholder farms, Konga\n\nRegion Konga, Gedeo Zone\n\nVariety Ethiopian Heirloom\n\nAltitude 1,900\u20132,100 masl\n\nProcess Natural\n\nRoast Medium-Light\n\nSealed with a kiss.\n\nRaspberry Kiss is a natural-process Grade 1 heirloom grown by smallholders around Konga, high in Ethiopia's Gedeo highlands. Expect a nip of Irish whiskey, juicy raspberry, a twist of rhubarb and a deep hit of dark currants \u2014 slow-dried on raised beds, roasted for espresso, and brought to us by Cofinet.",
-      "flavour_notes": "Raspberry, Rhubarb, Currants, Irish Cream"
+      "description": "Sealed with a kiss.\n\nRaspberry Kiss is a natural-process Grade 1 heirloom grown by smallholders around Konga, high in Ethiopia's Gedeo highlands. Expect a nip of Irish whiskey, juicy raspberry, a twist of rhubarb and a deep hit of dark currants - slow-dried on raised beds, roasted for espresso, and brought to us by Cofinet.",
+      "flavour_notes": "Nip Of Irish Whiskey, Juicy Raspberry, A Twist Of Rhubarb, A Deep Hit Of Dark Currants - Slow-Dried On Raised Beds"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4277,8 +4182,8 @@
       "price_min_nzd": 25.99,
       "price_max_nzd": 99.99,
       "updated_at": "2026-10-06T10:25:29+13:00",
-      "scraped_at": "2026-11-15T22:59:14+00:00",
-      "varietal": "74110, 74112, 74165",
+      "scraped_at": "2026-11-17T02:04:23+00:00",
+      "varietal": "unknown",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4290,11 +4195,11 @@
         }
       ],
       "origin_country": "Ethiopia",
-      "producer": "Muje Mesina Smallholders",
+      "producer": "Muje Mesina",
       "process": "Natural",
       "decaf": false,
-      "description": "Tasting notes: Apricot Jam, Pear, Almond\n\nProducer Muje Mesina Smallholders\n\nFarm Smallholder farms, Muje Mesina\n\nRegion East Guji, Oromia\n\nVariety 74110, 74112, 74165\n\nAltitude 1,980\u20132,200 masl\n\nProcess Natural (Grade 1)\n\nRoast Medium-Light\n\nApricot jam, soft pear and a rounded almond finish. Like a fruit-filled almond tart.\n\nA Grade 1 natural from Muje Mesina washing station in East Guji, where smallholder families grow coffee in their backyards at 1,980\u20132,200 metres. The cherries are floated, then dried whole on shaded raised beds for 12 to 15 days.\n\nRoasted for espresso as part of our Espresso Program. Jammy and bright as a short black, soft and nutty through milk.",
-      "flavour_notes": "Apricot Jam, Pear, Almond"
+      "description": "Apricot jam, soft pear and a rounded almond finish. Like a fruit-filled almond tart.\n\nA Grade 1 natural from Muje Mesina washing station in East Guji, where smallholder families grow coffee in their backyards at 1,980-2,200 metres. The cherries are floated, then dried whole on shaded raised beds for 12 to 15 days.\n\nRoasted for espresso as part of our Espresso Program. Jammy and bright as a short black, soft and nutty through milk.",
+      "flavour_notes": "Apricot, Almond"
     },
     {
       "source": "slowcoffee.co.nz",
@@ -4307,8 +4212,8 @@
       "price_min_nzd": 25.99,
       "price_max_nzd": 99.99,
       "updated_at": "2026-10-06T10:25:31+13:00",
-      "scraped_at": "2026-11-15T22:59:14+00:00",
-      "varietal": "Ethiopian Heirloom",
+      "scraped_at": "2026-11-17T02:04:23+00:00",
+      "varietal": "Heirloom",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4320,11 +4225,11 @@
         }
       ],
       "origin_country": "Ethiopia",
-      "producer": "Hube Smallholders",
+      "producer": "unknown",
       "process": "Natural",
       "decaf": false,
-      "description": "Tasting notes: Chocolate Strawberry, Hot Cross Buns, Crispy M&Ms\n\nProducer Hube Smallholders\n\nFarm Smallholder farms, Hube\n\nRegion Sidamo, Great Rift Valley\n\nVariety Ethiopian Heirloom\n\nAltitude 1,800\u20132,036 masl\n\nProcess Natural (Grade 1)\n\nRoast Medium-Light\n\nChocolate-dipped strawberry, a warm hot cross bun and the crunch of Crispy M&Ms. The pick 'n' mix counter, then the bakery on the way home.\n\nA Grade 1 natural from more than 500 family farms around Hube, in Ethiopia's Sidamo region. Cherries are handpicked and dried whole on raised beds, turned by hand until they reach 11% moisture.\n\nRoasted for espresso as part of our Espresso Program. Rich and playful as a shot, chocolate-milk sweet in a flat white.",
-      "flavour_notes": "Chocolate Strawberry, Hot Cross Buns, Crispy M&Ms"
+      "description": "Chocolate-dipped strawberry, a warm hot cross bun and the crunch of Crispy M&Ms. The pick 'n' mix counter, then the bakery on the way home.\n\nA Grade 1 natural from more than 500 family farms around Hube, in Ethiopia's Sidamo region. Cherries are handpicked and dried whole on raised beds, turned by hand until they reach 11% moisture.\n\nRoasted for espresso as part of our Espresso Program. Rich and playful as a shot, chocolate-milk sweet in a flat white.",
+      "flavour_notes": "Chocolate-Milk, Strawberry, Chocolate"
     },
     {
       "source": "wolfcoffee.co.nz",
@@ -4337,7 +4242,7 @@
       "price_min_nzd": 66.0,
       "price_max_nzd": 66.0,
       "updated_at": "2026-11-11T16:00:21+13:00",
-      "scraped_at": "2026-11-15T22:59:42+00:00",
+      "scraped_at": "2026-11-17T02:04:49+00:00",
       "varietal": "Castillo, Caturra, Bourbon",
       "size_prices": [],
       "origin_country": "Colombia, Brazil",
@@ -4358,7 +4263,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
       "updated_at": "2026-11-11T16:00:14+13:00",
-      "scraped_at": "2026-11-15T22:59:42+00:00",
+      "scraped_at": "2026-11-17T02:04:49+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4370,7 +4275,7 @@
       "producer": "La Leona",
       "process": "Anaerobic Washed",
       "decaf": false,
-      "description": "Origin: Colombia\n\nRegion: Quindio\n\nVarietal: Caturra\n\nProcess: 30-Hour Anaerobic Washed\n\nAltitude: 1450-1500 MASL\n\nTasting Notes: Peanut Brittle, Poached Pear, Butterscotch\n\nAbout the Farmer\n\nLuz Helena has grown coffee for 20 years on Maracay, her 8-hectare farm at 1,450 m.a.s.l. in Armenia, Quind\u00edo, where she grew up. Her passion started at home, listening to her husband Jairo Arcila talk coffee as a farm worker and dry mill manager. With his support (and his bug-fighting know-how, which she needed early on), she learned to grow high-quality, ripe cherries. With Cofinet\u2019s support, she now focuses on specialty coffee, with her cherries processed at La Pradera. Away from the trees, she spends time with friends and volunteers with local support groups for vulnerable people.\n\nAbout the Process\n\nOnly perfectly ripe cherries are picked, bagged in GrainPro and taken to La Pradera, where they\u2019re hand-sorted and floated to remove anything underripe or defective. A 30-hour underwater fermentation lets sugars and organic acids break down gradually, building complexity and a bright, lively balance of sweetness and acidity. The cherries are then pulped, washed, and dried on raised beds (or in the Elbas station for bigger lots) to a moisture content of 9.5-11%. Wash water is recycled to float the next batches of cherries. Wastewater is filtered through a series of tanks and vetiver grass beds, so no contaminated water leaves the processing centre.\n\nAbout the Varietal\n\nCaturra is a spontaneous Bourbon mutation from Brazil, Caturra gets its name from the Guarani word for \u201csmall\u201d. Its short, dense frame is easy to harvest and lets farmers plant more trees per hectare. It thrives at 800-1,600 m.a.s.l., especially up high, with notes of citrus, red berries, stone fruit and caramel. Once nearly half of Colombia\u2019s coffee, it\u2019s vulnerable to leaf rust, so after 2008 billions of trees were swapped for Castillo, a rust-resistant variety with Caturra in its family tree.\n\nBrewing Recipe - V60 Recipe\n\nAs with all recipes, this is a guide. Adjust to your taste. Experiment. Enjoy.\n\nRatio: 1:16 - 15g coffee to 240g water\n\nWater Temperature: 89 degrees\n\nGrind: Medium Coarse\n\nBrew Time: 2:20-2:40\n\n0:00 - Pour 45g\n\n0:45 - Pour 75g\n\n1:15 - Pour 60g\n\n1:45 - Pour 60g\n\n2:30~ Drawdown\n\nSharing your brews on IG? Tag us @wolfcoffeeroasters",
+      "description": "Origin: Colombia\n\nRegion: Quindio\n\nVarietal: Caturra\n\nProcess: 30-Hour Anaerobic Washed\n\nAltitude: 1450-1500 MASL\n\nTasting Notes: Peanut Brittle, Poached Pear, Butterscotch\n\nAbout the Farmer\n\nLuz Helena has grown coffee for 20 years on Maracay, her 8-hectare farm at 1,450 m.a.s.l. in Armenia, Quind\u00edo, where she grew up. Her passion started at home, listening to her husband Jairo Arcila talk coffee as a farm worker and dry mill manager. With his support (and his bug-fighting know-how, which she needed early on), she learned to grow high-quality, ripe cherries. With Cofinet\u2019s support, she now focuses on specialty coffee, with her cherries processed at La Pradera. Away from the trees, she spends time with friends and volunteers with local support groups for vulnerable people.\n\nAbout the Process\n\nOnly perfectly ripe cherries are picked, bagged in GrainPro and taken to La Pradera, where they\u2019re hand-sorted and floated to remove anything underripe or defective. A 30-hour underwater fermentation lets sugars and organic acids break down gradually, building complexity and a bright, lively balance of sweetness and acidity. The cherries are then pulped, washed, and dried on raised beds (or in the Elbas station for bigger lots) to a moisture content of 9.5-11%. Wash water is recycled to float the next batches of cherries. Wastewater is filtered through a series of tanks and vetiver grass beds, so no contaminated water leaves the processing centre.\n\nAbout the Varietal\n\nCaturra is a spontaneous Bourbon mutation from Brazil, Caturra gets its name from the Guarani word for \u201csmall\u201d. Its short, dense frame is easy to harvest and lets farmers plant more trees per hectare. It thrives at 800-1,600 m.a.s.l., especially up high, with notes of citrus, red berries, stone fruit and caramel. Once nearly half of Colombia\u2019s coffee, it\u2019s vulnerable to leaf rust, so after 2008 billions of trees were swapped for Castillo, a rust-resistant variety with Caturra in its family tree.\n\nBrewing Recipe - V60 Recipe\n\nAs with all recipes, this is a guide. Adjust to your taste. Experiment. Enjoy.\n\nRatio: 1:16 - 15g coffee to 240g water\n\nWater Temperature: 93 degrees\n\nGrind: Medium Coarse\n\nBrew Time: 2:20-2:40\n\n0:00 - Pour 45g\n\n0:45 - Pour 75g\n\n1:15 - Pour 60g\n\n1:45 - Pour 60g\n\n2:30~ Drawdown\n\nSharing your brews on IG? Tag us @wolfcoffeeroasters",
       "flavour_notes": "Peanut Brittle, Poached Pear, Butterscotch"
     },
     {
@@ -4384,7 +4289,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
       "updated_at": "2026-11-11T16:00:06+13:00",
-      "scraped_at": "2026-11-15T22:59:42+00:00",
+      "scraped_at": "2026-11-17T02:04:49+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4396,7 +4301,7 @@
       "producer": "La Leona",
       "process": "Natural",
       "decaf": false,
-      "description": "Origin: Colombia\n\nRegion: Quindio\n\nVarietal: Caturra\n\nProcess: 45-Hour Aerobic Natural\n\nAltitude: 1450-1500 MASL\n\nTasting Notes: Summer Fruits, Raspberry Liquorice, Macadamia\n\nAbout the Farmer\n\nLuz Helena has grown coffee for 20 years on Maracay, her 8-hectare farm at 1,450 m.a.s.l. in Armenia, Quind\u00edo, where she grew up. Her passion started at home, listening to her husband Jairo Arcila talk coffee as a farm worker and dry mill manager. With his support (and his bug-fighting know-how, which she needed early on), she learned to grow high-quality, ripe cherries. With Cofinet\u2019s support, she now focuses on specialty coffee, with her cherries processed at La Pradera. Away from the trees, she spends time with friends and volunteers with local support groups for vulnerable people.\n\nAbout the Process\n\nOnly perfectly ripe cherries are picked, then bagged in GrainPro and taken to the La Pradera processing centre. There they\u2019re hand-sorted and floated to remove anything underripe or defective. The cherries go through a 45-hour aerobic fermentation to bring out rich, origin-driven flavour, then dry slowly for 8-12 days (on raised beds or in the elba drying station, depending on lot size), turned regularly for even drying. The result is a fruity, sweet, full-bodied cup, dried to a moisture content of 9.5-11%.\n\nAbout the Varietal\n\nCaturra is a spontaneous Bourbon mutation from Brazil, Caturra gets its name from the Guarani word for \u201csmall\u201d. Its short, dense frame is easy to harvest and lets farmers plant more trees per hectare. It thrives at 800-1,600 m.a.s.l., especially up high, with notes of citrus, red berries, stone fruit and caramel. Once nearly half of Colombia\u2019s coffee, it\u2019s vulnerable to leaf rust, so after 2008 billions of trees were swapped for Castillo, a rust-resistant variety with Caturra in its family tree.\n\nBrewing Recipe - V60 Recipe\n\nAs with all recipes, this is a guide. Adjust to your taste. Experiment. Enjoy.\n\nRatio: 1:16 - 15g coffee to 240g water\n\nWater Temperature: 89 degrees\n\nGrind: Medium Coarse\n\nBrew Time: 2:20-2:40\n\n0:00 - Pour 45g\n\n0:45 - Pour 75g\n\n1:15 - Pour 60g\n\n1:45 - Pour 60g\n\n2:30~ Drawdown\n\nSharing your brews on IG? Tag us @wolfcoffeeroasters",
+      "description": "Origin: Colombia\n\nRegion: Quindio\n\nVarietal: Caturra\n\nProcess: 45-Hour Aerobic Natural\n\nAltitude: 1450-1500 MASL\n\nTasting Notes: Summer Fruits, Raspberry Liquorice, Macadamia\n\nAbout the Farmer\n\nLuz Helena has grown coffee for 20 years on Maracay, her 8-hectare farm at 1,450 m.a.s.l. in Armenia, Quind\u00edo, where she grew up. Her passion started at home, listening to her husband Jairo Arcila talk coffee as a farm worker and dry mill manager. With his support (and his bug-fighting know-how, which she needed early on), she learned to grow high-quality, ripe cherries. With Cofinet\u2019s support, she now focuses on specialty coffee, with her cherries processed at La Pradera. Away from the trees, she spends time with friends and volunteers with local support groups for vulnerable people.\n\nAbout the Process\n\nOnly perfectly ripe cherries are picked, then bagged in GrainPro and taken to the La Pradera processing centre. There they\u2019re hand-sorted and floated to remove anything underripe or defective. The cherries go through a 45-hour aerobic fermentation to bring out rich, origin-driven flavour, then dry slowly for 8-12 days (on raised beds or in the elba drying station, depending on lot size), turned regularly for even drying. The result is a fruity, sweet, full-bodied cup, dried to a moisture content of 9.5-11%.\n\nAbout the Varietal\n\nCaturra is a spontaneous Bourbon mutation from Brazil, Caturra gets its name from the Guarani word for \u201csmall\u201d. Its short, dense frame is easy to harvest and lets farmers plant more trees per hectare. It thrives at 800-1,600 m.a.s.l., especially up high, with notes of citrus, red berries, stone fruit and caramel. Once nearly half of Colombia\u2019s coffee, it\u2019s vulnerable to leaf rust, so after 2008 billions of trees were swapped for Castillo, a rust-resistant variety with Caturra in its family tree.\n\nBrewing Recipe - V60 Recipe\n\nAs with all recipes, this is a guide. Adjust to your taste. Experiment. Enjoy.\n\nRatio: 1:16 - 15g coffee to 240g water\n\nWater Temperature: 91 degrees\n\nGrind: Medium Coarse\n\nBrew Time: 2:20-2:40\n\n0:00 - Pour 50g\n\n0:45 - Pour 50g\n\n1:15 - Pour 50g\n\n1:45 - Pour 50g\n\n2:15 - Pour 50g\n\n3:00~ Drawdown\n\nSharing your brews on IG? Tag us @wolfcoffeeroasters",
       "flavour_notes": "Summer Fruits, Raspberry Liquorice, Macadamia"
     },
     {
@@ -4410,7 +4315,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
       "updated_at": "2026-05-27T19:15:37+12:00",
-      "scraped_at": "2026-11-15T22:59:42+00:00",
+      "scraped_at": "2026-11-17T02:04:49+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4423,11 +4328,11 @@
         }
       ],
       "origin_country": "unknown",
-      "producer": "Hand-picked by our Head Roaster",
-      "process": "Washed",
+      "producer": "3 Month Roaster's Choice Subscription",
+      "process": "Decaf",
       "decaf": false,
       "description": "Next shipping date: 10/12\n\nSubscription Details:\n\nOrders will be shipped on the second Thursday of each month after being freshly roasted. Make sure you are signed up before the 7th to get included in that month's order. When ordering, you\u2019ll be charged today for the first order, then going forward on the 7th for the 2 months after.\n\nHand-picked by our Head Roaster and delivered to your door over the next three months. A well-deserved treat for yourself, or the perfect gift for that special person in your life. Choose how many bags you want and then let us know where to send the coffee!\n\nRoasted right here in Arrowtown, Aotearoa.\nFree delivery on all subscriptions.\n\nEvery now and then, we may want to share something extra special. This may result in you receiving a bag of 100-125g, of course, it'll still be of equal or higher value.",
-      "flavour_notes": "Flavor Notes, Fruits, Spices, Chocolate, Nuts, Caramel, Citrus, Herbal, Moldy"
+      "flavour_notes": "unknown"
     },
     {
       "source": "wolfcoffee.co.nz",
@@ -4440,8 +4345,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
       "updated_at": "2026-05-27T19:15:59+12:00",
-      "scraped_at": "2026-11-15T22:59:42+00:00",
-      "varietal": "unknown",
+      "scraped_at": "2026-11-17T02:04:49+00:00",
+      "varietal": "Darkberry Mandarin Fig",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4454,7 +4359,7 @@
       ],
       "origin_country": "unknown",
       "producer": "Recurring Roaster",
-      "process": "Natural",
+      "process": "Washed",
       "decaf": false,
       "description": "Next shipping date: 10/12\n\nSubscription Details:\n\nOrders will be shipped on the second Thursday of each month after being freshly roasted. Make sure you are signed up before the 7th to get included in that month's order. When ordering, you\u2019ll be charged today for the first order, then going forward on the 7th.\n\nHand-picked by our Head Roaster and delivered to your door each month. Choose how many bags you want and then let us do the hard work of choosing the coffee.\n\nRoasted right here in Arrowtown, Aotearoa.\nFree delivery on all subscriptions.\n\nEvery now and then, we may want to share something extra special. This may result in you receiving a bag of 100-125g, of course, it'll still be of equal or higher value.",
       "flavour_notes": "Mandarin, Fig"
@@ -4470,7 +4375,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 108.0,
       "updated_at": "2025-10-30T10:07:28+13:00",
-      "scraped_at": "2026-11-15T22:59:42+00:00",
+      "scraped_at": "2026-11-17T02:04:49+00:00",
       "varietal": "Caturra, Castillo",
       "size_prices": [
         {
@@ -4500,7 +4405,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
       "updated_at": "2019-10-29T09:26:57+13:00",
-      "scraped_at": "2026-11-15T23:00:31+00:00",
+      "scraped_at": "2026-11-17T02:05:34+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -4534,7 +4439,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
       "updated_at": "2024-03-26T14:19:38+13:00",
-      "scraped_at": "2026-11-15T23:00:31+00:00",
+      "scraped_at": "2026-11-17T02:05:34+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -4565,20 +4470,20 @@
       "handle": "morefm-koha-coffee",
       "product_url": "https://wolfcoffee.co.nz/products/morefm-koha-coffee",
       "available": true,
-      "price_min_nzd": 25.0,
-      "price_max_nzd": 25.0,
+      "price_min_nzd": 22.0,
+      "price_max_nzd": 22.0,
       "updated_at": "2026-03-09T06:53:57+13:00",
-      "scraped_at": "2026-11-15T23:00:31+00:00",
+      "scraped_at": "2026-11-17T02:05:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
           "size_grams": 250.0,
-          "price_nzd": 25.0
+          "price_nzd": 22.0
         }
       ],
       "origin_country": "Colombia, Brazil",
-      "producer": "unknown",
-      "process": "unknown",
+      "producer": "MoreFM",
+      "process": "Washed",
       "decaf": false,
       "description": "COLOMBIA POPAYAN RESERVE\n\nPopayan Reserve is located in the region of Cauca at 1700 MASL. The region's topography is perfect to grow exceptional coffee. Sheltered by the Andes mountain range, which helps generate homogeneous climatic and altitudinal characteristics. The result is a balanced profile with floral and caramel notes.\n\nThe Colombian component contributes sweetness to our blend with rich chocolate and caramel flavours.\n\nBRAZIL SAMBA RESERVE\n\nSamba Reserve is an exceptional blend of natural processed coffees. Grown within 1000-1300 MASL and produced by carefully selected growers. Farm-level traceability from Carmo de Minas region, which is in the south of Minas Gerais.\n\nThis coffee was carefully picked to select only the ripest cherries. The cherries then underwent a rigorous sorting process using a Lavador machine. The coffee is then sun-dried on patios for three days before being finished in mechanical dryers for 72 hours.\n\nThe Brazilian component contributes the full body and richness to our blend.\n\nWe roast both regions separately, then manually combine our specific ratios post-roast.\n\nIntroducing MoreFM's Koha Coffee, giving back to your community with every sip!\n\nWhen you purchase this bag of premium coffee beans from Wolf Coffee:\n\n$10 from every bag sold goes to Queenstown/Arrowtown Fire Department.\n\nRaising funds to support the Brigades and their volunteers who dedicate their own time to respond to a variety of emergencies and serve this community.\n\nThis is a More FM and Wolf Coffee initiative. Thank you for your support.\n\n*Each bag also sports a custom label for the cause designed by our packmates over at MoreFM.\n\nTo find out more about MoreFM's Koha Coffee campaign click the link below:\n\nhttps://www.rova.nz/events/more-fm-koha-coffee",
       "flavour_notes": "With Rich Chocolate, Caramel"
@@ -4594,7 +4499,7 @@
       "price_min_nzd": 60.0,
       "price_max_nzd": 216.0,
       "updated_at": "2026-11-09T15:32:23+13:00",
-      "scraped_at": "2026-11-15T23:00:31+00:00",
+      "scraped_at": "2026-11-17T02:05:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4640,7 +4545,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
       "updated_at": "2026-03-12T13:38:59+13:00",
-      "scraped_at": "2026-11-15T23:00:31+00:00",
+      "scraped_at": "2026-11-17T02:05:34+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Colombia, Ethiopia, Brazil",
