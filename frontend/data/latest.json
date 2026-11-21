@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T00:07:27+00:00",
+  "generated_at": "2026-11-21T23:18:26+00:00",
   "count": 151,
   "items": [
     {
@@ -13,7 +13,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 26.0,
       "updated_at": "2026-11-17T16:09:47+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -39,7 +39,7 @@
       "price_min_nzd": 50.0,
       "price_max_nzd": 50.0,
       "updated_at": "2026-08-11T14:26:41+12:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Sudan Rume",
       "size_prices": [
         {
@@ -65,7 +65,7 @@
       "price_min_nzd": 42.0,
       "price_max_nzd": 42.0,
       "updated_at": "2026-11-20T11:22:24+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -91,7 +91,7 @@
       "price_min_nzd": 32.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-11-06T09:38:57+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -121,7 +121,7 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-09-15T11:46:06+12:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -147,7 +147,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
       "updated_at": "2026-10-08T11:00:56+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -173,7 +173,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-10-06T15:50:29+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Ruiru 11, SL28, Batian",
       "size_prices": [
         {
@@ -199,8 +199,8 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 45.0,
       "updated_at": "2026-11-09T11:13:59+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
-      "varietal": "Gargari Gutity",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
+      "varietal": "unknown",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -225,7 +225,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
       "updated_at": "2026-11-20T09:42:47+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Landrace",
       "size_prices": [
         {
@@ -251,7 +251,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 26.0,
       "updated_at": "2026-11-16T13:13:00+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -277,7 +277,7 @@
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
       "updated_at": "2026-07-14T11:15:48+12:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -303,7 +303,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-11-13T15:46:53+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Ruiru 11, SL28, SL34, Batian",
       "size_prices": [
         {
@@ -329,7 +329,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 26.0,
       "updated_at": "2026-10-19T11:23:33+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Red Bourbon",
       "size_prices": [
         {
@@ -355,7 +355,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-11-21T12:38:14+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Bourbon",
       "size_prices": [
         {
@@ -381,7 +381,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-10-14T13:46:07+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Ethiopia Landrace",
       "size_prices": [
         {
@@ -407,7 +407,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 26.0,
       "updated_at": "2026-11-18T13:42:48+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -433,7 +433,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
       "updated_at": "2026-11-11T15:10:12+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -459,7 +459,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 38.0,
       "updated_at": "2026-11-16T11:04:45+13:00",
-      "scraped_at": "2026-11-20T23:53:34+00:00",
+      "scraped_at": "2026-11-21T22:58:51+00:00",
       "varietal": "Catua\u00ed",
       "size_prices": [
         {
@@ -485,7 +485,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 70.0,
       "updated_at": "2023-05-04T12:04:49+12:00",
-      "scraped_at": "2026-11-20T23:54:47+00:00",
+      "scraped_at": "2026-11-21T23:00:39+00:00",
       "varietal": "Castillo, Caturra, Bourbon, Typica",
       "size_prices": [
         {
@@ -502,7 +502,7 @@
       "process": "Decaf",
       "decaf": true,
       "description": "This coffee is grown by multiple small-holder farmers around the Popayan region of central Colombia. This coffee has been decaffeinated using the Sugar Cane Ethyl Acetate process. Sugarcane is fermented to create ethyl acetate. The coffee is steamed which opens the pores, soaked in ethyl acetate & water. [ethyl acetate binds with caffeine & removes it]. The beans are then steamed to remove any residual ethyl acetate & then dried to around 11% moisture. Due to the abundance of sugar cane in Colombia, this decaffeination process can be done locally without having to send the green coffee to North America or Europe for processing.\n\nCastillo was developed by CENICAFE [the Colombian coffee research facility] & released in 2005. It was bred from Caturra & Hybrido de Timor. It is highly resistant to disease & is now the most planted cultivar in Colombia. Typica is the oldest variety of Coffea Arabica & the parent of many modern coffee varieties. It can grow up to 5 meters in height. Typica is not particularly productive. Caturra is a mutation of Bourbon discovered in Brasil in 1937. The plant is a dwarf so it can be planted close together resulting in more production per hectare. Caturra has good flavour characteristics but is susceptible to disease.",
-      "flavour_notes": "Fruity, Spicy, Chocolatey"
+      "flavour_notes": "Fruity, Chocolate, Spicy"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -515,7 +515,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2021-11-30T12:57:03+13:00",
-      "scraped_at": "2026-11-20T23:54:47+00:00",
+      "scraped_at": "2026-11-21T23:00:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -545,7 +545,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2023-07-17T15:26:49+12:00",
-      "scraped_at": "2026-11-20T23:54:47+00:00",
+      "scraped_at": "2026-11-21T23:00:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -558,8 +558,8 @@
         }
       ],
       "origin_country": "Colombia",
-      "producer": "Francisco Isidro Pereira",
-      "process": "Washed",
+      "producer": "ASPROTIMAN\u00c1",
+      "process": "Natural",
       "decaf": false,
       "description": "This is our second-best selling espresso blend, it is our darkest [but not dark, oily & roasty] espresso blend.\n\nCurrently it\u2019s a 50:50 blend of Francisco Isidro Pereira from Brasil & ASPROTIMAN\u00c1 from Colombia.\n\nPerfect as a flat white. Dulce is sweet with flavours of milk chocolate & caramel. As a black coffee, you\u2019ll find dark chocolate, brown sugar & roasted almonds.",
       "flavour_notes": "Milk Chocolate, Caramel"
@@ -575,7 +575,7 @@
       "price_min_nzd": 38.0,
       "price_max_nzd": 129.0,
       "updated_at": "2026-11-20T14:54:22+13:00",
-      "scraped_at": "2026-11-20T23:54:47+00:00",
+      "scraped_at": "2026-11-21T23:00:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -605,7 +605,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 95.0,
       "updated_at": "2026-11-16T12:35:18+13:00",
-      "scraped_at": "2026-11-20T23:54:47+00:00",
+      "scraped_at": "2026-11-21T23:00:39+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -635,7 +635,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 88.0,
       "updated_at": "2026-11-12T12:38:11+13:00",
-      "scraped_at": "2026-11-20T23:54:47+00:00",
+      "scraped_at": "2026-11-21T23:00:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -665,7 +665,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 55.0,
       "updated_at": "2023-01-26T08:43:50+13:00",
-      "scraped_at": "2026-11-20T23:54:47+00:00",
+      "scraped_at": "2026-11-21T23:00:39+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -695,7 +695,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 88.0,
       "updated_at": "2026-10-27T10:55:44+13:00",
-      "scraped_at": "2026-11-20T23:54:47+00:00",
+      "scraped_at": "2026-11-21T23:00:39+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -725,7 +725,7 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2020-04-18T13:28:09+12:00",
-      "scraped_at": "2026-11-20T23:55:24+00:00",
+      "scraped_at": "2026-11-21T23:01:32+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -766,11 +766,11 @@
         }
       ],
       "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
+      "producer": "Rocket Coffee",
+      "process": "Decaf",
       "decaf": false,
       "description": "This subscription is for our Rocket Espresso Blend, it's seasonal, changing throughout the year as fresh crop coffee arrives into the country.\n\nThis is for 12 deliveries, choose either 250g, 500g or 1kg, sent weekly, fortnightly or monthly.\n\nFor more information on the current Espresso Blend click here\n\nAll subscriptions include freight.\n\nFor any changes to your subscription or help on coffee brewing of all methods i.e. espresso, plunger etc fire an email through to espresso@rocketcoffee.co.nz",
-      "flavour_notes": "Flavor Notes, Fruits, Spices, Chocolate, Nuts, Caramel, Citrus, Herbal, Woody, Earth, Moldy, Overripe"
+      "flavour_notes": "Flavor Profile"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -783,8 +783,8 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2024-12-09T15:47:56+13:00",
-      "scraped_at": "2026-11-20T23:55:24+00:00",
-      "varietal": "Capoeirinha",
+      "scraped_at": "2026-11-21T23:01:32+00:00",
+      "varietal": "Quy = Capoeirinha",
       "size_prices": [
         {
           "size_grams": 250.0,
@@ -824,11 +824,11 @@
         }
       ],
       "origin_country": "Colombia",
-      "producer": "Bag Label OCR",
+      "producer": "Quy = CAPOEIRINHA",
       "process": "Washed",
       "decaf": false,
       "description": "This subscription is for our Rocket Espresso DULCE, it's seasonal, changing throughout the year as fresh crop coffee arrives into the country.\n\nThis is for 12 deliveries, choose either 250g, 500g or 1kg, sent weekly, fortnightly or monthly.\n\nFor more information on the current Espresso Dulce click here\n\nAll subscriptions include freight.\n\nFor any changes to your subscription or help on coffee brewing of all methods i.e. espresso, plunger etc fire an email through to espresso@rocketcoffee.co.nz",
-      "flavour_notes": "Flavour_Notes: List Of Specific Taste, Flavour Descriptors (E.G. Fruits, Spices, Chocolate)"
+      "flavour_notes": "Flavour Notes, Fruits, Spices, Chocolate"
     },
     {
       "source": "rocketcoffee.co.nz",
@@ -841,7 +841,7 @@
       "price_min_nzd": 213.0,
       "price_max_nzd": 708.0,
       "updated_at": "2022-08-17T11:00:07+12:00",
-      "scraped_at": "2026-11-20T23:55:24+00:00",
+      "scraped_at": "2026-11-21T23:01:32+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -899,7 +899,7 @@
       "price_min_nzd": 72.0,
       "price_max_nzd": 480.0,
       "updated_at": "2023-08-10T13:16:19+12:00",
-      "scraped_at": "2026-11-20T23:55:24+00:00",
+      "scraped_at": "2026-11-21T23:01:32+00:00",
       "varietal": "Ruiru 11, SL28, SL34, Batian",
       "size_prices": [
         {
@@ -945,7 +945,7 @@
       "price_min_nzd": 84.0,
       "price_max_nzd": 576.0,
       "updated_at": "2020-03-27T10:38:15+13:00",
-      "scraped_at": "2026-11-20T23:55:24+00:00",
+      "scraped_at": "2026-11-21T23:01:32+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -978,7 +978,7 @@
       "process": "Natural",
       "decaf": false,
       "description": "The next subscription, No. 343 will be dispatched 01 DEC 2026.",
-      "flavour_notes": "Citrus, Berries, And Tropical Fruit"
+      "flavour_notes": "Citrus, Berries, And Tropical Fruit, Chocolate And Caramel"
     },
     {
       "source": "atomiccoffee.co.nz",
@@ -991,7 +991,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
       "updated_at": "2026-10-05T07:47:28+13:00",
-      "scraped_at": "2026-11-20T23:57:50+00:00",
+      "scraped_at": "2026-11-21T23:05:00+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -1017,7 +1017,7 @@
       "price_min_nzd": 28.5,
       "price_max_nzd": 28.5,
       "updated_at": "2026-11-20T09:44:18+13:00",
-      "scraped_at": "2026-11-20T23:57:50+00:00",
+      "scraped_at": "2026-11-21T23:05:00+00:00",
       "varietal": "Typica",
       "size_prices": [
         {
@@ -1043,7 +1043,7 @@
       "price_min_nzd": 20.5,
       "price_max_nzd": 82.0,
       "updated_at": "2024-03-01T09:35:47+13:00",
-      "scraped_at": "2026-11-20T23:57:50+00:00",
+      "scraped_at": "2026-11-21T23:05:00+00:00",
       "varietal": "Mundo Novo, Catuai",
       "size_prices": [
         {
@@ -1073,7 +1073,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2025-11-12T11:49:06+13:00",
-      "scraped_at": "2026-11-20T23:57:56+00:00",
+      "scraped_at": "2026-11-21T23:05:08+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Colombia",
@@ -1094,7 +1094,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
       "updated_at": "2014-07-05T11:55:00+12:00",
-      "scraped_at": "2026-11-20T23:57:56+00:00",
+      "scraped_at": "2026-11-21T23:05:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1108,7 +1108,7 @@
       ],
       "origin_country": "Colombia, Ethiopia, Brazil, Peru",
       "producer": "unknown",
-      "process": "Natural",
+      "process": "Washed",
       "decaf": false,
       "description": "Origins\nEthiopia, Sidamo\nColombia, Cauca\nBrazil, Minas Gerais\nPeru, Rodriguez de Mendoza\n\nBody Full & velvety\nAcidity Medium\nFinish Sweet & lingering\nFlavour notes Chocolate, stone fruit, cinnamon\nRecommended use Espresso, stovetop, plunger, Aeropress, filter\n\nRatio: 1:1.5\nGrind size: fine\n\nDOSE: 20.5G\nYIELD: 27-30G\nTIME: 25-31 SEC\n\nOrigins\nEthiopia, Sidamo\nColombia, Cauca\nBrazil, Minas Gerais\nPeru, Rodriguez de Mendoza\n\nBody Full & velvety\nAcidity Medium\nFinish Sweet & lingering\nFlavour notes Chocolate, stone fruit, cinnamon\nRecommended use Espresso, stovetop, plunger, Aeropress, filter\n\nRatio: 1:1.5\nGrind size: fine\n\nDOSE: 20.5G\nYIELD: 27-30G\nTIME: 25-31 SEC\n\nVeloce is our flagship blend - a rich, sweet and complex espresso that pours like velvet. Roasted delicately so notes of bittersweet chocolate, cinnamon spice and ripe stone fruit cut through. Delicious with or without milk, it's true espresso - the aficionados\u2019 choice.",
       "flavour_notes": "Chocolate, Stone Fruit, Cinnamon"
@@ -1124,7 +1124,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 72.0,
       "updated_at": "2014-06-18T14:27:00+12:00",
-      "scraped_at": "2026-11-20T23:57:56+00:00",
+      "scraped_at": "2026-11-21T23:05:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1154,7 +1154,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 84.0,
       "updated_at": "2014-06-18T14:30:00+12:00",
-      "scraped_at": "2026-11-20T23:57:56+00:00",
+      "scraped_at": "2026-11-21T23:05:08+00:00",
       "varietal": "Lempira, Catuai, Catimor",
       "size_prices": [
         {
@@ -1184,7 +1184,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
       "updated_at": "2026-10-05T07:47:50+13:00",
-      "scraped_at": "2026-11-20T23:57:56+00:00",
+      "scraped_at": "2026-11-21T23:05:08+00:00",
       "varietal": "Bourbon",
       "size_prices": [
         {
@@ -1210,7 +1210,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 264.0,
       "updated_at": "2026-11-09T05:39:11+13:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1248,7 +1248,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 288.0,
       "updated_at": "2026-11-09T05:39:08+13:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "Catuai",
       "size_prices": [
         {
@@ -1286,7 +1286,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 84.0,
       "updated_at": "2025-11-17T21:56:21+13:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "Jarc 74110 & Jarc 74112",
       "size_prices": [
         {
@@ -1320,7 +1320,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 104.0,
       "updated_at": "2026-10-02T10:58:59+13:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1354,7 +1354,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
       "updated_at": "2025-02-26T10:31:38+13:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "Mundo Novo, Yellow Catuai, Yellow Catucai",
       "size_prices": [
         {
@@ -1388,7 +1388,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2021-06-30T02:52:03+12:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1426,7 +1426,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2021-06-30T03:01:43+12:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1464,7 +1464,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2021-06-30T02:55:07+12:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1502,7 +1502,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 205.5,
       "updated_at": "2021-06-30T03:00:36+12:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1540,7 +1540,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 71.0,
       "updated_at": "2024-03-06T01:55:25+13:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1574,7 +1574,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 69.0,
       "updated_at": "2025-09-17T21:11:19+12:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1608,7 +1608,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 197.5,
       "updated_at": "2026-03-03T23:33:07+13:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1646,7 +1646,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 80.0,
       "updated_at": "2026-05-30T01:00:02+12:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "Colombia, Castillo, Caturra, Catimor And Typica",
       "size_prices": [
         {
@@ -1680,7 +1680,7 @@
       "price_min_nzd": 19.5,
       "price_max_nzd": 210.0,
       "updated_at": "2021-10-26T11:38:17+13:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "Caturra, Castillo And Colombia",
       "size_prices": [
         {
@@ -1718,7 +1718,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 112.0,
       "updated_at": "2026-08-20T20:58:23+12:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -1752,7 +1752,7 @@
       "price_min_nzd": 122.0,
       "price_max_nzd": 122.0,
       "updated_at": "2026-10-13T08:13:37+13:00",
-      "scraped_at": "2026-11-20T23:58:36+00:00",
+      "scraped_at": "2026-11-21T23:06:08+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Costa Rica",
@@ -1773,7 +1773,7 @@
       "price_min_nzd": 33.5,
       "price_max_nzd": 33.5,
       "updated_at": "2026-11-19T07:14:53+13:00",
-      "scraped_at": "2026-11-20T23:59:56+00:00",
+      "scraped_at": "2026-11-21T23:07:57+00:00",
       "varietal": "Sudan Rume",
       "size_prices": [
         {
@@ -1799,7 +1799,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
       "updated_at": "2026-11-05T07:35:40+13:00",
-      "scraped_at": "2026-11-20T23:59:56+00:00",
+      "scraped_at": "2026-11-21T23:07:57+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1825,7 +1825,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-11-12T07:28:10+13:00",
-      "scraped_at": "2026-11-20T23:59:56+00:00",
+      "scraped_at": "2026-11-21T23:07:57+00:00",
       "varietal": "Batian, Ruiru 11, SL28, SL34",
       "size_prices": [
         {
@@ -1851,7 +1851,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
       "updated_at": "2026-09-09T11:23:36+12:00",
-      "scraped_at": "2026-11-20T23:59:56+00:00",
+      "scraped_at": "2026-11-21T23:07:57+00:00",
       "varietal": "Ethiopian Heirloom Varieties",
       "size_prices": [
         {
@@ -1877,7 +1877,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-08-31T13:14:44+12:00",
-      "scraped_at": "2026-11-20T23:59:56+00:00",
+      "scraped_at": "2026-11-21T23:07:57+00:00",
       "varietal": "Batian, Ruiru 11, SL28, SL34",
       "size_prices": [
         {
@@ -1903,7 +1903,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 24.0,
       "updated_at": "2026-04-21T13:11:09+12:00",
-      "scraped_at": "2026-11-20T23:59:56+00:00",
+      "scraped_at": "2026-11-21T23:07:57+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1929,11 +1929,11 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 28.0,
       "updated_at": "2026-04-30T08:00:18+12:00",
-      "scraped_at": "2026-11-20T23:59:56+00:00",
+      "scraped_at": "2026-11-21T23:07:57+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "unknown",
-      "producer": "unknown",
+      "producer": "best",
       "process": "unknown",
       "decaf": false,
       "description": "We're excited to source and share with you a carefully curated selection of delicious, quality coffees from a range of the best coffee growing regions around the world. Throughout the year we\u2019ll be bringing you an interesting range of origins, varieties and processing methods from regional, microlot and single estate producers.\n\nSign up to a monthly subscription and you'll receive a different single origin coffee each month, charged on the 1st of the month and dispatched the following business day.\n\nFor weekly or fortnightly deliveries, you will receive a rotation of our current lineup of single origin coffees, sent within 2 business days of each payment.\n\nOur standard size bag is 250g. Occasionally, we will have an extra special coffee we'd like to share with you, which will be sent in a slightly smaller amount such as 200g.\n\nPlease note: Our single origin coffee range consists of light roast coffees, best suited to filter brewing. If you'd like a subscription for brewing espresso, check out our blends subscriptions .\n\nThe finer details\n\nShipping to urban addresses is included in the price of this subscription. If you are local and would prefer to pick up your coffee from our Cellar Door/Roastery, we\u2019ll shout you a batch brew on pick up!\n\nShipping to rural addresses incur a surcharge of $5 per delivery to cover the extra freight charges. Please select the correct option to ensure shipping charges are accurately calculated.\n\nRecurring subscriptions are charged on the 1st of the month, then we dispatch on the following business day. If your initial order is placed within 5 days of the 1st, we\u2019ll hold off your first delivery until the scheduled dispatch date. For all other initial payments, we will send out the first bag when you order, then all following deliveries will be dispatched on the first Tuesday of the month. This may mean your first couple of deliveries arrive less than a month apart.\n\nLog in to your account to access your subscription details. Recurring subscriptions can be changed, paused or cancelled here. If you need any assistance or have a question, email us at orders@coffeeembassy.co.nz.",
@@ -1950,7 +1950,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 79.0,
       "updated_at": "2026-05-04T07:19:50+12:00",
-      "scraped_at": "2026-11-21T00:00:21+00:00",
+      "scraped_at": "2026-11-21T23:08:34+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -1980,7 +1980,7 @@
       "price_min_nzd": 18.5,
       "price_max_nzd": 66.5,
       "updated_at": "2022-07-15T13:56:46+12:00",
-      "scraped_at": "2026-11-21T00:00:21+00:00",
+      "scraped_at": "2026-11-21T23:08:34+00:00",
       "varietal": "Bourbon, Typica",
       "size_prices": [
         {
@@ -2010,7 +2010,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
       "updated_at": "2023-05-24T08:53:39+12:00",
-      "scraped_at": "2026-11-21T00:00:21+00:00",
+      "scraped_at": "2026-11-21T23:08:34+00:00",
       "varietal": "Typica, Sidra, Tabi",
       "size_prices": [
         {
@@ -2040,7 +2040,7 @@
       "price_min_nzd": 21.5,
       "price_max_nzd": 82.5,
       "updated_at": "2022-07-15T13:56:00+12:00",
-      "scraped_at": "2026-11-21T00:00:21+00:00",
+      "scraped_at": "2026-11-21T23:08:34+00:00",
       "varietal": "Castillo, Varidad Colombia",
       "size_prices": [
         {
@@ -2070,7 +2070,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 86.0,
       "updated_at": "2025-02-21T15:28:46+13:00",
-      "scraped_at": "2026-11-21T00:00:21+00:00",
+      "scraped_at": "2026-11-21T23:08:34+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2083,8 +2083,8 @@
         }
       ],
       "origin_country": "unknown",
-      "producer": "unknown",
-      "process": "unknown",
+      "producer": "Blends Rotating Subscription",
+      "process": "Decaf",
       "decaf": false,
       "description": "Trust the roaster with our blends subscription! You'll receive a rotation of our blends, suitable for espresso, plunger and stovetop brewing.\n\nShipping is included for all urban deliveries.\n\nThere is a surcharge on rural deliveries to cover some of the extra cost to ship to these addresses, if you live at a rural address please select your subscription accordingly so we can accurately calculate your shipping costs.\n\nRecipe\n\nThis is a good starting point for all of our espresso coffees. Adjust accordingly to your own preference\n\nGround Coffee: 20g Espresso\n\nWeight out: 25g\n\nContact Time: 25-30 Seconds\n\nRecommended Brewing Age\n\n10 \u2013 28 Days after roast date\n\nSubscriptions\n\nRead more about how subscriptions work here",
       "flavour_notes": "Fruity Notes, Spicy Notes, Chocolate Notes"
@@ -2100,7 +2100,7 @@
       "price_min_nzd": 35.0,
       "price_max_nzd": 35.0,
       "updated_at": "2026-11-17T20:59:02+13:00",
-      "scraped_at": "2026-11-21T00:00:31+00:00",
+      "scraped_at": "2026-11-21T23:08:45+00:00",
       "varietal": "Batian/Dtari585",
       "size_prices": [
         {
@@ -2126,7 +2126,7 @@
       "price_min_nzd": 48.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-11-17T20:58:37+13:00",
-      "scraped_at": "2026-11-21T00:00:31+00:00",
+      "scraped_at": "2026-11-21T23:08:45+00:00",
       "varietal": "74158",
       "size_prices": [
         {
@@ -2156,7 +2156,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 65.0,
       "updated_at": "2026-10-20T20:13:24+13:00",
-      "scraped_at": "2026-11-21T00:00:31+00:00",
+      "scraped_at": "2026-11-21T23:08:45+00:00",
       "varietal": "SL28, SL34, Ruiru 11, Batian",
       "size_prices": [
         {
@@ -2186,7 +2186,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 98.0,
       "updated_at": "2026-10-20T20:12:58+13:00",
-      "scraped_at": "2026-11-21T00:00:31+00:00",
+      "scraped_at": "2026-11-21T23:08:45+00:00",
       "varietal": "74110, 74112, 74165",
       "size_prices": [
         {
@@ -2220,7 +2220,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 25.0,
       "updated_at": "2026-09-29T12:22:49+13:00",
-      "scraped_at": "2026-11-21T00:00:31+00:00",
+      "scraped_at": "2026-11-21T23:08:45+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -2246,7 +2246,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 30.0,
       "updated_at": "2026-09-29T12:22:40+13:00",
-      "scraped_at": "2026-11-21T00:00:31+00:00",
+      "scraped_at": "2026-11-21T23:08:45+00:00",
       "varietal": "Gesha",
       "size_prices": [
         {
@@ -2272,7 +2272,7 @@
       "price_min_nzd": 53.0,
       "price_max_nzd": 83.0,
       "updated_at": "2026-09-30T13:11:48+13:00",
-      "scraped_at": "2026-11-21T00:00:31+00:00",
+      "scraped_at": "2026-11-21T23:08:45+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -2298,7 +2298,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
       "updated_at": "2026-08-18T11:14:25+12:00",
-      "scraped_at": "2026-11-21T00:00:31+00:00",
+      "scraped_at": "2026-11-21T23:08:45+00:00",
       "varietal": "Heirloom + Castillo",
       "size_prices": [
         {
@@ -2328,7 +2328,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
       "updated_at": "2026-07-22T18:55:38+12:00",
-      "scraped_at": "2026-11-21T00:00:31+00:00",
+      "scraped_at": "2026-11-21T23:08:45+00:00",
       "varietal": "Heirloom + Pink Bourbon",
       "size_prices": [
         {
@@ -2358,7 +2358,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 27.0,
       "updated_at": "2026-06-23T20:52:19+12:00",
-      "scraped_at": "2026-11-21T00:00:31+00:00",
+      "scraped_at": "2026-11-21T23:08:45+00:00",
       "varietal": "Gesha",
       "size_prices": [
         {
@@ -2384,7 +2384,7 @@
       "price_min_nzd": 48.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-11-17T20:58:53+13:00",
-      "scraped_at": "2026-11-21T00:00:59+00:00",
+      "scraped_at": "2026-11-21T23:09:20+00:00",
       "varietal": "74158",
       "size_prices": [
         {
@@ -2414,7 +2414,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 98.0,
       "updated_at": "2026-10-20T20:13:13+13:00",
-      "scraped_at": "2026-11-21T00:00:59+00:00",
+      "scraped_at": "2026-11-21T23:09:20+00:00",
       "varietal": "74110, 74112, 74165",
       "size_prices": [
         {
@@ -2448,7 +2448,7 @@
       "price_min_nzd": 27.0,
       "price_max_nzd": 57.0,
       "updated_at": "2026-08-18T11:14:10+12:00",
-      "scraped_at": "2026-11-21T00:00:59+00:00",
+      "scraped_at": "2026-11-21T23:09:20+00:00",
       "varietal": "Heirloom + Castillo",
       "size_prices": [
         {
@@ -2478,7 +2478,7 @@
       "price_min_nzd": 26.0,
       "price_max_nzd": 56.0,
       "updated_at": "2026-07-22T19:18:50+12:00",
-      "scraped_at": "2026-11-21T00:00:59+00:00",
+      "scraped_at": "2026-11-21T23:09:20+00:00",
       "varietal": "Heirloom + Pink Bourbon",
       "size_prices": [
         {
@@ -2508,7 +2508,7 @@
       "price_min_nzd": 25.5,
       "price_max_nzd": 70.0,
       "updated_at": "2026-11-06T12:36:32+13:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -2542,7 +2542,7 @@
       "price_min_nzd": 62.0,
       "price_max_nzd": 62.0,
       "updated_at": "2026-11-05T13:56:02+13:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "Orange Wush Wush",
       "size_prices": [
         {
@@ -2568,7 +2568,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 97.0,
       "updated_at": "2026-10-12T14:28:47+13:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "SL28, SL34, Batian, Ruiru 11",
       "size_prices": [
         {
@@ -2602,7 +2602,7 @@
       "price_min_nzd": 20.5,
       "price_max_nzd": 60.0,
       "updated_at": "2026-10-12T13:55:30+13:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "Yellow Arara",
       "size_prices": [
         {
@@ -2636,7 +2636,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-10-12T12:48:32+13:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "Ethiopian Landrace",
       "size_prices": [
         {
@@ -2670,7 +2670,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 120.0,
       "updated_at": "2026-10-12T08:05:04+13:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "Ethiopian Landrace",
       "size_prices": [
         {
@@ -2704,7 +2704,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 120.0,
       "updated_at": "2026-10-06T08:01:09+13:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "Bourbon, Chiroso",
       "size_prices": [
         {
@@ -2738,7 +2738,7 @@
       "price_min_nzd": 34.0,
       "price_max_nzd": 160.0,
       "updated_at": "2026-09-11T15:08:12+12:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -2776,7 +2776,7 @@
       "price_min_nzd": 75.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-07-13T09:14:14+12:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "Laurina",
       "size_prices": [
         {
@@ -2802,7 +2802,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 75.0,
       "updated_at": "2026-07-02T08:19:30+12:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "Yellow Caturra",
       "size_prices": [
         {
@@ -2836,7 +2836,7 @@
       "price_min_nzd": 44.0,
       "price_max_nzd": 276.0,
       "updated_at": "2026-06-09T10:00:51+12:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "Geisha",
       "size_prices": [
         {
@@ -2878,7 +2878,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 50.0,
       "updated_at": "2022-09-21T12:12:51+12:00",
-      "scraped_at": "2026-11-21T00:01:07+00:00",
+      "scraped_at": "2026-11-21T23:09:29+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -2892,7 +2892,7 @@
       ],
       "origin_country": "unknown",
       "producer": "unknown",
-      "process": "unknown",
+      "process": "Decaf",
       "decaf": false,
       "description": "A NEW COFFEE TO DISCOVER WITH EVERY DELIVERY\n\nA rotating selection of exceptional small-lot filter coffees from producers around the world. Selected for their quality, character and individuality, and roasted fresh in Dunedin. Something new to look forward to with every delivery.\n\nTHE DISCOVERY\n\nAlways something new. Explore different origins, varieties and processing styles as our seasonal releases change.\n\nCurated by Vanguard. We choose coffees that celebrate the work of producers and the distinct character of each lot, roasting for clarity, sweetness and complexity.\n\nMade for your routine. Choose your coffee quantity, grind preference and delivery frequency.\n\nHOW IT WORKS\n\nChoose your preferred coffee quantity and grind.\n\nSelect a delivery frequency: weekly, fortnightly, monthly or every six weeks.\n\nWe roast our subscription coffees fresh and dispatch on Tuesdays, with free shipping throughout New Zealand.\n\nDiscover the next coffee in the rotation with each delivery.",
       "flavour_notes": "Fruits, Spices, Chocolate"
@@ -2908,7 +2908,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 68.0,
       "updated_at": "2020-03-04T11:42:47+13:00",
-      "scraped_at": "2026-11-21T00:02:59+00:00",
+      "scraped_at": "2026-11-21T23:12:03+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -2942,7 +2942,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
       "updated_at": "2026-04-02T09:31:14+13:00",
-      "scraped_at": "2026-11-21T00:02:59+00:00",
+      "scraped_at": "2026-11-21T23:12:03+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -2976,7 +2976,7 @@
       "price_min_nzd": 19.0,
       "price_max_nzd": 60.0,
       "updated_at": "2021-10-06T12:42:49+13:00",
-      "scraped_at": "2026-11-21T00:02:59+00:00",
+      "scraped_at": "2026-11-21T23:12:03+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -3010,7 +3010,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 70.0,
       "updated_at": "2026-02-05T10:46:10+13:00",
-      "scraped_at": "2026-11-21T00:02:59+00:00",
+      "scraped_at": "2026-11-21T23:12:03+00:00",
       "varietal": "Yellow Arara, SL28, SL34, Mixed",
       "size_prices": [
         {
@@ -3044,7 +3044,7 @@
       "price_min_nzd": 21.0,
       "price_max_nzd": 68.0,
       "updated_at": "2025-10-03T13:33:49+13:00",
-      "scraped_at": "2026-11-21T00:02:59+00:00",
+      "scraped_at": "2026-11-21T23:12:03+00:00",
       "varietal": "Castillo, Colombia, Caturra",
       "size_prices": [
         {
@@ -3078,7 +3078,7 @@
       "price_min_nzd": 26.09,
       "price_max_nzd": 26.09,
       "updated_at": "2026-06-16T15:42:16+12:00",
-      "scraped_at": "2026-11-21T00:03:09+00:00",
+      "scraped_at": "2026-11-21T23:12:13+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -3104,7 +3104,7 @@
       "price_min_nzd": 24.35,
       "price_max_nzd": 24.35,
       "updated_at": "2026-09-16T11:18:35+12:00",
-      "scraped_at": "2026-11-21T00:03:09+00:00",
+      "scraped_at": "2026-11-21T23:12:13+00:00",
       "varietal": "Pink Bourbon",
       "size_prices": [
         {
@@ -3130,7 +3130,7 @@
       "price_min_nzd": 20.87,
       "price_max_nzd": 20.87,
       "updated_at": "2026-09-16T11:18:37+12:00",
-      "scraped_at": "2026-11-21T00:03:09+00:00",
+      "scraped_at": "2026-11-21T23:12:13+00:00",
       "varietal": "Bourbon",
       "size_prices": [
         {
@@ -3156,7 +3156,7 @@
       "price_min_nzd": 26.09,
       "price_max_nzd": 26.09,
       "updated_at": "2026-10-28T10:45:36+13:00",
-      "scraped_at": "2026-11-21T00:03:09+00:00",
+      "scraped_at": "2026-11-21T23:12:13+00:00",
       "varietal": "Caturra, Bourbon",
       "size_prices": [
         {
@@ -3182,7 +3182,7 @@
       "price_min_nzd": 20.87,
       "price_max_nzd": 20.87,
       "updated_at": "2026-09-20T19:32:59+12:00",
-      "scraped_at": "2026-11-21T00:03:09+00:00",
+      "scraped_at": "2026-11-21T23:12:13+00:00",
       "varietal": "Ruiru 11, SL28, SL34",
       "size_prices": [
         {
@@ -3208,7 +3208,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2012-02-21T17:16:00+13:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3242,7 +3242,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2026-11-03T16:01:58+13:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3276,7 +3276,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2021-04-30T16:05:25+12:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3310,7 +3310,7 @@
       "price_min_nzd": 15.65,
       "price_max_nzd": 62.61,
       "updated_at": "2016-07-13T10:19:18+12:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3344,7 +3344,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2021-06-29T11:59:56+12:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3378,7 +3378,7 @@
       "price_min_nzd": 14.78,
       "price_max_nzd": 59.13,
       "updated_at": "2016-07-13T10:19:19+12:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3412,7 +3412,7 @@
       "price_min_nzd": 17.39,
       "price_max_nzd": 69.56,
       "updated_at": "2021-11-16T09:53:37+13:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3429,7 +3429,7 @@
         }
       ],
       "origin_country": "Honduras",
-      "producer": "unknown",
+      "producer": "CocaFACL",
       "process": "Decaf",
       "decaf": true,
       "description": "Milk chocolate and apricot are the central notes in this Swiss Water decaf from western Honduras.\n\nThe coffee comes from the COCAFCAL cooperative in Capucas, Cop\u00e1n, where it is grown at 1,450\u20131,600m. The cooperative was founded in 1999 and brings together growers from the surrounding coffee-producing region.",
@@ -3446,7 +3446,7 @@
       "price_min_nzd": 15.22,
       "price_max_nzd": 60.87,
       "updated_at": "2020-07-15T11:15:19+12:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "Typica",
       "size_prices": [
         {
@@ -3480,7 +3480,7 @@
       "price_min_nzd": 17.39,
       "price_max_nzd": 69.56,
       "updated_at": "2023-11-23T17:00:50+13:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3514,7 +3514,7 @@
       "price_min_nzd": 15.22,
       "price_max_nzd": 60.87,
       "updated_at": "2023-03-30T15:46:06+13:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3548,7 +3548,7 @@
       "price_min_nzd": 15.65,
       "price_max_nzd": 62.61,
       "updated_at": "2023-02-26T20:36:00+13:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3565,7 +3565,7 @@
         }
       ],
       "origin_country": "Mexico",
-      "producer": "San Fernando growers",
+      "producer": "Jaltenango de la Paz, Mexico",
       "process": "Washed",
       "decaf": false,
       "description": "Hazelnut, caramel and lemon zest sit within a smooth, full-bodied cup. This medium-roast coffee suits espresso and stovetop, or filter brewing for those who enjoy a fuller-bodied profile.\n\nIt comes from San Fernando growers in Chiapas, southern Mexico, at 1,200\u20131,400m. The coffee is washed and sun-dried, and is Fair Trade and organic certified. The producer organisation has worked with smallholder growers in the region since 1984.",
@@ -3582,7 +3582,7 @@
       "price_min_nzd": 16.96,
       "price_max_nzd": 67.83,
       "updated_at": "2023-04-11T09:51:18+12:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "Marcala",
       "size_prices": [
         {
@@ -3616,7 +3616,7 @@
       "price_min_nzd": 19.13,
       "price_max_nzd": 76.52,
       "updated_at": "2025-03-31T19:57:26+13:00",
-      "scraped_at": "2026-11-21T00:03:19+00:00",
+      "scraped_at": "2026-11-21T23:12:26+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -3650,7 +3650,7 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 202.5,
       "updated_at": "2026-11-06T16:35:45+13:00",
-      "scraped_at": "2026-11-21T00:05:08+00:00",
+      "scraped_at": "2026-11-21T23:15:21+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -3680,7 +3680,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 130.0,
       "updated_at": "2026-09-14T17:37:29+12:00",
-      "scraped_at": "2026-11-21T00:05:08+00:00",
+      "scraped_at": "2026-11-21T23:15:21+00:00",
       "varietal": "San Isidro",
       "size_prices": [
         {
@@ -3710,7 +3710,7 @@
       "price_min_nzd": 45.0,
       "price_max_nzd": 202.5,
       "updated_at": "2026-10-06T12:45:09+13:00",
-      "scraped_at": "2026-11-21T00:05:08+00:00",
+      "scraped_at": "2026-11-21T23:15:21+00:00",
       "varietal": "74110, 74112, 74165",
       "size_prices": [
         {
@@ -3740,7 +3740,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-08-31T15:37:41+12:00",
-      "scraped_at": "2026-11-21T00:05:08+00:00",
+      "scraped_at": "2026-11-21T23:15:21+00:00",
       "varietal": "Heirloom",
       "size_prices": [
         {
@@ -3766,7 +3766,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 108.0,
       "updated_at": "2026-10-15T08:45:07+13:00",
-      "scraped_at": "2026-11-21T00:05:08+00:00",
+      "scraped_at": "2026-11-21T23:15:21+00:00",
       "varietal": "Heirloom",
       "size_prices": [
         {
@@ -3796,7 +3796,7 @@
       "price_min_nzd": 30.0,
       "price_max_nzd": 110.0,
       "updated_at": "2026-11-10T14:25:06+13:00",
-      "scraped_at": "2026-11-21T00:05:08+00:00",
+      "scraped_at": "2026-11-21T23:15:21+00:00",
       "varietal": "Sl-28, Sl-34, Batian, Ruiru",
       "size_prices": [
         {
@@ -3826,7 +3826,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
       "updated_at": "2026-07-27T17:19:40+12:00",
-      "scraped_at": "2026-11-21T00:05:08+00:00",
+      "scraped_at": "2026-11-21T23:15:21+00:00",
       "varietal": "Catimor, Typica",
       "size_prices": [
         {
@@ -3856,7 +3856,7 @@
       "price_min_nzd": 26.5,
       "price_max_nzd": 95.4,
       "updated_at": "2026-10-26T11:43:32+13:00",
-      "scraped_at": "2026-11-21T00:05:08+00:00",
+      "scraped_at": "2026-11-21T23:15:21+00:00",
       "varietal": "Caturra, Catuai, Obata",
       "size_prices": [
         {
@@ -3886,7 +3886,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
       "updated_at": "2023-12-06T17:10:11+13:00",
-      "scraped_at": "2026-11-21T00:05:15+00:00",
+      "scraped_at": "2026-11-21T23:15:29+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -3932,7 +3932,7 @@
       "price_min_nzd": 18.0,
       "price_max_nzd": 500.0,
       "updated_at": "2023-11-02T15:24:59+13:00",
-      "scraped_at": "2026-11-21T00:05:15+00:00",
+      "scraped_at": "2026-11-21T23:15:29+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -3978,7 +3978,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 80.0,
       "updated_at": "2019-12-30T14:39:26+13:00",
-      "scraped_at": "2026-11-21T00:05:15+00:00",
+      "scraped_at": "2026-11-21T23:15:29+00:00",
       "varietal": "Castillo",
       "size_prices": [
         {
@@ -4012,7 +4012,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 100.0,
       "updated_at": "2026-10-27T13:55:23+13:00",
-      "scraped_at": "2026-11-21T00:05:15+00:00",
+      "scraped_at": "2026-11-21T23:15:29+00:00",
       "varietal": "Catimor, Typica",
       "size_prices": [
         {
@@ -4042,7 +4042,7 @@
       "price_min_nzd": 40.99,
       "price_max_nzd": 156.99,
       "updated_at": "2026-10-27T11:00:29+13:00",
-      "scraped_at": "2026-11-21T00:05:18+00:00",
+      "scraped_at": "2026-11-21T23:15:32+00:00",
       "varietal": "Typica",
       "size_prices": [
         {
@@ -4072,7 +4072,7 @@
       "price_min_nzd": 81.99,
       "price_max_nzd": 356.99,
       "updated_at": "2026-10-06T10:25:26+13:00",
-      "scraped_at": "2026-11-21T00:05:18+00:00",
+      "scraped_at": "2026-11-21T23:15:32+00:00",
       "varietal": "Sudan Rume",
       "size_prices": [
         {
@@ -4102,7 +4102,7 @@
       "price_min_nzd": 72.99,
       "price_max_nzd": 618.99,
       "updated_at": "2026-10-06T10:25:28+13:00",
-      "scraped_at": "2026-11-21T00:05:18+00:00",
+      "scraped_at": "2026-11-21T23:15:32+00:00",
       "varietal": "Gesha",
       "size_prices": [
         {
@@ -4132,7 +4132,7 @@
       "price_min_nzd": 42.99,
       "price_max_nzd": 161.99,
       "updated_at": "2026-10-20T10:39:15+13:00",
-      "scraped_at": "2026-11-21T00:05:18+00:00",
+      "scraped_at": "2026-11-21T23:15:32+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4162,7 +4162,7 @@
       "price_min_nzd": 81.99,
       "price_max_nzd": 356.99,
       "updated_at": "2026-11-10T11:21:18+13:00",
-      "scraped_at": "2026-11-21T00:05:18+00:00",
+      "scraped_at": "2026-11-21T23:15:32+00:00",
       "varietal": "Sudan Rume",
       "size_prices": [
         {
@@ -4188,7 +4188,7 @@
       "price_min_nzd": 23.0,
       "price_max_nzd": 101.99,
       "updated_at": "2026-07-01T10:09:25+12:00",
-      "scraped_at": "2026-11-21T00:05:40+00:00",
+      "scraped_at": "2026-11-21T23:15:57+00:00",
       "varietal": "Red Bourbon",
       "size_prices": [
         {
@@ -4218,7 +4218,7 @@
       "price_min_nzd": 32.99,
       "price_max_nzd": 122.99,
       "updated_at": "2026-09-08T10:35:21+12:00",
-      "scraped_at": "2026-11-21T00:05:40+00:00",
+      "scraped_at": "2026-11-21T23:15:57+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4248,7 +4248,7 @@
       "price_min_nzd": 19.99,
       "price_max_nzd": 69.99,
       "updated_at": "2025-02-11T17:59:21+13:00",
-      "scraped_at": "2026-11-21T00:05:40+00:00",
+      "scraped_at": "2026-11-21T23:15:57+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4278,7 +4278,7 @@
       "price_min_nzd": 25.0,
       "price_max_nzd": 119.99,
       "updated_at": "2026-07-01T10:09:32+12:00",
-      "scraped_at": "2026-11-21T00:05:40+00:00",
+      "scraped_at": "2026-11-21T23:15:57+00:00",
       "varietal": "Heirloom",
       "size_prices": [
         {
@@ -4308,7 +4308,7 @@
       "price_min_nzd": 25.99,
       "price_max_nzd": 99.99,
       "updated_at": "2026-10-06T10:25:29+13:00",
-      "scraped_at": "2026-11-21T00:05:40+00:00",
+      "scraped_at": "2026-11-21T23:15:57+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4338,7 +4338,7 @@
       "price_min_nzd": 25.99,
       "price_max_nzd": 99.99,
       "updated_at": "2026-10-06T10:25:31+13:00",
-      "scraped_at": "2026-11-21T00:05:40+00:00",
+      "scraped_at": "2026-11-21T23:15:57+00:00",
       "varietal": "Heirloom",
       "size_prices": [
         {
@@ -4368,7 +4368,7 @@
       "price_min_nzd": 66.0,
       "price_max_nzd": 66.0,
       "updated_at": "2026-11-11T16:00:21+13:00",
-      "scraped_at": "2026-11-21T00:06:03+00:00",
+      "scraped_at": "2026-11-21T23:16:27+00:00",
       "varietal": "Castillo, Caturra, Bourbon",
       "size_prices": [],
       "origin_country": "Colombia, Brazil",
@@ -4389,7 +4389,7 @@
       "price_min_nzd": 42.0,
       "price_max_nzd": 42.0,
       "updated_at": "2026-11-19T07:05:04+13:00",
-      "scraped_at": "2026-11-21T00:06:03+00:00",
+      "scraped_at": "2026-11-21T23:16:27+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4415,7 +4415,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
       "updated_at": "2026-11-11T16:00:14+13:00",
-      "scraped_at": "2026-11-21T00:06:03+00:00",
+      "scraped_at": "2026-11-21T23:16:27+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4441,7 +4441,7 @@
       "price_min_nzd": 36.0,
       "price_max_nzd": 36.0,
       "updated_at": "2026-11-11T16:00:06+13:00",
-      "scraped_at": "2026-11-21T00:06:03+00:00",
+      "scraped_at": "2026-11-21T23:16:27+00:00",
       "varietal": "Caturra",
       "size_prices": [
         {
@@ -4467,8 +4467,8 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
       "updated_at": "2026-05-27T19:15:37+12:00",
-      "scraped_at": "2026-11-21T00:06:03+00:00",
-      "varietal": "Roasters Choice",
+      "scraped_at": "2026-11-21T23:16:27+00:00",
+      "varietal": "unknown",
       "size_prices": [
         {
           "size_grams": 200.0,
@@ -4480,11 +4480,11 @@
         }
       ],
       "origin_country": "unknown",
-      "producer": "3 MONTH SUBSCRIPTION",
-      "process": "unknown",
+      "producer": "3 Month Roaster's Choice Subscription",
+      "process": "Natural",
       "decaf": false,
       "description": "Next shipping date: 10/12\n\nSubscription Details:\n\nOrders will be shipped on the second Thursday of each month after being freshly roasted. Make sure you are signed up before the 7th to get included in that month's order. When ordering, you\u2019ll be charged today for the first order, then going forward on the 7th for the 2 months after.\n\nHand-picked by our Head Roaster and delivered to your door over the next three months. A well-deserved treat for yourself, or the perfect gift for that special person in your life. Choose how many bags you want and then let us know where to send the coffee!\n\nRoasted right here in Arrowtown, Aotearoa.\nFree delivery on all subscriptions.\n\nEvery now and then, we may want to share something extra special. This may result in you receiving a bag of 100-125g, of course, it'll still be of equal or higher value.",
-      "flavour_notes": "unknown"
+      "flavour_notes": "Flavor Notes, Fruits, Spices, Chocolate, Herbal, Citrus, Nuttiness, Body, Acidity, Sweetness, Bitterness"
     },
     {
       "source": "wolfcoffee.co.nz",
@@ -4497,7 +4497,7 @@
       "price_min_nzd": 28.0,
       "price_max_nzd": 54.0,
       "updated_at": "2026-05-27T19:15:59+12:00",
-      "scraped_at": "2026-11-21T00:06:03+00:00",
+      "scraped_at": "2026-11-21T23:16:27+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4527,7 +4527,7 @@
       "price_min_nzd": 24.0,
       "price_max_nzd": 108.0,
       "updated_at": "2025-10-30T10:07:28+13:00",
-      "scraped_at": "2026-11-21T00:06:03+00:00",
+      "scraped_at": "2026-11-21T23:16:27+00:00",
       "varietal": "Caturra, Castillo",
       "size_prices": [
         {
@@ -4557,7 +4557,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
       "updated_at": "2019-10-29T09:26:57+13:00",
-      "scraped_at": "2026-11-21T00:06:48+00:00",
+      "scraped_at": "2026-11-21T23:17:22+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -4591,7 +4591,7 @@
       "price_min_nzd": 20.0,
       "price_max_nzd": 74.0,
       "updated_at": "2024-03-26T14:19:38+13:00",
-      "scraped_at": "2026-11-21T00:06:48+00:00",
+      "scraped_at": "2026-11-21T23:17:22+00:00",
       "varietal": "Mixed",
       "size_prices": [
         {
@@ -4625,7 +4625,7 @@
       "price_min_nzd": 22.0,
       "price_max_nzd": 22.0,
       "updated_at": "2026-03-09T06:53:57+13:00",
-      "scraped_at": "2026-11-21T00:06:48+00:00",
+      "scraped_at": "2026-11-21T23:17:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4651,7 +4651,7 @@
       "price_min_nzd": 60.0,
       "price_max_nzd": 216.0,
       "updated_at": "2026-11-09T15:32:23+13:00",
-      "scraped_at": "2026-11-21T00:06:48+00:00",
+      "scraped_at": "2026-11-21T23:17:22+00:00",
       "varietal": "unknown",
       "size_prices": [
         {
@@ -4697,7 +4697,7 @@
       "price_min_nzd": 40.0,
       "price_max_nzd": 40.0,
       "updated_at": "2026-03-12T13:38:59+13:00",
-      "scraped_at": "2026-11-21T00:06:48+00:00",
+      "scraped_at": "2026-11-21T23:17:22+00:00",
       "varietal": "unknown",
       "size_prices": [],
       "origin_country": "Colombia, Ethiopia, Brazil",
